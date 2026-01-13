@@ -43,11 +43,10 @@ export default function About() {
       }
 
       if (mobile) {
-        // On mobile, use the computed content height so the card shows
-        // the full intro without an inner scroll. Add a small extra
-        // padding so the CTA doesn't overlap text.
-        const computedMobileHeight = computed + 24;
-        setMeasuredHeight(computedMobileHeight);
+        // On mobile, allow the card to size naturally so it pushes
+        // following content down instead of clipping or introducing
+        // an inner scroll. Do not set a fixed measured height.
+        setMeasuredHeight(null);
         return;
       }
 
@@ -89,7 +88,7 @@ export default function About() {
             <div className="relative w-full">
               <div className="flex items-center justify-center">
                 <div ref={cardRef} className={`relative w-full max-w-full bg-card border border-border rounded-xl p-6 shadow-md md:animate-float min-h-[260px] sm:min-h-[320px] lg:min-h-[460px] pb-12 sm:pb-6 overflow-auto md:overflow-visible ${isMobileView ? 'pb-24' : ''} ${!showIntro ? 'flex items-center justify-center' : ''}`} style={measuredHeight ? { height: `${measuredHeight}px`, animationDuration: '6s' } : { animationDuration: '6s' }}>
-                      <div ref={introMeasureRef} className="w-full h-full flex flex-col justify-center relative">
+                      <div ref={introMeasureRef} className="w-full flex flex-col justify-center relative">
                     <h4 className="text-2xl md:text-3xl font-semibold text-white mb-4">Designed to go beyond traditional finance events, MONIE Fest combines</h4>
 
                     <div className="flex flex-col sm:flex-row items-stretch gap-6 justify-center">
