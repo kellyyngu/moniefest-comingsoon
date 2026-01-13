@@ -88,7 +88,7 @@ export default function About() {
           <div className="relative z-10 py-8 sm:py-12">
             <div className="relative w-full">
               <div className="flex items-center justify-center">
-                <div ref={cardRef} className={`relative w-full max-w-full bg-card border border-border rounded-xl p-6 shadow-md md:animate-float min-h-[260px] sm:min-h-[320px] lg:min-h-[460px] pb-12 sm:pb-6 overflow-visible md:overflow-auto ${isMobileView ? 'pb-24' : ''} ${!showIntro ? 'flex items-center justify-center' : ''}`} style={measuredHeight ? { height: `${measuredHeight}px`, animationDuration: '6s' } : { animationDuration: '6s' }}>
+                <div ref={cardRef} className={`relative w-full max-w-full bg-card border border-border rounded-xl p-6 shadow-md md:animate-float min-h-[260px] sm:min-h-[320px] lg:min-h-[460px] pb-12 sm:pb-6 overflow-auto md:overflow-visible ${isMobileView ? 'pb-24' : ''} ${!showIntro ? 'flex items-center justify-center' : ''}`} style={measuredHeight ? { height: `${measuredHeight}px`, animationDuration: '6s' } : { animationDuration: '6s' }}>
                       <div ref={introMeasureRef} className="w-full h-full flex flex-col justify-center relative">
                     <h4 className="text-2xl md:text-3xl font-semibold text-white mb-4">Designed to go beyond traditional finance events, MONIE Fest combines</h4>
 
