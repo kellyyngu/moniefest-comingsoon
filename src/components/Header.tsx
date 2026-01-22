@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import monieLogo from "@/assets/monielogo.png";
+// Logo served from public/optimized (WebP)
+const monieLogo = '/optimized/monielogo.webp';
 
 const navItems = [
   { label: "Exhibitors", route: "/", hash: "#exhibitors" },

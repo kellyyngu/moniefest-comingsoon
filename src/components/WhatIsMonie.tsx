@@ -1,4 +1,5 @@
-import heroBg from "@/assets/banner_bg.jpeg";
+// Background served from public/optimized (WebP)
+const heroBg = '/optimized/banner_bg.webp';
 
 const Icon = ({ name }: { name: string }) => {
   if (name === 'engage') {

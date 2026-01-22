@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import Footer from "@/components/Footer";
 import ComingSoon from "@/components/ComingSoon";
-import heroBg from "@/assets/banner_bg.jpeg";
+// Background served from public/optimized (WebP)
+const heroBg = '/optimized/banner_bg.webp';
 
 const BannerUploader: React.FC = () => {
   const [previews, setPreviews] = useState<(string | null)[]>([null, null, null, null, null]);

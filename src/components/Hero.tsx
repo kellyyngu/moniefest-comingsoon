@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, ArrowUpRight, Users, Calendar } from "lucide-react";
-import heroBg from "@/assets/banner_bg.jpeg";
+// Background image served from public/optimized (WebP)
+const heroBg = '/optimized/banner_bg.webp';
 
 type HeroProps = {
   onOpenEventbrite?: () => void;

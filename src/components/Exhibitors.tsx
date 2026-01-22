@@ -1,6 +1,7 @@
 import React from "react";
-import foodieLogo from "@/assets/Foodie-Red.png";
-import spireLogo from "@/assets/Spire-Black.png";
+// Logos served from public/optimized (WebP)
+const foodieLogo = '/optimized/Foodie-Red.webp';
+const spireLogo = '/optimized/Spire-Black.webp';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 

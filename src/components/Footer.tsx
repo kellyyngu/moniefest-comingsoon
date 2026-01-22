@@ -1,4 +1,5 @@
-import monieLogo from "@/assets/monielogo.png";
+// Logo served from public/optimized (WebP)
+const monieLogo = '/optimized/monielogo.webp';
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import EventbriteModal from "./EventbriteModal";

@@ -2,7 +2,8 @@
 import Footer from "@/components/Footer";
 import ComingSoon from "@/components/ComingSoon";
 import { useEffect, useState } from "react";
-import heroBg from "@/assets/banner_bg.jpeg";
+// Background served from public/optimized (WebP)
+const heroBg = '/optimized/banner_bg.webp';
 
 type Speaker = { name: string; title?: string; company?: string };
 
