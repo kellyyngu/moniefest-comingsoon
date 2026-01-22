@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+ 
+# Sitemap (update the URL to your production domain)
+Sitemap: https://moniefest-comingsoon2026.vercel.app/sitemap.xml
