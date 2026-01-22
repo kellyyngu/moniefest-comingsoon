@@ -5,10 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-    // Default base for deployments. Use the repo name path for GitHub Pages.
-    // This can be overridden by setting the VITE_BASE env var or passing
-    // `--base` to `vite build` (the `build:gh` script already does this).
-    base: process.env.VITE_BASE || '/moniefest-comingsoon/',
+    // Default base for deployments. Use root for typical hosts (Vercel).
+    // For GitHub Pages use `npm run build:gh` or set `VITE_BASE` env var.
+    base: process.env.VITE_BASE || '/',
   server: {
     host: "::",
     port: 8080,
