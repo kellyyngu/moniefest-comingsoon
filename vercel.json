@@ -1,8 +1,5 @@
 {
   "rewrites": [
-    { "source": "/event/moniefest-2026", "destination": "/index.html" },
-    { "source": "/event/moniefest-2026/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/event/moniefest-2026/optimized/:path*", "destination": "/optimized/:path*" },
-    { "source": "/event/moniefest-2026/:path*", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
