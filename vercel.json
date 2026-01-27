@@ -1,8 +1,8 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/event/moniefest-2026/:path*",
-      "destination": "https://moniefest-comingsoon2026.vercel.app/:path*"
+      "src": "/event/moniefest-2026/(.*)",
+      "dest": "/event/moniefest-2026/index.html"
     }
   ]
 }
