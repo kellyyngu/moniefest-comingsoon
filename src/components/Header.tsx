@@ -49,7 +49,7 @@ const Header = ({ onOpenEventbrite }: HeaderProps) => {
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 to-black/20 md:bg-transparent backdrop-blur-md border-b border-transparent md:border-none transition-colors duration-300">
         <div className="container mx-auto px-4 py-2 md:py-2">
-        <nav className="flex items-center justify-center md:justify-between" aria-label="Main navigation">
+        <nav className="flex items-center justify-between" aria-label="Main navigation">
           {/* Logo (masked so we can fill with exact brand color) */}
           <Link to="/" className="flex items-center" aria-label="Monie Fest 2026 home">
             <img
