@@ -3,6 +3,12 @@ import React from "react";
 const foodieLogo = '/optimized/Foodie-Red.webp';
 const spireLogo = '/optimized/Spire-Black.webp';
 const benchxcapitalLogo = '/optimized/benchxcapital.webp';
+const gambitTrusteesLogo = '/optimized/gambitTrustees.webp';
+const gambitCustodyLogo = '/optimized/gambitCustody.webp';
+const lunoLogo = '/optimized/luno.webp';
+const moomooLogo = '/optimized/moomoo.webp';
+const webullLogo = '/optimized/webull.webp';
+const microleapLogo = '/optimized/microleap.webp';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -15,10 +21,10 @@ const logoUrls: Record<string, string> = {
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
-const platinumSponsors = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Platinum+${i+1}`));
+const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
 const goldSponsors = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gold+${i+1}`));
 const supportingPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Supporting+${i+1}`));
-const silverSponsors = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Silver+${i+1}`));
+const silverSponsors = [microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 
 const baseUrl = "";
@@ -136,8 +142,8 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
 );
 
 const Exhibitors = () => {
-  // Toggle to hide all sponsor categories except Co-organisers for now
-  const showOnlyCoOrganisers = true;
+  // Toggle to hide sponsor categories below platinum
+  const showAllSponsors = false;
   return (
     <section className="py-20 bg-background" id="exhibitors" aria-labelledby="exhibitors-title">
       <div className="section-container flex flex-col items-center">
@@ -148,10 +154,11 @@ const Exhibitors = () => {
 
         <LogoGrid title="Co-organisers" logos={coOrganizers} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Strategic Partner" logos={strategicPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
-        {!showOnlyCoOrganisers && (
+        <LogoGrid title="Platinum Sponsors" logos={platinumSponsors} fullUrls hideCaption logoOnly />
+        <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly />
+        {showAllSponsors && (
           <>
             <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls />
-            <LogoGrid title="Platinum Sponsors" logos={platinumSponsors} fullUrls />
             <LogoGrid title="Gold Sponsors" logos={goldSponsors} fullUrls />
             <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls />
             <LogoGrid title="Gift Partners" logos={giftPartners} fullUrls />
