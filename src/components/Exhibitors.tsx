@@ -2,10 +2,12 @@ import React from "react";
 // Logos served from public/optimized (WebP)
 const foodieLogo = '/optimized/Foodie-Red.webp';
 const spireLogo = '/optimized/Spire-Black.webp';
+const benchxcapitalLogo = '/optimized/benchxcapital.webp';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
 const coOrganizers = [foodieLogo, spireLogo];
+const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Platinum+${i+1}`));
 const goldSponsors = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gold+${i+1}`));
 const supportingPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Supporting+${i+1}`));
@@ -93,6 +95,7 @@ const Exhibitors = () => {
         </div>
 
         <LogoGrid title="Co-organisers" logos={coOrganizers} fullUrls hideCaption logoOnly />
+        <LogoGrid title="Strategic Partner" logos={strategicPartners} fullUrls hideCaption logoOnly />
         {!showOnlyCoOrganisers && (
           <>
             <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls />

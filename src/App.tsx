@@ -13,6 +13,7 @@ import FAQPage from "./pages/FAQ";
 import ScrollToTop from "@/components/scroll-to-top";
 import Header from "@/components/Header";
 import EventbriteModal from "@/components/EventbriteModal";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,10 @@ const App = () => {
             eventId="1978806719165"
             height={650}
           />
+          
+          {/* WhatsApp exhibitor contact button */}
+          <WhatsAppFloat />
+          
           {/* Floating register button (visible on all viewports) */}
           <button
             aria-label="Get Ticket"
