@@ -53,9 +53,14 @@ const HighlightsPage: React.FC = () => {
       
 
       <section className="relative min-h-[44vh] flex items-center justify-center">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBg})` }}>
-          <div className="absolute inset-0 hero-gradient opacity-60" />
-        </div>
+        <img
+          src={heroBg}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 hero-gradient opacity-60" />
 
         <div className="relative z-10 container mx-auto px-4 pt-24 pb-12">
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white text-center tracking-tight max-w-3xl mx-auto leading-tight drop-shadow-xl">

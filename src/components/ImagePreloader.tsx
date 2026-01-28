@@ -13,6 +13,8 @@ const ImagePreloader = () => {
       '/optimized/Foodie-Red.webp', // Co-organizer logos
       '/optimized/Spire-Black.webp',
       '/optimized/benchxcapital.webp', // Strategic partner
+      '/optimized/highlightsBanner.webp', // Highlights page banner
+      '/optimized/speakerBanner.webp', // Speakers page banner
     ];
 
     criticalImages.forEach((src) => {

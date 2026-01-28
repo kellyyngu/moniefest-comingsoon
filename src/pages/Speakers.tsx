@@ -60,8 +60,8 @@ const SpeakersPage = () => {
           src={heroBg}
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-          decoding="async"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 hero-gradient opacity-60" />
 
