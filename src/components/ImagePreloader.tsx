@@ -9,6 +9,10 @@ const ImagePreloader = () => {
     const criticalImages = [
       '/optimized/mitec.webp', // Hero background
       '/moniefest2026.svg', // Logo
+      '/optimized/monielogo.webp', // Header logo
+      '/optimized/Foodie-Red.webp', // Co-organizer logos
+      '/optimized/Spire-Black.webp',
+      '/optimized/benchxcapital.webp', // Strategic partner
     ];
 
     criticalImages.forEach((src) => {

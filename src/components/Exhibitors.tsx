@@ -54,7 +54,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly }: LogoGridPro
                 src={fullUrls ? logo : `${baseUrl}${logo}`}
                 alt={formatAlt(fullUrls ? logo : logo)}
                 title={formatAlt(fullUrls ? logo : logo)}
-                loading="lazy"
+                loading="eager"
                 decoding="async"
                 className="max-w-[90%] max-h-[80%] object-contain"
               />
@@ -72,7 +72,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly }: LogoGridPro
                 src={fullUrls ? logo : `${baseUrl}${logo}`}
                 alt={formatAlt(fullUrls ? logo : logo)}
                 title={formatAlt(fullUrls ? logo : logo)}
-                loading="lazy"
+                loading="eager"
                 decoding="async"
                 className="max-w-[85%] max-h-[60%] object-contain"
               />

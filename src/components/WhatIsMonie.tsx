@@ -24,16 +24,16 @@ export default function WhatIsMonie() {
             loading="lazy"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/62 to-black/62" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/65" />
           <div className="relative p-6 md:p-8">
             <div className="flex items-center gap-4">
               <div className="bg-primary/10 p-3 rounded-lg text-primary-foreground">
                 <Icon name="engage" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-white">WHAT IS MONIE FEST?</h3>
+              <h3 className="text-lg md:text-xl font-bold text-white drop-shadow-lg">WHAT IS MONIE FEST?</h3>
             </div>
 
-            <div className="mt-4 text-sm md:text-base text-white/90 leading-relaxed">
+            <div className="mt-4 text-sm md:text-base text-white leading-relaxed drop-shadow-md">
               <p className="mb-0">MONIE Fest is a large-scale financial lifestyle festival focused on money, investing, banking, and everyday financial decisions. Co-created by Foodie Media and Spire Digital, the event brings leading financial institutions and lifestyle brands together to engage 25,000–30,000 retail attendees in one location.</p>
             </div>
           </div>
