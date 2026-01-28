@@ -44,11 +44,11 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly }: LogoGridPro
     <h3 className="text-2xl font-bold text-foreground text-center mb-8">{title}</h3>
     <div className="max-w-6xl mx-auto">
       {logoOnly ? (
-        <div className="grid grid-cols-2 gap-4 px-4 sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-4 px-4 sm:gap-6">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-3 sm:p-6 flex items-center justify-center w-full sm:w-56 h-28 sm:h-44 shadow-sm"
+              className="bg-white rounded-xl p-3 sm:p-6 flex items-center justify-center w-[calc(50%-0.5rem)] sm:w-56 h-28 sm:h-44 shadow-sm"
             >
               <img
                 src={fullUrls ? logo : `${baseUrl}${logo}`}

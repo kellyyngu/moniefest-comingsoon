@@ -2,15 +2,13 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WhatsAppFloat = () => {
-  const whatsappNumber = "+60142690129";
-  const message = "Hi! I'm interested in joining MonieFest 2026 as an exhibitor.";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSccASbfJveT-OWwXSjLi1dkbBjp-pxMoa1l1Xp0yBqDPZi_-g/viewform";
 
   return (
     <div className="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-50 flex flex-col gap-3 animate-fade-in">
-      {/* WhatsApp Button with text */}
+      {/* Exhibitor Form Button */}
       <a
-        href={whatsappUrl}
+        href={formUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="group"
