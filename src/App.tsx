@@ -14,6 +14,7 @@ import ScrollToTop from "@/components/scroll-to-top";
 import Header from "@/components/Header";
 import EventbriteModal from "@/components/EventbriteModal";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import ImagePreloader from "@/components/ImagePreloader";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ImagePreloader />
         <Toaster />
         <Sonner />
         <BrowserRouter basename={import.meta.env.BASE_URL}>

@@ -57,6 +57,8 @@ const Header = ({ onOpenEventbrite }: HeaderProps) => {
               alt="Monie Fest logo"
               className="h-6 md:h-8 w-auto object-contain mr-2"
               style={{ display: 'block', background: 'transparent' }}
+              loading="eager"
+              fetchPriority="high"
             />
           </Link>
 

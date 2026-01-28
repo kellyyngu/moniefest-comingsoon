@@ -68,7 +68,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => {
     <div className="flex items-center gap-3 my-2">
       <div className="w-14 h-14 rounded-full overflow-hidden bg-gradient-to-br from-navy-light to-navy-deep flex items-center justify-center text-primary-foreground font-bold text-lg">
         {speaker.photo ? (
-          <img src={speaker.photo} alt={displayName} className="w-full h-full object-cover" />
+          <img src={speaker.photo} alt={displayName} className="w-full h-full object-cover" loading="lazy" decoding="async" />
         ) : (
           <div className="w-full h-full flex items-center justify-center">{initials}</div>
         )}

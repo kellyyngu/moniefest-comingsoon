@@ -29,7 +29,7 @@ const BannerUploader: React.FC = () => {
             <div className="w-full aspect-[16/9] bg-zinc-800 flex items-center justify-center overflow-hidden">
               {src ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={src} alt={`Banner ${idx + 1}`} className="w-full h-full object-cover" />
+                <img src={src} alt={`Banner ${idx + 1}`} className="w-full h-full object-cover" loading="lazy" decoding="async" />
               ) : (
                 <div className="text-center px-3 py-6 text-sm text-muted-foreground">upload<br/>1920 x 1080</div>
               )}

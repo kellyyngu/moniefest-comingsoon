@@ -110,9 +110,14 @@ const FAQPage = () => {
 
       {/* Hero */}
       <section className="relative min-h-[44vh] flex items-center justify-center">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBg})` }}>
-          <div className="absolute inset-0 hero-gradient opacity-60" />
-        </div>
+        <img
+          src={heroBg}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="absolute inset-0 hero-gradient opacity-60" />
 
         <div className="relative z-10 container mx-auto px-4 pt-24 pb-12">
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold text-white text-center tracking-tight max-w-4xl mx-auto leading-tight drop-shadow-xl">FAQ</h1>

@@ -12,12 +12,14 @@ const Hero = ({ onOpenEventbrite }: HeroProps) => {
     <>
       <section className="relative hero-section flex items-start justify-start overflow-hidden pt-12 sm:pt-16 md:pt-20 min-h-[80vh] md:min-h-[44vh]">
       {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
-        <div className="absolute inset-0 hero-gradient opacity-60" />
-      </div>
+      <img
+        src={heroBg}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+        fetchPriority="high"
+      />
+      <div className="absolute inset-0 hero-gradient opacity-60" />
 
       {/* Content (follow Programme styling) */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 pb-12 sm:pb-16">
