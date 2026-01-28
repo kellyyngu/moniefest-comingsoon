@@ -6,6 +6,13 @@ const benchxcapitalLogo = '/optimized/benchxcapital.webp';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
+// Logo URLs
+const logoUrls: Record<string, string> = {
+  [foodieLogo]: 'https://foodiemedia.com/',
+  [spireLogo]: 'https://www.financelang.com',
+  [benchxcapitalLogo]: 'https://www.benchxcapital.com/',
+};
+
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Platinum+${i+1}`));
@@ -22,6 +29,7 @@ interface LogoGridProps {
   fullUrls?: boolean;
   hideCaption?: boolean;
   logoOnly?: boolean;
+  logoUrls?: Record<string, string>;
 }
 
 const formatAlt = (nameOrFilename: string) => {
@@ -39,48 +47,88 @@ const formatAlt = (nameOrFilename: string) => {
     .join(" ");
 };
 
-const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly }: LogoGridProps) => (
+const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: LogoGridProps) => (
   <div className="mb-16 w-full">
     <h3 className="text-2xl font-bold text-foreground text-center mb-8">{title}</h3>
     <div className="max-w-6xl mx-auto">
       {logoOnly ? (
         <div className="flex flex-wrap items-center justify-center gap-4 px-4 sm:gap-6">
-          {logos.map((logo, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-3 sm:p-6 flex items-center justify-center w-[calc(50%-0.5rem)] sm:w-56 h-28 sm:h-44 shadow-sm"
-            >
+          {logos.map((logo, index) => {
+            const logoSrc = fullUrls ? logo : `${baseUrl}${logo}`;
+            const logoUrl = logoUrls?.[logo];
+            const imageElement = (
               <img
-                src={fullUrls ? logo : `${baseUrl}${logo}`}
+                src={logoSrc}
                 alt={formatAlt(fullUrls ? logo : logo)}
                 title={formatAlt(fullUrls ? logo : logo)}
                 loading="eager"
                 decoding="async"
                 className="max-w-[90%] max-h-[80%] object-contain"
               />
-            </div>
-          ))}
+            );
+
+            return (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-3 sm:p-6 flex items-center justify-center w-[calc(50%-0.5rem)] sm:w-56 h-28 sm:h-44 shadow-sm"
+              >
+                {logoUrl ? (
+                  <a
+                    href={logoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-full h-full hover:opacity-80 transition-opacity"
+                    aria-label={`Visit ${formatAlt(fullUrls ? logo : logo)} website`}
+                  >
+                    {imageElement}
+                  </a>
+                ) : (
+                  imageElement
+                )}
+              </div>
+            );
+          })}
         </div>
       ) : (
         <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center justify-center">
-          {logos.map((logo, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-4 sm:p-6 flex flex-col items-center justify-center w-full sm:w-64 h-36 sm:h-44 shadow-sm hover:shadow-md transition-transform hover:-translate-y-1"
-            >
+          {logos.map((logo, index) => {
+            const logoSrc = fullUrls ? logo : `${baseUrl}${logo}`;
+            const logoUrl = logoUrls?.[logo];
+            const imageElement = (
               <img
-                src={fullUrls ? logo : `${baseUrl}${logo}`}
+                src={logoSrc}
                 alt={formatAlt(fullUrls ? logo : logo)}
                 title={formatAlt(fullUrls ? logo : logo)}
                 loading="eager"
                 decoding="async"
                 className="max-w-[85%] max-h-[60%] object-contain"
               />
-              {!hideCaption && (
-                <div className="mt-3 text-sm text-muted-foreground text-center">{formatAlt(fullUrls ? logo : logo)}</div>
-              )}
-            </div>
-          ))}
+            );
+
+            return (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-4 sm:p-6 flex flex-col items-center justify-center w-full sm:w-64 h-36 sm:h-44 shadow-sm hover:shadow-md transition-transform hover:-translate-y-1"
+              >
+                {logoUrl ? (
+                  <a
+                    href={logoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center hover:opacity-80 transition-opacity"
+                    aria-label={`Visit ${formatAlt(fullUrls ? logo : logo)} website`}
+                  >
+                    {imageElement}
+                  </a>
+                ) : (
+                  imageElement
+                )}
+                {!hideCaption && (
+                  <div className="mt-3 text-sm text-muted-foreground text-center">{formatAlt(fullUrls ? logo : logo)}</div>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>
@@ -98,8 +146,8 @@ const Exhibitors = () => {
           <p className="text-center text-muted-foreground">We gratefully acknowledge the organisations supporting Monie Fest — supporting partners and sponsors are featured below.</p>
         </div>
 
-        <LogoGrid title="Co-organisers" logos={coOrganizers} fullUrls hideCaption logoOnly />
-        <LogoGrid title="Strategic Partner" logos={strategicPartners} fullUrls hideCaption logoOnly />
+        <LogoGrid title="Co-organisers" logos={coOrganizers} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
+        <LogoGrid title="Strategic Partner" logos={strategicPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         {!showOnlyCoOrganisers && (
           <>
             <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls />

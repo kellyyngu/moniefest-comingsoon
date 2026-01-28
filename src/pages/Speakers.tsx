@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ComingSoon from "@/components/ComingSoon";
 import { useEffect, useState } from "react";
 // Background served from public/optimized (WebP)
-const heroBg = '/optimized/banner_bg.webp';
+const heroBg = '/optimized/speakerBanner.webp';
 
 type Speaker = { name: string; title?: string; company?: string };
 
