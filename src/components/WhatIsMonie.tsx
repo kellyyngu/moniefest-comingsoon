@@ -21,7 +21,7 @@ export default function WhatIsMonie() {
             src={heroBg}
             alt=""
             className="absolute inset-0 w-full h-full object-cover object-left"
-            loading="lazy"
+            loading="eager"
             decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/65" />

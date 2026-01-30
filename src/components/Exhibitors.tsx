@@ -18,6 +18,8 @@ const logoUrls: Record<string, string> = {
   [foodieLogo]: 'https://foodiemedia.com/',
   [spireLogo]: 'https://www.financelang.com',
   [benchxcapitalLogo]: 'https://www.benchxcapital.com/',
+  [lunoLogo]: 'https://www.luno.com',
+  '/versa.svg': 'https://versa.com.my/',
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
@@ -157,8 +159,8 @@ const Exhibitors = () => {
 
         <LogoGrid title="Co-organisers" logos={coOrganizers} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Strategic Partner" logos={strategicPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
-        <LogoGrid title="Platinum Sponsors" logos={platinumSponsors} fullUrls hideCaption logoOnly />
-        <LogoGrid title="Gold Sponsors" logos={goldSponsors} fullUrls hideCaption logoOnly />
+        <LogoGrid title="Platinum Sponsors" logos={platinumSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
+        <LogoGrid title="Gold Sponsors" logos={goldSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly />
         <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly />
         {showAllSponsors && (

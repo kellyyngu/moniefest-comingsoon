@@ -30,7 +30,7 @@ const PastEvents = () => {
             <img
               src={featured}
               alt="Featured past event"
-              loading="lazy"
+              loading="eager"
               decoding="async"
               className="w-full h-80 md:h-[520px] object-cover transition-transform duration-500 hover:scale-105"
             />
@@ -48,7 +48,7 @@ const PastEvents = () => {
                 <img
                   src={photo}
                   alt={`Past event ${i + 2}`}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="w-full h-40 object-cover transition-transform duration-400 hover:scale-105"
                 />
@@ -66,7 +66,7 @@ const PastEvents = () => {
                 <img
                   src={photo}
                   alt={`Past event ${i + 4}`}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="w-full h-28 object-cover transition-transform duration-300 hover:scale-105"
                 />
