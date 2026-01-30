@@ -61,14 +61,6 @@ const ImagePreloader = () => {
       document.head.appendChild(link);
     });
 
-    criticalImages.forEach((src) => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = src;
-      link.type = src.endsWith('.webp') ? 'image/webp' : 'image/svg+xml';
-      document.head.appendChild(link);
-    });
   }, []);
 
   return null;
