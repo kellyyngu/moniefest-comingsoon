@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://via.placeholder.com" crossorigin />
     <link rel="dns-prefetch" href="https://via.placeholder.com" />
 
-    <!-- Preload and set favicon early so the tab icon appears immediately -->
-    <link rel="preload" as="image" href="/monie.ico?v=3" type="image/x-icon" fetchpriority="high" />
-    <link rel="preload" as="image" href="/monie-black.svg?v=4" type="image/svg+xml" fetchpriority="high" />
+    <!-- Set favicon early but avoid preloading it (preloading favicons often triggers unused-preload warnings).
+         Keep explicit icon links so browser fetches them when parsing the head. -->
     <link rel="icon" href="/monie.ico?v=3" type="image/x-icon" />
     <link rel="icon" href="/monie-black.svg?v=4" type="image/svg+xml" />
     <link rel="shortcut icon" href="/monie.ico?v=3" />
