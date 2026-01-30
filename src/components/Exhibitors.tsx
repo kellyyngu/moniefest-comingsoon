@@ -23,7 +23,7 @@ const logoUrls: Record<string, string> = {
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
-const goldSponsors = ['/versa.svg', '/amInvestmentBank.svg'];
+const goldSponsors = ['/versa.svg'];
 const supportingPartners = [
   societyMalaysiaLogo,
 ];
