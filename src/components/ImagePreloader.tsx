@@ -60,7 +60,6 @@ const ImagePreloader = () => {
       link.type = src.endsWith('.webp') ? 'image/webp' : 'image/svg+xml';
       document.head.appendChild(link);
     });
-
   }, []);
 
   return null;
