@@ -231,7 +231,7 @@ const SessionRow = ({ session, onOpen }: { session: Session; onOpen: (s: Session
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onOpen(session); }}
     >
       <div className={`flex gap-6 ${isDayEnd ? 'items-center' : 'items-start'}`}>
-      <div className="w-28 flex-shrink-0">
+      <div className="w-16 md:w-28 flex-shrink-0">
         <div className="bg-primary/10 text-primary px-3 py-2 rounded-md text-sm font-medium text-center">
           {session.time}
         </div>
@@ -379,7 +379,7 @@ const Programme = () => {
           {/* Schedule Table */}
           <div className="mx-auto bg-card rounded-lg overflow-hidden shadow-lg px-2 sm:px-0">
             {/* Table Header */}
-            <div className="grid grid-cols-[100px_1fr] md:grid-cols-[120px_1fr] bg-gradient-to-r from-primary to-primary/80">
+            <div className="grid grid-cols-[64px_1fr] md:grid-cols-[120px_1fr] bg-gradient-to-r from-primary to-primary/80">
               <div className="px-4 py-3 text-black font-bold">Time</div>
               <div className="px-4 py-3 text-black font-bold text-center">Topic</div>
             </div>
