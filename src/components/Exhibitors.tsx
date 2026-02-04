@@ -10,6 +10,7 @@ const moomooLogo = '/optimized/moomoo.webp';
 const webullLogo = '/optimized/webull.webp';
 const microleapLogo = '/optimized/microleap.webp';
 const societyMalaysiaLogo = '/society-malaysia.svg';
+const fundingSocietiesLogo = '/optimized/fundingSocieties.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -18,7 +19,9 @@ const logoUrls: Record<string, string> = {
   [foodieLogo]: 'https://foodiemedia.com/',
   [spireLogo]: 'https://www.financelang.com',
   [benchxcapitalLogo]: 'https://www.benchxcapital.com/',
+  [microleapLogo]: 'http://www.microleapasia.com',
   [lunoLogo]: 'https://www.luno.com',
+  [fundingSocietiesLogo]: 'https://fundingsocieties.com/',
   '/versa.svg': 'https://versa.com.my/',
 };
 
@@ -29,7 +32,7 @@ const goldSponsors = ['/versa.svg'];
 const supportingPartners = [
   societyMalaysiaLogo,
 ];
-const silverSponsors = [microleapLogo];
+const silverSponsors = [fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 
 const baseUrl = "";
@@ -161,7 +164,7 @@ const Exhibitors = () => {
         <LogoGrid title="Strategic Partner" logos={strategicPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Platinum Sponsors" logos={platinumSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Gold Sponsors" logos={goldSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
-        <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly />
+        <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls}/>
         <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly />
         {showAllSponsors && (
           <>

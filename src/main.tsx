@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import { preloadImages } from "./lib/imagePreload";
 
 // Ensure favicon is loaded
 const setFavicon = () => {
@@ -14,5 +15,10 @@ const setFavicon = () => {
 };
 
 setFavicon();
+
+// Start preloading critical images immediately (non-blocking)
+preloadImages().catch(() => {
+  /* swallow errors */
+});
 
 createRoot(document.getElementById("root")!).render(<App />);
