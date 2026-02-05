@@ -195,8 +195,7 @@ const engagementStageScheduleDay2: Session[] = [
   { time: "17:00 - 17:30", title: "Investment Talk 9", description: "", speakers: [{ name: "Exhibitor N", title: "Exhibitor", company: "" }] },
   { time: "17:30 - 18:00", },
   { time: "18:00 - 18:30", },
-  { time: "18:30 - 19:00", title: "Wrap: Sunset Wrap & Networking — Share, Connect, Celebrate", description: "Join for a relaxed wrap: share takeaways, meet speakers, and explore follow-up opportunities. Light refreshments served." },
-  { time: "19:00 - 19:10", title: "Day 2 End" },
+  { time: "18:30 - 18:40", title: "Wrap" },
 ];
 
 const SpeakerCard = ({ speaker }: { speaker: Speaker }) => {
