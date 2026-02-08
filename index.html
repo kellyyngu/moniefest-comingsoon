@@ -11,9 +11,11 @@
 
     <!-- Set favicon early but avoid preloading it (preloading favicons often triggers unused-preload warnings).
          Keep explicit icon links so browser fetches them when parsing the head. -->
-    <link rel="icon" href="/monie.ico?v=3" type="image/x-icon" />
+    <link rel="icon" href="/monie.ico?v=4" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=4" />
     <link rel="icon" href="/monie-black.svg?v=4" type="image/svg+xml" />
-    <link rel="shortcut icon" href="/monie.ico?v=3" />
+    <link rel="shortcut icon" href="/monie.ico?v=4" />
 
     <!-- Preload critical images for immediate visibility -->
     <link rel="preload" as="image" href="/optimized/mitec.webp" type="image/webp" fetchpriority="high" />
@@ -40,9 +42,11 @@
     <link rel="canonical" href="https://www.monie.my/" />
     <!-- Add a version query to force browsers/CDNs to fetch the updated favicon after deploy -->
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/x-icon" href="/monie.ico?v=3" />
-    <link rel="icon" type="image/svg+xml" href="/monie-black.svg?v=4" />
-    <link rel="apple-touch-icon" href="/monie-black.svg?v=4" />
+    <link rel="icon" type="image/x-icon" href="/monie.ico?v=4" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png?v=4" />
+    <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Structured data (JSON-LD) - update the URL fields to your site domain -->
     <script type="application/ld+json">
