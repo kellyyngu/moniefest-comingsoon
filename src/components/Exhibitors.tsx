@@ -32,8 +32,8 @@ const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
 const goldSponsors = ['/versa.svg'];
 const supportingPartners = [
-  fimmLogo,
   societyMalaysiaLogo,
+  fimmLogo,
 ];
 const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
