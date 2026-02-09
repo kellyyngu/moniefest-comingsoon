@@ -9,6 +9,7 @@ const lunoLogo = '/optimized/luno.webp';
 const moomooLogo = '/optimized/moomoo.webp';
 const webullLogo = '/optimized/webull.webp';
 const microleapLogo = '/optimized/microleap.webp';
+const fimmLogo = '/optimized/FIMM.webp';
 const societyMalaysiaLogo = '/society-malaysia.svg';
 const fundingSocietiesLogo = '/optimized/fundingSocieties.svg';
 
@@ -20,8 +21,9 @@ const logoUrls: Record<string, string> = {
   [spireLogo]: 'https://www.financelang.com',
   [benchxcapitalLogo]: 'https://www.benchxcapital.com/',
   [microleapLogo]: 'http://www.microleapasia.com',
+  [fimmLogo]: 'https://www.fimm.com.my/',
   [lunoLogo]: 'https://www.luno.com',
-  [fundingSocietiesLogo]: 'https://fundingsocieties.com/',
+  [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
   '/versa.svg': 'https://versa.com.my/',
 };
 
@@ -30,9 +32,10 @@ const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
 const goldSponsors = ['/versa.svg'];
 const supportingPartners = [
+  fimmLogo,
   societyMalaysiaLogo,
 ];
-const silverSponsors = [fundingSocietiesLogo, microleapLogo];
+const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 
 const baseUrl = "";
@@ -52,7 +55,7 @@ const formatAlt = (nameOrFilename: string) => {
   const base = nameOrFilename.split("?")[0].split("/").pop()?.split("\\").pop() || nameOrFilename;
   const cleaned = base
     .replace(/^img[_-]?/i, "")
-    .replace(/\.(jpg|jpeg|png|svg)$/i, "")
+    .replace(/\.(jpg|jpeg|png|svg|webp)$/i, "")
     .replace(/[_-]+/g, " ")
     .trim();
   return cleaned
@@ -165,7 +168,7 @@ const Exhibitors = () => {
         <LogoGrid title="Platinum Sponsors" logos={platinumSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Gold Sponsors" logos={goldSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls}/>
-        <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly />
+        <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         {showAllSponsors && (
           <>
             <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls />
