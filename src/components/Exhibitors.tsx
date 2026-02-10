@@ -10,8 +10,10 @@ const moomooLogo = '/optimized/moomoo.webp';
 const webullLogo = '/optimized/webull.webp';
 const microleapLogo = '/optimized/microleap.webp';
 const fimmLogo = '/optimized/FIMM.webp';
+const fsmOneLogo = '/optimized/FSM_One.png';
 const societyMalaysiaLogo = '/society-malaysia.svg';
 const fundingSocietiesLogo = '/optimized/fundingSocieties.svg';
+const spgLogo = '/optimized/spg_dji.png';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -23,13 +25,14 @@ const logoUrls: Record<string, string> = {
   [microleapLogo]: 'http://www.microleapasia.com',
   [fimmLogo]: 'https://www.fimm.com.my/',
   [lunoLogo]: 'https://www.luno.com',
+  [spgLogo]: 'http://www.spglobal.com/spdji/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
   '/versa.svg': 'https://versa.com.my/',
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
-const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
+const platinumSponsors = [ gambitTrusteesLogo, fsmOneLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
 const goldSponsors = ['/versa.svg'];
 const supportingPartners = [
   societyMalaysiaLogo,
@@ -37,6 +40,7 @@ const supportingPartners = [
 ];
 const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
+const knowledgePartners = [spgLogo];
 
 const baseUrl = "";
 
@@ -169,6 +173,7 @@ const Exhibitors = () => {
         <LogoGrid title="Gold Sponsors" logos={goldSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls}/>
         <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
+        <LogoGrid title="Knowledge Partners" logos={knowledgePartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         {showAllSponsors && (
           <>
             <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls />

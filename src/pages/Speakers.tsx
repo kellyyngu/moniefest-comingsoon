@@ -1,32 +1,38 @@
 
 import Footer from "@/components/Footer";
-import ComingSoon from "@/components/ComingSoon";
 import { useEffect, useState } from "react";
 // Background served from public/optimized (WebP)
 const heroBg = '/optimized/speakerBanner.webp';
 
-type Speaker = { name: string; title?: string; company?: string };
+type Speaker = { name: string; title?: string; company?: string; photo?: string; nowrapName?: boolean };
 
 const speakers: Speaker[] = [
-  { name: "Speaker 1", title: "Panelist", company: "Organization" },
-  { name: "Speaker 2", title: "Panelist", company: "Organization" },
-  { name: "Speaker 3", title: "Panelist", company: "Organization" },
-  { name: "Speaker 4", title: "Panelist", company: "Organization" },
-  { name: "Speaker 5", title: "Panelist", company: "Organization" },
-  { name: "Speaker 6", title: "Panelist", company: "Organization" },
-  { name: "Speaker 7", title: "Panelist", company: "Organization" },
-  { name: "Speaker 8", title: "Panelist", company: "Organization" },
+  { name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: '/optimized/pinnyang.webp' },
+  { name: "George Poh, CFP®", title: "Chief Executive Officer", company: "Spire Digital Sdn. Bhd.", photo: '/optimized/george.webp', nowrapName: true },
+  { name: "Jeroni Khoo", title: "Deputy Country Manager", company: "Luno Malaysia", photo: '/optimized/jeroni.jpg' },
+  { name: "Sean Freer", title: "Director, Global Exchange Indices", company: "S&P Dow Jones Indices (S&P DJI)", photo: '/optimized/seanFreer.jpg' },
 ];
 
 const SpeakerCard = ({ s }: { s: Speaker }) => (
-  <div className="w-full max-w-xs bg-card rounded-lg p-5 shadow hover:shadow-md transition transform hover:-translate-y-1">
-    <div className="mx-auto w-28 h-28 rounded-full bg-gradient-to-br from-navy-light to-navy-deep flex items-center justify-center text-primary-foreground font-bold text-2xl mb-4">
-      {s.name.split(" ").map((n) => n[0]).slice(0,2).join("")}
+  <div className="w-full max-w-sm md:max-w-md bg-card rounded-lg p-5 md:p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col items-center text-center md:h-96 mx-2 overflow-hidden">
+    {/* Avatar area - responsive size (smaller on mobile) */}
+    <div className="w-full flex-none flex items-center justify-center pt-3 md:pt-4">
+      <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-muted flex items-center justify-center">
+        {s.photo ? (
+          <img src={s.photo} alt={s.name} className="w-full h-full object-cover object-center" />
+        ) : (
+          <span className="text-primary-foreground font-bold text-2xl">{s.name.split(" ").map((n) => n[0]).slice(0,2).join("")}</span>
+        )}
+      </div>
     </div>
-    <div className="text-center">
-      <p className="font-semibold text-navy-deep text-lg">{s.name}</p>
-      <p className="text-sm text-primary italic mt-1">{s.title}</p>
-      <p className="text-sm text-foreground mt-1">{s.company}</p>
+
+    {/* Text area - fixed block so names/titles/companies align */}
+    <div className="flex-1 w-full flex items-center justify-center px-4">
+      <div className="w-full max-w-xs md:max-w-sm text-center">
+        <p className={`font-semibold text-base md:text-xl text-navy-deep mb-1 ${s.nowrapName ? 'md:whitespace-nowrap break-words' : 'break-words'}`}>{s.name}</p>
+        {s.title && <p className="text-xs md:text-sm text-primary italic mb-1 leading-tight">{s.title}</p>}
+        {s.company && <p className="text-sm md:text-sm text-foreground">{s.company}</p>}
+      </div>
     </div>
   </div>
 );
@@ -76,8 +82,31 @@ const SpeakersPage = () => {
       </section>
 
       <main className="pt-8 pb-16">
-        <ComingSoon title="Speakers — Coming Soon" description="We're finalising the speaker line-up. Check back soon for confirmed speakers and bios." />
-      </main>
+            <div className="container mx-auto px-4">
+              <div className="flex items-center justify-end gap-2 mb-6 md:hidden">
+                <div className="inline-flex items-center gap-2">
+                  <button
+                    aria-label="One speaker per row"
+                    onClick={() => setMobileCols(1)}
+                    className={`px-3 py-1 rounded-md text-sm border ${mobileCols === 1 ? 'bg-primary text-black font-semibold border-primary' : 'border-white/10 text-white bg-transparent hover:bg-white/5'}`}>
+                    1 per row
+                  </button>
+                  <button
+                    aria-label="Two speakers per row"
+                    onClick={() => setMobileCols(2)}
+                    className={`px-3 py-1 rounded-md text-sm border ${mobileCols === 2 ? 'bg-primary text-black font-semibold border-primary' : 'border-white/10 text-white bg-transparent hover:bg-white/5'}`}>
+                    2 per row
+                  </button>
+                </div>
+              </div>
+
+              <div className={`max-w-5xl mx-auto grid ${gridColsClass} gap-8 items-start justify-items-center`}>
+                {speakers.map((s, i) => (
+                  <SpeakerCard key={i} s={s} />
+                ))}
+              </div>
+            </div>
+          </main>
 
       <Footer />
     </div>

@@ -85,13 +85,13 @@ const Footer = () => {
                   <h4 className="text-primary mb-3 whitespace-nowrap">Monie</h4>
                   <ul className="space-y-2 md:space-y-2 text-sm md:text-base leading-normal">
                     <li>
-                      <a className="block text-white hover:text-white" href="#">Facebook</a>
+                      <a className="block text-white hover:text-white" href="https://www.facebook.com/people/Monie-Malaysia/61586002482832/" target="_blank" rel="noopener noreferrer">Facebook</a>
                     </li>
                     <li>
-                      <a className="block text-white hover:text-white" href="#">Instagram</a>
+                      <a className="block text-white hover:text-white" href="https://www.instagram.com/monie.my" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </li>
                     <li>
-                      <a className="block text-white hover:text-white" href="#">TikTok</a>
+                      <a className="block text-white hover:text-white" href="https://www.tiktok.com/@monie.my" target="_blank" rel="noopener noreferrer">TikTok</a>
                     </li>
                   </ul>
                 </div>
