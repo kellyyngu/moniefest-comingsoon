@@ -14,13 +14,13 @@ const speakers: Speaker[] = [
 ];
 
 const SpeakerCard = ({ s }: { s: Speaker }) => (
-  <div className="w-full max-w-sm md:max-w-md bg-card rounded-lg p-5 md:p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col items-center text-center md:h-96 mx-2 overflow-hidden">
+  <div className="w-full max-w-sm md:max-w-md bg-card rounded-lg p-5 md:p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col items-center text-center h-80 md:h-96 mx-2 overflow-hidden">
     {/* Avatar area - responsive size (smaller on mobile) */}
     <div className="w-full flex-none flex items-center justify-center pt-3 md:pt-4">
       <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-muted flex items-center justify-center">
-        {s.photo ? (
-          <img src={s.photo} alt={s.name} className="w-full h-full object-cover object-center" />
-        ) : (
+          {s.photo ? (
+            <img src={s.photo} alt={s.name} loading="eager" decoding="async" className="w-full h-full object-cover object-center" />
+          ) : (
           <span className="text-primary-foreground font-bold text-2xl">{s.name.split(" ").map((n) => n[0]).slice(0,2).join("")}</span>
         )}
       </div>
@@ -29,7 +29,7 @@ const SpeakerCard = ({ s }: { s: Speaker }) => (
     {/* Text area - fixed block so names/titles/companies align */}
     <div className="flex-1 w-full flex items-center justify-center px-4">
       <div className="w-full max-w-xs md:max-w-sm text-center">
-        <p className={`font-semibold text-base md:text-xl text-navy-deep mb-1 ${s.nowrapName ? 'md:whitespace-nowrap break-words' : 'break-words'}`}>{s.name}</p>
+          <p className={`font-semibold text-base md:text-xl text-navy-deep mb-1 ${s.nowrapName ? 'md:whitespace-nowrap break-words' : 'break-words'}`}>{s.name}</p>
         {s.title && <p className="text-xs md:text-sm text-primary italic mb-1 leading-tight">{s.title}</p>}
         {s.company && <p className="text-sm md:text-sm text-foreground">{s.company}</p>}
       </div>
@@ -100,7 +100,7 @@ const SpeakersPage = () => {
                 </div>
               </div>
 
-              <div className={`max-w-5xl mx-auto grid ${gridColsClass} gap-8 items-start justify-items-center`}>
+              <div className={`max-w-5xl mx-auto grid ${gridColsClass} gap-8 items-stretch justify-items-center`}>
                 {speakers.map((s, i) => (
                   <SpeakerCard key={i} s={s} />
                 ))}
