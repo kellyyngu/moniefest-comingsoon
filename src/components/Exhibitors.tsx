@@ -11,6 +11,7 @@ const webullLogo = '/optimized/webull.webp';
 const microleapLogo = '/optimized/microleap.webp';
 const fimmLogo = '/optimized/FIMM.webp';
 const fsmOneLogo = '/optimized/FSM_One.png';
+const phillipLogo = '/optimized/phillipCapital.png';
 const societyMalaysiaLogo = '/society-malaysia.svg';
 const fundingSocietiesLogo = '/optimized/fundingSocieties.svg';
 const spgLogo = '/optimized/spg_dji.png';
@@ -26,6 +27,7 @@ const logoUrls: Record<string, string> = {
   [fimmLogo]: 'https://www.fimm.com.my/',
   [lunoLogo]: 'https://www.luno.com',
   [spgLogo]: 'http://www.spglobal.com/spdji/',
+  [phillipLogo]: 'https://www.phillip.com.my/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
   '/versa.svg': 'https://versa.com.my/',
 };
@@ -38,7 +40,7 @@ const supportingPartners = [
   societyMalaysiaLogo,
   fimmLogo,
 ];
-const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo];
+const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo, phillipLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 // const knowledgePartners = [spgLogo];
 
