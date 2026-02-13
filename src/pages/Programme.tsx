@@ -491,7 +491,7 @@ const Programme = () => {
                     <div className="mt-3 text-muted-foreground text-sm leading-relaxed">
                       {activeSpeaker.bio ? (
                         activeSpeaker.bio.split(/\n\s*\n/).map((para, idx) => (
-                            <p key={idx} className="mb-2 text-left">{para}</p>
+                            <p key={idx} className="mb-2 text-justify">{para}</p>
                           ))
                       ) : (
                         activeSpeaker.name === 'Datuk Clifford Hii' ? null : (
