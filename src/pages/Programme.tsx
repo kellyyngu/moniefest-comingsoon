@@ -3,12 +3,27 @@ import Footer from "@/components/Footer";
 const heroBg = "/optimized/banner_bg.webp";
 const pinnyang = "/optimized/pinnyang.webp";
 const george = "/optimized/george.webp";
+const jeroni = "/optimized/jeroni.jpg";
+const liewBio = `Liew Chin Tong is the Deputy Minister of Finance of Malaysia, appointed on 16 December 2025. He is currently the Member of Parliament for Iskandar Puteri, after being elected on 19 November 2022. He is also the State Assemblyperson for Perling, Johor.
+
+While serving as the Deputy Minister of Investment, Trade and Industry from December 2022 to December 2025, he worked closely with Minister Tengku Zafrul Aziz, with the New Industrial Master Plan (NIMP 2030) as the guiding document, to shape the strategic directions of Malaysia’s industrial development, especially for the semiconductor, iron and steel, and automotive sectors.
+
+He was a Senator in Dewan Negara from 2018 to 2021 and served as Deputy Minister of Defence from July 2018 to February 2020. He was first elected Member of Parliament for Bukit Bendera (2008-2013) and was subsequently the Member of Parliament for Kluang (2013-2018).
+
+Since 1999, Chin Tong has served the Democratic Action Party (DAP) in various capacities and is now a member of its Central Executive Committee, serving as the Strategic Director.
+
+Chin Tong graduated with a degree in Political Science and an honours degree in Asian Studies from the Australian National University and holds an International Masters in Regional Integration from the Asia-Europe Institute, University of Malaya.
+
+Chin Tong was the Chairman of Research for Social Advancement (REFSA) from 2012 to May 2025. Prior to that, he was the Executive Director of Penang Institute from 2009-2012. He was also formerly a Visiting Senior Fellow at the Institute of Southeast Asian Studies (ISEAS), Singapore.
+
+He recently published the book Second Takeoff: Strategies for Malaysia’s Economic Resurgence which outlined his vision for the emergence of Malaysia as a middle-class society.`;
 
 type Speaker = {
   name: string;
   title: string;
   company: string;
   photo?: string;
+  bio?: string;
 };
 
 type Session = {
@@ -26,25 +41,75 @@ type Session = {
 };
 
 const mainStageSchedule: Session[] = [
-  { time: "11:00 - 11:15", title: "Opening Speech", description: "", speakers: [{ name: "Guest of Honour", title: "Guest of Honour", company: "" }] },
-  { time: "11:15 - 11:30", title: "Monie Introduction", description: "", speakers: [{ name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang }] },
-  { time: "11:30 - 11:45", title: "Opening Ceremony", description: "", speakers: [
-    { name: "Guest of Honour", title: "Guest of Honour", company: "" },
-    { name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang },
-    { name: "George Poh, CFP®", title: "Chief Executive Officer", company: "Spire Digital Sdn. Bhd.", photo: george },
-  ] },
+  { time: "09:40 - 09:45", title: "Welcoming Address", description: "", speakers: [{ name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang, bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.` }] },
+  { time: "09:45 - 09:55", title: "Industrial Address", description: "" },
+  { time: "09:55 - 10:05", title: "Opening Address", description: "", speakers: [{ name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', bio: liewBio }] },
+  { time: "10:05 - 10:10", title: "Official Launch", description: "", speakers: [
+      { name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', bio: liewBio },
+      { name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang, bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.` },
+      {
+        name: "George Poh, CFP®",
+        title: "Chief Executive Officer",
+        company: "Spire Digital Sdn. Bhd.",
+        photo: george,
+        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
+
+Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
+
+Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
+
+At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`
+      },
+    ] },
+  { time: "10:10 - 11:00", title: "Event Walkabout & Press Conference", description: "", speakers: [
+      { name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', bio: liewBio },
+      { name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang, bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.` },
+      {
+        name: "George Poh, CFP®",
+        title: "Chief Executive Officer",
+        company: "Spire Digital Sdn. Bhd.",
+        photo: george,
+        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
+
+Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
+
+Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
+
+At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`
+      },
+    ] },
+  { time: "11:00 - 11:45"},
   { time: "11:45 - 12:00", title: "Break", description: "" },
-  { time: "12:45 - 13:30", isPanel: true, panelNumber: 1, panelTitle: "Malaysia's Economic Growth Outlook for 2H 2026", bullets: [], speakers: [
-      { name: "Exhibitor A & Panelists", title: "Exhibitor & Panelists", company: "" },
-    ]},
-  { time: "13:30 - 14:15", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
+  { time: "12:00 - 12:45", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
+  { time: "12:45 - 13:30", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
+  { time: "13:30 - 14:15", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor C", title: "Exhibitor", company: "" }] },
   { time: "14:15 - 15:00", isPanel: true, panelNumber: 2, panelTitle: "How Government Policies Quietly Shape Your Personal Finances", bullets: [], speakers: [
-      { name: "Exhibitor C & Panelists", title: "Exhibitor & Panelists", company: "" },
+      { name: "Exhibitor D & Panelists", title: "Exhibitor & Panelists", company: "" },
     ]},
-  { time: "15:00 - 15:45", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor D", title: "Exhibitor", company: "" }] },
+  { time: "15:00 - 15:45", title: "Investment Talk", description: "", speakers: [{ name: "Jeroni Khoo", title: "Deputy Country Manager", company: "Luno Malaysia", photo: jeroni, bio: `Jeroni Khoo is the Deputy Country Manager at Luno Malaysia, a leading digital asset
+exchange in Malaysia. He supports the Country Manager in ensuring regulatory compliance,
+overseeing daily operations, and driving cross-functional projects that align with the
+company’s strategic objectives. In this role, he also heads community engagement
+initiatives, cultivates relationships with key industry influencers, and spearheads localised
+marketing and promotional campaigns in collaboration with strategic partners.
+
+Jeroni joined Luno in 2022 as the Partnerships & Affiliates Lead, where he played a pivotal
+role in driving customer acquisition through high-impact brand partnerships with
+e-commerce platforms and mass-market brands. He also managed Luno’s local affiliate
+program, successfully expanding the network of affiliates to enhance the company’s
+referral program.
+
+With a background in local and international Fast-Moving Consumer Goods companies,
+Jeroni brings extensive experience in brand management and marketing strategy. His
+expertise in developing and executing data-driven marketing initiatives has contributed to
+brand growth and increased market share in highly competitive industries.
+
+Jeroni holds a Bachelor's Degree in Business & Commerce, with a double major in
+Marketing and Economics, from Monash University.` }] },
   { time: "15:45 - 16:00", title: "Lucky Draw — Win a Xiaomi 55' TV!", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=Xiaomi+55%27+TV", description: "Stand a chance to win a Xiaomi 55' Smart TV — stay till the draw and keep your ticket handy!" },
-  { time: "16:00 - 16:45", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor E", title: "Exhibitor", company: "" }] },
+  { time: "16:00 - 16:45", title: "Investment Talk", description: "", speakers: [{ name: "microLEAP", title: "", company: "", photo: '/optimized/microleap.webp' }] },
   { time: "16:45 - 17:30", isPanel: true, panelNumber: 3, panelTitle: "Can Crypto Coexist With a Boring, Stable Financial Plan?", bullets: [], speakers: [
+      { name: "Datuk Clifford Hii", title: "Chief Executive Officer", company: "Gambit Group" },
     ], description: "" },
   { time: "17:30 - 18:15", title: "Investment Talk 4", description: "", speakers: [{ name: "Exhibitor F", title: "Exhibitor", company: "" }] },
   { time: "18:15 - 19:00", isPanel: true, panelNumber: 4, panelTitle: "When Passion Meets Planning: How to Turn Dreams into Reality", bullets: [], speakers: [
@@ -198,14 +263,32 @@ const engagementStageScheduleDay2: Session[] = [
   { time: "18:30 - 18:40", title: "Wrap" },
 ];
 
-const SpeakerCard = ({ speaker }: { speaker: Speaker }) => {
+const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Speaker) => void }) => {
   const displayName = speaker?.name || "TBD Speaker";
   const initials = displayName.split(" ").map((n) => n[0]).slice(0, 2).join("");
+  const clickable = !!onClick;
+  const containerProps: any = {};
+  if (clickable) {
+    containerProps.role = 'button';
+    containerProps.tabIndex = 0;
+    containerProps.onClick = (e: any) => { e.stopPropagation(); onClick && onClick(speaker); };
+    containerProps.onKeyDown = (e: any) => { if (e.key === 'Enter' || e.key === ' ') { e.stopPropagation(); onClick && onClick(speaker); } };
+  }
+
+  const isLogo = !!(speaker.photo && speaker.photo.toLowerCase().includes('microleap')) || (speaker.name || '').toLowerCase().includes('microleap');
+  const avatarWrapperClass = isLogo
+    ? 'w-14 h-14 rounded-md overflow-hidden bg-transparent flex items-center justify-center text-primary-foreground font-bold text-lg'
+    : 'w-14 h-14 rounded-full overflow-hidden bg-gradient-to-br from-navy-light to-navy-deep flex items-center justify-center text-primary-foreground font-bold text-lg';
+  const imgClass = isLogo ? 'w-full h-full object-contain' : 'w-full h-full object-cover object-top';
+
   return (
-    <div className="flex items-center gap-3 my-2">
-      <div className="w-14 h-14 rounded-full overflow-hidden bg-gradient-to-br from-navy-light to-navy-deep flex items-center justify-center text-primary-foreground font-bold text-lg">
-        {speaker.photo ? (
-          <img src={speaker.photo} alt={displayName} className="w-full h-full object-cover" />
+    <div
+      className={`flex items-center gap-3 my-2 ${clickable ? 'cursor-pointer' : ''}`}
+      {...containerProps}
+    >
+      <div className={avatarWrapperClass}>
+          {speaker.photo ? (
+          <img src={speaker.photo} alt={displayName} className={imgClass} />
         ) : (
           <div className="w-full h-full flex items-center justify-center">{initials}</div>
         )}
@@ -218,16 +301,12 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => {
     </div>
   );
 };
-const SessionRow = ({ session, onOpen }: { session: Session; onOpen: (s: Session) => void }) => {
+const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerClick?: (sp: Speaker) => void }) => {
   const isDayEnd = !!(session.title && /Day\s*\d+\s*End/i.test(session.title));
   const isInvestmentTalk = !!(session.title && session.title.startsWith('Investment Talk'));
   return (
     <div
-      className="border-b border-border last:border-b-0 py-4 cursor-pointer"
-      role="button"
-      tabIndex={0}
-      onClick={() => onOpen(session)}
-      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onOpen(session); }}
+      className="border-b border-border last:border-b-0 py-4"
     >
       <div className={`flex gap-6 ${isDayEnd ? 'items-center' : 'items-start'}`}>
       <div className="w-16 md:w-28 flex-shrink-0">
@@ -239,7 +318,7 @@ const SessionRow = ({ session, onOpen }: { session: Session; onOpen: (s: Session
       <div className="flex-1 pr-4">
         {session.isPanel ? (
           <>
-            <p className="text-muted-foreground font-medium mb-1 text-center">Panel Discussion #{session.panelNumber}</p>
+            <p className="text-muted-foreground font-medium mb-1 text-center">Panel Discussion</p>
             <h3 className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500 mb-2 text-center text-lg md:text-xl">{session.panelTitle}</h3>
           </>
         ) : session.title && (
@@ -262,11 +341,15 @@ const SessionRow = ({ session, onOpen }: { session: Session; onOpen: (s: Session
 
         {session.speakers && session.speakers.length > 0 && (
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-            {session.speakers.map((speaker, i) => (
-              <div key={i} className="p-3 bg-primary/5 rounded-md">
-                <SpeakerCard speaker={speaker} />
-              </div>
-            ))}
+                  {session.speakers.map((speaker, i) => {
+                const nameLower = (speaker.name || '').toLowerCase();
+                const isExhibitor = /exhibitor|panelists?/.test(nameLower) || nameLower.includes('microleap');
+                return (
+                <div key={i} className="p-3 bg-primary/5 rounded-md">
+                  <SpeakerCard speaker={speaker} onClick={!isExhibitor ? ((sp) => onSpeakerClick && onSpeakerClick(sp)) : undefined} />
+                </div>
+              );
+            })}
           </div>
         )}
 
@@ -285,23 +368,19 @@ const SessionRow = ({ session, onOpen }: { session: Session; onOpen: (s: Session
 const Programme = () => {
   const [activeTab, setActiveTab] = useState<"main" | "engagement">("main");
   const [day, setDay] = useState<1 | 2>(1);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalSession, setModalSession] = useState<Session | null>(null);
+  const [speakerModalOpen, setSpeakerModalOpen] = useState(false);
+  const [activeSpeaker, setActiveSpeaker] = useState<Speaker | null>(null);
 
   const placeholderImage = (name = "Speaker") => `https://via.placeholder.com/160?text=${encodeURIComponent(name)}`;
 
-  const openModal = (s: Session) => {
-    // If speakers exist and no photo, assign a placeholder URL dynamically (non-mutating)
-    if (s.speakers && s.speakers.length > 0) {
-      s.speakers = s.speakers.map((sp) => ({ ...sp, photo: sp.photo || placeholderImage(sp.name) }));
-    }
-    setModalSession(s);
-    setModalOpen(true);
+  const openSpeakerModal = (sp: Speaker) => {
+    setActiveSpeaker({ ...sp, photo: sp.photo || placeholderImage(sp.name) });
+    setSpeakerModalOpen(true);
   };
 
-  const closeModal = () => {
-    setModalOpen(false);
-    setModalSession(null);
+  const closeSpeakerModal = () => {
+    setSpeakerModalOpen(false);
+    setActiveSpeaker(null);
   };
 
   return (
@@ -386,33 +465,40 @@ const Programme = () => {
             {/* Table Body */}
             <div className="bg-card px-4">
               {((day === 1 ? (activeTab === "main" ? mainStageSchedule : engagementStageSchedule) : (activeTab === "main" ? mainStageScheduleDay2 : engagementStageScheduleDay2))).map((session, index) => (
-                <SessionRow key={index} session={session} onOpen={openModal} />
+                <SessionRow key={index} session={session} onSpeakerClick={openSpeakerModal} />
               ))}
             </div>
           </div>
 
-          {/* Modal for session details */}
-          {modalOpen && modalSession && (
+          {/* Session modal removed - only speaker popup is shown when speakers are clicked */}
+
+          {/* Modal for speaker profile (opens when clicking a speaker) */}
+          {speakerModalOpen && activeSpeaker && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-              <div role="dialog" aria-modal="true" className="bg-card rounded-lg max-w-2xl w-full p-6 relative">
-                <button onClick={closeModal} aria-label="Close" className="absolute right-4 top-4 text-muted-foreground text-xl">×</button>
-                <div className="flex flex-col sm:flex-row items-center gap-6">
-                  <div className="w-32 h-32 rounded-full overflow-hidden bg-gray-100 flex-shrink-0">
-                    {modalSession.speakers && modalSession.speakers[0] ? (
-                      <img src={modalSession.speakers[0].photo || placeholderImage(modalSession.speakers[0].name)} alt={modalSession.speakers[0].name} className="w-full h-full object-cover" />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-xl font-bold">{(modalSession.title || 'Session').split(' ').map(s => s[0]).slice(0,2).join('')}</div>
-                    )}
+              <div role="dialog" aria-modal="true" className="bg-card rounded-lg w-full mx-4 sm:mx-auto max-w-2xl sm:max-w-xl md:max-w-2xl p-4 sm:p-6 relative max-h-[90vh] overflow-auto">
+                <button onClick={closeSpeakerModal} aria-label="Close" className="absolute right-3 top-3 text-muted-foreground text-lg">×</button>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-left">
+                  <div className="flex-shrink-0">
+                    <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)} alt={activeSpeaker.name} className="w-full h-full object-cover object-top" />
+                    </div>
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-navy-deep">{modalSession.title || modalSession.panelTitle || 'Session Details'}</h3>
-                    {modalSession.speakers && modalSession.speakers[0] && (
-                      <p className="text-sm text-foreground mt-1">Presented by <span className="font-semibold text-navy-deep">{modalSession.speakers[0].name}</span></p>
-                    )}
-                    {modalSession.description && (
-                      <p className="mt-4 text-muted-foreground">{modalSession.description}</p>
-                    )}
+                    <h3 className="text-lg sm:text-2xl font-bold text-navy-deep">{activeSpeaker.name}</h3>
+                    <p className="text-xs sm:text-sm text-primary italic mt-1">{activeSpeaker.title}</p>
+                    <p className="text-sm text-foreground font-semibold mt-1">{activeSpeaker.company}</p>
+                    <div className="mt-3 text-muted-foreground text-sm leading-relaxed">
+                      {activeSpeaker.bio ? (
+                        activeSpeaker.bio.split(/\n\s*\n/).map((para, idx) => (
+                            <p key={idx} className="mb-2 text-left">{para}</p>
+                          ))
+                      ) : (
+                        activeSpeaker.name === 'Datuk Clifford Hii' ? null : (
+                          <p className="italic">Speaker profile not available.</p>
+                        )
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

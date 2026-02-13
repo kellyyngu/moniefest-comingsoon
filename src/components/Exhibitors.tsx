@@ -35,12 +35,12 @@ const logoUrls: Record<string, string> = {
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = [ gambitTrusteesLogo, fsmOneLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
-const goldSponsors = ['/versa.svg'];
+const goldSponsors = [phillipLogo,'/versa.svg'];
 const supportingPartners = [
   societyMalaysiaLogo,
   fimmLogo,
 ];
-const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo, phillipLogo];
+const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 // const knowledgePartners = [spgLogo];
 

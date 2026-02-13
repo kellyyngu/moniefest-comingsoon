@@ -5,12 +5,10 @@ import heroBg from "/optimized/highlightsBanner.webp";
 
 const BannerUploader: React.FC = () => {
   // Static banners — no upload allowed. First banner shows the Microleap Lucky Draw
-  const banners = ["/optimized/microleap_visual.webp"];
+  const banners = ["/optimized/microleap_visual.webp", "/optimized/giveaway.webp"];
 
   return (
     <div>
-      <h2 className="text-xl font-semibold mb-4">Event Banners</h2>
-
       <div className="grid grid-cols-1 gap-4 items-start">
         {banners.map((src, idx) => (
           <div
