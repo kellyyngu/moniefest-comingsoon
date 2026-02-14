@@ -400,6 +400,18 @@
     .hero-section { min-height: 70vh; padding-top: 6rem; padding-bottom: 4rem; }
   }
 
+  /* When modal is open, prevent background scroll and hide floating CTAs */
+  body.modal-open {
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  body.modal-open .floating-cta,
+  body.modal-open .floating-ticket {
+    display: none !important;
+    pointer-events: none !important;
+  }
+
   /* Make glass-card more compact and elevated on mobile for a polished card look */
   .glass-card {
     transition: transform 0.18s ease, box-shadow 0.18s ease;

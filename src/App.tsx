@@ -56,7 +56,7 @@ const App = () => {
           <button
             aria-label="Get Ticket"
             onClick={() => setIsEventbriteOpen(true)}
-            className="fixed z-50 right-4 bottom-4 md:right-8 md:bottom-8 inline-flex items-center gap-3 px-4 py-3 rounded-full bg-primary text-black font-semibold shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transform-gpu transition-transform duration-200 hover:-translate-y-1 animate-float md:hidden"
+            className="fixed z-50 right-4 bottom-4 md:right-8 md:bottom-8 inline-flex items-center gap-3 px-4 py-3 rounded-full bg-primary text-black font-semibold shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transform-gpu transition-transform duration-200 hover:-translate-y-1 animate-float md:hidden floating-cta floating-ticket"
           >
             <span className="inline">Get Ticket</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">

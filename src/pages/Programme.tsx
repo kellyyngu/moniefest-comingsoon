@@ -383,6 +383,41 @@ const Programme = () => {
     setActiveSpeaker(null);
   };
 
+  useEffect(() => {
+    let scrollY = 0;
+    try {
+      if (speakerModalOpen) {
+        scrollY = window.scrollY || window.pageYOffset || 0;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.classList.add('modal-open');
+      } else {
+        const top = document.body.style.top;
+        document.body.classList.remove('modal-open');
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        if (top) {
+          const prev = parseInt(top || '0') || 0;
+          window.scrollTo(0, -prev);
+        }
+      }
+    } catch (e) {}
+    return () => {
+      try {
+        document.body.classList.remove('modal-open');
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        if (scrollY) window.scrollTo(0, scrollY);
+      } catch {}
+    };
+  }, [speakerModalOpen]);
+
   return (
     <div className="min-h-screen bg-background">
       
@@ -475,20 +510,28 @@ const Programme = () => {
           {/* Modal for speaker profile (opens when clicking a speaker) */}
           {speakerModalOpen && activeSpeaker && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-              <div role="dialog" aria-modal="true" className="bg-card rounded-lg w-full mx-4 sm:mx-auto max-w-2xl sm:max-w-xl md:max-w-2xl p-4 sm:p-6 relative max-h-[90vh] overflow-auto">
-                <button onClick={closeSpeakerModal} aria-label="Close" className="absolute right-3 top-3 text-muted-foreground text-lg">×</button>
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-left">
-                  <div className="flex-shrink-0">
-                    <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                      <img src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)} alt={activeSpeaker.name} className="w-full h-full object-cover object-top" />
+              <div role="dialog" aria-modal="true" className="bg-card rounded-lg w-full mx-4 sm:mx-auto max-w-2xl sm:max-w-xl md:max-w-2xl p-0 relative max-h-[90vh] overflow-hidden">
+                <div className="relative">
+                  <div className="sticky top-0 z-30 bg-card/95 backdrop-blur-sm p-4 sm:p-6 border-b border-white/6">
+                    <div className="flex items-start sm:items-center gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                          <img src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)} alt={activeSpeaker.name} className="w-full h-full object-cover object-top" />
+                        </div>
+                      </div>
+
+                      <div className="flex-1">
+                        <h3 className="text-lg sm:text-2xl font-bold text-navy-deep">{activeSpeaker.name}</h3>
+                        <p className="text-xs sm:text-sm text-primary italic mt-1">{activeSpeaker.title}</p>
+                        <p className="text-sm text-foreground font-semibold mt-1">{activeSpeaker.company}</p>
+                      </div>
+
+                      <button onClick={closeSpeakerModal} aria-label="Close" className="ml-4 text-muted-foreground text-lg">×</button>
                     </div>
                   </div>
 
-                  <div className="flex-1">
-                    <h3 className="text-lg sm:text-2xl font-bold text-navy-deep">{activeSpeaker.name}</h3>
-                    <p className="text-xs sm:text-sm text-primary italic mt-1">{activeSpeaker.title}</p>
-                    <p className="text-sm text-foreground font-semibold mt-1">{activeSpeaker.company}</p>
-                    <div className="mt-3 text-muted-foreground text-sm leading-relaxed">
+                  <div className="p-4 sm:p-6 overflow-auto max-h-[70vh]">
+                    <div className="text-muted-foreground text-sm leading-relaxed">
                       {activeSpeaker.bio ? (
                         activeSpeaker.bio.split(/\n\s*\n/).map((para, idx) => (
                             <p key={idx} className="mb-2 text-justify">{para}</p>
