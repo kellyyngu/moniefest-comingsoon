@@ -17,7 +17,7 @@ const Hero = ({ onOpenEventbrite }: HeroProps) => {
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
-        fetchPriority="high"
+        fetchpriority="high"
       />
       <div className="absolute inset-0 hero-gradient opacity-60" />
 

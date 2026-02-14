@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 const heroBg = "/optimized/banner_bg.webp";
 const pinnyang = "/optimized/pinnyang.webp";
@@ -306,11 +306,11 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
   const isInvestmentTalk = !!(session.title && session.title.startsWith('Investment Talk'));
   return (
     <div
-      className="border-b border-border last:border-b-0 py-4"
+      className="border-b-2 border-white/6 last:border-b-0 py-4"
     >
       <div className={`flex gap-6 ${isDayEnd ? 'items-center' : 'items-start'}`}>
-      <div className="w-16 md:w-28 flex-shrink-0">
-        <div className="bg-primary/10 text-primary px-3 py-2 rounded-md text-sm font-medium text-center">
+      <div className="w-12 sm:w-14 md:w-32 flex-shrink-0">
+        <div className="bg-primary/10 text-primary px-2 py-1 rounded-md text-xs sm:text-sm font-medium text-center md:whitespace-nowrap">
           {session.time}
         </div>
       </div>
@@ -384,37 +384,17 @@ const Programme = () => {
   };
 
   useEffect(() => {
-    let scrollY = 0;
+    // Toggle CSS-only modal lock to prevent background scroll without manipulating position.
     try {
       if (speakerModalOpen) {
-        scrollY = window.scrollY || window.pageYOffset || 0;
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${scrollY}px`;
-        document.body.style.left = '0';
-        document.body.style.right = '0';
         document.body.classList.add('modal-open');
       } else {
-        const top = document.body.style.top;
         document.body.classList.remove('modal-open');
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.left = '';
-        document.body.style.right = '';
-        if (top) {
-          const prev = parseInt(top || '0') || 0;
-          window.scrollTo(0, -prev);
-        }
       }
     } catch (e) {}
+
     return () => {
-      try {
-        document.body.classList.remove('modal-open');
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.left = '';
-        document.body.style.right = '';
-        if (scrollY) window.scrollTo(0, scrollY);
-      } catch {}
+      try { document.body.classList.remove('modal-open'); } catch {}
     };
   }, [speakerModalOpen]);
 
@@ -492,7 +472,7 @@ const Programme = () => {
           {/* Schedule Table */}
           <div className="mx-auto bg-card rounded-lg overflow-hidden shadow-lg px-2 sm:px-0">
             {/* Table Header */}
-            <div className="grid grid-cols-[64px_1fr] md:grid-cols-[120px_1fr] bg-gradient-to-r from-primary to-primary/80">
+            <div className="grid grid-cols-[48px_1fr] sm:grid-cols-[64px_1fr] md:grid-cols-[120px_1fr] bg-gradient-to-r from-primary to-primary/80">
               <div className="px-4 py-3 text-black font-bold">Time</div>
               <div className="px-4 py-3 text-black font-bold text-center">Topic</div>
             </div>
@@ -531,10 +511,10 @@ const Programme = () => {
                   </div>
 
                   <div className="p-4 sm:p-6 overflow-auto max-h-[70vh]">
-                    <div className="text-muted-foreground text-sm leading-relaxed">
+                    <div className="speaker-bio text-muted-foreground text-sm leading-relaxed">
                       {activeSpeaker.bio ? (
                         activeSpeaker.bio.split(/\n\s*\n/).map((para, idx) => (
-                            <p key={idx} className="mb-2 text-justify">{para}</p>
+                            <p key={idx} className="mb-2 text-left sm:text-justify">{para}</p>
                           ))
                       ) : (
                         activeSpeaker.name === 'Datuk Clifford Hii' ? null : (

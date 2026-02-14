@@ -149,38 +149,18 @@ const SpeakersPage = () => {
   const [activeSpeaker, setActiveSpeaker] = useState<Speaker | null>(null);
 
   useEffect(() => {
-    let scrollY = 0;
+    // Use CSS-only lock: toggle a class that sets `overflow: hidden` on the body.
     try {
       if (speakerModalOpen) {
-        scrollY = window.scrollY || window.pageYOffset || 0;
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${scrollY}px`;
-        document.body.style.left = '0';
-        document.body.style.right = '0';
         document.body.classList.add('modal-open');
       } else {
-        // restore
-        const top = document.body.style.top;
         document.body.classList.remove('modal-open');
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.left = '';
-        document.body.style.right = '';
-        if (top) {
-          const prev = parseInt(top || '0') || 0;
-          window.scrollTo(0, -prev);
-        }
       }
     } catch (e) {}
+
+    // Cleanup: ensure class is removed when component unmounts
     return () => {
-      try {
-        document.body.classList.remove('modal-open');
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.left = '';
-        document.body.style.right = '';
-        if (scrollY) window.scrollTo(0, scrollY);
-      } catch {}
+      try { document.body.classList.remove('modal-open'); } catch {}
     };
   }, [speakerModalOpen]);
 
@@ -255,7 +235,7 @@ const SpeakersPage = () => {
 
           {/* ── Guest of Honour ── */}
           {guestOfHonour && (
-            <section>
+            <section className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-center text-primary mb-6">Guest of Honour</h2>
               <div className="flex justify-center">
                 <div
@@ -338,10 +318,10 @@ const SpeakersPage = () => {
                   </div>
 
                   <div className="p-4 sm:p-6 overflow-auto max-h-[70vh]">
-                    <div className="text-muted-foreground text-sm leading-relaxed">
+                    <div className="speaker-bio text-muted-foreground text-sm leading-relaxed">
                       {activeSpeaker.bio ? (
                         activeSpeaker.bio.split(/\n\s*\n/).map((para, idx) => (
-                          <p key={idx} className="mb-2 text-justify">{para}</p>
+                          <p key={idx} className="mb-2 text-left sm:text-justify">{para}</p>
                         ))
                       ) : (
                         activeSpeaker.name === 'Datuk Clifford Hii' ? null : (

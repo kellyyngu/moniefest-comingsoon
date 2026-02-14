@@ -412,6 +412,15 @@
     pointer-events: none !important;
   }
 
+  /* Improve justified text on wider screens by allowing hyphenation and safe breaks */
+  .speaker-bio p {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
   /* Make glass-card more compact and elevated on mobile for a polished card look */
   .glass-card {
     transition: transform 0.18s ease, box-shadow 0.18s ease;
