@@ -414,11 +414,13 @@
 
   /* Improve justified text on wider screens by allowing hyphenation and safe breaks */
   .speaker-bio p {
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    /* Disable automatic hyphen insertion — keep normal wrapping for readability */
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    /* Allow usual wrapping without breaking words awkwardly */
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   /* Make glass-card more compact and elevated on mobile for a polished card look */
