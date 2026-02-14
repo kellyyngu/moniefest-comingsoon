@@ -1,31 +1,58 @@
 import React, { useState } from "react";
-
 import Footer from "@/components/Footer";
+import { Sparkles, Gift, Trophy, Star } from "lucide-react";
 import heroBg from "/optimized/highlightsBanner.webp";
 
-const BannerUploader: React.FC = () => {
-  // Static banners — no upload allowed. First banner shows the Microleap Lucky Draw
-  const banners = ["/optimized/microleap_visual.webp", "/optimized/giveaway.webp"];
+type Highlight = {
+  number: number;
+  title: string;
+  description: string;
+  image: string;
+  icon: React.ElementType;
+};
+
+const highlights: Highlight[] = [
+  {
+    number: 1,
+    title: "MicroLEAP Lucky Draw",
+    description: "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
+    image: "/optimized/microleap_visual.webp",
+    icon: Sparkles,
+  },
+  {
+    number: 2,
+    title: "Special Giveaways",
+    description: "Exciting giveaways and prizes throughout the event. Stay tuned for more details on how to participate.",
+    image: "/optimized/giveaway.webp",
+    icon: Gift,
+  },
+];
+
+const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({ highlight, index }) => {
+  const Icon = highlight.icon;
+  const isEven = index % 2 === 0;
+  const isLarge = highlight.number === 1 || highlight.number === 2;
 
   return (
-    <div>
-      <div className="grid grid-cols-1 gap-4 items-start">
-        {banners.map((src, idx) => (
-          <div
-            key={idx}
-            className="rounded-md overflow-hidden border border-border p-0 bg-card w-full"
-          >
-            <div className="w-full bg-zinc-800 flex items-center justify-center overflow-hidden">
-              <img
-                src={src}
-                alt={`Banner ${idx + 1}`}
-                className="w-full h-auto object-contain"
-                loading="eager"
-                decoding="async"
-              />
-            </div>
+    <div
+      className="group relative overflow-visible transition-all duration-500"
+      style={{
+        animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`,
+      }}
+    >
+      {/* Clean card: white panel, centered, subtle shadow and consistent padding */}
+      <div className={`relative bg-white ${isLarge ? 'rounded-none sm:rounded-xl' : 'rounded-lg sm:rounded-xl'} overflow-hidden border border-gray-200 ${isLarge ? 'mx-0 sm:mx-auto sm:max-w-7xl lg:max-w-6xl' : 'mx-4 sm:mx-auto sm:max-w-5xl'} shadow-sm sm:shadow-md hover:shadow-lg`}>
+        {/* Image section with responsive padding; selected highlights become full-width and taller on mobile */}
+        <div className={`${isLarge ? 'w-full flex items-center justify-center p-0 sm:p-10' : 'w-full flex items-center justify-center p-4 sm:p-10'}`}>
+          <div className={`${isLarge ? 'w-full' : 'w-full sm:max-w-4xl'} flex items-center justify-center`}>
+            <img
+              src={highlight.image}
+              alt={highlight.title}
+              className={`w-full h-auto object-contain rounded-md transition-transform duration-500 group-hover:scale-105 ${isLarge ? 'max-h-[720px] sm:max-h-none lg:max-h-[920px]' : ''}`}
+              loading="eager"
+            />
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
@@ -49,23 +76,38 @@ const HighlightsPage: React.FC = () => {
             Highlights
           </h1>
           <p className="mt-3 text-sm sm:text-base md:text-lg text-primary-foreground/90 text-center max-w-3xl mx-auto px-4">
-            This section features the Lucky Draw and special programmes.
+            Discover the exciting features and exclusive prizes at Monie Fest 2026
           </p>
         </div>
       </section>
 
       <main className="pt-12 pb-20">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid gap-8">
-            <div className="bg-card rounded-lg p-6 shadow-sm">
-              <BannerUploader />
-            </div>
-            <div className="flex justify-center">
-              <div className="mt-6 w-full max-w-3xl">
-                <div className="rounded-lg hero-gradient p-6 text-white text-center shadow-lg">
-                  <h3 className="text-xl font-bold">More to come</h3>
-                  <p className="mt-2 text-sm opacity-90">We're adding more highlights and surprises — stay tuned for updates.</p>
+        <div className="container mx-auto px-4 max-w-7xl">
+          {/* Highlights Grid - single column so each picture is on its own row */}
+          <div className="grid grid-cols-1 gap-6 sm:gap-8 mb-12">
+            {highlights.map((highlight, index) => (
+              <HighlightCard key={highlight.number} highlight={highlight} index={index} />
+            ))}
+          </div>
+
+          {/* More to Come Section */}
+          <div className="flex justify-center">
+            <div className="w-full max-w-3xl">
+              <div
+                className="rounded-xl bg-gradient-to-br from-primary/20 via-emerald-500/10 to-primary/20 p-8 text-center shadow-lg border border-primary/20 backdrop-blur-sm"
+                style={{
+                  animation: "fadeInUp 0.6s ease-out 0.45s both",
+                }}
+              >
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center animate-pulse">
+                    <Star className="w-8 h-8 text-primary" />
+                  </div>
                 </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3">More Highlights Coming Soon</h3>
+                <p className="text-sm sm:text-base text-muted-foreground max-w-md mx-auto">
+                  We're adding more exciting highlights and surprises. Stay tuned for updates!
+                </p>
               </div>
             </div>
           </div>
@@ -73,6 +115,20 @@ const HighlightsPage: React.FC = () => {
       </main>
 
       <Footer />
+
+      {/* Keyframes for animations */}
+      <style>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 };

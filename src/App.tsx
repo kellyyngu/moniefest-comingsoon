@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Toaster } from "./components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import * as gtag from "./lib/gtag";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Programme from "./pages/Programme";
@@ -29,6 +30,8 @@ const App = () => {
         <Sonner />
         <BrowserRouter basename={import.meta.env.BASE_URL}>
           <ScrollToTop />
+          {/* Analytics: track SPA pageviews via gtag (no-op if gtag not configured) */}
+          <Analytics />
           {/* Site-wide header with modal opener */}
           <Header onOpenEventbrite={() => setIsEventbriteOpen(true)} />
 
@@ -68,5 +71,19 @@ const App = () => {
     </QueryClientProvider>
   );
 };
+
+function Analytics() {
+  const location = useLocation();
+
+  useEffect(() => {
+    try {
+      gtag.pageview(location.pathname + location.search);
+    } catch (e) {
+      /* ignore */
+    }
+  }, [location]);
+
+  return null;
+}
 
 export default App;
