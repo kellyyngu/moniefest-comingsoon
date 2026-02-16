@@ -49,7 +49,24 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
             iframeContainerId: containerId,
             iframeContainerHeight: height,
             onOrderComplete: () => {
-              console.log("Order complete!");
+              // Push a signal for GTM (if used) and call gtag directly as a fallback.
+              try {
+                (window as any).dataLayer = (window as any).dataLayer || [];
+                (window as any).dataLayer.push({
+                  event: "eventbrite_registration_success",
+                  eventbrite_event_id: eventId,
+                });
+              } catch (e) {
+                // ignore
+              }
+              try {
+                if (typeof (window as any).gtag === "function") {
+                  (window as any).gtag('event', 'eventbrite_registration_success', { event_id: eventId });
+                }
+              } catch (e) {
+                // ignore
+              }
+              console.log("Eventbrite: Order complete - tracking signal sent.");
             },
           });
           createdRef.current = true;
@@ -89,6 +106,21 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
                 eventId: eventId,
                 iframeContainerId: containerId,
                 iframeContainerHeight: height,
+                onOrderComplete: () => {
+                  try {
+                    (window as any).dataLayer = (window as any).dataLayer || [];
+                    (window as any).dataLayer.push({
+                      event: "eventbrite_registration_success",
+                      eventbrite_event_id: eventId,
+                    });
+                  } catch (e) {}
+                  try {
+                    if (typeof (window as any).gtag === "function") {
+                      (window as any).gtag('event', 'eventbrite_registration_success', { event_id: eventId });
+                    }
+                  } catch (e) {}
+                  console.log("Eventbrite: Order complete - tracking signal sent.");
+                },
               });
               createdRef.current = true;
 

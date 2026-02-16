@@ -8,49 +8,85 @@ type Highlight = {
   title: string;
   description: string;
   image: string;
+  link?: string;
+  noCrop?: boolean;
   icon: React.ElementType;
 };
 
 const highlights: Highlight[] = [
   {
     number: 1,
-    title: "MicroLEAP Lucky Draw",
-    description: "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
-    image: "/optimized/microleap_visual.webp",
-    icon: Sparkles,
-  },
-  {
-    number: 2,
     title: "Special Giveaways",
     description: "Exciting giveaways and prizes throughout the event. Stay tuned for more details on how to participate.",
     image: "/optimized/giveaway.webp",
+    noCrop: true,
     icon: Gift,
+  },
+  {
+    number: 2,
+    title: "webull Highlights",
+    description: "Special highlights brought to you by WeBull.",
+    image: "/optimized/webullHighlights.png",
+    link: "https://www.webull.com.my/k/sinchew",
+    noCrop: true,
+    icon: Sparkles,
+  },
+  {
+    number: 3,
+    title: "Phillip Promotions",
+    description: "Check out Phillip Capital's latest promotion.",
+    image: "/optimized/phillipCapitalPromotionArtwork.png",
+    link: "https://www.phillip.com.my/promotions/drive-your-bmd-trades-further-with-phillip/",
+    noCrop: true,
+    icon: Gift,
+  },
+  {
+    number: 4,
+    title: "MicroLEAP Lucky Draw",
+    description: "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
+    image: "/optimized/microleap_visual.webp",
+    noCrop: true,
+    icon: Sparkles,
   },
 ];
 
 const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({ highlight, index }) => {
   const Icon = highlight.icon;
   const isEven = index % 2 === 0;
-  const isLarge = highlight.number === 1 || highlight.number === 2;
 
   return (
     <div
-      className="group relative overflow-visible transition-all duration-500"
+      className={`group relative overflow-visible transition-all duration-500`}
       style={{
         animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`,
       }}
     >
       {/* Clean card: white panel, centered, subtle shadow and consistent padding */}
-      <div className={`relative bg-white ${isLarge ? 'rounded-none sm:rounded-xl' : 'rounded-lg sm:rounded-xl'} overflow-hidden border border-gray-200 ${isLarge ? 'mx-0 sm:mx-auto sm:max-w-7xl lg:max-w-6xl' : 'mx-4 sm:mx-auto sm:max-w-5xl'} shadow-sm sm:shadow-md hover:shadow-lg`}>
-        {/* Image section with responsive padding; selected highlights become full-width and taller on mobile */}
-        <div className={`${isLarge ? 'w-full flex items-center justify-center p-0 sm:p-10' : 'w-full flex items-center justify-center p-4 sm:p-10'}`}>
-          <div className={`${isLarge ? 'w-full' : 'w-full sm:max-w-4xl'} flex items-center justify-center`}>
-            <img
-              src={highlight.image}
-              alt={highlight.title}
-              className={`w-full h-auto object-contain rounded-md transition-transform duration-500 group-hover:scale-105 ${isLarge ? 'max-h-[720px] sm:max-h-none lg:max-h-[920px]' : ''}`}
-              loading="eager"
-            />
+      <div className={`relative bg-transparent rounded-lg overflow-hidden mx-0 sm:mx-auto sm:max-w-6xl`}>
+        {/* Image section: tighter padding and minimal white so images fill more space */}
+        <div className={`w-full flex items-center justify-center p-0 sm:p-2`}>
+          <div className={`w-full sm:max-w-5xl flex items-center justify-center`}>
+            <div className={`w-full overflow-hidden rounded-md transition-transform duration-200 group-hover:scale-105 ${highlight.noCrop ? 'h-[220px] sm:h-[420px] lg:h-[560px]' : 'h-[200px] sm:h-[360px] lg:h-[440px]'}`} style={{boxShadow: '0 4px 10px rgba(0,0,0,0.18)'}}>
+              {highlight.link ? (
+                <a href={highlight.link} target="_blank" rel="noopener noreferrer" aria-label={highlight.title}>
+                  <img
+                    src={highlight.image}
+                    alt={highlight.title}
+                    className={`${highlight.noCrop ? 'object-contain object-center' : 'object-cover object-center'} w-full h-full`}
+                    loading="eager"
+                    style={{ imageRendering: 'auto' }}
+                  />
+                </a>
+              ) : (
+                <img
+                  src={highlight.image}
+                  alt={highlight.title}
+                  className={`${highlight.noCrop ? 'object-contain object-center' : 'object-cover object-center'} w-full h-full`}
+                  loading="eager"
+                  style={{ imageRendering: 'auto' }}
+                />
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +97,7 @@ const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({ high
 const HighlightsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
-      <section className="relative min-h-[44vh] flex items-center justify-center">
+      <section className="relative min-h-[28vh] sm:min-h-[44vh] flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -71,7 +107,7 @@ const HighlightsPage: React.FC = () => {
           <div className="absolute inset-0 hero-gradient opacity-60" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 pt-24 pb-12">
+        <div className="relative z-10 container mx-auto px-4 pt-12 sm:pt-24 pb-8 sm:pb-12">
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white text-center tracking-tight max-w-3xl mx-auto leading-tight drop-shadow-xl">
             Highlights
           </h1>
@@ -81,10 +117,10 @@ const HighlightsPage: React.FC = () => {
         </div>
       </section>
 
-      <main className="pt-12 pb-20">
+      <main className="pt-4 sm:pt-8 pb-4 sm:pb-12">
         <div className="container mx-auto px-4 max-w-7xl">
           {/* Highlights Grid - single column so each picture is on its own row */}
-          <div className="grid grid-cols-1 gap-6 sm:gap-8 mb-12">
+          <div className="grid grid-cols-1 gap-1 sm:gap-2 mb-4">
             {highlights.map((highlight, index) => (
               <HighlightCard key={highlight.number} highlight={highlight} index={index} />
             ))}
