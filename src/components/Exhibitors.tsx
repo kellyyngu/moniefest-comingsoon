@@ -26,6 +26,8 @@ const logoUrls: Record<string, string> = {
   [microleapLogo]: 'http://www.microleapasia.com',
   [fimmLogo]: 'https://www.fimm.com.my/',
   [lunoLogo]: 'https://www.luno.com',
+  [fsmOneLogo]: 'https://bit.ly/4kJDDNs',
+  [webullLogo]: 'https://www.webull.com.my/',
   [spgLogo]: 'http://www.spglobal.com/spdji/',
   [phillipLogo]: 'https://www.phillip.com.my/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
@@ -34,7 +36,7 @@ const logoUrls: Record<string, string> = {
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
-const platinumSponsors = [ gambitTrusteesLogo, fsmOneLogo, gambitCustodyLogo, lunoLogo, moomooLogo, webullLogo];
+const platinumSponsors = [ gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, lunoLogo, moomooLogo, webullLogo];
 const goldSponsors = [phillipLogo,'/versa.svg'];
 const supportingPartners = [
   societyMalaysiaLogo,
