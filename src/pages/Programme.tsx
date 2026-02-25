@@ -79,7 +79,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
       },
     ] },
   { time: "11:00 - 11:45"},
-  { time: "11:45 - 12:00", title: "Break", description: "" },
+  { time: "11:45 - 12:00", title: "Break / Lucky Draw", description: "" },
   { time: "12:00 - 12:45", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
   { time: "12:45 - 13:30", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
   { time: "13:30 - 14:15", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor C", title: "Exhibitor", company: "" }] },
@@ -205,13 +205,20 @@ const mainStageScheduleDay2: Session[] = [
     time: "14:30 - 15:15",
     isPanel: true,
     panelNumber: 4,
-    panelTitle: "Entrepreneurship in Malaysia: What Needs to Change by 2026",
+    panelTitle: "Entrepreneurship in 2026: Building Businesses That Last in a Changing Economy",
     bullets: [],
-    speakers: [],
+    speakers: [
+      { name: "YB Steven Sim", title: "", company: "" },
+      { name: "Vernon Tian", title: "", company: "" },
+      { name: "Tan Sri Tony Fernandes", title: "", company: "" },
+      { name: "Tim Tiah", title: "Host", company: "" },
+    ],
     description: "",
   },
 
-  { time: "15:15 - 16:30", title: "Investment Talk 8", description: "", speakers: [{ name: "Exhibitor O", title: "Exhibitor", company: "" }] },
+    { time: "15:15 - 15:30", title: "Break", description: "" },
+    { time: "15:30 - 15:45", title: "Lucky Draw", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=Lucky+Draw", description: "Stand a chance to win prizes — keep your ticket handy!" },
+    { time: "15:45 - 16:30", title: "Investment Talk 8", description: "", speakers: [{ name: "Exhibitor O", title: "Exhibitor", company: "" }] },
 
   {
     time: "16:30 - 17:15",
@@ -322,7 +329,7 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
             <h3 className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500 mb-2 text-center text-lg md:text-xl">{session.panelTitle}</h3>
           </>
         ) : session.title && (
-          <h3 className={`font-bold ${session.isSpecial ? 'text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400 text-center' : isInvestmentTalk ? 'bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-cyan-500 to-sky-600 text-center text-lg md:text-xl' : 'bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500 text-center text-lg md:text-xl'}`}>
+          <h3 className={`font-bold ${session.isSpecial ? 'bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400 text-center text-lg md:text-xl' : isInvestmentTalk ? 'bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-cyan-500 to-sky-600 text-center text-lg md:text-xl' : 'bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500 text-center text-lg md:text-xl'}`}>
             {session.title}
           </h3>
         )}
@@ -455,7 +462,7 @@ const Programme = () => {
                   : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
               }`}
             >
-              Capital Stage
+              Monie Stage
             </button>
             <button
               onClick={() => setActiveTab("engagement")}
