@@ -42,12 +42,13 @@ const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = [bursaLogo, gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, lunoLogo, moomooLogo, webullLogo];
 const goldSponsors = [phillipLogo,'/versa.svg'];
 const supportingPartners = [
+  bursaLogo,
   societyMalaysiaLogo,
   fimmLogo,
 ];
 const silverSponsors = [capbayLogo,fimmLogo, fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
-// const knowledgePartners = [spgLogo];
+const knowledgePartners = [spgLogo];
 
 const baseUrl = "";
 
@@ -180,7 +181,7 @@ const Exhibitors = () => {
         <LogoGrid title="Gold Sponsors" logos={goldSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls}/>
         <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
-        {/* <LogoGrid title="Knowledge Partners" logos={knowledgePartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} /> */}
+        <LogoGrid title="Knowledge Partners" logos={knowledgePartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         {showAllSponsors && (
           <>
             <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls />
