@@ -15,6 +15,8 @@ const phillipLogo = '/optimized/phillipCapital.png';
 const societyMalaysiaLogo = '/society-malaysia.svg';
 const fundingSocietiesLogo = '/optimized/fundingSocieties.svg';
 const spgLogo = '/optimized/spg_dji.png';
+const bursaLogo = '/optimized/bursa.svg';
+const capbayLogo = '/optimized/capbay.png';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -28,6 +30,7 @@ const logoUrls: Record<string, string> = {
   [lunoLogo]: 'https://www.luno.com',
   [fsmOneLogo]: 'https://bit.ly/4kJDDNs',
   [webullLogo]: 'https://www.webull.com.my/',
+  [bursaLogo]: 'https://my.bursamalaysia.com/',
   [spgLogo]: 'http://www.spglobal.com/spdji/',
   [phillipLogo]: 'https://www.phillip.com.my/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
@@ -36,13 +39,13 @@ const logoUrls: Record<string, string> = {
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
-const platinumSponsors = [ gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, lunoLogo, moomooLogo, webullLogo];
+const platinumSponsors = [bursaLogo, gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, lunoLogo, moomooLogo, webullLogo];
 const goldSponsors = [phillipLogo,'/versa.svg'];
 const supportingPartners = [
   societyMalaysiaLogo,
   fimmLogo,
 ];
-const silverSponsors = [fimmLogo, fundingSocietiesLogo, microleapLogo];
+const silverSponsors = [capbayLogo,fimmLogo, fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 // const knowledgePartners = [spgLogo];
 
