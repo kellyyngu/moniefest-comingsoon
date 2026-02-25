@@ -47,6 +47,17 @@ Driven by the belief that education is the foundation of better money choices, G
 
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`
   },
+  {
+    name: "Afiq Ismail",
+    title: "PR & Marketing Manager",
+    company: "microLEAP",
+    photo: '/optimized/afiq.webp',
+    bio: `Afiq Ismail is the PR & Marketing Manager at microLEAP, with extensive experience in public relations, digital marketing, and brand communications, particularly within the fintech and impact-driven sectors. He plays a key role in shaping microLEAP’s brand presence and positioning as Malaysia’s leading Shariah-compliant peer-to-peer financing platform.
+
+In 2024, Afiq was instrumental in driving microLEAP’s brand growth, contributing to a 246% increase in social media engagement and significantly expanding the platform’s share of voice. His expertise spans strategic content creation, media planning, and narrative development to effectively connect fintech solutions with broader audiences.
+
+Afiq is also a strong advocate for integrating AI tools into public relations, leveraging automation and data-driven insights to enhance storytelling, outreach, and audience engagement. Passionate about purposeful branding and inclusive financial communication, he is committed to humanising fintech and making financial solutions more accessible to underserved communities.`,
+  },
   { name: "Jeroni Khoo", title: "Deputy Country Manager", company: "Luno Malaysia", photo: '/optimized/jeroni.jpg', bio: `Jeroni Khoo is the Deputy Country Manager at Luno Malaysia, a leading digital asset
 exchange in Malaysia. He supports the Country Manager in ensuring regulatory compliance,
 overseeing daily operations, and driving cross-functional projects that align with the
