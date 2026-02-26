@@ -107,7 +107,17 @@ brand growth and increased market share in highly competitive industries.
 Jeroni holds a Bachelor's Degree in Business & Commerce, with a double major in
 Marketing and Economics, from Monash University.`,
   },
+    {
+    name: "Liksen Lei",
+    title: "U.S. Equities Investor & Analyst",
+    company: "@insightinvests",
+    photo: "/optimized/liksen.png",
+    bio: `Liksen Lei is an investor focused on U.S. equities with over five years of investing experience. His investment journey gained strong momentum following the COVID-19 period, where he achieved consistent alpha through disciplined research and strategic positioning.
 
+Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is currently pursuing a Master’s degree in Investment Banking at Monash University (2025–2026). Alongside his academic pursuits, he actively shares investment insights through his platform, @insightinvests, where he focuses on market trends, portfolio strategy, and navigating macroeconomic developments.
+
+His approach combines academic knowledge with practical market experience, offering a grounded perspective on investing in global equity markets.`,
+  },
   {
     name: "Sean Freer",
     title: "Director, Global Exchange Indices",
@@ -138,17 +148,6 @@ Over his career, Max had previously been involved in a software development comp
     company: "Gambit Group",
     photo: "/optimized/tevaryanThiagarajan.png",
     bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
-  },
-  {
-    name: "Liksen Lei",
-    title: "U.S. Equities Investor & Analyst",
-    company: "@insightinvests",
-    photo: "/optimized/liksen.png",
-    bio: `Liksen Lei is an investor focused on U.S. equities with over five years of investing experience. His investment journey gained strong momentum following the COVID-19 period, where he achieved consistent alpha through disciplined research and strategic positioning.
-
-Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is currently pursuing a Master’s degree in Investment Banking at Monash University (2025–2026). Alongside his academic pursuits, he actively shares investment insights through his platform, @insightinvests, where he focuses on market trends, portfolio strategy, and navigating macroeconomic developments.
-
-His approach combines academic knowledge with practical market experience, offering a grounded perspective on investing in global equity markets.`,
   },
 ];
 
