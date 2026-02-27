@@ -295,8 +295,8 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
 
   const isLogo = !!(speaker.photo && speaker.photo.toLowerCase().includes('microleap')) || (speaker.name || '').toLowerCase().includes('microleap');
   const avatarWrapperClass = isLogo
-    ? 'w-14 h-14 rounded-md overflow-hidden bg-transparent flex items-center justify-center text-primary-foreground font-bold text-lg'
-    : `w-14 h-14 rounded-full overflow-hidden ${speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'} flex items-center justify-center text-primary-foreground font-bold text-lg`;
+    ? 'flex-shrink-0 w-14 h-14 rounded-md overflow-hidden bg-transparent flex items-center justify-center text-primary-foreground font-bold text-lg'
+    : `flex-shrink-0 w-14 h-14 rounded-full overflow-hidden ${speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'} flex items-center justify-center text-primary-foreground font-bold text-lg`;
   const imgClass = isLogo ? 'w-full h-full object-contain' : 'w-full h-full object-cover object-top';
 
   return (
