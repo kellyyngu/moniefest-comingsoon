@@ -17,6 +17,8 @@ const fundingSocietiesLogo = '/optimized/fundingSocieties.svg';
 const spgLogo = '/optimized/spg_dji.png';
 const bursaLogo = '/optimized/bursa.svg';
 const capbayLogo = '/optimized/capbay.png';
+const ncspaceLogo = '/optimized/NCSPACE.svg';
+const wealthFortLogo = '/optimized/WealthFort.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -52,6 +54,7 @@ const supportingPartners = [
 const silverSponsors = [capbayLogo,fimmLogo, fundingSocietiesLogo, microleapLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 const knowledgePartners = [spgLogo];
+const friendsOfMonie = [ncspaceLogo, wealthFortLogo];
 
 const baseUrl = "";
 
@@ -185,6 +188,7 @@ const Exhibitors = () => {
         <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls}/>
         <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Knowledge Partners" logos={knowledgePartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
+        <LogoGrid title="Friends of Monie" logos={friendsOfMonie} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         {showAllSponsors && (
           <>
             <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls />

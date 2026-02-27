@@ -9,6 +9,7 @@ type Speaker = {
   company?: string;
   photo?: string;
   nowrapName?: boolean;
+  whiteBg?: boolean;
   bio?: string;
 };
 
@@ -25,6 +26,7 @@ const speakers: Speaker[] = [
     title: "Deputy Minister of Finance",
     company: "Government of Malaysia",
     photo: "/optimized/liewChinTong.png",
+    whiteBg: true,
     bio: `Liew Chin Tong is the Deputy Minister of Finance of Malaysia, appointed on 16 December 2025. He is currently the Member of Parliament for Iskandar Puteri, after being elected on 19 November 2022. He is also the State Assemblyperson for Perling, Johor.
 
 While serving as the Deputy Minister of Investment, Trade and Industry from December 2022 to December 2025, he worked closely with Minister Tengku Zafrul Aziz, with the New Industrial Master Plan (NIMP 2030) as the guiding document, to shape the strategic directions of Malaysia’s industrial development, especially for the semiconductor, iron and steel, and automotive sectors.
@@ -58,6 +60,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     title: "PR & Marketing Manager",
     company: "microLEAP",
     photo: "/optimized/afiq.webp",
+    whiteBg: true,
     bio: `Afiq Ismail is the PR & Marketing Manager at microLEAP, with extensive experience in public relations, digital marketing, and brand communications, particularly within the fintech and impact-driven sectors. He plays a key role in shaping microLEAP’s brand presence and positioning as Malaysia’s leading Shariah-compliant peer-to-peer financing platform.
 
 In 2024, Afiq was instrumental in driving microLEAP’s brand growth, contributing to a 246% increase in social media engagement and significantly expanding the platform’s share of voice. His expertise spans strategic content creation, media planning, and narrative development to effectively connect fintech solutions with broader audiences.
@@ -119,6 +122,14 @@ Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is c
 His approach combines academic knowledge with practical market experience, offering a grounded perspective on investing in global equity markets.`,
   },
   {
+    name: "Nigel Chong",
+    title: "Founder, NCSPACE ACADEMY SDN BHD | SC Registered MR",
+    company: "NCSPACE ACADEMY",
+    photo: "/optimized/nigelChong.png",
+    whiteBg: true,
+    bio: `Nigel Chong is a full-time stock trader and the founder of NCSPACE ACADEMY SDN BHD. Holding a degree in Business Economics and Finance from the University of Nottingham and registered as an MR with the Securities Commissions (SC), Nigel bridges the gap between complex market dynamics and accessible trading strategies. As a featured speaker for Bursa Malaysia's educational series, he specializes in trend trading methodologies and the application of AI-powered tools to uncover market momentum. Known as a "trading buddy" to his community, Nigel is dedicated to helping retail investors build consistent, profitable trading systems.`,
+  },
+  {
     name: "Sean Freer",
     title: "Director, Global Exchange Indices",
     company: "S&P Dow Jones Indices (S&P DJI)",
@@ -128,6 +139,14 @@ His approach combines academic knowledge with practical market experience, offer
 Prior to joining S&P DJI, Sean was a senior product specialist at Franklin Templeton, supporting a number of business development and client retention activities for their global, emerging market and U.S. equity investment platforms. He has also had roles as a product manager and proposal and investment writer at AMP Capital Investors, Russell Investments and Fidelity International. Before joining the financial services industry in 2006, Sean was a broadcast journalist in Queensland, Australia.
 
 Sean holds a master’s degree in International Relations from Dublin City University and bachelor’s degree in Journalism from the University of Queensland.`,
+  },
+    {
+    name: "Shane Choo",
+    title: "Director, WealthFort",
+    company: "WealthFort",
+    photo: "/optimized/shane.png",
+    whiteBg: true,
+    bio: `Shane Choo is a financial speaker, trader and investor, with over 15 years of experience trading and investing in local and international stocks, options, ETF, and currency. As a speaker, he is often engaged by investment banks and securities firms to train their retail clients in trading and investment. Since 2015, he has been appointed by Bursa Malaysia to design and conduct investment curriculum to young investors and retail investors nationwide. To date, he has trained over 35,000 individuals in stock investing. Shane is also an International Certified Professional Trainer by IPMA, UK and an Accredited Trainer by HRD Corp. In 2015, he was acknowledged by President Obama for his work as a young leader in financial education.`,
   },
   {
     name: "Tan Kyzen, Max",
@@ -165,7 +184,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
   const isLogo =
     !!(s.photo && s.photo.toLowerCase().includes("microleap")) ||
     (s.name || "").toLowerCase().includes("microleap");
-  const upliftHeadshot = s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan";
+  const upliftHeadshot = s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan" || s.name === "Shane Choo";
 
   // 1-per-row on mobile: horizontal layout, full width, larger avatar
   if (singleCol) {
@@ -176,7 +195,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
             className={
               isLogo
                 ? "w-20 h-20 sm:w-28 sm:h-28 rounded-md overflow-hidden bg-transparent flex items-center justify-center"
-                : "w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-muted flex items-center justify-center"
+                : `w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden ${s.whiteBg ? "bg-white" : "bg-muted"} flex items-center justify-center`
             }
           >
             {s.photo ? (
@@ -230,7 +249,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
           className={
             isLogo
               ? "w-24 h-24 sm:w-28 sm:h-28 rounded-md overflow-hidden bg-transparent flex items-center justify-center"
-              : "w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-muted flex items-center justify-center"
+              : `w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ${s.whiteBg ? "bg-white" : "bg-muted"} flex items-center justify-center`
           }
         >
           {s.photo ? (
@@ -400,7 +419,7 @@ const SpeakersPage = () => {
                 >
                   <div className="bg-card rounded-xl p-6 sm:p-8 shadow-md border border-white/6 flex flex-col items-center sm:flex-row sm:items-center gap-5 sm:gap-8">
                     <div className="flex-shrink-0">
-                      <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden bg-muted">
+                      <div className={`w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden ${guestOfHonour.whiteBg ? "bg-white" : "bg-muted"}`}>
                         <img
                           src={
                             guestOfHonour.photo ||

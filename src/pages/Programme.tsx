@@ -23,6 +23,7 @@ type Speaker = {
   title: string;
   company: string;
   photo?: string;
+  whiteBg?: boolean;
   bio?: string;
 };
 
@@ -43,9 +44,9 @@ type Session = {
 const mainStageSchedule: Session[] = [
   { time: "09:40 - 09:45", title: "Welcoming Address", description: "", speakers: [{ name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang, bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.` }] },
   { time: "09:45 - 09:55", title: "Industrial Address", description: "" },
-  { time: "09:55 - 10:05", title: "Opening Address", description: "", speakers: [{ name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', bio: liewBio }] },
-  { time: "10:05 - 10:10", title: "Official Launch", description: "", speakers: [
-      { name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', bio: liewBio },
+  { time: "09:55 - 10:05", title: "Opening Address", description: "", speakers: [{ name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', whiteBg: true, bio: liewBio }] },
+    { time: "10:05 - 10:10", title: "Official Launch", description: "", speakers: [
+      { name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', whiteBg: true, bio: liewBio },
       { name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang, bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.` },
       {
         name: "George Poh, CFP®",
@@ -62,7 +63,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
       },
     ] },
   { time: "10:10 - 11:00", title: "Event Walkabout & Press Conference", description: "", speakers: [
-      { name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', bio: liewBio },
+  { name: "Yang Berhormat Liew Chin Tong", title: "Deputy Minister of Finance", company: "Government of Malaysia", photo: '/optimized/liewChinTong.png', whiteBg: true, bio: liewBio },
       { name: "Lim Pinn Yang", title: "Chief Executive Officer", company: "Foodie Media Berhad", photo: pinnyang, bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.` },
       {
         name: "George Poh, CFP®",
@@ -86,7 +87,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
   { time: "14:15 - 15:00", isPanel: true, panelNumber: 2, panelTitle: "How Government Policies Quietly Shape Your Personal Finances", bullets: [], speakers: [
       { name: "Exhibitor D & Panelists", title: "Exhibitor & Panelists", company: "" },
     ]},
-  { time: "15:00 - 15:45", title: "Investment Talk", description: "", speakers: [{ name: "Jeroni Khoo", title: "Deputy Country Manager", company: "Luno Malaysia", photo: jeroni, bio: `Jeroni Khoo is the Deputy Country Manager at Luno Malaysia, a leading digital asset
+  { time: "15:00 - 15:45", title: "Don’t Fall For These Bitcoin (& Crypto) Myths", description: "", speakers: [{ name: "Jeroni Khoo", title: "Deputy Country Manager", company: "Luno Malaysia", photo: jeroni, bio: `Jeroni Khoo is the Deputy Country Manager at Luno Malaysia, a leading digital asset
 exchange in Malaysia. He supports the Country Manager in ensuring regulatory compliance,
 overseeing daily operations, and driving cross-functional projects that align with the
 company’s strategic objectives. In this role, he also heads community engagement
@@ -107,11 +108,26 @@ brand growth and increased market share in highly competitive industries.
 Jeroni holds a Bachelor's Degree in Business & Commerce, with a double major in
 Marketing and Economics, from Monash University.` }] },
   { time: "15:45 - 16:00", title: "Lucky Draw — Win a Xiaomi 55' TV!", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=Xiaomi+55%27+TV", description: "Stand a chance to win a Xiaomi 55' Smart TV — stay till the draw and keep your ticket handy!" },
-  { time: "16:00 - 16:45", title: "Investment Talk", description: "", speakers: [{ name: "microLEAP", title: "", company: "", photo: '/optimized/microleap.webp' }] },
+  { time: "16:00 - 16:45", title: "Big Returns Without Big Barriers: From RM10 to 18%", description: "", speakers: [
+      {
+        name: "Afiq Ismail",
+        title: "PR & Marketing Manager",
+        company: "microLEAP",
+        photo: '/optimized/afiq.webp',
+        whiteBg: true,
+        bio: `Afiq Ismail is the PR & Marketing Manager at microLEAP, with extensive experience in public relations, digital marketing, and brand communications, particularly within the fintech and impact-driven sectors. He plays a key role in shaping microLEAP’s brand presence and positioning as Malaysia’s leading Shariah-compliant peer-to-peer financing platform.
+
+In 2024, Afiq was instrumental in driving microLEAP’s brand growth, contributing to a 246% increase in social media engagement and significantly expanding the platform’s share of voice. His expertise spans strategic content creation, media planning, and narrative development to effectively connect fintech solutions with broader audiences.
+
+Afiq is also a strong advocate for integrating AI tools into public relations, leveraging automation and data-driven insights to enhance storytelling, outreach, and audience engagement. Passionate about purposeful branding and inclusive financial communication, he is committed to humanising fintech and making financial solutions more accessible to underserved communities.`
+      },
+    ] },
   { time: "16:45 - 17:30", isPanel: true, panelNumber: 3, panelTitle: "Can Crypto Coexist With a Boring, Stable Financial Plan?", bullets: [], speakers: [
-      { name: "Datuk Clifford Hii", title: "Chief Executive Officer", company: "Gambit Group" },
+      { name: "Datuk Clifford Hii", title: "Chief Executive Officer", company: "Gambit Group", photo: '/optimized/datuk_clifford_hii.jpg', bio: `Datuk Clifford Hii is a former lawyer turned corporate leader with extensive experience at the helm of both public-listed and private organisations. He has held CEO and Managing Director roles in prominent institutions, including HCK Capital Berhad and SEGi, among others.
+
+With a proven track record in driving growth, strategic transformation, and organisational turnaround, Datuk Clifford brings deep expertise across the education, property, and financial sectors. His leadership is marked by strong governance, commercial acumen, and a forward-looking approach to building sustainable and scalable businesses.` },
     ], description: "" },
-  { time: "17:30 - 18:15", title: "Investment Talk 4", description: "", speakers: [{ name: "Exhibitor F", title: "Exhibitor", company: "" }] },
+  { time: "17:30 - 18:15", title: "You Can’t Build a Stable Financial Plan on Unstable Custody", description: "", speakers: [{ name: "Tevaryan A/L Thiagarajan", title: "Senior Manager, Digital Asset & Corporate Development", company: "Gambit Custody", photo: '/optimized/tevaryanThiagarajan.png', bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.` }] },
   { time: "18:15 - 19:00", isPanel: true, panelNumber: 4, panelTitle: "When Passion Meets Planning: How to Turn Dreams into Reality", bullets: [], speakers: [
     ], description: "" },
   { time: "19:00 - 19:45", title: "Investment Talk 5", description: "", speakers: [{ name: "Exhibitor G", title: "Exhibitor", company: "" }] },
@@ -207,12 +223,7 @@ const mainStageScheduleDay2: Session[] = [
     panelNumber: 4,
     panelTitle: "Entrepreneurship in 2026: Building Businesses That Last in a Changing Economy",
     bullets: [],
-    speakers: [
-      { name: "YB Steven Sim", title: "", company: "" },
-      { name: "Vernon Tian", title: "", company: "" },
-      { name: "Tan Sri Tony Fernandes", title: "", company: "" },
-      { name: "Tim Tiah", title: "Host", company: "" },
-    ],
+    speakers: [],
     description: "",
   },
 
@@ -285,7 +296,7 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
   const isLogo = !!(speaker.photo && speaker.photo.toLowerCase().includes('microleap')) || (speaker.name || '').toLowerCase().includes('microleap');
   const avatarWrapperClass = isLogo
     ? 'w-14 h-14 rounded-md overflow-hidden bg-transparent flex items-center justify-center text-primary-foreground font-bold text-lg'
-    : 'w-14 h-14 rounded-full overflow-hidden bg-gradient-to-br from-navy-light to-navy-deep flex items-center justify-center text-primary-foreground font-bold text-lg';
+    : `w-14 h-14 rounded-full overflow-hidden ${speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'} flex items-center justify-center text-primary-foreground font-bold text-lg`;
   const imgClass = isLogo ? 'w-full h-full object-contain' : 'w-full h-full object-cover object-top';
 
   return (
@@ -349,14 +360,14 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
         {session.speakers && session.speakers.length > 0 && (
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                   {session.speakers.map((speaker, i) => {
-                const nameLower = (speaker.name || '').toLowerCase();
-                const isExhibitor = /exhibitor|panelists?/.test(nameLower) || nameLower.includes('microleap');
-                return (
-                <div key={i} className="p-3 bg-primary/5 rounded-md">
-                  <SpeakerCard speaker={speaker} onClick={!isExhibitor ? ((sp) => onSpeakerClick && onSpeakerClick(sp)) : undefined} />
-                </div>
-              );
-            })}
+                  const nameLower = (speaker.name || '').toLowerCase();
+                  const isExhibitor = /exhibitor|panelists?/.test(nameLower) || nameLower.includes('microleap');
+                  return (
+                  <div key={i} className="p-3 bg-primary/5 rounded-md">
+                    <SpeakerCard speaker={speaker} onClick={!isExhibitor ? ((sp) => onSpeakerClick && onSpeakerClick(sp)) : undefined} />
+                  </div>
+                );
+              })}
           </div>
         )}
 
@@ -502,7 +513,7 @@ const Programme = () => {
                   <div className="sticky top-0 z-30 bg-card/95 backdrop-blur-sm p-4 sm:p-6 border-b border-white/6">
                     <div className="flex items-start sm:items-center gap-4">
                       <div className="flex-shrink-0">
-                        <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                        <div className={`w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden ${activeSpeaker.whiteBg ? 'bg-white' : 'bg-gray-100'} flex items-center justify-center`}>
                           <img src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)} alt={activeSpeaker.name} className="w-full h-full object-cover object-top" />
                         </div>
                       </div>
