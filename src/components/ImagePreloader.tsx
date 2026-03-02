@@ -7,7 +7,7 @@ const ImagePreloader = () => {
   useEffect(() => {
     // Preload only truly critical above-the-fold images to avoid wasted downloads.
     const criticalPreload = [
-      '/optimized/mitec.webp', // Hero background (renders immediately)
+      '/optimized/moniepic.PNG', // Hero background (renders immediately)
       '/moniefest2026.svg', // Main logo (renders immediately)
       '/optimized/monielogo.webp', // Header logo (visible on first paint)
     ];

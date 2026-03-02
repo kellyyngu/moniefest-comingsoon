@@ -90,7 +90,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     { name: "Xiaomi 55' TV", url: "https://www.mi.com/my/product/xiaomi-tv-a-55-2026/", image: "/optimized/xiaomitv.webp", note: "worth RM1,999" },
     { name: "Samsung Galaxy Buds", url: "https://www.samsung.com/my/audio-sound/galaxy-buds/galaxy-buds-core-black-sm-r410nzkaxme/", image: "/optimized/samsung-galaxy-buds.webp", note: "worth RM199" }
   ] },
-  { time: "11:15 - 12:00", title: "Malaysia's Economic Growth Outlook for 2H 2026"},
+  { time: "11:15 - 12:00", title: "Malaysia's Economic Growth Outlook for 2H 2026", speakers: [{ name: "Mohammad Bazli Che Rozenan, CFA", title: "Director, Members Engagement", company: "CFA Society Malaysia", photo: "/optimized/mohammadBazli.jpg", bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.\n\nPreviously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.\n\nBazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.` }]},
   { time: "12:00 - 12:45", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
   { time: "12:45 - 13:30", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
   { time: "13:30 - 14:15", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor C", title: "Exhibitor", company: "" }] },
@@ -344,37 +344,67 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
   const displayName = speaker?.name || "TBD Speaker";
   const initials = displayName.split(" ").map((n) => n[0]).slice(0, 2).join("");
   const clickable = !!onClick;
-  const containerProps: any = {};
-  if (clickable) {
-    containerProps.role = 'button';
-    containerProps.tabIndex = 0;
-    containerProps.onClick = (e: any) => { e.stopPropagation(); onClick && onClick(speaker); };
-    containerProps.onKeyDown = (e: any) => { if (e.key === 'Enter' || e.key === ' ') { e.stopPropagation(); onClick && onClick(speaker); } };
-  }
 
   const isLogo = !!(speaker.photo && speaker.photo.toLowerCase().includes('microleap')) || (speaker.name || '').toLowerCase().includes('microleap');
-  const upliftHeadshot = (speaker.name || '') === 'Cheah Zi Kah' || (speaker.name || '') === 'Shane Choo';
-  const avatarWrapperClass = isLogo
-    ? 'flex-shrink-0 w-14 h-14 rounded-md overflow-hidden bg-transparent flex items-center justify-center text-primary-foreground font-bold text-lg'
-    : `flex-shrink-0 w-14 h-14 rounded-full overflow-hidden ${speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'} flex items-center justify-center text-primary-foreground font-bold text-lg`;
-  const imgClass = isLogo ? 'w-full h-full object-contain' : 'w-full h-full object-cover object-top';
+  const headshotStyle: React.CSSProperties | undefined =
+    (speaker.name || '') === 'Datuk Clifford Hii'
+      ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
+      : ((speaker.name || '') === 'Cheah Zi Kah' || (speaker.name || '') === 'Shane Choo')
+      ? { objectPosition: 'center 25%' }
+      : undefined;
+  const upliftHeadshot = !!headshotStyle;
+
+  const cardProps: any = {};
+  if (clickable) {
+    cardProps.role = 'button';
+    cardProps.tabIndex = 0;
+    cardProps.onClick = (e: any) => { e.stopPropagation(); onClick && onClick(speaker); };
+    cardProps.onKeyDown = (e: any) => { if (e.key === 'Enter' || e.key === ' ') { e.stopPropagation(); onClick && onClick(speaker); } };
+  }
 
   return (
     <div
-      className={`flex items-center gap-3 my-2 ${clickable ? 'cursor-pointer' : ''}`}
-      {...containerProps}
+      className={`group flex items-center gap-3 rounded-xl border border-white/6 bg-white/3 px-3 py-2.5 transition-all duration-200 ${
+        clickable
+          ? 'cursor-pointer hover:border-primary/40 hover:bg-white/6 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5'
+          : ''
+      }`}
+      {...cardProps}
     >
-      <div className={avatarWrapperClass}>
-          {speaker.photo ? (
-          <img src={speaker.photo} alt={displayName} className={imgClass} style={upliftHeadshot ? { objectPosition: 'center 25%' } : undefined} />
+      {/* Circle avatar */}
+      <div
+        className={`flex-shrink-0 w-14 h-14 rounded-full overflow-hidden flex items-center justify-center font-bold text-lg ${
+          isLogo ? 'bg-transparent' : speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'
+        }`}
+      >
+        {speaker.photo ? (
+          <img
+            src={speaker.photo}
+            alt={displayName}
+            className={`w-full h-full ${isLogo ? 'object-contain p-1' : 'object-cover object-top'}`}
+            style={headshotStyle}
+          />
         ) : (
-          <div className="w-full h-full flex items-center justify-center">{initials}</div>
+          <span className="text-primary-foreground">{initials}</span>
         )}
       </div>
-      <div>
-        <p className="font-semibold text-navy-deep">{displayName}</p>
-        <p className="text-sm text-primary italic">{speaker.title}</p>
-        <p className="text-sm text-foreground">{speaker.company}</p>
+
+      {/* Accent bar */}
+      <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
+
+      {/* Text */}
+      <div className="flex flex-col justify-center flex-1 min-w-0">
+        <p className="font-bold text-foreground text-sm leading-snug">{displayName}</p>
+        {speaker.title && <p className="text-xs text-primary italic mt-0.5 leading-tight">{speaker.title}</p>}
+        {speaker.company && <p className="text-xs text-muted-foreground mt-0.5 leading-tight">{speaker.company}</p>}
+        {clickable && (
+          <div className="mt-1 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
+            View profile
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M7 17 17 7M7 7h10v10"/>
+            </svg>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -409,38 +439,72 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
           <p className="text-muted-foreground mt-3 text-center md:text-left">{session.description}</p>
         )}
 
-        {session.prizes && session.prizes.length > 0 && (
-          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {session.prizes.map((p, idx) => (
-              <a
-                key={idx}
-                href={p.url || '#'}
-                target="_blank"
-                rel="noreferrer"
-                className="group block transform transition hover:-translate-y-1"
-                aria-label={`Prize: ${p.name}`}
-              >
-                <div className="relative bg-primary/6 p-3 rounded-lg shadow-sm hover:shadow-md">
-                  <div className="flex items-center gap-4">
-                    <div className={`w-20 h-20 rounded-md overflow-hidden flex-shrink-0 ${p.name && p.name.toLowerCase().includes('samsung') ? 'bg-white' : 'bg-black/5'}`}>
-                      <img src={p.image || `https://via.placeholder.com/160?text=${encodeURIComponent(p.name)}`} alt={p.name} className="w-full h-full object-cover object-center" />
+        {session.prizes && session.prizes.length > 0 && (() => {
+          const count = session.prizes.length;
+          const gridClass =
+            count === 1
+              ? 'grid grid-cols-1 max-w-[180px]'
+              : count === 2
+              ? 'grid grid-cols-2 max-w-[560px] mx-auto'
+              : 'grid grid-cols-1 sm:grid-cols-3';
+          return (
+            <div className={`mt-5 ${gridClass} gap-3`}>
+              {session.prizes.map((p, idx) => {
+                const nameLower = (p.name || '').toLowerCase();
+                const whiteBg =
+                  nameLower.includes('samsung') ||
+                  nameLower.includes('louis') ||
+                  nameLower.includes('pochette') ||
+                  nameLower.includes('vuitton') ||
+                  nameLower.includes('dyson') ||
+                  nameLower.includes('apple') ||
+                  nameLower.includes('ipad') ||
+                  nameLower.includes('iphone');
+                return (
+                  <a
+                    key={idx}
+                    href={p.url || '#'}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group flex flex-col rounded-xl overflow-hidden border border-white/8 hover:border-primary/50 bg-white/3 hover:bg-white/6 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10"
+                    aria-label={`Prize: ${p.name}`}
+                  >
+                    {/* Image panel */}
+                    <div
+                      className={`relative flex items-center justify-center overflow-hidden ${whiteBg ? 'bg-white' : 'bg-black/25'}`}
+                      style={{ aspectRatio: '5/3' }}
+                    >
+                      <img
+                        src={p.image || `https://via.placeholder.com/200?text=${encodeURIComponent(p.name)}`}
+                        alt={p.name}
+                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                        style={{ padding: whiteBg ? '8%' : '4%' }}
+                      />
+                      <span className="absolute top-2 left-2 px-2 py-0.5 text-[9px] font-bold rounded-full bg-primary text-black uppercase tracking-wider shadow-sm">
+                        Lucky Draw
+                      </span>
                     </div>
-
-                    <div className="flex-1">
-                      <div className="font-semibold text-foreground group-hover:text-white">{p.name}</div>
-                      {p.note && <div className="text-muted-foreground text-sm mt-1">{p.note}</div>}
+                    {/* Text panel */}
+                    <div className="flex flex-col flex-1 px-3 py-2.5 gap-0.5">
+                      <div className="font-semibold text-foreground text-sm leading-snug group-hover:text-primary transition-colors">
+                        {p.name}
+                      </div>
+                      {p.note && (
+                        <div className="text-primary/90 text-xs font-semibold mt-0.5">{p.note}</div>
+                      )}
+                      <div className="mt-auto pt-2 text-[11px] text-muted-foreground/70 flex items-center gap-1">
+                        Tap to view
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M7 17 17 7M7 7h10v10"/>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-
-                  <div className="mt-3 flex gap-2 items-center">
-                    <span className="inline-block px-2 py-1 text-xs rounded bg-primary/10 text-primary font-medium">Lucky Draw</span>
-                    <span className="text-xs text-muted-foreground">Tap to view</span>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        )}
+                  </a>
+                );
+              })}
+            </div>
+          );
+        })()}
 
         {session.bullets && (
           <ul className="list-disc list-inside mt-3 space-y-1 text-muted-foreground text-sm">
@@ -451,16 +515,14 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
         )}
 
         {session.speakers && session.speakers.length > 0 && (
-          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {session.speakers.map((speaker, i) => {
-                  const nameLower = (speaker.name || '').toLowerCase();
-                  const isExhibitor = /exhibitor|panelists?/.test(nameLower) || nameLower.includes('microleap');
-                  return (
-                  <div key={i} className="p-3 bg-primary/5 rounded-md">
-                    <SpeakerCard speaker={speaker} onClick={!isExhibitor ? ((sp) => onSpeakerClick && onSpeakerClick(sp)) : undefined} />
-                  </div>
-                );
-              })}
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2.5">
+            {session.speakers.map((speaker, i) => {
+              const nameLower = (speaker.name || '').toLowerCase();
+              const isExhibitor = /exhibitor|panelists?/.test(nameLower) || nameLower.includes('microleap');
+              return (
+                <SpeakerCard key={i} speaker={speaker} onClick={!isExhibitor ? ((sp) => onSpeakerClick && onSpeakerClick(sp)) : undefined} />
+              );
+            })}
           </div>
         )}
 
@@ -607,14 +669,19 @@ const Programme = () => {
                     <div className="flex items-start sm:items-center gap-4">
                       <div className="flex-shrink-0">
                         {(() => {
-                          const upliftActive = (activeSpeaker.name || '') === 'Cheah Zi Kah' || (activeSpeaker.name || '') === 'Shane Choo';
+                          const modalHeadshotStyle: React.CSSProperties | undefined =
+                            (activeSpeaker.name || '') === 'Datuk Clifford Hii'
+                              ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
+                              : ((activeSpeaker.name || '') === 'Cheah Zi Kah' || (activeSpeaker.name || '') === 'Shane Choo')
+                              ? { objectPosition: 'center 25%' }
+                              : undefined;
                           return (
                             <div className={`w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden ${activeSpeaker.whiteBg ? 'bg-white' : 'bg-gray-100'} flex items-center justify-center`}>
                               <img
                                 src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)}
                                 alt={activeSpeaker.name}
                                 className="w-full h-full object-cover object-top"
-                                style={upliftActive ? { objectPosition: 'center 25%' } : undefined}
+                                style={modalHeadshotStyle}
                               />
                             </div>
                           );

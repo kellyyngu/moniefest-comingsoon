@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 // Background served from public/optimized (WebP)
 const heroBg = "/optimized/speakerBanner.webp";
 
@@ -67,14 +68,6 @@ In 2024, Afiq was instrumental in driving microLEAP’s brand growth, contributi
 
 Afiq is also a strong advocate for integrating AI tools into public relations, leveraging automation and data-driven insights to enhance storytelling, outreach, and audience engagement. Passionate about purposeful branding and inclusive financial communication, he is committed to humanising fintech and making financial solutions more accessible to underserved communities.`,
   },
-
-  {
-    name: "Cheah Zi Kah",
-    title: "Chief Growth Officer",
-    company: "Gambit Group",
-    photo: "/optimized/cheah_Zi_Kah.png",
-    bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
-  },
   {
     name: "Datuk Clifford Hii",
     title: "Group CEO",
@@ -84,6 +77,14 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
 
 With a proven track record in driving growth, strategic transformation, and organisational turnaround, Datuk Clifford brings deep expertise across the education, property, and financial sectors. His leadership is marked by strong governance, commercial acumen, and a forward-looking approach to building sustainable and scalable businesses.`,
   },
+  {
+    name: "Cheah Zi Kah",
+    title: "Chief Growth Officer",
+    company: "Gambit Group",
+    photo: "/optimized/cheah_Zi_Kah.png",
+    bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
+  },
+
   {
     name: "Jeroni Khoo",
     title: "Deputy Country Manager",
@@ -110,7 +111,7 @@ brand growth and increased market share in highly competitive industries.
 Jeroni holds a Bachelor's Degree in Business & Commerce, with a double major in
 Marketing and Economics, from Monash University.`,
   },
-    {
+  {
     name: "Liksen Lei",
     title: "U.S. Equities Investor & Analyst",
     company: "@insightinvests",
@@ -120,6 +121,17 @@ Marketing and Economics, from Monash University.`,
 Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is currently pursuing a Master’s degree in Investment Banking at Monash University (2025–2026). Alongside his academic pursuits, he actively shares investment insights through his platform, @insightinvests, where he focuses on market trends, portfolio strategy, and navigating macroeconomic developments.
 
 His approach combines academic knowledge with practical market experience, offering a grounded perspective on investing in global equity markets.`,
+  },
+  {
+    name: "Mohammad Bazli Che Rozenan, CFA",
+    title: "Director, Members Engagement",
+    company: "CFA Society Malaysia",
+    photo: "/optimized/mohammadBazli.jpg",
+    bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.
+
+Previously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.
+
+Bazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.`,
   },
   {
     name: "Nigel Chong",
@@ -140,7 +152,7 @@ Prior to joining S&P DJI, Sean was a senior product specialist at Franklin Templ
 
 Sean holds a master’s degree in International Relations from Dublin City University and bachelor’s degree in Journalism from the University of Queensland.`,
   },
-    {
+  {
     name: "Shane Choo",
     title: "Director, WealthFort",
     company: "WealthFort",
@@ -184,109 +196,78 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
   const isLogo =
     !!(s.photo && s.photo.toLowerCase().includes("microleap")) ||
     (s.name || "").toLowerCase().includes("microleap");
-  const upliftHeadshot = s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan" || s.name === "Shane Choo";
+  const headshotStyle: React.CSSProperties | undefined =
+    s.name === "Datuk Clifford Hii"
+      ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
+      : s.name === "Cheah Zi Kah" ||
+          s.name === "Tevaryan Thiagarajan" ||
+          s.name === "Shane Choo"
+        ? { objectPosition: 'center 25%' }
+        : undefined;
 
-  // 1-per-row on mobile: horizontal layout, full width, larger avatar
+  const initials = s.name.split(" ").map((n) => n[0]).slice(0, 2).join("");
+
+  // ── Mobile 1-per-row: horizontal pill card ──
   if (singleCol) {
     return (
-      <div className="bg-card rounded-xl p-4 border border-white/5 shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 w-full h-24 sm:w-56 sm:h-64 sm:flex-col sm:text-center sm:p-6 overflow-hidden">
-        <div className="flex-shrink-0">
-          <div
-            className={
-              isLogo
-                ? "w-20 h-20 sm:w-28 sm:h-28 rounded-md overflow-hidden bg-transparent flex items-center justify-center"
-                : `w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden ${s.whiteBg ? "bg-white" : "bg-muted"} flex items-center justify-center`
-            }
-          >
-            {s.photo ? (
-              <img
-                src={s.photo}
-                alt={s.name}
-                loading="eager"
-                decoding="async"
-                className={
-                  isLogo
-                    ? "w-full h-full object-contain"
-                    : "w-full h-full object-cover object-top"
-                }
-                style={upliftHeadshot ? { objectPosition: 'center 25%' } : undefined}
-              />
-            ) : (
-              <span className="text-primary-foreground font-bold text-xl">
-                {s.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .slice(0, 2)
-                  .join("")}
-              </span>
-            )}
-          </div>
+      <div className="group flex items-center gap-4 bg-card rounded-2xl border border-white/6 px-4 py-3 w-full hover:border-primary/40 hover:bg-white/5 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+        {/* Avatar */}
+        <div className={`flex-shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/40 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
+          {s.photo ? (
+            <img src={s.photo} alt={s.name} loading="eager" decoding="async"
+              className={isLogo ? "w-full h-full object-contain p-1" : "w-full h-full object-cover object-top"}
+              style={headshotStyle} />
+          ) : (
+            <span className="text-primary font-bold text-lg">{initials}</span>
+          )}
         </div>
-        <div className="flex-1 min-w-0 text-left sm:text-center">
-          <p className="font-semibold text-sm sm:text-base text-navy-deep leading-tight mb-0.5">
-            {s.name}
-          </p>
-          {s.title && (
-            <p className="text-xs text-primary italic leading-tight mb-0.5">
-              {s.title}
-            </p>
-          )}
-          {s.company && (
-            <p className="text-xs text-foreground/80 leading-tight">
-              {s.company}
-            </p>
-          )}
+        {/* Accent bar */}
+        <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
+        {/* Text */}
+        <div className="flex-1 min-w-0">
+          <p className="font-bold text-sm text-foreground leading-snug">{s.name}</p>
+          {s.title && <p className="text-xs text-primary italic mt-0.5 leading-tight">{s.title}</p>}
+          {s.company && <p className="text-xs text-muted-foreground mt-0.5 leading-tight">{s.company}</p>}
+          <div className="mt-1.5 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
+            View profile
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </div>
         </div>
       </div>
     );
   }
 
-  // 2-per-row: compact vertical card
+  // ── Desktop / 2-per-row: vertical card with top photo panel ──
   return (
-    <div className="bg-card rounded-xl p-5 sm:p-6 border border-white/5 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center w-full h-64 sm:h-64 overflow-hidden">
-      <div className="mb-3">
-        <div
-          className={
-            isLogo
-              ? "w-24 h-24 sm:w-28 sm:h-28 rounded-md overflow-hidden bg-transparent flex items-center justify-center"
-              : `w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ${s.whiteBg ? "bg-white" : "bg-muted"} flex items-center justify-center`
-          }
-        >
+    <div className="group flex flex-col bg-card rounded-2xl border border-white/6 overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-200 w-full min-h-[240px] h-full">
+      {/* Photo panel */}
+      <div className="relative flex items-end justify-center pt-8 pb-0 bg-gradient-to-b from-primary/8 to-transparent">
+        {/* Glow behind avatar */}
+        <div className="absolute top-6 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full bg-primary/15 blur-xl group-hover:bg-primary/25 transition-all duration-300" />
+        <div className={`relative z-10 w-24 h-24 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/50 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
           {s.photo ? (
-            <img
-              src={s.photo}
-              alt={s.name}
-              loading="eager"
-              decoding="async"
-              className={
-                isLogo
-                  ? "w-full h-full object-contain"
-                  : "w-full h-full object-cover object-top"
-              }
-              style={upliftHeadshot ? { objectPosition: 'center 25%' } : undefined}
-            />
+            <img src={s.photo} alt={s.name} loading="eager" decoding="async"
+              className={isLogo ? "w-full h-full object-contain p-2" : "w-full h-full object-cover object-top"}
+              style={headshotStyle} />
           ) : (
-            <span className="text-primary-foreground font-bold text-2xl">
-              {s.name
-                .split(" ")
-                .map((n) => n[0])
-                .slice(0, 2)
-                .join("")}
-            </span>
+            <span className="text-primary font-bold text-2xl">{initials}</span>
           )}
         </div>
       </div>
-      <p className="font-semibold text-sm sm:text-base text-navy-deep leading-tight mb-1">
-        {s.name}
-      </p>
-      {s.title && (
-        <p className="text-xs text-primary italic leading-tight mb-0.5">
-          {s.title}
-        </p>
-      )}
-      {s.company && (
-        <p className="text-xs text-foreground/80 leading-tight">{s.company}</p>
-      )}
+
+      {/* Divider line */}
+      <div className="mx-5 mt-4 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+
+      {/* Text panel */}
+      <div className="flex flex-col items-center text-center px-4 pt-3 pb-4 flex-1">
+        <p className="font-bold text-sm text-foreground leading-snug mb-0.5">{s.name}</p>
+        {s.title && <p className="text-xs text-primary italic leading-tight mb-0.5 line-clamp-2">{s.title}</p>}
+        {s.company && <p className="text-xs text-muted-foreground leading-tight line-clamp-1">{s.company}</p>}
+        <div className="mt-auto pt-3 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
+          View profile
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </div>
+      </div>
     </div>
   );
 };
@@ -306,7 +287,8 @@ const SpeakersPage = () => {
     } catch {}
   }, [mobileCols]);
 
-  const singleCol = mobileCols === 1;
+  const isMobile = useIsMobile();
+  const singleCol = isMobile && mobileCols === 1;
 
   const [speakerModalOpen, setSpeakerModalOpen] = useState(false);
   const [activeSpeaker, setActiveSpeaker] = useState<Speaker | null>(null);
@@ -395,11 +377,6 @@ const SpeakersPage = () => {
             </button>
           </div>
 
-          {/* short instruction note */}
-          <div className="text-center text-sm text-muted-foreground mb-4">
-            Click on speaker card to view the speaker profile.
-          </div>
-
           {/* ── Guest of Honour ── */}
           {guestOfHonour && (
             <section className="mb-12">
@@ -417,9 +394,11 @@ const SpeakersPage = () => {
                   }}
                   className="max-w-2xl w-full cursor-pointer focus:outline-none rounded-xl"
                 >
-                  <div className="bg-card rounded-xl p-6 sm:p-8 shadow-md border border-white/6 flex flex-col items-center sm:flex-row sm:items-center gap-5 sm:gap-8">
+                  <div className="group bg-card rounded-xl p-6 sm:p-8 shadow-md border border-white/6 flex flex-col items-center sm:flex-row sm:items-center gap-5 sm:gap-8">
                     <div className="flex-shrink-0">
-                      <div className={`w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden ${guestOfHonour.whiteBg ? "bg-white" : "bg-muted"}`}>
+                      <div
+                        className={`w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden ${guestOfHonour.whiteBg ? "bg-white" : "bg-muted"}`}
+                      >
                         <img
                           src={
                             guestOfHonour.photo ||
@@ -447,6 +426,14 @@ const SpeakersPage = () => {
                           {guestOfHonour.company}
                         </p>
                       )}
+                      <div className="mt-2 w-full flex items-center gap-1 text-[11px] text-primary/50 group-hover:text-primary transition-colors duration-150 justify-center sm:justify-start">
+                        <div className="flex items-center gap-1">
+                          <span>View profile</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M7 17 17 7M7 7h10v10"/>
+                          </svg>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -472,7 +459,7 @@ const SpeakersPage = () => {
                     key={idx}
                     role="button"
                     tabIndex={0}
-                    className={`cursor-pointer ${singleCol ? "w-full max-w-md sm:w-auto" : "w-[calc(50%-0.5rem)] sm:w-56"}`}
+                    className={`cursor-pointer flex flex-col ${singleCol ? "w-full max-w-md sm:w-auto" : "w-[calc(50%-0.5rem)] sm:w-56"}`}
                     onClick={() => openSpeakerModal(o)}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ")
@@ -504,7 +491,7 @@ const SpeakersPage = () => {
                     key={i}
                     role="button"
                     tabIndex={0}
-                    className={`cursor-pointer ${singleCol ? "w-full max-w-md sm:w-auto" : "w-[calc(50%-0.5rem)] sm:w-56"}`}
+                    className={`cursor-pointer flex flex-col ${singleCol ? "w-full max-w-md sm:w-auto" : "w-[calc(50%-0.5rem)] sm:w-56"}`}
                     onClick={() => openSpeakerModal(s)}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ")

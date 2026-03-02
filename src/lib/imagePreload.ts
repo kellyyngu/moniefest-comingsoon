@@ -5,7 +5,7 @@ const CRITICAL_IMAGES = [
   '/optimized/highlightsBanner.webp',
   '/optimized/pinnyang.webp',
   '/optimized/george.webp',
-  '/optimized/mitec.webp'
+  '/optimized/moniepic.PNG'
 ];
 
 // All images we want to warm in cache on first visit (kept as a curated list)
@@ -24,7 +24,7 @@ const ALL_IMAGES = [
   '/optimized/luno.webp',
   '/optimized/microleap.webp',
   '/optimized/microleap_visual.webp',
-  '/optimized/mitec.webp',
+  '/optimized/moniepic.PNG',
   '/optimized/monieHeader.webp',
   '/optimized/monielogo.webp',
   '/optimized/moomoo.webp',
