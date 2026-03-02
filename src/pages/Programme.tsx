@@ -34,6 +34,12 @@ type Session = {
   speakers?: Speaker[];
   moderator?: Speaker;
   bullets?: string[];
+  prizes?: {
+    name: string;
+    url?: string;
+    image?: string;
+    note?: string;
+  }[];
   isPanel?: boolean;
   panelNumber?: number;
   panelTitle?: string;
@@ -79,8 +85,12 @@ Driven by the belief that education is the foundation of better money choices, G
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`
       },
     ] },
-  { time: "11:00 - 11:45"},
-  { time: "11:45 - 12:00", title: "Break / Lucky Draw", description: "" },
+  { time: "11:00 - 11:15", title: "Lucky Draw (up to RM100,000 worth of Prizes)", isSpecial: true, prizes: [
+    { name: "Dyson Supersonic", url: "https://www.dyson.my/supersonic-nural-ceramic-pink", image: "/optimized/dyson.jpg", note: "worth RM2,399" },
+    { name: "Xiaomi 55' TV", url: "https://www.mi.com/my/product/xiaomi-tv-a-55-2026/", image: "/optimized/xiaomitv.webp", note: "worth RM1,999" },
+    { name: "Samsung Galaxy Buds", url: "https://www.samsung.com/my/audio-sound/galaxy-buds/galaxy-buds-core-black-sm-r410nzkaxme/", image: "/optimized/samsung-galaxy-buds.webp", note: "worth RM199" }
+  ] },
+  { time: "11:15 - 12:00", title: "Malaysia's Economic Growth Outlook for 2H 2026"},
   { time: "12:00 - 12:45", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
   { time: "12:45 - 13:30", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
   { time: "13:30 - 14:15", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor C", title: "Exhibitor", company: "" }] },
@@ -107,7 +117,11 @@ brand growth and increased market share in highly competitive industries.
 
 Jeroni holds a Bachelor's Degree in Business & Commerce, with a double major in
 Marketing and Economics, from Monash University.` }] },
-  { time: "15:45 - 16:00", title: "Lucky Draw — Win a Xiaomi 55' TV!", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=Xiaomi+55%27+TV", description: "Stand a chance to win a Xiaomi 55' Smart TV — stay till the draw and keep your ticket handy!" },
+  { time: "15:45 - 16:00", title: "Lucky Draw (up to RM100,000 worth of Prizes)", isSpecial: true, prizes: [
+    { name: "Louis Vuitton Pochette Eva", url: "https://my.louisvuitton.com/eng-my/products/pochette-eva-monogram-nvprod6380091v/M13567", image: "/optimized/louis-vuitton-pochette-eva.webp", note: "worth RM6,750" },
+    { name: "iPad 11 (128GB, Blue)", url: "https://www.apple.com/my/shop/buy-ipad/ipad/128gb-blue-wifi", image: "/optimized/ipad11.webp", note: "worth RM1599" },
+    { name: "Dior Rouge Lipstick (x2)", url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html", image: "/optimized/dior-lipstick.webp", note: "worth RM410" }
+  ] },
   { time: "16:00 - 16:45", title: "Big Returns Without Big Barriers: From RM10 to 18%", description: "", speakers: [
       {
         name: "Afiq Ismail",
@@ -131,7 +145,11 @@ With a proven track record in driving growth, strategic transformation, and orga
   { time: "18:15 - 19:00", isPanel: true, panelNumber: 4, panelTitle: "When Passion Meets Planning: How to Turn Dreams into Reality", bullets: [], speakers: [
     ], description: "" },
   { time: "19:00 - 19:45", title: "Investment Talk 5", description: "", speakers: [{ name: "Exhibitor G", title: "Exhibitor", company: "" }] },
-  { time: "19:45 - 20:00", title: "Lucky Draw — Win an iPhone 17 Pro!", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=iPhone+17+Pro", description: "Final draw of the night — stand a chance to win the brand-new iPhone 17 Pro. Keep your ticket ready and stay until the end!" },
+  { time: "19:45 - 20:00", title: "Lucky Draw (up to RM100,000 worth of Prizes)", isSpecial: true, prizes: [
+    { name: "Modenas Kriss 110 2026", url: "https://www.zigwheels.my/new-motorcycles/modenas/kriss-110#:~:text=RM%204%2C599%20%2D%204%2C998%20OTR%20Price,115S%2C%20Kriss%20MR2%20and%20RX110.", image: "/optimized/modenas-kriss.webp", note: "worth RM4,998" },
+    { name: "Apple Watch SE (40mm)", url: "https://www.apple.com/my/shop/buy-watch/apple-watch-se/40mm-gps-midnight-aluminium-neon-yellow-sport-band-m-l-se", image: "/optimized/applewatch.webp", note: "worth RM1,049" },
+    { name: "Philips NA110 Air Fryer", url: "https://www.philips.com.my/c-p/NA110_09/1000-series-airfryer-1000-series-32l", image: "/optimized/airfryer.webp", note: "worth RM259" }
+  ] },
   { time: "20:00 - 20:10", title: "Day 1 End" },
 ];
 
@@ -163,7 +181,15 @@ const engagementStageSchedule: Session[] = [
 
   { time: "17:00 - 18:00", title: "Investment Talk 4", description: "", speakers: [{ name: "Exhibitor J", title: "Exhibitor", company: "" }] },
 
-  { time: "18:00 - 18:30", title: "Podcast 4: Planning for the Unexpected — Family Finance Lessons We Learn Too Late", description: "", },
+  { time: "18:00 - 18:30", title: "Podcast 4: Planning for the Unexpected — Family Finance Lessons We Learn Too Late", description: "", speakers: [
+    {
+      name: "Cheah Zi Kah",
+      title: "Chief Growth Officer",
+      company: "Gambit Digital Trustees",
+      photo: "/optimized/cheah_Zi_Kah.png",
+      bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
+    },
+  ] },
 
   { time: "18:30 - 19:00", title: "Investment Talk 5", description: "", speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }] },
 
@@ -201,7 +227,10 @@ const mainStageScheduleDay2: Session[] = [
     description: "",
   },
 
-  { time: "12:45 - 13:00", title: "Lucky Draw — Win a Nespresso Coffee Machine!", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=Nespresso+Creatista", description: "Stand a chance to win a Nespresso Creatista — stay till the draw and keep your ticket handy!" },
+  { time: "12:45 - 13:00", title: "Lucky Draw (up to RM100,000 worth of Prizes)", isSpecial: true, prizes: [
+    { name: "Ogawa Inizio Massage Chair", url: "https://ogawaworld.net/ogawa-inizio-massage-chair?srsltid=AfmBOorKzRgXQ_RRf11WLwi5yCVhaVNDwEhUG8akwMVa_W105r-dWvv2", image: "/optimized/ogawaMassageChair.webp", note: "worth RM9,999" },
+    { name: "Dior Rouge Lipstick (x2)", url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html", image: "/optimized/dior-lipstick.webp", note: "worth RM410" }
+  ] },
 
   { time: "13:00 - 13:45", title: "Investment Talk 7", description: "", speakers: [{ name: "Exhibitor M", title: "Exhibitor", company: "" }] },
 
@@ -228,7 +257,10 @@ const mainStageScheduleDay2: Session[] = [
   },
 
     { time: "15:15 - 15:30", title: "Break", description: "" },
-    { time: "15:30 - 15:45", title: "Lucky Draw", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=Lucky+Draw", description: "Stand a chance to win prizes — keep your ticket handy!" },
+    { time: "15:30 - 15:45", title: "Lucky Draw (up to RM100,000 worth of Prizes)", isSpecial: true, prizes: [
+      { name: "Modenas Kriss 110 2026", url: "https://www.zigwheels.my/new-motorcycles/modenas/kriss-110#:~:text=RM%204%2C599%20%2D%204%2C998%20OTR%20Price,115S%2C%20Kriss%20MR2%20and%20RX110.", image: "/optimized/modenas-kriss.webp", note: "worth RM4,998" },
+      { name: "Dior Rouge Lipstick (x2)", url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html", image: "/optimized/dior-lipstick.webp", note: "worth RM410" }
+    ] },
     { time: "15:45 - 16:30", title: "Investment Talk 8", description: "", speakers: [{ name: "Exhibitor O", title: "Exhibitor", company: "" }] },
 
   {
@@ -257,13 +289,30 @@ const mainStageScheduleDay2: Session[] = [
     description: "",
   },
 
-  { time: "19:30 - 20:00", title: "Grand Finale Lucky Draw — Win a Dyson Airsonic & Louis Vuitton Handbag!", isSpecial: true, specialImage: "https://via.placeholder.com/600x300?text=Dyson+Airwrap+%26+LV+Handbag", description: "Final draw of the night — stand a chance to win a Dyson Airsonic and a Louis Vuitton handbag. Keep your ticket ready and stay until the end!" },
+  { time: "19:30 - 20:00", title: "Lucky Draw (up to RM100,000 worth of Prizes)", isSpecial: true, prizes: [
+    { name: "Zenith Chronomaster Sport Watch", url: "https://www.zenith-watches.com/en_my/product/chronomaster-sport-95-3100-3600-39-m3100", image: "/optimized/chronomasterSport.webp", note: "worth RM56,500" },
+    { name: "iPhone 17 Pro (128GB, Cosmic Orange)", url: "https://www.apple.com/my/shop/buy-iphone/iphone-17-pro/6.3-inch-display-256gb-cosmic-orange", image: "/optimized/iphone-17-pro.webp", note: "worth RM5,499" }
+  ]},
   { time: "20:00 - 20:15", title: "Day 2 End" },
 ];
 
 const engagementStageScheduleDay2: Session[] = [
   { time: "10:30 - 11:00", },
-  { time: "11:00 - 11:30", },
+  { time: "11:00 - 11:30", title: "Building Your Dividend Machine", description: "", speakers: [
+    {
+      name: "Tan Kyzen, Max",
+      title: "Director",
+      company: "Gyaku Capital Sdn. Bhd.",
+      photo: "/optimized/max.jpg",
+      bio: `Tan Kyzen, Max is a passionate investor with over 8 years of investment experience, and currently serving as an Senior Partner at a corporate advisory firm, with prior experience as an associate director in a private equity firm.
+
+With extensive experience in risk and compliance management and a solid background in the Malaysian stock market, Max bridges funds with promising investment prospects. He is also the Director of Gyaku Capital Sdn. Bhd., delivering valuable financial content and ensuring fair information distribution among investors.
+
+Max’s expertise is further recognised as an active speaker on Cityplus FM, a columnist on Nanyang via Eventure Group, a speaker for Bursa Malaysia, RHB Investment Bank, and an SGX Academy Speaker. Furthermore, Max is also a registered Marketing Representative with Moomoo Securities Malaysia Sdn. Bhd. and iFast Capital Sdn. Bhd., and had interviewed more than 60 public listed companies across Bursa Malaysia. He is also currently an active speaker across several universities across Malaysia.
+
+Over his career, Max had previously been involved in a software development company, as well as a business solutions consultation company in Malaysia. He was also featured on NanYang （南洋）, Oriental Daily （东方）, China Press（中国报）, and had secured numerous awards including Best Intelligent Figures 2022/2023, as well as interview by Shanghai（商海) previously.`,
+    },
+  ] },
   { time: "11:30 - 12:00", title: "Podcast 1: Future Skills for Malaysia's Youth: What Employers Really Look For",},
   { time: "12:00 - 12:30", },
   { time: "12:30 - 13:00", title: "Investment Talk 6", description: "", speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }] },
@@ -275,9 +324,19 @@ const engagementStageScheduleDay2: Session[] = [
   { time: "15:30 - 16:00", title: "Investment Talk 8", description: "", speakers: [{ name: "Exhibitor M", title: "Exhibitor", company: "" }] },
   { time: "16:00 - 16:30", },
   { time: "16:30 - 17:00", },
-  { time: "17:00 - 17:30", title: "Investment Talk 9", description: "", speakers: [{ name: "Exhibitor N", title: "Exhibitor", company: "" }] },
-  { time: "17:30 - 18:00", },
-  { time: "18:00 - 18:30", },
+  { time: "17:00 - 17:30", title: "Why Stock Investing is For You?", description: "", speakers: [
+    { name: "Shane Choo", title: "Director, WealthFort", company: "WealthFort", photo: "/optimized/shane.png", whiteBg: true, bio: `Shane Choo is a financial speaker, trader and investor, with over 15 years of experience trading and investing in local and international stocks, options, ETF, and currency. As a speaker, he is often engaged by investment banks and securities firms to train their retail clients in trading and investment. Since 2015, he has been appointed by Bursa Malaysia to design and conduct investment curriculum to young investors and retail investors nationwide. To date, he has trained over 35,000 individuals in stock investing. Shane is also an International Certified Professional Trainer by IPMA, UK and an Accredited Trainer by HRD Corp. In 2015, he was acknowledged by President Obama for his work as a young leader in financial education.` },
+  ] },
+  { time: "17:30 - 18:00", title: "The Trend is Your Friend: A Masterclass in Consistent Trading Profits", description: "", speakers: [
+    { name: "Nigel Chong", title: "Founder, NCSPACE ACADEMY SDN BHD | SC Registered MR", company: "NCSPACE ACADEMY", photo: "/optimized/nigelChong.png", whiteBg: true, bio: `Nigel Chong is a full-time stock trader and the founder of NCSPACE ACADEMY SDN BHD. Holding a degree in Business Economics and Finance from the University of Nottingham and registered as an MR with the Securities Commissions (SC), Nigel bridges the gap between complex market dynamics and accessible trading strategies. As a featured speaker for Bursa Malaysia's educational series, he specializes in trend trading methodologies and the application of AI-powered tools to uncover market momentum. Known as a "trading buddy" to his community, Nigel is dedicated to helping retail investors build consistent, profitable trading systems.` },
+  ] },
+  { time: "18:00 - 18:30", title: "Navigating Personal Finance in a Changing Macroeconomic Landscape", description: "", speakers: [
+    { name: "Liksen Lei", title: "U.S. Equities Investor & Analyst", company: "@insightinvests", photo: "/optimized/liksen.png", bio: `Liksen Lei is an investor focused on U.S. equities with over five years of investing experience. His investment journey gained strong momentum following the COVID-19 period, where he achieved consistent alpha through disciplined research and strategic positioning.
+
+Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is currently pursuing a Master’s degree in Investment Banking at Monash University (2025–2026). Alongside his academic pursuits, he actively shares investment insights through his platform, @insightinvests, where he focuses on market trends, portfolio strategy, and navigating macroeconomic developments.
+
+His approach combines academic knowledge with practical market experience, offering a grounded perspective on investing in global equity markets.` },
+  ] },
   { time: "18:30 - 18:40", title: "Wrap" },
 ];
 
@@ -294,6 +353,7 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
   }
 
   const isLogo = !!(speaker.photo && speaker.photo.toLowerCase().includes('microleap')) || (speaker.name || '').toLowerCase().includes('microleap');
+  const upliftHeadshot = (speaker.name || '') === 'Cheah Zi Kah' || (speaker.name || '') === 'Shane Choo';
   const avatarWrapperClass = isLogo
     ? 'flex-shrink-0 w-14 h-14 rounded-md overflow-hidden bg-transparent flex items-center justify-center text-primary-foreground font-bold text-lg'
     : `flex-shrink-0 w-14 h-14 rounded-full overflow-hidden ${speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'} flex items-center justify-center text-primary-foreground font-bold text-lg`;
@@ -306,7 +366,7 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
     >
       <div className={avatarWrapperClass}>
           {speaker.photo ? (
-          <img src={speaker.photo} alt={displayName} className={imgClass} />
+          <img src={speaker.photo} alt={displayName} className={imgClass} style={upliftHeadshot ? { objectPosition: 'center 25%' } : undefined} />
         ) : (
           <div className="w-full h-full flex items-center justify-center">{initials}</div>
         )}
@@ -347,6 +407,39 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
 
         {session.description && (
           <p className="text-muted-foreground mt-3 text-center md:text-left">{session.description}</p>
+        )}
+
+        {session.prizes && session.prizes.length > 0 && (
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {session.prizes.map((p, idx) => (
+              <a
+                key={idx}
+                href={p.url || '#'}
+                target="_blank"
+                rel="noreferrer"
+                className="group block transform transition hover:-translate-y-1"
+                aria-label={`Prize: ${p.name}`}
+              >
+                <div className="relative bg-primary/6 p-3 rounded-lg shadow-sm hover:shadow-md">
+                  <div className="flex items-center gap-4">
+                    <div className={`w-20 h-20 rounded-md overflow-hidden flex-shrink-0 ${p.name && p.name.toLowerCase().includes('samsung') ? 'bg-white' : 'bg-black/5'}`}>
+                      <img src={p.image || `https://via.placeholder.com/160?text=${encodeURIComponent(p.name)}`} alt={p.name} className="w-full h-full object-cover object-center" />
+                    </div>
+
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground group-hover:text-white">{p.name}</div>
+                      {p.note && <div className="text-muted-foreground text-sm mt-1">{p.note}</div>}
+                    </div>
+                  </div>
+
+                  <div className="mt-3 flex gap-2 items-center">
+                    <span className="inline-block px-2 py-1 text-xs rounded bg-primary/10 text-primary font-medium">Lucky Draw</span>
+                    <span className="text-xs text-muted-foreground">Tap to view</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
         )}
 
         {session.bullets && (
@@ -513,9 +606,19 @@ const Programme = () => {
                   <div className="sticky top-0 z-30 bg-card/95 backdrop-blur-sm p-4 sm:p-6 border-b border-white/6">
                     <div className="flex items-start sm:items-center gap-4">
                       <div className="flex-shrink-0">
-                        <div className={`w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden ${activeSpeaker.whiteBg ? 'bg-white' : 'bg-gray-100'} flex items-center justify-center`}>
-                          <img src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)} alt={activeSpeaker.name} className="w-full h-full object-cover object-top" />
-                        </div>
+                        {(() => {
+                          const upliftActive = (activeSpeaker.name || '') === 'Cheah Zi Kah' || (activeSpeaker.name || '') === 'Shane Choo';
+                          return (
+                            <div className={`w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden ${activeSpeaker.whiteBg ? 'bg-white' : 'bg-gray-100'} flex items-center justify-center`}>
+                              <img
+                                src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)}
+                                alt={activeSpeaker.name}
+                                className="w-full h-full object-cover object-top"
+                                style={upliftActive ? { objectPosition: 'center 25%' } : undefined}
+                              />
+                            </div>
+                          );
+                        })()}
                       </div>
 
                       <div className="flex-1">
