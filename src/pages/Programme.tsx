@@ -384,6 +384,8 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
   const headshotStyle: React.CSSProperties | undefined =
     (speaker.name || '') === 'Datuk Clifford Hii'
       ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
+      : (speaker.name || '') === 'Fong Wei Ziet'
+      ? { objectPosition: 'center 22%', transform: 'scale(1.35)', transformOrigin: 'center 22%' }
       : ((speaker.name || '') === 'Cheah Zi Kah' || (speaker.name || '') === 'Shane Choo')
       ? { objectPosition: 'center 25%' }
       : undefined;
@@ -707,6 +709,8 @@ const Programme = () => {
                           const modalHeadshotStyle: React.CSSProperties | undefined =
                             (activeSpeaker.name || '') === 'Datuk Clifford Hii'
                               ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
+                              : (activeSpeaker.name || '') === 'Fong Wei Ziet'
+                              ? { objectPosition: 'center 22%', transform: 'scale(1.35)', transformOrigin: 'center 22%' }
                               : ((activeSpeaker.name || '') === 'Cheah Zi Kah' || (activeSpeaker.name || '') === 'Shane Choo')
                               ? { objectPosition: 'center 25%' }
                               : undefined;

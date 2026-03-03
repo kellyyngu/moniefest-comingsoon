@@ -229,6 +229,8 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
           transform: "scale(1.65)",
           transformOrigin: "center 22%",
         }
+      : s.name === "Fong Wei Ziet"
+        ? { objectPosition: "center 22%", transform: "scale(1.35)", transformOrigin: "center 22%" }
       : s.name === "Shane Choo"
         ? { objectPosition: "center 12%" }
         : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
@@ -423,6 +425,17 @@ const SpeakersPage = () => {
     setSpeakerModalOpen(false);
     setActiveSpeaker(null);
   };
+
+  const computeHeadshotStyle = (name?: string): React.CSSProperties | undefined =>
+    name === "Datuk Clifford Hii"
+      ? { objectPosition: "center 18%", transform: "scale(1.65)", transformOrigin: "center 22%" }
+      : name === "Fong Wei Ziet"
+      ? { objectPosition: "center 22%", transform: "scale(1.35)", transformOrigin: "center 22%" }
+      : name === "Shane Choo"
+      ? { objectPosition: "center 12%" }
+      : name === "Cheah Zi Kah" || name === "Tevaryan Thiagarajan"
+      ? { objectPosition: "center 25%" }
+      : undefined;
 
   return (
     <div className="min-h-screen bg-background">
@@ -637,6 +650,7 @@ const SpeakersPage = () => {
                         }
                         alt={activeSpeaker.name}
                         className="w-full h-full object-cover object-top"
+                        style={computeHeadshotStyle(activeSpeaker.name)}
                       />
                     </div>
                   </div>
