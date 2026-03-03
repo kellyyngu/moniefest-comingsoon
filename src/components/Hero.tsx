@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, ArrowUpRight, Users, Calendar } from "lucide-react";
+import { useEffect, useState } from "react";
 // Background image served from public/optimized (WebP)
 const heroBg = '/optimized/mitec.webp';
 
@@ -8,9 +9,28 @@ type HeroProps = {
 };
 
 const Hero = ({ onOpenEventbrite }: HeroProps) => {
+  // Countdown target (change if needed)
+  const targetDate = new Date("2026-04-11T10:00:00");
+  const [remaining, setRemaining] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  useEffect(() => {
+    const update = () => {
+      const now = new Date().getTime();
+      const diff = Math.max(0, targetDate.getTime() - now);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      setRemaining({ days, hours, minutes, seconds });
+    };
+    update();
+    const id = setInterval(update, 1000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <>
-      <section className="relative hero-section flex items-start justify-start overflow-hidden pt-6 sm:pt-12 md:pt-20 min-h-[56vh] md:min-h-[44vh]">
+      <section className="relative hero-section flex items-start justify-start overflow-hidden pt-0 sm:pt-4 md:pt-8 min-h-[56vh] md:min-h-[44vh]">
       {/* Background Image with Overlay */}
       <img
         src={heroBg}
@@ -58,14 +78,43 @@ const Hero = ({ onOpenEventbrite }: HeroProps) => {
               </div>
             </div>
 
-            {/* CTA Button kept as-is */}
-            <div className="flex justify-start w-full">
-              <button onClick={() => onOpenEventbrite?.()} aria-label="Get ticket" className="cta-pill relative inline-flex items-center gap-4 w-[86%] max-w-[240px] sm:w-auto justify-center motion-safe:animate-float">
-                <span className="cta-pill-label text-black font-bold" style={{ fontWeight: 700 }}>GET TICKET</span>
-                <span className="cta-pill-icon brand-bg p-3 rounded-full flex items-center justify-center">
-                  <ArrowUpRight className="text-black" style={{ color: '#000' }} />
-                </span>
-              </button>
+            {/* Countdown timer above CTA - green themed cards */}
+            <div className="flex flex-col items-start w-full">
+              <div className="mb-4">
+                <div className="inline-flex items-center gap-3 p-2 rounded-xl">
+                  <div className="flex items-center gap-3">
+                    <div className="w-20 md:w-24 lg:w-28 h-16 md:h-20 bg-black/90 rounded-xl flex flex-col items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.28)] border border-white/6">
+                      <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent leading-none">{remaining.days}</div>
+                      <div className="text-[11px] bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent uppercase tracking-wider mt-1">Days</div>
+                    </div>
+
+                    <div className="w-16 md:w-20 h-16 md:h-20 bg-black/90 rounded-xl flex flex-col items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.28)] border border-white/6">
+                      <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent leading-none">{String(remaining.hours).padStart(2, '0')}</div>
+                      <div className="text-[11px] bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent uppercase tracking-wider mt-1">Hours</div>
+                    </div>
+
+                    <div className="w-16 md:w-20 h-16 md:h-20 bg-black/90 rounded-xl flex flex-col items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.28)] border border-white/6">
+                      <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent leading-none">{String(remaining.minutes).padStart(2, '0')}</div>
+                      <div className="text-[11px] bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent uppercase tracking-wider mt-1">Minutes</div>
+                    </div>
+
+                    <div className="w-16 md:w-20 h-16 md:h-20 bg-black/90 rounded-xl flex flex-col items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.28)] border border-white/6">
+                      <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent leading-none">{String(remaining.seconds).padStart(2, '0')}</div>
+                      <div className="text-[11px] bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-transparent uppercase tracking-wider mt-1">Seconds</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Button kept as-is (moved down) */}
+              <div>
+                <button onClick={() => onOpenEventbrite?.()} aria-label="Get ticket" className="cta-pill relative inline-flex items-center gap-4 w-auto max-w-[240px] sm:w-auto justify-center motion-safe:animate-float whitespace-nowrap">
+                  <span className="cta-pill-label text-black font-bold" style={{ fontWeight: 700 }}>GET TICKET</span>
+                  <span className="cta-pill-icon brand-bg p-3 rounded-full flex items-center justify-center">
+                    <ArrowUpRight className="text-black" style={{ color: '#000' }} />
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
