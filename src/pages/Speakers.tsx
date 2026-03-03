@@ -86,6 +86,24 @@ With a proven track record in driving growth, strategic transformation, and orga
   },
 
   {
+    name: "Gin Chong",
+    title: "Founder",
+    company: "StayWokeProperty",
+    photo: "/optimized/ginChong.jpeg",
+    bio: `Gin Chong is the Founder of StayWokeProperty and a prominent property content creator in Malaysia. He has reviewed over 200 property developments nationwide, providing honest, educational and engaging insights into the real estate market. Through an entertaining yet informative approach, Gin empowers homebuyers and investors to make smarter property decisions.`,
+  },
+
+  {
+    name: "Fong Wei Ziet",
+    title: "Director",
+    company: "Ziet Media Sdn Bhd",
+    photo: "/optimized/ziet.JPG",
+    bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
+
+He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`,
+  },
+
+  {
     name: "Jeroni Khoo",
     title: "Deputy Country Manager",
     company: "Luno Malaysia",
@@ -180,6 +198,14 @@ Over his career, Max had previously been involved in a software development comp
     photo: "/optimized/tevaryanThiagarajan.png",
     bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
   },
+
+  {
+    name: "Vincent Wang",
+    title: "Manager, APAC Derivatives Sales",
+    company: "Cboe Global Markets",
+    photo: "/optimized/vincentWang.jpg",
+    bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
+  },
 ];
 
 // Grouping for page layout
@@ -198,25 +224,44 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
     (s.name || "").toLowerCase().includes("microleap");
   const headshotStyle: React.CSSProperties | undefined =
     s.name === "Datuk Clifford Hii"
-      ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
+      ? {
+          objectPosition: "center 18%",
+          transform: "scale(1.65)",
+          transformOrigin: "center 22%",
+        }
       : s.name === "Shane Choo"
-      ? { objectPosition: 'center 12%' }
-      : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
-      ? { objectPosition: 'center 25%' }
-      : undefined;
+        ? { objectPosition: "center 12%" }
+        : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
+          ? { objectPosition: "center 25%" }
+          : undefined;
 
-  const initials = s.name.split(" ").map((n) => n[0]).slice(0, 2).join("");
+  const initials = s.name
+    .split(" ")
+    .map((n) => n[0])
+    .slice(0, 2)
+    .join("");
 
   // ── Mobile 1-per-row: horizontal pill card ──
   if (singleCol) {
     return (
       <div className="group flex items-center gap-4 bg-card rounded-2xl border border-white/6 px-5 py-4 w-full hover:border-primary/40 hover:bg-white/5 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
         {/* Avatar */}
-        <div className={`flex-shrink-0 w-20 h-20 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/40 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
+        <div
+          className={`flex-shrink-0 w-20 h-20 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/40 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}
+        >
           {s.photo ? (
-            <img src={s.photo} alt={s.name} loading="eager" decoding="async"
-              className={isLogo ? "w-full h-full object-contain p-1" : "w-full h-full object-cover object-top"}
-              style={headshotStyle} />
+            <img
+              src={s.photo}
+              alt={s.name}
+              loading="eager"
+              decoding="async"
+              className={
+                isLogo
+                  ? "w-full h-full object-contain p-1"
+                  : "w-full h-full object-cover object-top"
+              }
+              style={headshotStyle}
+            />
           ) : (
             <span className="text-primary font-bold text-lg">{initials}</span>
           )}
@@ -225,12 +270,34 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
         <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
         {/* Text */}
         <div className="flex-1 min-w-0">
-          <p className="font-bold text-base text-foreground leading-snug">{s.name}</p>
-          {s.title && <p className="text-sm text-primary italic mt-0.5 leading-tight">{s.title}</p>}
-          {s.company && <p className="text-sm text-muted-foreground mt-0.5 leading-tight">{s.company}</p>}
+          <p className="font-bold text-base text-foreground leading-snug">
+            {s.name}
+          </p>
+          {s.title && (
+            <p className="text-sm text-primary italic mt-0.5 leading-tight">
+              {s.title}
+            </p>
+          )}
+          {s.company && (
+            <p className="text-sm text-muted-foreground mt-0.5 leading-tight">
+              {s.company}
+            </p>
+          )}
           <div className="mt-1.5 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
             View profile
-            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="9"
+              height="9"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M7 17 17 7M7 7h10v10" />
+            </svg>
           </div>
         </div>
       </div>
@@ -244,11 +311,22 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
       <div className="relative flex items-end justify-center pt-10 pb-0 bg-gradient-to-b from-primary/8 to-transparent">
         {/* Glow behind avatar */}
         <div className="absolute top-6 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full bg-primary/15 blur-xl group-hover:bg-primary/25 transition-all duration-300" />
-        <div className={`relative z-10 w-28 h-28 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/50 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
+        <div
+          className={`relative z-10 w-28 h-28 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/50 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}
+        >
           {s.photo ? (
-            <img src={s.photo} alt={s.name} loading="eager" decoding="async"
-              className={isLogo ? "w-full h-full object-contain p-2" : "w-full h-full object-cover object-top"}
-              style={headshotStyle} />
+            <img
+              src={s.photo}
+              alt={s.name}
+              loading="eager"
+              decoding="async"
+              className={
+                isLogo
+                  ? "w-full h-full object-contain p-2"
+                  : "w-full h-full object-cover object-top"
+              }
+              style={headshotStyle}
+            />
           ) : (
             <span className="text-primary font-bold text-2xl">{initials}</span>
           )}
@@ -260,12 +338,34 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
 
       {/* Text panel */}
       <div className="flex flex-col items-center text-center px-5 pt-4 pb-5 flex-1">
-        <p className="font-bold text-base text-foreground leading-snug mb-0.5">{s.name}</p>
-        {s.title && <p className="text-sm text-primary italic leading-tight mb-0.5 line-clamp-2">{s.title}</p>}
-        {s.company && <p className="text-sm text-muted-foreground leading-tight line-clamp-1">{s.company}</p>}
+        <p className="font-bold text-base text-foreground leading-snug mb-0.5">
+          {s.name}
+        </p>
+        {s.title && (
+          <p className="text-sm text-primary italic leading-tight mb-0.5 line-clamp-2">
+            {s.title}
+          </p>
+        )}
+        {s.company && (
+          <p className="text-sm text-muted-foreground leading-tight line-clamp-1">
+            {s.company}
+          </p>
+        )}
         <div className="mt-auto pt-3 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
           View profile
-          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="9"
+            height="9"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M7 17 17 7M7 7h10v10" />
+          </svg>
         </div>
       </div>
     </div>
@@ -429,8 +529,18 @@ const SpeakersPage = () => {
                       <div className="mt-2 w-full flex items-center gap-1 text-[11px] text-primary/50 group-hover:text-primary transition-colors duration-150 justify-center sm:justify-start">
                         <div className="flex items-center gap-1">
                           <span>View profile</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M7 17 17 7M7 7h10v10"/>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M7 17 17 7M7 7h10v10" />
                           </svg>
                         </div>
                       </div>

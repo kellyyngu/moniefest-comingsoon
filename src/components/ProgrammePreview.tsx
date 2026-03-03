@@ -20,7 +20,7 @@ const programmeSlides: Slide[] = [
     day: 1,
     stage: 'Monie Stage',
     time: '11:15 – 12:00',
-    topic: "Malaysia's Economic Growth Outlook for 2H 2026",
+    topic: "Malaysia's Economic Growth Outlook for 2H 2026 - What It Means for Investors",
     type: 'talk',
     speakers: [
       {

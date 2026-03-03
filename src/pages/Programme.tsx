@@ -90,7 +90,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     { name: "Xiaomi 55' TV", url: "https://www.mi.com/my/product/xiaomi-tv-a-55-2026/", image: "/optimized/xiaomitv.webp", note: "worth RM1,999" },
     { name: "Samsung Galaxy Buds", url: "https://www.samsung.com/my/audio-sound/galaxy-buds/galaxy-buds-core-black-sm-r410nzkaxme/", image: "/optimized/samsung-galaxy-buds.webp", note: "worth RM199" }
   ] },
-  { time: "11:15 - 12:00", title: "Malaysia's Economic Growth Outlook for 2H 2026", speakers: [{ name: "Mohammad Bazli Che Rozenan, CFA", title: "Director, Members Engagement", company: "CFA Society Malaysia", photo: "/optimized/mohammadBazli.jpg", bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.\n\nPreviously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.\n\nBazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.` }]},
+  { time: "11:15 - 12:00", title: "Malaysia's Economic Growth Outlook for 2H 2026 - What It Means for Investors", speakers: [{ name: "Mohammad Bazli Che Rozenan, CFA", title: "Director, Members Engagement", company: "CFA Society Malaysia", photo: "/optimized/mohammadBazli.jpg", bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.\n\nPreviously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.\n\nBazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.` }]},
   { time: "12:00 - 12:45", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
   { time: "12:45 - 13:30", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
   { time: "13:30 - 14:15", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor C", title: "Exhibitor", company: "" }] },
@@ -157,9 +157,17 @@ const engagementStageSchedule: Session[] = [
   { time: "11:30 - 12:00", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
   { time: "12:00 - 12:30", },
   { time: "12:30 - 13:00", },
-  { time: "13:00 - 13:30", title: "Podcast 1: Passive Income — Reality vs Expectation Across Four Paths", description: "", speakers: [
+  { time: "13:00 - 13:30", title: "", description: "", speakers: [
     { name: "Exhibitor B & Panelists", title: "Exhibitor & Panelists", company: "" },
-  ] },
+  ],
+    moderator: {
+      name: "Gin Chong",
+      title: "Founder",
+      company: "StayWokeProperty",
+      photo: "/optimized/ginChong.jpeg",
+      bio: `Gin Chong is the Founder of StayWokeProperty and a prominent property content creator in Malaysia. He has reviewed over 200 property developments nationwide, providing honest, educational and engaging insights into the real estate market. Through his entertaining yet informative approach, Gin empowers homebuyers and investors to make smarter property decisions.`,
+    },
+  },
 
   { time: "13:30 - 14:00", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor D", title: "Exhibitor", company: "" }] },
 
@@ -219,11 +227,38 @@ const mainStageScheduleDay2: Session[] = [
     time: "12:00 - 12:45",
     isPanel: true,
     panelNumber: 2,
-    panelTitle: "US Fed Policy & Global Rate Cycles",
+    panelTitle: "Global Market Signals - Rates, Indices and Volatility",
     bullets: [],
     speakers: [
-      { name: "Exhibitor K & Panelists", title: "Exhibitor & Panelists", company: "" },
+      { name: "YB Sim Tze Tzin", title: "", company: "" },
+      {
+        name: "Sean Freer",
+        title: "Director, Global Exchange Indices",
+        company: "S&P Dow Jones Indices",
+        photo: "/optimized/seanFreer.jpg",
+        bio: `Sean Freer is Director, Global Exchange Indices at S&P Dow Jones Indices (S&P DJI). He is responsible for the product management of S&P DJI’s global exchange partnered indices including the S&P/ASX series. In this role, Sean supports S&P DJI’s efforts developing new benchmarks for local and international equity markets and promotes their use among clients in the Asia‑Pacific region. He also regularly publishes research, analytical reports and market commentary on a variety of international investment topics.
+
+Prior to joining S&P DJI, Sean was a senior product specialist at Franklin Templeton, supporting a number of business development and client retention activities for their global, emerging market and U.S. equity investment platforms. He has also had roles as a product manager and proposal and investment writer at AMP Capital Investors, Russell Investments and Fidelity International. Before joining the financial services industry in 2006, Sean was a broadcast journalist in Queensland, Australia.
+
+Sean holds a master’s degree in International Relations from Dublin City University and bachelor’s degree in Journalism from the University of Queensland.`,
+      },
+      {
+        name: "Vincent Wang",
+        title: "Manager, APAC Derivatives Sales",
+        company: "Cboe Global Markets",
+        photo: "/optimized/vincentWang.jpg",
+        bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
+      },
     ],
+    moderator: {
+      name: "Fong Wei Ziet",
+      title: "Director",
+      company: "Ziet Media Sdn Bhd",
+      photo: "/optimized/ziet.JPG",
+      bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
+
+He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`
+    },
     description: "",
   },
 
@@ -529,7 +564,7 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
         {session.moderator && (
           <div className="mt-4">
             <p className="font-semibold text-navy-deep mb-2">Moderated by</p>
-            <SpeakerCard speaker={session.moderator} />
+            <SpeakerCard speaker={session.moderator} onClick={(sp) => onSpeakerClick && onSpeakerClick(sp)} />
           </div>
         )}
       </div>

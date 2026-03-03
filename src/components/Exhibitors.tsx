@@ -19,6 +19,12 @@ const bursaLogo = '/optimized/bursa.svg';
 const capbayLogo = '/optimized/capbay.png';
 const ncspaceLogo = '/optimized/NCSPACE.svg';
 const wealthFortLogo = '/optimized/WealthFort.svg';
+const cgsiLogo = '/optimized/CGSI.svg';
+const ctosLogo = '/optimized/CTOS.svg';
+const publicMutualLogo = '/optimized/publicMutual.png';
+const cboeLogo = '/optimized/CBOE.svg';
+const stayWokePropertyLogo = '/optimized/stayWokeProperty.svg';
+const zietLogo = '/optimized/ziet.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -40,21 +46,27 @@ const logoUrls: Record<string, string> = {
   [phillipLogo]: 'https://www.phillip.com.my/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
   '/versa.svg': 'https://versa.com.my/',
+  [cgsiLogo]: 'https://www.cgsi.com',
+  [ctosLogo]: 'https://www.ctoscredit.com.my',
+  [publicMutualLogo]: 'https://www.publicmutual.com.my',
+  [cboeLogo]: 'https://www.cboe.com/',
+  [stayWokePropertyLogo]: 'https://drive.google.com/drive/folders/1W7aB3ZLExOQjhXYI85jJVcAni1bbEXK3',
+  [zietLogo]: 'https://drive.google.com/drive/folders/13WVjGfmkttty4B9PgcyWFUdNda_UsxBv',
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = [bursaLogo, gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, lunoLogo, moomooLogo, webullLogo];
-const goldSponsors = [phillipLogo];
 const supportingPartners = [
   bursaLogo,
   societyMalaysiaLogo,
   fimmLogo,
 ];
-const silverSponsors = [capbayLogo,fimmLogo, fundingSocietiesLogo, microleapLogo];
+const silverSponsors = [capbayLogo, ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo,  publicMutualLogo];
+const goldSponsors = [cgsiLogo,phillipLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
-const knowledgePartners = [spgLogo];
-const friendsOfMonie = [ncspaceLogo, wealthFortLogo];
+const knowledgePartners = [cboeLogo, spgLogo];
+const friendsOfMonie = [ncspaceLogo, stayWokePropertyLogo, wealthFortLogo,  zietLogo];
 
 const baseUrl = "";
 
