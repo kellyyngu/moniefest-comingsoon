@@ -1,7 +1,8 @@
 import React from "react";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
-import WhatIsMonie from "@/components/WhatIsMonie";
+import ProgrammePreview from "@/components/ProgrammePreview";
+// WhatIsMonie removed from homepage
 import About from "@/components/About";
 // SpeakersQuotes removed per request
 import PastEvents from "@/components/PastEvents";
@@ -19,8 +20,8 @@ const Index = ({ onOpenEventbrite }: IndexProps) => {
     <main className="min-h-screen">
       <Hero onOpenEventbrite={() => onOpenEventbrite?.()} />
       <Stats />
-      <WhatIsMonie />
       <About />
+      <ProgrammePreview />
       <PastEvents />
       <Exhibitors />
       {/* PremierEvent, Pricing, and Partners removed */}

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, ArrowUpRight, Users, Calendar } from "lucide-react";
 // Background image served from public/optimized (WebP)
-const heroBg = '/optimized/moniepic.PNG';
+const heroBg = '/optimized/mitec.webp';
 
 type HeroProps = {
   onOpenEventbrite?: () => void;
@@ -10,19 +10,21 @@ type HeroProps = {
 const Hero = ({ onOpenEventbrite }: HeroProps) => {
   return (
     <>
-      <section className="relative hero-section flex items-start justify-start overflow-hidden pt-12 sm:pt-16 md:pt-20 min-h-[80vh] md:min-h-[44vh]">
+      <section className="relative hero-section flex items-start justify-start overflow-hidden pt-6 sm:pt-12 md:pt-20 min-h-[56vh] md:min-h-[44vh]">
       {/* Background Image with Overlay */}
       <img
         src={heroBg}
-        alt=""
+        alt="Monie Fest background"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
-        fetchpriority="high"
+        fetchPriority="high"
+        style={{ filter: 'brightness(1.0) contrast(1.05) saturate(0.95)' }}
       />
-      <div className="absolute inset-0 hero-gradient opacity-60" />
+      {/* dark overlay to deepen hero image for better text contrast */}
+      <div className="absolute inset-0 bg-black/50" aria-hidden />
 
       {/* Content (follow Programme styling) */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 pb-12 sm:pb-16">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pb-8 sm:pb-12">
         <div className="max-w-none md:max-w-7xl animate-fade-in mt-0 md:mt-6 lg:mt-10 text-left">
           <div className="block w-full pr-0 sm:pr-8 md:pr-10 pl-0">
             <div className="flex justify-start mb-4">

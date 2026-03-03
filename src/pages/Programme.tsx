@@ -580,15 +580,15 @@ const Programme = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroBg})` }}
         >
-            <div className="absolute inset-0 hero-gradient opacity-60" />
+            <div className="absolute inset-0 hero-gradient opacity-70" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 pt-24 pb-12">
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold text-white text-center tracking-tight max-w-4xl mx-auto leading-tight drop-shadow-xl">
               Programme
             </h1>
-              <p className="mt-3 text-sm md:text-lg text-primary-foreground/90 text-center max-w-3xl mx-auto">
-              Join industry leaders and investors for a full day of insights, panels and networking focused on Monie Fest and real estate investing.
+              <p className="mt-3 text-sm md:text-lg text-primary-foreground/90 text-center max-w-5xl mx-auto">
+              MONIE Fest is a large-scale financial lifestyle festival focused on money, investing, banking, and everyday financial decisions. Co-created by Foodie Media and Spire Digital, the event brings leading financial institutions and lifestyle brands together to engage 25,000–30,000 retail attendees in one location.
             </p>
             
         </div>

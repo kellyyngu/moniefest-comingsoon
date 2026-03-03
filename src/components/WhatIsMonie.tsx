@@ -33,9 +33,7 @@ export default function WhatIsMonie() {
               <h3 className="text-lg md:text-xl font-bold text-white drop-shadow-lg">WHAT IS MONIE FEST?</h3>
             </div>
 
-            <div className="mt-4 text-sm md:text-base text-white leading-relaxed drop-shadow-md">
-              <p className="mb-0">MONIE Fest is a large-scale financial lifestyle festival focused on money, investing, banking, and everyday financial decisions. Co-created by Foodie Media and Spire Digital, the event brings leading financial institutions and lifestyle brands together to engage 25,000–30,000 retail attendees in one location.</p>
-            </div>
+            {/* Description moved to Programme page */}
           </div>
         </article>
       </div>

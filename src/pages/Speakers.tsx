@@ -199,20 +199,20 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
   const headshotStyle: React.CSSProperties | undefined =
     s.name === "Datuk Clifford Hii"
       ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
-      : s.name === "Cheah Zi Kah" ||
-          s.name === "Tevaryan Thiagarajan" ||
-          s.name === "Shane Choo"
-        ? { objectPosition: 'center 25%' }
-        : undefined;
+      : s.name === "Shane Choo"
+      ? { objectPosition: 'center 12%' }
+      : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
+      ? { objectPosition: 'center 25%' }
+      : undefined;
 
   const initials = s.name.split(" ").map((n) => n[0]).slice(0, 2).join("");
 
   // ── Mobile 1-per-row: horizontal pill card ──
   if (singleCol) {
     return (
-      <div className="group flex items-center gap-4 bg-card rounded-2xl border border-white/6 px-4 py-3 w-full hover:border-primary/40 hover:bg-white/5 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+      <div className="group flex items-center gap-4 bg-card rounded-2xl border border-white/6 px-5 py-4 w-full hover:border-primary/40 hover:bg-white/5 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
         {/* Avatar */}
-        <div className={`flex-shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/40 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
+        <div className={`flex-shrink-0 w-20 h-20 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/40 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
           {s.photo ? (
             <img src={s.photo} alt={s.name} loading="eager" decoding="async"
               className={isLogo ? "w-full h-full object-contain p-1" : "w-full h-full object-cover object-top"}
@@ -225,9 +225,9 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
         <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
         {/* Text */}
         <div className="flex-1 min-w-0">
-          <p className="font-bold text-sm text-foreground leading-snug">{s.name}</p>
-          {s.title && <p className="text-xs text-primary italic mt-0.5 leading-tight">{s.title}</p>}
-          {s.company && <p className="text-xs text-muted-foreground mt-0.5 leading-tight">{s.company}</p>}
+          <p className="font-bold text-base text-foreground leading-snug">{s.name}</p>
+          {s.title && <p className="text-sm text-primary italic mt-0.5 leading-tight">{s.title}</p>}
+          {s.company && <p className="text-sm text-muted-foreground mt-0.5 leading-tight">{s.company}</p>}
           <div className="mt-1.5 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
             View profile
             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
@@ -239,12 +239,12 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
 
   // ── Desktop / 2-per-row: vertical card with top photo panel ──
   return (
-    <div className="group flex flex-col bg-card rounded-2xl border border-white/6 overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-200 w-full min-h-[240px] h-full">
+    <div className="group flex flex-col bg-card rounded-2xl border border-white/6 overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-200 w-full min-h-[320px] h-full">
       {/* Photo panel */}
-      <div className="relative flex items-end justify-center pt-8 pb-0 bg-gradient-to-b from-primary/8 to-transparent">
+      <div className="relative flex items-end justify-center pt-10 pb-0 bg-gradient-to-b from-primary/8 to-transparent">
         {/* Glow behind avatar */}
-        <div className="absolute top-6 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full bg-primary/15 blur-xl group-hover:bg-primary/25 transition-all duration-300" />
-        <div className={`relative z-10 w-24 h-24 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/50 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
+        <div className="absolute top-6 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full bg-primary/15 blur-xl group-hover:bg-primary/25 transition-all duration-300" />
+        <div className={`relative z-10 w-28 h-28 rounded-full overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/50 transition-all duration-200 flex items-center justify-center ${s.whiteBg ? "bg-white" : "bg-muted"}`}>
           {s.photo ? (
             <img src={s.photo} alt={s.name} loading="eager" decoding="async"
               className={isLogo ? "w-full h-full object-contain p-2" : "w-full h-full object-cover object-top"}
@@ -259,10 +259,10 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
       <div className="mx-5 mt-4 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       {/* Text panel */}
-      <div className="flex flex-col items-center text-center px-4 pt-3 pb-4 flex-1">
-        <p className="font-bold text-sm text-foreground leading-snug mb-0.5">{s.name}</p>
-        {s.title && <p className="text-xs text-primary italic leading-tight mb-0.5 line-clamp-2">{s.title}</p>}
-        {s.company && <p className="text-xs text-muted-foreground leading-tight line-clamp-1">{s.company}</p>}
+      <div className="flex flex-col items-center text-center px-5 pt-4 pb-5 flex-1">
+        <p className="font-bold text-base text-foreground leading-snug mb-0.5">{s.name}</p>
+        {s.title && <p className="text-sm text-primary italic leading-tight mb-0.5 line-clamp-2">{s.title}</p>}
+        {s.company && <p className="text-sm text-muted-foreground leading-tight line-clamp-1">{s.company}</p>}
         <div className="mt-auto pt-3 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
           View profile
           <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
