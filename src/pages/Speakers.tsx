@@ -279,6 +279,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
               src={s.photo}
               alt={s.name}
               loading="eager"
+              fetchPriority="high"
               decoding="async"
               className={
                 isLogo
@@ -344,6 +345,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
               src={s.photo}
               alt={s.name}
               loading="eager"
+              fetchPriority="high"
               decoding="async"
               className={
                 isLogo
@@ -541,6 +543,8 @@ const SpeakersPage = () => {
                             placeholderImage(guestOfHonour.name)
                           }
                           alt={guestOfHonour.name}
+                          loading="eager"
+                          fetchPriority="high"
                           className="w-full h-full object-cover object-top"
                         />
                       </div>
@@ -666,15 +670,17 @@ const SpeakersPage = () => {
                 <div className="flex items-start sm:items-center gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                      <img
-                        src={
-                          activeSpeaker.photo ||
-                          placeholderImage(activeSpeaker.name)
-                        }
-                        alt={activeSpeaker.name}
-                        className="w-full h-full object-cover object-top"
-                        style={computeHeadshotStyle(activeSpeaker.name)}
-                      />
+                        <img
+                          src={
+                            activeSpeaker.photo ||
+                            placeholderImage(activeSpeaker.name)
+                          }
+                          alt={activeSpeaker.name}
+                          loading="eager"
+                          fetchPriority="high"
+                          className="w-full h-full object-cover object-top"
+                          style={computeHeadshotStyle(activeSpeaker.name)}
+                        />
                     </div>
                   </div>
 

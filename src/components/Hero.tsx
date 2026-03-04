@@ -51,6 +51,8 @@ const Hero = ({ onOpenEventbrite }: HeroProps) => {
               <img
                 src={`${import.meta.env.BASE_URL}moniefest2026.svg`}
                 alt="Monie Fest 2026"
+                loading="eager"
+                fetchPriority="high"
                 className="logo-img block max-w-full h-auto w-80 sm:w-96 md:w-[460px] lg:w-[800px] xl:w-[580px]"
               />
             </div>

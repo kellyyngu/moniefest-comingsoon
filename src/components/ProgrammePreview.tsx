@@ -249,6 +249,8 @@ export default function ProgrammePreview({
                           <img
                             src={s.photo}
                             alt={s.name}
+                            loading="eager"
+                            fetchPriority="high"
                             className="w-full h-full object-cover block"
                             style={isClifford ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%', display: 'block' } : isShane ? { objectPosition: 'center 12%' } : isAfiq ? { objectPosition: 'center 22%' } : { objectPosition: 'top' }}
                           />

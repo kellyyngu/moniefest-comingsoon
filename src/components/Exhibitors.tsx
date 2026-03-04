@@ -112,6 +112,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                 alt={formatAlt(fullUrls ? logo : logo)}
                 title={formatAlt(fullUrls ? logo : logo)}
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
                 className="max-w-[90%] max-h-[80%] object-contain"
               />
@@ -120,7 +121,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-3 sm:p-6 flex items-center justify-center w-[calc(50%-0.5rem)] sm:w-56 h-28 sm:h-44 shadow-sm"
+                className="group bg-white rounded-xl p-3 sm:p-6 flex items-center justify-center w-[calc(50%-0.5rem)] sm:w-56 h-28 sm:h-44 shadow-sm relative"
               >
                 {logoUrl ? (
                   <a
@@ -134,6 +135,40 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                   </a>
                 ) : (
                   imageElement
+                )}
+
+                {logoUrl && (
+                  <>
+                    {/* Desktop: top-right pill (similar to mobile) */}
+                    <a
+                      href={logoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${formatAlt(fullUrls ? logo : logo)} website`}
+                      className="absolute right-3 top-3 hidden sm:inline-flex items-center bg-black/65 hover:bg-black/75 text-white text-xs px-2 py-1 rounded-full shadow-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-90">
+                        <path d="M14 3h7v7" />
+                        <path d="M10 14L21 3" />
+                        <path d="M21 21H3V3" />
+                      </svg>
+                    </a>
+
+                    {/* Mobile: always-visible small pill (tap target) */}
+                    <a
+                      href={logoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${formatAlt(fullUrls ? logo : logo)} website`}
+                      className="absolute right-3 top-3 inline-flex items-center gap-2 bg-black/70 text-white text-xs px-2 py-1 rounded-full shadow-sm sm:hidden"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-90">
+                        <path d="M14 3h7v7" />
+                        <path d="M10 14L21 3" />
+                        <path d="M21 21H3V3" />
+                      </svg>
+                    </a>
+                  </>
                 )}
               </div>
             );
@@ -150,6 +185,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                 alt={formatAlt(fullUrls ? logo : logo)}
                 title={formatAlt(fullUrls ? logo : logo)}
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
                 className="max-w-[85%] max-h-[60%] object-contain"
               />
@@ -158,7 +194,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-4 sm:p-6 flex flex-col items-center justify-center w-full sm:w-64 h-36 sm:h-44 shadow-sm hover:shadow-md transition-transform hover:-translate-y-1"
+                className="group bg-white rounded-xl p-4 sm:p-6 flex flex-col items-center justify-center w-full sm:w-64 h-36 sm:h-44 shadow-sm hover:shadow-md transition-transform hover:-translate-y-1 relative"
               >
                 {logoUrl ? (
                   <a
@@ -175,6 +211,38 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                 )}
                 {!hideCaption && (
                   <div className="mt-3 text-sm text-muted-foreground text-center">{formatAlt(fullUrls ? logo : logo)}</div>
+                )}
+
+                {logoUrl && (
+                  <>
+                    <a
+                      href={logoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${formatAlt(fullUrls ? logo : logo)} website`}
+                      className="absolute right-3 top-3 hidden sm:inline-flex items-center bg-black/65 hover:bg-black/75 text-white text-xs px-2 py-1 rounded-full shadow-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-90">
+                        <path d="M14 3h7v7" />
+                        <path d="M10 14L21 3" />
+                        <path d="M21 21H3V3" />
+                      </svg>
+                    </a>
+
+                    <a
+                      href={logoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${formatAlt(fullUrls ? logo : logo)} website`}
+                      className="absolute right-3 top-3 inline-flex items-center gap-2 bg-black/70 text-white text-xs px-2 py-1 rounded-full shadow-sm sm:hidden"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-90">
+                        <path d="M14 3h7v7" />
+                        <path d="M10 14L21 3" />
+                        <path d="M21 21H3V3" />
+                      </svg>
+                    </a>
+                  </>
                 )}
               </div>
             );

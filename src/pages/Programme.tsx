@@ -418,6 +418,8 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
           <img
             src={speaker.photo}
             alt={displayName}
+            loading="eager"
+            fetchPriority="high"
             className={`w-full h-full ${isLogo ? 'object-contain p-1' : 'object-cover object-top'}`}
             style={headshotStyle}
           />
@@ -514,6 +516,8 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
                       <img
                         src={p.image || `https://via.placeholder.com/200?text=${encodeURIComponent(p.name)}`}
                         alt={p.name}
+                        loading="eager"
+                        fetchPriority="high"
                         className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
                         style={{ padding: whiteBg ? '8%' : '4%' }}
                       />
@@ -719,6 +723,8 @@ const Programme = () => {
                               <img
                                 src={activeSpeaker.photo || placeholderImage(activeSpeaker.name)}
                                 alt={activeSpeaker.name}
+                                loading="eager"
+                                fetchPriority="high"
                                 className="w-full h-full object-cover object-top"
                                 style={modalHeadshotStyle}
                               />

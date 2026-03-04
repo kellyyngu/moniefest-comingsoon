@@ -114,7 +114,8 @@ const FAQPage = () => {
           src={heroBg}
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
+          loading="eager"
+          fetchPriority="high"
           decoding="async"
         />
         <div className="absolute inset-0 hero-gradient opacity-60" />
