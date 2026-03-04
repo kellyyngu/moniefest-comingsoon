@@ -84,6 +84,17 @@ With a proven track record in driving growth, strategic transformation, and orga
     photo: "/optimized/cheah_Zi_Kah.png",
     bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
   },
+   {
+    name: "Chin Yi Xuan",
+    title: "Finance Creator",
+    company: "No Money Lah",
+    photo: "/optimized/yixuan.webp",
+    bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
+
+He holds a degree in Economics from Universiti Malaya (UM) and was formerly the General Manager of a licensed proprietary trading firm in Malaysia. Yi Xuan has been a speaker for Bursa Malaysia’s educational webinars for the past three years, and has also appeared on platforms such as BBK Network and Caijin by BFM.
+
+Currently pursuing his Certified Financial Planner (CFP) qualification, he combines real-world investing experience with structured financial planning principles — helping working adults prepare not just for retirement, but for life’s bigger financial responsibilities, including caring for aging parents.`,
+  },
 
   {
     name: "Gin Chong",
@@ -136,10 +147,12 @@ Marketing and Economics, from Monash University.`,
     photo: "/optimized/liksen.png",
     bio: `Liksen Lei is an investor focused on U.S. equities with over five years of investing experience. His investment journey gained strong momentum following the COVID-19 period, where he achieved consistent alpha through disciplined research and strategic positioning.
 
-Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is currently pursuing a Master’s degree in Investment Banking at Monash University (2025–2026). Alongside his academic pursuits, he actively shares investment insights through his platform, @insightinvests, where he focuses on market trends, portfolio strategy, and navigating macroeconomic developments.
+Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is currently pursuing a Master’s degree in International Business at Monash University (2025–2026). Alongside his academic pursuits, he actively shares investment insights through his platform, @insightinvests, where he focuses on market trends, portfolio strategy, and navigating macroeconomic developments.
 
 His approach combines academic knowledge with practical market experience, offering a grounded perspective on investing in global equity markets.`,
   },
+ 
+
   {
     name: "Mohammad Bazli Che Rozenan, CFA",
     title: "Director, Members Engagement",
@@ -169,6 +182,16 @@ Bazli graduated with a First Class Master of Physics from the University of Warw
 Prior to joining S&P DJI, Sean was a senior product specialist at Franklin Templeton, supporting a number of business development and client retention activities for their global, emerging market and U.S. equity investment platforms. He has also had roles as a product manager and proposal and investment writer at AMP Capital Investors, Russell Investments and Fidelity International. Before joining the financial services industry in 2006, Sean was a broadcast journalist in Queensland, Australia.
 
 Sean holds a master’s degree in International Relations from Dublin City University and bachelor’s degree in Journalism from the University of Queensland.`,
+  },
+
+    {
+    name: "Sean Tan",
+    title: "Property YouTuber",
+    company: "@iherng",
+    photo: "/optimized/iherng.jpg",
+    bio: `Sean, academically trained with a Degree in Architecture and a Master’s in Real Estate, brings over 15 years of industry experience to the table. Along the way, he has seen early investment successes, and yes, a few failures too, which shaped his practical and grounded perspective on property.
+
+Today, he channels that experience into his mission of simplifying property knowledge through engaging videos and honest property reviews nationwide. Moreover, he has documented more than 500 different property projects to date.`,
   },
   {
     name: "Shane Choo",

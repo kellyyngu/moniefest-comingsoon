@@ -27,7 +27,7 @@ const highlights: Highlight[] = [
     title: "webull Highlights",
     description: "Special highlights brought to you by WeBull.",
     image: "/optimized/webullHighlights.png",
-    link: "https://www.webull.com.my/k/sinchew",
+    link: "https://www.webull.com.my/ko-yield/1719988436381-07d7bf?inviteCode=HZG2oy&invite_source=MKTB-MY-KOL&inviteSource=MKTB-MY-KOL&source=monie&irclickid=monie_HZG2oy",
     noCrop: true,
     icon: Sparkles,
   },

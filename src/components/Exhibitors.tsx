@@ -22,9 +22,14 @@ const wealthFortLogo = '/optimized/WealthFort.svg';
 const cgsiLogo = '/optimized/CGSI.svg';
 const ctosLogo = '/optimized/CTOS.svg';
 const publicMutualLogo = '/optimized/publicMutual.png';
+const bimbsecLogo = '/optimized/BIMBSec.svg';
 const cboeLogo = '/optimized/CBOE.svg';
 const stayWokePropertyLogo = '/optimized/stayWokeProperty.svg';
 const zietLogo = '/optimized/ziet.svg';
+const noMoneyLahLogo = '/optimized/NoMoneyLah.svg';
+const bbkNetworkLogo = '/optimized/BBKNetwork.svg';
+const iherngLogo = '/optimized/iherng.png';
+const insightInvestsLogo = '/optimized/insightInvests.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -42,6 +47,7 @@ const logoUrls: Record<string, string> = {
   [gambitTrusteesLogo]: 'https://digitaltrustees.com.my/',
   [bursaLogo]: 'https://my.bursamalaysia.com/',
   [capbayLogo]: 'https://capbay.com/invest/',
+  [bimbsecLogo]: 'https://www.bimbsec.com.my/',
   [spgLogo]: 'http://www.spglobal.com/spdji/',
   [phillipLogo]: 'https://www.phillip.com.my/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
@@ -59,11 +65,11 @@ const supportingPartners = [
   societyMalaysiaLogo,
   fimmLogo,
 ];
-const silverSponsors = [capbayLogo, ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo,  publicMutualLogo];
+const silverSponsors = [bimbsecLogo, capbayLogo,  ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo, publicMutualLogo];
 const goldSponsors = [cgsiLogo,phillipLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 const knowledgePartners = [cboeLogo, spgLogo];
-const friendsOfMonie = [ncspaceLogo, stayWokePropertyLogo, wealthFortLogo,  zietLogo];
+const friendsOfMonie = [bbkNetworkLogo, iherngLogo, insightInvestsLogo, ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, wealthFortLogo, zietLogo];
 
 const baseUrl = "";
 
