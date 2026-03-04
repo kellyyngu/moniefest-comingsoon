@@ -241,6 +241,35 @@ const mainSpeakersList = speakers.filter(
   (s) => s !== guestOfHonour && !organisersList.includes(s),
 );
 
+// Desired display order for main speakers (keep organisers and guest unchanged)
+const desiredSpeakerOrder: string[] = [
+  "Datuk Clifford Hii",
+  "Cheah Zi Kah",
+  "Jeroni Khoo",
+  "Tevaryan Thiagarajan",
+  "Afiq Ismail",
+  "Mohammad Bazli Che Rozenan, CFA",
+  "Sean Freer",
+  "Vincent Wang",
+  "Chin Yi Xuan",
+  "Gin Chong",
+  "Fong Wei Ziet",
+  "Liksen Lei",
+  "Nigel Chong",
+  "Sean Tan",
+  "Shane Choo",
+  "Tan Kyzen, Max",
+];
+
+const mainSpeakersListOrdered = [...mainSpeakersList].sort((a, b) => {
+  const ia = desiredSpeakerOrder.indexOf(a.name);
+  const ib = desiredSpeakerOrder.indexOf(b.name);
+  if (ia === -1 && ib === -1) return 0;
+  if (ia === -1) return 1;
+  if (ib === -1) return -1;
+  return ia - ib;
+});
+
 const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
   const isLogo =
     !!(s.photo && s.photo.toLowerCase().includes("microleap")) ||
@@ -636,7 +665,7 @@ const SpeakersPage = () => {
                     : "flex flex-wrap items-stretch justify-center gap-4 sm:gap-6 px-2 mb-12"
                 }
               >
-                {mainSpeakersList.map((s, i) => (
+                {mainSpeakersListOrdered.map((s, i) => (
                   <div
                     key={i}
                     role="button"
