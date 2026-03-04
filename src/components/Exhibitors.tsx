@@ -50,8 +50,6 @@ const logoUrls: Record<string, string> = {
   [ctosLogo]: 'https://www.ctoscredit.com.my',
   [publicMutualLogo]: 'https://www.publicmutual.com.my',
   [cboeLogo]: 'https://www.cboe.com/',
-  [stayWokePropertyLogo]: 'https://drive.google.com/drive/folders/1W7aB3ZLExOQjhXYI85jJVcAni1bbEXK3',
-  [zietLogo]: 'https://drive.google.com/drive/folders/13WVjGfmkttty4B9PgcyWFUdNda_UsxBv',
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
