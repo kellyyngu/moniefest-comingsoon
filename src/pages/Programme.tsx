@@ -337,6 +337,7 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
     speakers: [
       {
         name: "Yeoh Chen Chow",
+        title: "",
         company: "",
       },
     ],
@@ -429,10 +430,12 @@ Over his career, Max had previously been involved in a software development comp
     speakers: [
       {
         name: "Lucas",
+        title: "",
         company: "BBK",
       },
       {
         name: "Kah Mun",
+        title: "",
         company: "BBK",
       },
     ],
