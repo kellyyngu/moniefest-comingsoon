@@ -259,9 +259,9 @@ export default function ProgrammePreview({
                         )}
                       </div>
                       <div>
-                        <p className="text-sm md:text-base font-semibold text-foreground leading-tight">{s.name}</p>
+                        <p className="text-sm md:text-base font-semibold text-white leading-tight">{s.name}</p>
                         {s.title && <p className="text-[11px] md:text-sm text-primary italic leading-tight">{s.title}</p>}
-                        {s.company && <p className="text-[11px] md:text-sm text-muted-foreground leading-tight">{s.company}</p>}
+                        {s.company && <p className="text-[11px] md:text-sm text-white leading-tight">{s.company}</p>}
                       </div>
                     </div>
                   );

@@ -325,7 +325,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
         <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
         {/* Text */}
         <div className="flex-1 min-w-0">
-          <p className="font-bold text-base text-foreground leading-snug">
+          <p className="font-bold text-base text-white leading-snug">
             {s.name}
           </p>
           {s.title && (
@@ -334,7 +334,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
             </p>
           )}
           {s.company && (
-            <p className="text-sm text-muted-foreground mt-0.5 leading-tight">
+            <p className="text-sm text-white mt-0.5 leading-tight">
               {s.company}
             </p>
           )}
@@ -394,7 +394,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
 
       {/* Text panel */}
       <div className="flex flex-col items-center text-center px-5 pt-4 pb-5 flex-1">
-        <p className="font-bold text-base text-foreground leading-snug mb-0.5">
+        <p className="font-bold text-base text-white leading-snug mb-0.5">
           {s.name}
         </p>
         {s.title && (
@@ -403,7 +403,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
           </p>
         )}
         {s.company && (
-          <p className="text-sm text-muted-foreground leading-tight line-clamp-1">
+          <p className="text-sm text-white leading-tight line-clamp-1">
             {s.company}
           </p>
         )}
@@ -582,7 +582,7 @@ const SpeakersPage = () => {
                       <span className="inline-block text-[10px] uppercase tracking-widest text-primary/80 font-semibold mb-1.5">
                         Guest of Honour
                       </span>
-                      <h3 className="text-xl sm:text-2xl font-bold text-navy-deep leading-tight">
+                      <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">
                         {guestOfHonour.name}
                       </h3>
                       {guestOfHonour.title && (
@@ -591,7 +591,7 @@ const SpeakersPage = () => {
                         </p>
                       )}
                       {guestOfHonour.company && (
-                        <p className="text-sm text-foreground/80 mt-1">
+                        <p className="text-sm text-white mt-1">
                           {guestOfHonour.company}
                         </p>
                       )}
@@ -714,13 +714,13 @@ const SpeakersPage = () => {
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="text-lg sm:text-2xl font-bold text-navy-deep">
+                    <h3 className="text-lg sm:text-2xl font-bold text-white">
                       {activeSpeaker.name}
                     </h3>
                     <p className="text-xs sm:text-sm text-primary italic mt-1">
                       {activeSpeaker.title}
                     </p>
-                    <p className="text-sm text-foreground font-semibold mt-1">
+                    <p className="text-sm text-white font-semibold mt-1">
                       {activeSpeaker.company}
                     </p>
                   </div>
@@ -736,7 +736,7 @@ const SpeakersPage = () => {
               </div>
 
               <div className="p-4 sm:p-6 overflow-auto max-h-[70vh]">
-                <div className="speaker-bio text-muted-foreground text-sm leading-relaxed">
+                <div className="speaker-bio text-white text-sm leading-relaxed">
                   {activeSpeaker.bio ? (
                     activeSpeaker.bio.split(/\n\s*\n/).map((para, idx) => (
                       <p key={idx} className="mb-2 text-left sm:text-justify">

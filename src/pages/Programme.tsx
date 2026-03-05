@@ -230,7 +230,6 @@ const mainStageScheduleDay2: Session[] = [
     panelTitle: "Global Market Signals - Rates, Indices and Volatility",
     bullets: [],
     speakers: [
-      { name: "YB Sim Tze Tzin", title: "", company: "" },
       {
         name: "Sean Freer",
         title: "Director, Global Exchange Indices",
@@ -250,15 +249,6 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
         bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
       },
     ],
-    moderator: {
-      name: "Fong Wei Ziet",
-      title: "Director",
-      company: "Ziet Media Sdn Bhd",
-      photo: "/optimized/ziet.JPG",
-      bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
-
-He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`
-    },
     description: "",
   },
 
@@ -433,9 +423,9 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
 
       {/* Text */}
       <div className="flex flex-col justify-center flex-1 min-w-0">
-        <p className="font-bold text-foreground text-sm leading-snug">{displayName}</p>
+        <p className="font-bold text-white text-sm leading-snug">{displayName}</p>
         {speaker.title && <p className="text-xs text-primary italic mt-0.5 leading-tight">{speaker.title}</p>}
-        {speaker.company && <p className="text-xs text-muted-foreground mt-0.5 leading-tight">{speaker.company}</p>}
+        {speaker.company && <p className="text-xs text-white mt-0.5 leading-tight">{speaker.company}</p>}
         {clickable && (
           <div className="mt-1 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
             View profile
@@ -734,17 +724,17 @@ const Programme = () => {
                       </div>
 
                       <div className="flex-1">
-                        <h3 className="text-lg sm:text-2xl font-bold text-navy-deep">{activeSpeaker.name}</h3>
-                        <p className="text-xs sm:text-sm text-primary italic mt-1">{activeSpeaker.title}</p>
-                        <p className="text-sm text-foreground font-semibold mt-1">{activeSpeaker.company}</p>
-                      </div>
+                          <h3 className="text-lg sm:text-2xl font-bold text-white">{activeSpeaker.name}</h3>
+                          <p className="text-xs sm:text-sm text-primary italic mt-1">{activeSpeaker.title}</p>
+                          <p className="text-sm text-white font-semibold mt-1">{activeSpeaker.company}</p>
+                        </div>
 
                       <button onClick={closeSpeakerModal} aria-label="Close" className="ml-4 text-muted-foreground text-lg">×</button>
                     </div>
                   </div>
 
                   <div className="p-4 sm:p-6 overflow-auto max-h-[70vh]">
-                    <div className="speaker-bio text-muted-foreground text-sm leading-relaxed">
+                    <div className="speaker-bio text-white text-sm leading-relaxed">
                       {activeSpeaker.bio ? (
                         activeSpeaker.bio.split(/\n\s*\n/).map((para, idx) => (
                             <p key={idx} className="mb-2 text-left sm:text-justify">{para}</p>
