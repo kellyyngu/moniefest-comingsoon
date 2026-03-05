@@ -184,6 +184,18 @@ Prior to joining S&P DJI, Sean was a senior product specialist at Franklin Templ
 Sean holds a master’s degree in International Relations from Dublin City University and bachelor’s degree in Journalism from the University of Queensland.`,
   },
 
+  {
+    name: "Sai",
+    title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
+    company: "",
+    photo: "/optimized/sai.webp",
+    bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
+
+Blending elements of Japanese and Penang culture in his comedic skits, his viewers enjoy his cultural experience videos where he explores the traditions and the linguistics of local people with his unique sense of humour. His content also occasionally takes viewers on a journey to various locations within Malaysia, particularly Penang.
+
+Sai has also been featured in films such as Follow Aunty La! and variety shows like Why You So Smart Geh? His charisma and ability to engage with both local and international audiences have garnered him a dedicated fanbase, with many tuning in for his lighthearted yet informative takes on life.`,
+  },
+
     {
     name: "Sean Tan",
     title: "Property YouTuber",
@@ -229,6 +241,39 @@ Over his career, Max had previously been involved in a software development comp
     photo: "/optimized/vincentWang.jpg",
     bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
   },
+  
+  {
+    name: "Jay Cheong",
+    title: "Founder & CEO",
+    company: "BenchX Capital",
+    photo: "/optimized/jay.avif",
+    bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
+
+He is the Founder & CEO of BenchX Capital, advising founders, corporates, and investors on private transactions, capital strategy, and special situations, supported by institutional-grade financial analysis and market intelligence.
+
+Jay also works closely with PLCs, institutional partners, and senior management on capital planning, financial product structuring, strategic partnerships, and growth positioning.`,
+  },
+  {
+    name: "Isabelle Zhen",
+    title: "Head of Group Equity Marketing",
+    company: "Kenanga Investment Bank Berhad",
+    photo: "/optimized/isabelleZhen.avif",
+    bio: `A multiple award-winning financial product specialist at Kenanga Investment Bank, with awards from UK, HK, Singapore & Malaysia. She has spoken at over 190 events & today, she has a theory that men are great traders, but women are fantastic investors. She is licensed by Securities Commission with CMSRL 6 and 7, she now serves as Head of Group Equity Marketing at Kenanga Investment Bank Berhad.`,
+  },
+  {
+    name: "Aaron Tang",
+    title: "General Manager (APAC)",
+    company: "Luno Malaysia",
+    photo: "/optimized/aaronTang.avif",
+    bio: `Aaron is the General Manager (APAC) for Luno where he oversees Luno’s business operations in the region. He is also responsible for cultivating relationships with stakeholders in the local digital asset and financial sectors, banks and key government bodies to help drive business and industry interests in cryptocurrency.
+
+As part of the pioneering team in Malaysia, Aaron began his journey at Luno in 2018 as the
+Marketing and Community Lead, following which he took on the role as the Country Manager for Luno Malaysia in 2019. Notably, he played an instrumental role in launching Luno in Malaysia, where the company became the first Digital Asset Exchange to obtain full approval from Securities Commission Malaysia in 2019.
+
+Prior to joining Luno, Aaron spent almost a decade in the Oil & Gas industry working with international companies like PETRONAS and Weatherford International. He also has experience in the Learning & Development and Social Enterprise space. In his free time, he runs a popular blog — which has been featured in publications such as Business Insider, The Edge, iMoney, SAYS and Malaysia’s #1 Business Radio, BFM.
+
+Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from Universiti Teknologi PETRONAS.`,
+  },
 ];
 
 // Grouping for page layout
@@ -243,8 +288,11 @@ const mainSpeakersList = speakers.filter(
 
 // Desired display order for main speakers (keep organisers and guest unchanged)
 const desiredSpeakerOrder: string[] = [
+  "Jay Cheong",
   "Datuk Clifford Hii",
   "Cheah Zi Kah",
+  "Isabelle Zhen",
+  "Aaron Tang",
   "Jeroni Khoo",
   "Tevaryan Thiagarajan",
   "Afiq Ismail",
@@ -256,6 +304,7 @@ const desiredSpeakerOrder: string[] = [
   "Fong Wei Ziet",
   "Liksen Lei",
   "Nigel Chong",
+  "Sai",
   "Sean Tan",
   "Shane Choo",
   "Tan Kyzen, Max",

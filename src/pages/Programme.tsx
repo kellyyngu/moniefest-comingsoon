@@ -137,9 +137,24 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
       },
     ] },
   { time: "16:45 - 17:30", isPanel: true, panelNumber: 3, panelTitle: "Can Crypto Coexist With a Boring, Stable Financial Plan?", bullets: [], speakers: [
-      { name: "Datuk Clifford Hii", title: "Chief Executive Officer", company: "Gambit Group", photo: '/optimized/datuk_clifford_hii.jpg', bio: `Datuk Clifford Hii is a former lawyer turned corporate leader with extensive experience at the helm of both public-listed and private organisations. He has held CEO and Managing Director roles in prominent institutions, including HCK Capital Berhad and SEGi, among others.
 
-With a proven track record in driving growth, strategic transformation, and organisational turnaround, Datuk Clifford brings deep expertise across the education, property, and financial sectors. His leadership is marked by strong governance, commercial acumen, and a forward-looking approach to building sustainable and scalable businesses.` },
+      {
+        name: "Aaron Tang",
+        title: "General Manager (APAC)",
+        company: "Luno Malaysia",
+        photo: "/optimized/aaronTang.avif",
+        bio: `Aaron is the General Manager (APAC) for Luno where he oversees Luno’s business operations in the region. He is also responsible for cultivating relationships with stakeholders in the local digital asset and financial sectors, banks and key government bodies to help drive business and industry interests in cryptocurrency.
+
+    As part of the pioneering team in Malaysia, Aaron began his journey at Luno in 2018 as the
+    Marketing and Community Lead, following which he took on the role as the Country Manager for Luno Malaysia in 2019. Notably, he played an instrumental role in launching Luno in Malaysia, where the company became the first Digital Asset Exchange to obtain full approval from Securities Commission Malaysia in 2019.
+
+    Prior to joining Luno, Aaron spent almost a decade in the Oil & Gas industry working with international companies like PETRONAS and Weatherford International. He also has experience in the Learning & Development and Social Enterprise space. In his free time, he runs a popular blog — which has been featured in publications such as Business Insider, The Edge, iMoney, SAYS and Malaysia’s #1 Business Radio, BFM.
+
+    Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from Universiti Teknologi PETRONAS.`
+      },
+            { name: "Datuk Clifford Hii", title: "Chief Executive Officer", company: "Gambit Group", photo: '/optimized/datuk_clifford_hii.jpg', bio: `Datuk Clifford Hii is a former lawyer turned corporate leader with extensive experience at the helm of both public-listed and private organisations. He has held CEO and Managing Director roles in prominent institutions, including HCK Capital Berhad and SEGi, among others.
+
+  With a proven track record in driving growth, strategic transformation, and organisational turnaround, Datuk Clifford brings deep expertise across the education, property, and financial sectors. His leadership is marked by strong governance, commercial acumen, and a forward-looking approach to building sustainable and scalable businesses.` },
     ], description: "" },
   { time: "17:30 - 18:15", title: "You Can’t Build a Stable Financial Plan on Unstable Custody", description: "", speakers: [{ name: "Tevaryan A/L Thiagarajan", title: "Senior Manager, Digital Asset & Corporate Development", company: "Gambit Custody", photo: '/optimized/tevaryanThiagarajan.png', bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.` }] },
   { time: "18:15 - 19:00", isPanel: true, panelNumber: 4, panelTitle: "When Passion Meets Planning: How to Turn Dreams into Reality", bullets: [], speakers: [
@@ -156,7 +171,24 @@ With a proven track record in driving growth, strategic transformation, and orga
 const engagementStageSchedule: Session[] = [
   { time: "11:30 - 12:00", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
   { time: "12:00 - 12:30", },
-  { time: "12:30 - 13:00", },
+  {
+    time: "12:30 - 13:00",
+    title: "When Parents Grow Older: Here's How to Prepare Financially",
+    description: "",
+    speakers: [
+      {
+        name: "Chin Yi Xuan",
+        title: "Finance Creator",
+        company: "No Money Lah",
+        photo: "/optimized/yixuan.webp",
+        bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
+
+He holds a degree in Economics from Universiti Malaya (UM) and was formerly the General Manager of a licensed proprietary trading firm in Malaysia. Yi Xuan has been a speaker for Bursa Malaysia’s educational webinars for the past three years, and has also appeared on platforms such as BBK Network and Caijin by BFM.
+
+Currently pursuing his Certified Financial Planner (CFP) qualification, he combines real-world investing experience with structured financial planning principles — helping working adults prepare not just for retirement, but for life’s bigger financial responsibilities, including caring for aging parents.`,
+      },
+    ],
+  },
   { time: "13:00 - 13:30", title: "", description: "", speakers: [
     { name: "Exhibitor B & Panelists", title: "Exhibitor & Panelists", company: "" },
   ],
@@ -173,9 +205,25 @@ const engagementStageSchedule: Session[] = [
 
   { time: "14:00 - 14:30", },
 
-  { time: "14:30 - 15:00", title: "Podcast 2: When Is It Actually Safe to Upgrade Your Lifestyle?", description: "", speakers: [
-    { name: "Exhibitor E & Panelists", title: "Exhibitor & Panelists", company: "" },
-  ] },
+  {
+    time: "14:30 - 15:00",
+    title: "Podcast 2: When Is It Actually Safe to Upgrade Your Lifestyle?",
+    description: "",
+    speakers: [
+      { name: "Exhibitor E & Panelists", title: "Exhibitor & Panelists", company: "" },
+    ],
+    moderator: {
+      name: "Sai",
+      title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
+      company: "",
+      photo: "/optimized/sai.webp",
+      bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
+
+Blending elements of Japanese and Penang culture in his comedic skits, his viewers enjoy his cultural experience videos where he explores the traditions and the linguistics of local people with his unique sense of humour. His content also occasionally takes viewers on a journey to various locations within Malaysia, particularly Penang.
+
+Sai has also been featured in films such as Follow Aunty La! and variety shows like Why You So Smart Geh? His charisma and ability to engage with both local and international audiences have garnered him a dedicated fanbase, with many tuning in for his lighthearted yet informative takes on life.`,
+    },
+  },
 
   { time: "15:00 - 15:30", },
 
@@ -216,6 +264,15 @@ const mainStageScheduleDay2: Session[] = [
     panelTitle: "Buy, Rent, or Wait: Making Property Decisions Without FOMO",
     bullets: [],
     speakers: [
+      {
+        name: "Sean Tan",
+        title: "Property YouTuber",
+        company: "@iherng",
+        photo: "/optimized/iherng.jpg",
+        bio: `Sean, academically trained with a Degree in Architecture and a Master’s in Real Estate, brings over 15 years of industry experience to the table. Along the way, he has seen early investment successes, and yes, a few failures too, which shaped his practical and grounded perspective on property.
+
+    Today, he channels that experience into his mission of simplifying property knowledge through engaging videos and honest property reviews nationwide. Moreover, he has documented more than 500 different property projects to date.`,
+      },
       { name: "Exhibitor H & Panelists", title: "Exhibitor & Panelists", company: "" },
     ],
     description: "",
@@ -277,7 +334,12 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
     panelNumber: 4,
     panelTitle: "Entrepreneurship in 2026: Building Businesses That Last in a Changing Economy",
     bullets: [],
-    speakers: [],
+    speakers: [
+      {
+        name: "Yeoh Chen Chow",
+        company: "",
+      },
+    ],
     description: "",
   },
 
@@ -341,13 +403,40 @@ Over his career, Max had previously been involved in a software development comp
   { time: "11:30 - 12:00", title: "Podcast 1: Future Skills for Malaysia's Youth: What Employers Really Look For",},
   { time: "12:00 - 12:30", },
   { time: "12:30 - 13:00", title: "Investment Talk 6", description: "", speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }] },
-  { time: "13:00 - 13:30", title: "Podcast 2: Financial Independence for Women — Planning, Investing & Growing",},
+  {
+    time: "13:00 - 13:30",
+    title: "Podcast 2: Financial Independence for Women — Planning, Investing & Growing",
+    description: "",
+    speakers: [
+      {
+        name: "Isabelle Zhen",
+        title: "Head of Group Equity Marketing",
+        company: "Kenanga Investment Bank Berhad",
+        photo: "/optimized/isabelleZhen.avif",
+        bio: `A multiple award-winning financial product specialist at Kenanga Investment Bank, with awards from UK, HK, Singapore & Malaysia. She has spoken at over 190 events & today, she has a theory that men are great traders, but women are fantastic investors. She is licensed by Securities Commission with CMSRL 6 and 7, she now serves as Head of Group Equity Marketing at Kenanga Investment Bank Berhad.`,
+      },
+    ],
+  },
   { time: "13:30 - 14:00", },
   { time: "14:00 - 14:30", title: "Investment Talk 7", description: "", speakers: [{ name: "Exhibitor L", title: "Exhibitor", company: "" }] },
   { time: "14:30 - 15:00", title: "Podcast 3: From Scam to Justice — What Happens After You Report?", description: "", },
   { time: "15:00 - 15:30", },
   { time: "15:30 - 16:00", title: "Investment Talk 8", description: "", speakers: [{ name: "Exhibitor M", title: "Exhibitor", company: "" }] },
-  { time: "16:00 - 16:30", },
+  {
+    time: "16:00 - 16:30",
+    title: "",
+    description: "",
+    speakers: [
+      {
+        name: "Lucas",
+        company: "BBK",
+      },
+      {
+        name: "Kah Mun",
+        company: "BBK",
+      },
+    ],
+  },
   { time: "16:30 - 17:00", },
   { time: "17:00 - 17:30", title: "Why Stock Investing is For You?", description: "", speakers: [
     { name: "Shane Choo", title: "Director, WealthFort", company: "WealthFort", photo: "/optimized/shane.png", whiteBg: true, bio: `Shane Choo is a financial speaker, trader and investor, with over 15 years of experience trading and investing in local and international stocks, options, ETF, and currency. As a speaker, he is often engaged by investment banks and securities firms to train their retail clients in trading and investment. Since 2015, he has been appointed by Bursa Malaysia to design and conduct investment curriculum to young investors and retail investors nationwide. To date, he has trained over 35,000 individuals in stock investing. Shane is also an International Certified Professional Trainer by IPMA, UK and an Accredited Trainer by HRD Corp. In 2015, he was acknowledged by President Obama for his work as a young leader in financial education.` },

@@ -30,6 +30,9 @@ const noMoneyLahLogo = '/optimized/NoMoneyLah.svg';
 const bbkNetworkLogo = '/optimized/BBKNetwork.svg';
 const iherngLogo = '/optimized/iherng.png';
 const insightInvestsLogo = '/optimized/insightInvests.svg';
+const tealiveLogo = '/optimized/tealive.svg';
+const kenangaLogo = '/optimized/kenanga.svg';
+const wabikongLogo = '/optimized/wabikong.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -56,11 +59,13 @@ const logoUrls: Record<string, string> = {
   [ctosLogo]: 'https://www.ctoscredit.com.my',
   [publicMutualLogo]: 'https://www.publicmutual.com.my',
   [cboeLogo]: 'https://www.cboe.com/',
+  [moomooLogo]: 'https://www.moomoo.com/my/promotion/welcome?global_content=%7B%22promote_id%22%3A14071,%22sub_promote_id%22%3A26%7D&campaignid=21056393726&adgroupid=&targetid=&matchtype=&network=x&device=m&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DLXX4ENPHyBQebyRUL--5iLD4btVGWf2teN0jdag9_GNRNTnouLYUYaAqAjEALw_wcB&creative=&keyword=&placement=&gad_source=1&gad_campaignid=21759930953&gbraid=0AAAAAC1CKHWokj22JfKkCq4QCcM-2vkcf',
+  [societyMalaysiaLogo]: 'https://www.cfasociety.org/malaysia/home',
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
-const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, lunoLogo, moomooLogo, webullLogo];
+const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, kenangaLogo, lunoLogo, moomooLogo, webullLogo];
 const supportingPartners = [
   societyMalaysiaLogo,
   fimmLogo,
@@ -68,8 +73,9 @@ const supportingPartners = [
 const silverSponsors = [bimbsecLogo, capbayLogo,  ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo, publicMutualLogo];
 const goldSponsors = [cgsiLogo,phillipLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
+const giftSponsors = [tealiveLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const friendsOfMonie = [bbkNetworkLogo, iherngLogo, insightInvestsLogo, ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, wealthFortLogo, zietLogo];
+const friendsOfMonie = [bbkNetworkLogo, iherngLogo, insightInvestsLogo, ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, wabikongLogo, wealthFortLogo, zietLogo];
 
 const baseUrl = "";
 
@@ -271,6 +277,7 @@ const Exhibitors = () => {
         <LogoGrid title="Silver Sponsors" logos={silverSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls}/>
         <LogoGrid title="Supporting Partners" logos={supportingPartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Knowledge Partners" logos={knowledgePartners} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
+        <LogoGrid title="Gift Sponsors" logos={giftSponsors} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         <LogoGrid title="Friends of Monie" logos={friendsOfMonie} fullUrls hideCaption logoOnly logoUrls={logoUrls} />
         {showAllSponsors && (
           <>
