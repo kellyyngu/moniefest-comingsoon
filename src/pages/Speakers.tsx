@@ -187,7 +187,7 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
   {
     name: "Sai",
     title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
-    company: "",
+    company: "Wabikong",
     photo: "/optimized/sai.webp",
     bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
 
