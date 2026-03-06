@@ -249,9 +249,9 @@ Over his career, Max had previously been involved in a software development comp
     photo: "/optimized/jay.avif",
     bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
 
-He is the Founder & CEO of BenchX Capital, advising founders, corporates, and investors on private transactions, capital strategy, and special situations, supported by institutional-grade financial analysis and market intelligence.
+Jay is the Founder & CEO of BenchX Capital, where he advises founders, corporates, and investors on private market transactions, capital strategy, and complex solutions, supported by institutional-grade financial analysis and market intelligence.
 
-Jay also works closely with PLCs, institutional partners, and senior management on capital planning, financial product structuring, strategic partnerships, and growth positioning.`,
+He works closely with PLCs, institutional partners, and senior management on capital planning, financial product structuring, strategic partnerships, and growth positioning.`,
   },
   {
     name: "Isabelle Zhen",
