@@ -336,9 +336,13 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
     bullets: [],
     speakers: [
       {
-        name: "Yeoh Chen Chow",
-        title: "",
-        company: "",
+      name: "Yeoh Chen Chow",
+      title: "Independent Non-Executive Chairman",
+      company: "Foodie Media Berhad",
+      photo: "/optimized/yeohChenChow.avif",
+      bio: `Yeoh Chen Chow is Independent Non-Executive Chairman of Foodie Media Berhad, a company listed on Bursa Ace market. He is also Founder of 1% Advisory & Coaching and Independent Non-Executive Director of Audience Analytics Limited, a company listed on SGX Catalist.
+
+    Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
       },
     ],
     description: "",
@@ -431,11 +435,13 @@ Over his career, Max had previously been involved in a software development comp
       {
         name: "Lucas",
         title: "",
+        photo: "/optimized/lucas.avif",
         company: "BBK",
       },
       {
         name: "Kah Mun",
         title: "",
+        photo: "/optimized/kahMun.avif",
         company: "BBK",
       },
     ],

@@ -30,9 +30,15 @@ const noMoneyLahLogo = '/optimized/NoMoneyLah.svg';
 const bbkNetworkLogo = '/optimized/BBKNetwork.svg';
 const iherngLogo = '/optimized/iherng.png';
 const insightInvestsLogo = '/optimized/insightInvests.svg';
+const financeLangLogo = '/optimized/financeLang.svg';
 const tealiveLogo = '/optimized/tealive.svg';
 const kenangaLogo = '/optimized/kenanga.svg';
 const wabikongLogo = '/optimized/wabikong.svg';
+const taylorsUniversityLogo = '/optimized/taylorsUniversity.svg';
+const tianGeLogo = '/optimized/tianGe.svg';
+const gyakuCapitalLogo = '/optimized/gyakuCapital.svg';
+const printciousLogo = '/optimized/printcious.svg';
+const saturnaLogo = '/optimized/saturna.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -53,7 +59,9 @@ const logoUrls: Record<string, string> = {
   [bimbsecLogo]: 'https://www.bimbsec.com.my/',
   [spgLogo]: 'http://www.spglobal.com/spdji/',
   [phillipLogo]: 'https://www.phillip.com.my/',
+  [financeLangLogo]: 'https://www.youtube.com/@finance.lang88',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
+  [saturnaLogo]: 'https://saturna.com.my/',
   '/versa.svg': 'https://versa.com.my/',
   [cgsiLogo]: 'https://www.cgsi.com',
   [ctosLogo]: 'https://www.ctoscredit.com.my',
@@ -70,12 +78,12 @@ const supportingPartners = [
   societyMalaysiaLogo,
   fimmLogo,
 ];
-const silverSponsors = [bimbsecLogo, capbayLogo,  ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo, publicMutualLogo];
+const silverSponsors = [bimbsecLogo, capbayLogo,  ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo, publicMutualLogo, saturnaLogo];
 const goldSponsors = [cgsiLogo,phillipLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
-const giftSponsors = [tealiveLogo];
+const giftSponsors = [printciousLogo, tealiveLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const friendsOfMonie = [bbkNetworkLogo, iherngLogo, insightInvestsLogo, ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, wabikongLogo, wealthFortLogo, zietLogo];
+const friendsOfMonie = [bbkNetworkLogo, financeLangLogo, gyakuCapitalLogo, iherngLogo, insightInvestsLogo, ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, taylorsUniversityLogo, tianGeLogo, wabikongLogo, wealthFortLogo, zietLogo];
 
 const baseUrl = "";
 
@@ -112,6 +120,8 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
           {logos.map((logo, index) => {
             const logoSrc = fullUrls ? logo : `${baseUrl}${logo}`;
             const logoUrl = logoUrls?.[logo];
+            const isKenanga = (logo || '').toString().toLowerCase().includes('kenanga');
+            const imgClass = isKenanga ? 'max-w-full max-h-full object-contain' : 'max-w-[100%] max-h-[100%] object-contain';
             const imageElement = (
               <img
                 src={logoSrc}
@@ -120,7 +130,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                className="max-w-[90%] max-h-[80%] object-contain"
+                className={imgClass}
               />
             );
 
@@ -185,6 +195,8 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
           {logos.map((logo, index) => {
             const logoSrc = fullUrls ? logo : `${baseUrl}${logo}`;
             const logoUrl = logoUrls?.[logo];
+            const isKenanga = (logo || '').toString().toLowerCase().includes('kenanga');
+            const imgClass = isKenanga ? 'max-w-full max-h-[90%] object-contain' : 'max-w-[85%] max-h-[60%] object-contain';
             const imageElement = (
               <img
                 src={logoSrc}
@@ -193,7 +205,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                className="max-w-[85%] max-h-[60%] object-contain"
+                className={imgClass}
               />
             );
 

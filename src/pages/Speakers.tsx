@@ -15,6 +15,26 @@ type Speaker = {
 };
 
 const speakers: Speaker[] = [
+//   {
+//     name: "Yeoh Chen Chow",
+//     title: "Independent Non-Executive Chairman",
+//     company: "Foodie Media Berhad",
+//     photo: "/optimized/yeohChenChow.avif",
+//     bio: `Yeoh Chen Chow is Independent Non-Executive Chairman of Foodie Media Berhad, a company listed on Bursa Ace market. He is also Founder of 1% Advisory & Coaching and Independent Non-Executive Director of Audience Analytics Limited, a company listed on SGX Catalist.
+
+// Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
+//   },
+  {
+    name: "Lucas",
+    company: "BBK",
+    photo: "/optimized/lucas.avif",
+  },
+
+  {
+    name: "Kah Mun",
+    company: "BBK",
+    photo: "/optimized/kahMun.avif",
+  },
   {
     name: "Lim Pinn Yang",
     title: "Chief Executive Officer",
@@ -165,6 +185,21 @@ Previously, as a Special Officer to the Minister of Finance, he helped develop n
 Bazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.`,
   },
   {
+    name: "Dr. Ong Kian Ming",
+    title: "Adjunct Professor",
+    company: "Taylor's University",
+    photo: "/optimized/ongKianMing.avif",
+    bio: `Dr. Ong Kian Ming is the Executive Director of RGE Malaysia, part of a Singapore-headquartered global resources-based manufacturing and management group. He is also an Adjunct Professor at Taylor’s University and previously served as the university’s Pro Vice-Chancellor for External Engagement as well as Program Director for the Philosophy, Politics and Economics (PPE) programme.
+
+Dr. Ong brings extensive experience across government, academia, and industry. He served on the Board of Directors of the Malaysian Investment Development Authority (MIDA) and acts as an adviser to several organisations, including the Malaysia China Chamber of Commerce (MCCC) and the Federation of Malaysian Manufacturers (FMM). He is also a member of the Danish Chamber of Commerce (DANCHAM) and part of the CEREBRUM Council, a policy think tank initiated by Johor Corporation.
+
+Prior to his current roles, Dr. Ong served two terms as a Member of Parliament in Malaysia from 2013 to 2022 and was the Deputy Minister of International Trade and Industry from 2018 to 2020. He has also held research and advisory roles with international and regional institutions, including Global Counsel and the ISEAS–Yusof Ishak Institute.
+
+A former Fulbright Scholar, Dr. Ong holds a PhD in Political Science from Duke University, an MPhil in Economics from the University of Cambridge, and a BSc in Economics from the London School of Economics. Before entering politics, he worked as a consultant at the Boston Consulting Group and as a lecturer and policy researcher in Malaysia.
+
+Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and listening to podcasts. He also hosts his own podcast channel, “Are We OK?”.`,
+  },
+  {
     name: "Nigel Chong",
     title: "Founder, NCSPACE ACADEMY SDN BHD | SC Registered MR",
     company: "NCSPACE ACADEMY",
@@ -207,7 +242,7 @@ Today, he channels that experience into his mission of simplifying property know
   },
   {
     name: "Shane Choo",
-    title: "Director, WealthFort",
+    title: "Director",
     company: "WealthFort",
     photo: "/optimized/shane.png",
     whiteBg: true,
@@ -261,6 +296,17 @@ He works closely with PLCs, institutional partners, and senior management on cap
     bio: `A multiple award-winning financial product specialist at Kenanga Investment Bank, with awards from UK, HK, Singapore & Malaysia. She has spoken at over 190 events & today, she has a theory that men are great traders, but women are fantastic investors. She is licensed by Securities Commission with CMSRL 6 and 7, she now serves as Head of Group Equity Marketing at Kenanga Investment Bank Berhad.`,
   },
   {
+    name: "Chloe Foo",
+    title: "Host and Production Director",
+    company: "Finance Lang",
+    photo: "/optimized/chloe.avif",
+    bio: `Chloe is the producer and host of Finance Lang, and also represents the “beginner investor” perspective on the show.
+
+Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
+
+With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
+  },
+  {
     name: "Aaron Tang",
     title: "General Manager (APAC)",
     company: "Luno Malaysia",
@@ -274,13 +320,27 @@ Prior to joining Luno, Aaron spent almost a decade in the Oil & Gas industry wor
 
 Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from Universiti Teknologi PETRONAS.`,
   },
+  {
+    name: "Khairy Jamaluddin",
+    title: "Former Cabinet Minister Malaysia",
+    company: "KS Media",
+    photo: "/optimized/khairyJamaluddin.avif",
+    bio: `An alumnus of University of Oxford and University College London, Khairy Jamaluddin (KJ) served as Malaysia’s Minister of Health from 2021 to 2022. He previously held the positions of Minister of Science, Technology and Innovation (2020–2021) and Minister of Youth and Sports (2013–2018). Today, he co-hosts the Keluar Sekejap and is a radio presenter at Hot FM.`,
+  },
+  {
+    name: "Jack Chan (天哥)",
+    title: "Founder",
+    company: "第一天投资理财日记",
+    photo: "/optimized/jackChan.avif",
+    bio: `Jack Chan（天哥）是《第一天投资理财日记》的创办人，也是马来西亚知名投资理财内容创作者与畅销理财书作者。他积极推广大众理财教育，曾担任 ASTRO 著名理财节目《全家私房钱》编剧，并拥有 FIMM 信托基金顾问高级组织经理及私人退休金计划（PRS）顾问资格，曾名列多家上市公司前30大股东之列。`,
+  },
 ];
 
 // Grouping for page layout
 const guestOfHonour =
   (speakers.find((s) => s.name.includes("Liew Chin Tong")) as Speaker) || null;
 const organisersList = speakers.filter(
-  (s) => s.name.includes("Lim Pinn Yang") || s.name.includes("George Poh"),
+  (s) => s.name.includes("Yeoh Chen Chow") || s.name.includes("Lim Pinn Yang") || s.name.includes("George Poh"),
 );
 const mainSpeakersList = speakers.filter(
   (s) => s !== guestOfHonour && !organisersList.includes(s),
@@ -289,6 +349,8 @@ const mainSpeakersList = speakers.filter(
 // Desired display order for main speakers (keep organisers and guest unchanged)
 const desiredSpeakerOrder: string[] = [
   "Jay Cheong",
+  "Khairy Jamaluddin",
+  "Dr. Ong Kian Ming",
   "Datuk Clifford Hii",
   "Cheah Zi Kah",
   "Isabelle Zhen",
@@ -300,9 +362,13 @@ const desiredSpeakerOrder: string[] = [
   "Sean Freer",
   "Vincent Wang",
   "Chin Yi Xuan",
+  "Chloe Foo",
   "Gin Chong",
   "Fong Wei Ziet",
+  "Jack Chan (天哥)",
+  "Kah Mun",
   "Liksen Lei",
+  "Lucas",
   "Nigel Chong",
   "Sai",
   "Sean Tan",
@@ -334,6 +400,8 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
         ? { objectPosition: "center 22%", transform: "scale(1.35)", transformOrigin: "center 22%" }
       : s.name === "Shane Choo"
         ? { objectPosition: "center 12%" }
+      : s.name === "Chloe Foo"
+        ? { objectPosition: "center 2%" }
         : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
           ? { objectPosition: "center 25%" }
           : undefined;
@@ -373,19 +441,13 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
         {/* Accent bar */}
         <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
         {/* Text */}
-        <div className="flex-1 min-w-0">
-          <p className="font-bold text-base text-white leading-snug">
-            {s.name}
-          </p>
+        <div className="flex flex-col justify-center flex-1 min-w-0">
+          <p className="font-bold text-white text-sm leading-snug mb-0.5">{s.name}</p>
           {s.title && (
-            <p className="text-sm text-primary italic mt-0.5 leading-tight">
-              {s.title}
-            </p>
+            <p className="text-sm text-primary italic mt-0.5 leading-normal">{s.title}</p>
           )}
           {s.company && (
-            <p className="text-sm text-white mt-0.5 leading-tight">
-              {s.company}
-            </p>
+            <p className="text-sm text-white mt-0.5 leading-normal">{s.company}</p>
           )}
           <div className="mt-1.5 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
             View profile
@@ -442,17 +504,17 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
       <div className="mx-5 mt-4 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       {/* Text panel */}
-      <div className="flex flex-col items-center text-center px-5 pt-4 pb-5 flex-1">
+      <div className="flex flex-col items-center text-center px-5 pt-4 pb-6 flex-1">
         <p className="font-bold text-base text-white leading-snug mb-0.5">
           {s.name}
         </p>
         {s.title && (
-          <p className="text-sm text-primary italic leading-tight mb-0.5 line-clamp-2">
+          <p className="text-sm text-primary italic leading-normal mb-0.5">
             {s.title}
           </p>
         )}
         {s.company && (
-          <p className="text-sm text-white leading-tight line-clamp-1">
+          <p className="text-sm text-white leading-normal">
             {s.company}
           </p>
         )}
