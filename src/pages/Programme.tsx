@@ -686,7 +686,7 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
             count === 1
               ? 'grid grid-cols-1 max-w-[180px]'
               : count === 2
-              ? 'grid grid-cols-2 max-w-[560px] mx-auto'
+              ? 'grid grid-cols-1 md:grid-cols-2 max-w-[560px] mx-auto'
               : 'grid grid-cols-1 sm:grid-cols-3';
           return (
             <div className={`mt-5 ${gridClass} gap-3`}>
