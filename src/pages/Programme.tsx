@@ -34,6 +34,7 @@ type Session = {
   description?: string;
   speakers?: Speaker[];
   moderator?: Speaker;
+  host?: Speaker;
   bullets?: string[];
   prizes?: {
     name: string;
@@ -236,17 +237,17 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     speakers: [
       { name: "Exhibitor F & Panelists", title: "Exhibitor & Panelists", company: "" },
     ],
-    moderator: {
+      host: {
       name: "Sai",
       title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
       company: "Wabikong",
       photo: "/optimized/sai.webp",
       bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
 
-Blending elements of Japanese and Penang culture in his comedic skits, his viewers enjoy his cultural experience videos where he explores the traditions and the linguistics of local people with his unique sense of humour. His content also occasionally takes viewers on a journey to various locations within Malaysia, particularly Penang.
+    Blending elements of Japanese and Penang culture in his comedic skits, his viewers enjoy his cultural experience videos where he explores the traditions and the linguistics of local people with his unique sense of humour. His content also occasionally takes viewers on a journey to various locations within Malaysia, particularly Penang.
 
-Sai has also been featured in films such as Follow Aunty La! and variety shows like Why You So Smart Geh? His charisma and ability to engage with both local and international audiences have garnered him a dedicated fanbase, with many tuning in for his lighthearted yet informative takes on life.`,
-    },
+    Sai has also been featured in films such as Follow Aunty La! and variety shows like Why You So Smart Geh? His charisma and ability to engage with both local and international audiences have garnered him a dedicated fanbase, with many tuning in for his lighthearted yet informative takes on life.`,
+        },
   },
 
   { time: "15:00 - 15:30", },
@@ -769,10 +770,10 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
           </div>
         )}
 
-        {session.moderator && (
+        {(session.host || session.moderator) && (
           <div className="mt-4">
-            <p className="font-semibold text-navy-deep mb-2">Moderated by</p>
-            <SpeakerCard speaker={session.moderator} onClick={(sp) => onSpeakerClick && onSpeakerClick(sp)} />
+            <p className="font-semibold text-navy-deep mb-2">{session.host ? 'Hosted by' : (session.moderator?.name === 'Fong Wei Ziet' ? 'Hosted by' : 'Moderated by')}</p>
+            <SpeakerCard speaker={session.host ?? session.moderator} onClick={(sp) => onSpeakerClick && onSpeakerClick(sp)} />
           </div>
         )}
       </div>
