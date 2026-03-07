@@ -20,6 +20,7 @@ He recently published the book Second Takeoff: Strategies for Malaysia’s Econo
 
 type Speaker = {
   name: string;
+  nowrapName?: boolean;
   title: string;
   company: string;
   photo?: string;
@@ -92,10 +93,33 @@ At Monie Fest, George represents a long-term vision: building a credible financi
   ] },
   { time: "11:15 - 12:00", title: "Malaysia's Economic Growth Outlook for 2H 2026 - What It Means for Investors", speakers: [{ name: "Mohammad Bazli Che Rozenan, CFA", title: "Director, Members Engagement", company: "CFA Society Malaysia", photo: "/optimized/mohammadBazli.jpg", bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.\n\nPreviously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.\n\nBazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.` }]},
   { time: "12:00 - 12:45", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
-  { time: "12:45 - 13:30", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
+  { time: "12:45 - 13:30", title: "Investment Talk 2", description: "", speakers: [
+    { name: "moomoo MY", title: "", company: "moomoo", photo: "/optimized/moomoo.webp", whiteBg: true },
+  ] },
   { time: "13:30 - 14:15", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor C", title: "Exhibitor", company: "" }] },
   { time: "14:15 - 15:00", isPanel: true, panelNumber: 2, panelTitle: "How Government Policies Quietly Shape Your Personal Finances", bullets: [], speakers: [
-      { name: "Exhibitor D & Panelists", title: "Exhibitor & Panelists", company: "" },
+      {
+        name: "Dr. Ong Kian Ming",
+        title: "Adjunct Professor",
+        company: "Taylor's University",
+        photo: "/optimized/ongKianMing.avif",
+        bio: `Dr. Ong Kian Ming is the Executive Director of RGE Malaysia, part of a Singapore-headquartered global resources-based manufacturing and management group. He is also an Adjunct Professor at Taylor’s University and previously served as the university’s Pro Vice-Chancellor for External Engagement as well as Program Director for the Philosophy, Politics and Economics (PPE) programme.
+
+Dr. Ong brings extensive experience across government, academia, and industry. He served on the Board of Directors of the Malaysian Investment Development Authority (MIDA) and acts as an adviser to several organisations, including the Malaysia China Chamber of Commerce (MCCC) and the Federation of Malaysian Manufacturers (FMM). He is also a member of the Danish Chamber of Commerce (DANCHAM) and part of the CEREBRUM Council, a policy think tank initiated by Johor Corporation.
+
+Prior to his current roles, Dr. Ong served two terms as a Member of Parliament in Malaysia from 2013 to 2022 and was the Deputy Minister of International Trade and Industry from 2018 to 2020. He has also held research and advisory roles with international and regional institutions, including Global Counsel and the ISEAS–Yusof Ishak Institute.
+
+A former Fulbright Scholar, Dr. Ong holds a PhD in Political Science from Duke University, an MPhil in Economics from the University of Cambridge, and a BSc in Economics from the London School of Economics. Before entering politics, he worked as a consultant at the Boston Consulting Group and as a lecturer and policy researcher in Malaysia.
+
+Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and listening to podcasts. He also hosts his own podcast channel, “Are We OK?”.`,
+      },
+      {
+        name: "Khairy Jamaluddin",
+        title: "Former Cabinet Minister Malaysia",
+        company: "KS Media",
+        photo: "/optimized/khairyJamaluddin.avif",
+        bio: `An alumnus of University of Oxford and University College London, Khairy Jamaluddin (KJ) served as Malaysia’s Minister of Health from 2021 to 2022. He previously held the positions of Minister of Science, Technology and Innovation (2020–2021) and Minister of Youth and Sports (2013–2018). Today, he co-hosts the Keluar Sekejap and is a radio presenter at Hot FM.`,
+      },
     ]},
   { time: "15:00 - 15:45", title: "Don’t Fall For These Bitcoin (& Crypto) Myths", description: "", speakers: [{ name: "Jeroni Khoo", title: "Deputy Country Manager", company: "Luno Malaysia", photo: jeroni, bio: `Jeroni Khoo is the Deputy Country Manager at Luno Malaysia, a leading digital asset
 exchange in Malaysia. He supports the Country Manager in ensuring regulatory compliance,
@@ -170,7 +194,7 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
 
 const engagementStageSchedule: Session[] = [
   { time: "11:30 - 12:00", title: "Investment Talk 1", description: "", speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }] },
-  { time: "12:00 - 12:30", },
+  { time: "12:00 - 12:30", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }] },
   {
     time: "12:30 - 13:00",
     title: "When Parents Grow Older: Here's How to Prepare Financially",
@@ -190,7 +214,7 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     ],
   },
   { time: "13:00 - 13:30", title: "", description: "", speakers: [
-    { name: "Exhibitor B & Panelists", title: "Exhibitor & Panelists", company: "" },
+    { name: "Exhibitor C & Panelists", title: "Exhibitor & Panelists", company: "" },
   ],
     moderator: {
       name: "Gin Chong",
@@ -201,16 +225,16 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     },
   },
 
-  { time: "13:30 - 14:00", title: "Investment Talk 2", description: "", speakers: [{ name: "Exhibitor D", title: "Exhibitor", company: "" }] },
+  { time: "13:30 - 14:00", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor D", title: "Exhibitor", company: "" }] },
 
-  { time: "14:00 - 14:30", },
+  { time: "14:00 - 14:30", title: "Investment Talk 4", description: "", speakers: [{ name: "Exhibitor E", title: "Exhibitor", company: "" }] },
 
   {
     time: "14:30 - 15:00",
     title: "Podcast 2: When Is It Actually Safe to Upgrade Your Lifestyle?",
     description: "",
     speakers: [
-      { name: "Exhibitor E & Panelists", title: "Exhibitor & Panelists", company: "" },
+      { name: "Exhibitor F & Panelists", title: "Exhibitor & Panelists", company: "" },
     ],
     moderator: {
       name: "Sai",
@@ -227,7 +251,7 @@ Sai has also been featured in films such as Follow Aunty La! and variety shows l
 
   { time: "15:00 - 15:30", },
 
-  { time: "15:30 - 16:00", title: "Investment Talk 3", description: "", speakers: [{ name: "Exhibitor G", title: "Exhibitor", company: "" }] },
+  { time: "15:30 - 16:00", title: "Investment Talk 5", description: "", speakers: [{ name: "Exhibitor G", title: "Exhibitor", company: "" }] },
 
   { time: "16:00 - 16:30", title: "Podcast 3: Alternative Investments for Beginners: What You Must Know Before You Enter", description: "", speakers: [
     { name: "Exhibitor H & Panelists", title: "Exhibitor & Panelists", company: "" },
@@ -235,7 +259,7 @@ Sai has also been featured in films such as Follow Aunty La! and variety shows l
 
   { time: "16:30 - 17:00", },
 
-  { time: "17:00 - 18:00", title: "Investment Talk 4", description: "", speakers: [{ name: "Exhibitor J", title: "Exhibitor", company: "" }] },
+  { time: "17:00 - 18:00", title: "Investment Talk", description: "", speakers: [{ name: "Exhibitor J", title: "Exhibitor", company: "" }] },
 
   { time: "18:00 - 18:30", title: "Podcast 4: Planning for the Unexpected — Family Finance Lessons We Learn Too Late", description: "", speakers: [
     {
@@ -247,9 +271,9 @@ Sai has also been featured in films such as Follow Aunty La! and variety shows l
     },
   ] },
 
-  { time: "18:30 - 19:00", title: "Investment Talk 5", description: "", speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }] },
+  { time: "18:30 - 19:00", title: "Investment Talk 6", description: "", speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }] },
 
-  { time: "19:00 - 19:30", },
+  { time: "19:00 - 19:30", title: "Investment Talk"},
 
   { time: "19:30 - 20:00", },
   { time: "20:00 - 20:10", title: "Day 1 End" },
@@ -278,7 +302,9 @@ const mainStageScheduleDay2: Session[] = [
     description: "",
   },
 
-  { time: "11:15 - 12:00", title: "Investment Talk 6", description: "", speakers: [{ name: "Exhibitor J", title: "Exhibitor", company: "" }] },
+  { time: "11:15 - 12:00", title: "Investment Talk 6", description: "", speakers: [
+    { name: "moomoo MY", title: "", company: "moomoo", photo: "/optimized/moomoo.webp", whiteBg: true },
+  ] },
 
   {
     time: "12:00 - 12:45",
@@ -314,7 +340,38 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
     { name: "Dior Rouge Lipstick (x2)", url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html", image: "/optimized/dior-lipstick.webp", note: "worth RM410" }
   ] },
 
-  { time: "13:00 - 13:45", title: "Investment Talk 7", description: "", speakers: [{ name: "Exhibitor M", title: "Exhibitor", company: "" }] },
+  {
+    time: "13:00 - 13:45",
+    title: "Investment Talk 7",
+    description: "",
+    speakers: [
+      {
+        name: "George Poh, CFP®",
+        title: "Chief Executive Officer",
+        company: "Spire Digital Sdn. Bhd.",
+        photo: "/optimized/george.webp",
+        nowrapName: true,
+        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
+
+Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
+
+Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
+
+At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
+      },
+      {
+        name: "Chloe Foo",
+        title: "Host and Production Director",
+        company: "Finance Lang",
+        photo: "/optimized/chloe.avif",
+        bio: `Chloe is the producer and host of Finance Lang, and also represents the “beginner investor” perspective on the show.
+
+Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
+
+With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
+      },
+    ],
+  },
 
   {
     time: "13:45 - 14:30",
@@ -325,6 +382,11 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
     speakers: [
       { name: "Exhibitor N & Panelists", title: "Exhibitor & Panelists", company: "" },
     ],
+    moderator: {
+      name: "Financial Faiz",
+      title: "Moderator",
+      company: "",
+    },
     description: "",
   },
 
@@ -353,7 +415,21 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
       { name: "Modenas Kriss 110 2026", url: "https://www.zigwheels.my/new-motorcycles/modenas/kriss-110#:~:text=RM%204%2C599%20%2D%204%2C998%20OTR%20Price,115S%2C%20Kriss%20MR2%20and%20RX110.", image: "/optimized/modenas-kriss.webp", note: "worth RM4,998" },
       { name: "Dior Rouge Lipstick (x2)", url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html", image: "/optimized/dior-lipstick.webp", note: "worth RM410" }
     ] },
-    { time: "15:45 - 16:30", title: "Investment Talk 8", description: "", speakers: [{ name: "Exhibitor O", title: "Exhibitor", company: "" }] },
+    {
+      time: "15:45 - 16:30",
+      title: "Investment Talk 8",
+      description: "",
+      speakers: [{ name: "Exhibitor O", title: "Exhibitor", company: "" }],
+      moderator: {
+        name: "Fong Wei Ziet",
+        title: "Director",
+        company: "Ziet Media Sdn Bhd",
+        photo: "/optimized/ziet.JPG",
+        bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
+
+He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`,
+      },
+    },
 
   {
     time: "16:30 - 17:15",
@@ -377,7 +453,20 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
     panelNumber: 6,
     panelTitle: "What Changes After You Make Your First Million?",
     bullets: [],
-    speakers: [],
+    speakers: [
+      {
+        name: "Bryan Loo",
+        title: "",
+        company: "",
+      },
+      {
+        name: "Lim Pinn Yang",
+        title: "Chief Executive Officer",
+        company: "Foodie Media Berhad",
+        photo: pinnyang,
+        bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
+      },
+    ],
     description: "",
   },
 
@@ -405,7 +494,7 @@ Max’s expertise is further recognised as an active speaker on Cityplus FM, a c
 Over his career, Max had previously been involved in a software development company, as well as a business solutions consultation company in Malaysia. He was also featured on NanYang （南洋）, Oriental Daily （东方）, China Press（中国报）, and had secured numerous awards including Best Intelligent Figures 2022/2023, as well as interview by Shanghai（商海) previously.`,
     },
   ] },
-  { time: "11:30 - 12:00", title: "Podcast 1: Future Skills for Malaysia's Youth: What Employers Really Look For",},
+  { time: "11:30 - 12:00", title: "Podcaset 1: High Value Future Skills for Malaysia's Youth: What Do the Market Really Value?",},
   { time: "12:00 - 12:30", },
   { time: "12:30 - 13:00", title: "Investment Talk 6", description: "", speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }] },
   {
@@ -420,16 +509,34 @@ Over his career, Max had previously been involved in a software development comp
         photo: "/optimized/isabelleZhen.avif",
         bio: `A multiple award-winning financial product specialist at Kenanga Investment Bank, with awards from UK, HK, Singapore & Malaysia. She has spoken at over 190 events & today, she has a theory that men are great traders, but women are fantastic investors. She is licensed by Securities Commission with CMSRL 6 and 7, she now serves as Head of Group Equity Marketing at Kenanga Investment Bank Berhad.`,
       },
+      {
+        name: "Pn. Adibah Mazlan",
+        title: "",
+        company: "",
+      },
     ],
   },
-  { time: "13:30 - 14:00", },
+  {
+    time: "13:30 - 14:00",
+    title: "",
+    description: "",
+    speakers: [
+      {
+        name: "Jack Chan (天哥)",
+        title: "Founder",
+        company: "第一天投资理财日记",
+        photo: "/optimized/jackChan.avif",
+        bio: `Jack Chan（天哥）是《第一天投资理财日记》的创办人，也是马来西亚知名投资理财内容创作者与畅销理财书作者。他积极推广大众理财教育，曾担任 ASTRO 著名理财节目《全家私房钱》编剧，并拥有 FIMM 信托基金顾问高级组织经理及私人退休金计划（PRS）顾问资格，曾名列多家上市公司前30大股东之列。`,
+      },
+    ],
+  },
   { time: "14:00 - 14:30", title: "Investment Talk 7", description: "", speakers: [{ name: "Exhibitor L", title: "Exhibitor", company: "" }] },
   { time: "14:30 - 15:00", title: "Podcast 3: From Scam to Justice — What Happens After You Report?", description: "", },
   { time: "15:00 - 15:30", },
   { time: "15:30 - 16:00", title: "Investment Talk 8", description: "", speakers: [{ name: "Exhibitor M", title: "Exhibitor", company: "" }] },
   {
     time: "16:00 - 16:30",
-    title: "",
+    title: "BBK 脱口秀",
     description: "",
     speakers: [
       {
@@ -448,7 +555,7 @@ Over his career, Max had previously been involved in a software development comp
   },
   { time: "16:30 - 17:00", },
   { time: "17:00 - 17:30", title: "Why Stock Investing is For You?", description: "", speakers: [
-    { name: "Shane Choo", title: "Director, WealthFort", company: "WealthFort", photo: "/optimized/shane.png", whiteBg: true, bio: `Shane Choo is a financial speaker, trader and investor, with over 15 years of experience trading and investing in local and international stocks, options, ETF, and currency. As a speaker, he is often engaged by investment banks and securities firms to train their retail clients in trading and investment. Since 2015, he has been appointed by Bursa Malaysia to design and conduct investment curriculum to young investors and retail investors nationwide. To date, he has trained over 35,000 individuals in stock investing. Shane is also an International Certified Professional Trainer by IPMA, UK and an Accredited Trainer by HRD Corp. In 2015, he was acknowledged by President Obama for his work as a young leader in financial education.` },
+    { name: "Shane Choo", title: "Director", company: "WealthFort", photo: "/optimized/shane.png", whiteBg: true, bio: `Shane Choo is a financial speaker, trader and investor, with over 15 years of experience trading and investing in local and international stocks, options, ETF, and currency. As a speaker, he is often engaged by investment banks and securities firms to train their retail clients in trading and investment. Since 2015, he has been appointed by Bursa Malaysia to design and conduct investment curriculum to young investors and retail investors nationwide. To date, he has trained over 35,000 individuals in stock investing. Shane is also an International Certified Professional Trainer by IPMA, UK and an Accredited Trainer by HRD Corp. In 2015, he was acknowledged by President Obama for his work as a young leader in financial education.` },
   ] },
   { time: "17:30 - 18:00", title: "The Trend is Your Friend: A Masterclass in Consistent Trading Profits", description: "", speakers: [
     { name: "Nigel Chong", title: "Founder, NCSPACE ACADEMY SDN BHD | SC Registered MR", company: "NCSPACE ACADEMY", photo: "/optimized/nigelChong.png", whiteBg: true, bio: `Nigel Chong is a full-time stock trader and the founder of NCSPACE ACADEMY SDN BHD. Holding a degree in Business Economics and Finance from the University of Nottingham and registered as an MR with the Securities Commissions (SC), Nigel bridges the gap between complex market dynamics and accessible trading strategies. As a featured speaker for Bursa Malaysia's educational series, he specializes in trend trading methodologies and the application of AI-powered tools to uncover market momentum. Known as a "trading buddy" to his community, Nigel is dedicated to helping retail investors build consistent, profitable trading systems.` },
@@ -468,7 +575,10 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
   const initials = displayName.split(" ").map((n) => n[0]).slice(0, 2).join("");
   const clickable = !!onClick;
 
-  const isLogo = !!(speaker.photo && speaker.photo.toLowerCase().includes('microleap')) || (speaker.name || '').toLowerCase().includes('microleap');
+  const nameLower = (speaker.name || '').toLowerCase();
+  const companyLower = (speaker.company || '').toLowerCase();
+  const isLogo = !!(speaker.photo && speaker.photo.toLowerCase().includes('microleap')) || nameLower.includes('microleap');
+  const isLogoOnly = nameLower.includes('moomoo') || companyLower.includes('moomoo');
   const headshotStyle: React.CSSProperties | undefined =
     (speaker.name || '') === 'Datuk Clifford Hii'
       ? { objectPosition: 'center 18%', transform: 'scale(1.65)', transformOrigin: 'center 22%' }
@@ -496,11 +606,12 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
       }`}
       {...cardProps}
     >
-      {/* Circle avatar */}
+      {/* Avatar (rectangle for logo-only, circle otherwise) */}
       <div
-        className={`flex-shrink-0 w-14 h-14 rounded-full overflow-hidden flex items-center justify-center font-bold text-lg ${
-          isLogo ? 'bg-transparent' : speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'
-        }`}
+        className={isLogoOnly
+          ? `flex-shrink-0 w-28 h-14 rounded-xl overflow-hidden flex items-center justify-center bg-white`
+          : `flex-shrink-0 w-14 h-14 rounded-full overflow-hidden flex items-center justify-center font-bold text-lg ${isLogo ? 'bg-transparent' : speaker.whiteBg ? 'bg-white' : 'bg-gradient-to-br from-navy-light to-navy-deep'}`
+        }
       >
         {speaker.photo ? (
           <img
@@ -508,7 +619,7 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
             alt={displayName}
             loading="eager"
             fetchPriority="high"
-            className={`w-full h-full ${isLogo ? 'object-contain p-1' : 'object-cover object-top'}`}
+            className={isLogoOnly ? 'w-full h-full object-contain p-2' : `w-full h-full ${isLogo ? 'object-contain p-1' : 'object-cover object-top'}`}
             style={headshotStyle}
           />
         ) : (
@@ -516,8 +627,10 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
         )}
       </div>
 
-      {/* Accent bar */}
-      <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
+      {/* Accent bar: hide for logo-only to keep layout clean */}
+      {!isLogoOnly && (
+        <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
+      )}
 
       {/* Text */}
       <div className="flex flex-col justify-center flex-1 min-w-0">
@@ -647,7 +760,8 @@ const SessionRow = ({ session, onSpeakerClick }: { session: Session; onSpeakerCl
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2.5">
             {session.speakers.map((speaker, i) => {
               const nameLower = (speaker.name || '').toLowerCase();
-              const isExhibitor = /exhibitor|panelists?/.test(nameLower) || nameLower.includes('microleap');
+              const companyLower = (speaker.company || '').toLowerCase();
+              const isExhibitor = /exhibitor|panelists?/.test(nameLower) || nameLower.includes('microleap') || nameLower.includes('moomoo') || companyLower.includes('moomoo');
               return (
                 <SpeakerCard key={i} speaker={speaker} onClick={!isExhibitor ? ((sp) => onSpeakerClick && onSpeakerClick(sp)) : undefined} />
               );
