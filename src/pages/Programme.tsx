@@ -362,10 +362,10 @@ At Monie Fest, George represents a long-term vision: building a credible financi
       },
       {
         name: "Chloe Foo",
-        title: "Host and Production Director",
+        title: "Finance Creator",
         company: "Finance Lang",
         photo: "/optimized/chloe.avif",
-        bio: `Chloe is the producer and host of Finance Lang, and also represents the “beginner investor” perspective on the show.
+        bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
 
 Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
 
