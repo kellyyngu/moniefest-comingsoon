@@ -298,7 +298,6 @@ const mainStageScheduleDay2: Session[] = [
 
     Today, he channels that experience into his mission of simplifying property knowledge through engaging videos and honest property reviews nationwide. Moreover, he has documented more than 500 different property projects to date.`,
       },
-      { name: "Exhibitor H & Panelists", title: "Exhibitor & Panelists", company: "" },
     ],
     description: "",
   },
@@ -542,12 +541,14 @@ Over his career, Max had previously been involved in a software development comp
     speakers: [
       {
         name: "Lucas",
+        chineseName: "卢卡斯",
         title: "",
         photo: "/optimized/lucas.avif",
         company: "BBK",
       },
       {
         name: "Kah Mun",
+        chineseName: "嘉雯",
         title: "",
         photo: "/optimized/kahMun.avif",
         company: "BBK",
@@ -635,7 +636,12 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: Speaker; onClick?: (s: Spe
 
       {/* Text */}
       <div className="flex flex-col justify-center flex-1 min-w-0">
-        <p className="font-bold text-white text-sm leading-snug">{displayName}</p>
+        <p className="font-bold text-white text-sm leading-snug">
+          {displayName}
+          {speaker.chineseName && (
+            <span className="text-white ml-2">({speaker.chineseName})</span>
+          )}
+        </p>
         {speaker.title && <p className="text-xs text-primary italic mt-0.5 leading-tight">{speaker.title}</p>}
         {speaker.company && <p className="text-xs text-white mt-0.5 leading-tight">{speaker.company}</p>}
         {clickable && (
@@ -937,7 +943,12 @@ const Programme = () => {
                       </div>
 
                       <div className="flex-1">
-                          <h3 className="text-lg sm:text-2xl font-bold text-white">{activeSpeaker.name}</h3>
+                          <h3 className="text-lg sm:text-2xl font-bold text-white">
+                            {activeSpeaker.name}
+                            {activeSpeaker.chineseName && (
+                              <span className="text-white ml-2">({activeSpeaker.chineseName})</span>
+                            )}
+                          </h3>
                           <p className="text-xs sm:text-sm text-primary italic mt-1">{activeSpeaker.title}</p>
                           <p className="text-sm text-white font-semibold mt-1">{activeSpeaker.company}</p>
                         </div>

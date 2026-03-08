@@ -11,6 +11,7 @@ type Speaker = {
   photo?: string;
   nowrapName?: boolean;
   whiteBg?: boolean;
+  chineseName?: string;
   bio?: string;
 };
 
@@ -26,12 +27,14 @@ const speakers: Speaker[] = [
 //   },
   {
     name: "Lucas",
+    chineseName: "卢卡斯",
     company: "BBK",
     photo: "/optimized/lucas.avif",
   },
 
   {
     name: "Kah Mun",
+    chineseName: "嘉雯",
     company: "BBK",
     photo: "/optimized/kahMun.avif",
   },
@@ -442,7 +445,12 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
         <div className="w-0.5 self-stretch flex-shrink-0 rounded-full bg-gradient-to-b from-primary/70 via-primary/25 to-transparent" />
         {/* Text */}
         <div className="flex flex-col justify-center flex-1 min-w-0">
-          <p className="font-bold text-white text-sm leading-snug mb-0.5">{s.name}</p>
+          <p className="font-bold text-white text-sm leading-snug mb-0.5">
+            {s.name}
+              {s.chineseName && (
+                  <span className="text-white ml-2">({s.chineseName})</span>
+                )}
+          </p>
           {s.title && (
             <p className="text-sm text-primary italic mt-0.5 leading-normal">{s.title}</p>
           )}
@@ -507,6 +515,9 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
       <div className="flex flex-col items-center text-center px-5 pt-4 pb-6 flex-1">
         <p className="font-bold text-base text-white leading-snug mb-0.5">
           {s.name}
+          {s.chineseName && (
+            <span className="text-white ml-2">({s.chineseName})</span>
+          )}
         </p>
         {s.title && (
           <p className="text-sm text-primary italic leading-normal mb-0.5">
@@ -827,6 +838,9 @@ const SpeakersPage = () => {
                   <div className="flex-1">
                     <h3 className="text-lg sm:text-2xl font-bold text-white">
                       {activeSpeaker.name}
+                      {activeSpeaker.chineseName && (
+                        <span className="text-white ml-2">({activeSpeaker.chineseName})</span>
+                      )}
                     </h3>
                     <p className="text-xs sm:text-sm text-primary italic mt-1">
                       {activeSpeaker.title}
