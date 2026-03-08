@@ -614,7 +614,7 @@ const mainStageScheduleDay2: Session[] = [
       {
         name: "Moomoo Malaysia",
         title: "",
-        company: "moomoo",
+        company: "",
         photo: "/optimized/moomoo.webp",
         whiteBg: true,
       },
