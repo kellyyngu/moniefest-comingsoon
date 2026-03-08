@@ -19,10 +19,10 @@ const Index = ({ onOpenEventbrite }: IndexProps) => {
   return (
     <main className="min-h-screen">
       <Hero onOpenEventbrite={() => onOpenEventbrite?.()} />
-      <Stats />
-      <About />
       <ProgrammePreview />
+      <Stats />
       <PastEvents />
+      <About />
       <Exhibitors />
       {/* PremierEvent, Pricing, and Partners removed */}
       <Footer />

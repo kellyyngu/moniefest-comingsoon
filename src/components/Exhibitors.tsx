@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@/components/ui/button";
 // Logos served from public/optimized (WebP)
 const foodieLogo = '/optimized/Foodie-Red.webp';
 const spireLogo = '/optimized/Spire-Black.webp';
@@ -274,11 +275,21 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
 const Exhibitors = () => {
   // Toggle to hide sponsor categories below platinum
   const showAllSponsors = false;
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSccASbfJveT-OWwXSjLi1dkbBjp-pxMoa1l1Xp0yBqDPZi_-g/viewform";
   return (
     <section className="py-20 bg-background" id="exhibitors" aria-labelledby="exhibitors-title">
       <div className="section-container flex flex-col items-center">
         <div className="mb-12">
           <h2 id="exhibitors-title" className="text-3xl font-bold text-primary text-center mb-6">Supporting Partners & Sponsors</h2>
+          {/* Exhibitor CTA positioned below heading and above the descriptive paragraph */}
+          <div className="w-full max-w-6xl mx-auto px-4 mb-4 flex justify-center">
+            <a href={formUrl} target="_blank" rel="noopener noreferrer">
+              <Button style={{ animationDuration: '2.5s' }} className="h-auto py-2 px-4 sm:py-3 sm:px-5 bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-2xl transition-all duration-300 transform rounded-full flex items-center gap-3 text-sm sm:text-base animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2z"/></svg>
+                <span className="font-semibold">Join as Exhibitor</span>
+              </Button>
+            </a>
+          </div>
           <p className="text-center text-muted-foreground">We gratefully acknowledge the organisations supporting Monie Fest — supporting partners and sponsors are featured below.</p>
         </div>
 

@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, ArrowUpRight, Users, Calendar } from "lucide-react";
 import { useEffect, useState } from "react";
-// Background image served from public/optimized (WebP)
-const heroBg = '/optimized/mitec.webp';
+// Background images served from public/optimized (WebP)
 
 type HeroProps = {
   onOpenEventbrite?: () => void;
@@ -30,58 +29,42 @@ const Hero = ({ onOpenEventbrite }: HeroProps) => {
 
   return (
     <>
-      <section className="relative hero-section flex items-start justify-start overflow-hidden pt-0 sm:pt-4 md:pt-8 min-h-[56vh] md:min-h-[44vh]">
-      {/* Background Image with Overlay */}
-      <img
-        src={heroBg}
-        alt="Monie Fest background"
-        className="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
-        fetchPriority="high"
-        style={{ filter: 'brightness(1.0) contrast(1.05) saturate(0.95)' }}
-      />
+      <section className="relative hero-section flex items-center justify-center overflow-hidden pt-0 sm:pt-4 md:pt-8 min-h-[56vh] md:min-h-[44vh]">
+      {/* Responsive background: use DESKTOP.png for >=768px, MOBILE.png for smaller */}
+      <picture className="absolute inset-0 w-full h-full pointer-events-none">
+        <source media="(min-width: 768px)" srcSet={`${import.meta.env.BASE_URL}optimized/DESKTOP.png`} />
+        <img
+          src={`${import.meta.env.BASE_URL}optimized/MOBILE.png`}
+          alt="Monie Fest background"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+          style={{ filter: 'brightness(1.0) contrast(1.05) saturate(0.95)' }}
+        />
+      </picture>
       {/* dark overlay to deepen hero image for better text contrast */}
       <div className="absolute inset-0 bg-black/50" aria-hidden />
 
       {/* Content (follow Programme styling) */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 pb-8 sm:pb-12">
-        <div className="max-w-none md:max-w-7xl animate-fade-in mt-0 md:mt-6 lg:mt-10 text-left">
+        <div className="max-w-none md:max-w-7xl animate-fade-in mt-0 md:mt-6 lg:mt-10 text-left md:text-center">
           <div className="block w-full pr-0 sm:pr-8 md:pr-10 pl-0">
-            <div className="flex justify-start mb-4">
+            <div className="flex justify-start md:justify-center mb-4">
               <img
                 src={`${import.meta.env.BASE_URL}moniefest2026.svg`}
                 alt="Monie Fest 2026"
                 loading="eager"
                 fetchPriority="high"
-                className="logo-img block max-w-full h-auto w-80 sm:w-96 md:w-[460px] lg:w-[800px] xl:w-[580px]"
+                className="logo-img block max-w-full h-auto w-72 sm:w-80 md:w-[380px] lg:w-[600px] xl:w-[480px]"
               />
             </div>
-
-            <h2 className="text-xl md:text-2xl font-semibold mb-3 leading-tight text-navy-deep">
+            
+            <h2 className="text-left md:text-center text-xl md:text-2xl font-normal md:font-bold mb-3 leading-tight text-navy-deep">
               THE LARGEST FINANCIAL FESTIVAL IN MALAYSIA
             </h2>
 
-            <div className="flex flex-col gap-2 items-start justify-start mb-4 hero-detail text-base md:text-lg">
-              <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-3">
-                  <Calendar className="text-primary w-5 h-5 md:w-6 md:h-6 flex-shrink-0" aria-hidden />
-                  <span className="text-navy-deep text-lg md:text-2xl">11 &amp; 12 April 2026</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <Clock className="text-primary w-5 h-5 md:w-6 md:h-6 flex-shrink-0" aria-hidden />
-                  <span className="text-navy-deep text-lg md:text-2xl">10AM - 9PM</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <MapPin className="text-primary w-5 h-5 md:w-6 md:h-6 flex-shrink-0" aria-hidden />
-                  <span className="text-navy-deep text-lg md:text-2xl">Malaysia International Trade &amp; Exhibition Centre (MITEC), Hall 2, North Entrance</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Countdown timer above CTA - green themed cards */}
-            <div className="flex flex-col items-start w-full">
+            {/* Countdown timer (moved below headline) */}
+            <div className="flex flex-col items-start md:items-center w-full mb-4">
               <div className="mb-4">
                 <div className="inline-flex items-center gap-3 p-2 rounded-xl">
                   <div className="flex items-center gap-3">
@@ -107,15 +90,26 @@ const Hero = ({ onOpenEventbrite }: HeroProps) => {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* CTA Button kept as-is (moved down) */}
-              <div>
-                <button onClick={() => onOpenEventbrite?.()} aria-label="Get ticket" className="cta-pill relative inline-flex items-center gap-4 w-auto max-w-[240px] sm:w-auto justify-center motion-safe:animate-float whitespace-nowrap">
-                  <span className="cta-pill-label text-black font-bold" style={{ fontWeight: 700 }}>GET TICKET</span>
-                  <span className="cta-pill-icon brand-bg p-3 rounded-full flex items-center justify-center">
-                    <ArrowUpRight className="text-black" style={{ color: '#000' }} />
-                  </span>
-                </button>
+            <div className="flex flex-col gap-2 items-start md:items-center justify-start md:justify-center mb-4 hero-detail text-base md:text-lg">
+              <div className="flex flex-col gap-3 items-start md:items-center text-left md:text-center">
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-6 justify-start md:justify-center">
+                  <div className="flex items-center gap-3">
+                    <Calendar className="text-primary w-5 h-5 md:w-6 md:h-6 flex-shrink-0" aria-hidden />
+                    <span className="text-white text-lg md:text-2xl font-normal md:font-bold">11 &amp; 12 April 2026</span>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <Clock className="text-primary w-5 h-5 md:w-6 md:h-6 flex-shrink-0" aria-hidden />
+                    <span className="text-white text-lg md:text-2xl font-normal md:font-bold">10AM - 9PM</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 justify-start md:justify-center">
+                  <MapPin className="text-primary w-5 h-5 md:w-6 md:h-6 flex-shrink-0" aria-hidden />
+                  <span className="text-navy-deep text-lg md:text-2xl font-normal md:font-bold">Malaysia International Trade &amp; Exhibition Centre (MITEC), Hall 2, North Entrance</span>
+                </div>
               </div>
             </div>
           </div>
