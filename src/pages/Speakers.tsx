@@ -112,7 +112,7 @@ With a proven track record in driving growth, strategic transformation, and orga
     name: "Cheah Zi Kah",
     title: "Chief Growth Officer",
     company: "Gambit Group",
-    photo: "/optimized/cheah_Zi_Kah.png",
+    photo: "/optimized/cheah_Zi_Kah.jpg",
     bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
   },
   {
@@ -273,7 +273,7 @@ In terms of education, Peter holds a degree in psychology and business managemen
     name: "Sai",
     title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
     company: "Wabikong",
-    photo: "/optimized/sai.webp",
+    photo: "/optimized/sai.jpg",
     bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
 
 Blending elements of Japanese and Penang culture in his comedic skits, his viewers enjoy his cultural experience videos where he explores the traditions and the linguistics of local people with his unique sense of humour. His content also occasionally takes viewers on a journey to various locations within Malaysia, particularly Penang.
