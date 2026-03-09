@@ -987,16 +987,22 @@ With a background in multimedia design and video production, Chloe works with he
       {
         name: "Lucas",
         chineseName: "卢卡斯",
-        title: "",
+        title: "Stand-up Comedian & Lead Host",
         photo: "/optimized/lucas.avif",
-        company: "BBK",
+        company: "BBK Network",
+        bio: `Lucas is a premier Stand-up Comedian and content strategist known for his sharp wit and insightful perspective on global affairs. Holding a background in Economics, he possesses a unique ability to dissect complex national and international news, transforming intricate socio-economic topics into engaging and relatable comedic narratives.
+
+Beyond the digital screen, Lucas is a powerhouse on the live stage, having successfully completed multiple sold-out Solo Stand-up Specials across Malaysia and overseas. His performances are a masterclass in satirical comedy, blending data-driven insights with fearless social commentary. Whether analyzing market trends or local current events, Lucas delivers a highly intellectual yet hilariously provocative experience that resonates with a diverse, international audience.`,
       },
       {
         name: "Kah Mun",
         chineseName: "嘉雯",
-        title: "",
+        title: "Stand-up Comedian & Lead Host",
         photo: "/optimized/kahMun.avif",
-        company: "BBK",
+        company: "BBK Network",
+        bio: `Kah Mun is a vibrant and charismatic Stand-up Comedian and media professional who has taken the Malaysian comedy scene by storm. As a Lead Host and Content Producer at BBK Network, she plays a pivotal role in shaping digital narratives, blending her sharp journalistic sense with creative entertainment. She is widely recognized for her on-screen news analysis, where she breaks down current events with a signature blend of humor and clarity, making complex topics accessible to a wide audience.
+
+On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo Stand-up Specials and collaborative comedy tours. With her dual expertise in content production and live performance, she uniquely commands an audience while seamlessly weaving brand messaging into a comedic yet authentic flow, making her one of the industry's most versatile standout performers today.`,
       },
     ],
   },

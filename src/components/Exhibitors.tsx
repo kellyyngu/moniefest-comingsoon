@@ -34,6 +34,7 @@ const insightInvestsLogo = '/optimized/insightInvests.svg';
 const financeLangLogo = '/optimized/financeLang.PNG';
 const tealiveLogo = '/optimized/tealive.svg';
 const kenangaLogo = '/optimized/kenanga.png';
+const mrmoneyLogo = '/optimized/MrMoney.avif';
 const wabikongLogo = '/optimized/wabikong.svg';
 const taylorsUniversityLogo = '/optimized/taylorsUniversity.svg';
 const tianGeLogo = '/optimized/tianGe.svg';
@@ -61,6 +62,8 @@ const logoUrls: Record<string, string> = {
   [spgLogo]: 'http://www.spglobal.com/spdji/',
   [phillipLogo]: 'https://www.phillip.com.my/',
   [financeLangLogo]: 'https://www.youtube.com/@finance.lang88',
+  [mrmoneyLogo]: 'https://www.mrmoneytv.com/',
+  [tealiveLogo]: 'https://www.loob.com.my/our-company',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
   [saturnaLogo]: 'https://saturna.com.my/',
   '/versa.svg': 'https://versa.com.my/',
@@ -84,7 +87,7 @@ const goldSponsors = [cgsiLogo,phillipLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 const giftSponsors = [printciousLogo, tealiveLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const friendsOfMonie = [bbkNetworkLogo, financeLangLogo, gyakuCapitalLogo, iherngLogo, insightInvestsLogo, ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, taylorsUniversityLogo, tianGeLogo, wabikongLogo, wealthFortLogo, zietLogo];
+const friendsOfMonie = [bbkNetworkLogo, financeLangLogo, gyakuCapitalLogo, iherngLogo, insightInvestsLogo, mrmoneyLogo,ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, taylorsUniversityLogo, tianGeLogo, wabikongLogo, wealthFortLogo, zietLogo];
 
 const baseUrl = "";
 

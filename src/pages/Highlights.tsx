@@ -19,6 +19,7 @@ const highlights: Highlight[] = [
     title: "Special Giveaways",
     description: "Exciting giveaways and prizes throughout the event. Stay tuned for more details on how to participate.",
     image: "/optimized/giveaway.webp",
+    link: "https://benchxcapital-my.sharepoint.com/:i:/p/angelica_revin/IQA7czQI9IXSQKoA3APpJmvlAa6HHCZgiD4IBJIYBjMsJ0M?e=D5lHVN",
     noCrop: true,
     icon: Gift,
   },

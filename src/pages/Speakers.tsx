@@ -28,15 +28,23 @@ Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell Univ
   {
     name: "Lucas",
     chineseName: "卢卡斯",
-    company: "BBK",
+    title: "Stand-up Comedian & Lead Host",
+    company: "BBK Network",
     photo: "/optimized/lucas.avif",
+    bio: `Lucas is a premier Stand-up Comedian and content strategist known for his sharp wit and insightful perspective on global affairs. Holding a background in Economics, he possesses a unique ability to dissect complex national and international news, transforming intricate socio-economic topics into engaging and relatable comedic narratives.
+
+Beyond the digital screen, Lucas is a powerhouse on the live stage, having successfully completed multiple sold-out Solo Stand-up Specials across Malaysia and overseas. His performances are a masterclass in satirical comedy, blending data-driven insights with fearless social commentary. Whether analyzing market trends or local current events, Lucas delivers a highly intellectual yet hilariously provocative experience that resonates with a diverse, international audience.`,
   },
 
   {
     name: "Kah Mun",
     chineseName: "嘉雯",
-    company: "BBK",
+    title: "Stand-up Comedian & Lead Host",
+    company: "BBK Network",
     photo: "/optimized/kahMun.avif",
+    bio: `Kah Mun is a vibrant and charismatic Stand-up Comedian and media professional who has taken the Malaysian comedy scene by storm. As a Lead Host and Content Producer at BBK Network, she plays a pivotal role in shaping digital narratives, blending her sharp journalistic sense with creative entertainment. She is widely recognized for her on-screen news analysis, where she breaks down current events with a signature blend of humor and clarity, making complex topics accessible to a wide audience.
+
+On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo Stand-up Specials and collaborative comedy tours. With her dual expertise in content production and live performance, she uniquely commands an audience while seamlessly weaving brand messaging into a comedic yet authentic flow, making her one of the industry's most versatile standout performers today.`,
   },
   {
     name: "Lim Pinn Yang",
@@ -107,6 +115,19 @@ With a proven track record in driving growth, strategic transformation, and orga
     photo: "/optimized/cheah_Zi_Kah.png",
     bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
   },
+  {
+    name: "Bryan Loo Woi Lip",
+    title: "CEO",
+    company: "Tealive",
+    photo: "/optimized/bryanloo.jpg",
+    bio: `Bryan Loo is the Founder and CEO of Tealive and the founder of Loob Holding Sdn Bhd. An award-winning entrepreneur, he has grown Tealive into Southeast Asia’s leading lifestyle tea brand, with over 1,000 outlets serving 5.5 million customers monthly across multiple international markets.
+
+Guided by his philosophy “Think Big, Start Small, Scale Fast,” Bryan has expanded Loob Holding into one of Malaysia’s largest F&B groups, overseeing brands such as Bask Bear Coffee, Happy Potato, WonderBrew Kombucha, and Sodaxpress.
+
+Recognised for his entrepreneurial achievements, Bryan has received numerous accolades including the Ernst & Young Entrepreneur of the Year and has been named among Tatler Asia’s Most Influential. He is also an Endeavor Entrepreneur and part of the Endeavor Outliers Class of 2025.
+
+Bryan is passionate about inspiring young entrepreneurs and continues to champion innovation in the food and beverage industry.`,
+  },
    {
     name: "Chin Yi Xuan",
     title: "Finance Creator",
@@ -135,6 +156,19 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
 
 He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`,
+  },
+  {
+    name: "Frankie Lim",
+    title: "Host",
+    company: "FAQ Show",
+    photo: "/optimized/frankie.png",
+    bio: `Frankie Lim is a partner and Chief Sales Officer at FitLit Media Tech Group and the host of the FAQ Show, with a vision to empower retail investors amidst the growing trend of retail participation in financial markets. With over a decade of experience in investment banking across corporate finance, equity capital markets, trading, and investor relations, Frankie collaborates closely with financial institutions to simplify financial knowledge for Mr Money TV's audience.
+
+He holds a Bachelor's degree in Economics from the University of Manchester, UK, with a focus on accounting and finance.
+
+A pioneer in retail investor engagement, Frankie co-organized the first-ever retail corporate day in partnership with an investment bank, traditionally reserved for institutional investors, bridging retail investors with company executives to deepen understanding of corporate prospects.
+
+He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee, MSM Malaysia CEO Syed Feizal, renowned economist Jomo Kwame Sundaram, and Abdul Jalil Abdul Rasheed, the former CEO of Berjaya Corporation and Permodalan Nasional Berhad.`,
   },
 
   {
@@ -222,6 +256,19 @@ Prior to joining S&P DJI, Sean was a senior product specialist at Franklin Templ
 Sean holds a master’s degree in International Relations from Dublin City University and bachelor’s degree in Journalism from the University of Queensland.`,
   },
 
+  {
+    name: "Peter Yong",
+    title: "Founder",
+    company: "Mr Money TV",
+    photo: "/optimized/peter.webp",
+    bio: `Peter Yong is the visionary behind Finlit Media, a dynamic media startup with a mission centered on empowering individuals through engaging educational and entertaining content.
+
+Renowned as the charismatic host of Malaysia's groundbreaking financial channel, Mr. Money TV, Peter boasts over a decade of expertise as a financial planner and advisor. His unique talent lies in distilling intricate financial concepts into accessible, actionable knowledge through the art of storytelling.
+
+Peter's influential work extends beyond the screen, as he collaborates with esteemed financial institutions both nationally and internationally. His partnerships with institutions such as MOF, KWSP, BSN, PNB, AHAM Capital, Prudential, and more, exemplify his commitment to elevating financial literacy and enhancing the quality of life for Malaysians.
+
+In terms of education, Peter holds a degree in psychology and business management, underpinning his multidisciplinary approach to financial enlightenment. Furthermore, he is also a Registered Financial Planner (RFP) endorsed by the Malaysian Financial Planning Council (MFPC).`,
+  },
   {
     name: "Sai",
     title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
@@ -364,15 +411,18 @@ const desiredSpeakerOrder: string[] = [
   "Mohammad Bazli Che Rozenan, CFA",
   "Sean Freer",
   "Vincent Wang",
+  "Bryan Loo Woi Lip",
   "Chin Yi Xuan",
   "Chloe Foo",
   "Gin Chong",
   "Fong Wei Ziet",
+  "Frankie Lim",
   "Jack Chan (天哥)",
   "Kah Mun",
   "Liksen Lei",
   "Lucas",
   "Nigel Chong",
+  "Peter Yong",
   "Sai",
   "Sean Tan",
   "Shane Choo",
@@ -447,9 +497,9 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
         <div className="flex flex-col justify-center flex-1 min-w-0">
           <p className="font-bold text-white text-sm leading-snug mb-0.5">
             {s.name}
-              {s.chineseName && (
-                  <span className="text-white ml-2">({s.chineseName})</span>
-                )}
+            {s.chineseName && (
+              <span className="text-white ml-2">({s.chineseName})</span>
+            )}
           </p>
           {s.title && (
             <p className="text-sm text-primary italic mt-0.5 leading-normal">{s.title}</p>
