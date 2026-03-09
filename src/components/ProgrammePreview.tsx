@@ -295,6 +295,8 @@ export default function ProgrammePreview({
               Full Schedule <ArrowUpRight className="w-3 h-3" />
             </Link>
           </div>
+
+          {/* Giveaway thumbnail removed from here; placed standalone in Index */}
         </div>
       </div>
     </section>

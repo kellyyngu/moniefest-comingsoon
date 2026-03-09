@@ -390,14 +390,14 @@
   /* Hero responsive improvements */
   .hero-section {
     min-height: 55vh;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 2.25rem;
   }
   @media (min-width: 640px) {
-    .hero-section { min-height: 60vh; padding-top: 5rem; padding-bottom: 3rem; }
+    .hero-section { min-height: 60vh; padding-top: 3rem; padding-bottom: 3rem; }
   }
   @media (min-width: 1024px) {
-    .hero-section { min-height: 70vh; padding-top: 6rem; padding-bottom: 4rem; }
+    .hero-section { min-height: 70vh; padding-top: 3rem; padding-bottom: 4rem; }
   }
 
   /* When modal is open, prevent background scroll and hide floating CTAs */

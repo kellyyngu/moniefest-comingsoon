@@ -16,15 +16,15 @@ type Speaker = {
 };
 
 const speakers: Speaker[] = [
-//   {
-//     name: "Yeoh Chen Chow",
-//     title: "Independent Non-Executive Chairman",
-//     company: "Foodie Media Berhad",
-//     photo: "/optimized/yeohChenChow.avif",
-//     bio: `Yeoh Chen Chow is Independent Non-Executive Chairman of Foodie Media Berhad, a company listed on Bursa Ace market. He is also Founder of 1% Advisory & Coaching and Independent Non-Executive Director of Audience Analytics Limited, a company listed on SGX Catalist.
+  {
+    name: "Yeoh Chen Chow",
+    title: "Independent Non-Executive Chairman",
+    company: "Foodie Media Berhad",
+    photo: "/optimized/yeohChenChow.avif",
+    bio: `Yeoh Chen Chow is Independent Non-Executive Chairman of Foodie Media Berhad, a company listed on Bursa Ace market. He is also Founder of 1% Advisory & Coaching and Independent Non-Executive Director of Audience Analytics Limited, a company listed on SGX Catalist.
 
-// Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
-//   },
+Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
+  },
   {
     name: "Lucas",
     chineseName: "卢卡斯",
@@ -342,15 +342,15 @@ Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from U
 // Grouping for page layout
 const guestOfHonour =
   (speakers.find((s) => s.name.includes("Liew Chin Tong")) as Speaker) || null;
-const organisersList = speakers.filter(
-  (s) => s.name.includes("Yeoh Chen Chow") || s.name.includes("Lim Pinn Yang") || s.name.includes("George Poh"),
-);
-const mainSpeakersList = speakers.filter(
-  (s) => s !== guestOfHonour && !organisersList.includes(s),
-);
+// organisersList removed — include all speakers in main list (except guestOfHonour)
+const organisersList: Speaker[] = [];
+const mainSpeakersList = speakers.filter((s) => s !== guestOfHonour);
 
 // Desired display order for main speakers (keep organisers and guest unchanged)
 const desiredSpeakerOrder: string[] = [
+  "Yeoh Chen Chow",
+  "Lim Pinn Yang",
+  "George Poh, CFP®",
   "Jay Cheong",
   "Khairy Jamaluddin",
   "Dr. Ong Kian Ming",
@@ -742,37 +742,7 @@ const SpeakersPage = () => {
             </section>
           )}
 
-          {/* ── Organisers ── */}
-          {organisersList.length > 0 && (
-            <section>
-              <h2 className="text-2xl sm:text-3xl font-bold text-center text-primary mb-6">
-                Organisers
-              </h2>
-              <div
-                className={
-                  singleCol
-                    ? "flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-6 px-2 mb-12"
-                    : "flex flex-wrap items-stretch justify-center gap-4 sm:gap-6 px-2 mb-12"
-                }
-              >
-                {organisersList.map((o, idx) => (
-                  <div
-                    key={idx}
-                    role="button"
-                    tabIndex={0}
-                    className={`cursor-pointer flex flex-col ${singleCol ? "w-full max-w-md sm:w-auto" : "w-[calc(50%-0.5rem)] sm:w-56"}`}
-                    onClick={() => openSpeakerModal(o)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ")
-                        openSpeakerModal(o);
-                    }}
-                  >
-                    <SpeakerCard s={o} singleCol={singleCol} />
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+
 
           {/* ── Speakers ── */}
           {mainSpeakersList.length > 0 && (

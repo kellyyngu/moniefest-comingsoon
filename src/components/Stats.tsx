@@ -1,7 +1,7 @@
 const stats = [
-  { number: "120+", label: "Partners", icon: 'partners' },
+  { number: "30,000+", label: "Attendees", icon: 'partners' },
+  { number: "100+", label: "Speakers", icon: 'speakers' },
   { number: "100+", label: "Exhibitors", icon: 'exhibitors' },
-  { number: "80+", label: "Speakers & Creators", icon: 'speakers' },
 ];
 
 const Icon = ({ name }: { name: string }) => {
@@ -46,11 +46,11 @@ const Stats = () => {
     <section className="py-8 bg-background">
       <div className="section-container">
          <div className="flex justify-center">
-           <div className="w-full max-w-5xl grid grid-cols-3 sm:grid-cols-3 gap-3 px-2">
+           <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-3 gap-4 px-2 justify-items-center">
           {stats.map((stat, index) => (
             <article
               key={index}
-              className={`relative rounded-xl p-2 sm:p-6 bg-card border border-border text-center animate-slide-up min-w-0`}
+              className={`relative rounded-xl p-3 sm:p-6 bg-card border border-border text-center animate-slide-up min-w-0 flex flex-col items-center justify-center w-full sm:w-auto max-w-[170px] sm:max-w-none mx-auto`}
               style={{ animationDelay: `${index * 80}ms` }}
               aria-labelledby={`stat-${index}-label`}
             >
@@ -60,8 +60,8 @@ const Stats = () => {
                 </div>
               </div>
 
-              <p className="text-sm sm:text-lg md:text-4xl lg:text-5xl font-extrabold text-primary mb-1">{stat.number}</p>
-              <p id={`stat-${index}-label`} className="text-foreground text-xs sm:text-sm md:text-base font-semibold">{stat.label}</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-primary mb-1 leading-tight">{stat.number}</p>
+              <p id={`stat-${index}-label`} className="text-foreground text-xs sm:text-sm md:text-base font-semibold tracking-wider uppercase">{stat.label}</p>
             </article>
           ))}
             </div>
