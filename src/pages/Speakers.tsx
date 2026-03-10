@@ -315,7 +315,7 @@ Over his career, Max had previously been involved in a software development comp
     name: "Tevaryan Thiagarajan",
     title: "Senior Manager, Digital Asset & Corporate Development",
     company: "Gambit Group",
-    photo: "/optimized/tevaryanThiagarajan.png",
+    photo: "/optimized/tevaryanThiagarajan.jpg",
     bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
   },
 
