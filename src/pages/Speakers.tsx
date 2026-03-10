@@ -622,20 +622,51 @@ const SpeakersPage = () => {
   const [activeSpeaker, setActiveSpeaker] = useState<Speaker | null>(null);
 
   useEffect(() => {
-    // Use CSS-only lock: toggle a class that sets `overflow: hidden` on the body.
+    // Robust mobile scroll lock: fix body position and preserve scroll
     try {
+      const body = document.body;
       if (speakerModalOpen) {
-        document.body.classList.add("modal-open");
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        // store on body dataset so it survives re-renders
+        body.dataset.modalScrollY = String(scrollY);
+        body.style.position = "fixed";
+        body.style.top = `-${scrollY}px`;
+        body.style.left = "0";
+        body.style.right = "0";
+        body.style.width = "100%";
+        // keep existing modal-open class for CSS rules that hide CTAs
+        body.classList.add("modal-open");
       } else {
-        document.body.classList.remove("modal-open");
+        // restore
+        const prev = Number(body.dataset.modalScrollY || 0);
+        body.style.position = "";
+        body.style.top = "";
+        body.style.left = "";
+        body.style.right = "";
+        body.style.width = "";
+        body.classList.remove("modal-open");
+        // restore scroll position
+        window.scrollTo(0, prev || 0);
+        delete body.dataset.modalScrollY;
       }
-    } catch (e) {}
+    } catch (e) {
+      // ignore
+    }
 
-    // Cleanup: ensure class is removed when component unmounts
+    // Cleanup: ensure we restore when component unmounts
     return () => {
       try {
-        document.body.classList.remove("modal-open");
-      } catch {}
+        const body = document.body;
+        const prev = Number(body.dataset.modalScrollY || 0);
+        body.style.position = "";
+        body.style.top = "";
+        body.style.left = "";
+        body.style.right = "";
+        body.style.width = "";
+        body.classList.remove("modal-open");
+        if (prev) window.scrollTo(0, prev);
+        delete body.dataset.modalScrollY;
+      } catch (e) {}
     };
   }, [speakerModalOpen]);
 
