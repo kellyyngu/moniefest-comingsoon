@@ -211,7 +211,7 @@ His approach combines academic knowledge with practical market experience, offer
  
 
   {
-    name: "Mohammad Bazli Che Rozenan, CFA",
+    name: "Mohammad Bazli Che Rozenan",
     title: "Director, Members Engagement",
     company: "CFA Society Malaysia",
     photo: "/optimized/mohammadBazli.jpg",
@@ -270,6 +270,15 @@ Peter's influential work extends beyond the screen, as he collaborates with este
 In terms of education, Peter holds a degree in psychology and business management, underpinning his multidisciplinary approach to financial enlightenment. Furthermore, he is also a Registered Financial Planner (RFP) endorsed by the Malaysian Financial Planning Council (MFPC).`,
   },
   {
+    name: "Prestine Davekhaw",
+    title: "Founder",
+    company: "MalaysianPAYGAP",
+    photo: "/optimized/prestine.jpg",
+    bio: `Prestine Davekhaw, Founder, MalaysianPAYGAP
+  {
+Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
+  },
+  {
     name: "Sai",
     title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
     company: "Wabikong",
@@ -297,6 +306,20 @@ Today, he channels that experience into his mission of simplifying property know
     photo: "/optimized/shane.png",
     whiteBg: true,
     bio: `Shane Choo is a financial speaker, trader and investor, with over 15 years of experience trading and investing in local and international stocks, options, ETF, and currency. As a speaker, he is often engaged by investment banks and securities firms to train their retail clients in trading and investment. Since 2015, he has been appointed by Bursa Malaysia to design and conduct investment curriculum to young investors and retail investors nationwide. To date, he has trained over 35,000 individuals in stock investing. Shane is also an International Certified Professional Trainer by IPMA, UK and an Accredited Trainer by HRD Corp. In 2015, he was acknowledged by President Obama for his work as a young leader in financial education.`,
+  },
+  {
+    name: "Shan Li Tay",
+    title: "Managing Director",
+    company: "Endeavor Malaysia",
+    photo: "/optimized/shanLiTay.jpg",
+    bio: `Shan Li Tay, Managing Director, Endeavor Malaysia
+As the Managing Director, Shan Li is passionate in helping to accelerate the growth of Malaysia’s high impact entrepreneurs and contributing to the success of the ecosystem.
+
+With an extensive background in corporate leadership, entrepreneurship, and strategic growth, Shan Li brings a dynamic blend of experience that will drive Endeavor Malaysia’s mission to empower high-impact entrepreneurs and foster a vibrant entrepreneurial ecosystem.
+
+Shan Li’s career spans diverse industries and roles, reflecting her innovative and agile approach to business. She is a qualified Chartered Accountant with over 15 years experience in banking and finance before venturing into the entrepreneurial world. As an entrepreneur she is the founder of Swipeless, a singles platform that believes in connecting people in real life as well as the co-founder of Babydash,one of Malaysia’s pioneering e-commerce platforms for the mum and baby industry. Shan Li is also a partner at ScaleUp Malaysia, where she plays a pivotal role in accelerating and investing in startups.
+
+Under Shan Li’s leadership, Endeavor Malaysia will expand its support for entrepreneurs through tailored mentorship, access to capital, and global networking opportunities.`,
   },
   {
     name: "Tan Kyzen, Max",
@@ -408,7 +431,7 @@ const desiredSpeakerOrder: string[] = [
   "Jeroni Khoo",
   "Tevaryan Thiagarajan",
   "Afiq Ismail",
-  "Mohammad Bazli Che Rozenan, CFA",
+  "Mohammad Bazli Che Rozenan",
   "Sean Freer",
   "Vincent Wang",
   "Bryan Loo Woi Lip",
@@ -423,9 +446,11 @@ const desiredSpeakerOrder: string[] = [
   "Lucas",
   "Nigel Chong",
   "Peter Yong",
+  "Prestine Davekhaw",
   "Sai",
   "Sean Tan",
   "Shane Choo",
+  "Shan Li Tay",
   "Tan Kyzen, Max",
 ];
 
@@ -653,19 +678,18 @@ const SpeakersPage = () => {
       // ignore
     }
 
-    // Cleanup: ensure we restore when component unmounts
+    // Cleanup: only reset body styles on unmount — do NOT call window.scrollTo here
+    // because it conflicts with the else-branch above (which also runs on close and
+    // has already restored the scroll position correctly).
     return () => {
       try {
         const body = document.body;
-        const prev = Number(body.dataset.modalScrollY || 0);
         body.style.position = "";
         body.style.top = "";
         body.style.left = "";
         body.style.right = "";
         body.style.width = "";
         body.classList.remove("modal-open");
-        if (prev) window.scrollTo(0, prev);
-        delete body.dataset.modalScrollY;
       } catch (e) {}
     };
   }, [speakerModalOpen]);

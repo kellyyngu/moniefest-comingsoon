@@ -184,7 +184,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
       "Malaysia's Economic Growth Outlook for 2H 2026 - What It Means for Investors",
     speakers: [
       {
-        name: "Mohammad Bazli Che Rozenan, CFA",
+        name: "Mohammad Bazli Che Rozenan",
         title: "Director, Members Engagement",
         company: "CFA Society Malaysia",
         photo: "/optimized/mohammadBazli.jpg",

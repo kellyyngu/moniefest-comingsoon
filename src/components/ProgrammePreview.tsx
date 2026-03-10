@@ -24,7 +24,7 @@ const programmeSlides: Slide[] = [
     type: 'talk',
     speakers: [
       {
-        name: 'Mohammad Bazli Che Rozenan, CFA',
+        name: 'Mohammad Bazli Che Rozenan',
         title: 'Director, Members Engagement',
         company: 'CFA Society Malaysia',
         photo: '/optimized/mohammadBazli.jpg',
@@ -105,7 +105,7 @@ const programmeSlides: Slide[] = [
     speakers: [
       {
         name: 'Shane Choo',
-        title: 'Director, WealthFort',
+        title: 'Director',
         company: 'WealthFort',
         photo: '/optimized/shane.png',
       },
@@ -118,7 +118,14 @@ const programmeSlides: Slide[] = [
     time: '14:30 – 15:15',
     topic: 'Entrepreneurship in 2026: Building Businesses That Last in a Changing Economy',
     type: 'panel',
-    speakers: [],
+    speakers: [
+      {
+        name: 'Yeoh Chen Chow',
+        title: 'Independent Non-Executive Chairman',
+        company: 'Foodie Media Berhad',
+        photo: '/optimized/yeohChenChow.avif',
+      },
+    ],
   },
   {
     id: 'p8',
@@ -127,7 +134,15 @@ const programmeSlides: Slide[] = [
     time: '18:45 – 19:30',
     topic: 'What Changes After You Make Your First Million?',
     type: 'panel',
-    speakers: [],
+    speakers: [
+      { name: 'Bryan Loo', title: '', company: '' },
+      {
+        name: 'Lim Pinn Yang',
+        title: 'Chief Executive Officer',
+        company: 'Foodie Media Berhad',
+        photo: '/optimized/pinnyang.webp',
+      },
+    ],
   },
 ];
 

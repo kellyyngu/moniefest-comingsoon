@@ -41,6 +41,8 @@ const tianGeLogo = '/optimized/tianGe.svg';
 const gyakuCapitalLogo = '/optimized/gyakuCapital.svg';
 const printciousLogo = '/optimized/printcious.svg';
 const saturnaLogo = '/optimized/saturna.svg';
+const mpgLogo = '/optimized/MPG.svg';
+const endeavorLogo = '/optimized/endeavor.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -87,7 +89,7 @@ const goldSponsors = [cgsiLogo,phillipLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 const giftSponsors = [printciousLogo, tealiveLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const friendsOfMonie = [bbkNetworkLogo, financeLangLogo, gyakuCapitalLogo, iherngLogo, insightInvestsLogo, mrmoneyLogo,ncspaceLogo, noMoneyLahLogo,stayWokePropertyLogo, taylorsUniversityLogo, tianGeLogo, wabikongLogo, wealthFortLogo, zietLogo];
+const friendsOfMonie = [bbkNetworkLogo, endeavorLogo, financeLangLogo, gyakuCapitalLogo, iherngLogo, insightInvestsLogo, mpgLogo, mrmoneyLogo, ncspaceLogo, noMoneyLahLogo, stayWokePropertyLogo, taylorsUniversityLogo, tianGeLogo, wabikongLogo, wealthFortLogo, zietLogo];
 
 const baseUrl = "";
 
