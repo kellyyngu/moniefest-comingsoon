@@ -128,7 +128,7 @@ Recognised for his entrepreneurial achievements, Bryan has received numerous acc
 
 Bryan is passionate about inspiring young entrepreneurs and continues to champion innovation in the food and beverage industry.`,
   },
-   {
+  {
     name: "Chin Yi Xuan",
     title: "Finance Creator",
     company: "No Money Lah",
@@ -208,7 +208,6 @@ Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is c
 
 His approach combines academic knowledge with practical market experience, offering a grounded perspective on investing in global equity markets.`,
   },
- 
 
   {
     name: "Mohammad Bazli Che Rozenan",
@@ -274,9 +273,7 @@ In terms of education, Peter holds a degree in psychology and business managemen
     title: "Founder",
     company: "MalaysianPAYGAP",
     photo: "/optimized/prestine.jpg",
-    bio: `Prestine Davekhaw, Founder, MalaysianPAYGAP
-  {
-Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
+    bio: `Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
   },
   {
     name: "Sai",
@@ -290,7 +287,7 @@ Blending elements of Japanese and Penang culture in his comedic skits, his viewe
 Sai has also been featured in films such as Follow Aunty La! and variety shows like Why You So Smart Geh? His charisma and ability to engage with both local and international audiences have garnered him a dedicated fanbase, with many tuning in for his lighthearted yet informative takes on life.`,
   },
 
-    {
+  {
     name: "Sean Tan",
     title: "Property YouTuber",
     company: "@iherng",
@@ -312,8 +309,7 @@ Today, he channels that experience into his mission of simplifying property know
     title: "Managing Director",
     company: "Endeavor Malaysia",
     photo: "/optimized/shanLiTay.jpg",
-    bio: `Shan Li Tay, Managing Director, Endeavor Malaysia
-As the Managing Director, Shan Li is passionate in helping to accelerate the growth of Malaysia’s high impact entrepreneurs and contributing to the success of the ecosystem.
+    bio: `As the Managing Director, Shan Li is passionate in helping to accelerate the growth of Malaysia’s high impact entrepreneurs and contributing to the success of the ecosystem.
 
 With an extensive background in corporate leadership, entrepreneurship, and strategic growth, Shan Li brings a dynamic blend of experience that will drive Endeavor Malaysia’s mission to empower high-impact entrepreneurs and foster a vibrant entrepreneurial ecosystem.
 
@@ -349,7 +345,7 @@ Over his career, Max had previously been involved in a software development comp
     photo: "/optimized/vincentWang.jpg",
     bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
   },
-  
+
   {
     name: "Jay Cheong",
     title: "Founder & CEO",
@@ -475,14 +471,18 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
           transformOrigin: "center 22%",
         }
       : s.name === "Fong Wei Ziet"
-        ? { objectPosition: "center 22%", transform: "scale(1.35)", transformOrigin: "center 22%" }
-      : s.name === "Shane Choo"
-        ? { objectPosition: "center 12%" }
-      : s.name === "Chloe Foo"
-        ? { objectPosition: "center 2%" }
-        : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
-          ? { objectPosition: "center 25%" }
-          : undefined;
+        ? {
+            objectPosition: "center 22%",
+            transform: "scale(1.35)",
+            transformOrigin: "center 22%",
+          }
+        : s.name === "Shane Choo"
+          ? { objectPosition: "center 12%" }
+          : s.name === "Chloe Foo"
+            ? { objectPosition: "center 2%" }
+            : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
+              ? { objectPosition: "center 25%" }
+              : undefined;
 
   const initials = s.name
     .split(" ")
@@ -527,10 +527,14 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
             )}
           </p>
           {s.title && (
-            <p className="text-sm text-primary italic mt-0.5 leading-normal">{s.title}</p>
+            <p className="text-sm text-primary italic mt-0.5 leading-normal">
+              {s.title}
+            </p>
           )}
           {s.company && (
-            <p className="text-sm text-white mt-0.5 leading-normal">{s.company}</p>
+            <p className="text-sm text-white mt-0.5 leading-normal">
+              {s.company}
+            </p>
           )}
           <div className="mt-1.5 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
             View profile
@@ -600,9 +604,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
           </p>
         )}
         {s.company && (
-          <p className="text-sm text-white leading-normal">
-            {s.company}
-          </p>
+          <p className="text-sm text-white leading-normal">{s.company}</p>
         )}
         <div className="mt-auto pt-3 flex items-center gap-1 text-[10px] text-primary/50 group-hover:text-primary transition-colors duration-150">
           View profile
@@ -707,16 +709,26 @@ const SpeakersPage = () => {
     setActiveSpeaker(null);
   };
 
-  const computeHeadshotStyle = (name?: string): React.CSSProperties | undefined =>
+  const computeHeadshotStyle = (
+    name?: string,
+  ): React.CSSProperties | undefined =>
     name === "Datuk Clifford Hii"
-      ? { objectPosition: "center 18%", transform: "scale(1.65)", transformOrigin: "center 22%" }
+      ? {
+          objectPosition: "center 18%",
+          transform: "scale(1.65)",
+          transformOrigin: "center 22%",
+        }
       : name === "Fong Wei Ziet"
-      ? { objectPosition: "center 22%", transform: "scale(1.35)", transformOrigin: "center 22%" }
-      : name === "Shane Choo"
-      ? { objectPosition: "center 12%" }
-      : name === "Cheah Zi Kah" || name === "Tevaryan Thiagarajan"
-      ? { objectPosition: "center 25%" }
-      : undefined;
+        ? {
+            objectPosition: "center 22%",
+            transform: "scale(1.35)",
+            transformOrigin: "center 22%",
+          }
+        : name === "Shane Choo"
+          ? { objectPosition: "center 12%" }
+          : name === "Cheah Zi Kah" || name === "Tevaryan Thiagarajan"
+            ? { objectPosition: "center 25%" }
+            : undefined;
 
   return (
     <div className="min-h-screen bg-background">
@@ -847,8 +859,6 @@ const SpeakersPage = () => {
             </section>
           )}
 
-
-
           {/* ── Speakers ── */}
           {mainSpeakersList.length > 0 && (
             <section>
@@ -896,17 +906,17 @@ const SpeakersPage = () => {
                 <div className="flex items-start sm:items-center gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                        <img
-                          src={
-                            activeSpeaker.photo ||
-                            placeholderImage(activeSpeaker.name)
-                          }
-                          alt={activeSpeaker.name}
-                          loading="eager"
-                          fetchPriority="high"
-                          className="w-full h-full object-cover object-top"
-                          style={computeHeadshotStyle(activeSpeaker.name)}
-                        />
+                      <img
+                        src={
+                          activeSpeaker.photo ||
+                          placeholderImage(activeSpeaker.name)
+                        }
+                        alt={activeSpeaker.name}
+                        loading="eager"
+                        fetchPriority="high"
+                        className="w-full h-full object-cover object-top"
+                        style={computeHeadshotStyle(activeSpeaker.name)}
+                      />
                     </div>
                   </div>
 
@@ -914,7 +924,9 @@ const SpeakersPage = () => {
                     <h3 className="text-lg sm:text-2xl font-bold text-white">
                       {activeSpeaker.name}
                       {activeSpeaker.chineseName && (
-                        <span className="text-white ml-2">({activeSpeaker.chineseName})</span>
+                        <span className="text-white ml-2">
+                          ({activeSpeaker.chineseName})
+                        </span>
                       )}
                     </h3>
                     <p className="text-xs sm:text-sm text-primary italic mt-1">

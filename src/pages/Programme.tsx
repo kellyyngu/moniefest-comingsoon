@@ -180,8 +180,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
   },
   {
     time: "11:15 - 12:00",
-    title:
-      "Malaysia's Economic Growth Outlook for 2H 2026 - What It Means for Investors",
+    title: "Malaysia’s Outlook 2026 - What It Means for Investors in 2H",
     speakers: [
       {
         name: "Mohammad Bazli Che Rozenan",
@@ -535,30 +534,43 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
   {
     time: "16:00 - 16:30",
     title:
-      "Podcast 3: Alternative Investments for Beginners: What You Must Know Before You Enter",
+      "Podcast 3: Starting Your Journey into Alternative Investments",
     description: "",
     speakers: [
       {
-        name: "Exhibitor H & Panelists",
-        title: "Exhibitor & Panelists",
-        company: "",
+        name: "Frankie Lim",
+        title: "Host",
+        company: "FAQ Show",
+        photo: "/optimized/frankie.png",
+        bio: `Frankie Lim is a partner and Chief Sales Officer at FitLit Media Tech Group and the host of the FAQ Show, with a vision to empower retail investors amidst the growing trend of retail participation in financial markets. With over a decade of experience in investment banking across corporate finance, equity capital markets, trading, and investor relations, Frankie collaborates closely with financial institutions to simplify financial knowledge for Mr Money TV's audience.
+
+He holds a Bachelor's degree in Economics from the University of Manchester, UK, with a focus on accounting and finance.
+
+A pioneer in retail investor engagement, Frankie co-organized the first-ever retail corporate day in partnership with an investment bank, traditionally reserved for institutional investors, bridging retail investors with company executives to deepen understanding of corporate prospects.
+
+He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee, MSM Malaysia CEO Syed Feizal, renowned economist Jomo Kwame Sundaram, and Abdul Jalil Abdul Rasheed, the former CEO of Berjaya Corporation and Permodalan Nasional Berhad.`,
       },
     ],
   },
 
   { time: "16:30 - 17:00" },
-
-  {
-    time: "17:00 - 18:00",
+  { time: "17:00 - 17:30",
     title: "Investment Talk",
     description: "",
-    speakers: [{ name: "Exhibitor J", title: "Exhibitor", company: "" }],
+    speakers: [],
+   },
+
+  {
+    time: "17:30 - 18:00",
+    title: "Investment Talk",
+    description: "",
+    speakers: [],
   },
 
   {
     time: "18:00 - 18:30",
     title:
-      "Podcast 4: Planning for the Unexpected — Family Finance Lessons We Learn Too Late",
+      "Podcast 4: When Life Happens - Is Your Family Financially Ready?",
     description: "",
     speakers: [
       {
@@ -808,15 +820,35 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
 
   {
     time: "18:00 - 18:45",
-    title: "SME: The Backbone of the Malaysian Economy",
+    panelTitle: "SME: The Backbone of the Malaysian Economy",
     description: "",
+    isPanel: true,
+    bullets: [],
+    moderator: {
+      name: "Lim Pinn Yang",
+      title: "Chief Executive Officer",
+      company: "Foodie Media Berhad",
+      photo: pinnyang,
+      bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
+    },
     speakers: [
       {
-        name: "Lim Pinn Yang",
-        title: "Chief Executive Officer",
-        company: "Foodie Media Berhad",
-        photo: pinnyang,
-        bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
+        name: "YB Steven Sim",
+        title: "",
+        company: "",
+      },
+      {
+        name: "Shan Li Tay",
+        title: "Managing Director",
+        company: "Endeavor Malaysia",
+        photo: "/optimized/shanLiTay.jpg",
+        bio: `As the Managing Director, Shan Li is passionate in helping to accelerate the growth of Malaysia’s high impact entrepreneurs and contributing to the success of the ecosystem.
+
+With an extensive background in corporate leadership, entrepreneurship, and strategic growth, Shan Li brings a dynamic blend of experience that will drive Endeavor Malaysia’s mission to empower high-impact entrepreneurs and foster a vibrant entrepreneurial ecosystem.
+
+Shan Li’s career spans diverse industries and roles, reflecting her innovative and agile approach to business. She is a qualified Chartered Accountant with over 15 years experience in banking and finance before venturing into the entrepreneurial world. As an entrepreneur she is the founder of Swipeless, a singles platform that believes in connecting people in real life as well as the co-founder of Babydash,one of Malaysia’s pioneering e-commerce platforms for the mum and baby industry. Shan Li is also a partner at ScaleUp Malaysia, where she plays a pivotal role in accelerating and investing in startups.
+
+Under Shan Li’s leadership, Endeavor Malaysia will expand its support for entrepreneurs through tailored mentorship, access to capital, and global networking opportunities.`,
       },
     ],
   },
@@ -827,11 +859,32 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
     panelNumber: 6,
     panelTitle: "What Changes After You Make Your First Million?",
     bullets: [],
+    host: {
+      name: "Peter Yong",
+      title: "Founder",
+      company: "Mr Money TV",
+      photo: "/optimized/peter.webp",
+      bio: `Peter Yong is the visionary behind Finlit Media, a dynamic media startup with a mission centered on empowering individuals through engaging educational and entertaining content.
+
+Renowned as the charismatic host of Malaysia's groundbreaking financial channel, Mr. Money TV, Peter boasts over a decade of expertise as a financial planner and advisor. His unique talent lies in distilling intricate financial concepts into accessible, actionable knowledge through the art of storytelling.
+
+Peter's influential work extends beyond the screen, as he collaborates with esteemed financial institutions both nationally and internationally. His partnerships with institutions such as MOF, KWSP, BSN, PNB, AHAM Capital, Prudential, and more, exemplify his commitment to elevating financial literacy and enhancing the quality of life for Malaysians.
+
+In terms of education, Peter holds a degree in psychology and business management, underpinning his multidisciplinary approach to financial enlightenment. Furthermore, he is also a Registered Financial Planner (RFP) endorsed by the Malaysian Financial Planning Council (MFPC).`,
+    },
     speakers: [
       {
         name: "Bryan Loo",
-        title: "",
-        company: "",
+        title: "CEO",
+        company: "Tealive",
+        photo: "/optimized/bryanloo.jpg",
+        bio: `Bryan Loo is the Founder and CEO of Tealive and the founder of Loob Holding Sdn Bhd. An award-winning entrepreneur, he has grown Tealive into Southeast Asia’s leading lifestyle tea brand, with over 1,000 outlets serving 5.5 million customers monthly across multiple international markets.
+
+Guided by his philosophy “Think Big, Start Small, Scale Fast,” Bryan has expanded Loob Holding into one of Malaysia’s largest F&B groups, overseeing brands such as Bask Bear Coffee, Happy Potato, WonderBrew Kombucha, and Sodaxpress.
+
+Recognised for his entrepreneurial achievements, Bryan has received numerous accolades including the Ernst & Young Entrepreneur of the Year and has been named among Tatler Asia’s Most Influential. He is also an Endeavor Entrepreneur and part of the Endeavor Outliers Class of 2025.
+
+Bryan is passionate about inspiring young entrepreneurs and continues to champion innovation in the food and beverage industry.`,
       },
       {
         name: "Lim Pinn Yang",
@@ -841,7 +894,6 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
         bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
       },
     ],
-    description: "",
   },
 
   {
@@ -856,10 +908,10 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
         note: "worth RM56,500",
       },
       {
-        name: "iPhone 17 Pro (128GB, Cosmic Orange)",
-        url: "https://www.apple.com/my/shop/buy-iphone/iphone-17-pro/6.3-inch-display-256gb-cosmic-orange",
+        name: "iPhone 17 Pro Max",
+        url: "https://www.apple.com/my/shop/buy-iphone/iphone-17-pro/6.9-inch-display-256gb-cosmic-orange",
         image: "/optimized/iphone-17-pro.webp",
-        note: "worth RM5,499",
+        note: "worth RM5,999",
       },
     ],
   },
@@ -891,7 +943,16 @@ Over his career, Max had previously been involved in a software development comp
   {
     time: "11:30 - 12:00",
     title:
-      "Podcaset 1: High Value Future Skills for Malaysia's Youth: What Do the Market Really Value?",
+      "Podcast 1: High Value Future Skills for Malaysia's Youth: What Do the Market Really Value?",
+    speakers: [
+      {
+        name: "Prestine Davekhaw",
+        title: "Founder",
+        company: "MalaysianPAYGAP",
+        photo: "/optimized/prestine.jpg",
+        bio: `Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
+      },
+    ],
   },
   { time: "12:00 - 12:30" },
   {
@@ -922,7 +983,7 @@ Over his career, Max had previously been involved in a software development comp
   },
   {
     time: "13:30 - 14:00",
-    title: "",
+    title: "100万其实没有你想象那么大和难累积",
     description: "",
     speakers: [
       {
@@ -981,7 +1042,7 @@ With a background in multimedia design and video production, Chloe works with he
   },
   {
     time: "16:00 - 16:30",
-    title: "BBK 脱口秀",
+    title: "Stand-up Comedy by BBK Network",
     description: "",
     speakers: [
       {
