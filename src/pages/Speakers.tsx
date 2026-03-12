@@ -109,7 +109,7 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
 With a proven track record in driving growth, strategic transformation, and organisational turnaround, Datuk Clifford brings deep expertise across the education, property, and financial sectors. His leadership is marked by strong governance, commercial acumen, and a forward-looking approach to building sustainable and scalable businesses.`,
   },
   {
-    name: "Cheah Zi Kah",
+    name: "Cheah Zi Kah, CFP®",
     title: "Chief Growth Officer",
     company: "Gambit Digital Trustees, Part of Gambit Group Consortium",
     photo: "/optimized/cheah_Zi_Kah.jpg",
@@ -449,7 +449,7 @@ const desiredSpeakerOrder: string[] = [
   "Khairy Jamaluddin",
   "Dr. Ong Kian Ming",
   "Datuk Clifford Hii",
-  "Cheah Zi Kah",
+  "Cheah Zi Kah, CFP®",
   "Isabelle Zhen",
   "Peter Kong",
   "Aaron Tang",

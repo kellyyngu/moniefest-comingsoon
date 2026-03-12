@@ -47,6 +47,8 @@ const asriAhmadAcademyLogo = '/optimized/asriAhmadAcademy.svg';
 const uhnwLogo = '/optimized/UHNW.jpeg';
 const skyworldLogo = '/optimized/skyworld.png';
 const sinegyLogo = '/optimized/sinegy.svg';
+const rytBankLogo = '/optimized/rytBank.svg';
+const hlbLogo = '/optimized/HLB.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -72,6 +74,8 @@ const logoUrls: Record<string, string> = {
   [tealiveLogo]: 'https://www.loob.com.my/our-company',
   [skyworldLogo]: 'https://skyworldgroup.com.my/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
+  [rytBankLogo]: 'https://www.rytbank.my/',
+  [hlbLogo]: 'https://www.hlbislamic.com.my/',
   [saturnaLogo]: 'https://saturna.com.my/',
   '/versa.svg': 'https://versa.com.my/',
   [cgsiLogo]: 'https://www.cgsi.com',
@@ -84,14 +88,14 @@ const logoUrls: Record<string, string> = {
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
-const platinumSponsors = [bursaLogo, gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, kenangaLogo, lunoLogo, moomooLogo, webullLogo];
+const platinumSponsors = [bursaLogo, gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, hlbLogo, kenangaLogo, lunoLogo, moomooLogo, webullLogo];
 const supportingPartners = [
   bursaLogo,
   societyMalaysiaLogo,
   fimmLogo,
 ];
 const silverSponsors = [bimbsecLogo, capbayLogo, ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo, publicMutualLogo, saturnaLogo, sinegyLogo];
-const goldSponsors = [cgsiLogo, phillipLogo, skyworldLogo];
+const goldSponsors = [cgsiLogo, phillipLogo, rytBankLogo, skyworldLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 const giftSponsors = [printciousLogo, tealiveLogo];
 const knowledgePartners = [cboeLogo, spgLogo];

@@ -581,7 +581,7 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
     description: "",
     speakers: [
       {
-        name: "Cheah Zi Kah",
+        name: "Cheah Zi Kah, CFP®",
         title: "Chief Growth Officer",
         company: "Gambit Digital Trustees, Part of Gambit Group Consortium",
         photo: "/optimized/cheah_Zi_Kah.jpg",
