@@ -111,7 +111,7 @@ With a proven track record in driving growth, strategic transformation, and orga
   {
     name: "Cheah Zi Kah",
     title: "Chief Growth Officer",
-    company: "Gambit Group",
+    company: "Gambit Digital Trustees, Part of Gambit Group Consortium",
     photo: "/optimized/cheah_Zi_Kah.jpg",
     bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
   },
@@ -339,8 +339,8 @@ Over his career, Max had previously been involved in a software development comp
   },
   {
     name: "Wan Azfar Azeem (MrKripto)",
-    title: "",
-    company: "Ikon Kripto Syariah",
+    title: "Ikon Kripto Syariah",
+    company: "Asri Ahmad Academy Sdn. Bhd.",
     photo: "/optimized/azfar.jpg",
     bio: `Dedicated professional with passion in evolving landscape of WEB 3 technologies, with focus on Cryptocurrency Investment & Trading. With over 12 years of comprehensive investment experience, I am currently entrusted with the role of an educator, providing valuable insights into investment opportunities.
 

@@ -481,6 +481,13 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
         photo: "/optimized/ginChong.jpeg",
         bio: `Gin Chong is the Founder of StayWokeProperty and a prominent property content creator in Malaysia. He has reviewed over 200 property developments nationwide, providing honest, educational and engaging insights into the real estate market. Through his entertaining yet informative approach, Gin empowers homebuyers and investors to make smarter property decisions.`,
       },
+      {
+        name: "William K",
+        title: "Finance and Lifestyle Content Creator",
+        company: "@richdadwilliam @richdadinvests",
+        photo: "/optimized/william.jpeg",
+        bio: `Expertise in personal finances investment and management. Occasionally does comedic content.`,
+      },
     ],
   },
 
@@ -576,7 +583,7 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
       {
         name: "Cheah Zi Kah",
         title: "Chief Growth Officer",
-        company: "Gambit Digital Trustees",
+        company: "Gambit Digital Trustees, Part of Gambit Group Consortium",
         photo: "/optimized/cheah_Zi_Kah.jpg",
         bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
       },
@@ -802,12 +809,14 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
       "Why East Malaysia Policy Direction Matters to Long-Term Investors",
     bullets: [],
     speakers: [
-      {
-        name: "Exhibitor P & Panelists",
-        title: "Exhibitor & Panelists",
-        company: "",
-      },
     ],
+    moderator: {
+      name: "Peter Kong",
+      title: "Head of Research",
+      company: "Kenanga Investment Bank Berhad",
+      photo: "/optimized/peterKong.jpg",
+      bio: `Prior to joining Kenanga as Head of Research, Peter was an award-winning analyst for financials and industrials sector with CLSA Securities Malaysia, where he assumed the role of Deputy Head of Research. Prior to that, Peter honed his credit/bond market skills during his time at RAM Rating Services Berhad as a credit analyst. Starting out his career as an auditor with PricewaterhouseCoopers, Peter is both a licensed accountant and a Chartered Financial Analyst.`,
+    },
     description: "",
   },
 
@@ -957,9 +966,24 @@ Over his career, Max had previously been involved in a software development comp
   { time: "12:00 - 12:30" },
   {
     time: "12:30 - 13:00",
-    title: "Investment Talk 6",
+    title: "The Asset Most People Ignore… Until It’s Too Late",
     description: "",
-    speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }],
+    speakers: [
+      {
+        name: "Wan Azfar Azeem (MrKripto)",
+        title: "Ikon Kripto Syariah",
+        company: "Asri Ahmad Academy Sdn. Bhd.",
+        photo: "/optimized/azfar.jpg",
+        bio: `Dedicated professional with passion in evolving landscape of WEB 3 technologies, with focus on Cryptocurrency Investment & Trading. With over 12 years of comprehensive investment experience, I am currently entrusted with the role of an educator, providing valuable insights into investment opportunities.
+
+A accredited HRDC Trainer, specializing in Digital Assets investing, I have had the privilege of imparting knowledge to a diverse audience of over 15,000 individuals since 2020. The success of this educational initiative has been underscored by the full support and collaboration extended by Luno, KDX & Mx Global, a regulatory-compliant entity under the Malaysian Securities Commission.
+
+Further strengthening the credibility of my educational initiatives, my training modules are officially endorsed by UTM Space, ensuring a structured, high-quality learning experience backed by academic excellence.
+
+Driven by a commitment to financial literacy and responsible investing, I continue to bridge the gap between traditional finance and the future of digital assets, helping individuals make informed investment decisions in the rapidly growing WEB3 ecosystem.
+`,
+      },
+    ],
   },
   {
     time: "13:00 - 13:30",
