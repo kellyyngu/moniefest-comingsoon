@@ -198,6 +198,13 @@ Jeroni holds a Bachelor's Degree in Business & Commerce, with a double major in
 Marketing and Economics, from Monash University.`,
   },
   {
+    name: "Peter Kong",
+    title: "Head of Research",
+    company: "Kenanga Investment Bank Berhad",
+    photo: "/optimized/peterKong.jpg",
+    bio: `Prior to joining Kenanga as Head of Research, Peter was an award-winning analyst for financials and industrials sector with CLSA Securities Malaysia, where he assumed the role of Deputy Head of Research. Prior to that, Peter honed his credit/bond market skills during his time at RAM Rating Services Berhad as a credit analyst. Starting out his career as an auditor with PricewaterhouseCoopers, Peter is both a licensed accountant and a Chartered Financial Analyst.`,
+  },
+  {
     name: "Liksen Lei",
     title: "U.S. Equities Investor & Analyst",
     company: "@insightinvests",
@@ -331,6 +338,27 @@ Max’s expertise is further recognised as an active speaker on Cityplus FM, a c
 Over his career, Max had previously been involved in a software development company, as well as a business solutions consultation company in Malaysia. He was also featured on NanYang （南洋）, Oriental Daily （东方）, China Press（中国报）, and had secured numerous awards including Best Intelligent Figures 2022/2023, as well as interview by Shanghai（商海) previously.`,
   },
   {
+    name: "Wan Azfar Azeem (MrKripto)",
+    title: "",
+    company: "Ikon Kripto Syariah",
+    photo: "/optimized/azfar.jpg",
+    bio: `Dedicated professional with passion in evolving landscape of WEB 3 technologies, with focus on Cryptocurrency Investment & Trading. With over 12 years of comprehensive investment experience, I am currently entrusted with the role of an educator, providing valuable insights into investment opportunities.
+
+A accredited HRDC Trainer, specializing in Digital Assets investing, I have had the privilege of imparting knowledge to a diverse audience of over 15,000 individuals since 2020. The success of this educational initiative has been underscored by the full support and collaboration extended by Luno, KDX & Mx Global, a regulatory-compliant entity under the Malaysian Securities Commission.
+
+Further strengthening the credibility of my educational initiatives, my training modules are officially endorsed by UTM Space, ensuring a structured, high-quality learning experience backed by academic excellence.
+
+Driven by a commitment to financial literacy and responsible investing, I continue to bridge the gap between traditional finance and the future of digital assets, helping individuals make informed investment decisions in the rapidly growing WEB3 ecosystem.
+`,
+  },
+  {
+    name: "William K",
+    title: "Finance and Lifestyle Content Creator",
+    company: "@richdadwilliam @richdadinvests",
+    photo: "/optimized/william.jpeg",
+    bio: `Expertise in personal finances investment and management. Occasionally does comedic content.`,
+  },
+  {
     name: "Tevaryan Thiagarajan",
     title: "Senior Manager, Digital Asset & Corporate Development",
     company: "Gambit Group",
@@ -425,6 +453,7 @@ const desiredSpeakerOrder: string[] = [
   "Isabelle Zhen",
   "Aaron Tang",
   "Jeroni Khoo",
+  "Peter Kong",
   "Tevaryan Thiagarajan",
   "Afiq Ismail",
   "Mohammad Bazli Che Rozenan",
@@ -448,6 +477,8 @@ const desiredSpeakerOrder: string[] = [
   "Shane Choo",
   "Shan Li Tay",
   "Tan Kyzen, Max",
+  "Wan Azfar Azeem (MrKripto)",
+  "William K",
 ];
 
 const mainSpeakersListOrdered = [...mainSpeakersList].sort((a, b) => {

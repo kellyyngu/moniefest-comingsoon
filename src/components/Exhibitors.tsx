@@ -43,6 +43,10 @@ const printciousLogo = '/optimized/printcious.svg';
 const saturnaLogo = '/optimized/saturna.svg';
 const mpgLogo = '/optimized/MPG.svg';
 const endeavorLogo = '/optimized/endeavor.svg';
+const asriAhmadAcademyLogo = '/optimized/asriAhmadAcademy.svg';
+const uhnwLogo = '/optimized/UHNW.jpeg';
+const skyworldLogo = '/optimized/skyworld.png';
+const sinegyLogo = '/optimized/sinegy.svg';
 
 const placeholderImg = (label = "Logo") => `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
 
@@ -66,6 +70,7 @@ const logoUrls: Record<string, string> = {
   [financeLangLogo]: 'https://www.youtube.com/@finance.lang88',
   [mrmoneyLogo]: 'https://www.mrmoneytv.com/',
   [tealiveLogo]: 'https://www.loob.com.my/our-company',
+  [skyworldLogo]: 'https://skyworldgroup.com.my/',
   [fundingSocietiesLogo]: 'https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website',
   [saturnaLogo]: 'https://saturna.com.my/',
   '/versa.svg': 'https://versa.com.my/',
@@ -79,17 +84,18 @@ const logoUrls: Record<string, string> = {
 
 const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
-const platinumSponsors = [gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, kenangaLogo, lunoLogo, moomooLogo, webullLogo];
+const platinumSponsors = [bursaLogo, gambitTrusteesLogo, gambitCustodyLogo, fsmOneLogo, kenangaLogo, lunoLogo, moomooLogo, webullLogo];
 const supportingPartners = [
+  bursaLogo,
   societyMalaysiaLogo,
   fimmLogo,
 ];
-const silverSponsors = [bimbsecLogo, capbayLogo,  ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo, publicMutualLogo, saturnaLogo];
-const goldSponsors = [cgsiLogo,phillipLogo];
+const silverSponsors = [bimbsecLogo, capbayLogo, ctosLogo, fimmLogo, fundingSocietiesLogo, microleapLogo, publicMutualLogo, saturnaLogo, sinegyLogo];
+const goldSponsors = [cgsiLogo, phillipLogo, skyworldLogo];
 const giftPartners = Array.from({ length: 4 }).map((_, i) => placeholderImg(`Gift+${i+1}`));
 const giftSponsors = [printciousLogo, tealiveLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const friendsOfMonie = [bbkNetworkLogo, endeavorLogo, financeLangLogo, gyakuCapitalLogo, iherngLogo, insightInvestsLogo, mpgLogo, mrmoneyLogo, ncspaceLogo, noMoneyLahLogo, stayWokePropertyLogo, taylorsUniversityLogo, tianGeLogo, wabikongLogo, wealthFortLogo, zietLogo];
+const friendsOfMonie = [asriAhmadAcademyLogo, bbkNetworkLogo, endeavorLogo, financeLangLogo, gyakuCapitalLogo, iherngLogo, insightInvestsLogo, mpgLogo, mrmoneyLogo, ncspaceLogo, noMoneyLahLogo, stayWokePropertyLogo, taylorsUniversityLogo, tianGeLogo, uhnwLogo, wabikongLogo, wealthFortLogo, zietLogo];
 
 const baseUrl = "";
 
@@ -127,6 +133,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
             const logoSrc = fullUrls ? logo : `${baseUrl}${logo}`;
             const logoUrl = logoUrls?.[logo];
             const isKenanga = (logo || '').toString().toLowerCase().includes('kenanga');
+            const needsBlackBg = (logo || '').toString().toLowerCase().includes('asriahmadacademy');
             const imgClass = isKenanga ? 'max-w-full max-h-full object-contain' : 'max-w-[100%] max-h-[100%] object-contain';
             const imageElement = (
               <img
@@ -138,6 +145,13 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                 decoding="async"
                 className={imgClass}
               />
+            );
+            const wrappedImage = needsBlackBg ? (
+              <div className="w-full h-full flex items-center justify-center bg-black rounded-md p-2">
+                {imageElement}
+              </div>
+            ) : (
+              imageElement
             );
 
             return (
@@ -153,10 +167,10 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                     className="flex items-center justify-center w-full h-full hover:opacity-80 transition-opacity"
                     aria-label={`Visit ${formatAlt(fullUrls ? logo : logo)} website`}
                   >
-                    {imageElement}
+                    {wrappedImage}
                   </a>
                 ) : (
-                  imageElement
+                  wrappedImage
                 )}
 
                 {logoUrl && (
@@ -202,6 +216,7 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
             const logoSrc = fullUrls ? logo : `${baseUrl}${logo}`;
             const logoUrl = logoUrls?.[logo];
             const isKenanga = (logo || '').toString().toLowerCase().includes('kenanga');
+            const needsBlackBg = (logo || '').toString().toLowerCase().includes('asriahmadacademy');
             const imgClass = isKenanga ? 'max-w-full max-h-[90%] object-contain' : 'max-w-[85%] max-h-[60%] object-contain';
             const imageElement = (
               <img
@@ -213,6 +228,13 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                 decoding="async"
                 className={imgClass}
               />
+            );
+            const wrappedImage = needsBlackBg ? (
+              <div className="w-full h-full flex items-center justify-center bg-black rounded-md p-2">
+                {imageElement}
+              </div>
+            ) : (
+              imageElement
             );
 
             return (
@@ -228,10 +250,18 @@ const LogoGrid = ({ title, logos, fullUrls, hideCaption, logoOnly, logoUrls }: L
                     className="flex items-center justify-center hover:opacity-80 transition-opacity"
                     aria-label={`Visit ${formatAlt(fullUrls ? logo : logo)} website`}
                   >
-                    {imageElement}
+                    {needsBlackBg ? (
+                      <div className="w-full h-24 sm:h-28 flex items-center justify-center bg-black rounded-md p-2">{imageElement}</div>
+                    ) : (
+                      imageElement
+                    )}
                   </a>
                 ) : (
-                  imageElement
+                  needsBlackBg ? (
+                    <div className="w-full h-24 sm:h-28 flex items-center justify-center bg-black rounded-md p-2">{imageElement}</div>
+                  ) : (
+                    imageElement
+                  )
                 )}
                 {!hideCaption && (
                   <div className="mt-3 text-sm text-muted-foreground text-center">{formatAlt(fullUrls ? logo : logo)}</div>
