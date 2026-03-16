@@ -368,6 +368,13 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
     Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from Universiti Teknologi PETRONAS.`,
       },
       {
+        name: "Noelle Lee",
+        title: "Managing partner",
+        company: "ACTIV8",
+        photo: "/optimized/noelle.jpg",
+        bio: `Noelle is trained legally (LLB, CLP) and also an MBA holder. She has been part of the blockchain industry since 2016 and is a Managing Partner of ACTIV8 (formerly known Lydian Labs). She is a young entrepreneur that has established numerous partnerships across the globe.`,
+      },
+      {
         name: "Datuk Clifford Hii",
         title: "Chief Executive Officer",
         company: "Gambit Group",
@@ -420,10 +427,10 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
         note: "worth RM4,998",
       },
       {
-        name: "Apple Watch SE (40mm)",
-        url: "https://www.apple.com/my/shop/buy-watch/apple-watch-se/40mm-gps-midnight-aluminium-neon-yellow-sport-band-m-l-se",
-        image: "/optimized/applewatch.webp",
-        note: "worth RM1,049",
+        name: "Macbook Air 13-inch",
+        url: "https://shop.switch.com.my/products/13-inch-macbook-air-mw123zp-a",
+        image: "/optimized/macbook.webp",
+        note: "worth RM4,699",
       },
       {
         name: "Philips NA110 Air Fryer",
@@ -473,18 +480,35 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     description: "",
     speakers: [
       {
+        name: "Ka Hoe",
+        title: "Financial Transformation Coach, Licensed Financial Planner",
+        company: "JA Personal Finance Academy",
+        photo: "/optimized/kahoe.jpg",
+        bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
+
+He is on a mission to elevate the financial literacy of 1 Million  Malaysians because he believes individuals can be happy & confident  with money rather than being enslaved by money.  
+
+Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Malaysians through 300+ webinars & talks.  
+
+  Ka Hoe is a regular speaker and been invited to speak for communities  including Financial Planning Association Malaysia, Taylor’s & Sunway  University, Naluri, as well as corporate such as Maybank and UOB, with  media features including Star Property and Smart Investor.
+`,
+      },
+      {
         name: "Gin Chong",
         title: "Founder",
         company: "StayWokeProperty",
         photo: "/optimized/ginChong.jpeg",
         bio: `Gin Chong is the Founder of StayWokeProperty and a prominent property content creator in Malaysia. He has reviewed over 200 property developments nationwide, providing honest, educational and engaging insights into the real estate market. Through his entertaining yet informative approach, Gin empowers homebuyers and investors to make smarter property decisions.`,
       },
+
       {
         name: "William K",
         title: "Finance and Lifestyle Content Creator",
         company: "@richdadwilliam @richdadinvests",
         photo: "/optimized/william.jpeg",
-        bio: `Expertise in personal finances investment and management. Occasionally does comedic content.`,
+        bio: `William K, better known as Rich Dad William, is a Malaysian entrepreneur and influencer who uses a blend of luxury satire and "wealth-comedy" to teach financial literacy. Through his platforms @richdadwilliam and @richdadinvests, he adopts the persona of a mentor for those seeking financial freedom, sharing insights on the mindset of how the super-rich invests and the different products that are only available to these categories of investors. He aims to bridge the gap in knowledge and information that the general public does not have access to, and he does not believe his should be due to one's wealth category.
+
+His expertise spans real estate portfolio building, equity markets, and modern entrepreneurship, all delivered through high-energy content that contrasts a lavish lifestyle with practical, grounded money management strategies. By balancing his roles as a high-net-worth investor and a dedicated family man, he emphasizes that true success is about achieving "time freedom" and building a lasting legacy for the next generation.`,
       },
     ],
   },
@@ -513,6 +537,20 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
         title: "Exhibitor & Panelists",
         company: "",
       },
+      {
+        name: "Bob Ngoh",
+        title: "Founder",
+        company: "FNBTalk",
+        photo: "/optimized/bobNgoh.jpg",
+        bio: `Bob Ngoh is a finance professional, educator, and award-winning former Private Wealth Banker, recognized for consecutive performance awards from 2019 to 2025. He helps individuals build financial clarity, make informed decisions, and develop long-term financial resilience through practical, easy-to-understand personal finance education.
+
+With years of hands-on experience advising clients at leading local banks, Bob worked extensively on wealth structuring, investment planning, and long-term financial strategies. As a long-term investor himself, he brings real market experience to his work — not just theory — allowing him to translate complex financial concepts into practical, actionable decisions.
+
+Bob holds an MBA (First Class Honours) from London, further strengthening his analytical and strategic foundation. He also holds an Investor Protection Professional Certificate (IPPC) and a Member of the Asian Institute of Chartered Bankers (AICB).
+
+Through talks, workshops, and educational content, Bob aims to make finance accessible, relatable, and actionable — especially for working adults who want to take control of their financial future with confidence.
+`,
+      },
     ],
     host: {
       name: "Sai",
@@ -527,7 +565,10 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     },
   },
 
-  { time: "15:00 - 15:30" },
+  {
+    time: "15:00 - 15:30",
+    speakers: [{ name: "Jose Blasco", title: "", company: "" }],
+  },
 
   {
     time: "15:30 - 16:00",
@@ -541,6 +582,11 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     title: "Podcast 3: Starting Your Journey into Alternative Investments",
     description: "",
     speakers: [
+      {
+        name: "Dao Hong",
+        title: "",
+        company: "FSMOne",
+      },
       {
         name: "Frankie Lim",
         title: "Host",
@@ -557,7 +603,27 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
     ],
   },
 
-  { time: "16:30 - 17:00" },
+  {
+    time: "16:30 - 17:00",
+    title: "How To 4x Your Wealth in 2 Years (Even If You Have a Deficit)",
+    description: "",
+    speakers: [
+      {
+        name: "Ka Hoe",
+        title: "Financial Transformation Coach, Licensed Financial Planner",
+        company: "JA Personal Finance Academy",
+        photo: "/optimized/kahoe.jpg",
+        bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
+
+He is on a mission to elevate the financial literacy of 1 Million  Malaysians because he believes individuals can be happy & confident  with money rather than being enslaved by money.  
+
+Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Malaysians through 300+ webinars & talks. 
+
+Ka Hoe is a regular speaker and been invited to speak for communities including Financial Planning Association Malaysia, Taylor’s & Sunway University, Naluri, as well as corporate such as Maybank and UOB, with media features including Star Property and Smart Investor.
+`,
+      },
+    ],
+  },
   {
     time: "17:00 - 17:30",
     title: "Investment Talk",
@@ -594,9 +660,33 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
     speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }],
   },
 
-  { time: "19:00 - 19:30", title: "Investment Talk" },
+  {
+    time: "19:00 - 19:30",
+    title: "懒人投资法 | Lazy Portfolio",
+    description: "",
+    speakers: [
+      {
+        name: "Kelvin Goh",
+        title: "理财Brader, Licensed Financial Planner | CFP | FAR | CMSRL",
+        company: "Money Brader",
+        photo: "/optimized/kelvinGoh.png",
+        bio: `Kelvin Goh (Money Brader / 理财Brader) is a licensed financial planner approved by Bank Negara Malaysia (BNM) and the Securities Commission Malaysia (SC), with over 10 years of experience in the financial industry.
 
-  { time: "19:30 - 20:00" },
+He is the Founder of Money Brader Advisory and among the early pioneers of Fee-Based financial planning in Malaysia, practising a model that does not rely on product commissions. Instead, Kelvin provides objective, transparent, and client-focused financial advice, helping thousand of individuals and families build stronger financial foundations and understand the true value of financial planning.
+
+Beyond advisory work, Kelvin is also a leading financial educator and content creator. He is one of the largest financial influencers on the RedNote (Xiaohongshu) platform, with over 170,000 followers. Over the past two years, he has published more than 200 financial education videos, reaching over 20 millions views. His content is widely recognised for simplifying complex financial concepts into practical and easy-to-understand strategies that everyday people can apply to improve their financial lives.
+
+Outside of financial planning, Kelvin co-founded  Yes Studios Sdn Bhd, a leading VFX and creative production company, and currently serves as the CFO of Bricksmania Asset Management, a company focused on property investment, management, and financial education.
+
+Through his work in advisory, education, and entrepreneurship, Kelvin is committed to empowering more Malaysians to achieve financial clarity, confidence, and long-term financial independence.
+`,
+      },
+    ],
+  },
+
+  { time: "19:30 - 20:00",
+    speakers: [{ name: "Jayden Pang", title: "", company: "" }],
+  },
   { time: "20:00 - 20:10", title: "Day 1 End" },
 ];
 
@@ -688,7 +778,7 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
 
   {
     time: "13:00 - 13:45",
-    title: "Finance Lang 现场环节",
+    title: "从诈骗到正义：举报之后会发生什么？",
     description: "",
     speakers: [
       {
@@ -774,10 +864,10 @@ With a background in multimedia design and video production, Chloe works with he
         note: "worth RM4,998",
       },
       {
-        name: "Dior Rouge Lipstick (x2)",
-        url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
-        image: "/optimized/dior-lipstick.webp",
-        note: "worth RM410",
+        name: "Apple Watch SE",
+        url: "https://www.apple.com/my/shop/buy-watch/apple-watch-se",
+        image: "/optimized/applewatch.webp",
+        note: "worth RM1,049",
       },
     ],
   },
@@ -812,7 +902,13 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
     panelTitle:
       "Why East Malaysia Policy Direction Matters to Long-Term Investors",
     bullets: [],
-    speakers: [],
+    speakers: [
+      {
+        name: "Ts. Frank Wee Khiam Hui",
+        title: "Chief Executive Officer",
+        company: "Insights Analytics Berhad",
+      },
+    ],
     moderator: {
       name: "Peter Kong",
       title: "Head of Research",
@@ -899,6 +995,11 @@ Recognised for his entrepreneurial achievements, Bryan has received numerous acc
 Bryan is passionate about inspiring young entrepreneurs and continues to champion innovation in the food and beverage industry.`,
       },
       {
+        name: "Dato Calvin",
+        title: "",
+        company: "",
+      },
+      {
         name: "Lim Pinn Yang",
         title: "Chief Executive Officer",
         company: "Foodie Media Berhad",
@@ -924,6 +1025,12 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
         url: "https://www.apple.com/my/shop/buy-iphone/iphone-17-pro/6.9-inch-display-256gb-cosmic-orange",
         image: "/optimized/iphone-17-pro.webp",
         note: "worth RM5,999",
+      },
+      {
+        name: "iPhone 17",
+        url: "https://www.apple.com/my/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender",
+        image: "/optimized/iphone17.webp",
+        note: "worth RM3,999",
       },
     ],
   },
@@ -1003,8 +1110,11 @@ Driven by a commitment to financial literacy and responsible investing, I contin
       },
       {
         name: "Pn. Adibah Mazlan",
-        title: "",
-        company: "",
+        title: "Founder",
+        company: "The Raw",
+        photo: "/optimized/pnAdibahMazlan.jpeg",
+        bio: `Miss Adibah is the founder of The Raw, a science-driven skincare brand established in 2019. Leveraging her pharmaceutical background, she is on a mission to break the stigma surrounding locally made products and elevate Malaysian beauty brands to global standards through transparency, safety, and innovation.
+`,
       },
     ],
   },
@@ -1023,42 +1133,35 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     ],
   },
   {
-    time: "14:00 - 14:30",
-    title: "Investment Talk 7",
+    time: "14:00 - 14:15",
+    title: " Simplify Stock Selection with Bursa Quality 50",
     description: "",
-    speakers: [{ name: "Exhibitor L", title: "Exhibitor", company: "" }],
+    speakers: [
+      { name: "Exhibitor L", title: "Exhibitor", company: "" },
+      {
+        name: "Ronnie Chai Teck Wei",
+        title: "Dealer’s Representative",
+        company: "CGS International",
+      },
+    ],
   },
   {
-    time: "14:30 - 15:00",
-    title: "Podcast 3: Finance Lang 现场环节",
+    time: "14:15 - 14:30",
+    title: "Introduction to Futures and CFD",
     description: "",
     speakers: [
       {
-        name: "George Poh, CFP®",
-        title: "Chief Executive Officer",
-        company: "Spire Digital Sdn. Bhd.",
-        photo: "/optimized/george.webp",
-        nowrapName: true,
-        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
-
-Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
-
-Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
-
-At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
-      },
-      {
-        name: "Chloe Foo",
-        title: "Creator",
-        company: "Finance Lang",
-        photo: "/optimized/chloe.avif",
-        bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
-
-Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
-
-With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
+        name: "Trent Cheok",
+        title: "Business Development, Securities & Leveraged Products",
+        company: "",
       },
     ],
+  },
+  {
+    time: "14:30 - 15:00",
+    title: "",
+    description: "",
+    speakers: [],
   },
   { time: "15:00 - 15:30" },
   {

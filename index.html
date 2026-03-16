@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://via.placeholder.com" crossorigin />
     <link rel="dns-prefetch" href="https://via.placeholder.com" />
 
+    <!-- Google Fonts (moved from CSS @import to avoid PostCSS parsing issues) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Set favicon early but avoid preloading it (preloading favicons often triggers unused-preload warnings).
          Keep explicit icon links so browser fetches them when parsing the head. -->
     <link rel="icon" href="/monie.ico?v=4" type="image/x-icon" />
