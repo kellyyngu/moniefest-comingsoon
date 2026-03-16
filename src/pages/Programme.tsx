@@ -181,15 +181,13 @@ At Monie Fest, George represents a long-term vision: building a credible financi
   {
     time: "11:15 - 12:00",
     title: "Malaysia’s Outlook 2026 - What It Means for Investors in 2H",
-    speakers: [
-      {
-        name: "Mohammad Bazli Che Rozenan",
-        title: "Director, Members Engagement",
-        company: "CFA Society Malaysia",
-        photo: "/optimized/mohammadBazli.jpg",
-        bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.\n\nPreviously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.\n\nBazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.`,
-      },
-    ],
+    moderator: {
+      name: "Mohammad Bazli Che Rozenan",
+      title: "Director, Members Engagement",
+      company: "CFA Society Malaysia",
+      photo: "/optimized/mohammadBazli.jpg",
+      bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.\n\nPreviously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.\n\nBazli graduated with a First Class Master of Physics from the University of Warwick and is a CFA Charterholder.`,
+    },
   },
   {
     time: "12:00 - 12:45",
@@ -540,8 +538,7 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
 
   {
     time: "16:00 - 16:30",
-    title:
-      "Podcast 3: Starting Your Journey into Alternative Investments",
+    title: "Podcast 3: Starting Your Journey into Alternative Investments",
     description: "",
     speakers: [
       {
@@ -561,11 +558,12 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
   },
 
   { time: "16:30 - 17:00" },
-  { time: "17:00 - 17:30",
+  {
+    time: "17:00 - 17:30",
     title: "Investment Talk",
     description: "",
     speakers: [],
-   },
+  },
 
   {
     time: "17:30 - 18:00",
@@ -576,8 +574,7 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
 
   {
     time: "18:00 - 18:30",
-    title:
-      "Podcast 4: When Life Happens - Is Your Family Financially Ready?",
+    title: "Podcast 4: When Life Happens - Is Your Family Financially Ready?",
     description: "",
     speakers: [
       {
@@ -790,6 +787,13 @@ With a background in multimedia design and video production, Chloe works with he
     description: "",
     speakers: [
       {
+        name: "Moomoo Malaysia",
+        title: "",
+        company: "",
+        photo: "/optimized/moomoo.webp",
+        whiteBg: true,
+      },
+      {
         name: "Fong Wei Ziet",
         title: "Director",
         company: "Ziet Media Sdn Bhd",
@@ -808,8 +812,7 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
     panelTitle:
       "Why East Malaysia Policy Direction Matters to Long-Term Investors",
     bullets: [],
-    speakers: [
-    ],
+    speakers: [],
     moderator: {
       name: "Peter Kong",
       title: "Head of Research",

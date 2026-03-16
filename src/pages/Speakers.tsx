@@ -26,6 +26,42 @@ const speakers: Speaker[] = [
 Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
   },
   {
+    name: "Noelle Lee",
+    title: "Managing partner",
+    company: "ACTIV8",
+    photo: "/optimized/noelle.jpg",
+    bio: `Noelle is trained legally (LLB, CLP) and also an MBA holder. She has been part of the blockchain industry since 2016 and is a Managing Partner of ACTIV8 (formerly known Lydian Labs). She is a young entrepreneur that has established numerous partnerships across the globe.`,
+  },
+  {
+    name: "Faiz Azmi",
+    title: "Director",
+    company: "Faiz Azmi Financial Faiz FF Studios Sdn. Bhd.",
+    photo: "/optimized/faizAzmi.png",
+    bio: `Faiz Azmi has accumulated 12 years of diverse experience in the banking industry, real estate, unit trusts, and insurance. Recognizing the lack of unbiased financial education available to Malaysians, Faiz decided to fill this gap by creating content that is both impartial and accessible to the general public. 
+  
+    After his initial video on ASB dividends went viral in 2021, he received an overwhelming response and numerous questions from viewers. This feedback motivated him to produce more educational videos that address the concealed aspects of financial transactions often overlooked by salespeople. 
+
+  Starting as a one-man show, Faiz handled everything from ideation to promotion. Today, he leads a dedicated team that helps expand his reach and impact. His primary goal remains to enhance financial literacy among Malaysians, helping them avoid common financial mistakes. 
+
+  Faiz's content now spans multiple platforms, including YouTube, Facebook, Instagram, TikTok, and Spotify. He has also launched podcast series such as FF Podcast and Boss Borak, all featured on the Financial Faiz channels. Through these efforts, Faiz aims to empower more Malaysians with the knowledge they need to make informed financial decisions. 
+
+  MEDIA COMPANY FOCUS: 
+  Faiz's media company is dedicated education, extending beyond financial literacy to cover life choices, career advice, business insights, and consumer rights. The company stays attuned to the public's concerns, addressing issues such as inflation, minimum wage, and housing prices by providing clear and comprehensible explanations. 
+
+  Recognizing that fear often stems from the unknown, Faiz strives to demystify complex topics for his audience. 
+
+  FUTURE VISION: 
+  With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
+  },
+  {
+    name: "Pn Adibah Mazlan",
+    title: "Founder",
+    company: "The Raw",
+    photo: "/optimized/pnAdibahMazlan.jpeg",
+    bio: `Miss Adibah is the founder of The Raw, a science-driven skincare brand established in 2019. Leveraging her pharmaceutical background, she is on a mission to break the stigma surrounding locally made products and elevate Malaysian beauty brands to global standards through transparency, safety, and innovation.
+`,
+  },
+  {
     name: "Lucas",
     chineseName: "卢卡斯",
     title: "Stand-up Comedian & Lead Host",
@@ -356,7 +392,9 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     title: "Finance and Lifestyle Content Creator",
     company: "@richdadwilliam @richdadinvests",
     photo: "/optimized/william.jpeg",
-    bio: `Expertise in personal finances investment and management. Occasionally does comedic content.`,
+    bio: `William K, better known as Rich Dad William, is a Malaysian entrepreneur and influencer who uses a blend of luxury satire and "wealth-comedy" to teach financial literacy. Through his platforms @richdadwilliam and @richdadinvests, he adopts the persona of a mentor for those seeking financial freedom, sharing insights on the mindset of how the super-rich invests and the different products that are only available to these categories of investors. He aims to bridge the gap in knowledge and information that the general public does not have access to, and he does not believe his should be due to one's wealth category. 
+    
+    His expertise spans real estate portfolio building, equity markets, and modern entrepreneurship, all delivered through high-energy content that contrasts a lavish lifestyle with practical, grounded money management strategies. By balancing his roles as a high-net-worth investor and a dedicated family man, he emphasizes that true success is about achieving "time freedom" and building a lasting legacy for the next generation.`,
   },
   {
     name: "Tevaryan Thiagarajan",
@@ -431,6 +469,50 @@ Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from U
     photo: "/optimized/jackChan.avif",
     bio: `Jack Chan（天哥）是《第一天投资理财日记》的创办人，也是马来西亚知名投资理财内容创作者与畅销理财书作者。他积极推广大众理财教育，曾担任 ASTRO 著名理财节目《全家私房钱》编剧，并拥有 FIMM 信托基金顾问高级组织经理及私人退休金计划（PRS）顾问资格，曾名列多家上市公司前30大股东之列。`,
   },
+  {
+    name: "Kelvin Goh",
+    title: "理财Brader, Licensed Financial Planner | CFP | FAR | CMSRL",
+    company: "Money Brader",
+    photo: "/optimized/kelvinGoh.png",
+    bio: `Kelvin Goh (Money Brader / 理财Brader) is a licensed financial planner approved by Bank Negara Malaysia (BNM) and the Securities Commission Malaysia (SC), with over 10 years of experience in the financial industry.
+
+He is the Founder of Money Brader Advisory and among the early pioneers of Fee-Based financial planning in Malaysia, practising a model that does not rely on product commissions. Instead, Kelvin provides objective, transparent, and client-focused financial advice, helping thousand of individuals and families build stronger financial foundations and understand the true value of financial planning.
+
+Beyond advisory work, Kelvin is also a leading financial educator and content creator. He is one of the largest financial influencers on the RedNote (Xiaohongshu) platform, with over 170,000 followers. Over the past two years, he has published more than 200 financial education videos, reaching over 20 millions views. His content is widely recognised for simplifying complex financial concepts into practical and easy-to-understand strategies that everyday people can apply to improve their financial lives.
+
+Outside of financial planning, Kelvin co-founded  Yes Studios Sdn Bhd, a leading VFX and creative production company, and currently serves as the CFO of Bricksmania Asset Management, a company focused on property investment, management, and financial education.
+
+Through his work in advisory, education, and entrepreneurship, Kelvin is committed to empowering more Malaysians to achieve financial clarity, confidence, and long-term financial independence.
+`,
+  },
+  {
+    name: "Ka Hoe",
+    title: "Financial Transformation Coach, Licensed Financial Planner",
+    photo: "/optimized/kahoe.jpg",
+    company: "JA Personal Finance Academy",
+    bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
+
+He is on a mission to elevate the financial literacy of 1 Million  Malaysians because he believes individuals can be happy & confident  with money rather than being enslaved by money.  
+
+Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Malaysians through 300+ webinars & talks.  
+
+  Ka Hoe is a regular speaker and been invited to speak for communities  including Financial Planning Association Malaysia, Taylor’s & Sunway  University, Naluri, as well as corporate such as Maybank and UOB, with  media features including Star Property and Smart Investor.
+`,
+  },
+  {
+    name: "Bob Ngoh",
+    title: "Founder",
+    company: "FNBTalk",
+    photo: "/optimized/bobNgoh.jpg",
+    bio: `Bob Ngoh is a finance professional, educator, and award-winning former Private Wealth Banker, recognized for consecutive performance awards from 2019 to 2025. He helps individuals build financial clarity, make informed decisions, and develop long-term financial resilience through practical, easy-to-understand personal finance education.
+
+With years of hands-on experience advising clients at leading local banks, Bob worked extensively on wealth structuring, investment planning, and long-term financial strategies. As a long-term investor himself, he brings real market experience to his work — not just theory — allowing him to translate complex financial concepts into practical, actionable decisions.
+
+Bob holds an MBA (First Class Honours) from London, further strengthening his analytical and strategic foundation. He also holds an Investor Protection Professional Certificate (IPPC) and a Member of the Asian Institute of Chartered Bankers (AICB).
+
+Through talks, workshops, and educational content, Bob aims to make finance accessible, relatable, and actionable — especially for working adults who want to take control of their financial future with confidence.
+`,
+  },
 ];
 
 // Grouping for page layout
@@ -460,17 +542,23 @@ const desiredSpeakerOrder: string[] = [
   "Sean Freer",
   "Vincent Wang",
   "Bryan Loo Woi Lip",
+  "Bob Ngoh",
   "Chin Yi Xuan",
   "Chloe Foo",
   "Gin Chong",
+  "Faiz Azmi",
   "Fong Wei Ziet",
   "Frankie Lim",
   "Jack Chan (天哥)",
+  "Ka Hoe",
   "Kah Mun",
+  "Kelvin Goh",
   "Liksen Lei",
   "Lucas",
   "Nigel Chong",
+  "Noelle Lee",
   "Peter Yong",
+  "Pn Adibah Mazlan",
   "Prestine Davekhaw",
   "Sai",
   "Sean Tan",

@@ -17,7 +17,8 @@ const highlights: Highlight[] = [
   {
     number: 1,
     title: "Special Giveaways",
-    description: "Exciting giveaways and prizes throughout the event. Stay tuned for more details on how to participate.",
+    description:
+      "Exciting giveaways and prizes throughout the event. Stay tuned for more details on how to participate.",
     image: "/optimized/giveaway.webp",
     link: "https://benchxcapital-my.sharepoint.com/:i:/p/angelica_revin/IQA7czQI9IXSQKoA3APpJmvlAa6HHCZgiD4IBJIYBjMsJ0M?e=D5lHVN",
     noCrop: true,
@@ -25,6 +26,24 @@ const highlights: Highlight[] = [
   },
   {
     number: 2,
+    title: "Bursa Malaysia",
+    description: "Official Bursa Malaysia banner.",
+    image: "/optimized/bursaBanner.jpg",
+    link: "https://my.bursamalaysia.com/?register=true&utm_source=moniefestweb&utm_campaign=monie_fest&utm_id=monie_fest",
+    noCrop: true,
+    icon: Trophy,
+  },
+  {
+    number: 3,
+    title: "FSM",
+    description: "FSM banner and partner highlight.",
+    image: "/optimized/FSMbanner.jpg",
+    link: "https://bit.ly/3NdxX1S",
+    noCrop: true,
+    icon: Sparkles,
+  },
+  {
+    number: 4,
     title: "webull Highlights",
     description: "Special highlights brought to you by WeBull.",
     image: "/optimized/webullHighlights.png",
@@ -33,7 +52,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 3,
+    number: 5,
     title: "Phillip Promotions",
     description: "Check out Phillip Capital's latest promotion.",
     image: "/optimized/phillipCapitalPromotionArtwork.png",
@@ -42,16 +61,29 @@ const highlights: Highlight[] = [
     icon: Gift,
   },
   {
-    number: 4,
+    number: 6,
     title: "MicroLEAP Lucky Draw",
-    description: "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
+    description:
+      "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
     image: "/optimized/microleap_visual.webp",
     noCrop: true,
     icon: Sparkles,
   },
+  {
+    number: 7,
+    title: "Public Mutual",
+    description: "Public Mutual banner",
+    image: "/optimized/publicMutualBanner.png",
+    link: "https://www.publicmutual.com.my/pmb/goal-rush-2026",
+    noCrop: true,
+    icon: Trophy,
+  },
 ];
 
-const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({ highlight, index }) => {
+const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
+  highlight,
+  index,
+}) => {
   const Icon = highlight.icon;
   const isEven = index % 2 === 0;
 
@@ -63,28 +95,40 @@ const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({ high
       }}
     >
       {/* Clean card: white panel, centered, subtle shadow and consistent padding */}
-      <div className={`relative bg-transparent rounded-lg overflow-hidden mx-0 sm:mx-auto sm:max-w-6xl`}>
+      <div
+        className={`relative bg-transparent rounded-lg overflow-hidden mx-0 sm:mx-auto sm:max-w-6xl`}
+      >
         {/* Image section: tighter padding and minimal white so images fill more space */}
         <div className={`w-full flex items-center justify-center p-0 sm:p-2`}>
-          <div className={`w-full sm:max-w-5xl flex items-center justify-center`}>
-            <div className={`w-full overflow-hidden rounded-md transition-transform duration-200 group-hover:scale-105 ${highlight.noCrop ? 'h-[220px] sm:h-[420px] lg:h-[560px]' : 'h-[200px] sm:h-[360px] lg:h-[440px]'}`} style={{boxShadow: '0 4px 10px rgba(0,0,0,0.18)'}}>
+          <div
+            className={`w-full sm:max-w-5xl flex items-center justify-center`}
+          >
+            <div
+              className={`w-full overflow-hidden rounded-md transition-transform duration-200 group-hover:scale-105 ${highlight.noCrop ? "h-[220px] sm:h-[420px] lg:h-[560px]" : "h-[200px] sm:h-[360px] lg:h-[440px]"}`}
+              style={{ boxShadow: "0 4px 10px rgba(0,0,0,0.18)" }}
+            >
               {highlight.link ? (
-                <a href={highlight.link} target="_blank" rel="noopener noreferrer" aria-label={highlight.title}>
+                <a
+                  href={highlight.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={highlight.title}
+                >
                   <img
                     src={highlight.image}
                     alt={highlight.title}
-                    className={`${highlight.noCrop ? 'object-contain object-center' : 'object-cover object-center'} w-full h-full`}
+                    className={`${highlight.noCrop ? "object-contain object-center" : "object-cover object-center"} w-full h-full`}
                     loading="eager"
-                    style={{ imageRendering: 'auto' }}
+                    style={{ imageRendering: "auto" }}
                   />
                 </a>
               ) : (
                 <img
                   src={highlight.image}
                   alt={highlight.title}
-                  className={`${highlight.noCrop ? 'object-contain object-center' : 'object-cover object-center'} w-full h-full`}
+                  className={`${highlight.noCrop ? "object-contain object-center" : "object-cover object-center"} w-full h-full`}
                   loading="eager"
-                  style={{ imageRendering: 'auto' }}
+                  style={{ imageRendering: "auto" }}
                 />
               )}
             </div>
@@ -113,7 +157,8 @@ const HighlightsPage: React.FC = () => {
             Highlights
           </h1>
           <p className="mt-3 text-sm sm:text-base md:text-lg text-primary-foreground/90 text-center max-w-3xl mx-auto px-4">
-            Discover the exciting features and exclusive prizes at Monie Fest 2026
+            Discover the exciting features and exclusive prizes at Monie Fest
+            2026
           </p>
         </div>
       </section>
@@ -123,7 +168,11 @@ const HighlightsPage: React.FC = () => {
           {/* Highlights Grid - single column so each picture is on its own row */}
           <div className="grid grid-cols-1 gap-1 sm:gap-2 mb-4">
             {highlights.map((highlight, index) => (
-              <HighlightCard key={highlight.number} highlight={highlight} index={index} />
+              <HighlightCard
+                key={highlight.number}
+                highlight={highlight}
+                index={index}
+              />
             ))}
           </div>
 
@@ -141,9 +190,12 @@ const HighlightsPage: React.FC = () => {
                     <Star className="w-8 h-8 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3">More Highlights Coming Soon</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3">
+                  More Highlights Coming Soon
+                </h3>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-md mx-auto">
-                  We're adding more exciting highlights and surprises. Stay tuned for updates!
+                  We're adding more exciting highlights and surprises. Stay
+                  tuned for updates!
                 </p>
               </div>
             </div>
