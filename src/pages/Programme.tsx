@@ -697,6 +697,7 @@ Through his work in advisory, education, and entrepreneurship, Kelvin is committ
   },
 
   {
+    title: "Coming Soon",
     time: "19:30 - 20:00",
     speakers: [{ name: "Jayden Pang", title: "", company: "" }],
   },
@@ -1091,7 +1092,9 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
 ];
 
 const engagementStageScheduleDay2: Session[] = [
-  { time: "10:30 - 11:00" },
+  { time: "10:30 - 11:00",
+    title: "Coming Soon",
+   },
   {
     time: "11:00 - 11:30",
     title: "Building Your Dividend Machine",
@@ -1126,7 +1129,9 @@ Over his career, Max had previously been involved in a software development comp
       },
     ],
   },
-  { time: "12:00 - 12:30" },
+  { time: "12:00 - 12:30",
+    title: "Coming Soon",
+  },
   {
     time: "12:30 - 13:00",
     title: "The Asset Most People Ignore… Until It’s Too Late",
@@ -1211,11 +1216,13 @@ Driven by a commitment to financial literacy and responsible investing, I contin
   },
   {
     time: "14:30 - 15:00",
-    title: "",
+    title: "Coming Soon",
     description: "",
     speakers: [],
   },
-  { time: "15:00 - 15:30" },
+  { time: "15:00 - 15:30",
+    title: "Coming Soon",
+   },
   {
     time: "15:30 - 16:00",
     title: "Coming Soon",
@@ -1249,7 +1256,9 @@ On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo St
       },
     ],
   },
-  { time: "16:30 - 17:00" },
+  { time: "16:30 - 17:00",
+    title: "Coming Soon",
+   },
   {
     time: "17:00 - 17:30",
     title: "Why Stock Investing is For You?",
