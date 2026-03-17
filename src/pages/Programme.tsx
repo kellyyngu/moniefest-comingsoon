@@ -590,9 +590,14 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     description: "",
     speakers: [
       {
-        name: "Dao Hong",
-        title: "",
+        name: "Tan Dao Hong",
+        title:
+          "General Manager, Bondsupermart - Connecting Bond Investors Globally",
         company: "FSMOne",
+        photo: "/optimized/daoHong.webp",
+        bio: `Mr. Tan Dao Hong first joined iFAST in 2018 as a Trainee Bond Dealer and was last managing and growing the iFAST Malaysia's Global Fixed Income business until the end of 2023. Since 2024, he joined the Bondsupermart's team on a mission to bring bond investors globally together to trade bonds easily in real-time via an electronic trading platform that connects brokers in the market.
+ 
+He obtained his post-graduate degree from the University of Nottingham Ningbo, China and is an associate member of the Persatuan Pasaran Kewangan Malaysia.`,
       },
       {
         name: "Frankie Lim",
