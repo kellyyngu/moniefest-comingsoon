@@ -32,6 +32,8 @@ const bbkNetworkLogo = "/optimized/BBKNetwork.svg";
 const iherngLogo = "/optimized/iherng.png";
 const insightInvestsLogo = "/optimized/insightInvests.svg";
 const financeLangLogo = "/optimized/financeLang.PNG";
+const insightsAnalyticsBerhadLogo = "/optimized/insightsAnalyticsBerhad.svg";
+const traddictivLogo = "/optimized/traddictiv.svg";
 const tealiveLogo = "/optimized/tealive.svg";
 const kenangaLogo = "/optimized/kenanga.png";
 const mrmoneyLogo = "/optimized/MrMoney.avif";
@@ -89,6 +91,7 @@ const logoUrls: Record<string, string> = {
   "/versa.svg": "https://versa.com.my/",
   [cgsiLogo]: "https://www.cgsi.com",
   [ctosLogo]: "https://www.ctoscredit.com.my",
+  [sinegyLogo]: "https://exchange.sinegy.com/",
   [publicMutualLogo]: "https://www.publicmutual.com.my",
   [dasherLogo]: "https://www.dasher.com.my/",
   [paramountPropertyLogo]:
@@ -149,6 +152,7 @@ const friendsOfMonie = [
   gyakuCapitalLogo,
   iherngLogo,
   insightInvestsLogo,
+  insightsAnalyticsBerhadLogo,
   jaLogo,
   mpgLogo,
   moneyBraderLogo,
@@ -158,6 +162,7 @@ const friendsOfMonie = [
   stayWokePropertyLogo,
   taylorsUniversityLogo,
   tianGeLogo,
+  traddictivLogo,
   uhnwLogo,
   wabikongLogo,
   wealthFortLogo,

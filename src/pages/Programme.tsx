@@ -8,7 +8,6 @@ const liewBio = `Liew Chin Tong is the Deputy Minister of Finance of Malaysia, a
 
 While serving as the Deputy Minister of Investment, Trade and Industry from December 2022 to December 2025, he worked closely with Minister Tengku Zafrul Aziz, with the New Industrial Master Plan (NIMP 2030) as the guiding document, to shape the strategic directions of Malaysia’s industrial development, especially for the semiconductor, iron and steel, and automotive sectors.
 
-He was a Senator in Dewan Negara from 2018 to 2021 and served as Deputy Minister of Defence from July 2018 to February 2020. He was first elected Member of Parliament for Bukit Bendera (2008-2013) and was subsequently the Member of Parliament for Kluang (2013-2018).
 
 Since 1999, Chin Tong has served the Democratic Action Party (DAP) in various capacities and is now a member of its Central Executive Committee, serving as the Strategic Director.
 
@@ -191,13 +190,13 @@ At Monie Fest, George represents a long-term vision: building a credible financi
   },
   {
     time: "12:00 - 12:45",
-    title: "Investment Talk",
+    title: "Coming Soon",
     description: "",
     speakers: [],
   },
   {
     time: "12:45 - 13:30",
-    title: "Investment Talk",
+    title: "Coming Soon",
     description: "",
     speakers: [
       {
@@ -211,17 +210,15 @@ At Monie Fest, George represents a long-term vision: building a credible financi
   },
   {
     time: "13:30 - 14:15",
-    title: "Investment Talk",
+    title: "The One Investment Everyone Should Have",
     description: "",
     speakers: [
       {
-        name: "FSMOne",
-        title: "",
-        company: "",
-        photo: "/optimized/FSM_One.png",
-        whiteBg: true,
-        logoOnly: true,
-        clickable: false,
+        name: "R.Bushan",
+        title: "Investment Counsellor",
+        company: "FSMOne",
+        photo: "/optimized/rBushan.webp",
+        bio: `R. Bushan is an iFAST Investment Counsellor, where he plays a key role in shaping market outlooks through global macro research and in-depth analysis of investment products. He is a frequent speaker for banks, financial advisers, and bankers - helping them craft effective investment strategies for their clients. R. Bushan holds a Capital Markets and Services Representative License from the Securities Commission Malaysia.`,
       },
     ],
   },
@@ -411,9 +408,9 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
   },
   {
     time: "19:00 - 19:45",
-    title: "Investment Talk 5",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor G", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
   {
     time: "19:45 - 20:00",
@@ -446,15 +443,15 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
 const engagementStageSchedule: Session[] = [
   {
     time: "11:30 - 12:00",
-    title: "Investment Talk 1",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor A", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
   {
     time: "12:00 - 12:30",
-    title: "Investment Talk 2",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor B", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
   {
     time: "12:30 - 13:00",
@@ -515,16 +512,16 @@ His expertise spans real estate portfolio building, equity markets, and modern e
 
   {
     time: "13:30 - 14:00",
-    title: "Investment Talk 3",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor D", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
 
   {
     time: "14:00 - 14:30",
-    title: "Investment Talk 4",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor E", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
 
   {
@@ -532,11 +529,6 @@ His expertise spans real estate portfolio building, equity markets, and modern e
     title: "Podcast 2: When Is It Actually Safe to Upgrade Your Lifestyle?",
     description: "",
     speakers: [
-      {
-        name: "Exhibitor F & Panelists",
-        title: "Exhibitor & Panelists",
-        company: "",
-      },
       {
         name: "Bob Ngoh",
         title: "Founder",
@@ -567,14 +559,29 @@ Through talks, workshops, and educational content, Bob aims to make finance acce
 
   {
     time: "15:00 - 15:30",
-    speakers: [{ name: "Jose Blasco", title: "", company: "" }],
+    title:
+      "Mechanical Trading: How to Trade Like an Institution in the AI Era.",
+    speakers: [
+      {
+        name: "Jose Blasco",
+        title: "Quantitative Strategist",
+        company: "Traddictiv",
+        photo: "/optimized/joseBlasco.jpeg",
+        bio: `Jose Blasco is a senior practitioner with expertise in financial trading, derivatives, digital assets, quantitative research, market structure, financial modeling, and risk. A former engineering professor, he brings an analytical mindset to every stage of market engagement—from strategy design to solution deployment.
+
+Jose approaches trading with scientific discipline: hypotheses are tested rigorously using statistical methods, backtesting frameworks, and machine learning models. This research-led process drives the development of systematic and algorithmic strategies across asset classes.
+As a patent inventor, he has also led the development and commercialization of proprietary trading tools, working closely with institutional partners. His hands-on experience building technology businesses and bringing products to market has shaped a pragmatic understanding of what drives adoption and sustained client value.
+
+He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently contributes to academia through invited finance lectures and specialized instruction. Jose’s cross-disciplinary background—spanning applied research, institutional collaboration, and product innovation—positions him uniquely at the intersection of quantitative rigor, market insight, and focused execution. His work reflects a rare blend of technical depth and strategic perspective, shaped by direct experience across both analytical and client-facing dimensions of finance.`,
+      },
+    ],
   },
 
   {
     time: "15:30 - 16:00",
-    title: "Investment Talk 5",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor G", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
 
   {
@@ -626,14 +633,14 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
   },
   {
     time: "17:00 - 17:30",
-    title: "Investment Talk",
+    title: "Coming Soon",
     description: "",
     speakers: [],
   },
 
   {
     time: "17:30 - 18:00",
-    title: "Investment Talk",
+    title: "Coming Soon",
     description: "",
     speakers: [],
   },
@@ -655,9 +662,9 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
 
   {
     time: "18:30 - 19:00",
-    title: "Investment Talk 6",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor K", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
 
   {
@@ -684,7 +691,8 @@ Through his work in advisory, education, and entrepreneurship, Kelvin is committ
     ],
   },
 
-  { time: "19:30 - 20:00",
+  {
+    time: "19:30 - 20:00",
     speakers: [{ name: "Jayden Pang", title: "", company: "" }],
   },
   { time: "20:00 - 20:10", title: "Day 1 End" },
@@ -714,7 +722,7 @@ const mainStageScheduleDay2: Session[] = [
 
   {
     time: "11:15 - 12:00",
-    title: "Investment Talk 6",
+    title: "Coming Soon",
     description: "",
     speakers: [
       {
@@ -817,17 +825,27 @@ With a background in multimedia design and video production, Chloe works with he
     bullets: [],
     speakers: [
       {
-        name: "Exhibitor N & Panelists",
-        title: "Exhibitor & Panelists",
-        company: "",
+        name: "Faiz Azmi",
+        title: "Director",
+        company: "Faiz Azmi Financial Faiz FF Studios Sdn. Bhd.",
+        photo: "/optimized/faizAzmi.png",
+        bio: `Faiz Azmi has accumulated 12 years of diverse experience in the banking industry, real estate, unit trusts, and insurance. Recognizing the lack of unbiased financial education available to Malaysians, Faiz decided to fill this gap by creating content that is both impartial and accessible to the general public. 
+  
+    After his initial video on ASB dividends went viral in 2021, he received an overwhelming response and numerous questions from viewers. This feedback motivated him to produce more educational videos that address the concealed aspects of financial transactions often overlooked by salespeople. 
+
+  Starting as a one-man show, Faiz handled everything from ideation to promotion. Today, he leads a dedicated team that helps expand his reach and impact. His primary goal remains to enhance financial literacy among Malaysians, helping them avoid common financial mistakes. 
+
+  Faiz's content now spans multiple platforms, including YouTube, Facebook, Instagram, TikTok, and Spotify. He has also launched podcast series such as FF Podcast and Boss Borak, all featured on the Financial Faiz channels. Through these efforts, Faiz aims to empower more Malaysians with the knowledge they need to make informed financial decisions. 
+
+  MEDIA COMPANY FOCUS: 
+  Faiz's media company is dedicated education, extending beyond financial literacy to cover life choices, career advice, business insights, and consumer rights. The company stays attuned to the public's concerns, addressing issues such as inflation, minimum wage, and housing prices by providing clear and comprehensible explanations. 
+
+  Recognizing that fear often stems from the unknown, Faiz strives to demystify complex topics for his audience. 
+
+  FUTURE VISION: 
+  With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
       },
     ],
-    moderator: {
-      name: "Financial Faiz",
-      title: "Moderator",
-      company: "",
-    },
-    description: "",
   },
 
   {
@@ -904,9 +922,25 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
     bullets: [],
     speakers: [
       {
-        name: "Ts. Frank Wee Khiam Hui",
-        title: "Chief Executive Officer",
+        name: "Ts. Frank Wee",
+        title: "Managing Director",
         company: "Insights Analytics Berhad",
+        photo: "/optimized/frankWee.jpg",
+        bio: `Ts. Frank Wee is the Managing Director of Insights Analytics Berhad (IAB), a Sarawak-based
+technology company at the forefront of critical infrastructure development in East Malaysia. With over
+two decades of experience spanning information systems, financial services, and water technology,
+Frank brings a rare cross-disciplinary perspective on how policy decisions translate into long-term
+infrastructure investment outcomes.
+
+His work focuses on applying digital twin technologies and analytical solutions across water utilities,
+transport, smart cities, and other strategic infrastructure verticals – sectors increasingly central to East
+Malaysia’s development agenda under national and state policy frameworks. Through IAB’s work with
+water agencies across Sarawak and Malaysia, and partnerships with global technology players, he
+has built deep insight into the infrastructure pipeline that underpins the region’s long-term growth
+story.
+
+Ts. Frank Wee is a Professional Technologist registered with the Malaysian Board of Technologists,
+and an active member of several international water and infrastructure industry associations.`,
       },
     ],
     moderator: {
@@ -921,9 +955,23 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
 
   {
     time: "17:15 - 18:00",
-    title: "Investment Talk 9",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor R", title: "Exhibitor", company: "" }],
+    speakers: [
+      {
+        name: "Lee Chee Seng",
+        title: "Chief Executive Officer (CEO)",
+        company: "SkyWorld Group",
+        photo: "/optimized/leeCheeSeng.jpg",
+        bio: `Responsible for overseeing and managing the day-to-day operations of SkyWorld, he first joined SkyWorld as Chief Product Officer, helping lead project designs, execution, and management. Later redesignated as Chief Operating Officer, he was given additional responsibilities and after promoted to Deputy Chief Executive Officer, responsible for implementing and ensuring efficiency of business strategies.
+
+On January 2022, he was finally named Chief Executive Officer, a position he currently holds.
+
+Born in 1972, he graduated with a Bachelor in Business Studies from Charles Sturt University with the HELP University External Programme in April 2004, and after started his career with Zalam Corporation Sdn Bhd for the next 23 years before departing as an Executive Director.
+
+He is know amongst his peers as an innovative leader with a shrewd mind within the industry due to his extensive exposure with mega project in the past. His strengths lie in improving the workforce by building teamwork, fostering a culture where employees could engage in decision making and encouraged cooperation in pursuing company goals.`,
+      },
+    ],
   },
 
   {
@@ -1134,10 +1182,9 @@ Driven by a commitment to financial literacy and responsible investing, I contin
   },
   {
     time: "14:00 - 14:15",
-    title: " Simplify Stock Selection with Bursa Quality 50",
+    title: "Simplify Stock Selection with Bursa Quality 50",
     description: "",
     speakers: [
-      { name: "Exhibitor L", title: "Exhibitor", company: "" },
       {
         name: "Ronnie Chai Teck Wei",
         title: "Dealer’s Representative",
@@ -1166,9 +1213,9 @@ Driven by a commitment to financial literacy and responsible investing, I contin
   { time: "15:00 - 15:30" },
   {
     time: "15:30 - 16:00",
-    title: "Investment Talk 8",
+    title: "Coming Soon",
     description: "",
-    speakers: [{ name: "Exhibitor M", title: "Exhibitor", company: "" }],
+    speakers: [],
   },
   {
     time: "16:00 - 16:30",

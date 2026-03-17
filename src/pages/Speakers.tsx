@@ -513,6 +513,69 @@ Bob holds an MBA (First Class Honours) from London, further strengthening his an
 Through talks, workshops, and educational content, Bob aims to make finance accessible, relatable, and actionable — especially for working adults who want to take control of their financial future with confidence.
 `,
   },
+  {
+    name: "Ts. Frank Wee",
+    title: "Managing Director",
+    company: "Insights Analytics Berhad",
+    photo: "/optimized/frankWee.jpg",
+    bio: `Ts. Frank Wee is the Managing Director of Insights Analytics Berhad (IAB), a Sarawak-based
+technology company at the forefront of critical infrastructure development in East Malaysia. With over
+two decades of experience spanning information systems, financial services, and water technology,
+Frank brings a rare cross-disciplinary perspective on how policy decisions translate into long-term
+infrastructure investment outcomes.
+
+His work focuses on applying digital twin technologies and analytical solutions across water utilities,
+transport, smart cities, and other strategic infrastructure verticals – sectors increasingly central to East
+Malaysia’s development agenda under national and state policy frameworks. Through IAB’s work with
+water agencies across Sarawak and Malaysia, and partnerships with global technology players, he
+has built deep insight into the infrastructure pipeline that underpins the region’s long-term growth
+story.
+
+Ts. Frank Wee is a Professional Technologist registered with the Malaysian Board of Technologists,
+and an active member of several international water and infrastructure industry associations.`,
+  },
+  {
+    name: "Jose Blasco",
+    title: "Quantitative Strategist",
+    company: "Traddictiv",
+    photo: "/optimized/joseBlasco.jpeg",
+    bio: `Jose Blasco is a senior practitioner with expertise in financial trading, derivatives, digital assets, quantitative research, market structure, financial modeling, and risk. A former engineering professor, he brings an analytical mindset to every stage of market engagement—from strategy design to solution deployment.
+
+Jose approaches trading with scientific discipline: hypotheses are tested rigorously using statistical methods, backtesting frameworks, and machine learning models. This research-led process drives the development of systematic and algorithmic strategies across asset classes.
+As a patent inventor, he has also led the development and commercialization of proprietary trading tools, working closely with institutional partners. His hands-on experience building technology businesses and bringing products to market has shaped a pragmatic understanding of what drives adoption and sustained client value.
+
+He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently contributes to academia through invited finance lectures and specialized instruction. Jose’s cross-disciplinary background—spanning applied research, institutional collaboration, and product innovation—positions him uniquely at the intersection of quantitative rigor, market insight, and focused execution. His work reflects a rare blend of technical depth and strategic perspective, shaped by direct experience across both analytical and client-facing dimensions of finance.`,
+  },
+  {
+    name: "R.Bushan",
+    title: "Investment Counsellor",
+    company: "FSMOne",
+    photo: "/optimized/rBushan.webp",
+    bio: `R. Bushan is an iFAST Investment Counsellor, where he plays a key role in shaping market outlooks through global macro research and in-depth analysis of investment products. He is a frequent speaker for banks, financial advisers, and bankers - helping them craft effective investment strategies for their clients. R. Bushan holds a Capital Markets and Services Representative License from the Securities Commission Malaysia.`,
+  },
+  {
+    name: "Tan Dao Hong",
+    title:
+      "General Manager, Bondsupermart - Connecting Bond Investors Globally",
+    company: "FSMOne",
+    photo: "/optimized/daoHong.webp",
+    bio: `Mr. Tan Dao Hong first joined iFAST in 2018 as a Trainee Bond Dealer and was last managing and growing the iFAST Malaysia's Global Fixed Income business until the end of 2023. Since 2024, he joined the Bondsupermart's team on a mission to bring bond investors globally together to trade bonds easily in real-time via an electronic trading platform that connects brokers in the market.
+ 
+He obtained his post-graduate degree from the University of Nottingham Ningbo, China and is an associate member of the Persatuan Pasaran Kewangan Malaysia.`,
+  },
+  {
+    name: "Lee Chee Seng",
+    title: "Chief Executive Officer (CEO)",
+    company: "SkyWorld Group",
+    photo: "/optimized/leeCheeSeng.jpg",
+    bio: `Responsible for overseeing and managing the day-to-day operations of SkyWorld, he first joined SkyWorld as Chief Product Officer, helping lead project designs, execution, and management. Later redesignated as Chief Operating Officer, he was given additional responsibilities and after promoted to Deputy Chief Executive Officer, responsible for implementing and ensuring efficiency of business strategies.
+
+On January 2022, he was finally named Chief Executive Officer, a position he currently holds.
+
+Born in 1972, he graduated with a Bachelor in Business Studies from Charles Sturt University with the HELP University External Programme in April 2004, and after started his career with Zalam Corporation Sdn Bhd for the next 23 years before departing as an Executive Director.
+
+He is know amongst his peers as an innovative leader with a shrewd mind within the industry due to his extensive exposure with mega project in the past. His strengths lie in improving the workforce by building teamwork, fostering a culture where employees could engage in decision making and encouraged cooperation in pursuing company goals.`,
+  },
 ];
 
 // Grouping for page layout
@@ -532,11 +595,14 @@ const desiredSpeakerOrder: string[] = [
   "Dr. Ong Kian Ming",
   "Datuk Clifford Hii",
   "Cheah Zi Kah, CFP®",
+  "R.Bushan",
+  "Tan Dao Hong",
   "Isabelle Zhen",
   "Peter Kong",
   "Aaron Tang",
   "Jeroni Khoo",
   "Tevaryan Thiagarajan",
+  "Lee Chee Seng",
   "Afiq Ismail",
   "Mohammad Bazli Che Rozenan",
   "Sean Freer",
@@ -549,7 +615,9 @@ const desiredSpeakerOrder: string[] = [
   "Faiz Azmi",
   "Fong Wei Ziet",
   "Frankie Lim",
+  "Ts. Frank Wee",
   "Jack Chan (天哥)",
+  "Jose Blasco",
   "Ka Hoe",
   "Kah Mun",
   "Kelvin Goh",

@@ -53,6 +53,14 @@ const highlights: Highlight[] = [
   },
   {
     number: 5,
+    title: "CGSi",
+    description: "CGSi partner banner",
+    image: "/optimized/CGSiBanner.jpg",
+    noCrop: true,
+    icon: Sparkles,
+  },
+  {
+    number: 6,
     title: "Phillip Promotions",
     description: "Check out Phillip Capital's latest promotion.",
     image: "/optimized/phillipCapitalPromotionArtwork.png",
@@ -61,7 +69,7 @@ const highlights: Highlight[] = [
     icon: Gift,
   },
   {
-    number: 6,
+    number: 7,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -70,7 +78,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 7,
+    number: 8,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
