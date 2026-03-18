@@ -28,7 +28,7 @@ const highlights: Highlight[] = [
     number: 2,
     title: "Bursa Malaysia",
     description: "Official Bursa Malaysia banner.",
-    image: "/optimized/bursaBanner.jpg",
+    image: "/optimized/bursaBanner.webp",
     link: "https://my.bursamalaysia.com/?register=true&utm_source=moniefestweb&utm_campaign=monie_fest&utm_id=monie_fest",
     noCrop: true,
     icon: Trophy,
