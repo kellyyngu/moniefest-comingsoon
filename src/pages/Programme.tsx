@@ -659,7 +659,7 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
         name: "Cheah Zi Kah, CFP®",
         title: "Chief Growth Officer",
         company: "Gambit Digital Trustees, Part of Gambit Group Consortium",
-        photo: "/optimized/cheah_Zi_Kah.jpg",
+        photo: "/optimized/cheah_Zi_Kah.png",
         bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
       },
     ],

@@ -148,7 +148,7 @@ With a proven track record in driving growth, strategic transformation, and orga
     name: "Cheah Zi Kah, CFP®",
     title: "Chief Growth Officer",
     company: "Gambit Digital Trustees, Part of Gambit Group Consortium",
-    photo: "/optimized/cheah_Zi_Kah.jpg",
+    photo: "/optimized/cheah_Zi_Kah.png",
     bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
   },
   {
@@ -667,7 +667,7 @@ const SpeakerCard = ({ s, singleCol }: { s: Speaker; singleCol?: boolean }) => {
           ? { objectPosition: "center 12%" }
           : s.name === "Chloe Foo"
             ? { objectPosition: "center 2%" }
-            : s.name === "Cheah Zi Kah" || s.name === "Tevaryan Thiagarajan"
+            : s.name === "Tevaryan Thiagarajan"
               ? { objectPosition: "center 25%" }
               : undefined;
 
@@ -913,7 +913,7 @@ const SpeakersPage = () => {
           }
         : name === "Shane Choo"
           ? { objectPosition: "center 12%" }
-          : name === "Cheah Zi Kah" || name === "Tevaryan Thiagarajan"
+          : name === "Tevaryan Thiagarajan"
             ? { objectPosition: "center 25%" }
             : undefined;
 
