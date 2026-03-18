@@ -44,9 +44,11 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
     const isInAppBrowser = /fbav|fban|instagram|twitter|line|wechat|whatsapp|pinterest|snapchat|viber/i.test(ua);
     const urlParams = new URLSearchParams(window.location.search);
     const forcedFallback = urlParams.get("forceEventbriteFallback") === "1" || urlParams.get("forceEventbriteFallback") === "true";
+    const forceEmbedOnMobile = urlParams.get("embedEventbriteOnMobile") === "1" || urlParams.get("embedEventbriteOnMobile") === "true";
 
-    // If mobile, in-app browser, or forced, prefer top-level navigation to avoid iframe/cookie issues.
-    const shouldOpenTopLevel = isMobile || isInAppBrowser || forcedFallback;
+    // In-app browsers are the most fragile for payment flows.
+    // Mobile devices can opt into embedded checkout via ?embedEventbriteOnMobile=1.
+    const shouldOpenTopLevel = isInAppBrowser || forcedFallback || (isMobile && !forceEmbedOnMobile);
     if (shouldOpenTopLevel) {
       const eventUrl = `https://www.eventbrite.com/e/${eventId}`;
       try {
@@ -54,6 +56,12 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
         if (!popup) {
           // popup blocked — show fallback UI inside modal
           setFallbackPopupBlocked(true);
+          // Do not attempt embedded checkout after popup-block on mobile/in-app.
+          // This commonly fails in strict/incognito contexts and confuses users.
+          if (!forceEmbedOnMobile) {
+            setWidgetFailed(true);
+            return;
+          }
         } else {
           try {
             // close the modal since we redirected the user
@@ -64,6 +72,10 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
       } catch (e) {
         // if popup blocked or other error, continue and attempt to load the widget as a fallback
         setFallbackPopupBlocked(true);
+        if (!forceEmbedOnMobile) {
+          setWidgetFailed(true);
+          return;
+        }
       }
     }
 
@@ -244,12 +256,28 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
               </div>
             )}
 
+            {fallbackPopupBlocked && !widgetReady && !widgetFailed && (
+              <div className="mb-4 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+                Popup was blocked by your browser. Tap below to continue checkout in Eventbrite.
+                <div className="mt-2">
+                  <a
+                    href={`https://www.eventbrite.com/e/${eventId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-primary text-white px-4 py-2 rounded-md"
+                  >
+                    Open Eventbrite Checkout
+                  </a>
+                </div>
+              </div>
+            )}
+
             <div id={containerId} style={{ minHeight: Math.min(height, window.innerHeight * 0.75), maxHeight: '75vh', overflow: 'auto' }} />
 
             {widgetFailed && (
               <div className="mt-4">
                 <div className="mb-3 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-                  <p className="text-sm text-gray-700 mb-0">Eventbrite widget failed to load. Open the event page to register.</p>
+                  <p className="text-sm text-gray-700 mb-0">Embedded checkout is unavailable in this browser/session. Open the Eventbrite page to register.</p>
                   <a href={`https://www.eventbrite.com/e/${eventId}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-white px-4 py-2 rounded-md">Open Event Page</a>
                 </div>
                 <div className="mt-3">
