@@ -32,10 +32,40 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
   const createdRef = useRef(false);
   const [widgetReady, setWidgetReady] = useState(false);
   const [widgetFailed, setWidgetFailed] = useState(false);
+  const [fallbackPopupBlocked, setFallbackPopupBlocked] = useState(false);
 
   useEffect(() => {
     if (!open) return;
     let cancelled = false;
+
+    // Environment detection helpers
+    const ua = (navigator.userAgent || "").toLowerCase();
+    const isMobile = /mobi|android|iphone|ipad|ipod|opera mini|iemobile|wpdesktop/i.test(ua) || (typeof navigator.maxTouchPoints === "number" && navigator.maxTouchPoints > 1);
+    const isInAppBrowser = /fbav|fban|instagram|twitter|line|wechat|whatsapp|pinterest|snapchat|viber/i.test(ua);
+    const urlParams = new URLSearchParams(window.location.search);
+    const forcedFallback = urlParams.get("forceEventbriteFallback") === "1" || urlParams.get("forceEventbriteFallback") === "true";
+
+    // If mobile, in-app browser, or forced, prefer top-level navigation to avoid iframe/cookie issues.
+    const shouldOpenTopLevel = isMobile || isInAppBrowser || forcedFallback;
+    if (shouldOpenTopLevel) {
+      const eventUrl = `https://www.eventbrite.com/e/${eventId}`;
+      try {
+        const popup = window.open(eventUrl, "_blank", "noopener");
+        if (!popup) {
+          // popup blocked — show fallback UI inside modal
+          setFallbackPopupBlocked(true);
+        } else {
+          try {
+            // close the modal since we redirected the user
+            onClose();
+          } catch (e) {}
+          return;
+        }
+      } catch (e) {
+        // if popup blocked or other error, continue and attempt to load the widget as a fallback
+        setFallbackPopupBlocked(true);
+      }
+    }
 
     (async () => {
       try {
