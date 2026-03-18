@@ -94,6 +94,17 @@ const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
 }) => {
   const Icon = highlight.icon;
   const isEven = index % 2 === 0;
+  // Preserve mobile and small sizes; for the first item (giveaway) increase size
+  let heightClass = highlight.noCrop
+    ? "h-[220px] sm:h-[420px] lg:h-[360px]"
+    : "h-[200px] sm:h-[360px] lg:h-[320px]";
+
+  // If this is the giveaway (index 0) make it larger so it stands out
+  if (index === 0) {
+    heightClass = highlight.noCrop
+      ? "h-[300px] sm:h-[520px] lg:h-[720px]"
+      : "h-[260px] sm:h-[480px] lg:h-[560px]";
+  }
 
   return (
     <div
@@ -103,16 +114,12 @@ const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
       }}
     >
       {/* Clean card: white panel, centered, subtle shadow and consistent padding */}
-      <div
-        className={`relative bg-transparent rounded-lg overflow-hidden mx-0 sm:mx-auto sm:max-w-6xl`}
-      >
+      <div className={`relative bg-transparent rounded-lg overflow-hidden w-full`}>
         {/* Image section: tighter padding and minimal white so images fill more space */}
         <div className={`w-full flex items-center justify-center p-0 sm:p-2`}>
-          <div
-            className={`w-full sm:max-w-5xl flex items-center justify-center`}
-          >
+          <div className={`w-full flex items-center justify-center`}>
             <div
-              className={`w-full overflow-hidden rounded-md transition-transform duration-200 group-hover:scale-105 ${highlight.noCrop ? "h-[220px] sm:h-[420px] lg:h-[560px]" : "h-[200px] sm:h-[360px] lg:h-[440px]"}`}
+              className={`w-full overflow-hidden rounded-md transition-transform duration-200 group-hover:scale-105 ${heightClass}`}
               style={{ boxShadow: "0 4px 10px rgba(0,0,0,0.18)" }}
             >
               {highlight.link ? (
@@ -150,7 +157,7 @@ const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
 const HighlightsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
-      <section className="relative min-h-[28vh] sm:min-h-[44vh] flex items-center justify-center">
+      <section className="relative min-h-[28vh] sm:min-h-[36vh] flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -160,7 +167,7 @@ const HighlightsPage: React.FC = () => {
           <div className="absolute inset-0 hero-gradient opacity-60" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 pt-12 sm:pt-24 pb-8 sm:pb-12">
+        <div className="relative z-10 container mx-auto px-4 pt-12 sm:pt-16 pb-8 sm:pb-8">
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white text-center tracking-tight max-w-3xl mx-auto leading-tight drop-shadow-xl">
             Highlights
           </h1>
@@ -171,17 +178,35 @@ const HighlightsPage: React.FC = () => {
         </div>
       </section>
 
-      <main className="pt-4 sm:pt-8 pb-4 sm:pb-12">
+      <main className="pt-4 sm:pt-6 pb-4 sm:pb-8">
         <div className="container mx-auto px-4 max-w-7xl">
-          {/* Highlights Grid - single column so each picture is on its own row */}
-          <div className="grid grid-cols-1 gap-1 sm:gap-2 mb-4">
-            {highlights.map((highlight, index) => (
-              <HighlightCard
-                key={highlight.number}
-                highlight={highlight}
-                index={index}
-              />
-            ))}
+          {/* Highlights Grid: first item full-width, subsequent items two-per-row */}
+          <div className="mb-4">
+            {highlights && highlights.length > 0 && (
+              <>
+                {/* First (giveaway) — full width */}
+                <div className="mb-0">
+                  <HighlightCard
+                    key={highlights[0].number}
+                    highlight={highlights[0]}
+                    index={0}
+                  />
+                </div>
+
+                {/* Remaining collaterals — two columns on sm+ */}
+                {highlights.length > 1 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-1">
+                    {highlights.slice(1).map((highlight, i) => (
+                      <HighlightCard
+                        key={highlight.number}
+                        highlight={highlight}
+                        index={i + 1}
+                      />
+                    ))}
+                  </div>
+                )}
+              </>
+            )}
           </div>
 
           {/* More to Come Section */}
