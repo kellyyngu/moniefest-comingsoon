@@ -21,6 +21,13 @@ const loadScript = () => {
     const s = document.createElement("script");
     s.src = "https://www.eventbrite.com/static/widgets/eb_widgets.js";
     s.async = true;
+    // Mark script as essential / ignored by Transcend so consent firewalls allow it
+    try {
+      s.setAttribute("data-track", "essential");
+      s.setAttribute("data-transcend-ignore", "true");
+    } catch (e) {
+      // ignore if attributes can't be set for any reason
+    }
     s.onload = () => resolve();
     s.onerror = () => reject();
     document.body.appendChild(s);
