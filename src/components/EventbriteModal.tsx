@@ -32,12 +32,38 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
   const createdRef = useRef(false);
   const [widgetReady, setWidgetReady] = useState(false);
   const [widgetFailed, setWidgetFailed] = useState(false);
-  const [showDirectIframe, setShowDirectIframe] = useState(true);
-  const eventUrl = `https://www.eventbrite.com/e/${eventId}`;
+  // Detect mobile-like environments (viewport + coarse pointer) for fallback behavior
+  const isMobileEnv = typeof window !== "undefined" && (
+    (window.matchMedia && window.matchMedia("(max-width: 768px)").matches) ||
+    (window.matchMedia && window.matchMedia("(pointer: coarse)").matches)
+  );
+
+  // Allow forcing embedded checkout on mobile for testing via ?embedEventbriteOnMobile=1
+  const urlParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
+  const forceEmbedOnMobile = urlParams.get("embedEventbriteOnMobile") === "1" || urlParams.get("embedEventbriteOnMobile") === "true";
 
   useEffect(() => {
     if (!open) return;
     let cancelled = false;
+
+    const eventUrl = `https://www.eventbrite.com/e/${eventId}`;
+
+    // If mobile-like environment and embedding is not explicitly forced, open Eventbrite page directly.
+    if (isMobileEnv && !forceEmbedOnMobile) {
+      try {
+        const popup = window.open(eventUrl, "_blank", "noopener");
+        if (popup) {
+          try { onClose(); } catch (e) {}
+          return;
+        }
+        // popup blocked — show fallback link inside modal
+        setWidgetFailed(true);
+        return;
+      } catch (e) {
+        setWidgetFailed(true);
+        return;
+      }
+    }
 
     (async () => {
       try {
@@ -82,12 +108,8 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
             observer = new MutationObserver(() => {
               const iframe = containerEl.querySelector("iframe");
               if (iframe) {
-                // EBWidgets injected its iframe; hide direct embed and mark ready
-                setShowDirectIframe(false);
                 setWidgetReady(true);
-                if (observer) {
-                  observer.disconnect();
-                }
+                if (observer) observer.disconnect();
                 if (checkTimeout) window.clearTimeout(checkTimeout);
               }
             });
@@ -95,11 +117,7 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
 
             checkTimeout = window.setTimeout(() => {
               const iframe = containerEl.querySelector("iframe");
-              if (iframe) {
-                setShowDirectIframe(false);
-                setWidgetReady(true);
-              }
-              
+              if (iframe) setWidgetReady(true);
               else setWidgetFailed(true);
               if (observer) observer.disconnect();
             }, 3000);
@@ -141,23 +159,16 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
                 observer2 = new MutationObserver(() => {
                   const iframe = containerEl2.querySelector("iframe");
                   if (iframe) {
-                        // EBWidgets injected its iframe; hide direct embed and mark ready
-                        setShowDirectIframe(false);
-                        setWidgetReady(true);
-                        if (observer2) {
-                          observer2.disconnect();
-                        }
-                        if (checkTimeout2) window.clearTimeout(checkTimeout2);
+                    setWidgetReady(true);
+                    if (observer2) observer2.disconnect();
+                    if (checkTimeout2) window.clearTimeout(checkTimeout2);
                   }
                 });
                 observer2.observe(containerEl2, { childList: true, subtree: true });
 
                 checkTimeout2 = window.setTimeout(() => {
                   const iframe = containerEl2.querySelector("iframe");
-                      if (iframe) {
-                        setShowDirectIframe(false);
-                        setWidgetReady(true);
-                      }
+                  if (iframe) setWidgetReady(true);
                   else setWidgetFailed(true);
                   if (observer2) observer2.disconnect();
                 }, 3000);
@@ -233,26 +244,11 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
 
             <div id={containerId} style={{ minHeight: Math.min(height, window.innerHeight * 0.75), maxHeight: '75vh', overflow: 'auto' }} />
 
-            {showDirectIframe && (
-              <div className="mt-3">
-                <iframe
-                  title="Eventbrite"
-                  src={eventUrl}
-                  style={{ width: "100%", height: Math.min(height, window.innerHeight * 0.7), border: 0 }}
-                  onLoad={() => setWidgetReady(true)}
-                  onError={() => setWidgetFailed(true)}
-                />
-              </div>
-            )}
-
             {widgetFailed && (
               <div className="mt-4">
                 <div className="mb-3 flex flex-col sm:flex-row items-start sm:items-center gap-3">
                   <p className="text-sm text-gray-700 mb-0">Eventbrite widget failed to load. Open the event page to register.</p>
                   <a href={`https://www.eventbrite.com/e/${eventId}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-white px-4 py-2 rounded-md">Open Event Page</a>
-                </div>
-                <div className="mt-3">
-                  <p className="text-sm text-gray-600">If the embed is blocked, the link above will open the hosted Eventbrite checkout.</p>
                 </div>
               </div>
             )}
