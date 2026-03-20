@@ -105,7 +105,7 @@ const logoUrls: Record<string, string> = {
   [moomooLogo]:
     "https://www.moomoo.com/my/promotion/welcome?global_content=%7B%22promote_id%22%3A14071,%22sub_promote_id%22%3A26%7D&campaignid=21056393726&adgroupid=&targetid=&matchtype=&network=x&device=m&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DLXX4ENPHyBQebyRUL--5iLD4btVGWf2teN0jdag9_GNRNTnouLYUYaAqAjEALw_wcB&creative=&keyword=&placement=&gad_source=1&gad_campaignid=21759930953&gbraid=0AAAAAC1CKHWokj22JfKkCq4QCcM-2vkcf",
   [societyMalaysiaLogo]: "https://www.cfasociety.org/malaysia/home",
-  [asnbLogo]: "https://asnb.com.my",
+  [asnbLogo]: "https://www.asnb.com.my/V2/asnbv2_0index.php",
   [bbbWealthLogo]: undefined,
   [colonyLogo]: undefined,
   [zusLogo]: undefined,
