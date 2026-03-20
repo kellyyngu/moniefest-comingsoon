@@ -654,6 +654,8 @@ const desiredSpeakerOrder: string[] = [
   "Aaron Tang",
   "Jeroni Khoo",
   "Tevaryan Thiagarajan",
+  "Ronnie Chai Teck Wei",
+  "Trent Cheok",
   "Lee Chee Seng",
   "Afiq Ismail",
   "Mohammad Bazli Che Rozenan",
@@ -690,8 +692,6 @@ const desiredSpeakerOrder: string[] = [
   "Venon Tian",
   "Wan Azfar Azeem (MrKripto)",
   "William K",
-  "Trent Cheok",
-  "Ronnie Chai Teck Wei",
 ];
 
 const mainSpeakersListOrdered = [...mainSpeakersList].sort((a, b) => {

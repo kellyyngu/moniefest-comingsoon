@@ -1799,54 +1799,55 @@ const Programme = () => {
 
       <main className="pt-8 pb-16">
         <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
-          {/* Day selector */}
-          <div className="flex justify-center gap-4 mb-4">
-            <button
-              onClick={() => setDay(1)}
-              aria-pressed={day === 1}
-              className={`px-4 py-2 rounded-full font-semibold transition-all ${
-                day === 1
-                  ? "cta-pill text-black"
-                  : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
-              }`}
-            >
-              Day 1
-            </button>
-            <button
-              onClick={() => setDay(2)}
-              aria-pressed={day === 2}
-              className={`px-4 py-2 rounded-full font-semibold transition-all ${
-                day === 2
-                  ? "cta-pill text-black"
-                  : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
-              }`}
-            >
-              Day 2
-            </button>
-          </div>
+          {/* Top pill group: Day + Stage in one centered row */}
+          <div className="flex justify-center mb-8">
+            <div className="bg-card rounded-full p-2 flex items-center gap-3 shadow-sm border border-white/6">
+              <button
+                onClick={() => setDay(1)}
+                aria-pressed={day === 1}
+                className={`px-3 py-1 rounded-full text-sm font-semibold transition-all ${
+                  day === 1
+                    ? "cta-pill text-black"
+                    : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                }`}
+              >
+                Day 1
+              </button>
 
-          {/* Stage Tabs */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-            <button
-              onClick={() => setActiveTab("main")}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                activeTab === "main"
-                  ? "cta-pill text-black"
-                  : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
-              }`}
-            >
-              Monie Stage
-            </button>
-            <button
-              onClick={() => setActiveTab("engagement")}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                activeTab === "engagement"
-                  ? "cta-pill text-black"
-                  : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
-              }`}
-            >
-              Creator Stage
-            </button>
+              <button
+                onClick={() => setDay(2)}
+                aria-pressed={day === 2}
+                className={`px-3 py-1 rounded-full text-sm font-semibold transition-all ${
+                  day === 2
+                    ? "cta-pill text-black"
+                    : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                }`}
+              >
+                Day 2
+              </button>
+
+              <button
+                onClick={() => setActiveTab("main")}
+                className={`px-4 py-1 rounded-full text-sm font-semibold transition-all ${
+                  activeTab === "main"
+                    ? "cta-pill text-black"
+                    : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                }`}
+              >
+                Monie Stage
+              </button>
+
+              <button
+                onClick={() => setActiveTab("engagement")}
+                className={`px-4 py-1 rounded-full text-sm font-semibold transition-all ${
+                  activeTab === "engagement"
+                    ? "cta-pill text-black"
+                    : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                }`}
+              >
+                Creator Stage
+              </button>
+            </div>
           </div>
 
           {/* Schedule Table */}
