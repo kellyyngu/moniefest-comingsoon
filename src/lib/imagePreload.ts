@@ -3,6 +3,7 @@ const CRITICAL_IMAGES = [
   '/optimized/speakerBanner.webp',
   '/optimized/banner_bg.webp',
   '/optimized/highlightsBanner.webp',
+  '/optimized/sinegyBanner.webp',
   '/optimized/pinnyang.webp',
   '/optimized/george.webp',
   '/optimized/moniepic.PNG'
@@ -20,6 +21,7 @@ const ALL_IMAGES = [
   '/optimized/gambitTrustees.webp',
   '/optimized/george.webp',
   '/optimized/highlightsBanner.webp',
+  '/optimized/sinegyBanner.webp',
   '/optimized/jeroni.jpg',
   '/optimized/luno.webp',
   '/optimized/microleap.webp',
@@ -42,6 +44,11 @@ const ALL_IMAGES = [
   '/optimized/seanFreer.jpg',
   '/optimized/seanFreer.svg',
   '/optimized/speakerBanner.webp',
+  '/optimized/vernonTian.jpg',
+  '/optimized/timothyTiah.jpg',
+  '/optimized/anson.jpg',
+  '/optimized/ronnie.png',
+  '/optimized/trent.png',
   '/optimized/spg_dji.png',
   '/optimized/Spire-Black.webp',
   '/optimized/webull.webp'

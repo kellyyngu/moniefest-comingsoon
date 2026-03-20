@@ -398,7 +398,7 @@ Driven by a commitment to financial literacy and responsible investing, I contin
   },
   {
     name: "Tevaryan Thiagarajan",
-    title: "Senior Manager, Digital Asset & Corporate Development",
+    title: "Director, Digital Custody Development",
     company: "Gambit Group",
     photo: "/optimized/tevaryanThiagarajan.jpg",
     bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
@@ -576,6 +576,58 @@ Born in 1972, he graduated with a Bachelor in Business Studies from Charles Stur
 
 He is know amongst his peers as an innovative leader with a shrewd mind within the industry due to his extensive exposure with mega project in the past. His strengths lie in improving the workforce by building teamwork, fostering a culture where employees could engage in decision making and encouraged cooperation in pursuing company goals.`,
   },
+  {
+    name: "Venon Tian",
+    title: "Group Chief Operating Officer",
+    company: "ZUS Coffee",
+    photo: "/optimized/vernonTian.jpg",
+    bio: `Venon joined the ZUS Coffee family in 2020 – a new-age, technology-driven company that focuses on quality yet affordable coffee.
+
+Prior to joining ZUS Coffee, Venon was a serial entrepreneur and had co-founded several other businesses, including eziPOD (IOT), Asia Digital Capital (investments/e-commerce), and a super franchisee for a leading retail chain.
+
+A law graduate from the UK who advocates for operational excellence, he leads the company in all strategic and operational matters, setting up the core structure and being responsible for the business transformation and expansion of the company.
+
+Venon has led ZUS Coffee to become the fastest-growing and largest coffee chain in Malaysia. He has won numerous awards, including the EY Emerging Entrepreneur of the Year in 2023.
+`,
+  },
+  {
+    name: "Timothy Tiah",
+    title: "Chief Executive Officer",
+    company: "Colony Coworking & Events",
+    photo: "/optimized/timothyTiah.jpg",
+    bio: `Timothy Tiah is a Malaysian entrepreneur and content creator, best known as the founder of Colony, a luxury coworking space operator, and Jerry, an automated workspace platform. Colony is also the co-owner of Dough by Meg, a fast-growing F&B brand.
+
+Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) and has built a strong personal brand, with over 175,000 followers on Instagram. Through his content, he shares data-driven insights on business, money, and society across Southeast Asia.
+`,
+  },
+  {
+    name: "Anson Tan",
+    title: "Head of Business Development",
+    company: "BBBwealth",
+    photo: "/optimized/anson.jpg",
+    bio: `Anson Tan is the Head of Business Development at BBBwealth, a financial education platform in Malaysia. He is a Financial Planner licensed by the Securities Commission Malaysia and Bank Negara Malaysia.
+
+With over 10 years of experience in the finance and investment sectors, Anson possesses deep expertise in macroeconomic analysis, portfolio construction, and investment product selection. He currently manages over RM40 million in assets, providing strategic wealth management solutions to his clients.
+`,
+  },
+  {
+    name: "Trent Cheok",
+    title: "Business Development",
+    company: "Securities & Leveraged Products",
+    photo: "/optimized/trent.png",
+    bio: `Trent Cheok is the Business Development Manager from Securities and Leveraged Products and has more than 7 years of marketing and dealing experience in the derivatives market. He is specialized in equities and commodities futures such as FKLI, FCPO, gold and crude oil.`,
+  },
+  {
+    name: "Ronnie Chai Teck Wei",
+    title: "Dealer’s Representative",
+    company: "CGS International Securities Malaysia Sdn Bhd",
+    photo: "/optimized/ronnie.png",
+    bio: `Ronnie Chai is a Dealer’s Representative with CGS International Securities Malaysia Sdn Bhd, actively involved in the financial services industry since 2020. He is deeply passionate about promoting financial literacy and raising public awareness to combat financial scams, believing that education is key to building long-term financial resilience.
+
+Beyond live engagements, Ronnie enjoys sharing knowledge through writing articles and actively educating the public via social media platforms, where he breaks down complex financial concepts into practical, easy-to-understand insights. He has also conducted and participated in numerous webinars and seminars, engaging investors at different stages of their financial journey.
+
+Driven by a strong commitment to investor education, Ronnie continues to advocate responsible investing, informed decision-making, and greater scam awareness in an increasingly digital financial landscape.`,
+  },
 ];
 
 // Grouping for page layout
@@ -608,6 +660,7 @@ const desiredSpeakerOrder: string[] = [
   "Sean Freer",
   "Vincent Wang",
   "Bryan Loo Woi Lip",
+  "Anson Tan",
   "Bob Ngoh",
   "Chin Yi Xuan",
   "Chloe Foo",
@@ -633,8 +686,12 @@ const desiredSpeakerOrder: string[] = [
   "Shane Choo",
   "Shan Li Tay",
   "Tan Kyzen, Max",
+  "Timothy Tiah",
+  "Venon Tian",
   "Wan Azfar Azeem (MrKripto)",
   "William K",
+  "Trent Cheok",
+  "Ronnie Chai Teck Wei",
 ];
 
 const mainSpeakersListOrdered = [...mainSpeakersList].sort((a, b) => {

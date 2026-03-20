@@ -390,8 +390,8 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
     speakers: [
       {
         name: "Tevaryan A/L Thiagarajan",
-        title: "Senior Manager, Digital Asset & Corporate Development",
-        company: "Gambit Custody",
+        title: "Director, Digital Custody Development",
+        company: "Gambit Group",
         photo: "/optimized/tevaryanThiagarajan.jpg",
         bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
       },
@@ -404,6 +404,13 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
     panelTitle: "When Passion Meets Planning: How to Turn Dreams into Reality",
     bullets: [],
     speakers: [],
+    host: {
+      name: "Lim Pinn Yang",
+      title: "Chief Executive Officer",
+      company: "Foodie Media Berhad",
+      photo: pinnyang,
+      bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
+    },
     description: "",
   },
   {
@@ -425,9 +432,9 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
       },
       {
         name: "Macbook Air 13-inch",
-        url: "https://shop.switch.com.my/products/13-inch-macbook-air-mw123zp-a",
+        url: "https://www.tmt.my/products/apple-macbook-air-13-inch-m2-chip",
         image: "/optimized/macbook.webp",
-        note: "worth RM4,699",
+        note: "worth RM3,999",
       },
       {
         name: "Philips NA110 Air Fryer",
@@ -766,6 +773,18 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
         photo: "/optimized/vincentWang.jpg",
         bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
       },
+      {
+    name: "Jose Blasco",
+    title: "Quantitative Strategist",
+    company: "Traddictiv",
+    photo: "/optimized/joseBlasco.jpeg",
+    bio: `Jose Blasco is a senior practitioner with expertise in financial trading, derivatives, digital assets, quantitative research, market structure, financial modeling, and risk. A former engineering professor, he brings an analytical mindset to every stage of market engagement—from strategy design to solution deployment.
+
+Jose approaches trading with scientific discipline: hypotheses are tested rigorously using statistical methods, backtesting frameworks, and machine learning models. This research-led process drives the development of systematic and algorithmic strategies across asset classes.
+As a patent inventor, he has also led the development and commercialization of proprietary trading tools, working closely with institutional partners. His hands-on experience building technology businesses and bringing products to market has shaped a pragmatic understanding of what drives adoption and sustained client value.
+
+He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently contributes to academia through invited finance lectures and specialized instruction. Jose’s cross-disciplinary background—spanning applied research, institutional collaboration, and product innovation—positions him uniquely at the intersection of quantitative rigor, market insight, and focused execution. His work reflects a rare blend of technical depth and strategic perspective, shaped by direct experience across both analytical and client-facing dimensions of finance.`,
+  },
     ],
     description: "",
   },
@@ -871,7 +890,31 @@ With a background in multimedia design and video production, Chloe works with he
 
     Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
       },
+      {
+    name: "Venon Tian",
+    title: "Group Chief Operating Officer",
+    company: "ZUS Coffee",
+    photo: "/optimized/vernonTian.jpg",
+    bio: `Venon joined the ZUS Coffee family in 2020 – a new-age, technology-driven company that focuses on quality yet affordable coffee.
+
+Prior to joining ZUS Coffee, Venon was a serial entrepreneur and had co-founded several other businesses, including eziPOD (IOT), Asia Digital Capital (investments/e-commerce), and a super franchisee for a leading retail chain.
+
+A law graduate from the UK who advocates for operational excellence, he leads the company in all strategic and operational matters, setting up the core structure and being responsible for the business transformation and expansion of the company.
+
+Venon has led ZUS Coffee to become the fastest-growing and largest coffee chain in Malaysia. He has won numerous awards, including the EY Emerging Entrepreneur of the Year in 2023.
+`,
+  },
     ],
+    host: {
+      name: "Timothy Tiah",
+      title: "Chief Executive Officer",
+      company: "Colony Coworking & Events",
+      photo: "/optimized/timothyTiah.jpg",
+      bio: `Timothy Tiah is a Malaysian entrepreneur and content creator, best known as the founder of Colony, a luxury coworking space operator, and Jerry, an automated workspace platform. Colony is also the co-owner of Dough by Meg, a fast-growing F&B brand.
+
+Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) and has built a strong personal brand, with over 175,000 followers on Instagram. Through his content, he shares data-driven insights on business, money, and society across Southeast Asia.
+`,
+    },
     description: "",
   },
 
@@ -977,6 +1020,38 @@ Born in 1972, he graduated with a Bachelor in Business Studies from Charles Stur
 
 He is know amongst his peers as an innovative leader with a shrewd mind within the industry due to his extensive exposure with mega project in the past. His strengths lie in improving the workforce by building teamwork, fostering a culture where employees could engage in decision making and encouraged cooperation in pursuing company goals.`,
       },
+      {
+        name: "George Poh, CFP®",
+        title: "Chief Executive Officer",
+        company: "Spire Digital Sdn. Bhd.",
+        photo: "/optimized/george.webp",
+        nowrapName: true,
+        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
+
+Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
+
+Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
+
+At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
+      },
+      {
+        name: "Chloe Foo",
+        title: "Creator",
+        company: "Finance Lang",
+        photo: "/optimized/chloe.avif",
+        bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
+
+Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
+
+With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
+      },
+      {
+        name: "Gin Chong",
+        title: "Founder",
+        company: "StayWokeProperty",
+        photo: "/optimized/ginChong.jpeg",
+        bio: `Gin Chong is the Founder of StayWokeProperty and a prominent property content creator in Malaysia. He has reviewed over 200 property developments nationwide, providing honest, educational and engaging insights into the real estate market. Through his entertaining yet informative approach, Gin empowers homebuyers and investors to make smarter property decisions.`,
+      },
     ],
   },
 
@@ -1049,11 +1124,6 @@ Recognised for his entrepreneurial achievements, Bryan has received numerous acc
 Bryan is passionate about inspiring young entrepreneurs and continues to champion innovation in the food and beverage industry.`,
       },
       {
-        name: "Dato Calvin",
-        title: "",
-        company: "",
-      },
-      {
         name: "Lim Pinn Yang",
         title: "Chief Executive Officer",
         company: "Foodie Media Berhad",
@@ -1092,9 +1162,7 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
 ];
 
 const engagementStageScheduleDay2: Session[] = [
-  { time: "10:30 - 11:00",
-    title: "Coming Soon",
-   },
+  { time: "10:30 - 11:00", title: "Coming Soon" },
   {
     time: "11:00 - 11:30",
     title: "Building Your Dividend Machine",
@@ -1121,6 +1189,16 @@ Over his career, Max had previously been involved in a software development comp
       "Podcast 1: High Value Future Skills for Malaysia's Youth: What Do the Market Really Value?",
     speakers: [
       {
+        name: "Timothy Tiah",
+        title: "Chief Executive Officer",
+        company: "Colony Coworking & Events",
+        photo: "/optimized/timothyTiah.jpg",
+        bio: `Timothy Tiah is a Malaysian entrepreneur and content creator, best known as the founder of Colony, a luxury coworking space operator, and Jerry, an automated workspace platform. Colony is also the co-owner of Dough by Meg, a fast-growing F&B brand.
+
+Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) and has built a strong personal brand, with over 175,000 followers on Instagram. Through his content, he shares data-driven insights on business, money, and society across Southeast Asia.
+`,
+      },
+      {
         name: "Prestine Davekhaw",
         title: "Founder",
         company: "MalaysianPAYGAP",
@@ -1129,9 +1207,7 @@ Over his career, Max had previously been involved in a software development comp
       },
     ],
   },
-  { time: "12:00 - 12:30",
-    title: "Coming Soon",
-  },
+  { time: "12:00 - 12:30", title: "Coming Soon" },
   {
     time: "12:30 - 13:00",
     title: "The Asset Most People Ignore… Until It’s Too Late",
@@ -1199,6 +1275,12 @@ Driven by a commitment to financial literacy and responsible investing, I contin
         name: "Ronnie Chai Teck Wei",
         title: "Dealer’s Representative",
         company: "CGS International",
+        photo: "/optimized/ronnie.png",
+        bio: `Ronnie Chai is a Dealer’s Representative with CGS International Securities Malaysia Sdn Bhd, actively involved in the financial services industry since 2020. He is deeply passionate about promoting financial literacy and raising public awareness to combat financial scams, believing that education is key to building long-term financial resilience.
+
+Beyond live engagements, Ronnie enjoys sharing knowledge through writing articles and actively educating the public via social media platforms, where he breaks down complex financial concepts into practical, easy-to-understand insights. He has also conducted and participated in numerous webinars and seminars, engaging investors at different stages of their financial journey.
+
+Driven by a strong commitment to investor education, Ronnie continues to advocate responsible investing, informed decision-making, and greater scam awareness in an increasingly digital financial landscape.`,
       },
     ],
   },
@@ -1209,8 +1291,10 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     speakers: [
       {
         name: "Trent Cheok",
-        title: "Business Development, Securities & Leveraged Products",
-        company: "",
+        title: "Business Development Manager, Securities & Leveraged Products",
+        company: "CGS International",
+        photo: "/optimized/trent.png",
+        bio: `Trent Cheok is the Business Development Manager from Securities and Leveraged Products and has more than 7 years of marketing and dealing experience in the derivatives market. He is specialized in equities and commodities futures such as FKLI, FCPO, gold and crude oil.`,
       },
     ],
   },
@@ -1220,9 +1304,7 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     description: "",
     speakers: [],
   },
-  { time: "15:00 - 15:30",
-    title: "Coming Soon",
-   },
+  { time: "15:00 - 15:30", title: "Coming Soon" },
   {
     time: "15:30 - 16:00",
     title: "Coming Soon",
@@ -1256,9 +1338,22 @@ On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo St
       },
     ],
   },
-  { time: "16:30 - 17:00",
+  {
+    time: "16:30 - 17:00",
     title: "Coming Soon",
-   },
+    speakers: [
+      {
+        name: "Anson Tan",
+        title: "Head of Business Development",
+        company: "BBBwealth",
+        photo: "/optimized/anson.jpg",
+        bio: `Anson Tan is the Head of Business Development at BBBwealth, a financial education platform in Malaysia. He is a Financial Planner licensed by the Securities Commission Malaysia and Bank Negara Malaysia.
+
+With over 10 years of experience in the finance and investment sectors, Anson possesses deep expertise in macroeconomic analysis, portfolio construction, and investment product selection. He currently manages over RM40 million in assets, providing strategic wealth management solutions to his clients.
+`,
+      },
+    ],
+  },
   {
     time: "17:00 - 17:30",
     title: "Why Stock Investing is For You?",
@@ -1885,6 +1980,60 @@ const Programme = () => {
               </div>
             </div>
           )}
+          {/* Inline compact controls above disclaimer (non-fixed) */}
+          <div className="flex justify-center mt-6 mb-4">
+            <div className="bg-card rounded-full p-2 flex gap-3 items-center shadow-sm border border-white/6">
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setDay(1)}
+                  aria-pressed={day === 1}
+                  className={`px-3 py-1 rounded-full text-sm font-semibold transition-all ${
+                    day === 1
+                      ? "cta-pill text-black"
+                      : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                  }`}
+                >
+                  Day 1
+                </button>
+                <button
+                  onClick={() => setDay(2)}
+                  aria-pressed={day === 2}
+                  className={`px-3 py-1 rounded-full text-sm font-semibold transition-all ${
+                    day === 2
+                      ? "cta-pill text-black"
+                      : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                  }`}
+                >
+                  Day 2
+                </button>
+              </div>
+
+              <div className="h-6 w-px bg-white/6 mx-2" />
+
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setActiveTab("main")}
+                  className={`px-4 py-1 rounded-full text-sm font-semibold transition-all ${
+                    activeTab === "main"
+                      ? "cta-pill text-black"
+                      : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                  }`}
+                >
+                  Monie Stage
+                </button>
+                <button
+                  onClick={() => setActiveTab("engagement")}
+                  className={`px-4 py-1 rounded-full text-sm font-semibold transition-all ${
+                    activeTab === "engagement"
+                      ? "cta-pill text-black"
+                      : "bg-transparent text-muted-foreground hover:text-primary border border-primary/10"
+                  }`}
+                >
+                  Creator Stage
+                </button>
+              </div>
+            </div>
+          </div>
 
           {/* Disclaimer */}
           <p className="text-center text-muted-foreground text-sm mt-8 italic">

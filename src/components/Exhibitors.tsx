@@ -49,6 +49,11 @@ const asriAhmadAcademyLogo = "/optimized/asriAhmadAcademy.svg";
 const uhnwLogo = "/optimized/UHNW.jpeg";
 const skyworldLogo = "/optimized/skyworld.png";
 const sinegyLogo = "/optimized/sinegy.svg";
+const zusLogo = "/optimized/zus.svg";
+const bbbWealthLogo = "/optimized/BBBwealth.svg";
+const colonyLogo = "/optimized/colony.svg";
+const pmbLogo = "/optimized/PMB.svg";
+const asnbLogo = "/optimized/ASNB.svg";
 const rytBankLogo = "/optimized/rytBank.svg";
 const hlbLogo = "/optimized/HLB.svg";
 const activ8Logo = "/optimized/ACTIV8.svg";
@@ -100,6 +105,10 @@ const logoUrls: Record<string, string> = {
   [moomooLogo]:
     "https://www.moomoo.com/my/promotion/welcome?global_content=%7B%22promote_id%22%3A14071,%22sub_promote_id%22%3A26%7D&campaignid=21056393726&adgroupid=&targetid=&matchtype=&network=x&device=m&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DLXX4ENPHyBQebyRUL--5iLD4btVGWf2teN0jdag9_GNRNTnouLYUYaAqAjEALw_wcB&creative=&keyword=&placement=&gad_source=1&gad_campaignid=21759930953&gbraid=0AAAAAC1CKHWokj22JfKkCq4QCcM-2vkcf",
   [societyMalaysiaLogo]: "https://www.cfasociety.org/malaysia/home",
+  [asnbLogo]: "https://asnb.com.my",
+  [bbbWealthLogo]: undefined,
+  [colonyLogo]: undefined,
+  [zusLogo]: undefined,
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
@@ -115,8 +124,9 @@ const platinumSponsors = [
   moomooLogo,
   webullLogo,
 ];
-const supportingPartners = [bursaLogo, societyMalaysiaLogo, fimmLogo];
+const supportingPartners = [asnbLogo, bursaLogo, societyMalaysiaLogo, fimmLogo];
 const silverSponsors = [
+  asnbLogo,
   bimbsecLogo,
   capbayLogo,
   ctosLogo,
@@ -124,8 +134,8 @@ const silverSponsors = [
   fundingSocietiesLogo,
   microleapLogo,
   paramountPropertyLogo,
+  pmbLogo,
   publicMutualLogo,
-
   saturnaLogo,
   sinegyLogo,
 ];
@@ -139,12 +149,14 @@ const goldSponsors = [
 const giftPartners = Array.from({ length: 4 }).map((_, i) =>
   placeholderImg(`Gift+${i + 1}`),
 );
-const giftSponsors = [printciousLogo, tealiveLogo];
+const giftSponsors = [printciousLogo, tealiveLogo, zusLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
 const friendsOfMonie = [
   activ8Logo,
   asriAhmadAcademyLogo,
+  bbbWealthLogo,
   bbkNetworkLogo,
+  colonyLogo,
   endeavorLogo,
   financeLangLogo,
   financialFaizLogo,

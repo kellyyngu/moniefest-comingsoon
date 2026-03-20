@@ -86,6 +86,14 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Trophy,
   },
+  {
+    number: 9,
+    title: "Sinegy",
+    description: "Sinegy partner banner",
+    image: "/optimized/sinegyBanner.webp",
+    noCrop: true,
+    icon: Sparkles,
+  },
 ];
 
 const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
