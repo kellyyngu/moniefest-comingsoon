@@ -612,15 +612,15 @@ With over 10 years of experience in the finance and investment sectors, Anson po
   },
   {
     name: "Trent Cheok",
-    title: "Business Development",
-    company: "Securities & Leveraged Products",
+    title: "Business Development, Securities & Leveraged Products",
+    company: "CGS International",
     photo: "/optimized/trent.png",
     bio: `Trent Cheok is the Business Development Manager from Securities and Leveraged Products and has more than 7 years of marketing and dealing experience in the derivatives market. He is specialized in equities and commodities futures such as FKLI, FCPO, gold and crude oil.`,
   },
   {
     name: "Ronnie Chai Teck Wei",
     title: "Dealer’s Representative",
-    company: "CGS International Securities Malaysia Sdn Bhd",
+    company: "CGS International",
     photo: "/optimized/ronnie.png",
     bio: `Ronnie Chai is a Dealer’s Representative with CGS International Securities Malaysia Sdn Bhd, actively involved in the financial services industry since 2020. He is deeply passionate about promoting financial literacy and raising public awareness to combat financial scams, believing that education is key to building long-term financial resilience.
 
