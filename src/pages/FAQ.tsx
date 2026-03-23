@@ -8,9 +8,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import EventbriteModal from "@/components/EventbriteModal";
 // Background served from public/optimized (WebP)
 const heroBg = '/optimized/banner_bg.webp';
-import EventbriteModal from "@/components/EventbriteModal";
 
 const faqs = [
   {
