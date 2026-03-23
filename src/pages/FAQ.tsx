@@ -1,6 +1,7 @@
 
 import Footer from "@/components/Footer";
 import { useRef, useState } from "react";
+import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
 import {
   Accordion,
   AccordionContent,
@@ -35,6 +36,10 @@ const faqs = [
         <p>Venue: MITEC – Malaysia International Trade & Exhibition Centre, Kuala Lumpur</p>
       </>
     ),
+  },
+  {
+    question: "How do I get to Monie Fest 2026?",
+    answer: null,
   },
   {
     question: "Who should attend Monie Fest 2026?",
@@ -102,6 +107,7 @@ const faqs = [
 
 const FAQPage = () => {
   const [ebOpen, setEbOpen] = useState(false);
+  const [imgOpen, setImgOpen] = useState(false);
   const popupRef = useRef<Window | null>(null);
 
   return (
@@ -165,6 +171,31 @@ const FAQPage = () => {
                             <li>Follow Monie Fest on social media</li>
                             <li>Subscribe to the Monie Fest newsletter</li>
                           </ul>
+                        </>
+                      ) : faq.question === "How do I get to Monie Fest 2026?" ? (
+                        <>
+                          <h4 className="font-semibold">1) Free Shuttle Bus (Titiwangsa)</h4>
+                          <p className="mt-2">Skip the parking hassle and hop on our complimentary shuttle from Titiwangsa MRT straight to MITEC. Just follow the Monie Fest signage at the station!</p>
+
+                          <div className="mt-3">
+                            <Dialog open={imgOpen} onOpenChange={setImgOpen}>
+                              <DialogTrigger asChild>
+                                <button className="w-full max-w-xl p-0 rounded-md shadow-md overflow-hidden">
+                                  <img src="/optimized/shuttleBus.jpg" alt="Monie Fest shuttle bus from Titiwangsa" className="w-full h-auto block" />
+                                </button>
+                              </DialogTrigger>
+
+                              <DialogContent className="max-w-4xl p-0 bg-transparent shadow-none">
+                                <img src="/optimized/shuttleBus.jpg" alt="Monie Fest shuttle bus (enlarged)" className="w-full h-auto rounded-md" />
+                              </DialogContent>
+                            </Dialog>
+                          </div>
+
+                          <h4 className="font-semibold mt-4">2) Grab</h4>
+                          <p className="mt-2">We’ll be announcing a promo code soon — stay tuned on our Instagram <a href="https://instagram.com/monie.my" target="_blank" rel="noreferrer" className="text-primary underline">@monie.my</a>!</p>
+
+                          <h4 className="font-semibold mt-4">3) Driving & Parking</h4>
+                          <p className="mt-2">You can also drive and park at nearby locations — check out the parking rates <a href="https://mitec.com.my/organise/facilites/#mitec-parking" target="_blank" rel="noreferrer" className="text-primary underline">here</a>.</p>
                         </>
                       ) : (
                         <>
