@@ -27,6 +27,8 @@ type Speaker = {
   chineseName?: string;
   logoOnly?: boolean;
   clickable?: boolean;
+  forceHeadshot?: boolean;
+  forceClickable?: boolean;
   bio?: string;
 };
 
@@ -200,11 +202,16 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     description: "",
     speakers: [
       {
-        name: "Moomoo Malaysia",
-        title: "",
-        company: "",
-        photo: "/optimized/moomoo.webp",
-        whiteBg: true,
+        name: "Isaac Lim",
+        title: "CMT, CFTe, Chief Market Strategist",
+        company: "Moomoo Singapore",
+        photo: "/optimized/isaacLim.jpeg",
+        whiteBg: false,
+        forceHeadshot: true,
+        forceClickable: true,
+        bio: `Isaac Lim, CMT, CFTe, is the Chief Market Strategist at Moomoo Singapore, where he leads the development of periodic market outlooks, trading strategies, and strategic investment themes from a global macro perspective. In addition to his role at Moomoo Singapore, he serves as Co-Chair of the Chartered Market Technician (CMT) Association, contributing to the advancement of technical analysis and professional development within the industry. Previously, Isaac was Head of Equities and Indices (APAC) at BBSP Asia Pte Ltd, where he provided market research and trading strategies to leading institutional investors and buy-side firms across the region. He has also consistently ranked in the top 20% of Alpha capture programs, demonstrating a strong track record in generating actionable market insights.
+
+A highly sought-after market commentator, Isaac is regularly featured in local media for his expert analysis on financial markets. He is also a frequent speaker at regional financial industry events in Malaysia and Singapore, where he shares his expertise on market trends and investment strategies.`,
       },
     ],
   },
@@ -528,7 +535,14 @@ His expertise spans real estate portfolio building, equity markets, and modern e
     time: "14:00 - 14:30",
     title: "Coming Soon",
     description: "",
-    speakers: [],
+    speakers: [
+      {
+        name: "Al Emri Izzat Shah Albakri",
+        title: "",
+        company: "Bursa Gold Dinar",
+        photo: "/optimized/alEmriIzzatShahAlbakri.jpg",
+      },
+    ],
   },
 
   {
@@ -536,6 +550,13 @@ His expertise spans real estate portfolio building, equity markets, and modern e
     title: "Podcast 2: When Is It Actually Safe to Upgrade Your Lifestyle?",
     description: "",
     speakers: [
+      {
+        name: "Jane Chuck",
+        title: "Founder & Entrepreneur",
+        company: "Chuck’s",
+        photo: "/optimized/janeChuck.jpg",
+        bio: `Jane Chuck ,33, started her journey in 2009 as a blogger. Since, she’s become a household name as a fashion, beauty and lifestyle influencer. In 2019, She begin her journey as an entrepreneur by founding Chuck’s, a skincare brand & Motherchuckers,a lifestyle/fashion brand. Through her years of experience, she’s created a brand that reflects her values of thoughtfulness, kindness and self love. It’s since become a space for her and her followers to connect and to build a creative community. Today, she oversees a growing portfolio of brands, including Motherchuckers, Wewantjam, Pretty Motherchuckers, and Hejau Cafe, further establishing her presence as a multifaceted entrepreneur.`,
+      },
       {
         name: "Bob Ngoh",
         title: "Founder",
@@ -756,6 +777,20 @@ const mainStageScheduleDay2: Session[] = [
     bullets: [],
     speakers: [
       {
+        name: "George Poh, CFP®",
+        title: "Chief Executive Officer",
+        company: "Spire Digital Sdn. Bhd.",
+        photo: "/optimized/george.webp",
+        nowrapName: true,
+        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
+
+Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
+
+Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
+
+At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
+      },
+      {
         name: "Sean Freer",
         title: "Director, Global Exchange Indices",
         company: "S&P Dow Jones Indices",
@@ -774,17 +809,17 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
         bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
       },
       {
-    name: "Jose Blasco",
-    title: "Quantitative Strategist",
-    company: "Traddictiv",
-    photo: "/optimized/joseBlasco.jpeg",
-    bio: `Jose Blasco is a senior practitioner with expertise in financial trading, derivatives, digital assets, quantitative research, market structure, financial modeling, and risk. A former engineering professor, he brings an analytical mindset to every stage of market engagement—from strategy design to solution deployment.
+        name: "Jose Blasco",
+        title: "Quantitative Strategist",
+        company: "Traddictiv",
+        photo: "/optimized/joseBlasco.jpeg",
+        bio: `Jose Blasco is a senior practitioner with expertise in financial trading, derivatives, digital assets, quantitative research, market structure, financial modeling, and risk. A former engineering professor, he brings an analytical mindset to every stage of market engagement—from strategy design to solution deployment.
 
 Jose approaches trading with scientific discipline: hypotheses are tested rigorously using statistical methods, backtesting frameworks, and machine learning models. This research-led process drives the development of systematic and algorithmic strategies across asset classes.
 As a patent inventor, he has also led the development and commercialization of proprietary trading tools, working closely with institutional partners. His hands-on experience building technology businesses and bringing products to market has shaped a pragmatic understanding of what drives adoption and sustained client value.
 
 He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently contributes to academia through invited finance lectures and specialized instruction. Jose’s cross-disciplinary background—spanning applied research, institutional collaboration, and product innovation—positions him uniquely at the intersection of quantitative rigor, market insight, and focused execution. His work reflects a rare blend of technical depth and strategic perspective, shaped by direct experience across both analytical and client-facing dimensions of finance.`,
-  },
+      },
     ],
     description: "",
   },
@@ -891,11 +926,11 @@ With a background in multimedia design and video production, Chloe works with he
     Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
       },
       {
-    name: "Venon Tian",
-    title: "Group Chief Operating Officer",
-    company: "ZUS Coffee",
-    photo: "/optimized/vernonTian.jpg",
-    bio: `Venon joined the ZUS Coffee family in 2020 – a new-age, technology-driven company that focuses on quality yet affordable coffee.
+        name: "Venon Tian",
+        title: "Group Chief Operating Officer",
+        company: "ZUS Coffee",
+        photo: "/optimized/vernonTian.jpg",
+        bio: `Venon joined the ZUS Coffee family in 2020 – a new-age, technology-driven company that focuses on quality yet affordable coffee.
 
 Prior to joining ZUS Coffee, Venon was a serial entrepreneur and had co-founded several other businesses, including eziPOD (IOT), Asia Digital Capital (investments/e-commerce), and a super franchisee for a leading retail chain.
 
@@ -903,7 +938,7 @@ A law graduate from the UK who advocates for operational excellence, he leads th
 
 Venon has led ZUS Coffee to become the fastest-growing and largest coffee chain in Malaysia. He has won numerous awards, including the EY Emerging Entrepreneur of the Year in 2023.
 `,
-  },
+      },
     ],
     host: {
       name: "Timothy Tiah",
@@ -944,12 +979,18 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
     description: "",
     speakers: [
       {
-        name: "Moomoo Malaysia",
-        title: "",
-        company: "",
-        photo: "/optimized/moomoo.webp",
-        whiteBg: true,
+        name: "Isaac Lim",
+        title: "CMT, CFTe, Chief Market Strategist",
+        company: "Moomoo Singapore",
+        photo: "/optimized/isaacLim.jpeg",
+        whiteBg: false,
+        forceHeadshot: true,
+        forceClickable: true,
+        bio: `Isaac Lim, CMT, CFTe, is the Chief Market Strategist at Moomoo Singapore, where he leads the development of periodic market outlooks, trading strategies, and strategic investment themes from a global macro perspective. In addition to his role at Moomoo Singapore, he serves as Co-Chair of the Chartered Market Technician (CMT) Association, contributing to the advancement of technical analysis and professional development within the industry. Previously, Isaac was Head of Equities and Indices (APAC) at BBSP Asia Pte Ltd, where he provided market research and trading strategies to leading institutional investors and buy-side firms across the region. He has also consistently ranked in the top 20% of Alpha capture programs, demonstrating a strong track record in generating actionable market insights.
+
+A highly sought-after market commentator, Isaac is regularly featured in local media for his expert analysis on financial markets. He is also a frequent speaker at regional financial industry events in Malaysia and Singapore, where he shares his expertise on market trends and investment strategies.`,
       },
+
       {
         name: "Fong Wei Ziet",
         title: "Director",
@@ -1427,9 +1468,10 @@ const SpeakerCard = ({
     !!(speaker.photo && speaker.photo.toLowerCase().includes("microleap")) ||
     nameLower.includes("microleap");
   const isLogoOnly =
-    nameLower.includes("moomoo") ||
-    companyLower.includes("moomoo") ||
-    !!speaker.logoOnly;
+    (nameLower.includes("moomoo") ||
+      companyLower.includes("moomoo") ||
+      !!speaker.logoOnly) &&
+    !speaker.forceHeadshot;
   const headshotStyle: React.CSSProperties | undefined =
     (speaker.name || "") === "Datuk Clifford Hii"
       ? {
@@ -1700,7 +1742,8 @@ const SessionRow = ({
                   nameLower.includes("moomoo") ||
                   companyLower.includes("moomoo");
                 const speakerClickable =
-                  speaker.clickable !== false && !isExhibitor;
+                  (speaker.clickable !== false && !isExhibitor) ||
+                  !!speaker.forceClickable;
                 return (
                   <SpeakerCard
                     key={i}

@@ -628,6 +628,27 @@ Beyond live engagements, Ronnie enjoys sharing knowledge through writing article
 
 Driven by a strong commitment to investor education, Ronnie continues to advocate responsible investing, informed decision-making, and greater scam awareness in an increasingly digital financial landscape.`,
   },
+  {
+    name: "Isaac Lim",
+    title: "CMT, CFTe, Chief Market Strategist",
+    company: "Moomoo Singapore",
+    photo: "/optimized/isaacLim.jpeg",
+    bio: `Isaac Lim, CMT, CFTe, is the Chief Market Strategist at Moomoo Singapore, where he leads the development of periodic market outlooks, trading strategies, and strategic investment themes from a global macro perspective. In addition to his role at Moomoo Singapore, he serves as Co-Chair of the Chartered Market Technician (CMT) Association, contributing to the advancement of technical analysis and professional development within the industry. Previously, Isaac was Head of Equities and Indices (APAC) at BBSP Asia Pte Ltd, where he provided market research and trading strategies to leading institutional investors and buy-side firms across the region. He has also consistently ranked in the top 20% of Alpha capture programs, demonstrating a strong track record in generating actionable market insights.
+
+A highly sought-after market commentator, Isaac is regularly featured in local media for his expert analysis on financial markets. He is also a frequent speaker at regional financial industry events in Malaysia and Singapore, where he shares his expertise on market trends and investment strategies.`,
+  },
+  {
+    name: "Al Emri Izzat Shah Albakri",
+    photo: "/optimized/alEmriIzzatShahAlbakri.jpg",
+    company: "Bursa Gold Dinar",
+  },
+  {
+    name: "Jane Chuck",
+    title: "Founder & Entrepreneur",
+    company: "Chuck’s",
+    photo: "/optimized/janeChuck.jpg",
+    bio: `Jane Chuck ,33, started her journey in 2009 as a blogger. Since, she’s become a household name as a fashion, beauty and lifestyle influencer. In 2019, She begin her journey as an entrepreneur by founding Chuck’s, a skincare brand & Motherchuckers,a lifestyle/fashion brand. Through her years of experience, she’s created a brand that reflects her values of thoughtfulness, kindness and self love. It’s since become a space for her and her followers to connect and to build a creative community. Today, she oversees a growing portfolio of brands, including Motherchuckers, Wewantjam, Pretty Motherchuckers, and Hejau Cafe, further establishing her presence as a multifaceted entrepreneur.`,
+  },
 ];
 
 // Grouping for page layout
@@ -645,6 +666,7 @@ const desiredSpeakerOrder: string[] = [
   "Jay Cheong",
   "Khairy Jamaluddin",
   "Dr. Ong Kian Ming",
+  "Al Emri Izzat Shah Albakri",
   "Datuk Clifford Hii",
   "Cheah Zi Kah, CFP®",
   "R.Bushan",
@@ -653,6 +675,7 @@ const desiredSpeakerOrder: string[] = [
   "Peter Kong",
   "Aaron Tang",
   "Jeroni Khoo",
+  "Isaac Lim",
   "Tevaryan Thiagarajan",
   "Ronnie Chai Teck Wei",
   "Trent Cheok",
@@ -672,6 +695,7 @@ const desiredSpeakerOrder: string[] = [
   "Frankie Lim",
   "Ts. Frank Wee",
   "Jack Chan (天哥)",
+  "Jane Chuck",
   "Jose Blasco",
   "Ka Hoe",
   "Kah Mun",

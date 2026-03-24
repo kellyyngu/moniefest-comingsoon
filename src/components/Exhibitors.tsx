@@ -63,6 +63,7 @@ const jaLogo = "/optimized/JA.svg";
 const moneyBraderLogo = "/optimized/moneyBrader.svg";
 const dasherLogo = "/optimized/dasher.png";
 const paramountPropertyLogo = "/optimized/paramountProperty.png";
+const chuckLogo = "/optimized/chuckLogo.PNG";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -109,6 +110,7 @@ const logoUrls: Record<string, string> = {
   [bbbWealthLogo]: undefined,
   [colonyLogo]: undefined,
   [zusLogo]: undefined,
+  [pmbLogo]: "https://www.pmbinvestment.com.my/",
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
@@ -156,6 +158,7 @@ const friendsOfMonie = [
   asriAhmadAcademyLogo,
   bbbWealthLogo,
   bbkNetworkLogo,
+  chuckLogo,
   colonyLogo,
   endeavorLogo,
   financeLangLogo,
