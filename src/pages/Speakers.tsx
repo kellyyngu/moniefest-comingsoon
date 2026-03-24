@@ -566,7 +566,7 @@ He obtained his post-graduate degree from the University of Nottingham Ningbo, C
   {
     name: "Lee Chee Seng",
     title: "Chief Executive Officer (CEO)",
-    company: "SkyWorld Group",
+    company: "SkyWorld Development Berhad",
     photo: "/optimized/leeCheeSeng.jpg",
     bio: `Responsible for overseeing and managing the day-to-day operations of SkyWorld, he first joined SkyWorld as Chief Product Officer, helping lead project designs, execution, and management. Later redesignated as Chief Operating Officer, he was given additional responsibilities and after promoted to Deputy Chief Executive Officer, responsible for implementing and ensuring efficiency of business strategies.
 
