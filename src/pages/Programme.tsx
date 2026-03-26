@@ -202,9 +202,9 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     description: "",
     speakers: [
       {
-        name: "Isaac Lim",
-        title: "CMT, CFTe, Chief Market Strategist",
-        company: "Moomoo Singapore",
+        name: "Isaac Lim, CMT, CFTe",
+        title: "Chief Market Strategist",
+        company: "Moomoo SEA",
         photo: "/optimized/isaacLim.jpeg",
         whiteBg: false,
         forceHeadshot: true,

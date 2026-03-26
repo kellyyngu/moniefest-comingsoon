@@ -629,9 +629,9 @@ Beyond live engagements, Ronnie enjoys sharing knowledge through writing article
 Driven by a strong commitment to investor education, Ronnie continues to advocate responsible investing, informed decision-making, and greater scam awareness in an increasingly digital financial landscape.`,
   },
   {
-    name: "Isaac Lim",
-    title: "CMT, CFTe, Chief Market Strategist",
-    company: "Moomoo Singapore",
+    name: "Isaac Lim, CMT, CFTe",
+    title: "Chief Market Strategist",
+    company: "Moomoo SEA",
     photo: "/optimized/isaacLim.jpeg",
     bio: `Isaac Lim, CMT, CFTe, is the Chief Market Strategist at Moomoo Singapore, where he leads the development of periodic market outlooks, trading strategies, and strategic investment themes from a global macro perspective. In addition to his role at Moomoo Singapore, he serves as Co-Chair of the Chartered Market Technician (CMT) Association, contributing to the advancement of technical analysis and professional development within the industry. Previously, Isaac was Head of Equities and Indices (APAC) at BBSP Asia Pte Ltd, where he provided market research and trading strategies to leading institutional investors and buy-side firms across the region. He has also consistently ranked in the top 20% of Alpha capture programs, demonstrating a strong track record in generating actionable market insights.
 
