@@ -133,7 +133,6 @@ const platinumSponsors = [
 ];
 const supportingPartners = [bursaLogo,fimmLogo, fpamLogo, societyMalaysiaLogo];
 const silverSponsors = [
-  asnbLogo,
   bimbsecLogo,
   capbayLogo,
   ctosLogo,
@@ -147,6 +146,7 @@ const silverSponsors = [
   sinegyLogo,
 ];
 const goldSponsors = [
+  asnbLogo,
   cgsiLogo,
   dasherLogo,
   phillipLogo,
