@@ -63,7 +63,7 @@ const moneyBraderLogo = "/optimized/moneyBrader.svg";
 const dasherLogo = "/optimized/dasher.png";
 const paramountPropertyLogo = "/optimized/paramountProperty.png";
 const chuckLogo = "/optimized/chuckLogo.PNG";
-const talentCorpLogo = "/optimized/talentCorp.jpg";
+const talentCorpLogo = "/optimized/talentCorp.png";
 const ekonomiRakyatLogo = "/optimized/ekonomiRakyat.svg";
 const beyondInsightsLogo = "/optimized/beyondInsights.svg";
 const fpamLogo = "/optimized/FPAM.png";
@@ -131,7 +131,7 @@ const platinumSponsors = [
   maybankLogo,
   moomooLogo,
 ];
-const supportingPartners = [asnbLogo, bursaLogo,fimmLogo, fpamLogo, societyMalaysiaLogo];
+const supportingPartners = [bursaLogo,fimmLogo, fpamLogo, societyMalaysiaLogo];
 const silverSponsors = [
   asnbLogo,
   bimbsecLogo,

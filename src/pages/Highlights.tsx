@@ -44,6 +44,15 @@ const highlights: Highlight[] = [
   },
   {
     number: 4,
+    title: "Moomoo",
+    description: "Moomoo welcome promotion banner",
+    image: "/optimized/moomooBanner.jpeg",
+    link: "https://www.moomoo.com/my/promotion/welcome",
+    noCrop: true,
+    icon: Trophy,
+  },
+  {
+    number: 5,
     title: "CGSi",
     description: "CGSi partner banner",
     image: "/optimized/CGSiBanner.jpg",
@@ -51,7 +60,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 5,
+    number: 6,
     title: "Phillip Promotions",
     description: "Check out Phillip Capital's latest promotion.",
     image: "/optimized/phillipCapitalPromotionArtwork.png",
@@ -60,7 +69,7 @@ const highlights: Highlight[] = [
     icon: Gift,
   },
   {
-    number: 6,
+    number: 7,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -69,7 +78,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 7,
+    number: 8,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -78,22 +87,14 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 8,
+    number: 9,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",
     noCrop: true,
     icon: Sparkles,
   },
-  {
-    number: 9,
-    title: "Moomoo",
-    description: "Moomoo welcome promotion banner",
-    image: "/optimized/moomooBanner.jpeg",
-    link: "https://www.moomoo.com/my/promotion/welcome",
-    noCrop: true,
-    icon: Trophy,
-  },
+  
 ];
 
 const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
