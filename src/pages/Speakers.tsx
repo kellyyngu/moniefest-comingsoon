@@ -140,14 +140,22 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
     title: "Group CEO",
     company: "Gambit Group",
     photo: "/optimized/datuk_clifford_hii.jpg",
-    bio: `Datuk Clifford Hii is a former lawyer turned corporate leader with extensive experience at the helm of both public-listed and private organisations. He has held CEO and Managing Director roles in prominent institutions, including HCK Capital Berhad and SEGi, among others.
+    bio: `Datuk Clifford Hii is the Group Chief Executive Officer of Gambit Group, a financial infrastructure and wealth solutions ecosystem focused on trustee services, private credit, investment, and digital platforms.
 
-With a proven track record in driving growth, strategic transformation, and organisational turnaround, Datuk Clifford brings deep expertise across the education, property, and financial sectors. His leadership is marked by strong governance, commercial acumen, and a forward-looking approach to building sustainable and scalable businesses.`,
+With over 15 years of experience across finance, technology, and strategic business development, he has been instrumental in building and scaling businesses that bridge traditional financial systems with emerging digital capabilities.
+
+Under his leadership, Gambit Group has evolved into one of Malaysia’s few platforms integrating trustee services and digital asset custody, enabling clients to manage, protect, and transfer both conventional and digital assets within structured, institutional-grade frameworks.
+
+Datuk Clifford’s work extends beyond digital assets. He is focused on democratising access to wealth structuring and inheritance planning, making solutions traditionally reserved for high-net-worth individuals more accessible to the mass affluent market.
+
+He is a strong advocate for building sustainable financial ecosystems, where technology enhances transparency, governance, and long-term value creation — rather than short-term speculation.
+
+His vision for Gambit Group is to develop a future-ready financial platform that supports individuals and businesses across generations, combining disciplined financial principles with forward-looking innovation.`,
   },
   {
     name: "Cheah Zi Kah, CFP®",
     title: "Chief Growth Officer",
-    company: "Gambit Digital Trustees, Part of Gambit Group Consortium",
+    company: "Digital Trustees Berhad (Part of Gambit Group Consortium)",
     photo: "/optimized/cheah_Zi_Kah.png",
     bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
   },
@@ -399,7 +407,7 @@ Driven by a commitment to financial literacy and responsible investing, I contin
   {
     name: "Tevaryan Thiagarajan",
     title: "Director, Digital Custody Development",
-    company: "Gambit Group",
+    company: "Gambit Custody Sdn Bhd (Part of Gambit Group Consortium)",
     photo: "/optimized/tevaryanThiagarajan.jpg",
     bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
   },
@@ -649,14 +657,116 @@ A highly sought-after market commentator, Isaac is regularly featured in local m
     photo: "/optimized/janeChuck.jpg",
     bio: `Jane Chuck ,33, started her journey in 2009 as a blogger. Since, she’s become a household name as a fashion, beauty and lifestyle influencer. In 2019, She begin her journey as an entrepreneur by founding Chuck’s, a skincare brand & Motherchuckers,a lifestyle/fashion brand. Through her years of experience, she’s created a brand that reflects her values of thoughtfulness, kindness and self love. It’s since become a space for her and her followers to connect and to build a creative community. Today, she oversees a growing portfolio of brands, including Motherchuckers, Wewantjam, Pretty Motherchuckers, and Hejau Cafe, further establishing her presence as a multifaceted entrepreneur.`,
   },
+  {
+    name: "Ng Tzyy Loon",
+    title: "CFA, Portfolio Manager",
+    company: "Tradeview Capital",
+    photo: "/optimized/ngTzyyLoon.jpg",
+    bio: `Tzyy Loon currently is a portfolio manager at Tradeview Capital, a licensed boutique asset management firm. He has more than 10 years of experience in finance industry from investment management, equity research, credit risk management, and retail banking.
+`,
+  },
+  {
+    name: "Edward Ling",
+    title: "Group Chief Executive Officer",
+    company: "Talent Corporation Malaysia Berhad (TalentCorp)",
+    photo: "/optimized/edwardLing.jpg",
+    bio: `Edward Ling is the Group CEO of TalentCorp, the national agency under the Ministry of Human Resources (KESUMA), driving Malaysia's national talent strategy. He brings over 25 years of leadership experience across global technology platforms, multinational brands, high-growth scale-ups, and large Malaysian conglomerates, with expertise in digital transformation, strategic growth, and public-private partnerships. 
+
+Throughout his career, Edward has held key leadership roles, including heading Talent Solutions for LinkedIn Malaysia, where he partnered with organizations on workforce and talent strategies; serving as the first employee and Country Manager for Waze Malaysia (a Google company) in Asia Pacific, where he established the business and developed monetization strategies; and leading high-growth partnerships and digitization initiatives for Google across Malaysia and Indonesia. He has also served as Chief Growth Officer at Yinson Capital, overseeing group-wide growth, strategic partnerships, and ecosystem development across mobility, electrification, and technology ventures; Country General Manager for Doctor Anywhere Malaysia, a Series C1 health tech startup with over USD180 million raised, where he drove market expansion, P&L management, and the path to profitability; Chief Digital Officer at L'Or�al Malaysia, leading enterprise-wide digital transformation across multiple divisions and brands; and as founder of an AI-enabled traffic technology venture focused on real-time traffic optimization. Edward holds a Bachelor of Computing (Distinction) from Monash University, Melbourne.`,
+  },
+  {
+    name: "Wan Abd Rahman",
+    title: "Co-founder",
+    company: "Ekonomi Rakyat",
+    photo: "/optimized/wanAbdRahman.jpeg",
+    bio: `Wan is the Co-Founder of Ekonomi Rakyat and Director of Ocean Media Solutions Sdn Bhd. He has grown Ekonomi Rakyat from a passion project into a leading Malay-language media platform focused on economics, finance and business.
+
+Prior to this, he served as a Corporate Strategist at a state-owned GLC, gaining experience across the property, environment and energy sectors.
+
+Wan holds a degree in Philosophy, Politics and Economics (PPE) from the University of Otago, New Zealand.`,
+  },
+  {
+    name: "Mohd Izzat Fadhli Azman",
+    title: "Head, Robo Advisory",
+    company: "Amanah Saham Nasional Berhad (ASNB)",
+    photo: "/optimized/mohdIzzatFadhlibinAzman.jpg",
+    bio: `Mohd Izzat Fadhli started his career as a Management Trainee Executive at PNB in 2010. He later served as an analyst and portfolio manager in the International Fund Management Department at PNB. Between 2015 and 2018, he was seconded to Singapore Unit Trusts Limited, a Singapore-based subsidiary of PNB, to manage PNB's proprietary Shariah-compliant equity fund. In 2019, he joined Wahed Invest, a robo-advisory firm incorporated in the United States, as Country Director for Malaysia. In 2022, he returned to the PNB Group to lead the Robo Advisory Unit at ASNB. He holds a Bachelor's Degree in Mechanical Engineering from the University of Warwick, United Kingdom and is a CMSRL license holder for Modules 9 and 10.`,
+  },
+  {
+    name: "Kathlyn Toh",
+    title: "Founder",
+    company: "Beyond Insights",
+    photo: "/optimized/kathlyn.png",
+    bio: `Kathlyn Toh has more than 30 years of investing and trading experience in the US & global equity markets. She's also the Founder and Chief Trainer for Beyond Insights where she has trained and coached more than 8,000 investors and traders.
+
+She started her stock trading journey in the KLSE stock market in 1993 and the US Stock Market in 1997. Since then she has traded actively in US Stocks, Options, CFD, Currencies, and Commodity Futures. Kathlyn considered herself fortunate to have experienced the full cycle of the Bull Run, the market crash, the after-crash recovery, the sideway markets, and the high volatility markets which gave her great experience in adjusting her strategy depending on the market conditions.
+
+Passionate in trading psychology based on her journey of managing her psychology in trading, Kathlyn invests a lot of time researching and practicing how to break her own trading habits and instill positive ones. She also collects feedback from students about their mindset and helps them devise ways to overcome challenges using the skills she learned from Tony Robbins (on people transformation), Master NLP Practitioner, and Master NLP Coaching plus her 30+ years of dealing with different market conditions.
+
+Before starting Beyond Insights, she worked in the Semiconductor industry for 17 years (5 years in AMD and 12 years in Intel), with last role as Automation APAC manager, which gave her great experience in investing in the Semiconductor industry and technology sector.`,
+  },
+  {
+    name: "Jayden Pang",
+    title: "Research Analyst",
+    company: "Eco Asia Capital Sdn. Bhd.",
+    photo: "/optimized/jayden.jpg",
+    bio: `Jayden Pang is a seasoned Research Analyst with a Bachelor of Finance (Hons) and over 9 years of extensive experience in the Malaysian stock market. He previously served as a trainer at Golden Summit Academy. Currently, he holds a CMSRL under Eco Asia Capital Sdn Bhd, a licensed financial advisor approved by the Securities Commission Malaysia. Jayden has also been invited as a guest speaker on media platforms such as 8TV to share his market insights.`,
+  },
+  {
+    name: "Lim Eng Ping",
+    title: "Head of Wealth Management Malaysia",
+    company: "Maybank Group Wealth",
+    photo: "/optimized/limEngPing.jpeg",
+    bio: `Mr. Lim Eng Ping has been appointed as the Head of Wealth Management Malaysia, Group Wealth Management, Community Financial Services (CFS) Malaysia, effective 1 September 2024. Previously, he served as Head of Private Wealth Malaysia, GWM, CFS Malaysia.
+
+As Head of Wealth Management Malaysia, GWM, he is responsible for managing the 3 wealth segments in Malaysia (Private, Premier & Privilege) as well as Islamic Wealth Management. In his role, Eng Ping is tasked with delivering the GWP Supercharge Growth Aspirations through 4 strategic thrusts:
+
+- Enabling customer centric journey & relationship excellence
+
+- Unique value-based propositions enabled through Islamic Wealth & MyImpact
+
+- Seamless onshore & cross-border wealth propositions for target clients
+
+- Improving fundamentals in Retail Wealth
+
+Eng Ping joined Maybank in 2008 as Director of Investment Bankng at Maybank Investment Bank. He later assumed the role of Director, Client Coverage prior to his appointment as Managing Director, Co-head, Client Coverage, Local Corporate Group in July 2015. In November 2017, he was appointed as the Chief Executive Officer of MIB Securities Hong Kong (MIBHK), where he led the implementation of alternative business strategies and plans, focusing on leveraging the strengths of Maybank Investment Banking Group. He was then appointed as Head of Private Wealth Malaysia in September 2022.
+
+Since joining Wealth Management, CFS, Eng Ping has been instrumental in growing the private business, with assets under management increasing by 16%, from RM16.8 billion to RM19.6 billion in 2023. Additionally, total fee income grew by 68.6% from RM35.9 million in 2022 to RM68.6 million in 2023.`,
+  },
+  {
+    name: "Stephanie Tan Kar Mun",
+    title: "Director, Group Commercial & Market Coverage",
+    company: "Bursa Malaysia Berhad",
+    photo: "/optimized/stephanieTan.jpg",
+    bio: `Stephanie Tan Kar Mun is Director of Group Commercial and Market Coverage at Bursa Malaysia, where she leads the Exchange's commercial strategy and client engagement across institutional investors, retail participants, brokers, and corporates. With nearly 20 years of international experience spanning global investment banking in London with HSBC and Morgan Stanley, JP Morgan in Malaysia, and Southeast Asia's digital venture space with iflix, she brings deep expertise in capital markets, digital innovation, and stakeholder management.
+
+At Bursa, she has driven transformational initiatives that expanded investor participation, unlocked new revenue streams, and enhanced Bursa's positioning as a modern and inclusive exchange. A graduate of the London School of Economics, Stephanie is recognised as a thought leader advancing Malaysia's capital market development.`,
+  },
+  {
+    name: "Lai Le Ann",
+    title: "Content Creator",
+    company: "",
+    photo: "/optimized/leAnn.jpg",
+    bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
+
+Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
+Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
+  },
 ];
 
 // Grouping for page layout
-const guestOfHonour =
-  (speakers.find((s) => s.name.includes("Liew Chin Tong")) as Speaker) || null;
-// organisersList removed — include all speakers in main list (except guestOfHonour)
+const guestOfHonourNames = [
+  "Yang Berhormat Liew Chin Tong",
+  "Stephanie Tan Kar Mun",
+];
+const guestOfHonours: Speaker[] = guestOfHonourNames
+  .map((name) => speakers.find((s) => s.name === name))
+  .filter((s): s is Speaker => Boolean(s));
+// organisersList removed — include all speakers in main list (except guestOfHonours)
 const organisersList: Speaker[] = [];
-const mainSpeakersList = speakers.filter((s) => s !== guestOfHonour);
+const mainSpeakersList = speakers.filter(
+  (s) => !guestOfHonours.some((g) => g.name === s.name),
+);
 
 // Desired display order for main speakers (keep organisers and guest unchanged)
 const desiredSpeakerOrder: string[] = [
@@ -675,13 +785,17 @@ const desiredSpeakerOrder: string[] = [
   "Peter Kong",
   "Aaron Tang",
   "Jeroni Khoo",
-  "Isaac Lim",
+  "Lim Eng Ping",
+  "Mohd Izzat Fadhli Azman",
+  "Isaac Lim, CMT, CFTe",
   "Tevaryan Thiagarajan",
   "Ronnie Chai Teck Wei",
   "Trent Cheok",
   "Lee Chee Seng",
   "Afiq Ismail",
+  "Kathlyn Toh",
   "Mohammad Bazli Che Rozenan",
+  "Ng Tzyy Loon",
   "Sean Freer",
   "Vincent Wang",
   "Bryan Loo Woi Lip",
@@ -689,17 +803,20 @@ const desiredSpeakerOrder: string[] = [
   "Bob Ngoh",
   "Chin Yi Xuan",
   "Chloe Foo",
+  "Edward Ling",
   "Gin Chong",
   "Faiz Azmi",
   "Fong Wei Ziet",
   "Frankie Lim",
   "Ts. Frank Wee",
   "Jack Chan (天哥)",
+  "Jayden Pang",
   "Jane Chuck",
   "Jose Blasco",
   "Ka Hoe",
   "Kah Mun",
   "Kelvin Goh",
+  "Lai Le Ann",
   "Liksen Lei",
   "Lucas",
   "Nigel Chong",
@@ -714,6 +831,7 @@ const desiredSpeakerOrder: string[] = [
   "Tan Kyzen, Max",
   "Timothy Tiah",
   "Venon Tian",
+  "Wan Abd Rahman",
   "Wan Azfar Azeem (MrKripto)",
   "William K",
 ];
@@ -1052,77 +1170,77 @@ const SpeakersPage = () => {
           </div>
 
           {/* ── Guest of Honour ── */}
-          {guestOfHonour && (
+          {guestOfHonours.length > 0 && (
             <section className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-center text-primary mb-6">
                 Guest of Honour
               </h2>
-              <div className="flex justify-center">
-                <div
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => openSpeakerModal(guestOfHonour)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ")
-                      openSpeakerModal(guestOfHonour);
-                  }}
-                  className="max-w-2xl w-full cursor-pointer focus:outline-none rounded-xl"
-                >
-                  <div className="group bg-card rounded-xl p-6 sm:p-8 shadow-md border border-white/6 flex flex-col items-center sm:flex-row sm:items-center gap-5 sm:gap-8">
-                    <div className="flex-shrink-0">
-                      <div
-                        className={`w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden ${guestOfHonour.whiteBg ? "bg-white" : "bg-muted"}`}
-                      >
-                        <img
-                          src={
-                            guestOfHonour.photo ||
-                            placeholderImage(guestOfHonour.name)
-                          }
-                          alt={guestOfHonour.name}
-                          loading="eager"
-                          fetchPriority="high"
-                          className="w-full h-full object-cover object-top"
-                        />
+              <div className="flex flex-col items-center gap-4">
+                {guestOfHonours.map((guest) => (
+                  <div
+                    key={guest.name}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => openSpeakerModal(guest)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ")
+                        openSpeakerModal(guest);
+                    }}
+                    className="max-w-2xl w-full cursor-pointer focus:outline-none rounded-xl"
+                  >
+                    <div className="group bg-card rounded-xl p-6 sm:p-8 shadow-md border border-white/6 flex flex-col items-center sm:flex-row sm:items-center gap-5 sm:gap-8">
+                      <div className="flex-shrink-0">
+                        <div
+                          className={`w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden ${guest.whiteBg ? "bg-white" : "bg-muted"}`}
+                        >
+                          <img
+                            src={guest.photo || placeholderImage(guest.name)}
+                            alt={guest.name}
+                            loading="eager"
+                            fetchPriority="high"
+                            className="w-full h-full object-cover object-top"
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className="text-center sm:text-left flex-1">
-                      <span className="inline-block text-[10px] uppercase tracking-widest text-primary/80 font-semibold mb-1.5">
-                        Guest of Honour
-                      </span>
-                      <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">
-                        {guestOfHonour.name}
-                      </h3>
-                      {guestOfHonour.title && (
-                        <p className="text-sm text-primary italic mt-1">
-                          {guestOfHonour.title}
-                        </p>
-                      )}
-                      {guestOfHonour.company && (
-                        <p className="text-sm text-white mt-1">
-                          {guestOfHonour.company}
-                        </p>
-                      )}
-                      <div className="mt-2 w-full flex items-center gap-1 text-[11px] text-primary/50 group-hover:text-primary transition-colors duration-150 justify-center sm:justify-start">
-                        <div className="flex items-center gap-1">
-                          <span>View profile</span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="10"
-                            height="10"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M7 17 17 7M7 7h10v10" />
-                          </svg>
+                      <div className="text-center sm:text-left flex-1">
+                        <span className="inline-block text-[10px] uppercase tracking-widest text-primary/80 font-semibold mb-1.5">
+                          Guest of Honour
+                        </span>
+                        <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">
+                          {guest.name}
+                        </h3>
+                        {guest.title && (
+                          <p className="text-sm text-primary italic mt-1">
+                            {guest.title}
+                          </p>
+                        )}
+                        {guest.company && (
+                          <p className="text-sm text-white mt-1">
+                            {guest.company}
+                          </p>
+                        )}
+                        <div className="mt-2 w-full flex items-center gap-1 text-[11px] text-primary/50 group-hover:text-primary transition-colors duration-150 justify-center sm:justify-start">
+                          <div className="flex items-center gap-1">
+                            <span>View profile</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M7 17 17 7M7 7h10v10" />
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
             </section>
           )}

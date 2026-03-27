@@ -8,7 +8,6 @@ const gambitTrusteesLogo = "/optimized/gambitTrustees.webp";
 const gambitCustodyLogo = "/optimized/gambitCustody.webp";
 const lunoLogo = "/optimized/luno.webp";
 const moomooLogo = "/optimized/moomoo.webp";
-const webullLogo = "/optimized/webull.webp";
 const microleapLogo = "/optimized/microleap.webp";
 const fimmLogo = "/optimized/FIMM.webp";
 const fsmOneLogo = "/optimized/FSM_One.png";
@@ -64,6 +63,11 @@ const moneyBraderLogo = "/optimized/moneyBrader.svg";
 const dasherLogo = "/optimized/dasher.png";
 const paramountPropertyLogo = "/optimized/paramountProperty.png";
 const chuckLogo = "/optimized/chuckLogo.PNG";
+const talentCorpLogo = "/optimized/talentCorp.jpg";
+const ekonomiRakyatLogo = "/optimized/ekonomiRakyat.svg";
+const beyondInsightsLogo = "/optimized/beyondInsights.svg";
+const fpamLogo = "/optimized/FPAM.png";
+const maybankLogo = "/optimized/maybank.svg";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -77,7 +81,6 @@ const logoUrls: Record<string, string> = {
   [fimmLogo]: "https://www.fimm.com.my/",
   [lunoLogo]: "https://www.luno.com",
   [fsmOneLogo]: "https://bit.ly/4kJDDNs",
-  [webullLogo]: "https://www.webull.com.my/",
   [gambitCustodyLogo]: "https://gambitcustody.com/",
   [gambitTrusteesLogo]: "https://digitaltrustees.com.my/",
   [bursaLogo]: "https://my.bursamalaysia.com/",
@@ -111,6 +114,8 @@ const logoUrls: Record<string, string> = {
   [colonyLogo]: undefined,
   [zusLogo]: undefined,
   [pmbLogo]: "https://www.pmbinvestment.com.my/",
+  [beyondInsightsLogo]: "https://www.beyondinsights.net/?utm_source=moniefest&utm_campaign=moniefest2026",
+  [fpamLogo]: "https://fpam.org.my/",
 };
 
 const coOrganizers = [foodieLogo, spireLogo];
@@ -123,10 +128,10 @@ const platinumSponsors = [
   hlbLogo,
   kenangaLogo,
   lunoLogo,
+  maybankLogo,
   moomooLogo,
-  webullLogo,
 ];
-const supportingPartners = [asnbLogo, bursaLogo, societyMalaysiaLogo, fimmLogo];
+const supportingPartners = [asnbLogo, bursaLogo,fimmLogo, fpamLogo, societyMalaysiaLogo];
 const silverSponsors = [
   asnbLogo,
   bimbsecLogo,
@@ -158,8 +163,10 @@ const friendsOfMonie = [
   asriAhmadAcademyLogo,
   bbbWealthLogo,
   bbkNetworkLogo,
+  beyondInsightsLogo,
   chuckLogo,
   colonyLogo,
+  ekonomiRakyatLogo,
   endeavorLogo,
   financeLangLogo,
   financialFaizLogo,
@@ -175,6 +182,7 @@ const friendsOfMonie = [
   ncspaceLogo,
   noMoneyLahLogo,
   stayWokePropertyLogo,
+  talentCorpLogo,
   taylorsUniversityLogo,
   tianGeLogo,
   traddictivLogo,
