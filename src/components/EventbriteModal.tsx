@@ -11,18 +11,35 @@ type Props = {
 
 const loadScript = () => {
   return new Promise<void>((resolve, reject) => {
-    if ((window as any).EBWidgets) return resolve();
+    if ((window as any).EBWidgets) {
+      console.info("EventbriteDebug: EBWidgets already present on page.");
+      return resolve();
+    }
     const existing = document.querySelector('script[src="https://www.eventbrite.com/static/widgets/eb_widgets.js"]');
     if (existing) {
-      existing.addEventListener("load", () => resolve());
-      existing.addEventListener("error", () => reject());
+      console.info("EventbriteDebug: Found existing eb_widgets.js script element, waiting for load.");
+      existing.addEventListener("load", () => {
+        console.info("EventbriteDebug: existing eb_widgets.js loaded.");
+        resolve();
+      });
+      existing.addEventListener("error", (e) => {
+        console.error("EventbriteDebug: existing eb_widgets.js failed to load.", e);
+        reject(e);
+      });
       return;
     }
+    console.info("EventbriteDebug: Inserting eb_widgets.js script element.");
     const s = document.createElement("script");
     s.src = "https://www.eventbrite.com/static/widgets/eb_widgets.js";
     s.async = true;
-    s.onload = () => resolve();
-    s.onerror = () => reject();
+    s.onload = () => {
+      console.info("EventbriteDebug: eb_widgets.js loaded.");
+      resolve();
+    };
+    s.onerror = (e) => {
+      console.error("EventbriteDebug: eb_widgets.js failed to load.", e);
+      reject(e);
+    };
     document.body.appendChild(s);
   });
 };
@@ -71,6 +88,7 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
         if (cancelled) return;
         // create widget
         try {
+          console.info("EventbriteDebug: Calling EBWidgets.createWidget (first attempt)");
           (window as any).EBWidgets.createWidget({
             widgetType: "checkout",
             eventId: eventId,
@@ -98,6 +116,7 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
             },
           });
           createdRef.current = true;
+          console.info("EventbriteDebug: createWidget returned (first attempt) - widget created flag set.");
 
           // wait for Eventbrite to inject the iframe into the container; otherwise the widget
           // may have been blocked (adblock/CSP). Use a MutationObserver with a timeout.
@@ -108,6 +127,8 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
             observer = new MutationObserver(() => {
               const iframe = containerEl.querySelector("iframe");
               if (iframe) {
+                const src = (iframe as HTMLIFrameElement)?.src || '(no src)';
+                console.info("EventbriteDebug: iframe injected into container.", { src });
                 setWidgetReady(true);
                 if (observer) observer.disconnect();
                 if (checkTimeout) window.clearTimeout(checkTimeout);
@@ -117,18 +138,27 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
 
             checkTimeout = window.setTimeout(() => {
               const iframe = containerEl.querySelector("iframe");
-              if (iframe) setWidgetReady(true);
-              else setWidgetFailed(true);
+              if (iframe) {
+                const src = (iframe as HTMLIFrameElement)?.src || '(no src)';
+                console.info("EventbriteDebug: iframe detected on timeout check.", { src });
+                setWidgetReady(true);
+              } else {
+                console.warn("EventbriteDebug: iframe NOT found on timeout check — marking widgetFailed.");
+                setWidgetFailed(true);
+              }
               if (observer) observer.disconnect();
             }, 3000);
           } else {
             // container not present — mark as failed after short delay
+            console.warn("EventbriteDebug: widget container not present in DOM — marking widgetFailed.");
             window.setTimeout(() => setWidgetFailed(true), 1000);
           }
         } catch (err) {
           // sometimes library exposes differently; attempt after small delay
+          console.error("EventbriteDebug: createWidget (first attempt) threw — will retry after delay.", err);
           setTimeout(() => {
             try {
+              console.info("EventbriteDebug: Calling EBWidgets.createWidget (second attempt)");
               (window as any).EBWidgets.createWidget({
                 widgetType: "checkout",
                 eventId: eventId,
@@ -151,6 +181,7 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
                 },
               });
               createdRef.current = true;
+              console.info("EventbriteDebug: createWidget returned (second attempt) - widget created flag set.");
 
               const containerEl2 = document.getElementById(containerId);
               let observer2: MutationObserver | null = null;
@@ -159,6 +190,8 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
                 observer2 = new MutationObserver(() => {
                   const iframe = containerEl2.querySelector("iframe");
                   if (iframe) {
+                    const src = (iframe as HTMLIFrameElement)?.src || '(no src)';
+                    console.info("EventbriteDebug: iframe injected into container (second observer).", { src });
                     setWidgetReady(true);
                     if (observer2) observer2.disconnect();
                     if (checkTimeout2) window.clearTimeout(checkTimeout2);
@@ -168,15 +201,22 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
 
                 checkTimeout2 = window.setTimeout(() => {
                   const iframe = containerEl2.querySelector("iframe");
-                  if (iframe) setWidgetReady(true);
-                  else setWidgetFailed(true);
+                  if (iframe) {
+                    const src = (iframe as HTMLIFrameElement)?.src || '(no src)';
+                    console.info("EventbriteDebug: iframe detected on timeout check (second observer).", { src });
+                    setWidgetReady(true);
+                  } else {
+                    console.warn("EventbriteDebug: iframe NOT found on timeout check (second observer) — marking widgetFailed.");
+                    setWidgetFailed(true);
+                  }
                   if (observer2) observer2.disconnect();
                 }, 3000);
               } else {
+                console.warn("EventbriteDebug: container not present for second attempt — marking widgetFailed.");
                 window.setTimeout(() => setWidgetFailed(true), 1000);
               }
             } catch (e) {
-              console.error("Failed to create Eventbrite widget", e);
+              console.error("EventbriteDebug: Failed to create Eventbrite widget on second attempt", e);
               setWidgetFailed(true);
             }
           }, 300);

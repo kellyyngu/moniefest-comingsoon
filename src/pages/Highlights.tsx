@@ -61,6 +61,14 @@ const highlights: Highlight[] = [
   },
   {
     number: 6,
+    title: "Dasher",
+    description: "Dasher banner",
+    image: "/optimized/dasherBanner.png",
+    noCrop: true,
+    icon: Sparkles,
+  },
+  {
+    number: 7,
     title: "Phillip Promotions",
     description: "Check out Phillip Capital's latest promotion.",
     image: "/optimized/phillipCapitalPromotionArtwork.png",
@@ -69,7 +77,15 @@ const highlights: Highlight[] = [
     icon: Gift,
   },
   {
-    number: 7,
+    number: 8,
+    title: "Funding Societies",
+    description: "Funding Societies banner",
+    image: "/optimized/fundingSocietiesBanner.jpg",
+    noCrop: true,
+    icon: Sparkles,
+  },
+  {
+    number: 9,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -78,7 +94,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 8,
+    number: 10,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -87,7 +103,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 9,
+    number: 11,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",

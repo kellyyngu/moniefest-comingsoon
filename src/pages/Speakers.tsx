@@ -647,8 +647,13 @@ A highly sought-after market commentator, Isaac is regularly featured in local m
   },
   {
     name: "Al Emri Izzat Shah Albakri",
+    title: "Vice President, Bursa Gold Dinar",
+    company: "Bursa Malaysia Berhad",
     photo: "/optimized/alEmriIzzatShahAlbakri.jpg",
-    company: "Bursa Gold Dinar",
+    bio: `Al Emri Izzat Shah Albakri is the Vice President of Business Development for the Islamic Capital Market at Bursa Malaysia, focusing on the Bursa Gold Dinar initiative. He brings 15 years of experience with retail investors in Malaysia’s capital market. He previously led Business Development in the Shariah Services Department of an international securities firm after having served as a Retail Research Analyst, where he was ranked 1st as the Best Analyst & Commentator in the Asiamoney Retail Brokers Poll for 2022 and 2023.
+
+Known for his clear, data‑driven insights and strong Shariah‑compliant product expertise, Al Emri offers a compelling perspective on the role and growth of Bursa Gold Dinar in the Islamic Capital Market. He holds a Bachelor of Accountancy and an Association of Qualification in Islamic Finance certificate from IBFIM.
+`,
   },
   {
     name: "Jane Chuck",
