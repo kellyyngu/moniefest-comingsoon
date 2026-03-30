@@ -131,7 +131,7 @@ const platinumSponsors = [
   maybankLogo,
   moomooLogo,
 ];
-const supportingPartners = [bursaLogo,fimmLogo, fpamLogo, societyMalaysiaLogo];
+const supportingPartners = [bursaLogo, societyMalaysiaLogo, fimmLogo, fpamLogo];
 const silverSponsors = [
   bimbsecLogo,
   capbayLogo,
@@ -590,16 +590,16 @@ const Exhibitors = () => {
           logoUrls={logoUrls}
         />
         <LogoGrid
-          title="Friends of Monie"
-          logos={friendsOfMonie}
+          title="Media Partner"
+          logos={mediaPartners}
           fullUrls
           hideCaption
           logoOnly
           logoUrls={logoUrls}
         />
         <LogoGrid
-          title="Media Partner"
-          logos={mediaPartners}
+          title="Friends of Monie"
+          logos={friendsOfMonie}
           fullUrls
           hideCaption
           logoOnly
