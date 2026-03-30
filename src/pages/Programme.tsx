@@ -38,6 +38,7 @@ type Session = {
   description?: string;
   speakers?: Speaker[];
   moderator?: Speaker;
+  moderators?: Speaker[];
   host?: Speaker;
   bullets?: string[];
   prizes?: {
@@ -287,6 +288,20 @@ A highly sought-after market commentator, Isaac is regularly featured in local m
     panelNumber: 2,
     panelTitle: "How Government Policies Quietly Shape Your Personal Finances",
     bullets: [],
+    moderator: {
+      name: "George Poh, CFP®",
+      title: "Chief Executive Officer",
+      company: "Spire Digital Sdn. Bhd.",
+      photo: "/optimized/george.webp",
+      nowrapName: true,
+      bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
+
+Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
+
+Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
+
+At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
+    },
     speakers: [
       {
         name: "Dr. Ong Kian Ming",
@@ -309,19 +324,6 @@ Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and l
         company: "KS Media",
         photo: "/optimized/khairyJamaluddin.avif",
         bio: `An alumnus of University of Oxford and University College London, Khairy Jamaluddin (KJ) served as Malaysia’s Minister of Health from 2021 to 2022. He previously held the positions of Minister of Science, Technology and Innovation (2020–2021) and Minister of Youth and Sports (2013–2018). Today, he co-hosts the Keluar Sekejap and is a radio presenter at Hot FM.`,
-      },
-      {
-        name: "George Poh, CFP®",
-        title: "Chief Executive Officer",
-        company: "Spire Digital Sdn. Bhd.",
-        photo: "/optimized/george.webp",
-        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
-
-Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
-
-Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
-
-At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
       },
     ],
   },
@@ -408,6 +410,13 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
     panelNumber: 3,
     panelTitle: "Can Crypto Coexist With a Boring, Stable Financial Plan?",
     bullets: [],
+    moderator: {
+      name: "Noelle Lee",
+      title: "Managing partner",
+      company: "ACTIV8",
+      photo: "/optimized/noelle.jpg",
+      bio: `Noelle is trained legally (LLB, CLP) and also an MBA holder. She has been part of the blockchain industry since 2016 and is a Managing Partner of ACTIV8 (formerly known Lydian Labs). She is a young entrepreneur that has established numerous partnerships across the globe.`,
+    },
     speakers: [
       {
         name: "Aaron Tang",
@@ -422,13 +431,6 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
     Prior to joining Luno, Aaron spent almost a decade in the Oil & Gas industry working with international companies like PETRONAS and Weatherford International. He also has experience in the Learning & Development and Social Enterprise space. In his free time, he runs a popular blog — which has been featured in publications such as Business Insider, The Edge, iMoney, SAYS and Malaysia’s #1 Business Radio, BFM.
 
     Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from Universiti Teknologi PETRONAS.`,
-      },
-      {
-        name: "Noelle Lee",
-        title: "Managing partner",
-        company: "ACTIV8",
-        photo: "/optimized/noelle.jpg",
-        bio: `Noelle is trained legally (LLB, CLP) and also an MBA holder. She has been part of the blockchain industry since 2016 and is a Managing Partner of ACTIV8 (formerly known Lydian Labs). She is a young entrepreneur that has established numerous partnerships across the globe.`,
       },
       {
         name: "Datuk Clifford Hii",
@@ -471,7 +473,7 @@ His vision for Gambit Group is to develop a future-ready financial platform that
     panelTitle: "When Passion Meets Planning: How to Turn Dreams into Reality",
     bullets: [],
     speakers: [],
-    host: {
+    moderator: {
       name: "Lim Pinn Yang",
       title: "Chief Executive Officer",
       company: "Foodie Media Berhad",
@@ -586,7 +588,7 @@ His expertise spans real estate portfolio building, equity markets, and modern e
 
   {
     time: "13:30 - 14:00",
-    title: "Coming Soon",
+    title: "Building Wealth Smarter with myASNB & Ria",
     description: "",
     speakers: [
       {
@@ -601,7 +603,7 @@ His expertise spans real estate portfolio building, equity markets, and modern e
 
   {
     time: "14:00 - 14:30",
-    title: "Coming Soon",
+    title: "New to Gold Investing? Start from as Low as RM10, the Shariah-Compliant Way",
     description: "",
     speakers: [
       {
@@ -839,13 +841,7 @@ const mainStageScheduleDay2: Session[] = [
     title: "Coming Soon",
     description: "",
     speakers: [
-      {
-        name: "Moomoo Malaysia",
-        title: "",
-        company: "",
-        photo: "/optimized/moomoo.webp",
-        whiteBg: true,
-      },
+    
     ],
   },
 
@@ -855,8 +851,7 @@ const mainStageScheduleDay2: Session[] = [
     panelNumber: 2,
     panelTitle: "Global Market Signals - Rates, Indices and Volatility",
     bullets: [],
-    speakers: [
-      {
+    moderator:       {
         name: "George Poh, CFP®",
         title: "Chief Executive Officer",
         company: "Spire Digital Sdn. Bhd.",
@@ -870,6 +865,7 @@ Driven by the belief that education is the foundation of better money choices, G
 
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
       },
+    speakers: [
       {
         name: "Sean Freer",
         title: "Director, Global Exchange Indices",
@@ -928,22 +924,7 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     time: "13:00 - 13:45",
     title: "从诈骗到正义：举报之后会发生什么？",
     description: "",
-    speakers: [
-      {
-        name: "George Poh, CFP®",
-        title: "Chief Executive Officer",
-        company: "Spire Digital Sdn. Bhd.",
-        photo: "/optimized/george.webp",
-        nowrapName: true,
-        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
-
-Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
-
-Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
-
-At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
-      },
-      {
+    moderator:  {
         name: "Chloe Foo",
         title: "Creator",
         company: "Finance Lang",
@@ -954,6 +935,8 @@ Her role goes beyond being a host—she acts as a bridge between the audience an
 
 With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
       },
+    speakers: [
+      
     ],
   },
 
@@ -963,6 +946,17 @@ With a background in multimedia design and video production, Chloe works with he
     panelNumber: 3,
     panelTitle: "Gaji Naik, Kenapa Duit Tetap Tak Cukup?",
     bullets: [],
+    moderator: {
+        name: "Wan Abd Rahman",
+        title: "Co-founder",
+        company: "Ekonomi Rakyat",
+        photo: "/optimized/wanAbdRahman.jpeg",
+        bio: `Wan is the Co-Founder of Ekonomi Rakyat and Director of Ocean Media Solutions Sdn Bhd. He has grown Ekonomi Rakyat from a passion project into a leading Malay-language media platform focused on economics, finance and business.
+
+Prior to this, he served as a Corporate Strategist at a state-owned GLC, gaining experience across the property, environment and energy sectors.
+
+Wan holds a degree in Philosophy, Politics and Economics (PPE) from the University of Otago, New Zealand.`,
+      },
     speakers: [
       {
         name: "Faiz Azmi",
@@ -985,17 +979,7 @@ With a background in multimedia design and video production, Chloe works with he
   FUTURE VISION: 
   With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
       },
-      {
-        name: "Wan Abd Rahman",
-        title: "Co-founder",
-        company: "Ekonomi Rakyat",
-        photo: "/optimized/wanAbdRahman.jpeg",
-        bio: `Wan is the Co-Founder of Ekonomi Rakyat and Director of Ocean Media Solutions Sdn Bhd. He has grown Ekonomi Rakyat from a passion project into a leading Malay-language media platform focused on economics, finance and business.
-
-Prior to this, he served as a Corporate Strategist at a state-owned GLC, gaining experience across the property, environment and energy sectors.
-
-Wan holds a degree in Philosophy, Politics and Economics (PPE) from the University of Otago, New Zealand.`,
-      },
+      
     ],
   },
 
@@ -1031,7 +1015,7 @@ Venon has led ZUS Coffee to become the fastest-growing and largest coffee chain 
 `,
       },
     ],
-    host: {
+    moderator: {
       name: "Timothy Tiah",
       title: "Chief Executive Officer",
       company: "Colony Coworking & Events",
@@ -1068,6 +1052,15 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
     time: "15:45 - 16:30",
     title: "US Fed policy & global rate cycles",
     description: "",
+    moderator:       {
+        name: "Fong Wei Ziet",
+        title: "Director",
+        company: "Ziet Media Sdn Bhd",
+        photo: "/optimized/ziet.JPG",
+        bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
+
+He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`,
+      },
     speakers: [
       {
         name: "Isaac Lim",
@@ -1080,16 +1073,6 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
         bio: `Isaac Lim, CMT, CFTe, is the Chief Market Strategist at Moomoo Singapore, where he leads the development of periodic market outlooks, trading strategies, and strategic investment themes from a global macro perspective. In addition to his role at Moomoo Singapore, he serves as Co-Chair of the Chartered Market Technician (CMT) Association, contributing to the advancement of technical analysis and professional development within the industry. Previously, Isaac was Head of Equities and Indices (APAC) at BBSP Asia Pte Ltd, where he provided market research and trading strategies to leading institutional investors and buy-side firms across the region. He has also consistently ranked in the top 20% of Alpha capture programs, demonstrating a strong track record in generating actionable market insights.
 
 A highly sought-after market commentator, Isaac is regularly featured in local media for his expert analysis on financial markets. He is also a frequent speaker at regional financial industry events in Malaysia and Singapore, where he shares his expertise on market trends and investment strategies.`,
-      },
-
-      {
-        name: "Fong Wei Ziet",
-        title: "Director",
-        company: "Ziet Media Sdn Bhd",
-        photo: "/optimized/ziet.JPG",
-        bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
-
-He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`,
       },
       {
         name: "Kathlyn Toh",
@@ -1149,22 +1132,9 @@ and an active member of several international water and infrastructure industry 
 
   {
     time: "17:15 - 18:00",
-    title: "Coming Soon",
+    title: "新手如何分析潜力股?",
     description: "",
-    speakers: [
-      {
-        name: "Lee Chee Seng",
-        title: "Chief Executive Officer (CEO)",
-        company: "SkyWorld Development Berhad",
-        photo: "/optimized/leeCheeSeng.jpg",
-        bio: `Responsible for overseeing and managing the day-to-day operations of SkyWorld, he first joined SkyWorld as Chief Product Officer, helping lead project designs, execution, and management. Later redesignated as Chief Operating Officer, he was given additional responsibilities and after promoted to Deputy Chief Executive Officer, responsible for implementing and ensuring efficiency of business strategies.
-
-On January 2022, he was finally named Chief Executive Officer, a position he currently holds.
-
-Born in 1972, he graduated with a Bachelor in Business Studies from Charles Sturt University with the HELP University External Programme in April 2004, and after started his career with Zalam Corporation Sdn Bhd for the next 23 years before departing as an Executive Director.
-
-He is know amongst his peers as an innovative leader with a shrewd mind within the industry due to his extensive exposure with mega project in the past. His strengths lie in improving the workforce by building teamwork, fostering a culture where employees could engage in decision making and encouraged cooperation in pursuing company goals.`,
-      },
+    moderators: [
       {
         name: "George Poh, CFP®",
         title: "Chief Executive Officer",
@@ -1189,6 +1159,22 @@ At Monie Fest, George represents a long-term vision: building a credible financi
 Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
 
 With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
+      },
+    ],
+     
+    speakers: [
+      {
+        name: "Lee Chee Seng",
+        title: "Chief Executive Officer (CEO)",
+        company: "SkyWorld Development Berhad",
+        photo: "/optimized/leeCheeSeng.jpg",
+        bio: `Responsible for overseeing and managing the day-to-day operations of SkyWorld, he first joined SkyWorld as Chief Product Officer, helping lead project designs, execution, and management. Later redesignated as Chief Operating Officer, he was given additional responsibilities and after promoted to Deputy Chief Executive Officer, responsible for implementing and ensuring efficiency of business strategies.
+
+On January 2022, he was finally named Chief Executive Officer, a position he currently holds.
+
+Born in 1972, he graduated with a Bachelor in Business Studies from Charles Sturt University with the HELP University External Programme in April 2004, and after started his career with Zalam Corporation Sdn Bhd for the next 23 years before departing as an Executive Director.
+
+He is know amongst his peers as an innovative leader with a shrewd mind within the industry due to his extensive exposure with mega project in the past. His strengths lie in improving the workforce by building teamwork, fostering a culture where employees could engage in decision making and encouraged cooperation in pursuing company goals.`,
       },
       {
         name: "Gin Chong",
@@ -1241,7 +1227,7 @@ Under Shan Li’s leadership, Endeavor Malaysia will expand its support for entr
     panelNumber: 6,
     panelTitle: "What Changes After You Make Your First Million?",
     bullets: [],
-    host: {
+    moderator: {
       name: "Peter Yong",
       title: "Founder",
       company: "Mr Money TV",
@@ -1361,7 +1347,7 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
       },
     ],
   },
-  { time: "12:00 - 12:30", title: "Coming Soon" },
+  { time: "12:00 - 12:30", title: "AI-Powered Value Investing for the Next Generation of Bursa Malaysia Investors" },
   {
     time: "12:30 - 13:00",
     title: "The Asset Most People Ignore… Until It’s Too Late",
@@ -1891,19 +1877,39 @@ const SessionRow = ({
             </div>
           )}
 
-          {(session.host || session.moderator) && (
+          {(session.host || session.moderator || (session.moderators && session.moderators.length > 0)) && (
             <div className="mt-4">
               <p className="font-semibold text-navy-deep mb-2">
                 {session.host
                   ? "Hosted by"
-                  : session.moderator?.name === "Fong Wei Ziet"
-                    ? "Hosted by"
-                    : "Moderated by"}
+                  : session.moderators && session.moderators.length > 1
+                    ? "Moderated by"
+                    : session.moderator?.name === "Fong Wei Ziet"
+                      ? "Hosted by"
+                      : "Moderated by"}
               </p>
-              <SpeakerCard
-                speaker={session.host ?? session.moderator}
-                onClick={(sp) => onSpeakerClick && onSpeakerClick(sp)}
-              />
+
+              {session.host ? (
+                <SpeakerCard
+                  speaker={session.host}
+                  onClick={(sp) => onSpeakerClick && onSpeakerClick(sp)}
+                />
+              ) : session.moderators && session.moderators.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                  {session.moderators.map((m, idx) => (
+                    <SpeakerCard
+                      key={idx}
+                      speaker={m}
+                      onClick={(sp) => onSpeakerClick && onSpeakerClick(sp)}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <SpeakerCard
+                  speaker={session.moderator as Speaker}
+                  onClick={(sp) => onSpeakerClick && onSpeakerClick(sp)}
+                />
+              )}
             </div>
           )}
         </div>
