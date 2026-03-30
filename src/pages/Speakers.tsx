@@ -757,6 +757,26 @@ At Bursa, she has driven transformational initiatives that expanded investor par
 Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
 Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
   },
+  {
+    name: "Chen Jian",
+    chineseName: "陈剑老师",
+    title: "Chief Coach",
+    company: "Grandpine Capital",
+    photo: "/optimized/chenJian.jpg",
+    bio: `Alfred Chen is the Chief Coach of GrandPine Capital where has coached more than 30,000 students. He is also an influential investment educator on social media with more than 150,000 followers on his Facebook page and YouTube channel, collectively.
+
+He also authored numerous investment books in Malaysia, drawing from his vast experience in Malaysia’s stock market and in-depth analyses of listed companies in Malaysia and China.
+Alfred Chen is frequently invited by tertiary education institutions, investment banks and stock broking firms to speak on stock market and stocks for students and clients.
+
+Since 2009, he has been the key speaker at the Investment Forum jointly organised by Sin Chew Daily, Nanyang Siang Pau, and Oriental Daily. He has made an appearance in many TV shows and was interviewed by numerous media organisations including Astro Awani, Bloomberg TV, CITYPlus FM, and Pocketimes.`,
+  },
+  {
+    name: "Ng Keng Sing",
+    title: "EVP, BR Capital, Securities Market",
+    company: "Bursa Malaysia Berhad",
+    photo: "/optimized/kengSing.png",
+    bio: `Keng Sing serves as the Head of Bursa Malaysia’s RAM Capital Sdn Bhd (BR Capital), a subsidiary of Bursa Malaysia. BR Capital is a Recognized Market Operator that facilitates debt fundraising by mid‑tier companies while providing investors with access to yield‑seeking opportunities. Prior to joining Bursa Malaysia, he held senior leadership roles in corporate and investment banking, bringing extensive experience across capital markets and the broader financial services industry.`,
+  },
 ];
 
 // Grouping for page layout
@@ -782,6 +802,7 @@ const desiredSpeakerOrder: string[] = [
   "Khairy Jamaluddin",
   "Dr. Ong Kian Ming",
   "Al Emri Izzat Shah Albakri",
+  "Ng Keng Sing",
   "Datuk Clifford Hii",
   "Cheah Zi Kah, CFP®",
   "Tevaryan Thiagarajan",
@@ -806,6 +827,7 @@ const desiredSpeakerOrder: string[] = [
   "Bryan Loo Woi Lip",
   "Anson Tan",
   "Bob Ngoh",
+  "Chen Jian",
   "Chin Yi Xuan",
   "Chloe Foo",
   "Edward Ling",

@@ -175,17 +175,18 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-      {
-        name: "Dyson Supersonic",
-        url: "https://www.dyson.my/supersonic-nural-ceramic-pink",
-        image: "/optimized/dyson.jpg",
-        note: "worth RM2,399",
-      },
+     
       {
         name: "Xiaomi 55' TV",
         url: "https://www.mi.com/my/product/xiaomi-tv-a-55-2026/",
         image: "/optimized/xiaomitv.webp",
         note: "worth RM1,999",
+      },
+       {
+        name: "Dior Rouge Lipstick (x2)",
+        url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
+        image: "/optimized/dior-lipstick.webp",
+        note: "worth RM410",
       },
       {
         name: "Samsung Galaxy Buds",
@@ -251,7 +252,7 @@ Before starting Beyond Insights, she worked in the Semiconductor industry for 17
   },
   {
     time: "12:45 - 13:30",
-    title: "Is Now the Time to Focus Back on Asia?",
+    title: "Moomoo's 4M Investing Framework",
     description: "",
     speakers: [
       {
@@ -366,10 +367,10 @@ Marketing and Economics, from Monash University.`,
     isSpecial: true,
     prizes: [
       {
-        name: "Louis Vuitton Pochette Eva",
-        url: "https://my.louisvuitton.com/eng-my/products/pochette-eva-monogram-nvprod6380091v/M13567",
-        image: "/optimized/louis-vuitton-pochette-eva.webp",
-        note: "worth RM6,750",
+        name: "Dyson Supersonic",
+        url: "https://www.dyson.my/supersonic-nural-ceramic-pink",
+        image: "/optimized/dyson.jpg",
+        note: "worth RM2,399",
       },
       {
         name: "iPad 11 (128GB, Blue)",
@@ -378,10 +379,10 @@ Marketing and Economics, from Monash University.`,
         note: "worth RM1599",
       },
       {
-        name: "Dior Rouge Lipstick (x2)",
-        url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
-        image: "/optimized/dior-lipstick.webp",
-        note: "worth RM410",
+        name: "Philips NA110 Air Fryer",
+        url: "https://www.philips.com.my/c-p/NA110_09/1000-series-airfryer-1000-series-32l",
+        image: "/optimized/airfryer.webp",
+        note: "worth RM259",
       },
     ],
   },
@@ -500,16 +501,16 @@ His vision for Gambit Group is to develop a future-ready financial platform that
         note: "worth RM4,998",
       },
       {
+        name: "Louis Vuitton Pochette Eva",
+        url: "https://my.louisvuitton.com/eng-my/products/pochette-eva-monogram-nvprod6380091v/M13567",
+        image: "/optimized/louis-vuitton-pochette-eva.webp",
+        note: "worth RM6,750",
+      },
+      {
         name: "Macbook Air 13-inch",
         url: "https://www.tmt.my/products/apple-macbook-air-13-inch-m2-chip",
         image: "/optimized/macbook.webp",
         note: "worth RM3,999",
-      },
-      {
-        name: "Philips NA110 Air Fryer",
-        url: "https://www.philips.com.my/c-p/NA110_09/1000-series-airfryer-1000-series-32l",
-        image: "/optimized/airfryer.webp",
-        note: "worth RM259",
       },
     ],
   },
@@ -603,7 +604,8 @@ His expertise spans real estate portfolio building, equity markets, and modern e
 
   {
     time: "14:00 - 14:30",
-    title: "New to Gold Investing? Start from as Low as RM10, the Shariah-Compliant Way",
+    title:
+      "New to Gold Investing? Start from as Low as RM10, the Shariah-Compliant Way",
     description: "",
     speakers: [
       {
@@ -621,7 +623,7 @@ Known for his clear, data‑driven insights and strong Shariah‑compliant produ
 
   {
     time: "14:30 - 15:00",
-    title: "Podcast 2: When Is It Actually Safe to Upgrade Your Lifestyle?",
+    title: "Podcast 2: 什么时候该花钱升级自己？",
     description: "",
     speakers: [
       {
@@ -691,6 +693,13 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     title: "Podcast 3: Starting Your Journey into Alternative Investments",
     description: "",
     speakers: [
+       {
+    name: "Ng Keng Sing",
+    title: "EVP, BR Capital, Securities Market",
+    company: "Bursa Malaysia Berhad",
+    photo: "/optimized/kengSing.png",
+    bio: `Keng Sing serves as the Head of Bursa Malaysia’s RAM Capital Sdn Bhd (BR Capital), a subsidiary of Bursa Malaysia. BR Capital is a Recognized Market Operator that facilitates debt fundraising by mid‑tier companies while providing investors with access to yield‑seeking opportunities. Prior to joining Bursa Malaysia, he held senior leadership roles in corporate and investment banking, bringing extensive experience across capital markets and the broader financial services industry.`,
+  },
       {
         name: "Tan Dao Hong",
         title:
@@ -799,7 +808,7 @@ Through his work in advisory, education, and entrepreneurship, Kelvin is committ
   },
 
   {
-    title: "Coming Soon",
+    title: "内忧外患双重夹击：2026伊美战争要如何应对股市？",
     time: "19:30 - 20:00",
     speakers: [
       {
@@ -840,9 +849,7 @@ const mainStageScheduleDay2: Session[] = [
     time: "11:15 - 12:00",
     title: "Coming Soon",
     description: "",
-    speakers: [
-    
-    ],
+    speakers: [],
   },
 
   {
@@ -851,20 +858,20 @@ const mainStageScheduleDay2: Session[] = [
     panelNumber: 2,
     panelTitle: "Global Market Signals - Rates, Indices and Volatility",
     bullets: [],
-    moderator:       {
-        name: "George Poh, CFP®",
-        title: "Chief Executive Officer",
-        company: "Spire Digital Sdn. Bhd.",
-        photo: "/optimized/george.webp",
-        nowrapName: true,
-        bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
+    moderator: {
+      name: "George Poh, CFP®",
+      title: "Chief Executive Officer",
+      company: "Spire Digital Sdn. Bhd.",
+      photo: "/optimized/george.webp",
+      nowrapName: true,
+      bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
 
 Before leading Spire Digital, George built hands-on experience in banking and wealth-related roles, including Hong Leong Bank Berhad, where he served more than 150 High Net Worth Individuals (HNWI) in wealth management and asset financing solutions. He later led performance outcomes in asset financing, achieving more than RM150 million in new loan acquisition during the 2020/21 financial year.
 
 Driven by the belief that education is the foundation of better money choices, George transitioned in 2H 2022 to focus on financial planning and education, combining industry experience with professional standards as a Licensed Financial Planner and CFP® professional. With his team, he has since educated 1,120+ young working adults on personal finance and investing through his proprietary learning approach.
 
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
-      },
+    },
     speakers: [
       {
         name: "Sean Freer",
@@ -924,20 +931,18 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     time: "13:00 - 13:45",
     title: "从诈骗到正义：举报之后会发生什么？",
     description: "",
-    moderator:  {
-        name: "Chloe Foo",
-        title: "Creator",
-        company: "Finance Lang",
-        photo: "/optimized/chloe.avif",
-        bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
+    moderator: {
+      name: "Chloe Foo",
+      title: "Creator",
+      company: "Finance Lang",
+      photo: "/optimized/chloe.avif",
+      bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
 
 Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
 
 With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
-      },
-    speakers: [
-      
-    ],
+    },
+    speakers: [],
   },
 
   {
@@ -947,16 +952,16 @@ With a background in multimedia design and video production, Chloe works with he
     panelTitle: "Gaji Naik, Kenapa Duit Tetap Tak Cukup?",
     bullets: [],
     moderator: {
-        name: "Wan Abd Rahman",
-        title: "Co-founder",
-        company: "Ekonomi Rakyat",
-        photo: "/optimized/wanAbdRahman.jpeg",
-        bio: `Wan is the Co-Founder of Ekonomi Rakyat and Director of Ocean Media Solutions Sdn Bhd. He has grown Ekonomi Rakyat from a passion project into a leading Malay-language media platform focused on economics, finance and business.
+      name: "Wan Abd Rahman",
+      title: "Co-founder",
+      company: "Ekonomi Rakyat",
+      photo: "/optimized/wanAbdRahman.jpeg",
+      bio: `Wan is the Co-Founder of Ekonomi Rakyat and Director of Ocean Media Solutions Sdn Bhd. He has grown Ekonomi Rakyat from a passion project into a leading Malay-language media platform focused on economics, finance and business.
 
 Prior to this, he served as a Corporate Strategist at a state-owned GLC, gaining experience across the property, environment and energy sectors.
 
 Wan holds a degree in Philosophy, Politics and Economics (PPE) from the University of Otago, New Zealand.`,
-      },
+    },
     speakers: [
       {
         name: "Faiz Azmi",
@@ -979,7 +984,6 @@ Wan holds a degree in Philosophy, Politics and Economics (PPE) from the Universi
   FUTURE VISION: 
   With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
       },
-      
     ],
   },
 
@@ -1052,15 +1056,15 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
     time: "15:45 - 16:30",
     title: "US Fed policy & global rate cycles",
     description: "",
-    moderator:       {
-        name: "Fong Wei Ziet",
-        title: "Director",
-        company: "Ziet Media Sdn Bhd",
-        photo: "/optimized/ziet.JPG",
-        bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
+    moderator: {
+      name: "Fong Wei Ziet",
+      title: "Director",
+      company: "Ziet Media Sdn Bhd",
+      photo: "/optimized/ziet.JPG",
+      bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
 
 He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`,
-      },
+    },
     speakers: [
       {
         name: "Isaac Lim",
@@ -1161,7 +1165,7 @@ Her role goes beyond being a host—she acts as a bridge between the audience an
 With a background in multimedia design and video production, Chloe works with her team to build one of Malaysia’s fastest-growing personal finance and investment podcasts — Finance Lang. Within just eight months, the show surpassed 2 million views and has inspired more than 80,000 viewers to start paying attention to and learning about investing and financial management.`,
       },
     ],
-     
+
     speakers: [
       {
         name: "Lee Chee Seng",
@@ -1347,7 +1351,27 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
       },
     ],
   },
-  { time: "12:00 - 12:30", title: "AI-Powered Value Investing for the Next Generation of Bursa Malaysia Investors" },
+  {
+    time: "12:00 - 12:30",
+    title:
+      "AI-Powered Value Investing for the Next Generation of Bursa Malaysia Investors",
+    description: "",
+    speakers: [
+      {
+        name: "Chen Jian",
+        chineseName: "陈剑老师",
+        title: "Chief Coach",
+        company: "Grandpine Capital",
+        photo: "/optimized/chenJian.jpg",
+        bio: `Alfred Chen is the Chief Coach of GrandPine Capital where has coached more than 30,000 students. He is also an influential investment educator on social media with more than 150,000 followers on his Facebook page and YouTube channel, collectively.
+
+He also authored numerous investment books in Malaysia, drawing from his vast experience in Malaysia’s stock market and in-depth analyses of listed companies in Malaysia and China.
+Alfred Chen is frequently invited by tertiary education institutions, investment banks and stock broking firms to speak on stock market and stocks for students and clients.
+
+Since 2009, he has been the key speaker at the Investment Forum jointly organised by Sin Chew Daily, Nanyang Siang Pau, and Oriental Daily. He has made an appearance in many TV shows and was interviewed by numerous media organisations including Astro Awani, Bloomberg TV, CITYPlus FM, and Pocketimes.`,
+      },
+    ],
+  },
   {
     time: "12:30 - 13:00",
     title: "The Asset Most People Ignore… Until It’s Too Late",
@@ -1877,7 +1901,9 @@ const SessionRow = ({
             </div>
           )}
 
-          {(session.host || session.moderator || (session.moderators && session.moderators.length > 0)) && (
+          {(session.host ||
+            session.moderator ||
+            (session.moderators && session.moderators.length > 0)) && (
             <div className="mt-4">
               <p className="font-semibold text-navy-deep mb-2">
                 {session.host

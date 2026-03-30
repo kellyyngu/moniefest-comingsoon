@@ -42,6 +42,8 @@ const tianGeLogo = "/optimized/tianGe.svg";
 const gyakuCapitalLogo = "/optimized/gyakuCapital.svg";
 const printciousLogo = "/optimized/printcious.svg";
 const saturnaLogo = "/optimized/saturna.svg";
+const ecoAsiaCapitalLogo = "/optimized/ecoAsiaCapital.svg";
+const grandpineCapitalLogo = "/optimized/grandpineCapital.svg";
 const mpgLogo = "/optimized/MPG.svg";
 const endeavorLogo = "/optimized/endeavor.svg";
 const asriAhmadAcademyLogo = "/optimized/asriAhmadAcademy.svg";
@@ -114,7 +116,8 @@ const logoUrls: Record<string, string> = {
   [colonyLogo]: undefined,
   [zusLogo]: undefined,
   [pmbLogo]: "https://www.pmbinvestment.com.my/",
-  [beyondInsightsLogo]: "https://www.beyondinsights.net/?utm_source=moniefest&utm_campaign=moniefest2026",
+  [beyondInsightsLogo]:
+    "https://www.beyondinsights.net/?utm_source=moniefest&utm_campaign=moniefest2026",
   [fpamLogo]: "https://fpam.org.my/",
 };
 
@@ -167,10 +170,12 @@ const friendsOfMonie = [
   beyondInsightsLogo,
   chuckLogo,
   colonyLogo,
+  ecoAsiaCapitalLogo,
   endeavorLogo,
   financeLangLogo,
   financialFaizLogo,
   fnbTalkLogo,
+  grandpineCapitalLogo,
   gyakuCapitalLogo,
   iherngLogo,
   insightInvestsLogo,

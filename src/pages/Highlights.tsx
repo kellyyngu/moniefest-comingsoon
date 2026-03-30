@@ -67,8 +67,17 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Sparkles,
   },
-  {
+   {
     number: 7,
+    title: "Phillip Capital – Unlock Bursa US CFDs with NOVA",
+    description: "Phillip Capital promotion",
+    image: "/optimized/phillipCapitalBanner.png",
+    link: "https://www.phillip.com.my/promotions/unlock-bursa-us-cfds-with-nova/",
+    noCrop: true,
+    icon: Gift,
+  },
+  {
+    number: 8,
     title: "Phillip Promotions",
     description: "Check out Phillip Capital's latest promotion.",
     image: "/optimized/phillipCapitalPromotionArtwork.png",
@@ -77,7 +86,7 @@ const highlights: Highlight[] = [
     icon: Gift,
   },
   {
-    number: 8,
+    number: 9,
     title: "Funding Societies",
     description: "Funding Societies banner",
     image: "/optimized/fundingSocietiesBanner.jpg",
@@ -85,7 +94,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 9,
+    number: 10,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -94,7 +103,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 10,
+    number: 11,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -103,14 +112,13 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 11,
+    number: 12,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",
     noCrop: true,
     icon: Sparkles,
   },
-  
 ];
 
 const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
