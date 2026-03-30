@@ -22,7 +22,6 @@ const wealthFortLogo = "/optimized/WealthFort.svg";
 const cgsiLogo = "/optimized/CGSI.svg";
 const ctosLogo = "/optimized/CTOS.svg";
 const publicMutualLogo = "/optimized/publicMutual.png";
-const bimbsecLogo = "/optimized/BIMBSec.svg";
 const cboeLogo = "/optimized/CBOE.svg";
 const stayWokePropertyLogo = "/optimized/stayWokeProperty.svg";
 const zietLogo = "/optimized/ziet.svg";
@@ -87,7 +86,6 @@ const logoUrls: Record<string, string> = {
   [gambitTrusteesLogo]: "https://digitaltrustees.com.my/",
   [bursaLogo]: "https://my.bursamalaysia.com/",
   [capbayLogo]: "https://capbay.com/invest/",
-  [bimbsecLogo]: "https://www.bimbsec.com.my/",
   [spgLogo]: "http://www.spglobal.com/spdji/",
   [phillipLogo]: "https://www.phillip.com.my/",
   [financeLangLogo]: "https://www.youtube.com/@finance.lang88",
@@ -136,7 +134,6 @@ const platinumSponsors = [
 ];
 const supportingPartners = [bursaLogo, societyMalaysiaLogo, fimmLogo, fpamLogo];
 const silverSponsors = [
-  bimbsecLogo,
   capbayLogo,
   ctosLogo,
   fimmLogo,
