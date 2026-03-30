@@ -158,6 +158,7 @@ const giftPartners = Array.from({ length: 4 }).map((_, i) =>
 );
 const giftSponsors = [printciousLogo, tealiveLogo, zusLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
+const mediaPartners = [ekonomiRakyatLogo];
 const friendsOfMonie = [
   activ8Logo,
   asriAhmadAcademyLogo,
@@ -166,7 +167,6 @@ const friendsOfMonie = [
   beyondInsightsLogo,
   chuckLogo,
   colonyLogo,
-  ekonomiRakyatLogo,
   endeavorLogo,
   financeLangLogo,
   financialFaizLogo,
@@ -592,6 +592,14 @@ const Exhibitors = () => {
         <LogoGrid
           title="Friends of Monie"
           logos={friendsOfMonie}
+          fullUrls
+          hideCaption
+          logoOnly
+          logoUrls={logoUrls}
+        />
+        <LogoGrid
+          title="Media Partner"
+          logos={mediaPartners}
           fullUrls
           hideCaption
           logoOnly
