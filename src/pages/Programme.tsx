@@ -175,14 +175,13 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-     
       {
         name: "Xiaomi 55' TV",
         url: "https://www.mi.com/my/product/xiaomi-tv-a-55-2026/",
         image: "/optimized/xiaomitv.webp",
         note: "worth RM1,999",
       },
-       {
+      {
         name: "Dior Rouge Lipstick (x2)",
         url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
         image: "/optimized/dior-lipstick.webp",
@@ -413,8 +412,8 @@ Afiq is also a strong advocate for integrating AI tools into public relations, l
     bullets: [],
     moderator: {
       name: "Noelle Lee",
-      title: "Managing partner",
-      company: "ACTIV8",
+      title: "Organizer",
+      company: "MY Blockchain Week",
       photo: "/optimized/noelle.jpg",
       bio: `Noelle is trained legally (LLB, CLP) and also an MBA holder. She has been part of the blockchain industry since 2016 and is a Managing Partner of ACTIV8 (formerly known Lydian Labs). She is a young entrepreneur that has established numerous partnerships across the globe.`,
     },
@@ -693,13 +692,13 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     title: "Podcast 3: Starting Your Journey into Alternative Investments",
     description: "",
     speakers: [
-       {
-    name: "Ng Keng Sing",
-    title: "EVP, BR Capital, Securities Market",
-    company: "Bursa Malaysia Berhad",
-    photo: "/optimized/kengSing.png",
-    bio: `Keng Sing serves as the Head of Bursa Malaysia’s RAM Capital Sdn Bhd (BR Capital), a subsidiary of Bursa Malaysia. BR Capital is a Recognized Market Operator that facilitates debt fundraising by mid‑tier companies while providing investors with access to yield‑seeking opportunities. Prior to joining Bursa Malaysia, he held senior leadership roles in corporate and investment banking, bringing extensive experience across capital markets and the broader financial services industry.`,
-  },
+      {
+        name: "Ng Keng Sing",
+        title: "EVP, BR Capital, Securities Market",
+        company: "Bursa Malaysia Berhad",
+        photo: "/optimized/kengSing.png",
+        bio: `Keng Sing serves as the Head of Bursa Malaysia’s RAM Capital Sdn Bhd (BR Capital), a subsidiary of Bursa Malaysia. BR Capital is a Recognized Market Operator that facilitates debt fundraising by mid‑tier companies while providing investors with access to yield‑seeking opportunities. Prior to joining Bursa Malaysia, he held senior leadership roles in corporate and investment banking, bringing extensive experience across capital markets and the broader financial services industry.`,
+      },
       {
         name: "Tan Dao Hong",
         title:

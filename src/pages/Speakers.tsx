@@ -27,8 +27,8 @@ Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell Univ
   },
   {
     name: "Noelle Lee",
-    title: "Managing partner",
-    company: "ACTIV8",
+    title: "Organizer",
+    company: "MY Blockchain Week",
     photo: "/optimized/noelle.jpg",
     bio: `Noelle is trained legally (LLB, CLP) and also an MBA holder. She has been part of the blockchain industry since 2016 and is a Managing Partner of ACTIV8 (formerly known Lydian Labs). She is a young entrepreneur that has established numerous partnerships across the globe.`,
   },

@@ -69,6 +69,7 @@ const ekonomiRakyatLogo = "/optimized/ekonomiRakyat.svg";
 const beyondInsightsLogo = "/optimized/beyondInsights.svg";
 const fpamLogo = "/optimized/FPAM.png";
 const maybankLogo = "/optimized/maybank.svg";
+const mybwLogo = "/optimized/MYBW.svg";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -160,7 +161,6 @@ const giftSponsors = [printciousLogo, tealiveLogo, zusLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
 const mediaPartners = [ekonomiRakyatLogo];
 const friendsOfMonie = [
-  activ8Logo,
   asriAhmadAcademyLogo,
   bbbWealthLogo,
   bbkNetworkLogo,
@@ -181,6 +181,7 @@ const friendsOfMonie = [
   mpgLogo,
   moneyBraderLogo,
   mrmoneyLogo,
+  mybwLogo,
   ncspaceLogo,
   noMoneyLahLogo,
   stayWokePropertyLogo,
