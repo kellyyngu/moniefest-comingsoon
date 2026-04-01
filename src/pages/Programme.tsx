@@ -997,7 +997,7 @@ Wan holds a degree in Philosophy, Politics and Economics (PPE) from the Universi
       {
         name: "Faiz Azmi",
         title: "Director",
-        company: "Faiz Azmi Financial Faiz FF Studios Sdn. Bhd.",
+        company: "Financial Faiz",
         photo: "/optimized/faizAzmi.png",
         bio: `Faiz Azmi has accumulated 12 years of diverse experience in the banking industry, real estate, unit trusts, and insurance. Recognizing the lack of unbiased financial education available to Malaysians, Faiz decided to fill this gap by creating content that is both impartial and accessible to the general public. 
   
