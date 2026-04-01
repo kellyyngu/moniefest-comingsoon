@@ -77,6 +77,10 @@ const greatEasternLogo = "/optimized/greatEastern.jpeg";
 const tradeViewCapitalLogo = "/optimized/TradeViewCapital.svg";
 const oppoLogo = "/optimized/oppo.png";
 const grabLogo = "/optimized/grab.svg";
+const uncleJeffLogo = "/optimized/uncleJeff.svg";
+const vanzoLogo = "/optimized/vanzo.jpeg";
+const ticketmelonLogo = "/optimized/ticketmelon.svg";
+const nineSharesLogo = "/optimized/9shares.jpeg";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -175,10 +179,10 @@ const goldSponsors = [
 const giftPartners = Array.from({ length: 4 }).map((_, i) =>
   placeholderImg(`Gift+${i + 1}`),
 );
-const giftSponsors = [printciousLogo, tealiveLogo, zusLogo];
+const giftSponsors = [printciousLogo, tealiveLogo, uncleJeffLogo, zusLogo];
 const exclusivePhonePartners = [oppoLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const mediaPartners = [ekonomiRakyatLogo];
+const mediaPartners = [nineSharesLogo, ekonomiRakyatLogo];
 const friendsOfMonie = [
   asriAhmadAcademyLogo,
   bbbWealthLogo,
@@ -207,9 +211,11 @@ const friendsOfMonie = [
   talentCorpLogo,
   taylorsUniversityLogo,
   tianGeLogo,
+  ticketmelonLogo,
   traddictivLogo,
   tradeViewCapitalLogo,
   uhnwLogo,
+  vanzoLogo,
   wabikongLogo,
   wealthFortLogo,
   zietLogo,

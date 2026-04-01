@@ -53,6 +53,14 @@ const highlights: Highlight[] = [
   },
   {
     number: 5,
+    title: "ASNB",
+    description: "ASNB banner and partner highlight.",
+    image: "/optimized/ASNBbanner.png",
+    noCrop: true,
+    icon: Trophy,
+  },
+  {
+    number: 6,
     title: "CGSi",
     description: "CGSi partner banner",
     image: "/optimized/CGSiBanner.jpg",
@@ -60,7 +68,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 6,
+    number: 7,
     title: "Dasher",
     description: "Dasher banner",
     image: "/optimized/dasherBanner.png",
@@ -68,7 +76,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 7,
+    number: 8,
     title: "Phillip Capital – Unlock Bursa US CFDs with NOVA",
     description: "Phillip Capital promotion",
     image: "/optimized/phillipCapitalBanner.png",
@@ -78,7 +86,7 @@ const highlights: Highlight[] = [
   },
 
   {
-    number: 8,
+    number: 9,
     title: "Funding Societies",
     description: "Funding Societies banner",
     image: "/optimized/fundingSocietiesBanner.jpg",
@@ -86,7 +94,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 9,
+    number: 10,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -95,7 +103,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 10,
+    number: 11,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -104,7 +112,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 11,
+    number: 12,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",

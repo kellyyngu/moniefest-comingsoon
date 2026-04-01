@@ -703,9 +703,26 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
 
   {
     time: "15:30 - 16:00",
-    title: "Coming Soon",
+    title:
+      "From Audience to Empire: How Brands and Startups Scale Across Southeast Asia",
     description: "",
-    speakers: [],
+    speakers: [
+      {
+        name: "Lucas Seneviratne",
+        title: "Head of Markets (Singapore & Malaysia)",
+        company: "Ticketmelon",
+        photo: "/optimized/lucasSeneviratne.jpeg",
+        bio: `Lucas Seneviratne leads Singapore and Malaysia for Ticketmelon, one of Southeast Asia’s leading event technology platforms powering large-scale festivals, concerts, and live experiences across the region.
+
+A law graduate by background, Lucas began his career in entrepreneurship, co-founding The Bao Guys—Malaysia’s first fast-casual bao concept. He scaled the brand to 13 outlets across Klang Valley before exiting in 2024.
+
+He later became Ticketmelon’s first hire in Malaysia, building the market from the ground up. Today, he leads Singapore and Malaysia, driving growth across both markets and positioning Ticketmelon as one of Malaysia’s most visited ticketing platforms—powering major festivals and concerts including Tomorrowland Thailand, Good Vibes Festival & Rainforest World Music Festival.
+
+Lucas sits at the intersection of audience, monetisation, and experience—working with organisers to move beyond “selling tickets” to building scalable event businesses.
+
+His current obsession: using data, distribution, and smart financing to help events scale faster, sell better, and last longer.`,
+      },
+    ],
   },
 
   {
@@ -786,17 +803,17 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
     title: "Podcast 4: When Life Happens - Is Your Family Financially Ready?",
     description: "",
     speakers: [
-        {
-    name: "Chin Yi Xuan",
-    title: "Finance Creator",
-    company: "No Money Lah",
-    photo: "/optimized/yixuan.webp",
-    bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
+      {
+        name: "Chin Yi Xuan",
+        title: "Finance Creator",
+        company: "No Money Lah",
+        photo: "/optimized/yixuan.webp",
+        bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
 
 He holds a degree in Economics from Universiti Malaya (UM) and was formerly the General Manager of a licensed proprietary trading firm in Malaysia. Yi Xuan has been a speaker for Bursa Malaysia’s educational webinars for the past three years, and has also appeared on platforms such as BBK Network and Caijin by BFM.
 
 Currently pursuing his Certified Financial Planner (CFP) qualification, he combines real-world investing experience with structured financial planning principles — helping working adults prepare not just for retirement, but for life’s bigger financial responsibilities, including caring for aging parents.`,
-  },
+      },
       {
         name: "Cheah Zi Kah, CFP®",
         title: "Chief Growth Officer",
@@ -878,9 +895,41 @@ const mainStageScheduleDay2: Session[] = [
 
   {
     time: "11:15 - 12:00",
-    title: "Coming Soon",
+    title:
+      "Where Is the Market Headed? Trading Opportunities Beyond Stocks in a Changing Landscape",
     description: "",
-    speakers: [],
+    speakers: [
+      {
+        name: "Esther Tio",
+        title:
+          "Senior Vice President, Head of Retail Derivatives Coverage, Group Commercial & Market Coverage",
+        company: "Bursa Malaysia Berhad",
+        photo: "/optimized/estherTio.jpg",
+        bio: `As Head of Retail Derivatives Coverage under the Group Commercial & Market Coverage division at Bursa Malaysia, Esther is responsible for shaping and scaling the exchange’s retail marketing strategy across derivatives and multiple product offerings within the group. She joined Bursa Malaysia in 2019 and has previously served as Head of Marketing & Retail Development for Derivatives Market, where she was accountable for devising education and market development initiatives that effectively promote the Malaysian futures and options markets to all segments of investors, both domestically and internationally. 
+
+Esther’s leadership in Bursa Malaysia extends to organising one of the largest international palm oil conferences, the Palm & Lauric Oils Price Outlook Conference & Exhibition (POC). This renowned event, drawing approximately 2,000 corporate delegates from 60 countries to Kuala Lumpur each year, serves as the exchange’s primary platform for promoting its edible oil offerings as risk management solutions to commercial players. Throughout her tenure, Esther has spearheaded several of the exchange’s industry “firsts”, including the introduction of the Futures Trading Apprenticeship Programme (FTAP) in 2023, a pioneering market revitalisation initiative that inspired other ASEAN exchanges to adopt similar strategies. 
+
+With 15 years of experience in financial product marketing, Esther previously held roles in product management and strategic partnerships in Citibank Malaysia. She has also served in various business development capacities within the financial industry. Esther holds a master’s degree in International Business Management from Newcastle University and a bachelor’s degree in Law from Northumbria University. Her diverse expertise and qualifications enable her to transform retail development strategy in the Malaysian capital market with innovative perspectives.`,
+      },
+      {
+        name: "David Ng",
+        title: "Proprietary Trader",
+        company: "IcebergX Sdn Bhd",
+        photo: "/optimized/davidNg.jpg",
+        bio: `David Ng is currently a full-time proprietary trader with IcebergX Sdn Bhd, a local proprietary trading firm based in Kuala Lumpur. He has done extensive research and is well versed in the commodities and indices markets. He currently trades the Malaysia index and crude palm oil futures market. 
+
+Previously, he led a team of a young and dynamic team to promote futures and derivatives instruments to the Malaysian public with a prominent local broker. He conducts regular public seminars and seminars on topics relating to futures trading and has aid individuals to start their trading journey. In addition, he also provides frequent market commentaries to local media like The Star, Business Times, and The Edge in that role`,
+      },
+      {
+        name: "Jocelyn Lee",
+        title: "Deputy Head of Marketing",
+        company: "Phillip Capital Sdn Bhd",
+        photo: "/optimized/jocelynLee.jpeg",
+        bio: `As the Deputy Head of Marketing at Phillip Capital Sdn Bhd, Jocelyn plays a key role in driving strategic initiatives across derivatives, securities, and CFD markets. With dual licensing in both derivatives and securities, Jocelyn brings a well-rounded perspective to multi-asset trading and investment solutions. 
+
+She has extensive experience in client servicing and engagement, with a strong focus on guiding clients through trading platforms and enhancing their overall trading journey. Jocelyn is actively involved in organizing and leading roadshows, seminars, and investor education events, where she shares practical insights on market opportunities, trading strategies, and platform navigation. Jocelyn is passionate about empowering investors with the tools and knowledge needed to navigate today’s dynamic financial markets with confidence.`,
+      },
+    ],
   },
 
   {
@@ -1508,7 +1557,38 @@ Driven by a strong commitment to investor education, Ronnie continues to advocat
       },
     ],
   },
-  { time: "15:00 - 15:30", title: "Coming Soon" },
+  {
+    time: "15:00 - 15:30",
+    title: "VANZO─品牌塑造价值  2026旅游大马年机遇",
+    speakers: [
+      {
+        name: "林伟强 Lim Woi Kiong",
+        title: "创办人，总编辑",
+        company: "《九点股票》",
+        photo: "/optimized/mrLim9Shares.jpeg",
+        bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
+      },
+      {
+        name: "Dato' Eddie Ng 拿督黄余兴",
+        title: "Founder & CEO",
+        company: "VANZO",
+        photo: "/optimized/eddieNg.jpeg",
+        bio: `A.2018年100大最具影响力杰出青年企业家
+
+B.2018年亚太国际超级健康品牌
+
+C.2019年国际华人公益金传奖
+
+D.2019年亚洲杰出新晋香氛品牌大师奖
+
+E.2019年100大SME中小型企业快速成长
+
+F. THE page商页2019年评选菁英
+
+·企业名言：一件事，一辈子，专注到极致，注定伟大`,
+      },
+    ],
+  },
   {
     time: "15:30 - 16:00",
     title: "Coming Soon",

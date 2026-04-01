@@ -49,6 +49,46 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
   const createdRef = useRef(false);
   const [widgetReady, setWidgetReady] = useState(false);
   const [widgetFailed, setWidgetFailed] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile (client-side only) so we can avoid embedding Eventbrite on small screens
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mq = window.matchMedia('(max-width: 640px)');
+    const handler = () => setIsMobile(!!mq.matches);
+    handler();
+    if (typeof mq.addEventListener === 'function') {
+      mq.addEventListener('change', handler);
+      return () => mq.removeEventListener('change', handler);
+    }
+    // fallback for older browsers
+    if (typeof mq.addListener === 'function') {
+      mq.addListener(handler);
+      return () => mq.removeListener(handler);
+    }
+  }, []);
+
+  // On mobile, instead of embedding Eventbrite, open the Eventbrite event page directly
+  useEffect(() => {
+    if (!open || !isMobile) return;
+    const url = `https://www.eventbrite.com/e/${eventId}`;
+    try {
+      if (popupRef?.current) {
+        try {
+          popupRef.current.location.href = url;
+          popupRef.current.focus();
+        } catch (e) {
+          try { window.open(url, '_blank', 'noopener'); } catch {}
+        }
+      } else {
+        try { window.open(url, '_blank', 'noopener'); } catch {}
+      }
+    } catch (e) {
+      // ignore
+    }
+    // Close the modal UI since we've redirected the user
+    try { onClose(); } catch (e) {}
+  }, [open, isMobile, eventId, onClose, popupRef]);
 
   useEffect(() => {
     if (!open) return;
