@@ -220,9 +220,15 @@ Eng Ping joined Maybank in 2008 as Director of Investment Bankng at Maybank Inve
 
 Since joining Wealth Management, CFS, Eng Ping has been instrumental in growing the private business, with assets under management increasing by 16%, from RM16.8 billion to RM19.6 billion in 2023. Additionally, total fee income grew by 68.6% from RM35.9 million in 2022 to RM68.6 million in 2023.`,
       },
+      {
+        name: "Fadzihan Abbas Mohamed Ramlee",
+        title: "Chief Executive Officer",
+        company: "ASNB",
+        photo: "/optimized/fadzihanAbbasMohamedRamlee.jpg",
+      },
     ],
     moderator: {
-      name: "Mohammad Bazli Che Rozenan",
+      name: "Mohammad Bazli Che Rozenan, CFA",
       title: "Director, Members Engagement",
       company: "CFA Society Malaysia",
       photo: "/optimized/mohammadBazli.jpg",
@@ -525,9 +531,24 @@ const engagementStageSchedule: Session[] = [
   },
   {
     time: "12:00 - 12:30",
-    title: "Coming Soon",
+    title: "In the Realm of Uncertainty",
     description: "",
-    speakers: [],
+    speakers: [
+      {
+        name: "Kenny Yee",
+        title: "Head of Research",
+        company: "Rakuten Trade",
+        photo: "/optimized/kennyYee.png",
+        bio: `Kenny Yee has over three decades of hands-on  experience in the industry and holds the esteemed position of being a founding member of Rakuten Trade. 
+
+Currently serving as the Head of Research at Rakuten Trade, he dedicates his expertise to delving into the realm of small and mid-cap companies listed on Bursa Malaysia.
+
+His journey in the financial sector as an analyst began in 1989 before assuming a pivotal role as the Head of Research at Nikko Securities in 1993. He joined OSK Investment Bank in 2005, where he assumed leadership of their research division. 
+Notably, during his tenure at OSK, he was instrumental in championing the recognition of "OSK’s 100 Hidden Jewels," a collection primarily comprised of small-cap companies (the first of such endeavor), which subsequently garnered substantial attention from both institutional and retail investors alike.
+
+Kenny has an Honors degree from Keele University (Stoke-On-Trent, England), where he pursued a joint degree in economics and law`,
+      },
+    ],
   },
   {
     time: "12:30 - 13:00",
@@ -765,6 +786,17 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
     title: "Podcast 4: When Life Happens - Is Your Family Financially Ready?",
     description: "",
     speakers: [
+        {
+    name: "Chin Yi Xuan",
+    title: "Finance Creator",
+    company: "No Money Lah",
+    photo: "/optimized/yixuan.webp",
+    bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
+
+He holds a degree in Economics from Universiti Malaya (UM) and was formerly the General Manager of a licensed proprietary trading firm in Malaysia. Yi Xuan has been a speaker for Bursa Malaysia’s educational webinars for the past three years, and has also appeared on platforms such as BBK Network and Caijin by BFM.
+
+Currently pursuing his Certified Financial Planner (CFP) qualification, he combines real-world investing experience with structured financial planning principles — helping working adults prepare not just for retirement, but for life’s bigger financial responsibilities, including caring for aging parents.`,
+  },
       {
         name: "Cheah Zi Kah, CFP®",
         title: "Chief Growth Officer",
@@ -1053,7 +1085,7 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
   },
   {
     time: "15:45 - 16:30",
-    title: "US Fed policy & global rate cycles",
+    title: "Geopolitical Instability: Where Should You Invest?",
     description: "",
     moderator: {
       name: "Fong Wei Ziet",
@@ -1068,7 +1100,7 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
       {
         name: "Isaac Lim",
         title: "CMT, CFTe, Chief Market Strategist",
-        company: "Moomoo Singapore",
+        company: "Moomoo SEA",
         photo: "/optimized/isaacLim.jpeg",
         whiteBg: false,
         forceHeadshot: true,
@@ -1463,11 +1495,11 @@ Driven by a strong commitment to investor education, Ronnie continues to advocat
   },
   {
     time: "14:30 - 15:00",
-    title: "Coming Soon",
+    title: "AI - The Doomsday of Fund Managers",
     description: "",
     speakers: [
       {
-        name: "Ng Tzyy Loon",
+        name: "Ng Tzyy Loon, CFA",
         title: "CFA, Portfolio Manager",
         company: "Tradeview Capital",
         photo: "/optimized/ngTzyyLoon.jpg",

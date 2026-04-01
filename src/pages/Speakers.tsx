@@ -249,6 +249,26 @@ Marketing and Economics, from Monash University.`,
     bio: `Prior to joining Kenanga as Head of Research, Peter was an award-winning analyst for financials and industrials sector with CLSA Securities Malaysia, where he assumed the role of Deputy Head of Research. Prior to that, Peter honed his credit/bond market skills during his time at RAM Rating Services Berhad as a credit analyst. Starting out his career as an auditor with PricewaterhouseCoopers, Peter is both a licensed accountant and a Chartered Financial Analyst.`,
   },
   {
+    name: "Kenny Yee",
+    title: "Head of Research",
+    company: "Rakuten Trade",
+    photo: "/optimized/kennyYee.png",
+    bio: `Kenny Yee has over three decades of hands-on  experience in the industry and holds the esteemed position of being a founding member of Rakuten Trade. 
+
+Currently serving as the Head of Research at Rakuten Trade, he dedicates his expertise to delving into the realm of small and mid-cap companies listed on Bursa Malaysia.
+
+His journey in the financial sector as an analyst began in 1989 before assuming a pivotal role as the Head of Research at Nikko Securities in 1993. He joined OSK Investment Bank in 2005, where he assumed leadership of their research division. 
+Notably, during his tenure at OSK, he was instrumental in championing the recognition of "OSK’s 100 Hidden Jewels," a collection primarily comprised of small-cap companies (the first of such endeavor), which subsequently garnered substantial attention from both institutional and retail investors alike.
+
+Kenny has an Honors degree from Keele University (Stoke-On-Trent, England), where he pursued a joint degree in economics and law`,
+  },
+  {
+    name: "Fadzihan Abbas Mohamed Ramlee",
+    title: "Chief Executive Officer",
+    company: "ASNB",
+    photo: "/optimized/fadzihanAbbasMohamedRamlee.jpg",
+  },
+  {
     name: "Liksen Lei",
     title: "U.S. Equities Investor & Analyst",
     company: "@insightinvests",
@@ -261,7 +281,7 @@ His approach combines academic knowledge with practical market experience, offer
   },
 
   {
-    name: "Mohammad Bazli Che Rozenan",
+    name: "Mohammad Bazli Che Rozenan, CFA",
     title: "Director, Members Engagement",
     company: "CFA Society Malaysia",
     photo: "/optimized/mohammadBazli.jpg",
@@ -663,7 +683,7 @@ Known for his clear, data‑driven insights and strong Shariah‑compliant produ
     bio: `Jane Chuck ,33, started her journey in 2009 as a blogger. Since, she’s become a household name as a fashion, beauty and lifestyle influencer. In 2019, She begin her journey as an entrepreneur by founding Chuck’s, a skincare brand & Motherchuckers,a lifestyle/fashion brand. Through her years of experience, she’s created a brand that reflects her values of thoughtfulness, kindness and self love. It’s since become a space for her and her followers to connect and to build a creative community. Today, she oversees a growing portfolio of brands, including Motherchuckers, Wewantjam, Pretty Motherchuckers, and Hejau Cafe, further establishing her presence as a multifaceted entrepreneur.`,
   },
   {
-    name: "Ng Tzyy Loon",
+    name: "Ng Tzyy Loon, CFA",
     title: "CFA, Portfolio Manager",
     company: "Tradeview Capital",
     photo: "/optimized/ngTzyyLoon.jpg",
@@ -809,11 +829,13 @@ const desiredSpeakerOrder: string[] = [
   "R.Bushan",
   "Tan Dao Hong",
   "Isabelle Zhen",
+  "Kenny Yee",
   "Peter Kong",
   "Aaron Tang",
   "Jeroni Khoo",
   "Lim Eng Ping",
   "Isaac Lim, CMT, CFTe",
+  "Fadzihan Abbas Mohamed Ramlee",
   "Mohd Izzat Fadhli Azman",
   "Ronnie Chai Teck Wei",
   "Trent Cheok",

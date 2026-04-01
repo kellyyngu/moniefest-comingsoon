@@ -67,7 +67,7 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Sparkles,
   },
-   {
+  {
     number: 7,
     title: "Phillip Capital – Unlock Bursa US CFDs with NOVA",
     description: "Phillip Capital promotion",
@@ -76,17 +76,9 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Gift,
   },
+
   {
     number: 8,
-    title: "Phillip Promotions",
-    description: "Check out Phillip Capital's latest promotion.",
-    image: "/optimized/phillipCapitalPromotionArtwork.png",
-    link: "https://www.phillip.com.my/promotions/drive-your-bmd-trades-further-with-phillip/",
-    noCrop: true,
-    icon: Gift,
-  },
-  {
-    number: 9,
     title: "Funding Societies",
     description: "Funding Societies banner",
     image: "/optimized/fundingSocietiesBanner.jpg",
@@ -94,7 +86,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 10,
+    number: 9,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -103,7 +95,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 11,
+    number: 10,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -112,7 +104,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 12,
+    number: 11,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",
@@ -147,7 +139,9 @@ const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({
       }}
     >
       {/* Clean card: white panel, centered, subtle shadow and consistent padding */}
-      <div className={`relative bg-transparent rounded-lg overflow-hidden w-full`}>
+      <div
+        className={`relative bg-transparent rounded-lg overflow-hidden w-full`}
+      >
         {/* Image section: tighter padding and minimal white so images fill more space */}
         <div className={`w-full flex items-center justify-center p-0 sm:p-2`}>
           <div className={`w-full flex items-center justify-center`}>

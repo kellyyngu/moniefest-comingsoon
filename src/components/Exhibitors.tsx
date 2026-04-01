@@ -70,6 +70,13 @@ const beyondInsightsLogo = "/optimized/beyondInsights.svg";
 const fpamLogo = "/optimized/FPAM.png";
 const maybankLogo = "/optimized/maybank.svg";
 const mybwLogo = "/optimized/MYBW.svg";
+const ijmRimbayuLogo = "/optimized/IJMRimbayu.svg";
+const rianaDutamasLogo = "/optimized/rianaDutamas.svg";
+const epfLogo = "/optimized/EPF.svg";
+const greatEasternLogo = "/optimized/greatEastern.jpeg";
+const tradeViewCapitalLogo = "/optimized/TradeViewCapital.svg";
+const oppoLogo = "/optimized/oppo.png";
+const grabLogo = "/optimized/grab.svg";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -100,6 +107,13 @@ const logoUrls: Record<string, string> = {
   [saturnaLogo]: "https://saturna.com.my/",
   "/versa.svg": "https://versa.com.my/",
   [cgsiLogo]: "https://www.cgsi.com",
+  [ijmRimbayuLogo]: "https://rimbayu.ijmland.com/home",
+  [rianaDutamasLogo]: "https://rianadutamas.com/stellaris/",
+  [epfLogo]: undefined,
+  [greatEasternLogo]: undefined,
+  [tradeViewCapitalLogo]: undefined,
+  [oppoLogo]: undefined,
+  [grabLogo]: undefined,
   [ctosLogo]: "https://www.ctoscredit.com.my",
   [sinegyLogo]: "https://exchange.sinegy.com/",
   [publicMutualLogo]: "https://www.publicmutual.com.my",
@@ -139,10 +153,13 @@ const silverSponsors = [
   ctosLogo,
   fimmLogo,
   fundingSocietiesLogo,
+  ijmRimbayuLogo,
+  epfLogo,
   microleapLogo,
   paramountPropertyLogo,
   pmbLogo,
   publicMutualLogo,
+  rianaDutamasLogo,
   saturnaLogo,
   sinegyLogo,
 ];
@@ -150,6 +167,7 @@ const goldSponsors = [
   asnbLogo,
   cgsiLogo,
   dasherLogo,
+  greatEasternLogo,
   phillipLogo,
   rytBankLogo,
   skyworldLogo,
@@ -158,6 +176,7 @@ const giftPartners = Array.from({ length: 4 }).map((_, i) =>
   placeholderImg(`Gift+${i + 1}`),
 );
 const giftSponsors = [printciousLogo, tealiveLogo, zusLogo];
+const exclusivePhonePartners = [oppoLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
 const mediaPartners = [ekonomiRakyatLogo];
 const friendsOfMonie = [
@@ -189,6 +208,7 @@ const friendsOfMonie = [
   taylorsUniversityLogo,
   tianGeLogo,
   traddictivLogo,
+  tradeViewCapitalLogo,
   uhnwLogo,
   wabikongLogo,
   wealthFortLogo,
@@ -587,6 +607,22 @@ const Exhibitors = () => {
         <LogoGrid
           title="Gift Sponsors"
           logos={giftSponsors}
+          fullUrls
+          hideCaption
+          logoOnly
+          logoUrls={logoUrls}
+        />
+        <LogoGrid
+          title="Exclusive Phone Partner"
+          logos={exclusivePhonePartners}
+          fullUrls
+          hideCaption
+          logoOnly
+          logoUrls={logoUrls}
+        />
+        <LogoGrid
+          title="Transport Partner"
+          logos={[grabLogo]}
           fullUrls
           hideCaption
           logoOnly
