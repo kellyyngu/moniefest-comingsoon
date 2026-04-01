@@ -1098,8 +1098,8 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
     },
     speakers: [
       {
-        name: "Isaac Lim",
-        title: "CMT, CFTe, Chief Market Strategist",
+        name: "Isaac Lim, CMT, CFTe",
+        title: "Chief Market Strategist",
         company: "Moomoo SEA",
         photo: "/optimized/isaacLim.jpeg",
         whiteBg: false,
