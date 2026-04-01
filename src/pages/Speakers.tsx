@@ -942,6 +942,7 @@ const desiredSpeakerOrder: string[] = [
   "Chin Yi Xuan",
   "Chloe Foo",
   "David Ng",
+  "Dato' Eddie Ng 拿督黄余兴",
   "Edward Ling",
   "Gin Chong",
   "Faiz Azmi",
@@ -958,6 +959,7 @@ const desiredSpeakerOrder: string[] = [
   "Kelvin Goh",
   "Lai Le Ann",
   "Liksen Lei",
+  "林伟强 Lim Woi Kiong",
   "Lucas",
   "Lucas Seneviratne",
   "Nigel Chong",
@@ -975,8 +977,6 @@ const desiredSpeakerOrder: string[] = [
   "Wan Abd Rahman",
   "Wan Azfar Azeem (MrKripto)",
   "William K",
-  "林伟强 LIM WOI KIONG",
-  "DATO EDDIE NG 拿督黄余兴",
 ];
 
 const mainSpeakersListOrdered = [...mainSpeakersList].sort((a, b) => {
