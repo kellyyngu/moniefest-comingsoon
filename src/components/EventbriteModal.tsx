@@ -49,38 +49,10 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
   const createdRef = useRef(false);
   const [widgetReady, setWidgetReady] = useState(false);
   const [widgetFailed, setWidgetFailed] = useState(false);
-  // Detect mobile-like environments (viewport + coarse pointer) for fallback behavior
-  const isMobileEnv = typeof window !== "undefined" && (
-    (window.matchMedia && window.matchMedia("(max-width: 768px)").matches) ||
-    (window.matchMedia && window.matchMedia("(pointer: coarse)").matches)
-  );
-
-  // Allow forcing embedded checkout on mobile for testing via ?embedEventbriteOnMobile=1
-  const urlParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
-  const forceEmbedOnMobile = urlParams.get("embedEventbriteOnMobile") === "1" || urlParams.get("embedEventbriteOnMobile") === "true";
 
   useEffect(() => {
     if (!open) return;
     let cancelled = false;
-
-    const eventUrl = `https://www.eventbrite.com/e/${eventId}`;
-
-    // If mobile-like environment and embedding is not explicitly forced, open Eventbrite page directly.
-    if (isMobileEnv && !forceEmbedOnMobile) {
-      try {
-        const popup = window.open(eventUrl, "_blank", "noopener");
-        if (popup) {
-          try { onClose(); } catch (e) {}
-          return;
-        }
-        // popup blocked — show fallback link inside modal
-        setWidgetFailed(true);
-        return;
-      } catch (e) {
-        setWidgetFailed(true);
-        return;
-      }
-    }
 
     (async () => {
       try {
@@ -231,39 +203,6 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
     };
   }, [open, eventId, containerId, height]);
 
-  // Close or redirect the popup opened on click depending on widget state
-  useEffect(() => {
-    const eventUrl = `https://www.eventbrite.com/e/${eventId}`;
-    if (widgetReady) {
-      try {
-        if ((popupRef as any)?.current) {
-          (popupRef as any).current.close();
-          (popupRef as any).current = null;
-        }
-      } catch (e) {
-        // ignore
-      }
-    }
-
-    if (widgetFailed) {
-      try {
-        if ((popupRef as any)?.current) {
-          (popupRef as any).current.location.href = eventUrl;
-          (popupRef as any).current.focus();
-          (popupRef as any).current = null;
-        } else {
-          window.open(eventUrl, "_blank", "noopener");
-        }
-      } catch (e) {
-        try {
-          window.open(eventUrl, "_blank", "noopener");
-        } catch (e) {
-          // last resort: do nothing
-        }
-      }
-    }
-  }, [widgetReady, widgetFailed, eventId, popupRef]);
-
   if (!open) return null;
 
   const modal = (
@@ -287,8 +226,7 @@ const EventbriteModal = ({ open, onClose, eventId, height = 560, popupRef }: Pro
             {widgetFailed && (
               <div className="mt-4">
                 <div className="mb-3 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-                  <p className="text-sm text-gray-700 mb-0">Eventbrite widget failed to load. Open the event page to register.</p>
-                  <a href={`https://www.eventbrite.com/e/${eventId}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-white px-4 py-2 rounded-md">Open Event Page</a>
+                  <p className="text-sm text-gray-700 mb-0">Eventbrite widget failed to load. Please close and try again.</p>
                 </div>
               </div>
             )}
