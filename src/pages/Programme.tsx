@@ -237,7 +237,7 @@ Since joining Wealth Management, CFS, Eng Ping has been instrumental in growing 
   },
   {
     time: "12:00 - 12:45",
-    title: "Coming Soon",
+    title: "Opportunity in Uncertainty: Navigating the 2026 Global Market",
     description: "",
     speakers: [
       {
@@ -900,18 +900,6 @@ const mainStageScheduleDay2: Session[] = [
     description: "",
     speakers: [
       {
-        name: "Esther Tio",
-        title:
-          "Senior Vice President, Head of Retail Derivatives Coverage, Group Commercial & Market Coverage",
-        company: "Bursa Malaysia Berhad",
-        photo: "/optimized/estherTio.jpg",
-        bio: `As Head of Retail Derivatives Coverage under the Group Commercial & Market Coverage division at Bursa Malaysia, Esther is responsible for shaping and scaling the exchange’s retail marketing strategy across derivatives and multiple product offerings within the group. She joined Bursa Malaysia in 2019 and has previously served as Head of Marketing & Retail Development for Derivatives Market, where she was accountable for devising education and market development initiatives that effectively promote the Malaysian futures and options markets to all segments of investors, both domestically and internationally. 
-
-Esther’s leadership in Bursa Malaysia extends to organising one of the largest international palm oil conferences, the Palm & Lauric Oils Price Outlook Conference & Exhibition (POC). This renowned event, drawing approximately 2,000 corporate delegates from 60 countries to Kuala Lumpur each year, serves as the exchange’s primary platform for promoting its edible oil offerings as risk management solutions to commercial players. Throughout her tenure, Esther has spearheaded several of the exchange’s industry “firsts”, including the introduction of the Futures Trading Apprenticeship Programme (FTAP) in 2023, a pioneering market revitalisation initiative that inspired other ASEAN exchanges to adopt similar strategies. 
-
-With 15 years of experience in financial product marketing, Esther previously held roles in product management and strategic partnerships in Citibank Malaysia. She has also served in various business development capacities within the financial industry. Esther holds a master’s degree in International Business Management from Newcastle University and a bachelor’s degree in Law from Northumbria University. Her diverse expertise and qualifications enable her to transform retail development strategy in the Malaysian capital market with innovative perspectives.`,
-      },
-      {
         name: "David Ng",
         title: "Proprietary Trader",
         company: "IcebergX Sdn Bhd",
@@ -930,6 +918,18 @@ Previously, he led a team of a young and dynamic team to promote futures and der
 She has extensive experience in client servicing and engagement, with a strong focus on guiding clients through trading platforms and enhancing their overall trading journey. Jocelyn is actively involved in organizing and leading roadshows, seminars, and investor education events, where she shares practical insights on market opportunities, trading strategies, and platform navigation. Jocelyn is passionate about empowering investors with the tools and knowledge needed to navigate today’s dynamic financial markets with confidence.`,
       },
     ],
+    moderator:    {
+        name: "Esther Tio",
+        title:
+          "Senior Vice President, Head of Retail Derivatives Coverage, Group Commercial & Market Coverage",
+        company: "Bursa Malaysia Berhad",
+        photo: "/optimized/estherTio.jpg",
+        bio: `As Head of Retail Derivatives Coverage under the Group Commercial & Market Coverage division at Bursa Malaysia, Esther is responsible for shaping and scaling the exchange’s retail marketing strategy across derivatives and multiple product offerings within the group. She joined Bursa Malaysia in 2019 and has previously served as Head of Marketing & Retail Development for Derivatives Market, where she was accountable for devising education and market development initiatives that effectively promote the Malaysian futures and options markets to all segments of investors, both domestically and internationally. 
+
+Esther’s leadership in Bursa Malaysia extends to organising one of the largest international palm oil conferences, the Palm & Lauric Oils Price Outlook Conference & Exhibition (POC). This renowned event, drawing approximately 2,000 corporate delegates from 60 countries to Kuala Lumpur each year, serves as the exchange’s primary platform for promoting its edible oil offerings as risk management solutions to commercial players. Throughout her tenure, Esther has spearheaded several of the exchange’s industry “firsts”, including the introduction of the Futures Trading Apprenticeship Programme (FTAP) in 2023, a pioneering market revitalisation initiative that inspired other ASEAN exchanges to adopt similar strategies. 
+
+With 15 years of experience in financial product marketing, Esther previously held roles in product management and strategic partnerships in Citibank Malaysia. She has also served in various business development capacities within the financial industry. Esther holds a master’s degree in International Business Management from Newcastle University and a bachelor’s degree in Law from Northumbria University. Her diverse expertise and qualifications enable her to transform retail development strategy in the Malaysian capital market with innovative perspectives.`,
+      },
   },
 
   {
