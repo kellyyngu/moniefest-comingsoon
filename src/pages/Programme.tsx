@@ -525,9 +525,15 @@ His vision for Gambit Group is to develop a future-ready financial platform that
 const engagementStageSchedule: Session[] = [
   {
     time: "11:30 - 12:00",
-    title: "Coming Soon",
+    title: "How I Won The World Cup Trading Championship",
     description: "",
-    speakers: [],
+    speakers: [  {
+    name: "Dato' Dr Nazri Khan (DDNK)",
+    title: "No.1 World Trading Champion 2024",
+    company: "Inter-Pacific Asset Management Sdn. Bhd.",
+    photo: "/optimized/drNazriKhan.jpg",
+    bio: `Dato’ Dr. Nazri Khan (DDNK) is a renowned financial expert with over 26 years of experience in investment, fund management, and economics. He is a licensed fund manager at Inter-Pacific Asset Management Sdn. Bhd., an award-winning trader, and a prominent educator, having reached over 300,000 participants through seminars, media, and his show “Menang Saham Bersama DDNK.” DDNK holds a Ph.D. in Management, is an adjunct professor, and has multiple professional certifications in technical analysis. Recognized both nationally and internationally, he has received numerous awards, including the Lifetime Honorary Fellow of MATA and ASEAN Outstanding Entrepreneur Lifetime Achievement Award, and continues to champion ethical investing and financial literacy in Malaysia and beyond.`,
+  },],
   },
   {
     time: "12:00 - 12:30",
@@ -722,6 +728,19 @@ Lucas sits at the intersection of audience, monetisation, and experience—worki
 
 His current obsession: using data, distribution, and smart financing to help events scale faster, sell better, and last longer.`,
       },
+        {
+    name: "Gareth Tan",
+    title: "Managing Director",
+    company: "LFF Group (Lee’s Fandbee)",
+    photo: "/optimized/garethTan.jpg",
+    bio: `Gareth Tan is the Managing Director of Lee's Frozen Food (Lee's Fandbee), one of the largest frozen food importers and distributors in Southeast Asia.
+
+Under his leadership, the company has expanded with 10 retail stores in Malaysia and 3 in Cambodia, with operations and distribution extending to Vietnam and further expansion planned across the region.
+
+Lee’s specializes in importing and supplying high-quality meat, dairy, seafood, bakery, and other imported products at the most affordable prices in the market, while maintaining strict hygiene and halal standards.
+
+Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
+  },
     ],
   },
 
@@ -889,6 +908,16 @@ const mainStageScheduleDay2: Session[] = [
 
     Today, he channels that experience into his mission of simplifying property knowledge through engaging videos and honest property reviews nationwide. Moreover, he has documented more than 500 different property projects to date.`,
       },
+      {
+        name: "Lai Le Ann",
+        title: "Content Creator",
+        company: "",
+        photo: "/optimized/leAnn.jpg",
+        bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
+
+Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
+Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
+      },
     ],
     description: "",
   },
@@ -918,18 +947,18 @@ Previously, he led a team of a young and dynamic team to promote futures and der
 She has extensive experience in client servicing and engagement, with a strong focus on guiding clients through trading platforms and enhancing their overall trading journey. Jocelyn is actively involved in organizing and leading roadshows, seminars, and investor education events, where she shares practical insights on market opportunities, trading strategies, and platform navigation. Jocelyn is passionate about empowering investors with the tools and knowledge needed to navigate today’s dynamic financial markets with confidence.`,
       },
     ],
-    moderator:    {
-        name: "Esther Tio",
-        title:
-          "Senior Vice President, Head of Retail Derivatives Coverage, Group Commercial & Market Coverage",
-        company: "Bursa Malaysia Berhad",
-        photo: "/optimized/estherTio.jpg",
-        bio: `As Head of Retail Derivatives Coverage under the Group Commercial & Market Coverage division at Bursa Malaysia, Esther is responsible for shaping and scaling the exchange’s retail marketing strategy across derivatives and multiple product offerings within the group. She joined Bursa Malaysia in 2019 and has previously served as Head of Marketing & Retail Development for Derivatives Market, where she was accountable for devising education and market development initiatives that effectively promote the Malaysian futures and options markets to all segments of investors, both domestically and internationally. 
+    moderator: {
+      name: "Esther Tio",
+      title:
+        "Senior Vice President, Head of Retail Derivatives Coverage, Group Commercial & Market Coverage",
+      company: "Bursa Malaysia Berhad",
+      photo: "/optimized/estherTio.jpg",
+      bio: `As Head of Retail Derivatives Coverage under the Group Commercial & Market Coverage division at Bursa Malaysia, Esther is responsible for shaping and scaling the exchange’s retail marketing strategy across derivatives and multiple product offerings within the group. She joined Bursa Malaysia in 2019 and has previously served as Head of Marketing & Retail Development for Derivatives Market, where she was accountable for devising education and market development initiatives that effectively promote the Malaysian futures and options markets to all segments of investors, both domestically and internationally. 
 
 Esther’s leadership in Bursa Malaysia extends to organising one of the largest international palm oil conferences, the Palm & Lauric Oils Price Outlook Conference & Exhibition (POC). This renowned event, drawing approximately 2,000 corporate delegates from 60 countries to Kuala Lumpur each year, serves as the exchange’s primary platform for promoting its edible oil offerings as risk management solutions to commercial players. Throughout her tenure, Esther has spearheaded several of the exchange’s industry “firsts”, including the introduction of the Futures Trading Apprenticeship Programme (FTAP) in 2023, a pioneering market revitalisation initiative that inspired other ASEAN exchanges to adopt similar strategies. 
 
 With 15 years of experience in financial product marketing, Esther previously held roles in product management and strategic partnerships in Citibank Malaysia. She has also served in various business development capacities within the financial industry. Esther holds a master’s degree in International Business Management from Newcastle University and a bachelor’s degree in Law from Northumbria University. Her diverse expertise and qualifications enable her to transform retail development strategy in the Malaysian capital market with innovative perspectives.`,
-      },
+    },
   },
 
   {
@@ -1125,10 +1154,10 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
         note: "worth RM4,998",
       },
       {
-        name: "Apple Watch SE",
-        url: "https://www.apple.com/my/shop/buy-watch/apple-watch-se",
-        image: "/optimized/applewatch.webp",
-        note: "worth RM1,049",
+        name: "1 x 1-Year Tealive",
+        url: "https://www.tealive.com.my/",
+        image: "/optimized/tealive.jpeg",
+        note: "worth RM1,040",
       },
     ],
   },
@@ -1365,11 +1394,11 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
         image: "/optimized/iphone-17-pro.webp",
         note: "worth RM5,999",
       },
-      {
-        name: "iPhone 17",
-        url: "https://www.apple.com/my/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender",
-        image: "/optimized/iphone17.webp",
-        note: "worth RM3,999",
+        {
+        name: "1 x 1-Year Tealive",
+        url: "https://www.tealive.com.my/",
+        image: "/optimized/tealive.jpeg",
+        note: "worth RM1,040",
       },
     ],
   },
@@ -1479,6 +1508,16 @@ Driven by a commitment to financial literacy and responsible investing, I contin
       "Podcast 2: Financial Independence for Women — Planning, Investing & Growing",
     description: "",
     speakers: [
+      {
+        name: "Lai Le Ann",
+        title: "Content Creator",
+        company: "",
+        photo: "/optimized/leAnn.jpg",
+        bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
+
+Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
+Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
+      },
       {
         name: "Isabelle Zhen",
         title: "Head of Group Equity Marketing",

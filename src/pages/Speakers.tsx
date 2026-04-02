@@ -885,6 +885,26 @@ Previously, he led a team of a young and dynamic team to promote futures and der
 
 She has extensive experience in client servicing and engagement, with a strong focus on guiding clients through trading platforms and enhancing their overall trading journey. Jocelyn is actively involved in organizing and leading roadshows, seminars, and investor education events, where she shares practical insights on market opportunities, trading strategies, and platform navigation. Jocelyn is passionate about empowering investors with the tools and knowledge needed to navigate today’s dynamic financial markets with confidence.`,
   },
+  {
+    name: "Dato' Dr Nazri Khan (DDNK)",
+    title: "No.1 World Trading Champion 2024",
+    company: "Inter-Pacific Asset Management Sdn. Bhd.",
+    photo: "/optimized/drNazriKhan.jpg",
+    bio: `Dato’ Dr. Nazri Khan (DDNK) is a renowned financial expert with over 26 years of experience in investment, fund management, and economics. He is a licensed fund manager at Inter-Pacific Asset Management Sdn. Bhd., an award-winning trader, and a prominent educator, having reached over 300,000 participants through seminars, media, and his show “Menang Saham Bersama DDNK.” DDNK holds a Ph.D. in Management, is an adjunct professor, and has multiple professional certifications in technical analysis. Recognized both nationally and internationally, he has received numerous awards, including the Lifetime Honorary Fellow of MATA and ASEAN Outstanding Entrepreneur Lifetime Achievement Award, and continues to champion ethical investing and financial literacy in Malaysia and beyond.`,
+  },
+  {
+    name: "Gareth Tan",
+    title: "Managing Director",
+    company: "LFF Group (Lee’s Fandbee)",
+    photo: "/optimized/garethTan.jpg",
+    bio: `Gareth Tan is the Managing Director of Lee's Frozen Food (Lee's Fandbee), one of the largest frozen food importers and distributors in Southeast Asia.
+
+Under his leadership, the company has expanded with 10 retail stores in Malaysia and 3 in Cambodia, with operations and distribution extending to Vietnam and further expansion planned across the region.
+
+Lee’s specializes in importing and supplying high-quality meat, dairy, seafood, bakery, and other imported products at the most affordable prices in the market, while maintaining strict hygiene and halal standards.
+
+Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
+  },
 ];
 
 // Grouping for page layout
@@ -943,7 +963,9 @@ const desiredSpeakerOrder: string[] = [
   "Chloe Foo",
   "David Ng",
   "Dato' Eddie Ng 拿督黄余兴",
+  "Dato' Dr Nazri Khan (DDNK)",
   "Edward Ling",
+  "Gareth Tan",
   "Gin Chong",
   "Faiz Azmi",
   "Fong Wei Ziet",

@@ -81,6 +81,12 @@ const uncleJeffLogo = "/optimized/uncleJeff.svg";
 const vanzoLogo = "/optimized/vanzo.jpeg";
 const ticketmelonLogo = "/optimized/ticketmelon.svg";
 const nineSharesLogo = "/optimized/9shares.jpeg";
+const pYTCHLogo = "/optimized/PYTCH.png";
+const theFinancialTodayLogo = "/optimized/theFinancialToday.jpg";
+const ddnkLogo = "/optimized/DDNK.png";
+const bondsupermartLogo = "/optimized/bondsupermart.png";
+const LFFGroupLogo = "/optimized/LFFGroup.png";
+
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -113,8 +119,8 @@ const logoUrls: Record<string, string> = {
   [cgsiLogo]: "https://www.cgsi.com",
   [ijmRimbayuLogo]: "https://rimbayu.ijmland.com/home",
   [rianaDutamasLogo]: "https://rianadutamas.com/stellaris/",
-  [epfLogo]: undefined,
-  [greatEasternLogo]: undefined,
+  [epfLogo]: "https://www.kwsp.gov.my/en/member/savings",
+  [greatEasternLogo]: "https://www.greateasternlife.com/my/en/personal-insurance.html",
   [tradeViewCapitalLogo]: undefined,
   [oppoLogo]: undefined,
   [grabLogo]: undefined,
@@ -133,6 +139,7 @@ const logoUrls: Record<string, string> = {
   [colonyLogo]: undefined,
   [zusLogo]: undefined,
   [pmbLogo]: "https://www.pmbinvestment.com.my/",
+  [printciousLogo]: "https://www.printcious.com/my?utm_source=sps&utm_medium=monie",
   [beyondInsightsLogo]:
     "https://www.beyondinsights.net/?utm_source=moniefest&utm_campaign=moniefest2026",
   [fpamLogo]: "https://fpam.org.my/",
@@ -182,14 +189,16 @@ const giftPartners = Array.from({ length: 4 }).map((_, i) =>
 const giftSponsors = [printciousLogo, tealiveLogo, uncleJeffLogo, zusLogo];
 const exclusivePhonePartners = [oppoLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const mediaPartners = [nineSharesLogo, ekonomiRakyatLogo];
+const mediaPartners = [nineSharesLogo, ekonomiRakyatLogo, pYTCHLogo, theFinancialTodayLogo];
 const friendsOfMonie = [
   asriAhmadAcademyLogo,
   bbbWealthLogo,
   bbkNetworkLogo,
   beyondInsightsLogo,
+  bondsupermartLogo,
   chuckLogo,
   colonyLogo,
+  ddnkLogo,
   ecoAsiaCapitalLogo,
   endeavorLogo,
   financeLangLogo,
@@ -201,6 +210,7 @@ const friendsOfMonie = [
   insightInvestsLogo,
   insightsAnalyticsBerhadLogo,
   jaLogo,
+  LFFGroupLogo,
   mpgLogo,
   moneyBraderLogo,
   mrmoneyLogo,
