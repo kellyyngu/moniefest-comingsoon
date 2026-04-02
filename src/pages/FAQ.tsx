@@ -192,7 +192,7 @@ const FAQPage = () => {
                           </div>
 
                           <h4 className="font-semibold mt-4">2) Grab</h4>
-                          <p className="mt-2">We’ll be announcing a promo code soon — stay tuned on our Instagram <a href="https://instagram.com/monie.my" target="_blank" rel="noreferrer" className="text-primary underline">@monie.my</a>!</p>
+                          <p className="mt-2">Use promo code MONIEFEST2026 to enjoy RM4 off your Grab ride to MITEC KL.</p>
 
                           <h4 className="font-semibold mt-4">3) Driving & Parking</h4>
                           <p className="mt-2">You can also drive and park at nearby locations — check out the parking rates <a href="https://mitec.com.my/organise/facilites/#mitec-parking" target="_blank" rel="noreferrer" className="text-primary underline">here</a>.</p>
