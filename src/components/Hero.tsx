@@ -129,7 +129,7 @@ const Hero = ({ onOpenEventbrite }: HeroProps) => {
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm sm:text-base md:text-lg">
                   <div className="flex items-center gap-2">
                     <Clock className="text-primary w-4 h-4 md:w-5 md:h-5 shrink-0" aria-hidden />
-                    <span className="text-white font-semibold">10AM – 9PM</span>
+                    <span className="text-white font-semibold">9AM – 9PM</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-2 text-sm sm:text-base md:text-lg">
