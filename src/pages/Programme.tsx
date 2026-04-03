@@ -1608,7 +1608,7 @@ Driven by a strong commitment to investor education, Ronnie continues to advocat
         bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
       },
       {
-        name: "Dato' Eddie Ng 拿督黄余兴",
+        name: "Eddie Ng",
         title: "Founder & CEO",
         company: "VANZO",
         photo: "/optimized/eddieNg.jpeg",
