@@ -186,7 +186,7 @@ const goldSponsors = [
 const giftPartners = Array.from({ length: 4 }).map((_, i) =>
   placeholderImg(`Gift+${i + 1}`),
 );
-const giftSponsors = [printciousLogo, tealiveLogo, uncleJeffLogo, zusLogo];
+const giftSponsors = [ tealiveLogo, zusLogo, printciousLogo, uncleJeffLogo];
 const exclusivePhonePartners = [oppoLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
 const mediaPartners = [nineSharesLogo, ekonomiRakyatLogo, pYTCHLogo, theFinancialTodayLogo];
