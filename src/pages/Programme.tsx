@@ -527,13 +527,17 @@ const engagementStageSchedule: Session[] = [
     time: "11:30 - 12:00",
     title: "How I Won The World Cup Trading Championship",
     description: "",
-    speakers: [  {
-    name: "Dato' Dr Nazri Khan (DDNK)",
-    title: "No.1 World Trading Champion 2024",
-    company: "Inter-Pacific Asset Management Sdn. Bhd.",
-    photo: "/optimized/drNazriKhan.jpg",
-    bio: `Dato’ Dr. Nazri Khan (DDNK) is a renowned financial expert with over 26 years of experience in investment, fund management, and economics. He is a licensed fund manager at Inter-Pacific Asset Management Sdn. Bhd., an award-winning trader, and a prominent educator, having reached over 300,000 participants through seminars, media, and his show “Menang Saham Bersama DDNK.” DDNK holds a Ph.D. in Management, is an adjunct professor, and has multiple professional certifications in technical analysis. Recognized both nationally and internationally, he has received numerous awards, including the Lifetime Honorary Fellow of MATA and ASEAN Outstanding Entrepreneur Lifetime Achievement Award, and continues to champion ethical investing and financial literacy in Malaysia and beyond.`,
-  },],
+    speakers: [
+      {
+        name: "Dato' Dr Nazri Khan (DDNK)",
+        title: "No.1 World Trading Champion 2024",
+        company: "Berjaya Mutual Berhad",
+        photo: "/optimized/drNazriKhan.jpg",
+        bio: `Licensed fund manager at Berjaya Mutual Berhad. World Cup Trading Championship winner. Malaysia Book of Records holder. Dato' Dr. Nazri Khan (DDNK) is a prominent figure in financial management, investment, and economics.
+
+He is widely recognized for his contributions in educating the public on the importance of ethical investment strategies. With a teaching record of over 300,000 participants, he has made a significant impact on financial literacy.`,
+      },
+    ],
   },
   {
     time: "12:00 - 12:30",
@@ -728,19 +732,19 @@ Lucas sits at the intersection of audience, monetisation, and experience—worki
 
 His current obsession: using data, distribution, and smart financing to help events scale faster, sell better, and last longer.`,
       },
-        {
-    name: "Gareth Tan",
-    title: "Managing Director",
-    company: "LFF Group (Lee’s Fandbee)",
-    photo: "/optimized/garethTan.jpg",
-    bio: `Gareth Tan is the Managing Director of Lee's Frozen Food (Lee's Fandbee), one of the largest frozen food importers and distributors in Southeast Asia.
+      {
+        name: "Gareth Tan",
+        title: "Managing Director",
+        company: "LFF Group (Lee’s Fandbee)",
+        photo: "/optimized/garethTan.jpg",
+        bio: `Gareth Tan is the Managing Director of Lee's Frozen Food (Lee's Fandbee), one of the largest frozen food importers and distributors in Southeast Asia.
 
 Under his leadership, the company has expanded with 10 retail stores in Malaysia and 3 in Cambodia, with operations and distribution extending to Vietnam and further expansion planned across the region.
 
 Lee’s specializes in importing and supplying high-quality meat, dairy, seafood, bakery, and other imported products at the most affordable prices in the market, while maintaining strict hygiene and halal standards.
 
 Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
-  },
+      },
     ],
   },
 
@@ -1394,7 +1398,7 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
         image: "/optimized/iphone-17-pro.webp",
         note: "worth RM5,999",
       },
-        {
+      {
         name: "1 x 1-Year Tealive",
         url: "https://www.tealive.com.my/",
         image: "/optimized/tealive.jpeg",

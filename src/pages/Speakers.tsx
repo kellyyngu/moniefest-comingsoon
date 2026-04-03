@@ -888,9 +888,11 @@ She has extensive experience in client servicing and engagement, with a strong f
   {
     name: "Dato' Dr Nazri Khan (DDNK)",
     title: "No.1 World Trading Champion 2024",
-    company: "Inter-Pacific Asset Management Sdn. Bhd.",
+    company: "Berjaya Mutual Berhad",
     photo: "/optimized/drNazriKhan.jpg",
-    bio: `Dato’ Dr. Nazri Khan (DDNK) is a renowned financial expert with over 26 years of experience in investment, fund management, and economics. He is a licensed fund manager at Inter-Pacific Asset Management Sdn. Bhd., an award-winning trader, and a prominent educator, having reached over 300,000 participants through seminars, media, and his show “Menang Saham Bersama DDNK.” DDNK holds a Ph.D. in Management, is an adjunct professor, and has multiple professional certifications in technical analysis. Recognized both nationally and internationally, he has received numerous awards, including the Lifetime Honorary Fellow of MATA and ASEAN Outstanding Entrepreneur Lifetime Achievement Award, and continues to champion ethical investing and financial literacy in Malaysia and beyond.`,
+    bio: `Licensed fund manager at Berjaya Mutual Berhad. World Cup Trading Championship winner. Malaysia Book of Records holder. Dato' Dr. Nazri Khan (DDNK) is a prominent figure in financial management, investment, and economics.
+
+He is widely recognized for his contributions in educating the public on the importance of ethical investment strategies. With a teaching record of over 300,000 participants, he has made a significant impact on financial literacy.`,
   },
   {
     name: "Gareth Tan",
