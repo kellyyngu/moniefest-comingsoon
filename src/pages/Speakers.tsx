@@ -124,7 +124,7 @@ Driven by the belief that education is the foundation of better money choices, G
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
   },
   {
-    name: "ACP Puan Lai",
+    name: "ACP (R) Lai Lee Ching",
     title: "Digital Trust & Outreach Lead",
     company: "Vigilant Asia",
     photo: "/optimized/ACPLai.jpg",

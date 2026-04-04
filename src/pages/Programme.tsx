@@ -1077,7 +1077,7 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     description: "",
     speakers: [
       {
-        name: "ACP Puan Lai",
+        name: "ACP (R) Lai Lee Ching",
         title: "Digital Trust & Outreach Lead",
         company: "Vigilant Asia",
         photo: "/optimized/ACPLai.jpg",
