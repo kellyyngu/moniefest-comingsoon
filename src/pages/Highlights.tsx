@@ -26,6 +26,15 @@ const highlights: Highlight[] = [
   },
   {
     number: 2,
+    title: "Transportation",
+    description: "Transportation partner banner",
+    image: "/optimized/transportationBanner.jpg",
+    link: "https://www.instagram.com/p/DWshDwwk7_I/?img_index=1",
+    noCrop: true,
+    icon: Sparkles,
+  },
+  {
+    number: 3,
     title: "Bursa Malaysia",
     description: "Official Bursa Malaysia banner.",
     image: "/optimized/bursaBanner.webp",
@@ -34,7 +43,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 3,
+    number: 4,
     title: "FSM",
     description: "FSM banner and partner highlight.",
     image: "/optimized/FSMbanner.jpg",
@@ -43,7 +52,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 4,
+    number: 5,
     title: "Maybank",
     description: "Maybank campaign banner",
     image: "/optimized/maybankBanner.jpg",
@@ -52,7 +61,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 5,
+    number: 6,
     title: "Moomoo",
     description: "Moomoo welcome promotion banner",
     image: "/optimized/moomooBanner.jpeg",
@@ -61,7 +70,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 6,
+    number: 7,
     title: "ASNB",
     description: "ASNB banner and partner highlight.",
     image: "/optimized/ASNBbanner.png",
@@ -69,7 +78,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 7,
+    number: 8,
     title: "CGSi",
     description: "CGSi partner banner",
     image: "/optimized/CGSiBanner.jpg",
@@ -77,7 +86,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 8,
+    number: 9,
     title: "Dasher",
     description: "Dasher banner",
     image: "/optimized/dasherBanner.png",
@@ -85,7 +94,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 9,
+    number: 10,
     title: "Phillip Capital – Unlock Bursa US CFDs with NOVA",
     description: "Phillip Capital promotion",
     image: "/optimized/phillipCapitalBanner.png",
@@ -94,7 +103,7 @@ const highlights: Highlight[] = [
     icon: Gift,
   },
   {
-    number: 10,
+    number: 11,
     title: "RytBank",
     description: "RytBank banner",
     image: "/optimized/rytBankBanner.jpeg",
@@ -102,7 +111,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 11,
+    number: 12,
     title: "Funding Societies",
     description: "Funding Societies banner",
     image: "/optimized/fundingSocietiesBanner.jpg",
@@ -110,7 +119,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 12,
+    number: 13,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -119,7 +128,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 13,
+    number: 14,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -128,7 +137,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 14,
+    number: 15,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",
