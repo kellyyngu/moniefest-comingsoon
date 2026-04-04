@@ -124,16 +124,89 @@ Driven by the belief that education is the foundation of better money choices, G
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
   },
   {
-    name: "Afiq Ismail",
-    title: "PR & Marketing Manager",
+    name: "ACP Puan Lai",
+    title: "Digital Trust & Outreach Lead",
+    company: "Vigilant Asia",
+    photo: "/optimized/ACPLai.jpg",
+    bio: `ACP (R) Lai Lee Ching, currently the Digital Trust & Outreach Lead at Vigilant Asia, a cybersecurity firm focused on strengthening digital trust and protecting users in today’s evolving threat landscape.
+
+With over 37 years of service in the Royal Malaysia Police, she last served as the Principal Assistant Director of Strategic Planning in the Commercial Crime Investigation Department (CCID), where she led Malaysia’s nationwide scam awareness strategy.
+
+She is widely recognised as a pioneer in leveraging social media as a real-time crisis communication tool, transforming it into a trusted public information channel during major national events, including large-scale rallies and sensitive situations.
+
+
+Throughout her career, she has driven impactful national initiatives such as:
+
+1) OPPA, Malaysia’s first scam awareness film,
+
+2) The “Be Smart, Stay Alert” nationwide campaign,
+
+3) And strategic collaborations between law enforcement, financial institutions, and technology partners to combat evolving fraud threats.
+
+
+Her contributions have earned her numerous prestigious recognitions, including:
+
+1) Top Women in Security ASEAN 2024,
+
+2) Affin Invikta Top 50 Women of Excellence 2025,
+
+3) As well as national honours conferred by His Majesty the King of Malaysia, including PSPP, KMM, and KMW.
+
+Today, she continues to play a key role in advancing digital trust, fraud prevention, and public-private collaboration across the cybersecurity ecosystem.`,
+  },
+  {
+    name: "Tunku Danny Nasaifuddin Mudzaffar",
+    title: "Founder & CEO",
+    company: "Microleap PLT",
+    photo: "/optimized/tunkuDanny.jpg",
+    bio: `Tunku Danny Nasaifuddin Mudzaffar
+Founder & CEO, Microleap PLT
+Tunku Danny is an ex-banker having worked in senior positions in London and  Kuala Lumpur at Standard Chartered and BNP Paribas, from diverse fields  such as Asset-Liability Management, Money Market Sales and Financial  Institutions Coverage.  
+
+Tunku Danny had more than 15 years of financial services experience before  he founded microLEAP, a Shariah Compliant & Conventional Peer-to-Peer  (P2P) Financing platform in 2019. microLEAP is a proudly Malaysian fintech  company that allows MSMEs to access crowd-sourced funds for working  capital and is regulated by the Securities Commission Malaysia (SC). 
+
+Tunku Danny was voted Fintech Frontier Emerging 35, one of the Top 50  Fintech Founders in Southeast Asia in 2025 by the Fintech News Network. 
+
+Tunku Danny is also a Founding Member of iConnect – Fintech in Islamic  Finance, a group made up of industry players, regulators and researchers  tasked with the mission of making Malaysia a global Islamic fintech hub. 
+
+With social impact close to his heart, Tunku Danny is a Social Value Associate  having passed Social Value International’s Level 1 exam. 
+
+Tunku Danny holds an MBA from the Nottingham University Business School.`,
+  },
+  {
+    name: "Marzuki Musa",
+    title: "Chief Marketing Officer",
     company: "microLEAP",
-    photo: "/optimized/afiq.webp",
-    whiteBg: true,
-    bio: `Afiq Ismail is the PR & Marketing Manager at microLEAP, with extensive experience in public relations, digital marketing, and brand communications, particularly within the fintech and impact-driven sectors. He plays a key role in shaping microLEAP’s brand presence and positioning as Malaysia’s leading Shariah-compliant peer-to-peer financing platform.
+    photo: "/optimized/marzukiMusa.png",
+    bio: `
 
-In 2024, Afiq was instrumental in driving microLEAP’s brand growth, contributing to a 246% increase in social media engagement and significantly expanding the platform’s share of voice. His expertise spans strategic content creation, media planning, and narrative development to effectively connect fintech solutions with broader audiences.
+- Brings over a decade of experience in brand strategy, digital marketing, media relations, and corporate communications.
 
-Afiq is also a strong advocate for integrating AI tools into public relations, leveraging automation and data-driven insights to enhance storytelling, outreach, and audience engagement. Passionate about purposeful branding and inclusive financial communication, he is committed to humanising fintech and making financial solutions more accessible to underserved communities.`,
+- Formerly with Media Prima, where he managed impactful campaigns across TV, radio, print, and digital, gaining a deep understanding of integrated media strategies.
+
+- Skilled in event management and stakeholder engagement, having led numerous large-scale events, product launches, and brand activations.
+
+- Currently leads microLEAP’s sales and marketing unit, focusing on investor engagement and promoting both Shariah-compliant and conventional P2P financing.
+
+- Deeply passionate about empowering underserved communities, driving financial literacy, and fostering meaningful connections through strategic outreach.`,
+  },
+  {
+    name: "Chan Wei Chi",
+    title: "Chief Executive Officer",
+    company: "KDX (Formerly Tokenize Malaysia)",
+    photo: "/optimized/chanWeiChi.jpg",
+    bio: `
+
+Wei Chi is a pioneer in Malaysia's regulated digital asset and alternative investment industry. He is also the president of the Malaysian Digital Asset Platform Association (MDAPA). As Chief Executive Officer of KDX, he leads one of only six Digital Asset Exchanges approved by the Securities Commission Malaysia. KDX is a subsidiary of Kenanga. 
+
+Previously, he was also a co-founding member of another regulated Digital Asset Exchange and served as Chief Operating Officer of an equity and token-based crowdfunding system.`,
+  },
+  {
+    name: "Vincent Yeo",
+    title: "Chief Executive Officer/Co-Founder",
+    company: "PeerHive",
+    photo: "/optimized/vincentYeo.jpeg",
+    bio: `vincent profile not available yet`,
   },
   {
     name: "Datuk Clifford Hii",
@@ -951,7 +1024,6 @@ const desiredSpeakerOrder: string[] = [
   "Ronnie Chai Teck Wei",
   "Trent Cheok",
   "Lee Chee Seng",
-  "Afiq Ismail",
   "Kathlyn Toh",
   "Mohammad Bazli Che Rozenan, CFA",
   "Ng Tzyy Loon, CFA",

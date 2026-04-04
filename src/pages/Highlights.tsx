@@ -44,6 +44,15 @@ const highlights: Highlight[] = [
   },
   {
     number: 4,
+    title: "Maybank",
+    description: "Maybank campaign banner",
+    image: "/optimized/maybankBanner.jpg",
+    link: "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/privilege/rewards/campaign.page",
+    noCrop: true,
+    icon: Trophy,
+  },
+  {
+    number: 5,
     title: "Moomoo",
     description: "Moomoo welcome promotion banner",
     image: "/optimized/moomooBanner.jpeg",
@@ -52,7 +61,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 5,
+    number: 6,
     title: "ASNB",
     description: "ASNB banner and partner highlight.",
     image: "/optimized/ASNBbanner.png",
@@ -60,7 +69,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 6,
+    number: 7,
     title: "CGSi",
     description: "CGSi partner banner",
     image: "/optimized/CGSiBanner.jpg",
@@ -68,7 +77,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 7,
+    number: 8,
     title: "Dasher",
     description: "Dasher banner",
     image: "/optimized/dasherBanner.png",
@@ -76,7 +85,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 8,
+    number: 9,
     title: "Phillip Capital – Unlock Bursa US CFDs with NOVA",
     description: "Phillip Capital promotion",
     image: "/optimized/phillipCapitalBanner.png",
@@ -84,9 +93,16 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Gift,
   },
-
   {
-    number: 9,
+    number: 10,
+    title: "RytBank",
+    description: "RytBank banner",
+    image: "/optimized/rytBankBanner.jpeg",
+    noCrop: true,
+    icon: Sparkles,
+  },
+  {
+    number: 11,
     title: "Funding Societies",
     description: "Funding Societies banner",
     image: "/optimized/fundingSocietiesBanner.jpg",
@@ -94,7 +110,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 10,
+    number: 12,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -103,7 +119,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 11,
+    number: 13,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -112,7 +128,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 12,
+    number: 14,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",

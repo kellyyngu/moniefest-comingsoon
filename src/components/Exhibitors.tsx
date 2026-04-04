@@ -86,7 +86,8 @@ const theFinancialTodayLogo = "/optimized/theFinancialToday.jpg";
 const ddnkLogo = "/optimized/DDNK.png";
 const bondsupermartLogo = "/optimized/bondsupermart.png";
 const LFFGroupLogo = "/optimized/LFFGroup.png";
-
+const saatDimensiLogo = "/optimized/saatDimensi.jpeg";
+const troopersLogo = "/optimized/troopers.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -119,8 +120,10 @@ const logoUrls: Record<string, string> = {
   [cgsiLogo]: "https://www.cgsi.com",
   [ijmRimbayuLogo]: "https://rimbayu.ijmland.com/home",
   [rianaDutamasLogo]: "https://rianadutamas.com/stellaris/",
+  [saatDimensiLogo]: "https://www.saatdimensi.com/",
   [epfLogo]: "https://www.kwsp.gov.my/en/member/savings",
-  [greatEasternLogo]: "https://www.greateasternlife.com/my/en/personal-insurance.html",
+  [greatEasternLogo]:
+    "https://www.greateasternlife.com/my/en/personal-insurance.html",
   [tradeViewCapitalLogo]: undefined,
   [oppoLogo]: undefined,
   [grabLogo]: undefined,
@@ -139,7 +142,8 @@ const logoUrls: Record<string, string> = {
   [colonyLogo]: undefined,
   [zusLogo]: undefined,
   [pmbLogo]: "https://www.pmbinvestment.com.my/",
-  [printciousLogo]: "https://www.printcious.com/my?utm_source=sps&utm_medium=monie",
+  [printciousLogo]:
+    "https://www.printcious.com/my?utm_source=sps&utm_medium=monie",
   [beyondInsightsLogo]:
     "https://www.beyondinsights.net/?utm_source=moniefest&utm_campaign=moniefest2026",
   [fpamLogo]: "https://fpam.org.my/",
@@ -171,6 +175,7 @@ const silverSponsors = [
   pmbLogo,
   publicMutualLogo,
   rianaDutamasLogo,
+  saatDimensiLogo,
   saturnaLogo,
   sinegyLogo,
 ];
@@ -186,10 +191,15 @@ const goldSponsors = [
 const giftPartners = Array.from({ length: 4 }).map((_, i) =>
   placeholderImg(`Gift+${i + 1}`),
 );
-const giftSponsors = [ tealiveLogo, zusLogo, printciousLogo, uncleJeffLogo];
+const giftSponsors = [tealiveLogo, zusLogo, printciousLogo, uncleJeffLogo];
 const exclusivePhonePartners = [oppoLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
-const mediaPartners = [nineSharesLogo, ekonomiRakyatLogo, pYTCHLogo, theFinancialTodayLogo];
+const mediaPartners = [
+  nineSharesLogo,
+  ekonomiRakyatLogo,
+  pYTCHLogo,
+  theFinancialTodayLogo,
+];
 const friendsOfMonie = [
   asriAhmadAcademyLogo,
   bbbWealthLogo,
@@ -224,6 +234,7 @@ const friendsOfMonie = [
   ticketmelonLogo,
   traddictivLogo,
   tradeViewCapitalLogo,
+  troopersLogo,
   uhnwLogo,
   vanzoLogo,
   wabikongLogo,
