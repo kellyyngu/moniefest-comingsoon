@@ -61,7 +61,7 @@ const mainStageSchedule: Session[] = [
     description: "",
     speakers: [
       {
-        name: "Lim Pinn Yang",
+        name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
         company: "Foodie Media Berhad",
         photo: pinnyang,
@@ -93,7 +93,7 @@ At Bursa, she has driven transformational initiatives that expanded investor par
       {
         name: "Yang Berhormat Liew Chin Tong",
         title: "Deputy Minister of Finance",
-        company: "Government of Malaysia",
+        company: "",
         photo: "/optimized/liewChinTong.png",
         whiteBg: true,
         bio: liewBio,
@@ -108,13 +108,13 @@ At Bursa, she has driven transformational initiatives that expanded investor par
       {
         name: "Yang Berhormat Liew Chin Tong",
         title: "Deputy Minister of Finance",
-        company: "Government of Malaysia",
+        company: "",
         photo: "/optimized/liewChinTong.png",
         whiteBg: true,
         bio: liewBio,
       },
       {
-        name: "Lim Pinn Yang",
+        name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
         company: "Foodie Media Berhad",
         photo: pinnyang,
@@ -143,13 +143,13 @@ At Monie Fest, George represents a long-term vision: building a credible financi
       {
         name: "Yang Berhormat Liew Chin Tong",
         title: "Deputy Minister of Finance",
-        company: "Government of Malaysia",
+        company: "",
         photo: "/optimized/liewChinTong.png",
         whiteBg: true,
         bio: liewBio,
       },
       {
-        name: "Lim Pinn Yang",
+        name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
         company: "Foodie Media Berhad",
         photo: pinnyang,
@@ -181,17 +181,11 @@ At Monie Fest, George represents a long-term vision: building a credible financi
         image: "/optimized/xiaomitv.webp",
         note: "worth RM1,999",
       },
-      {
-        name: "Dior Rouge Lipstick (x2)",
-        url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
-        image: "/optimized/dior-lipstick.webp",
-        note: "worth RM410",
-      },
-      {
-        name: "Samsung Galaxy Buds",
-        url: "https://www.samsung.com/my/audio-sound/galaxy-buds/galaxy-buds-core-black-sm-r410nzkaxme/",
-        image: "/optimized/samsung-galaxy-buds.webp",
-        note: "worth RM199",
+        {
+        name: "Philips NA110 Air Fryer",
+        url: "https://www.philips.com.my/c-p/NA110_09/1000-series-airfryer-1000-series-32l",
+        image: "/optimized/airfryer.webp",
+        note: "worth RM259",
       },
     ],
   },
@@ -202,7 +196,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
       {
         name: "Lim Eng Ping",
         title: "Head of Wealth Management Malaysia",
-        company: "Maybank Group Wealth",
+        company: "Maybank",
         photo: "/optimized/limEngPing.jpeg",
         bio: `Mr. Lim Eng Ping has been appointed as the Head of Wealth Management Malaysia, Group Wealth Management, Community Financial Services (CFS) Malaysia, effective 1 September 2024. Previously, he served as Head of Private Wealth Malaysia, GWM, CFS Malaysia.
 
@@ -221,14 +215,14 @@ Eng Ping joined Maybank in 2008 as Director of Investment Bankng at Maybank Inve
 Since joining Wealth Management, CFS, Eng Ping has been instrumental in growing the private business, with assets under management increasing by 16%, from RM16.8 billion to RM19.6 billion in 2023. Additionally, total fee income grew by 68.6% from RM35.9 million in 2022 to RM68.6 million in 2023.`,
       },
       {
-        name: "Fadzihan Abbas Mohamed Ramlee",
+        name: "Encik Fadzihan Abbas Mohamed Ramlee",
         title: "Chief Executive Officer",
-        company: "ASNB",
+        company: "Amanah Saham Nasional Berhad (ASNB)",
         photo: "/optimized/fadzihanAbbasMohamedRamlee.jpg",
       },
     ],
     moderator: {
-      name: "Mohammad Bazli Che Rozenan, CFA",
+      name: "Mohammad Bazli Che Rozenan",
       title: "Director, Members Engagement",
       company: "CFA Society Malaysia",
       photo: "/optimized/mohammadBazli.jpg",
@@ -383,11 +377,11 @@ Marketing and Economics, from Monash University.`,
         image: "/optimized/ipad11.webp",
         note: "worth RM1599",
       },
-      {
-        name: "Philips NA110 Air Fryer",
-        url: "https://www.philips.com.my/c-p/NA110_09/1000-series-airfryer-1000-series-32l",
-        image: "/optimized/airfryer.webp",
-        note: "worth RM259",
+        {
+        name: "Dior Rouge Lipstick (x2)",
+        url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
+        image: "/optimized/dior-lipstick.webp",
+        note: "worth RM410",
       },
     ],
   },
@@ -398,7 +392,7 @@ Marketing and Economics, from Monash University.`,
     speakers: [
       {
         name: "Marzuki Musa",
-        title: "Chief Marketing Officer",
+        title: "PR & Marketing Manager",
         company: "microLEAP",
         photo: "/optimized/marzukiMusa.png",
         bio: `
@@ -445,7 +439,7 @@ Marketing and Economics, from Monash University.`,
       },
       {
         name: "Datuk Clifford Hii",
-        title: "Group CEO",
+        title: "Chief Executive Officer",
         company: "Gambit Group",
         photo: "/optimized/datuk_clifford_hii.jpg",
         bio: `Datuk Clifford Hii is the Group Chief Executive Officer of Gambit Group, a financial infrastructure and wealth solutions ecosystem focused on trustee services, private credit, investment, and digital platforms.
@@ -471,7 +465,7 @@ His vision for Gambit Group is to develop a future-ready financial platform that
       {
         name: "Tevaryan A/L Thiagarajan",
         title: "Director, Digital Custody Development",
-        company: "Gambit Custody Sdn Bhd (Part of Gambit Group Consortium)",
+        company: "Gambit Custody Sdn Bhd",
         photo: "/optimized/tevaryanThiagarajan.jpg",
         bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
       },
@@ -485,7 +479,7 @@ His vision for Gambit Group is to develop a future-ready financial platform that
     bullets: [],
     speakers: [],
     moderator: {
-      name: "Lim Pinn Yang",
+      name: "Nicholas Lim Pinn Yang",
       title: "Chief Executive Officer",
       company: "Foodie Media Berhad",
       photo: pinnyang,
@@ -511,7 +505,7 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
       },
       {
         name: "Vincent Yeo",
-        title: "Chief Executive Officer/Co-Founder",
+        title: "Co-Founder/CEO",
         company: "PeerHive",
         photo: "/optimized/vincentYeo.jpeg",
         bio: `vincent profile not available yet`,
@@ -615,7 +609,7 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     description: "",
     speakers: [
       {
-        name: "Ka Hoe",
+        name: "Ng Ka Hoe, CFP®",
         title: "Financial Transformation Coach, Licensed Financial Planner",
         company: "JA Personal Finance Academy",
         photo: "/optimized/kahoe.jpg",
@@ -712,7 +706,7 @@ Through talks, workshops, and educational content, Bob aims to make finance acce
     moderator: {
       name: "Sai",
       title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
-      company: "Wabikong",
+      company: "Wabikong TV",
       photo: "/optimized/sai.jpg",
       bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
 
@@ -749,6 +743,20 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     description: "",
     speakers: [
       {
+        name: "Gareth Tan",
+        title: "Managing Director",
+        company: "LFF Group (Lee’s Fandbee)",
+        photo: "/optimized/garethTan.jpg",
+        bio: `Gareth Tan is the Managing Director of Lee's Frozen Food (Lee's Fandbee), one of the largest frozen food importers and distributors in Southeast Asia.
+
+Under his leadership, the company has expanded with 10 retail stores in Malaysia and 3 in Cambodia, with operations and distribution extending to Vietnam and further expansion planned across the region.
+
+Lee’s specializes in importing and supplying high-quality meat, dairy, seafood, bakery, and other imported products at the most affordable prices in the market, while maintaining strict hygiene and halal standards.
+
+Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
+      },
+    ],
+    moderator:       {
         name: "Lucas Seneviratne",
         title: "Head of Markets (Singapore & Malaysia)",
         company: "Ticketmelon",
@@ -763,20 +771,6 @@ Lucas sits at the intersection of audience, monetisation, and experience—worki
 
 His current obsession: using data, distribution, and smart financing to help events scale faster, sell better, and last longer.`,
       },
-      {
-        name: "Gareth Tan",
-        title: "Managing Director",
-        company: "LFF Group (Lee’s Fandbee)",
-        photo: "/optimized/garethTan.jpg",
-        bio: `Gareth Tan is the Managing Director of Lee's Frozen Food (Lee's Fandbee), one of the largest frozen food importers and distributors in Southeast Asia.
-
-Under his leadership, the company has expanded with 10 retail stores in Malaysia and 3 in Cambodia, with operations and distribution extending to Vietnam and further expansion planned across the region.
-
-Lee’s specializes in importing and supplying high-quality meat, dairy, seafood, bakery, and other imported products at the most affordable prices in the market, while maintaining strict hygiene and halal standards.
-
-Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
-      },
-    ],
   },
 
   {
@@ -794,14 +788,15 @@ Guided by the mission of Food Equality — providing equal access to good food a
       {
         name: "Tan Dao Hong",
         title:
-          "General Manager, Bondsupermart - Connecting Bond Investors Globally",
-        company: "FSMOne",
+          "General Manager",
+        company: "Bondsupermart",
         photo: "/optimized/daoHong.webp",
         bio: `Mr. Tan Dao Hong first joined iFAST in 2018 as a Trainee Bond Dealer and was last managing and growing the iFAST Malaysia's Global Fixed Income business until the end of 2023. Since 2024, he joined the Bondsupermart's team on a mission to bring bond investors globally together to trade bonds easily in real-time via an electronic trading platform that connects brokers in the market.
  
 He obtained his post-graduate degree from the University of Nottingham Ningbo, China and is an associate member of the Persatuan Pasaran Kewangan Malaysia.`,
       },
-      {
+    ],
+    moderator:     {
         name: "Frankie Lim",
         title: "Host",
         company: "FAQ Show",
@@ -814,7 +809,6 @@ A pioneer in retail investor engagement, Frankie co-organized the first-ever ret
 
 He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee, MSM Malaysia CEO Syed Feizal, renowned economist Jomo Kwame Sundaram, and Abdul Jalil Abdul Rasheed, the former CEO of Berjaya Corporation and Permodalan Nasional Berhad.`,
       },
-    ],
   },
 
   {
@@ -823,7 +817,7 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
     description: "",
     speakers: [
       {
-        name: "Ka Hoe",
+        name: "Ng Ka Hoe, CFP®",
         title: "Financial Transformation Coach, Licensed Financial Planner",
         company: "JA Personal Finance Academy",
         photo: "/optimized/kahoe.jpg",
@@ -840,14 +834,14 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
   },
   {
     time: "17:00 - 17:30",
-    title: "Coming Soon",
+    title: "走进SBS Nexus：业务怎么打，未来怎么走",
     description: "",
     speakers: [],
   },
 
   {
     time: "17:30 - 18:00",
-    title: "Coming Soon",
+    title: "Financial Talk",
     description: "",
     speakers: [],
   },
@@ -857,7 +851,16 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
     title: "Podcast 4: When Life Happens - Is Your Family Financially Ready?",
     description: "",
     speakers: [
+   
       {
+        name: "Cheah Zi Kah, CFP®",
+        title: "Chief Growth Officer",
+        company: "Digital Trustees Berhad (Part of Gambit Group Consortium)",
+        photo: "/optimized/cheah_Zi_Kah.png",
+        bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
+      },
+    ],
+    moderator:    {
         name: "Chin Yi Xuan",
         title: "Finance Creator",
         company: "No Money Lah",
@@ -868,19 +871,11 @@ He holds a degree in Economics from Universiti Malaya (UM) and was formerly the 
 
 Currently pursuing his Certified Financial Planner (CFP) qualification, he combines real-world investing experience with structured financial planning principles — helping working adults prepare not just for retirement, but for life’s bigger financial responsibilities, including caring for aging parents.`,
       },
-      {
-        name: "Cheah Zi Kah, CFP®",
-        title: "Chief Growth Officer",
-        company: "Digital Trustees Berhad (Part of Gambit Group Consortium)",
-        photo: "/optimized/cheah_Zi_Kah.png",
-        bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
-      },
-    ],
   },
 
   {
     time: "18:30 - 19:00",
-    title: "Coming Soon",
+    title: "Mapping Your TRUE Personality to the Right Investment Assets [Strategies Revealed] by Torres & Wen Ping, Joey Yap Group",
     description: "",
     speakers: [],
   },
@@ -891,9 +886,9 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     description: "",
     speakers: [
       {
-        name: "Kelvin Goh",
-        title: "理财Brader, Licensed Financial Planner | CFP | FAR | CMSRL",
-        company: "Money Brader",
+        name: "Kelvin Goh, CFP®",
+        title: "Licensed Financial Planner",
+        company: "Money Brader 理财 Brader",
         photo: "/optimized/kelvinGoh.png",
         bio: `Kelvin Goh (Money Brader / 理财Brader) is a licensed financial planner approved by Bank Negara Malaysia (BNM) and the Securities Commission Malaysia (SC), with over 10 years of experience in the financial industry.
 
@@ -943,7 +938,8 @@ const mainStageScheduleDay2: Session[] = [
 
     Today, he channels that experience into his mission of simplifying property knowledge through engaging videos and honest property reviews nationwide. Moreover, he has documented more than 500 different property projects to date.`,
       },
-      {
+    ],
+    moderator:{
         name: "Lai Le Ann",
         title: "Content Creator",
         company: "",
@@ -952,8 +948,7 @@ const mainStageScheduleDay2: Session[] = [
 
 Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
 Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
-      },
-    ],
+      }, 
     description: "",
   },
 
@@ -1062,11 +1057,11 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
         image: "/optimized/ogawaMassageChair.webp",
         note: "worth RM9,999",
       },
-      {
-        name: "Dior Rouge Lipstick (x2)",
-        url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
-        image: "/optimized/dior-lipstick.webp",
-        note: "worth RM410",
+         {
+        name: "1 x 1-Year Tealive",
+        url: "https://www.tealive.com.my/",
+        image: "/optimized/tealive.jpeg",
+        note: "worth RM1,040",
       },
     ],
   },
@@ -1077,7 +1072,7 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     description: "",
     speakers: [
       {
-        name: "ACP (R) Lai Lee Ching",
+        name: "ACP (Retired) Lai Lee Ching",
         title: "Digital Trust & Outreach Lead",
         company: "Vigilant Asia",
         photo: "/optimized/ACPLai.jpg",
@@ -1110,7 +1105,7 @@ Today, she continues to play a key role in advancing digital trust, fraud preven
     ],
     moderator: {
       name: "Chloe Foo",
-      title: "Creator",
+      title: "Finance Creator",
       company: "Finance Lang",
       photo: "/optimized/chloe.avif",
       bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
@@ -1221,10 +1216,10 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
         note: "worth RM4,998",
       },
       {
-        name: "1 x 1-Year Tealive",
-        url: "https://www.tealive.com.my/",
-        image: "/optimized/tealive.jpeg",
-        note: "worth RM1,040",
+        name: "iPhone 17, 256gb",
+        url: "https://www.apple.com/my/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender",
+        image: "/optimized/iphone17.webp",
+        note: "worth RM3,999",
       },
     ],
   },
@@ -1279,7 +1274,7 @@ Before starting Beyond Insights, she worked in the Semiconductor industry for 17
     bullets: [],
     speakers: [
       {
-        name: "Ts. Frank Wee",
+        name: "Ts. Frank Wee Khiam Hui",
         title: "Managing Director",
         company: "Insights Analytics Berhad",
         photo: "/optimized/frankWee.jpg",
@@ -1331,7 +1326,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
       },
       {
         name: "Chloe Foo",
-        title: "Creator",
+        title: "Finance Creator",
         company: "Finance Lang",
         photo: "/optimized/chloe.avif",
         bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
@@ -1373,7 +1368,7 @@ He is know amongst his peers as an innovative leader with a shrewd mind within t
     isPanel: true,
     bullets: [],
     moderator: {
-      name: "Lim Pinn Yang",
+      name: "Nicholas Lim Pinn Yang",
       title: "Chief Executive Officer",
       company: "Foodie Media Berhad",
       photo: pinnyang,
@@ -1381,7 +1376,7 @@ He is know amongst his peers as an innovative leader with a shrewd mind within t
     },
     speakers: [
       {
-        name: "Shan Li Tay",
+        name: "Tay Shan Li",
         title: "Managing Director",
         company: "Endeavor Malaysia",
         photo: "/optimized/shanLiTay.jpg",
@@ -1396,7 +1391,7 @@ Under Shan Li’s leadership, Endeavor Malaysia will expand its support for entr
       {
         name: "Tunku Danny Nasaifuddin Mudzaffar",
         title: "Founder & CEO",
-        company: "Microleap PLT",
+        company: "microLEAP",
         photo: "/optimized/tunkuDanny.jpg",
         bio: `Tunku Danny Nasaifuddin Mudzaffar
 Founder & CEO, Microleap PLT
@@ -1437,7 +1432,7 @@ In terms of education, Peter holds a degree in psychology and business managemen
     speakers: [
       {
         name: "Bryan Loo",
-        title: "CEO",
+        title: "Chief Executive Officer",
         company: "Tealive",
         photo: "/optimized/bryanloo.jpg",
         bio: `Bryan Loo is the Founder and CEO of Tealive and the founder of Loob Holding Sdn Bhd. An award-winning entrepreneur, he has grown Tealive into Southeast Asia’s leading lifestyle tea brand, with over 1,000 outlets serving 5.5 million customers monthly across multiple international markets.
@@ -1449,7 +1444,7 @@ Recognised for his entrepreneurial achievements, Bryan has received numerous acc
 Bryan is passionate about inspiring young entrepreneurs and continues to champion innovation in the food and beverage industry.`,
       },
       {
-        name: "Lim Pinn Yang",
+        name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
         company: "Foodie Media Berhad",
         photo: pinnyang,
@@ -1487,7 +1482,7 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
 ];
 
 const engagementStageScheduleDay2: Session[] = [
-  { time: "10:30 - 11:00", title: "Coming Soon" },
+  { time: "10:30 - 11:00", title: "金氏如何把节庆生意做成长期品牌？" },
   {
     time: "11:00 - 11:30",
     title: "Building Your Dividend Machine",
@@ -1532,14 +1527,14 @@ Throughout his career, Edward has held key leadership roles, including heading T
 Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) and has built a strong personal brand, with over 175,000 followers on Instagram. Through his content, he shares data-driven insights on business, money, and society across Southeast Asia.
 `,
       },
-      {
+    ],
+    moderator:    {
         name: "Prestine Davekhaw",
         title: "Founder",
         company: "MalaysianPAYGAP",
         photo: "/optimized/prestine.jpg",
         bio: `Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
       },
-    ],
   },
   {
     time: "12:00 - 12:30",
@@ -1548,8 +1543,7 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
     description: "",
     speakers: [
       {
-        name: "Chen Jian",
-        chineseName: "陈剑老师",
+        name: "陈剑老师 Chen Jian",
         title: "Chief Coach",
         company: "Grandpine Capital",
         photo: "/optimized/chenJian.jpg",
@@ -1589,7 +1583,24 @@ Driven by a commitment to financial literacy and responsible investing, I contin
       "Podcast 2: Financial Independence for Women — Planning, Investing & Growing",
     description: "",
     speakers: [
+ 
       {
+        name: "Isabelle Zhen",
+        title: "Head of Group Equity Marketing",
+        company: "Kenanga Investment Bank Berhad",
+        photo: "/optimized/isabelleZhen.avif",
+        bio: `A multiple award-winning financial product specialist at Kenanga Investment Bank, with awards from UK, HK, Singapore & Malaysia. She has spoken at over 190 events & today, she has a theory that men are great traders, but women are fantastic investors. She is licensed by Securities Commission with CMSRL 6 and 7, she now serves as Head of Group Equity Marketing at Kenanga Investment Bank Berhad.`,
+      },
+      {
+        name: "Adibah Mazlan",
+        title: "Founder",
+        company: "The Raw",
+        photo: "/optimized/pnAdibahMazlan.jpeg",
+        bio: `Miss Adibah is the founder of The Raw, a science-driven skincare brand established in 2019. Leveraging her pharmaceutical background, she is on a mission to break the stigma surrounding locally made products and elevate Malaysian beauty brands to global standards through transparency, safety, and innovation.
+`,
+      },
+    ],
+    moderator:      {
         name: "Lai Le Ann",
         title: "Content Creator",
         company: "",
@@ -1599,22 +1610,6 @@ Driven by a commitment to financial literacy and responsible investing, I contin
 Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
 Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
       },
-      {
-        name: "Isabelle Zhen",
-        title: "Head of Group Equity Marketing",
-        company: "Kenanga Investment Bank Berhad",
-        photo: "/optimized/isabelleZhen.avif",
-        bio: `A multiple award-winning financial product specialist at Kenanga Investment Bank, with awards from UK, HK, Singapore & Malaysia. She has spoken at over 190 events & today, she has a theory that men are great traders, but women are fantastic investors. She is licensed by Securities Commission with CMSRL 6 and 7, she now serves as Head of Group Equity Marketing at Kenanga Investment Bank Berhad.`,
-      },
-      {
-        name: "Pn. Adibah Mazlan",
-        title: "Founder",
-        company: "The Raw",
-        photo: "/optimized/pnAdibahMazlan.jpeg",
-        bio: `Miss Adibah is the founder of The Raw, a science-driven skincare brand established in 2019. Leveraging her pharmaceutical background, she is on a mission to break the stigma surrounding locally made products and elevate Malaysian beauty brands to global standards through transparency, safety, and innovation.
-`,
-      },
-    ],
   },
   {
     time: "13:30 - 14:00",
@@ -1669,7 +1664,7 @@ Driven by a strong commitment to investor education, Ronnie continues to advocat
     speakers: [
       {
         name: "Ng Tzyy Loon, CFA",
-        title: "CFA, Portfolio Manager",
+        title: "Portfolio Manager",
         company: "Tradeview Capital",
         photo: "/optimized/ngTzyyLoon.jpg",
         bio: `Tzyy Loon currently is a portfolio manager at Tradeview Capital, a licensed boutique asset management firm. He has more than 10 years of experience in finance industry from investment management, equity research, credit risk management, and retail banking.
@@ -1683,15 +1678,15 @@ Driven by a strong commitment to investor education, Ronnie continues to advocat
     speakers: [
       {
         name: "林伟强 Lim Woi Kiong",
-        title: "创办人，总编辑",
-        company: "《九点股票》",
+        title: "Founder",
+        company: "9Shares 九点股票",
         photo: "/optimized/mrLim9Shares.jpeg",
         bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
       },
       {
         name: "Eddie Ng",
         title: "Founder & CEO",
-        company: "VANZO",
+        company: "Vanzo Holdings Bhd",
         photo: "/optimized/eddieNg.jpeg",
         bio: `A.2018年100大最具影响力杰出青年企业家
 
@@ -1711,7 +1706,7 @@ F. THE page商页2019年评选菁英
   },
   {
     time: "15:30 - 16:00",
-    title: "Coming Soon",
+    title: "Financial Talk",
     description: "",
     speakers: [],
   },
@@ -1781,8 +1776,8 @@ With over 10 years of experience in the finance and investment sectors, Anson po
     speakers: [
       {
         name: "Nigel Chong",
-        title: "Founder, NCSPACE ACADEMY SDN BHD | SC Registered MR",
-        company: "NCSPACE ACADEMY",
+        title: "Founder",
+        company: "NCSpace Academy",
         photo: "/optimized/nigelChong.png",
         whiteBg: true,
         bio: `Nigel Chong is a full-time stock trader and the founder of NCSPACE ACADEMY SDN BHD. Holding a degree in Business Economics and Finance from the University of Nottingham and registered as an MR with the Securities Commissions (SC), Nigel bridges the gap between complex market dynamics and accessible trading strategies. As a featured speaker for Bursa Malaysia's educational series, he specializes in trend trading methodologies and the application of AI-powered tools to uncover market momentum. Known as a "trading buddy" to his community, Nigel is dedicated to helping retail investors build consistent, profitable trading systems.`,
