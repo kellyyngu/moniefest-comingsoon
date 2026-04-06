@@ -50,7 +50,7 @@ const programmeSlides: Slide[] = [
     day: 1,
     stage: 'Monie Stage',
     time: '15:00 – 15:45',
-    topic: "Don’t Fall For These Bitcoin (& Crypto) Myths",
+    topic: "Navigating Crypto Narratives in a Regulated Era",
     type: 'talk',
     speakers: [
       {
