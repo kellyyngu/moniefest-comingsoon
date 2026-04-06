@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Mic, Users } from "lucide-react";
 
-type Speaker = { name: string; photo?: string; title?: string; company?: string };
+type Speaker = { name: string; photo?: string; title?: string; company?: string; whiteBg?: boolean };
 type Slide = {
   id: string;
   day: 1 | 2;
@@ -11,6 +11,8 @@ type Slide = {
   topic: string;
   type: "talk" | "panel" | "podcast";
   speakers: Speaker[];
+  moderator?: Speaker;
+  moderators?: Speaker[];
 };
 
 /** A curated selection of real sessions from the Programme page */
@@ -20,23 +22,35 @@ const programmeSlides: Slide[] = [
     day: 1,
     stage: 'Monie Stage',
     time: '11:15 – 12:00',
-    topic: "Malaysia's Economic Growth Outlook for 2H 2026 - What It Means for Investors",
+    topic: "Malaysia’s Outlook 2026 - What It Means for Investors in 2H",
     type: 'talk',
     speakers: [
       {
-        name: 'Mohammad Bazli Che Rozenan',
-        title: 'Director, Members Engagement',
-        company: 'CFA Society Malaysia',
-        photo: '/optimized/mohammadBazli.jpg',
+        name: 'Lim Eng Ping',
+        title: 'Head of Wealth Management Malaysia',
+        company: 'Maybank',
+        photo: '/optimized/limEngPing.jpeg',
+      },
+      {
+        name: 'Encik Fadzihan Abbas Mohamed Ramlee',
+        title: 'Chief Executive Officer',
+        company: 'Amanah Saham Nasional Berhad (ASNB)',
+        photo: '/optimized/fadzihanAbbasMohamedRamlee.jpg',
       },
     ],
+    moderator: {
+      name: 'Mohammad Bazli Che Rozenan',
+      title: 'Director, Members Engagement',
+      company: 'CFA Society Malaysia',
+      photo: '/optimized/mohammadBazli.jpg',
+    },
   },
   {
     id: 'p2',
     day: 1,
     stage: 'Monie Stage',
     time: '15:00 – 15:45',
-    topic: "Don't Fall For These Bitcoin (& Crypto) Myths",
+    topic: "Don’t Fall For These Bitcoin (& Crypto) Myths",
     type: 'talk',
     speakers: [
       {
@@ -56,12 +70,24 @@ const programmeSlides: Slide[] = [
     type: 'panel',
     speakers: [
       {
+        name: 'Aaron Tang',
+        title: 'General Manager (APAC)',
+        company: 'Luno Malaysia',
+        photo: '/optimized/aaronTang.avif',
+      },
+      {
         name: 'Datuk Clifford Hii',
         title: 'Chief Executive Officer',
         company: 'Gambit Group',
         photo: '/optimized/datuk_clifford_hii.jpg',
       },
     ],
+    moderator: {
+      name: 'Noelle Lee',
+      title: 'Organizer',
+      company: 'MY Blockchain Week',
+      photo: '/optimized/noelle.jpg',
+    },
   },
   {
     id: 'p4',
@@ -72,10 +98,10 @@ const programmeSlides: Slide[] = [
     type: 'talk',
     speakers: [
       {
-        name: 'Afiq Ismail',
+        name: 'Marzuki Musa',
         title: 'PR & Marketing Manager',
         company: 'microLEAP',
-        photo: '/optimized/afiq.webp',
+        photo: '/optimized/marzukiMusa.png',
       },
     ],
   },
@@ -108,6 +134,7 @@ const programmeSlides: Slide[] = [
         title: 'Director',
         company: 'WealthFort',
         photo: '/optimized/shane.png',
+        whiteBg: true,
       },
     ],
   },
@@ -125,7 +152,19 @@ const programmeSlides: Slide[] = [
         company: 'Foodie Media Berhad',
         photo: '/optimized/yeohChenChow.avif',
       },
+      {
+        name: 'Venon Tian',
+        title: 'Group Chief Operating Officer',
+        company: 'ZUS Coffee',
+        photo: '/optimized/vernonTian.jpg',
+      },
     ],
+    moderator: {
+      name: 'Timothy Tiah',
+      title: 'Chief Executive Officer',
+      company: 'Colony Coworking & Events',
+      photo: '/optimized/timothyTiah.jpg',
+    },
   },
   {
     id: 'p8',
@@ -135,14 +174,25 @@ const programmeSlides: Slide[] = [
     topic: 'What Changes After You Make Your First Million?',
     type: 'panel',
     speakers: [
-      { name: 'Bryan Loo', title: '', company: '' },
       {
-        name: 'Lim Pinn Yang',
+        name: 'Bryan Loo',
+        title: 'Chief Executive Officer',
+        company: 'Tealive',
+        photo: '/optimized/bryanloo.jpg',
+      },
+      {
+        name: 'Nicholas Lim Pinn Yang',
         title: 'Chief Executive Officer',
         company: 'Foodie Media Berhad',
         photo: '/optimized/pinnyang.webp',
       },
     ],
+    moderator: {
+      name: 'Peter Yong',
+      title: 'Founder',
+      company: 'Mr Money TV',
+      photo: '/optimized/peter.webp',
+    },
   },
 ];
 
@@ -196,7 +246,7 @@ export default function ProgrammePreview({
   }, [index, paused, length, durationMs]);
 
   const current = slides[index];
-  const hasSpeakers = current.speakers.length > 0;
+  const hasSpeakers = current.speakers.length > 0 || !!current.moderator || (current.moderators && current.moderators.length > 0);
 
   return (
     <section className="py-10 px-4">
@@ -251,8 +301,8 @@ export default function ProgrammePreview({
 
             {/* Speakers */}
               {hasSpeakers ? (
-              <div className="flex flex-wrap gap-4">
-                {current.speakers.map((s) => {
+                <div className="flex flex-wrap gap-4">
+                  {current.speakers.map((s) => {
                   const isClifford = s.name.toLowerCase().includes('clifford');
                   const isShane = s.name.toLowerCase().includes('shane');
                   const isAfiq = s.name.toLowerCase().includes('afiq');
@@ -281,6 +331,35 @@ export default function ProgrammePreview({
                     </div>
                   );
                 })}
+                {/* Moderator(s) */}
+                {current.moderator && (
+                  <div className="flex items-center gap-4 bg-white/5 rounded-xl px-4 py-3">
+                    <div className={`w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden flex-shrink-0 bg-gradient-to-br from-navy-light to-navy-deep flex items-center justify-center text-xs md:text-sm font-bold text-primary-foreground`}>
+                      {current.moderator.photo ? (
+                        <img src={current.moderator.photo} alt={current.moderator.name} loading="eager" fetchPriority="high" className="w-full h-full object-cover block" style={{ objectPosition: 'top' }} />
+                      ) : (
+                        <Initials name={current.moderator.name} />
+                      )}
+                    </div>
+                    <div>
+                      <p className="text-sm md:text-base font-semibold text-white leading-tight">{current.moderator.name}</p>
+                      {current.moderator.title && <p className="text-[11px] md:text-sm text-primary italic leading-tight">{current.moderator.title} — Moderator</p>}
+                      {current.moderator.company && <p className="text-[11px] md:text-sm text-white leading-tight">{current.moderator.company}</p>}
+                    </div>
+                  </div>
+                )}
+                {current.moderators && current.moderators.map((m) => (
+                  <div key={m.name} className="flex items-center gap-4 bg-white/5 rounded-xl px-4 py-3">
+                    <div className={`w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden flex-shrink-0 bg-gradient-to-br from-navy-light to-navy-deep flex items-center justify-center text-xs md:text-sm font-bold text-primary-foreground`}>
+                      {m.photo ? <img src={m.photo} alt={m.name} loading="eager" fetchPriority="high" className="w-full h-full object-cover block" style={{ objectPosition: 'top' }} /> : <Initials name={m.name} />}
+                    </div>
+                    <div>
+                      <p className="text-sm md:text-base font-semibold text-white leading-tight">{m.name}</p>
+                      {m.title && <p className="text-[11px] md:text-sm text-primary italic leading-tight">{m.title} — Moderator</p>}
+                      {m.company && <p className="text-[11px] md:text-sm text-white leading-tight">{m.company}</p>}
+                    </div>
+                  </div>
+                ))}
               </div>
             ) : (
               <p className="text-sm text-muted-foreground italic">Speakers to be announced</p>
