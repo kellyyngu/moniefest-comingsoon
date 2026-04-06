@@ -74,8 +74,8 @@ const ijmRimbayuLogo = "/optimized/IJMRimbayu.svg";
 const rianaDutamasLogo = "/optimized/rianaDutamas.svg";
 const epfLogo = "/optimized/EPF.svg";
 const greatEasternLogo = "/optimized/greatEastern.jpeg";
-const sbsLogo = '/optimized/SBS.png';
-const shanghaiLogo = '/optimized/shanghaiLogo.svg';
+const sbsLogo = "/optimized/SBS.png";
+const shanghaiLogo = "/optimized/shanghaiLogo.svg";
 const tradeViewCapitalLogo = "/optimized/TradeViewCapital.svg";
 const oppoLogo = "/optimized/oppo.png";
 const grabLogo = "/optimized/grab.svg";
@@ -155,6 +155,7 @@ const coOrganizers = [foodieLogo, spireLogo];
 const strategicPartners = [benchxcapitalLogo];
 const platinumSponsors = [
   bursaLogo,
+  moomooLogo,
   gambitTrusteesLogo,
   gambitCustodyLogo,
   fsmOneLogo,
@@ -162,7 +163,6 @@ const platinumSponsors = [
   kenangaLogo,
   lunoLogo,
   maybankLogo,
-  moomooLogo,
 ];
 const supportingPartners = [bursaLogo, societyMalaysiaLogo, fimmLogo, fpamLogo];
 const silverSponsors = [
