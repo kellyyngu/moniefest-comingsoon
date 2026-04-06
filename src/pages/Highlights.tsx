@@ -74,6 +74,7 @@ const highlights: Highlight[] = [
     title: "ASNB",
     description: "ASNB banner and partner highlight.",
     image: "/optimized/ASNBbanner.png",
+    link: "https://asnb.my/PanduImpianmu2",
     noCrop: true,
     icon: Trophy,
   },
