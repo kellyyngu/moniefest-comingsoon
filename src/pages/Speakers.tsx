@@ -1005,7 +1005,7 @@ She has extensive experience in client servicing and engagement, with a strong f
   {
     name: "Dato' Dr Nazri Khan (DDNK)",
     title: "No.1 World Trading Champion 2024",
-    company: "Berjaya Mutual Berhad",
+    company: "DDNK Holdings",
     photo: "/optimized/drNazriKhan.jpg",
     bio: `Licensed fund manager at Berjaya Mutual Berhad. World Cup Trading Championship winner. Malaysia Book of Records holder. Dato' Dr. Nazri Khan (DDNK) is a prominent figure in financial management, investment, and economics.
 
