@@ -72,6 +72,10 @@ const maybankLogo = "/optimized/maybank.svg";
 const mybwLogo = "/optimized/MYBW.svg";
 const ijmRimbayuLogo = "/optimized/IJMRimbayu.svg";
 const rianaDutamasLogo = "/optimized/rianaDutamas.svg";
+const ijmRimbayuBanner = "/optimized/IJMRimbayuBanner.jpg";
+const rianaDutamasBanner = "/optimized/RianaDutamasBanner.jpg";
+const joeyYapGroupLogo = "/optimized/joeyYapGroup.jpeg";
+const niagaSahamLogo = "/optimized/niagaSaham.png";
 const epfLogo = "/optimized/EPF.svg";
 const greatEasternLogo = "/optimized/greatEastern.jpeg";
 const sbsLogo = "/optimized/SBS.png";
@@ -225,12 +229,14 @@ const friendsOfMonie = [
   insightInvestsLogo,
   insightsAnalyticsBerhadLogo,
   jaLogo,
+    joeyYapGroupLogo,
   LFFGroupLogo,
   mpgLogo,
   moneyBraderLogo,
   mrmoneyLogo,
   mybwLogo,
   ncspaceLogo,
+    niagaSahamLogo,
   noMoneyLahLogo,
   sbsLogo,
   stayWokePropertyLogo,

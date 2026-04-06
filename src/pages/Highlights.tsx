@@ -119,8 +119,26 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Sparkles,
   },
-  {
+   {
     number: 13,
+    title: "IJM Rimbayu",
+    description: "IJM Rimbayu banner",
+    image: "/optimized/IJMRimbayuBanner.jpg",
+    link: "https://rimbayu.ijmland.com/Roam/",
+    noCrop: true,
+    icon: Star,
+  },
+  {
+    number: 14,
+    title: "Riana Dutamas",
+    description: "Riana Dutamas banner",
+    image: "/optimized/RianaDutamasBanner.jpg",
+    link: "https://rianadutamas.com/stellaris/",
+    noCrop: true,
+    icon: Star,
+  },
+  {
+    number: 15,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -129,7 +147,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 14,
+    number: 16,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -138,13 +156,14 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 15,
+    number: 17,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",
     noCrop: true,
     icon: Sparkles,
   },
+ 
 ];
 
 const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({

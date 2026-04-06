@@ -113,6 +113,15 @@ At Bursa, she has driven transformational initiatives that expanded investor par
         whiteBg: true,
         bio: liewBio,
       },
+       {
+    name: "Stephanie Tan Kar Mun",
+    title: "Director, Group Commercial & Market Coverage",
+    company: "Bursa Malaysia Berhad",
+    photo: "/optimized/stephanieTan.jpg",
+    bio: `Stephanie Tan Kar Mun is Director of Group Commercial and Market Coverage at Bursa Malaysia, where she leads the Exchange's commercial strategy and client engagement across institutional investors, retail participants, brokers, and corporates. With nearly 20 years of international experience spanning global investment banking in London with HSBC and Morgan Stanley, JP Morgan in Malaysia, and Southeast Asia's digital venture space with iflix, she brings deep expertise in capital markets, digital innovation, and stakeholder management.
+
+At Bursa, she has driven transformational initiatives that expanded investor participation, unlocked new revenue streams, and enhanced Bursa's positioning as a modern and inclusive exchange. A graduate of the London School of Economics, Stephanie is recognised as a thought leader advancing Malaysia's capital market development.`,
+  },
       {
         name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
@@ -133,6 +142,17 @@ Driven by the belief that education is the foundation of better money choices, G
 
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
       },
+       {
+    name: "Jay Cheong",
+    title: "Founder & CEO",
+    company: "BenchX Capital",
+    photo: "/optimized/jay.avif",
+    bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
+
+Jay is the Founder & CEO of BenchX Capital, where he advises founders, corporates, and investors on private market transactions, capital strategy, and complex solutions, supported by institutional-grade financial analysis and market intelligence.
+
+He works closely with PLCs, institutional partners, and senior management on capital planning, financial product structuring, strategic partnerships, and growth positioning.`,
+  },
     ],
   },
   {
@@ -168,6 +188,17 @@ Driven by the belief that education is the foundation of better money choices, G
 
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
       },
+       {
+    name: "Jay Cheong",
+    title: "Founder & CEO",
+    company: "BenchX Capital",
+    photo: "/optimized/jay.avif",
+    bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
+
+Jay is the Founder & CEO of BenchX Capital, where he advises founders, corporates, and investors on private market transactions, capital strategy, and complex solutions, supported by institutional-grade financial analysis and market intelligence.
+
+He works closely with PLCs, institutional partners, and senior management on capital planning, financial product structuring, strategic partnerships, and growth positioning.`,
+  },
     ],
   },
   {
@@ -346,7 +377,7 @@ Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and l
   },
   {
     time: "15:00 - 15:45",
-    title: "Don’t Fall For These Bitcoin (& Crypto) Myths",
+    title: "Navigating Crypto Narratives in a Regulated Era",
     description: "",
     speakers: [
       {
@@ -567,7 +598,7 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
 const engagementStageSchedule: Session[] = [
   {
     time: "11:30 - 12:00",
-    title: "How I Won The World Cup Trading Championship",
+    title: "How I Won the World Cup Trading Champion, Four Times in a Row in 2024",
     description: "",
     speakers: [
       {
@@ -860,13 +891,25 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
     photo: "/optimized/wongChunMun.png",
     bio: `黄俊文白手起家创立广告传单公司 SBS Group，被誉为马来西亚广告传单营销的领航人物，并在2018年收购历史老字号商业杂志《商海》，将多年累积的庞大客户资源整合升级，带领 SBS 集团转型为商业媒体科技企业。如今，他更进一步带领 SBS Nexus Berhad 成功迈向上市之路，持续推动本地企业媒体与科技领域的发展。`,
   },],
+    moderator:  {
+    name: "黄振峰 Bong Jenn Fong",
+    title: "Chief of News",
+    company: "KleverStock",
+    photo: "/optimized/bongJennFong.jpg",
+    bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
+  },
   },
 
   {
     time: "17:30 - 18:00",
-    title: "Financial Talk",
+    title: "Retirement is not an age. It's a situation.",
     description: "",
-    speakers: [],
+    speakers: [  {
+    name: "Tan Tzia Tzia",
+    title: "Insurance Advisor",
+    company: "Great Eastern",
+    photo: "/optimized/tantziatzia.jpg",
+  },],
   },
 
   {
@@ -1214,6 +1257,19 @@ Wan holds a degree in Philosophy, Politics and Economics (PPE) from the Universi
   FUTURE VISION: 
   With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
       },
+        {
+    name: "Tusvendran Pillai",
+    title: "Founder",
+    company: "Niaga Saham",
+    photo: "/optimized/tusvendran.jpg",
+    bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
+
+
+In February 2021, at just 25 years old, he achieved total financial freedom and resigned from his clinical career to pursue full-time investing. That same year, his expertise was recognized nationally when he was awarded Malaysia’s Best Trading Guru 2021.
+
+
+Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
+  },
     ],
   },
 
@@ -1541,7 +1597,26 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
 ];
 
 const engagementStageScheduleDay2: Session[] = [
-  { time: "10:30 - 11:00", title: "金氏如何把节庆生意做成长期品牌？" },
+  { time: "10:30 - 11:00", title: "金氏如何把节庆生意做成长期品牌？" ,
+    speakers: [
+       {
+    name: "陈金财 Alann Tan",
+    title: "Founder & CEO",
+    company: "Jin Ye Ye Sdn Bhd",
+    photo: "/optimized/alannTan.jpg",
+    bio: `陈金财（Alann Tan）是马来西亚养生送礼品牌金氏集团创办人兼CEO。2008年大学毕业后返马创业，从新春送礼市场起步，创立金爷爷品牌，并逐步把业务拓展至健康养生领域，打造 JYNNS 金氏养生与整合老行家等品牌，形成多品牌集团版图。
+
+    目前，金氏集团业务涵盖燕窝、天然蜂蜜及多元养生产品的研发、生产、零售与贸易。陈金财也积极推动品牌文化化发展，结合新春文化内容、原创贺岁歌曲及节庆企划，致力让传统文化与现代消费市场接轨，并推动大马优质产品走向国际。`,
+  },
+      ],
+        moderator:  {
+    name: "黄振峰 Bong Jenn Fong",
+    title: "Chief of News",
+    company: "KleverStock",
+    photo: "/optimized/bongJennFong.jpg",
+    bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
+  },
+  },
   {
     time: "11:00 - 11:30",
     title: "Building Your Dividend Machine",
@@ -1765,9 +1840,21 @@ F. THE page商页2019年评选菁英
   },
   {
     time: "15:30 - 16:00",
-    title: "Financial Talk",
+    title: "From Pills to Profits : How to Build a Portfolio That Pays More Than as Your Job",
     description: "",
-    speakers: [],
+    speakers: [{
+    name: "Tusvendran Pillai",
+    title: "Founder",
+    company: "Niaga Saham",
+    photo: "/optimized/tusvendran.jpg",
+    bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
+
+
+In February 2021, at just 25 years old, he achieved total financial freedom and resigned from his clinical career to pursue full-time investing. That same year, his expertise was recognized nationally when he was awarded Malaysia’s Best Trading Guru 2021.
+
+
+Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
+  },],
   },
   {
     time: "16:00 - 16:30",

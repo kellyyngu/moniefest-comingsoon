@@ -619,6 +619,41 @@ Prior to joining Luno, Aaron spent almost a decade in the Oil & Gas industry wor
 Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from Universiti Teknologi PETRONAS.`,
   },
   {
+    name: "陈金财 Alann Tan",
+    title: "Founder & CEO",
+    company: "Jin Ye Ye Sdn Bhd",
+    photo: "/optimized/alannTan.jpg",
+    bio: `陈金财（Alann Tan）是马来西亚养生送礼品牌金氏集团创办人兼CEO。2008年大学毕业后返马创业，从新春送礼市场起步，创立金爷爷品牌，并逐步把业务拓展至健康养生领域，打造 JYNNS 金氏养生与整合老行家等品牌，形成多品牌集团版图。
+
+    目前，金氏集团业务涵盖燕窝、天然蜂蜜及多元养生产品的研发、生产、零售与贸易。陈金财也积极推动品牌文化化发展，结合新春文化内容、原创贺岁歌曲及节庆企划，致力让传统文化与现代消费市场接轨，并推动大马优质产品走向国际。`,
+  },
+  {
+    name: "黄振峰 Bong Jenn Fong",
+    title: "Chief of News",
+    company: "KleverStock",
+    photo: "/optimized/bongJennFong.jpg",
+    bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
+  },
+  {
+    name: "Tan Tzia Tzia",
+    title: "Insurance Advisor",
+    company: "Great Eastern",
+    photo: "/optimized/tantziatzia.jpg",
+  },
+  {
+    name: "Tusvendran Pillai",
+    title: "Founder",
+    company: "Niaga Saham",
+    photo: "/optimized/tusvendran.jpg",
+    bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
+
+
+In February 2021, at just 25 years old, he achieved total financial freedom and resigned from his clinical career to pursue full-time investing. That same year, his expertise was recognized nationally when he was awarded Malaysia’s Best Trading Guru 2021.
+
+
+Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
+  },
+  {
     name: "Khairy Jamaluddin",
     title: "Former Cabinet Minister Malaysia",
     company: "KS Media",
