@@ -37,29 +37,74 @@ Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell Univ
     title: "Director",
     company: "Financial Faiz",
     photo: "/optimized/faizAzmi.png",
-    bio: `Faiz Azmi has accumulated 12 years of diverse experience in the banking industry, real estate, unit trusts, and insurance. Recognizing the lack of unbiased financial education available to Malaysians, Faiz decided to fill this gap by creating content that is both impartial and accessible to the general public. 
-  
-    After his initial video on ASB dividends went viral in 2021, he received an overwhelming response and numerous questions from viewers. This feedback motivated him to produce more educational videos that address the concealed aspects of financial transactions often overlooked by salespeople. 
+    bio: `Faiz Azmi has accumulated 12 years of diverse experience in the banking industry, real estate, unit trusts, and insurance. Recognizing the lack of unbiased financial education available to Malaysians, Faiz decided to fill this gap by creating content that is both impartial and accessible to the general public.
 
-  Starting as a one-man show, Faiz handled everything from ideation to promotion. Today, he leads a dedicated team that helps expand his reach and impact. His primary goal remains to enhance financial literacy among Malaysians, helping them avoid common financial mistakes. 
+After his initial video on ASB dividends went viral in 2021, he received an overwhelming response and numerous questions from viewers. This feedback motivated him to produce more educational videos that address the concealed aspects of financial transactions often overlooked by salespeople.
 
-  Faiz's content now spans multiple platforms, including YouTube, Facebook, Instagram, TikTok, and Spotify. He has also launched podcast series such as FF Podcast and Boss Borak, all featured on the Financial Faiz channels. Through these efforts, Faiz aims to empower more Malaysians with the knowledge they need to make informed financial decisions. 
+Starting as a one-man show, Faiz handled everything from ideation to promotion. Today, he leads a dedicated team that helps expand his reach and impact. His primary goal remains to enhance financial literacy among Malaysians, helping them avoid common financial mistakes.
 
-  MEDIA COMPANY FOCUS: 
-  Faiz's media company is dedicated education, extending beyond financial literacy to cover life choices, career advice, business insights, and consumer rights. The company stays attuned to the public's concerns, addressing issues such as inflation, minimum wage, and housing prices by providing clear and comprehensible explanations. 
+Faiz's content now spans multiple platforms, including YouTube, Facebook, Instagram, TikTok, and Spotify. He has also launched podcast series such as FF Podcast and Boss Borak, all featured on the Financial Faiz channels. Through these efforts, Faiz aims to empower more Malaysians with the knowledge they need to make informed financial decisions.
 
-  Recognizing that fear often stems from the unknown, Faiz strives to demystify complex topics for his audience. 
+MEDIA COMPANY FOCUS:
+Faiz's media company is dedicated to education, extending beyond financial literacy to cover life choices, career advice, business insights, and consumer rights. The company stays attuned to the public's concerns, addressing issues such as inflation, minimum wage, and housing prices by providing clear and comprehensible explanations.
 
-  FUTURE VISION: 
-  With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
+Recognizing that fear often stems from the unknown, Faiz strives to demystify complex topics for his audience.
+
+FUTURE VISION:
+With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
+  },
+  {
+    name: "Wong Chun Mun",
+    chineseName: "黄俊文",
+    title: "Managing Director & CEO",
+    company: "SBS Nexus Berhad",
+    photo: "/optimized/wongChunMun.png",
+    bio: `黄俊文白手起家创立广告传单公司 SBS Group，被誉为马来西亚广告传单营销的领航人物，并在2018年收购历史老字号商业杂志《商海》，将多年累积的庞大客户资源整合升级，带领 SBS 集团转型为商业媒体科技企业。如今，他更进一步带领 SBS Nexus Berhad 成功迈向上市之路，持续推动本地企业媒体与科技领域的发展。`,
+  },
+  {
+    name: "Torres Wong",
+    title: "Resident Consultant, Joey Yap Group",
+    company: "Founder of BaZi & Metaphysics Community",
+    photo: "/optimized/torresWong.jpg",
+    bio: `Torres Wong is the youngest Resident Consultant with Joey Yap Group, specializing in guiding individuals—particularly students and young professionals—in making high-impact career and financial decisions with clarity and precision. Torres Wong is also a Founder of BaZi & Metaphysics Community.
+
+Introduced to metaphysics at the age of 9 through the teachings of Joey Yap, Torres transformed early uncertainty about his own path into a structured understanding of personal strengths, timing, and life direction. This foundation shapes his approach today—focusing not just on insight, but on translating clarity into measurable life outcomes.
+
+Leveraging systems such as BaZi and Qi Men Dun Jia, Torres helps individuals align their decisions with their strengths and timing, particularly in areas that influence long-term career trajectory and financial growth.
+
+His work includes guiding individuals toward significant career outcomes. He has supported a student in aligning his path toward medicine, who later secured an offer from the National University of Singapore and is now practicing as a doctor.
+
+He has also advised individuals on cross-border career decisions, including guiding a couple in transitioning their medical careers from Malaysia to Singapore. Today, both are practicing doctors—one in Accident & Emergency (A&E) and the other as a pediatrician.
+
+In the business space, Torres has worked with individuals facing financial pressure, providing strategic guidance that enabled them to restructure decisions, navigate debt recovery, and restore financial stability.
+
+As the Founder of the BaZi & Metaphysics Community, he actively builds platforms that empower individuals to make informed, strategic decisions about their future.
+
+Torres’ core principle is: Your destiny is in your own hands—when guided by clarity and the right decisions.
+
+His mission is to help individuals avoid costly misalignment, accelerate their growth, and achieve stronger career and financial outcomes through clarity, timing, and strategy.`,
+  },
+  {
+    name: "Wen Ping",
+    title: "Training & Development Manager",
+    company: "Joey Yap Group",
+    photo: "/optimized/wenPing.jpg",
+    bio: `Wen Ping is an Essential Skills Trainer & Speaking Coach & Qualified Lawyer Turned Educator.
+
+Wen Ping is a dynamic trainer and educator who bridges financial literacy, personal development and strategic decision-making. With a unique background as a qualified lawyer and his current role in Joey Yap Group, his methodology emphasizes patterns and behaviour, risk tolerance and individuals' relationship with money and investments.
+
+With 6 years of experience in US Stocks & Options investing, Wen Ping has navigated the US stocks markets while aligning right strategies with personal risk tolerance. His approach goes beyond technical knowledge—focusing on how personality, decision patterns and emotional discipline influence financial outcomes.
+
+Over the past 7 years, he has organized financial education programs across Malaysia, impacting more than 20,000 students nationwide alongside different organisations.
+
+Wen Ping is on a mission to help individuals grow, not just their wealth, but also their self-understanding—because he strongly believes: Clarity is the new invaluable Currency.`,
   },
   {
     name: "Pn Adibah Mazlan",
     title: "Founder",
     company: "The Raw",
     photo: "/optimized/pnAdibahMazlan.jpeg",
-    bio: `Miss Adibah is the founder of The Raw, a science-driven skincare brand established in 2019. Leveraging her pharmaceutical background, she is on a mission to break the stigma surrounding locally made products and elevate Malaysian beauty brands to global standards through transparency, safety, and innovation.
-`,
+    bio: `Miss Adibah is the founder of The Raw, a science-driven skincare brand established in 2019. Leveraging her pharmaceutical background, she is on a mission to break the stigma surrounding locally made products and elevate Malaysian beauty brands to global standards through transparency, safety, and innovation.`,
   },
   {
     name: "Lucas",
@@ -83,7 +128,7 @@ Beyond the digital screen, Lucas is a powerhouse on the live stage, having succe
 On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo Stand-up Specials and collaborative comedy tours. With her dual expertise in content production and live performance, she uniquely commands an audience while seamlessly weaving brand messaging into a comedic yet authentic flow, making her one of the industry's most versatile standout performers today.`,
   },
   {
-    name: "Lim Pinn Yang",
+    name: "Nicholas Lim Pinn Yang",
     title: "Chief Executive Officer",
     company: "Foodie Media Berhad",
     photo: "/optimized/pinnyang.webp",
@@ -124,7 +169,7 @@ Driven by the belief that education is the foundation of better money choices, G
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
   },
   {
-    name: "ACP (R) Lai Lee Ching",
+    name: "ACP (Retired) Lai Lee Ching",
     title: "Digital Trust & Outreach Lead",
     company: "Vigilant Asia",
     photo: "/optimized/ACPLai.jpg",
@@ -157,7 +202,7 @@ Today, she continues to play a key role in advancing digital trust, fraud preven
   {
     name: "Tunku Danny Nasaifuddin Mudzaffar",
     title: "Founder & CEO",
-    company: "Microleap PLT",
+    company: "microLEAP",
     photo: "/optimized/tunkuDanny.jpg",
     bio: `Tunku Danny Nasaifuddin Mudzaffar
 Founder & CEO, Microleap PLT
@@ -175,7 +220,7 @@ Tunku Danny holds an MBA from the Nottingham University Business School.`,
   },
   {
     name: "Marzuki Musa",
-    title: "Chief Marketing Officer",
+    title: "PR & Marketing Manager",
     company: "microLEAP",
     photo: "/optimized/marzukiMusa.png",
     bio: `
@@ -203,14 +248,14 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
   },
   {
     name: "Vincent Yeo",
-    title: "Chief Executive Officer/Co-Founder",
+    title: "Co-Founder/CEO",
     company: "PeerHive",
     photo: "/optimized/vincentYeo.jpeg",
     bio: `vincent profile not available yet`,
   },
   {
     name: "Datuk Clifford Hii",
-    title: "Group CEO",
+    title: "Chief Executive Officer",
     company: "Gambit Group",
     photo: "/optimized/datuk_clifford_hii.jpg",
     bio: `Datuk Clifford Hii is the Group Chief Executive Officer of Gambit Group, a financial infrastructure and wealth solutions ecosystem focused on trustee services, private credit, investment, and digital platforms.
@@ -234,7 +279,7 @@ His vision for Gambit Group is to develop a future-ready financial platform that
   },
   {
     name: "Bryan Loo Woi Lip",
-    title: "CEO",
+    title: "Chief Executive Officer",
     company: "Tealive",
     photo: "/optimized/bryanloo.jpg",
     bio: `Bryan Loo is the Founder and CEO of Tealive and the founder of Loob Holding Sdn Bhd. An award-winning entrepreneur, he has grown Tealive into Southeast Asia’s leading lifestyle tea brand, with over 1,000 outlets serving 5.5 million customers monthly across multiple international markets.
@@ -371,7 +416,7 @@ His approach combines academic knowledge with practical market experience, offer
   },
 
   {
-    name: "Mohammad Bazli Che Rozenan, CFA",
+    name: "Mohammad Bazli Che Rozenan",
     title: "Director, Members Engagement",
     company: "CFA Society Malaysia",
     photo: "/optimized/mohammadBazli.jpg",
@@ -398,8 +443,8 @@ Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and l
   },
   {
     name: "Nigel Chong",
-    title: "Founder, NCSPACE ACADEMY SDN BHD | SC Registered MR",
-    company: "NCSPACE ACADEMY",
+    title: "Founder",
+    company: "NCSpace Academy",
     photo: "/optimized/nigelChong.png",
     whiteBg: true,
     bio: `Nigel Chong is a full-time stock trader and the founder of NCSPACE ACADEMY SDN BHD. Holding a degree in Business Economics and Finance from the University of Nottingham and registered as an MR with the Securities Commissions (SC), Nigel bridges the gap between complex market dynamics and accessible trading strategies. As a featured speaker for Bursa Malaysia's educational series, he specializes in trend trading methodologies and the application of AI-powered tools to uncover market momentum. Known as a "trading buddy" to his community, Nigel is dedicated to helping retail investors build consistent, profitable trading systems.`,
@@ -439,7 +484,7 @@ In terms of education, Peter holds a degree in psychology and business managemen
   {
     name: "Sai",
     title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
-    company: "Wabikong",
+    company: "Wabikong TV",
     photo: "/optimized/sai.jpg",
     bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
 
@@ -588,7 +633,7 @@ Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from U
     bio: `Jack Chan（天哥）是《第一天投资理财日记》的创办人，也是马来西亚知名投资理财内容创作者与畅销理财书作者。他积极推广大众理财教育，曾担任 ASTRO 著名理财节目《全家私房钱》编剧，并拥有 FIMM 信托基金顾问高级组织经理及私人退休金计划（PRS）顾问资格，曾名列多家上市公司前30大股东之列。`,
   },
   {
-    name: "Kelvin Goh",
+    name: "Kelvin Goh, CFP®",
     title: "理财Brader, Licensed Financial Planner | CFP | FAR | CMSRL",
     company: "Money Brader",
     photo: "/optimized/kelvinGoh.png",
@@ -604,7 +649,7 @@ Through his work in advisory, education, and entrepreneurship, Kelvin is committ
 `,
   },
   {
-    name: "Ka Hoe",
+    name: "Ng Ka Hoe, CFP®",
     title: "Financial Transformation Coach, Licensed Financial Planner",
     photo: "/optimized/kahoe.jpg",
     company: "JA Personal Finance Academy",
@@ -632,7 +677,7 @@ Through talks, workshops, and educational content, Bob aims to make finance acce
 `,
   },
   {
-    name: "Ts. Frank Wee",
+    name: "Ts. Frank Wee Khiam Hui",
     title: "Managing Director",
     company: "Insights Analytics Berhad",
     photo: "/optimized/frankWee.jpg",
@@ -673,9 +718,8 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
   },
   {
     name: "Tan Dao Hong",
-    title:
-      "General Manager, Bondsupermart - Connecting Bond Investors Globally",
-    company: "FSMOne",
+    title: "General Manager",
+    company: "Bondsupermart",
     photo: "/optimized/daoHong.webp",
     bio: `Mr. Tan Dao Hong first joined iFAST in 2018 as a Trainee Bond Dealer and was last managing and growing the iFAST Malaysia's Global Fixed Income business until the end of 2023. Since 2024, he joined the Bondsupermart's team on a mission to bring bond investors globally together to trade bonds easily in real-time via an electronic trading platform that connects brokers in the market.
  
@@ -830,7 +874,7 @@ Before starting Beyond Insights, she worked in the Semiconductor industry for 17
   {
     name: "Lim Eng Ping",
     title: "Head of Wealth Management Malaysia",
-    company: "Maybank Group Wealth",
+    company: "Maybank",
     photo: "/optimized/limEngPing.jpeg",
     bio: `Mr. Lim Eng Ping has been appointed as the Head of Wealth Management Malaysia, Group Wealth Management, Community Financial Services (CFS) Malaysia, effective 1 September 2024. Previously, he served as Head of Private Wealth Malaysia, GWM, CFS Malaysia.
 
@@ -889,15 +933,15 @@ Since 2009, he has been the key speaker at the Investment Forum jointly organise
   },
   {
     name: "林伟强 Lim Woi Kiong",
-    title: "创办人，总编辑",
-    company: "《九点股票》",
+    title: "Founder",
+    company: "9Shares 九点股票",
     photo: "/optimized/mrLim9Shares.jpeg",
     bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
   },
   {
     name: "Eddie Ng",
     title: "Founder & CEO",
-    company: "VANZO",
+    company: "Vanzo Holdings Bhd",
     photo: "/optimized/eddieNg.jpeg",
     bio: `A.2018年100大最具影响力杰出青年企业家
 
@@ -999,9 +1043,10 @@ const mainSpeakersList = speakers.filter(
 // Desired display order for main speakers (keep organisers and guest unchanged)
 const desiredSpeakerOrder: string[] = [
   "Yeoh Chen Chow",
-  "Lim Pinn Yang",
+  "Nicholas Lim Pinn Yang",
   "George Poh, CFP®",
   "Jay Cheong",
+  "ACP (Retired) Lai Lee Ching",
   "Khairy Jamaluddin",
   "Dr. Ong Kian Ming",
   "Al Emri Izzat Shah Albakri",
@@ -1012,6 +1057,7 @@ const desiredSpeakerOrder: string[] = [
   "Tevaryan Thiagarajan",
   "R.Bushan",
   "Tan Dao Hong",
+  "Chan Wei Chi",
   "Isabelle Zhen",
   "Kenny Yee",
   "Peter Kong",
@@ -1024,8 +1070,10 @@ const desiredSpeakerOrder: string[] = [
   "Ronnie Chai Teck Wei",
   "Trent Cheok",
   "Lee Chee Seng",
+  "Marzuki Musa",
+  "Tunku Danny Nasaifuddin Mudzaffar",
   "Kathlyn Toh",
-  "Mohammad Bazli Che Rozenan, CFA",
+  "Mohammad Bazli Che Rozenan",
   "Ng Tzyy Loon, CFA",
   "Sean Freer",
   "Vincent Wang",
@@ -1044,15 +1092,15 @@ const desiredSpeakerOrder: string[] = [
   "Faiz Azmi",
   "Fong Wei Ziet",
   "Frankie Lim",
-  "Ts. Frank Wee",
+  "Ts. Frank Wee Khiam Hui",
   "Jack Chan (天哥)",
   "Jayden Pang",
   "Jane Chuck",
   "Jocelyn Lee",
   "Jose Blasco",
-  "Ka Hoe",
+  "Ng Ka Hoe, CFP®",
   "Kah Mun",
-  "Kelvin Goh",
+  "Kelvin Goh, CFP®",
   "Lai Le Ann",
   "Liksen Lei",
   "林伟强 Lim Woi Kiong",
@@ -1069,10 +1117,14 @@ const desiredSpeakerOrder: string[] = [
   "Shan Li Tay",
   "Tan Kyzen, Max",
   "Timothy Tiah",
+  "Torres Wong",
   "Venon Tian",
+  "Vincent Yeo",
   "Wan Abd Rahman",
   "Wan Azfar Azeem (MrKripto)",
+  "Wen Ping",
   "William K",
+  "Wong Chun Mun",
 ];
 
 const mainSpeakersListOrdered = [...mainSpeakersList].sort((a, b) => {

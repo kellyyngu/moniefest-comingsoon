@@ -74,6 +74,8 @@ const ijmRimbayuLogo = "/optimized/IJMRimbayu.svg";
 const rianaDutamasLogo = "/optimized/rianaDutamas.svg";
 const epfLogo = "/optimized/EPF.svg";
 const greatEasternLogo = "/optimized/greatEastern.jpeg";
+const sbsLogo = '/optimized/SBS.png';
+const shanghaiLogo = '/optimized/shanghaiLogo.svg';
 const tradeViewCapitalLogo = "/optimized/TradeViewCapital.svg";
 const oppoLogo = "/optimized/oppo.png";
 const grabLogo = "/optimized/grab.svg";
@@ -198,6 +200,7 @@ const mediaPartners = [
   nineSharesLogo,
   ekonomiRakyatLogo,
   pYTCHLogo,
+  shanghaiLogo,
   theFinancialTodayLogo,
 ];
 const friendsOfMonie = [
@@ -227,6 +230,7 @@ const friendsOfMonie = [
   mybwLogo,
   ncspaceLogo,
   noMoneyLahLogo,
+  sbsLogo,
   stayWokePropertyLogo,
   talentCorpLogo,
   taylorsUniversityLogo,

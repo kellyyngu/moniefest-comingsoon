@@ -609,20 +609,6 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     description: "",
     speakers: [
       {
-        name: "Ng Ka Hoe, CFP®",
-        title: "Financial Transformation Coach, Licensed Financial Planner",
-        company: "JA Personal Finance Academy",
-        photo: "/optimized/kahoe.jpg",
-        bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
-
-He is on a mission to elevate the financial literacy of 1 Million  Malaysians because he believes individuals can be happy & confident  with money rather than being enslaved by money.  
-
-Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Malaysians through 300+ webinars & talks.  
-
-  Ka Hoe is a regular speaker and been invited to speak for communities  including Financial Planning Association Malaysia, Taylor’s & Sunway  University, Naluri, as well as corporate such as Maybank and UOB, with  media features including Star Property and Smart Investor.
-`,
-      },
-      {
         name: "Gin Chong",
         title: "Founder",
         company: "StayWokeProperty",
@@ -640,6 +626,20 @@ Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Ma
 His expertise spans real estate portfolio building, equity markets, and modern entrepreneurship, all delivered through high-energy content that contrasts a lavish lifestyle with practical, grounded money management strategies. By balancing his roles as a high-net-worth investor and a dedicated family man, he emphasizes that true success is about achieving "time freedom" and building a lasting legacy for the next generation.`,
       },
     ],
+    moderator:      {
+        name: "Ng Ka Hoe, CFP®",
+        title: "Financial Transformation Coach, Licensed Financial Planner",
+        company: "JA Personal Finance Academy",
+        photo: "/optimized/kahoe.jpg",
+        bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
+
+He is on a mission to elevate the financial literacy of 1 Million  Malaysians because he believes individuals can be happy & confident  with money rather than being enslaved by money.  
+
+Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Malaysians through 300+ webinars & talks.  
+
+  Ka Hoe is a regular speaker and been invited to speak for communities  including Financial Planning Association Malaysia, Taylor’s & Sunway  University, Naluri, as well as corporate such as Maybank and UOB, with  media features including Star Property and Smart Investor.
+`,
+      },
   },
 
   {
@@ -836,7 +836,13 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
     time: "17:00 - 17:30",
     title: "走进SBS Nexus：业务怎么打，未来怎么走",
     description: "",
-    speakers: [],
+    speakers: [  {
+    name: "黄俊文 Wong Chun Mun",
+    title: "Managing Director and Chief Executive Officer",
+    company: "SBS Nexus Berhad",
+    photo: "/optimized/wongChunMun.png",
+    bio: `黄俊文白手起家创立广告传单公司 SBS Group，被誉为马来西亚广告传单营销的领航人物，并在2018年收购历史老字号商业杂志《商海》，将多年累积的庞大客户资源整合升级，带领 SBS 集团转型为商业媒体科技企业。如今，他更进一步带领 SBS Nexus Berhad 成功迈向上市之路，持续推动本地企业媒体与科技领域的发展。`,
+  },],
   },
 
   {
@@ -877,7 +883,43 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     time: "18:30 - 19:00",
     title: "Mapping Your TRUE Personality to the Right Investment Assets [Strategies Revealed] by Torres & Wen Ping, Joey Yap Group",
     description: "",
-    speakers: [],
+    speakers: [  {
+    name: "Torres Wong",
+    title: "Resident Consultant, Joey Yap Group",
+    company: "Founder of BaZi & Metaphysics Community",
+    photo: "/optimized/torresWong.jpg",
+    bio: `Torres Wong is the youngest Resident Consultant with Joey Yap Group, specializing in guiding individuals—particularly students and young professionals—in making high-impact career and financial decisions with clarity and precision. Torres Wong is also a Founder of BaZi & Metaphysics Community.
+
+Introduced to metaphysics at the age of 9 through the teachings of Joey Yap, Torres transformed early uncertainty about his own path into a structured understanding of personal strengths, timing, and life direction. This foundation shapes his approach today—focusing not just on insight, but on translating clarity into measurable life outcomes.
+
+Leveraging systems such as BaZi and Qi Men Dun Jia, Torres helps individuals align their decisions with their strengths and timing, particularly in areas that influence long-term career trajectory and financial growth.
+
+His work includes guiding individuals toward significant career outcomes. He has supported a student in aligning his path toward medicine, who later secured an offer from the National University of Singapore and is now practicing as a doctor.
+
+He has also advised individuals on cross-border career decisions, including guiding a couple in transitioning their medical careers from Malaysia to Singapore. Today, both are practicing doctors—one in Accident & Emergency (A&E) and the other as a pediatrician.
+
+In the business space, Torres has worked with individuals facing financial pressure, providing strategic guidance that enabled them to restructure decisions, navigate debt recovery, and restore financial stability.
+
+As the Founder of the BaZi & Metaphysics Community, he actively builds platforms that empower individuals to make informed, strategic decisions about their future.
+
+Torres’ core principle is: Your destiny is in your own hands—when guided by clarity and the right decisions.
+
+His mission is to help individuals avoid costly misalignment, accelerate their growth, and achieve stronger career and financial outcomes through clarity, timing, and strategy.`,
+  },{
+    name: "Wen Ping",
+    title: "Training & Development Manager",
+    company: "Joey Yap Group",
+    photo: "/optimized/wenPing.jpg",
+    bio: `Wen Ping is an Essential Skills Trainer & Speaking Coach & Qualified Lawyer Turned Educator.
+
+Wen Ping is a dynamic trainer and educator who bridges financial literacy, personal development and strategic decision-making. With a unique background as a qualified lawyer and his current role in Joey Yap Group, his methodology emphasizes patterns and behaviour, risk tolerance and individuals' relationship with money and investments.
+
+With 6 years of experience in US Stocks & Options investing, Wen Ping has navigated the US stocks markets while aligning right strategies with personal risk tolerance. His approach goes beyond technical knowledge—focusing on how personality, decision patterns and emotional discipline influence financial outcomes.
+
+Over the past 7 years, he has organized financial education programs across Malaysia, impacting more than 20,000 students nationwide alongside different organisations.
+
+Wen Ping is on a mission to help individuals grow, not just their wealth, but also their self-understanding—because he strongly believes: Clarity is the new invaluable Currency.`,
+  },],
   },
 
   {
@@ -1677,13 +1719,6 @@ Driven by a strong commitment to investor education, Ronnie continues to advocat
     title: "VANZO─品牌塑造价值  2026旅游大马年机遇",
     speakers: [
       {
-        name: "林伟强 Lim Woi Kiong",
-        title: "Founder",
-        company: "9Shares 九点股票",
-        photo: "/optimized/mrLim9Shares.jpeg",
-        bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
-      },
-      {
         name: "Eddie Ng",
         title: "Founder & CEO",
         company: "Vanzo Holdings Bhd",
@@ -1703,6 +1738,13 @@ F. THE page商页2019年评选菁英
 ·企业名言：一件事，一辈子，专注到极致，注定伟大`,
       },
     ],
+    moderator:      {
+        name: "林伟强 Lim Woi Kiong",
+        title: "Founder",
+        company: "9Shares 九点股票",
+        photo: "/optimized/mrLim9Shares.jpeg",
+        bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
+      },
   },
   {
     time: "15:30 - 16:00",
