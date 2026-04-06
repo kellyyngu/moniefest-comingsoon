@@ -219,6 +219,23 @@ Since joining Wealth Management, CFS, Eng Ping has been instrumental in growing 
         title: "Chief Executive Officer",
         company: "Amanah Saham Nasional Berhad (ASNB)",
         photo: "/optimized/fadzihanAbbasMohamedRamlee.jpg",
+        bio: `Abbas Ramlee is the Chief Executive Officer and Executive Director of Amanah Saham 
+Nasional Berhad (“ASNB”), a wholly owned Unit Trust Management Company of 
+Permodalan Nasional Berhad (“PNB”).
+
+Prior to his current position, Abbas was the Chief Strategy Officer for PNB and has served 
+various departments within PNB throughout his 19 years of working experiences in the 
+organisation. He started as a Real Estate analyst and subsequently joined Research 
+Division as a Macro-Economy analyst. He has held various positions in PNB, including 
+Senior Manager of the Office of the President & GCEO and Senior Vice President of 
+Corporate Planning & Strategy.
+
+He currently serves as Non-Independent Executive Director of ASNB, Non-Independent 
+Non-Executive Director of Velesto Energy Berhad, Director of Jewel Digital Ventures Sdn. 
+Bhd. and ASNB Wakalah Sdn. Bhd., and is a Member of the Joint Waqf Distribution 
+Committee of ASNB–MAIWP. Abbas holds a Capital Market Services Representative 
+License (“CMSRL”) under Securities Commission Malaysia.
+`,
       },
     ],
     moderator: {
