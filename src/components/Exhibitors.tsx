@@ -90,6 +90,7 @@ const bondsupermartLogo = "/optimized/bondsupermart.png";
 const LFFGroupLogo = "/optimized/LFFGroup.png";
 const saatDimensiLogo = "/optimized/saatDimensi.jpeg";
 const troopersLogo = "/optimized/troopers.png";
+const kleverstockLogo = "/optimized/kleverstock.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -199,6 +200,7 @@ const knowledgePartners = [cboeLogo, spgLogo];
 const mediaPartners = [
   nineSharesLogo,
   ekonomiRakyatLogo,
+  kleverstockLogo,
   pYTCHLogo,
   shanghaiLogo,
   theFinancialTodayLogo,
