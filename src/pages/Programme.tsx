@@ -440,7 +440,7 @@ Marketing and Economics, from Monash University.`,
     speakers: [
       {
         name: "Marzuki Musa",
-        title: "PR & Marketing Manager",
+        title: "Chief Marketing Officer",
         company: "microLEAP",
         photo: "/optimized/marzukiMusa.png",
         bio: `

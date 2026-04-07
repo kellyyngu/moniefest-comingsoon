@@ -220,7 +220,7 @@ Tunku Danny holds an MBA from the Nottingham University Business School.`,
   },
   {
     name: "Marzuki Musa",
-    title: "PR & Marketing Manager",
+    title: "Chief Marketing Officer",
     company: "microLEAP",
     photo: "/optimized/marzukiMusa.png",
     bio: `
