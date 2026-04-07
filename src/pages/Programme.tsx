@@ -113,15 +113,15 @@ At Bursa, she has driven transformational initiatives that expanded investor par
         whiteBg: true,
         bio: liewBio,
       },
-       {
-    name: "Stephanie Tan Kar Mun",
-    title: "Director, Group Commercial & Market Coverage",
-    company: "Bursa Malaysia Berhad",
-    photo: "/optimized/stephanieTan.jpg",
-    bio: `Stephanie Tan Kar Mun is Director of Group Commercial and Market Coverage at Bursa Malaysia, where she leads the Exchange's commercial strategy and client engagement across institutional investors, retail participants, brokers, and corporates. With nearly 20 years of international experience spanning global investment banking in London with HSBC and Morgan Stanley, JP Morgan in Malaysia, and Southeast Asia's digital venture space with iflix, she brings deep expertise in capital markets, digital innovation, and stakeholder management.
+      {
+        name: "Stephanie Tan Kar Mun",
+        title: "Director, Group Commercial & Market Coverage",
+        company: "Bursa Malaysia Berhad",
+        photo: "/optimized/stephanieTan.jpg",
+        bio: `Stephanie Tan Kar Mun is Director of Group Commercial and Market Coverage at Bursa Malaysia, where she leads the Exchange's commercial strategy and client engagement across institutional investors, retail participants, brokers, and corporates. With nearly 20 years of international experience spanning global investment banking in London with HSBC and Morgan Stanley, JP Morgan in Malaysia, and Southeast Asia's digital venture space with iflix, she brings deep expertise in capital markets, digital innovation, and stakeholder management.
 
 At Bursa, she has driven transformational initiatives that expanded investor participation, unlocked new revenue streams, and enhanced Bursa's positioning as a modern and inclusive exchange. A graduate of the London School of Economics, Stephanie is recognised as a thought leader advancing Malaysia's capital market development.`,
-  },
+      },
       {
         name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
@@ -142,17 +142,17 @@ Driven by the belief that education is the foundation of better money choices, G
 
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
       },
-       {
-    name: "Jay Cheong",
-    title: "Founder & CEO",
-    company: "BenchX Capital",
-    photo: "/optimized/jay.avif",
-    bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
+      {
+        name: "Jay Cheong",
+        title: "Founder & CEO",
+        company: "BenchX Capital",
+        photo: "/optimized/jay.avif",
+        bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
 
 Jay is the Founder & CEO of BenchX Capital, where he advises founders, corporates, and investors on private market transactions, capital strategy, and complex solutions, supported by institutional-grade financial analysis and market intelligence.
 
 He works closely with PLCs, institutional partners, and senior management on capital planning, financial product structuring, strategic partnerships, and growth positioning.`,
-  },
+      },
     ],
   },
   {
@@ -188,17 +188,17 @@ Driven by the belief that education is the foundation of better money choices, G
 
 At Monie Fest, George represents a long-term vision: building a credible financial media ecosystem that raises literacy, strengthens decision-making, and creates lasting financial confidence.`,
       },
-       {
-    name: "Jay Cheong",
-    title: "Founder & CEO",
-    company: "BenchX Capital",
-    photo: "/optimized/jay.avif",
-    bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
+      {
+        name: "Jay Cheong",
+        title: "Founder & CEO",
+        company: "BenchX Capital",
+        photo: "/optimized/jay.avif",
+        bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
 
 Jay is the Founder & CEO of BenchX Capital, where he advises founders, corporates, and investors on private market transactions, capital strategy, and complex solutions, supported by institutional-grade financial analysis and market intelligence.
 
 He works closely with PLCs, institutional partners, and senior management on capital planning, financial product structuring, strategic partnerships, and growth positioning.`,
-  },
+      },
     ],
   },
   {
@@ -212,7 +212,7 @@ He works closely with PLCs, institutional partners, and senior management on cap
         image: "/optimized/xiaomitv.webp",
         note: "worth RM1,999",
       },
-        {
+      {
         name: "Philips NA110 Air Fryer",
         url: "https://www.philips.com.my/c-p/NA110_09/1000-series-airfryer-1000-series-32l",
         image: "/optimized/airfryer.webp",
@@ -425,7 +425,7 @@ Marketing and Economics, from Monash University.`,
         image: "/optimized/ipad11.webp",
         note: "worth RM1599",
       },
-        {
+      {
         name: "Dior Rouge Lipstick (x2)",
         url: "https://www.dior.com/en_my/beauty/products/rouge-dior-Y0356009.html",
         image: "/optimized/dior-lipstick.webp",
@@ -435,7 +435,7 @@ Marketing and Economics, from Monash University.`,
   },
   {
     time: "16:00 - 16:45",
-    title: "Big Returns Without Big Barriers: From RM10 to 18%",
+    title: "start small. EARN BIG!\nInvest from as low as RM10 and earn up to 18% p.a.",
     description: "",
     speakers: [
       {
@@ -521,18 +521,17 @@ His vision for Gambit Group is to develop a future-ready financial platform that
   },
   {
     time: "18:15 - 19:00",
-    isPanel: true,
-    panelNumber: 4,
-    panelTitle: "When Passion Meets Planning: How to Turn Dreams into Reality",
+    title: "When Passion Meets Planning: How to Turn Dreams into Reality",
     bullets: [],
-    speakers: [],
-    moderator: {
-      name: "Nicholas Lim Pinn Yang",
-      title: "Chief Executive Officer",
-      company: "Foodie Media Berhad",
-      photo: pinnyang,
-      bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
-    },
+    speakers: [
+      {
+        name: "Nicholas Lim Pinn Yang",
+        title: "Chief Executive Officer",
+        company: "Foodie Media Berhad",
+        photo: pinnyang,
+        bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
+      },
+    ],
     description: "",
   },
   {
@@ -598,7 +597,8 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
 const engagementStageSchedule: Session[] = [
   {
     time: "11:30 - 12:00",
-    title: "How I Won the World Cup Trading Champion, Four Times in a Row in 2024",
+    title:
+      "How I Won the World Cup Trading Champion, Four Times in a Row in 2024",
     description: "",
     speakers: [
       {
@@ -674,12 +674,12 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
 His expertise spans real estate portfolio building, equity markets, and modern entrepreneurship, all delivered through high-energy content that contrasts a lavish lifestyle with practical, grounded money management strategies. By balancing his roles as a high-net-worth investor and a dedicated family man, he emphasizes that true success is about achieving "time freedom" and building a lasting legacy for the next generation.`,
       },
     ],
-    moderator:      {
-        name: "Ng Ka Hoe, CFP®",
-        title: "Financial Transformation Coach, Licensed Financial Planner",
-        company: "JA Personal Finance Academy",
-        photo: "/optimized/kahoe.jpg",
-        bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
+    moderator: {
+      name: "Ng Ka Hoe, CFP®",
+      title: "Financial Transformation Coach, Licensed Financial Planner",
+      company: "JA Personal Finance Academy",
+      photo: "/optimized/kahoe.jpg",
+      bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
 
 He is on a mission to elevate the financial literacy of 1 Million  Malaysians because he believes individuals can be happy & confident  with money rather than being enslaved by money.  
 
@@ -687,7 +687,7 @@ Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Ma
 
   Ka Hoe is a regular speaker and been invited to speak for communities  including Financial Planning Association Malaysia, Taylor’s & Sunway  University, Naluri, as well as corporate such as Maybank and UOB, with  media features including Star Property and Smart Investor.
 `,
-      },
+    },
   },
 
   {
@@ -804,12 +804,12 @@ Lee’s specializes in importing and supplying high-quality meat, dairy, seafood
 Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
       },
     ],
-    moderator:       {
-        name: "Lucas Seneviratne",
-        title: "Head of Markets (Singapore & Malaysia)",
-        company: "Ticketmelon",
-        photo: "/optimized/lucasSeneviratne.jpeg",
-        bio: `Lucas Seneviratne leads Singapore and Malaysia for Ticketmelon, one of Southeast Asia’s leading event technology platforms powering large-scale festivals, concerts, and live experiences across the region.
+    moderator: {
+      name: "Lucas Seneviratne",
+      title: "Head of Markets (Singapore & Malaysia)",
+      company: "Ticketmelon",
+      photo: "/optimized/lucasSeneviratne.jpeg",
+      bio: `Lucas Seneviratne leads Singapore and Malaysia for Ticketmelon, one of Southeast Asia’s leading event technology platforms powering large-scale festivals, concerts, and live experiences across the region.
 
 A law graduate by background, Lucas began his career in entrepreneurship, co-founding The Bao Guys—Malaysia’s first fast-casual bao concept. He scaled the brand to 13 outlets across Klang Valley before exiting in 2024.
 
@@ -818,7 +818,7 @@ He later became Ticketmelon’s first hire in Malaysia, building the market from
 Lucas sits at the intersection of audience, monetisation, and experience—working with organisers to move beyond “selling tickets” to building scalable event businesses.
 
 His current obsession: using data, distribution, and smart financing to help events scale faster, sell better, and last longer.`,
-      },
+    },
   },
 
   {
@@ -835,8 +835,7 @@ His current obsession: using data, distribution, and smart financing to help eve
       },
       {
         name: "Tan Dao Hong",
-        title:
-          "General Manager",
+        title: "General Manager",
         company: "Bondsupermart",
         photo: "/optimized/daoHong.webp",
         bio: `Mr. Tan Dao Hong first joined iFAST in 2018 as a Trainee Bond Dealer and was last managing and growing the iFAST Malaysia's Global Fixed Income business until the end of 2023. Since 2024, he joined the Bondsupermart's team on a mission to bring bond investors globally together to trade bonds easily in real-time via an electronic trading platform that connects brokers in the market.
@@ -844,19 +843,19 @@ His current obsession: using data, distribution, and smart financing to help eve
 He obtained his post-graduate degree from the University of Nottingham Ningbo, China and is an associate member of the Persatuan Pasaran Kewangan Malaysia.`,
       },
     ],
-    moderator:     {
-        name: "Frankie Lim",
-        title: "Host",
-        company: "FAQ Show",
-        photo: "/optimized/frankie.png",
-        bio: `Frankie Lim is a partner and Chief Sales Officer at FitLit Media Tech Group and the host of the FAQ Show, with a vision to empower retail investors amidst the growing trend of retail participation in financial markets. With over a decade of experience in investment banking across corporate finance, equity capital markets, trading, and investor relations, Frankie collaborates closely with financial institutions to simplify financial knowledge for Mr Money TV's audience.
+    moderator: {
+      name: "Frankie Lim",
+      title: "Host",
+      company: "FAQ Show",
+      photo: "/optimized/frankie.png",
+      bio: `Frankie Lim is a partner and Chief Sales Officer at FitLit Media Tech Group and the host of the FAQ Show, with a vision to empower retail investors amidst the growing trend of retail participation in financial markets. With over a decade of experience in investment banking across corporate finance, equity capital markets, trading, and investor relations, Frankie collaborates closely with financial institutions to simplify financial knowledge for Mr Money TV's audience.
 
 He holds a Bachelor's degree in Economics from the University of Manchester, UK, with a focus on accounting and finance.
 
 A pioneer in retail investor engagement, Frankie co-organized the first-ever retail corporate day in partnership with an investment bank, traditionally reserved for institutional investors, bridging retail investors with company executives to deepen understanding of corporate prospects.
 
 He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee, MSM Malaysia CEO Syed Feizal, renowned economist Jomo Kwame Sundaram, and Abdul Jalil Abdul Rasheed, the former CEO of Berjaya Corporation and Permodalan Nasional Berhad.`,
-      },
+    },
   },
 
   {
@@ -884,32 +883,36 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
     time: "17:00 - 17:30",
     title: "走进SBS Nexus：业务怎么打，未来怎么走",
     description: "",
-    speakers: [  {
-    name: "黄俊文 Wong Chun Mun",
-    title: "Managing Director and Chief Executive Officer",
-    company: "SBS Nexus Berhad",
-    photo: "/optimized/wongChunMun.png",
-    bio: `黄俊文白手起家创立广告传单公司 SBS Group，被誉为马来西亚广告传单营销的领航人物，并在2018年收购历史老字号商业杂志《商海》，将多年累积的庞大客户资源整合升级，带领 SBS 集团转型为商业媒体科技企业。如今，他更进一步带领 SBS Nexus Berhad 成功迈向上市之路，持续推动本地企业媒体与科技领域的发展。`,
-  },],
-    moderator:  {
-    name: "黄振峰 Bong Jenn Fong",
-    title: "Chief of News",
-    company: "KleverStock",
-    photo: "/optimized/bongJennFong.jpg",
-    bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
-  },
+    speakers: [
+      {
+        name: "黄俊文 Wong Chun Mun",
+        title: "Managing Director and Chief Executive Officer",
+        company: "SBS Nexus Berhad",
+        photo: "/optimized/wongChunMun.png",
+        bio: `黄俊文白手起家创立广告传单公司 SBS Group，被誉为马来西亚广告传单营销的领航人物，并在2018年收购历史老字号商业杂志《商海》，将多年累积的庞大客户资源整合升级，带领 SBS 集团转型为商业媒体科技企业。如今，他更进一步带领 SBS Nexus Berhad 成功迈向上市之路，持续推动本地企业媒体与科技领域的发展。`,
+      },
+    ],
+    moderator: {
+      name: "黄振峰 Bong Jenn Fong",
+      title: "Chief of News",
+      company: "KleverStock",
+      photo: "/optimized/bongJennFong.jpg",
+      bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
+    },
   },
 
   {
     time: "17:30 - 18:00",
     title: "Retirement is not an age. It's a situation.",
     description: "",
-    speakers: [  {
-    name: "Tan Tzia Tzia",
-    title: "Insurance Advisor",
-    company: "Great Eastern",
-    photo: "/optimized/tantziatzia.jpg",
-  },],
+    speakers: [
+      {
+        name: "Tan Tzia Tzia",
+        title: "Insurance Advisor",
+        company: "Great Eastern",
+        photo: "/optimized/tantziatzia.jpg",
+      },
+    ],
   },
 
   {
@@ -917,7 +920,6 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
     title: "Podcast 4: When Life Happens - Is Your Family Financially Ready?",
     description: "",
     speakers: [
-   
       {
         name: "Cheah Zi Kah, CFP®",
         title: "Chief Growth Officer",
@@ -926,29 +928,31 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
         bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
       },
     ],
-    moderator:    {
-        name: "Chin Yi Xuan",
-        title: "Finance Creator",
-        company: "No Money Lah",
-        photo: "/optimized/yixuan.webp",
-        bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
+    moderator: {
+      name: "Chin Yi Xuan",
+      title: "Finance Creator",
+      company: "No Money Lah",
+      photo: "/optimized/yixuan.webp",
+      bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
 
 He holds a degree in Economics from Universiti Malaya (UM) and was formerly the General Manager of a licensed proprietary trading firm in Malaysia. Yi Xuan has been a speaker for Bursa Malaysia’s educational webinars for the past three years, and has also appeared on platforms such as BBK Network and Caijin by BFM.
 
 Currently pursuing his Certified Financial Planner (CFP) qualification, he combines real-world investing experience with structured financial planning principles — helping working adults prepare not just for retirement, but for life’s bigger financial responsibilities, including caring for aging parents.`,
-      },
+    },
   },
 
   {
     time: "18:30 - 19:00",
-    title: "Mapping Your TRUE Personality to the Right Investment Assets [Strategies Revealed] by Torres & Wen Ping, Joey Yap Group",
+    title:
+      "Mapping Your TRUE Personality to the Right Investment Assets [Strategies Revealed] by Torres & Wen Ping, Joey Yap Group",
     description: "",
-    speakers: [  {
-    name: "Torres Wong",
-    title: "Resident Consultant, Joey Yap Group",
-    company: "Founder of BaZi & Metaphysics Community",
-    photo: "/optimized/torresWong.jpg",
-    bio: `Torres Wong is the youngest Resident Consultant with Joey Yap Group, specializing in guiding individuals—particularly students and young professionals—in making high-impact career and financial decisions with clarity and precision. Torres Wong is also a Founder of BaZi & Metaphysics Community.
+    speakers: [
+      {
+        name: "Torres Wong",
+        title: "Resident Consultant, Joey Yap Group",
+        company: "Founder of BaZi & Metaphysics Community",
+        photo: "/optimized/torresWong.jpg",
+        bio: `Torres Wong is the youngest Resident Consultant with Joey Yap Group, specializing in guiding individuals—particularly students and young professionals—in making high-impact career and financial decisions with clarity and precision. Torres Wong is also a Founder of BaZi & Metaphysics Community.
 
 Introduced to metaphysics at the age of 9 through the teachings of Joey Yap, Torres transformed early uncertainty about his own path into a structured understanding of personal strengths, timing, and life direction. This foundation shapes his approach today—focusing not just on insight, but on translating clarity into measurable life outcomes.
 
@@ -965,12 +969,13 @@ As the Founder of the BaZi & Metaphysics Community, he actively builds platforms
 Torres’ core principle is: Your destiny is in your own hands—when guided by clarity and the right decisions.
 
 His mission is to help individuals avoid costly misalignment, accelerate their growth, and achieve stronger career and financial outcomes through clarity, timing, and strategy.`,
-  },{
-    name: "Wen Ping",
-    title: "Training & Development Manager",
-    company: "Joey Yap Group",
-    photo: "/optimized/wenPing.jpg",
-    bio: `Wen Ping is an Essential Skills Trainer & Speaking Coach & Qualified Lawyer Turned Educator.
+      },
+      {
+        name: "Wen Ping",
+        title: "Training & Development Manager",
+        company: "Joey Yap Group",
+        photo: "/optimized/wenPing.jpg",
+        bio: `Wen Ping is an Essential Skills Trainer & Speaking Coach & Qualified Lawyer Turned Educator.
 
 Wen Ping is a dynamic trainer and educator who bridges financial literacy, personal development and strategic decision-making. With a unique background as a qualified lawyer and his current role in Joey Yap Group, his methodology emphasizes patterns and behaviour, risk tolerance and individuals' relationship with money and investments.
 
@@ -979,7 +984,8 @@ With 6 years of experience in US Stocks & Options investing, Wen Ping has naviga
 Over the past 7 years, he has organized financial education programs across Malaysia, impacting more than 20,000 students nationwide alongside different organisations.
 
 Wen Ping is on a mission to help individuals grow, not just their wealth, but also their self-understanding—because he strongly believes: Clarity is the new invaluable Currency.`,
-  },],
+      },
+    ],
   },
 
   {
@@ -1041,16 +1047,16 @@ const mainStageScheduleDay2: Session[] = [
     Today, he channels that experience into his mission of simplifying property knowledge through engaging videos and honest property reviews nationwide. Moreover, he has documented more than 500 different property projects to date.`,
       },
     ],
-    moderator:{
-        name: "Lai Le Ann",
-        title: "Content Creator",
-        company: "",
-        photo: "/optimized/leAnn.jpg",
-        bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
+    moderator: {
+      name: "Lai Le Ann",
+      title: "Content Creator",
+      company: "",
+      photo: "/optimized/leAnn.jpg",
+      bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
 
 Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
 Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
-      }, 
+    },
     description: "",
   },
 
@@ -1159,7 +1165,7 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
         image: "/optimized/ogawaMassageChair.webp",
         note: "worth RM9,999",
       },
-         {
+      {
         name: "1 x 1-Year Tealive",
         url: "https://www.tealive.com.my/",
         image: "/optimized/tealive.jpeg",
@@ -1257,19 +1263,19 @@ Wan holds a degree in Philosophy, Politics and Economics (PPE) from the Universi
   FUTURE VISION: 
   With an eye on global expansion, Faiz aspires to address the worldwide deficiency in financial literacy. His goal is to create a more financially informed global community, leveraging his expertise and educational content to make a significant impact beyond Malaysia.`,
       },
-        {
-    name: "Tusvendran Pillai",
-    title: "Founder",
-    company: "Niaga Saham",
-    photo: "/optimized/tusvendran.jpg",
-    bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
+      {
+        name: "Tusvendran Pillai",
+        title: "Founder",
+        company: "Niaga Saham",
+        photo: "/optimized/tusvendran.jpg",
+        bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
 
 
 In February 2021, at just 25 years old, he achieved total financial freedom and resigned from his clinical career to pursue full-time investing. That same year, his expertise was recognized nationally when he was awarded Malaysia’s Best Trading Guru 2021.
 
 
 Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
-  },
+      },
     ],
   },
 
@@ -1597,25 +1603,27 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
 ];
 
 const engagementStageScheduleDay2: Session[] = [
-  { time: "10:30 - 11:00", title: "金氏如何把节庆生意做成长期品牌？" ,
+  {
+    time: "10:30 - 11:00",
+    title: "金氏如何把节庆生意做成长期品牌？",
     speakers: [
-       {
-    name: "陈金财 Alann Tan",
-    title: "Founder & CEO",
-    company: "Jin Ye Ye Sdn Bhd",
-    photo: "/optimized/alannTan.jpg",
-    bio: `陈金财（Alann Tan）是马来西亚养生送礼品牌金氏集团创办人兼CEO。2008年大学毕业后返马创业，从新春送礼市场起步，创立金爷爷品牌，并逐步把业务拓展至健康养生领域，打造 JYNNS 金氏养生与整合老行家等品牌，形成多品牌集团版图。
+      {
+        name: "陈金财 Alann Tan",
+        title: "Founder & CEO",
+        company: "Jin Ye Ye Sdn Bhd",
+        photo: "/optimized/alannTan.jpg",
+        bio: `陈金财（Alann Tan）是马来西亚养生送礼品牌金氏集团创办人兼CEO。2008年大学毕业后返马创业，从新春送礼市场起步，创立金爷爷品牌，并逐步把业务拓展至健康养生领域，打造 JYNNS 金氏养生与整合老行家等品牌，形成多品牌集团版图。
 
     目前，金氏集团业务涵盖燕窝、天然蜂蜜及多元养生产品的研发、生产、零售与贸易。陈金财也积极推动品牌文化化发展，结合新春文化内容、原创贺岁歌曲及节庆企划，致力让传统文化与现代消费市场接轨，并推动大马优质产品走向国际。`,
-  },
-      ],
-        moderator:  {
-    name: "黄振峰 Bong Jenn Fong",
-    title: "Chief of News",
-    company: "KleverStock",
-    photo: "/optimized/bongJennFong.jpg",
-    bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
-  },
+      },
+    ],
+    moderator: {
+      name: "黄振峰 Bong Jenn Fong",
+      title: "Chief of News",
+      company: "KleverStock",
+      photo: "/optimized/bongJennFong.jpg",
+      bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
+    },
   },
   {
     time: "11:00 - 11:30",
@@ -1662,13 +1670,13 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
 `,
       },
     ],
-    moderator:    {
-        name: "Prestine Davekhaw",
-        title: "Founder",
-        company: "MalaysianPAYGAP",
-        photo: "/optimized/prestine.jpg",
-        bio: `Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
-      },
+    moderator: {
+      name: "Prestine Davekhaw",
+      title: "Founder",
+      company: "MalaysianPAYGAP",
+      photo: "/optimized/prestine.jpg",
+      bio: `Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
+    },
   },
   {
     time: "12:00 - 12:30",
@@ -1717,7 +1725,6 @@ Driven by a commitment to financial literacy and responsible investing, I contin
       "Podcast 2: Financial Independence for Women — Planning, Investing & Growing",
     description: "",
     speakers: [
- 
       {
         name: "Isabelle Zhen",
         title: "Head of Group Equity Marketing",
@@ -1734,16 +1741,16 @@ Driven by a commitment to financial literacy and responsible investing, I contin
 `,
       },
     ],
-    moderator:      {
-        name: "Lai Le Ann",
-        title: "Content Creator",
-        company: "",
-        photo: "/optimized/leAnn.jpg",
-        bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
+    moderator: {
+      name: "Lai Le Ann",
+      title: "Content Creator",
+      company: "",
+      photo: "/optimized/leAnn.jpg",
+      bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
 
 Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
 Known for her Malaysia Library Series, she advocates one core belief: valuable content builds trust, and trust is the foundation of long-term growth and retention.`,
-      },
+    },
   },
   {
     time: "13:30 - 14:00",
@@ -1830,31 +1837,19 @@ F. THE page商页2019年评选菁英
 ·企业名言：一件事，一辈子，专注到极致，注定伟大`,
       },
     ],
-    moderator:      {
-        name: "林伟强 Lim Woi Kiong",
-        title: "Founder",
-        company: "9Shares 九点股票",
-        photo: "/optimized/mrLim9Shares.jpeg",
-        bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
-      },
+    moderator: {
+      name: "林伟强 Lim Woi Kiong",
+      title: "Founder",
+      company: "9Shares 九点股票",
+      photo: "/optimized/mrLim9Shares.jpeg",
+      bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
+    },
   },
   {
     time: "15:30 - 16:00",
-    title: "From Pills to Profits : How to Build a Portfolio That Pays More Than as Your Job",
+    title: "",
     description: "",
-    speakers: [{
-    name: "Tusvendran Pillai",
-    title: "Founder",
-    company: "Niaga Saham",
-    photo: "/optimized/tusvendran.jpg",
-    bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
-
-
-In February 2021, at just 25 years old, he achieved total financial freedom and resigned from his clinical career to pursue full-time investing. That same year, his expertise was recognized nationally when he was awarded Malaysia’s Best Trading Guru 2021.
-
-
-Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
-  },],
+    speakers: [],
   },
   {
     time: "16:00 - 16:30",
@@ -1948,7 +1943,26 @@ His approach combines academic knowledge with practical market experience, offer
       },
     ],
   },
-  { time: "18:30 - 18:40", title: "Wrap" },
+  {
+    time: "18:30 - 19:00",
+    title:
+      "From Pills to Profits : How to Build a Portfolio That Pays More Than as Your Job",
+    speakers: [
+      {
+        name: "Tusvendran Pillai",
+        title: "Founder",
+        company: "Niaga Saham",
+        photo: "/optimized/tusvendran.jpg",
+        bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
+
+
+In February 2021, at just 25 years old, he achieved total financial freedom and resigned from his clinical career to pursue full-time investing. That same year, his expertise was recognized nationally when he was awarded Malaysia’s Best Trading Guru 2021.
+
+
+Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
+      },
+    ],
+  },
 ];
 
 const SpeakerCard = ({
@@ -2137,7 +2151,16 @@ const SessionRow = ({
                 <h3
                   className={`font-bold ${session.isSpecial ? "bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400 text-center text-lg md:text-xl" : isInvestmentTalk ? "bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-cyan-500 to-sky-600 text-center text-lg md:text-xl" : "bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500 text-center text-lg md:text-xl"}`}
                 >
-                  {hasPodcastLabel ? podcastTitle : session.title}
+                  {hasPodcastLabel ? (
+                    podcastTitle
+                  ) : session.title ? (
+                    session.title.split("\n").map((line, i, arr) => (
+                      <span key={i}>
+                        {line}
+                        {i < arr.length - 1 && <br />}
+                      </span>
+                    ))
+                  ) : null}
                 </h3>
               </>
             )

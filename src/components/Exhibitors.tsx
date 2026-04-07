@@ -96,6 +96,8 @@ const saatDimensiLogo = "/optimized/saatDimensi.jpeg";
 const troopersLogo = "/optimized/troopers.png";
 const kleverstockLogo = "/optimized/kleverstock.png";
 const JYYGroupLogo = "/optimized/JYYGroup.png";
+const faAdvisoryLogo = "/optimized/FAAdvisory.webp";
+const mascoLogo = "/optimized/masco.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -199,7 +201,7 @@ const goldSponsors = [
 const giftPartners = Array.from({ length: 4 }).map((_, i) =>
   placeholderImg(`Gift+${i + 1}`),
 );
-const giftSponsors = [tealiveLogo, zusLogo, printciousLogo, uncleJeffLogo];
+const giftSponsors = [tealiveLogo, zusLogo, printciousLogo,mascoLogo, uncleJeffLogo];
 const exclusivePhonePartners = [oppoLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
 const mediaPartners = [
@@ -221,6 +223,7 @@ const friendsOfMonie = [
   ddnkLogo,
   ecoAsiaCapitalLogo,
   endeavorLogo,
+  faAdvisoryLogo,
   financeLangLogo,
   financialFaizLogo,
   fnbTalkLogo,
