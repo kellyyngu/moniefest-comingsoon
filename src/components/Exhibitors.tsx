@@ -95,6 +95,7 @@ const LFFGroupLogo = "/optimized/LFFGroup.png";
 const saatDimensiLogo = "/optimized/saatDimensi.jpeg";
 const troopersLogo = "/optimized/troopers.png";
 const kleverstockLogo = "/optimized/kleverstock.png";
+const JYYGroupLogo = "/optimized/JYYGroup.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -229,14 +230,15 @@ const friendsOfMonie = [
   insightInvestsLogo,
   insightsAnalyticsBerhadLogo,
   jaLogo,
-    joeyYapGroupLogo,
+  joeyYapGroupLogo,
+  JYYGroupLogo,
   LFFGroupLogo,
   mpgLogo,
   moneyBraderLogo,
   mrmoneyLogo,
   mybwLogo,
   ncspaceLogo,
-    niagaSahamLogo,
+  niagaSahamLogo,
   noMoneyLahLogo,
   sbsLogo,
   stayWokePropertyLogo,
