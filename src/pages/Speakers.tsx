@@ -128,6 +128,28 @@ Beyond the digital screen, Lucas is a powerhouse on the live stage, having succe
 On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo Stand-up Specials and collaborative comedy tours. With her dual expertise in content production and live performance, she uniquely commands an audience while seamlessly weaving brand messaging into a comedic yet authentic flow, making her one of the industry's most versatile standout performers today.`,
   },
   {
+    name: "Raj Mahal",
+    photo: "/optimized/raj.jpg",
+    company: "@rajmahalbro",
+    bio: `Raj Mahal is an emcee and host, formerly part of the breakfast show on Malaysia’s #1 English radio station - which reaches millions of Malaysians daily. 
+
+With over 10 years of experience in the entertainment industry, he has worked with leading global brands to create engaging live event experiences - ranging from product launches and corporate dinners to award ceremonies and music festivals. 
+
+In his free time, he practices meditation, plays board games and spends time with his 3 cats.
+`,
+  },
+  {
+    name: "Sherlynn Low",
+    photo: "/optimized/sherlyn.JPG",
+    company: "@sherlynnlyy__ & @emcee_sherlynn",
+    bio: `Sherlynn is a dynamic trilingual event emcee and host, currently pursuing her studies in law while building a strong presence in the media and entertainment space.
+
+With close to four years of experience, she has worked alongside major brands across skincare, beauty, F&B, fintech, automotive, property, telecommunications, and energy sectors, bringing energy, professionalism, and versatility to every stage she steps on. From corporate functions and product launches to lifestyle events and brand activations, Sherlynn is known for creating engaging and memorable experiences for diverse audiences in multiple languages.
+
+Beyond the stage, she is also a content creator with a passion for storytelling and audience connection.
+`,
+  },
+  {
     name: "Nicholas Lim Pinn Yang",
     title: "Chief Executive Officer",
     company: "Foodie Media Berhad",
@@ -1067,7 +1089,7 @@ Guided by the mission of Food Equality — providing equal access to good food a
     bio: `Christy Ng is the Founder of Christy Ng Sdn Bhd, having famously scaled her business from a small living room operation into one of Southeast Asia's most culturally relevant handbag and footwear brands.`,
   },
   {
-    name: "YB Steven Sim Chee Keong",
+    name: "Yang Berhormat Steven Sim Chee Keong",
     title: "Minister of Entrepreneur and Cooperative Development",
     company: "",
     photo: "/optimized/YBStevenSim.png",
@@ -1103,7 +1125,7 @@ const mainSpeakersList = speakers.filter(
 
 // Desired display order for main speakers (keep organisers and guest unchanged)
 const desiredSpeakerOrder: string[] = [
-  "YB Steven Sim Chee Keong",
+  "Yang Berhormat Steven Sim Chee Keong",
   "Yeoh Chen Chow",
   "Nicholas Lim Pinn Yang",
   "George Poh, CFP®",
@@ -1178,10 +1200,12 @@ const desiredSpeakerOrder: string[] = [
   "Peter Yong",
   "Pn Adibah Mazlan",
   "Prestine Davekhaw",
+  "Raj Mahal",
   "Sai",
   "Sean Tan",
   "Shane Choo",
   "Shan Li Tay",
+  "Sherlynn Low",
   "Tan Kyzen, Max",
   "Timothy Tiah",
   "Torres Wong",

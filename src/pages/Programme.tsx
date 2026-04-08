@@ -1515,7 +1515,7 @@ He is know amongst his peers as an innovative leader with a shrewd mind within t
     },
     speakers: [
       {
-        name: "YB Steven Sim Chee Keong",
+        name: "Yang Berhormat Steven Sim Chee Keong",
         title: "Minister of Entrepreneur and Cooperative Development",
         company: "",
         photo: "/optimized/YBStevenSim.png",
