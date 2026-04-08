@@ -51,17 +51,9 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Sparkles,
   },
+ 
   {
     number: 5,
-    title: "Maybank",
-    description: "Maybank campaign banner",
-    image: "/optimized/maybankBanner.jpg",
-    link: "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/privilege/rewards/campaign.page",
-    noCrop: true,
-    icon: Trophy,
-  },
-  {
-    number: 6,
     title: "Moomoo",
     description: "Moomoo welcome promotion banner",
     image: "/optimized/moomooBanner.jpeg",
@@ -69,8 +61,27 @@ const highlights: Highlight[] = [
     noCrop: true,
     icon: Trophy,
   },
-  {
+   {
     number: 7,
+    title: "Kenanga / Rakuten Trade",
+    description: "Kenanga banner — open Rakuten Trade device account opening",
+    image: "/optimized/KenangaBanner.jpeg",
+    link: "https://www.rakutentrade.my/device/accountopening?mode=web&source=MonieFest2026",
+    noCrop: true,
+    icon: Trophy,
+  },
+   {
+    number: 6,
+    title: "Maybank",
+    description: "Maybank campaign banner",
+    image: "/optimized/maybankBanner.jpg",
+    link: "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/privilege/rewards/campaign.page",
+    noCrop: true,
+    icon: Trophy,
+  },
+ 
+  {
+    number: 8,
     title: "ASNB",
     description: "ASNB banner and partner highlight.",
     image: "/optimized/ASNBbanner.png",
@@ -79,7 +90,7 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 8,
+    number: 9,
     title: "CGSi",
     description: "CGSi partner banner",
     image: "/optimized/CGSiBanner.jpg",
@@ -87,7 +98,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 9,
+    number: 10,
     title: "Dasher",
     description: "Dasher banner",
     image: "/optimized/dasherBanner.png",
@@ -95,7 +106,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 10,
+    number: 11,
     title: "Phillip Capital – Unlock Bursa US CFDs with NOVA",
     description: "Phillip Capital promotion",
     image: "/optimized/phillipCapitalBanner.png",
@@ -104,7 +115,7 @@ const highlights: Highlight[] = [
     icon: Gift,
   },
   {
-    number: 11,
+    number: 12,
     title: "RytBank",
     description: "RytBank banner",
     image: "/optimized/rytBankBanner.jpeg",
@@ -112,7 +123,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 12,
+    number: 13,
     title: "Funding Societies",
     description: "Funding Societies banner",
     image: "/optimized/fundingSocietiesBanner.jpg",
@@ -120,7 +131,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
    {
-    number: 13,
+    number: 14,
     title: "IJM Rimbayu",
     description: "IJM Rimbayu banner",
     image: "/optimized/IJMRimbayuBanner.jpg",
@@ -129,7 +140,7 @@ const highlights: Highlight[] = [
     icon: Star,
   },
   {
-    number: 14,
+    number: 15,
     title: "Riana Dutamas",
     description: "Riana Dutamas banner",
     image: "/optimized/RianaDutamasBanner.jpg",
@@ -138,7 +149,7 @@ const highlights: Highlight[] = [
     icon: Star,
   },
   {
-    number: 15,
+    number: 16,
     title: "MicroLEAP Lucky Draw",
     description:
       "Stand a chance to win exclusive prizes from microLEAP and be part of Malaysia's premier financial festival.",
@@ -147,7 +158,7 @@ const highlights: Highlight[] = [
     icon: Sparkles,
   },
   {
-    number: 16,
+    number: 17,
     title: "Public Mutual",
     description: "Public Mutual banner",
     image: "/optimized/publicMutualBanner.png",
@@ -156,14 +167,13 @@ const highlights: Highlight[] = [
     icon: Trophy,
   },
   {
-    number: 17,
+    number: 18,
     title: "Sinegy",
     description: "Sinegy partner banner",
     image: "/optimized/sinegyBanner.webp",
     noCrop: true,
     icon: Sparkles,
   },
- 
 ];
 
 const HighlightCard: React.FC<{ highlight: Highlight; index: number }> = ({

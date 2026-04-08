@@ -36,6 +36,7 @@ const ImagePreloader = () => {
       '/optimized/past-event-pic-8.webp',
       '/optimized/past-event-pic-9.webp',
       '/optimized/highlightsBanner.webp', // Highlights page banner (prefetch)
+      '/optimized/KenangaBanner.jpeg', // Kenanga banner (prefetch)
       '/optimized/speakerBanner.webp', // Speakers page banner (prefetch)
     ];
 
