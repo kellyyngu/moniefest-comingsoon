@@ -540,6 +540,18 @@ His vision for Gambit Group is to develop a future-ready financial platform that
         bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
       },
     ],
+    moderator:  {
+    name: "Raj Mahal",
+    photo: "/optimized/raj.jpg",
+    title: "Emcee",
+    company: "@rajmahalbro",
+    bio: `Raj Mahal is an emcee and host, formerly part of the breakfast show on Malaysia’s #1 English radio station - which reaches millions of Malaysians daily. 
+
+With over 10 years of experience in the entertainment industry, he has worked with leading global brands to create engaging live event experiences - ranging from product launches and corporate dinners to award ceremonies and music festivals. 
+
+In his free time, he practices meditation, plays board games and spends time with his 3 cats.
+`,
+  },
     description: "",
   },
   {

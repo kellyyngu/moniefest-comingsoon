@@ -130,6 +130,7 @@ On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo St
   {
     name: "Raj Mahal",
     photo: "/optimized/raj.jpg",
+    title: "Emcee",
     company: "@rajmahalbro",
     bio: `Raj Mahal is an emcee and host, formerly part of the breakfast show on Malaysia’s #1 English radio station - which reaches millions of Malaysians daily. 
 
