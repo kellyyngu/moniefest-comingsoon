@@ -435,7 +435,8 @@ Marketing and Economics, from Monash University.`,
   },
   {
     time: "16:00 - 16:45",
-    title: "start small. EARN BIG!\nInvest from as low as RM10 and earn up to 18% p.a.",
+    title:
+      "start small. EARN BIG!\nInvest from as low as RM10 and earn up to 18% p.a.",
     description: "",
     speakers: [
       {
@@ -525,12 +526,12 @@ His vision for Gambit Group is to develop a future-ready financial platform that
     bullets: [],
     speakers: [
       {
-    name: "Christy Ng",
-    title: "Founder",
-    company: "Christy Ng Sdn Bhd",
-    photo: "/optimized/christyNg.jpg",
-    bio: `Christy Ng is the Founder of Christy Ng Sdn Bhd, having famously scaled her business from a small living room operation into one of Southeast Asia's most culturally relevant handbag and footwear brands.`,
-  },
+        name: "Christy Ng",
+        title: "Founder",
+        company: "Christy Ng Sdn Bhd",
+        photo: "/optimized/christyNg.jpg",
+        bio: `Christy Ng is the Founder of Christy Ng Sdn Bhd, having famously scaled her business from a small living room operation into one of Southeast Asia's most culturally relevant handbag and footwear brands.`,
+      },
       {
         name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
@@ -564,16 +565,16 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
         photo: "/optimized/vincentYeo.jpeg",
         bio: `vincent profile not available yet`,
       },
-       {
-    name: "Kelvyn Chuah",
-    title: "Managing Director / Founder",
-    company: "Sinegy DAX Sdn. Bhd.",
-    photo: "/optimized/kelvynChuah.jpg",
-    bio: `SINEGY is Malaysia’s first homegrown and regulated digital asset exchange, offering institutional-grade features to corporate and institutional clients.
+      {
+        name: "Kelvyn Chuah",
+        title: "Managing Director / Founder",
+        company: "Sinegy DAX Sdn. Bhd.",
+        photo: "/optimized/kelvynChuah.jpg",
+        bio: `SINEGY is Malaysia’s first homegrown and regulated digital asset exchange, offering institutional-grade features to corporate and institutional clients.
     
     Trade confidently on a regulated platform that complies with Malaysian standards, ensuring a safe and compliant environment. SINEGY offers unique Ringgit Malaysia (RM) and crypto trading pairs. It utilizes an aggregated pricing model to source the best prices from all major exchanges, providing optimal value and secure trading in one place.
 `,
-  },
+      },
     ],
     moderator: {
       name: "Noelle Lee",
@@ -1514,6 +1515,15 @@ He is know amongst his peers as an innovative leader with a shrewd mind within t
     },
     speakers: [
       {
+        name: "YB Steven Sim Chee Keong",
+        title: "Minister of Entrepreneur and Cooperative Development",
+        company: "",
+        photo: "/optimized/YBStevenSim.png",
+        bio: `YB Steven Sim Chee Keong is a prominent Malaysian leader currently serving as the Minister of Entrepreneur and Cooperatives Development (KUSKOP). A three-term Member of Parliament for Bukit Mertajam, Sim has built a distinguished career within the federal government through a series of key ministerial portfolios. He previously served as the Minister of Human Resources (2023–2025), where he championed labor reforms, and as Deputy Minister of Finance II (2022–2023) during a critical period of economic recovery. His ministerial experience began as Deputy Minister of Youth and Sports (2018–2020), marking him as one of the nation's most versatile young policymakers.
+    
+    Recognized globally as a Young Global Leader by the World Economic Forum, YB Steven Sim combines a background in Computer Science and Sustainable Development with a deep passion for socio-economic reform. He is also a noted author, exploring Malaysian identity through works such as Hang Tuah: Adiwira Bangsa. At the helm of KUSKOP, he focuses on strengthening the MSME ecosystem and fostering cooperative growth, making him a central figure in Malaysia’s current economic development and entrepreneurial landscape.`,
+      },
+      {
         name: "Tay Shan Li",
         title: "Managing Director",
         company: "Endeavor Malaysia",
@@ -1545,15 +1555,6 @@ With social impact close to his heart, Tunku Danny is a Social Value Associate  
 
 Tunku Danny holds an MBA from the Nottingham University Business School.`,
       },
-       {
-    name: "YB Steven Sim Chee Keong",
-    title: "Minister of Entrepreneur and Cooperative Development",
-    company: "",
-    photo: "/optimized/YBStevenSim.png",
-    bio: `YB Steven Sim Chee Keong is a prominent Malaysian leader currently serving as the Minister of Entrepreneur and Cooperatives Development (KUSKOP). A three-term Member of Parliament for Bukit Mertajam, Sim has built a distinguished career within the federal government through a series of key ministerial portfolios. He previously served as the Minister of Human Resources (2023–2025), where he championed labor reforms, and as Deputy Minister of Finance II (2022–2023) during a critical period of economic recovery. His ministerial experience began as Deputy Minister of Youth and Sports (2018–2020), marking him as one of the nation's most versatile young policymakers.
-    
-    Recognized globally as a Young Global Leader by the World Economic Forum, YB Steven Sim combines a background in Computer Science and Sustainable Development with a deep passion for socio-economic reform. He is also a noted author, exploring Malaysian identity through works such as Hang Tuah: Adiwira Bangsa. At the helm of KUSKOP, he focuses on strengthening the MSME ecosystem and fostering cooperative growth, making him a central figure in Malaysia’s current economic development and entrepreneurial landscape.`,
-  },
     ],
   },
 
@@ -1991,17 +1992,13 @@ Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founde
   },
   {
     time: "19:00 - 19:30",
-    title:
-      "Podcast 3: Beyond Crypto Hype: Real Use Cases in Finance Today",
-    speakers: [
-    ],
+    title: "Podcast 3: Beyond Crypto Hype: Real Use Cases in Finance Today",
+    speakers: [],
   },
   {
     time: "19:30 - 20:00",
-    title:
-      "Wrap",
-    speakers: [
-    ],
+    title: "Wrap",
+    speakers: [],
   },
 ];
 
@@ -2191,16 +2188,16 @@ const SessionRow = ({
                 <h3
                   className={`font-bold ${session.isSpecial ? "bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400 text-center text-lg md:text-xl" : isInvestmentTalk ? "bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-cyan-500 to-sky-600 text-center text-lg md:text-xl" : "bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500 text-center text-lg md:text-xl"}`}
                 >
-                  {hasPodcastLabel ? (
-                    podcastTitle
-                  ) : session.title ? (
-                    session.title.split("\n").map((line, i, arr) => (
-                      <span key={i}>
-                        {line}
-                        {i < arr.length - 1 && <br />}
-                      </span>
-                    ))
-                  ) : null}
+                  {hasPodcastLabel
+                    ? podcastTitle
+                    : session.title
+                      ? session.title.split("\n").map((line, i, arr) => (
+                          <span key={i}>
+                            {line}
+                            {i < arr.length - 1 && <br />}
+                          </span>
+                        ))
+                      : null}
                 </h3>
               </>
             )
