@@ -68,9 +68,9 @@ const talentCorpLogo = "/optimized/talentCorp.png";
 const ekonomiRakyatLogo = "/optimized/ekonomiRakyat.svg";
 const beyondInsightsLogo = "/optimized/beyondInsights.svg";
 const fpamLogo = "/optimized/FPAM.png";
-const maybankLogo = "/optimized/maybank.svg";
+const maybankLogo = "/optimized/maybank.png";
 const mybwLogo = "/optimized/MYBW.svg";
-const ijmRimbayuLogo = "/optimized/IJMRimbayu.svg";
+const ijmRimbayuLogo = "/optimized/RimbayuLogo.svg";
 const rianaDutamasLogo = "/optimized/rianaDutamas.svg";
 const ijmRimbayuBanner = "/optimized/IJMRimbayuBanner.jpg";
 const rianaDutamasBanner = "/optimized/RianaDutamasBanner.jpg";
@@ -98,6 +98,7 @@ const kleverstockLogo = "/optimized/kleverstock.png";
 const JYYGroupLogo = "/optimized/JYYGroup.png";
 const faAdvisoryLogo = "/optimized/FAAdvisory.webp";
 const mascoLogo = "/optimized/masco.png";
+const sumaCollegeLogo = "/optimized/SUMACollege.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -245,6 +246,7 @@ const friendsOfMonie = [
   noMoneyLahLogo,
   sbsLogo,
   stayWokePropertyLogo,
+  sumaCollegeLogo,
   talentCorpLogo,
   taylorsUniversityLogo,
   tianGeLogo,

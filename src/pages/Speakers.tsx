@@ -1059,6 +1059,32 @@ Lee’s specializes in importing and supplying high-quality meat, dairy, seafood
 
 Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
   },
+   {
+    name: "Christy Ng",
+    title: "Founder",
+    company: "Christy Ng Sdn Bhd",
+    photo: "/optimized/christyNg.jpg",
+    bio: `Christy Ng is the Founder of Christy Ng Sdn Bhd, having famously scaled her business from a small living room operation into one of Southeast Asia's most culturally relevant handbag and footwear brands.`,
+  },
+  {
+    name: "YB Steven Sim Chee Keong",
+    title: "Minister of Entrepreneur and Cooperative Development",
+    company: "",
+    photo: "/optimized/YBStevenSim.png",
+    bio: `YB Steven Sim Chee Keong is a prominent Malaysian leader currently serving as the Minister of Entrepreneur and Cooperatives Development (KUSKOP). A three-term Member of Parliament for Bukit Mertajam, Sim has built a distinguished career within the federal government through a series of key ministerial portfolios. He previously served as the Minister of Human Resources (2023–2025), where he championed labor reforms, and as Deputy Minister of Finance II (2022–2023) during a critical period of economic recovery. His ministerial experience began as Deputy Minister of Youth and Sports (2018–2020), marking him as one of the nation's most versatile young policymakers.
+    
+    Recognized globally as a Young Global Leader by the World Economic Forum, YB Steven Sim combines a background in Computer Science and Sustainable Development with a deep passion for socio-economic reform. He is also a noted author, exploring Malaysian identity through works such as Hang Tuah: Adiwira Bangsa. At the helm of KUSKOP, he focuses on strengthening the MSME ecosystem and fostering cooperative growth, making him a central figure in Malaysia’s current economic development and entrepreneurial landscape.`,
+  },
+  {
+    name: "Kelvyn Chuah",
+    title: "Managing Director / Founder",
+    company: "Sinegy DAX Sdn. Bhd.",
+    photo: "/optimized/kelvynChuah.jpg",
+    bio: `SINEGY is Malaysia’s first homegrown and regulated digital asset exchange, offering institutional-grade features to corporate and institutional clients.
+    
+    Trade confidently on a regulated platform that complies with Malaysian standards, ensuring a safe and compliant environment. SINEGY offers unique Ringgit Malaysia (RM) and crypto trading pairs. It utilizes an aggregated pricing model to source the best prices from all major exchanges, providing optimal value and secure trading in one place.
+`,
+  },
 ];
 
 // Grouping for page layout
@@ -1077,6 +1103,7 @@ const mainSpeakersList = speakers.filter(
 
 // Desired display order for main speakers (keep organisers and guest unchanged)
 const desiredSpeakerOrder: string[] = [
+  "YB Steven Sim Chee Keong",
   "Yeoh Chen Chow",
   "Nicholas Lim Pinn Yang",
   "George Poh, CFP®",
@@ -1121,6 +1148,7 @@ const desiredSpeakerOrder: string[] = [
   "Chen Jian",
   "Chin Yi Xuan",
   "Chloe Foo",
+  "Christy Ng",
   "David Ng",
   "Eddie Ng",
   "Dato' Dr Nazri Khan (DDNK)",
@@ -1139,6 +1167,7 @@ const desiredSpeakerOrder: string[] = [
   "Ng Ka Hoe, CFP®",
   "Kah Mun",
   "Kelvin Goh, CFP®",
+  "Kelvyn Chuah",
   "Lai Le Ann",
   "Liksen Lei",
   "林伟强 Lim Woi Kiong",

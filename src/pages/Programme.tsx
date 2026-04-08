@@ -525,6 +525,13 @@ His vision for Gambit Group is to develop a future-ready financial platform that
     bullets: [],
     speakers: [
       {
+    name: "Christy Ng",
+    title: "Founder",
+    company: "Christy Ng Sdn Bhd",
+    photo: "/optimized/christyNg.jpg",
+    bio: `Christy Ng is the Founder of Christy Ng Sdn Bhd, having famously scaled her business from a small living room operation into one of Southeast Asia's most culturally relevant handbag and footwear brands.`,
+  },
+      {
         name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
         company: "Foodie Media Berhad",
@@ -557,6 +564,16 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
         photo: "/optimized/vincentYeo.jpeg",
         bio: `vincent profile not available yet`,
       },
+       {
+    name: "Kelvyn Chuah",
+    title: "Managing Director / Founder",
+    company: "Sinegy DAX Sdn. Bhd.",
+    photo: "/optimized/kelvynChuah.jpg",
+    bio: `SINEGY is Malaysia’s first homegrown and regulated digital asset exchange, offering institutional-grade features to corporate and institutional clients.
+    
+    Trade confidently on a regulated platform that complies with Malaysian standards, ensuring a safe and compliant environment. SINEGY offers unique Ringgit Malaysia (RM) and crypto trading pairs. It utilizes an aggregated pricing model to source the best prices from all major exchanges, providing optimal value and secure trading in one place.
+`,
+  },
     ],
     moderator: {
       name: "Noelle Lee",
@@ -1528,6 +1545,15 @@ With social impact close to his heart, Tunku Danny is a Social Value Associate  
 
 Tunku Danny holds an MBA from the Nottingham University Business School.`,
       },
+       {
+    name: "YB Steven Sim Chee Keong",
+    title: "Minister of Entrepreneur and Cooperative Development",
+    company: "",
+    photo: "/optimized/YBStevenSim.png",
+    bio: `YB Steven Sim Chee Keong is a prominent Malaysian leader currently serving as the Minister of Entrepreneur and Cooperatives Development (KUSKOP). A three-term Member of Parliament for Bukit Mertajam, Sim has built a distinguished career within the federal government through a series of key ministerial portfolios. He previously served as the Minister of Human Resources (2023–2025), where he championed labor reforms, and as Deputy Minister of Finance II (2022–2023) during a critical period of economic recovery. His ministerial experience began as Deputy Minister of Youth and Sports (2018–2020), marking him as one of the nation's most versatile young policymakers.
+    
+    Recognized globally as a Young Global Leader by the World Economic Forum, YB Steven Sim combines a background in Computer Science and Sustainable Development with a deep passion for socio-economic reform. He is also a noted author, exploring Malaysian identity through works such as Hang Tuah: Adiwira Bangsa. At the helm of KUSKOP, he focuses on strengthening the MSME ecosystem and fostering cooperative growth, making him a central figure in Malaysia’s current economic development and entrepreneurial landscape.`,
+  },
     ],
   },
 
@@ -1847,7 +1873,7 @@ F. THE page商页2019年评选菁英
   },
   {
     time: "15:30 - 16:00",
-    title: "",
+    title: "Financial Talk",
     description: "",
     speakers: [],
   },
@@ -1961,6 +1987,20 @@ In February 2021, at just 25 years old, he achieved total financial freedom and 
 
 Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
       },
+    ],
+  },
+  {
+    time: "19:00 - 19:30",
+    title:
+      "Podcast 3: Beyond Crypto Hype: Real Use Cases in Finance Today",
+    speakers: [
+    ],
+  },
+  {
+    time: "19:30 - 20:00",
+    title:
+      "Wrap",
+    speakers: [
     ],
   },
 ];
