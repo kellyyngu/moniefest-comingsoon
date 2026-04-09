@@ -101,6 +101,7 @@ const mascoLogo = "/optimized/masco.png";
 const sumaCollegeLogo = "/optimized/SUMACollege.png";
 const picoLogo = "/optimized/pico.png";
 const upboundLogo = "/optimized/upboundLogo.png";
+const sultLogo = "/optimized/sult.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -692,7 +693,7 @@ const Exhibitors = () => {
         />
         <LogoGrid
           title="Event Solution Partners"
-          logos={[picoLogo, troopersLogo]}
+          logos={[picoLogo, sultLogo, troopersLogo]}
           hideCaption
           logoOnly
           logoUrls={logoUrls}
