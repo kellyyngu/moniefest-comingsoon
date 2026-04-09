@@ -122,6 +122,15 @@ At Bursa, she has driven transformational initiatives that expanded investor par
 
 At Bursa, she has driven transformational initiatives that expanded investor participation, unlocked new revenue streams, and enhanced Bursa's positioning as a modern and inclusive exchange. A graduate of the London School of Economics, Stephanie is recognised as a thought leader advancing Malaysia's capital market development.`,
       },
+        {
+    name: "Yeoh Chen Chow",
+    title: "Independent Non-Executive Chairman",
+    company: "Foodie Media Berhad",
+    photo: "/optimized/yeohChenChow.avif",
+    bio: `Yeoh Chen Chow is Independent Non-Executive Chairman of Foodie Media Berhad, a company listed on Bursa Ace market. He is also Founder of 1% Advisory & Coaching and Independent Non-Executive Director of Audience Analytics Limited, a company listed on SGX Catalist.
+
+Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
+  },
       {
         name: "Nicholas Lim Pinn Yang",
         title: "Chief Executive Officer",
