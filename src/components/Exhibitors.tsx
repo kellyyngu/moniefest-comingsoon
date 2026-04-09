@@ -99,6 +99,8 @@ const JYYGroupLogo = "/optimized/JYYGroup.png";
 const faAdvisoryLogo = "/optimized/FAAdvisory.webp";
 const mascoLogo = "/optimized/masco.png";
 const sumaCollegeLogo = "/optimized/SUMACollege.png";
+const picoLogo = "/optimized/pico.png";
+const upboundLogo = "/optimized/upboundLogo.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -202,7 +204,13 @@ const goldSponsors = [
 const giftPartners = Array.from({ length: 4 }).map((_, i) =>
   placeholderImg(`Gift+${i + 1}`),
 );
-const giftSponsors = [tealiveLogo, zusLogo, printciousLogo,mascoLogo, uncleJeffLogo];
+const giftSponsors = [
+  tealiveLogo,
+  zusLogo,
+  printciousLogo,
+  mascoLogo,
+  uncleJeffLogo,
+];
 const exclusivePhonePartners = [oppoLogo];
 const knowledgePartners = [cboeLogo, spgLogo];
 const mediaPartners = [
@@ -253,8 +261,8 @@ const friendsOfMonie = [
   ticketmelonLogo,
   traddictivLogo,
   tradeViewCapitalLogo,
-  troopersLogo,
   uhnwLogo,
+  upboundLogo,
   vanzoLogo,
   wabikongLogo,
   wealthFortLogo,
@@ -678,6 +686,13 @@ const Exhibitors = () => {
           title="Media Partner"
           logos={mediaPartners}
           fullUrls
+          hideCaption
+          logoOnly
+          logoUrls={logoUrls}
+        />
+        <LogoGrid
+          title="Event Solution Partners"
+          logos={[picoLogo, troopersLogo]}
           hideCaption
           logoOnly
           logoUrls={logoUrls}

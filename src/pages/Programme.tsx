@@ -373,6 +373,22 @@ Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and l
         photo: "/optimized/khairyJamaluddin.avif",
         bio: `An alumnus of University of Oxford and University College London, Khairy Jamaluddin (KJ) served as Malaysia’s Minister of Health from 2021 to 2022. He previously held the positions of Minister of Science, Technology and Innovation (2020–2021) and Minister of Youth and Sports (2013–2018). Today, he co-hosts the Keluar Sekejap and is a radio presenter at Hot FM.`,
       },
+      {
+        name: "Shahril Hamdan",
+        title: "Co-host",
+        company: "Keluar Sekejap",
+        photo: "/optimized/shahril.jpg",
+        bio: `Shahril Hamdan, Co-host Keluar Sekejap and Managing Director of Bullhound Capital. Over 15 years, Shahril Hamdan built a tri-sector career in the public, private, and non-profit spaces. He now brings these experiences to bear in his activities in tech, investments and digital media.
+
+He is Managing Director and Head of Southeast Asia for Bullhound Capital, a global technology growth investor with over USD1 billion in AUM and invested in leading tech companies including household names such as Spotify, Revolut and Whoop.
+
+Taking a portfolio approach to life, Shahril also co-hosts and co-owns Keluar Sekejap, Malaysia’s newest digital media company anchored on its main podcast covering policy, politics and current affairs.
+
+He is also a World Economic Forum Young Global Leader, and was recently Visiting Fellow at the Rajaratnam School of International Studies, Nanyang Technological University, Singapore.
+
+Prior to his current activities, Shahril was Economic Director in the Prime Minister’s Office and was a member of the National Economic Action Council. He also spent three years as a consultant with McKinsey and Company, where he worked across Southeast Asia advising multinational clients across various industries, after which he became CEO of Destini Oil, a mid-sized energy services company with footprint across various countries. Before the Covid years, he ran IGV Partners, syndicating angel and venture investments into Malaysian tech startups and also founded a consulting firm Watchtower Advisory, partnering a few ex-McKinsey colleagues to serve local and international corporates.
+`,
+      },
     ],
   },
   {
@@ -540,18 +556,18 @@ His vision for Gambit Group is to develop a future-ready financial platform that
         bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
       },
     ],
-    moderator:  {
-    name: "Raj Mahal",
-    photo: "/optimized/raj.jpg",
-    title: "Emcee",
-    company: "@rajmahalbro",
-    bio: `Raj Mahal is an emcee and host, formerly part of the breakfast show on Malaysia’s #1 English radio station - which reaches millions of Malaysians daily. 
+    moderator: {
+      name: "Raj Mahal",
+      photo: "/optimized/raj.jpg",
+      title: "Emcee",
+      company: "@rajmahalbro",
+      bio: `Raj Mahal is an emcee and host, formerly part of the breakfast show on Malaysia’s #1 English radio station - which reaches millions of Malaysians daily. 
 
 With over 10 years of experience in the entertainment industry, he has worked with leading global brands to create engaging live event experiences - ranging from product launches and corporate dinners to award ceremonies and music festivals. 
 
 In his free time, he practices meditation, plays board games and spends time with his 3 cats.
 `,
-  },
+    },
     description: "",
   },
   {
@@ -957,6 +973,13 @@ Ka Hoe is a regular speaker and been invited to speak for communities including 
         photo: "/optimized/cheah_Zi_Kah.png",
         bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
       },
+       {
+    name: "Pauline Teoh Poe Lin",
+    title: "Licensed Financial Planner & Accredited HRDC Trainer",
+    company: "FA Advisory Sdn Bhd",
+    photo: "/optimized/paulineTeoh.jpg",
+    bio: `Pauline Teoh is a Licensed Financial Planner and Accredited HRDC trainer. With over a decade of experience, she specialises in helping professionals and families create clear financial roadmaps. Thus, preparing them holistically not just for financial growth, but also for life’s unexpected moments.`,
+  },
     ],
     moderator: {
       name: "Chin Yi Xuan",
@@ -1239,6 +1262,17 @@ Her contributions have earned her numerous prestigious recognitions, including:
 3) As well as national honours conferred by His Majesty the King of Malaysia, including PSPP, KMM, and KMW.
 
 Today, she continues to play a key role in advancing digital trust, fraud prevention, and public-private collaboration across the cybersecurity ecosystem.`,
+      },
+      {
+        name: "Adeline Koh",
+        title: "Deputy Director, Content Regulation Department",
+        company: "Malaysian Communications and Multimedia Commission (MCMC)",
+        photo: "/optimized/adelineKoh.jpeg",
+        bio: `Adeline joined the Malaysian Communications and Multimedia Commission (MCMC) in 2022 as an Assistant Director in the New Media Department. She holds a Bachelor of Business Administration (Honours) from Multimedia University (MMU).
+
+  She currently serves as Deputy Director in the Content Regulation Department, where she is responsible for formulating, reviewing, and implementing regulatory and compliance frameworks for online content. In this role, she also oversees the enforcement of these frameworks to ensure robust consumer protection, safeguard national interests, and uphold socio-economic stability, while fostering a safe, positive, and conducive online environment.
+
+  In addition, she has delivered talks and presentations to law enforcement agencies on online content safety and the ethical use of social media among government servants, regarding the Communications and Multimedia Act 1998 (CMA 1998) and the Online Safety Act 2025 (ONSA 2025).`,
       },
     ],
     moderator: {
@@ -1591,6 +1625,13 @@ In terms of education, Peter holds a degree in psychology and business managemen
     },
     speakers: [
       {
+        name: "Nicholas Lim Pinn Yang",
+        title: "Chief Executive Officer",
+        company: "Foodie Media Berhad",
+        photo: pinnyang,
+        bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
+      },
+      {
         name: "Bryan Loo",
         title: "Chief Executive Officer",
         company: "Tealive",
@@ -1604,11 +1645,14 @@ Recognised for his entrepreneurial achievements, Bryan has received numerous acc
 Bryan is passionate about inspiring young entrepreneurs and continues to champion innovation in the food and beverage industry.`,
       },
       {
-        name: "Nicholas Lim Pinn Yang",
-        title: "Chief Executive Officer",
-        company: "Foodie Media Berhad",
-        photo: pinnyang,
-        bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
+        name: "Dato’ Calvin Chan",
+        title: "Founder",
+        company: "Oriental Kopi",
+        photo: "/optimized/datoCalvin.jpeg",
+        bio: `Oriental Kopi, a Malaysian restaurant serving authentic local cuisine and coffee, currently operates 30 outlets across Malaysia and Singapore. Alongside its in-house dining experience, Oriental Kopi offers merchandise products that showcase the essence of Malaysian culinary heritage. These products are widely available in major hypermarkets and supermarkets across Malaysia, bringing the flavors of Malaysia closer to home.
+
+    Our products are also exported to international markets, including Hong Kong, Singapore, Australia, Indonesia and New Zealand offering worldwide to savor the rich taste of Malaysian tradition.
+`,
       },
     ],
   },
@@ -1886,7 +1930,7 @@ F. THE page商页2019年评选菁英
   },
   {
     time: "15:30 - 16:00",
-    title: "Financial Talk",
+    title: "Beyond Crypto Hype: Real Use Cases in Finance Today",
     description: "",
     speakers: [],
   },
@@ -1984,31 +2028,6 @@ His approach combines academic knowledge with practical market experience, offer
   },
   {
     time: "18:30 - 19:00",
-    title:
-      "From Pills to Profits : How to Build a Portfolio That Pays More Than as Your Job",
-    speakers: [
-      {
-        name: "Tusvendran Pillai",
-        title: "Founder",
-        company: "Niaga Saham",
-        photo: "/optimized/tusvendran.jpg",
-        bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
-
-
-In February 2021, at just 25 years old, he achieved total financial freedom and resigned from his clinical career to pursue full-time investing. That same year, his expertise was recognized nationally when he was awarded Malaysia’s Best Trading Guru 2021.
-
-
-Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founder of Niaga Saham Academy, Malaysia's premier investment infotainment & education platform. Under his leadership, the academy has grown to a community of over 150,000 active students, generating an average of 5 million monthly views across social media. Beyond education, Tusvendran is a idealist of the EKUIBUMI Cooperative, which works strategically with the Ministry of Investment, Trade and Industry (MITI) to facilitate and support IPO applications for the Bumiputera community.`,
-      },
-    ],
-  },
-  {
-    time: "19:00 - 19:30",
-    title: "Podcast 3: Beyond Crypto Hype: Real Use Cases in Finance Today",
-    speakers: [],
-  },
-  {
-    time: "19:30 - 20:00",
     title: "Wrap",
     speakers: [],
   },

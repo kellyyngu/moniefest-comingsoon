@@ -583,6 +583,50 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     His expertise spans real estate portfolio building, equity markets, and modern entrepreneurship, all delivered through high-energy content that contrasts a lavish lifestyle with practical, grounded money management strategies. By balancing his roles as a high-net-worth investor and a dedicated family man, he emphasizes that true success is about achieving "time freedom" and building a lasting legacy for the next generation.`,
   },
   {
+    name: "Adeline Koh",
+    title: "Deputy Director, Content Regulation Department",
+    company: "Malaysian Communications and Multimedia Commission (MCMC)",
+    photo: "/optimized/adelineKoh.jpeg",
+    bio: `Adeline joined the Malaysian Communications and Multimedia Commission (MCMC) in 2022 as an Assistant Director in the New Media Department. She holds a Bachelor of Business Administration (Honours) from Multimedia University (MMU).
+
+  She currently serves as Deputy Director in the Content Regulation Department, where she is responsible for formulating, reviewing, and implementing regulatory and compliance frameworks for online content. In this role, she also oversees the enforcement of these frameworks to ensure robust consumer protection, safeguard national interests, and uphold socio-economic stability, while fostering a safe, positive, and conducive online environment.
+
+  In addition, she has delivered talks and presentations to law enforcement agencies on online content safety and the ethical use of social media among government servants, regarding the Communications and Multimedia Act 1998 (CMA 1998) and the Online Safety Act 2025 (ONSA 2025).`,
+  },
+  {
+    name: "Pauline Teoh Poe Lin",
+    title: "Licensed Financial Planner & Accredited HRDC Trainer",
+    company: "FA Advisory Sdn Bhd",
+    photo: "/optimized/paulineTeoh.jpg",
+    bio: `Pauline Teoh is a Licensed Financial Planner and Accredited HRDC trainer. With over a decade of experience, she specialises in helping professionals and families create clear financial roadmaps. Thus, preparing them holistically not just for financial growth, but also for life’s unexpected moments.`,
+  },
+  {
+    name: "Dato’ Calvin Chan",
+    title: "Founder",
+    company: "Oriental Kopi",
+    photo: "/optimized/datoCalvin.jpeg",
+    bio: `Oriental Kopi, a Malaysian restaurant serving authentic local cuisine and coffee, currently operates 30 outlets across Malaysia and Singapore. Alongside its in-house dining experience, Oriental Kopi offers merchandise products that showcase the essence of Malaysian culinary heritage. These products are widely available in major hypermarkets and supermarkets across Malaysia, bringing the flavors of Malaysia closer to home.
+
+    Our products are also exported to international markets, including Hong Kong, Singapore, Australia, Indonesia and New Zealand offering worldwide to savor the rich taste of Malaysian tradition.
+`,
+  },
+  {
+    name: "Shahril Hamdan",
+    title: "Co-host",
+    company: "Keluar Sekejap",
+    photo: "/optimized/shahril.jpg",
+    bio: `Shahril Hamdan, Co-host Keluar Sekejap and Managing Director of Bullhound Capital. Over 15 years, Shahril Hamdan built a tri-sector career in the public, private, and non-profit spaces. He now brings these experiences to bear in his activities in tech, investments and digital media.
+
+He is Managing Director and Head of Southeast Asia for Bullhound Capital, a global technology growth investor with over USD1 billion in AUM and invested in leading tech companies including household names such as Spotify, Revolut and Whoop.
+
+Taking a portfolio approach to life, Shahril also co-hosts and co-owns Keluar Sekejap, Malaysia’s newest digital media company anchored on its main podcast covering policy, politics and current affairs.
+
+He is also a World Economic Forum Young Global Leader, and was recently Visiting Fellow at the Rajaratnam School of International Studies, Nanyang Technological University, Singapore.
+
+Prior to his current activities, Shahril was Economic Director in the Prime Minister’s Office and was a member of the National Economic Action Council. He also spent three years as a consultant with McKinsey and Company, where he worked across Southeast Asia advising multinational clients across various industries, after which he became CEO of Destini Oil, a mid-sized energy services company with footprint across various countries. Before the Covid years, he ran IGV Partners, syndicating angel and venture investments into Malaysian tech startups and also founded a consulting firm Watchtower Advisory, partnering a few ex-McKinsey colleagues to serve local and international corporates.
+`,
+  },
+  {
     name: "Tevaryan Thiagarajan",
     title: "Director, Digital Custody Development",
     company: "Gambit Custody Sdn Bhd (Part of Gambit Group Consortium)",
@@ -1082,7 +1126,7 @@ Lee’s specializes in importing and supplying high-quality meat, dairy, seafood
 
 Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
   },
-   {
+  {
     name: "Christy Ng",
     title: "Founder",
     company: "Christy Ng Sdn Bhd",
@@ -1133,6 +1177,7 @@ const desiredSpeakerOrder: string[] = [
   "Jay Cheong",
   "ACP (Retired) Lai Lee Ching",
   "Khairy Jamaluddin",
+  "Shahril Hamdan",
   "Dr. Ong Kian Ming",
   "Al Emri Izzat Shah Albakri",
   "Esther Tio",
@@ -1164,6 +1209,7 @@ const desiredSpeakerOrder: string[] = [
   "Sean Freer",
   "Vincent Wang",
   "Bryan Loo Woi Lip",
+  "Adeline Koh",
   "陈金财 Alann Tan",
   "Anson Tan",
   "Bob Ngoh",
@@ -1174,6 +1220,7 @@ const desiredSpeakerOrder: string[] = [
   "Christy Ng",
   "David Ng",
   "Eddie Ng",
+  "Dato’ Calvin Chan",
   "Dato' Dr Nazri Khan (DDNK)",
   "Edward Ling",
   "Gareth Tan",
@@ -1199,6 +1246,7 @@ const desiredSpeakerOrder: string[] = [
   "Nigel Chong",
   "Noelle Lee",
   "Peter Yong",
+  "Pauline Teoh Poe Lin",
   "Pn Adibah Mazlan",
   "Prestine Davekhaw",
   "Raj Mahal",
