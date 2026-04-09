@@ -1159,6 +1159,16 @@ Guided by the mission of Food Equality — providing equal access to good food a
     Trade confidently on a regulated platform that complies with Malaysian standards, ensuring a safe and compliant environment. SINEGY offers unique Ringgit Malaysia (RM) and crypto trading pairs. It utilizes an aggregated pricing model to source the best prices from all major exchanges, providing optimal value and secure trading in one place.
 `,
   },
+  {
+    name: "Jonathan Chee",
+    title: "Senior Vice President",
+    company: "CloudTech Group",
+    photo: "/optimized/jonathanChee.jpeg",
+    bio: `Jonathan Chee is a Web3 and blockchain specialist with a focus on reshaping financial systems through emerging technologies. With a background spanning both digital assets and traditional finance, he offers a grounded perspective on how blockchain can move beyond speculation into real-world impact. 
+
+Jonathan is particularly passionate about the future of finance, where trust is embedded in technology and financial services become more efficient, transparent, and globally accessible.
+`,
+  },
 ];
 
 // Grouping for page layout
@@ -1240,6 +1250,7 @@ const desiredSpeakerOrder: string[] = [
   "Jayden Pang",
   "Jane Chuck",
   "Jocelyn Lee",
+  "Jonathan Chee",
   "Jose Blasco",
   "Ng Ka Hoe, CFP®",
   "Kah Mun",

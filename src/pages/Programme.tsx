@@ -1939,7 +1939,16 @@ F. THE page商页2019年评选菁英
     time: "15:30 - 16:00",
     title: "Beyond Crypto Hype: Real Use Cases in Finance Today",
     description: "",
-    speakers: [],
+    speakers: [{
+    name: "Jonathan Chee",
+    title: "Senior Vice President",
+    company: "CloudTech Group",
+    photo: "/optimized/jonathanChee.jpeg",
+    bio: `Jonathan Chee is a Web3 and blockchain specialist with a focus on reshaping financial systems through emerging technologies. With a background spanning both digital assets and traditional finance, he offers a grounded perspective on how blockchain can move beyond speculation into real-world impact. 
+
+Jonathan is particularly passionate about the future of finance, where trust is embedded in technology and financial services become more efficient, transparent, and globally accessible.
+`,
+  },],
   },
   {
     time: "16:00 - 16:30",
