@@ -1143,6 +1143,13 @@ Guided by the mission of Food Equality — providing equal access to good food a
     Recognized globally as a Young Global Leader by the World Economic Forum, YB Steven Sim combines a background in Computer Science and Sustainable Development with a deep passion for socio-economic reform. He is also a noted author, exploring Malaysian identity through works such as Hang Tuah: Adiwira Bangsa. At the helm of KUSKOP, he focuses on strengthening the MSME ecosystem and fostering cooperative growth, making him a central figure in Malaysia’s current economic development and entrepreneurial landscape.`,
   },
   {
+    name: "Wilson Lee",
+    title: "Chief Executive Officer",
+    company: "Upbound & Emax Beauté International",
+    photo: "/optimized/wilsonLee.jpeg",
+    bio: `Wilson Lee is a CEO & Founder, Upbound and Emax Beauté International. He is a CEO, athlete, and community builder shaping performance culture in Malaysia, Wilson lives at the intersection of business, sport, and performance. As a founder, he builds brands with a strong focus on growth, discipline, and execution. As an athlete, he trains consistently, competes, and documents the process publicly. His identity is built around performance in real life, in business, in sport, and in how he shows up every day.`,
+  },
+  {
     name: "Kelvyn Chuah",
     title: "Managing Director / Founder",
     company: "Sinegy DAX Sdn. Bhd.",
@@ -1265,6 +1272,7 @@ const desiredSpeakerOrder: string[] = [
   "Wan Azfar Azeem (MrKripto)",
   "Wen Ping",
   "William K",
+  "Wilson Lee",
   "Wong Chun Mun",
 ];
 

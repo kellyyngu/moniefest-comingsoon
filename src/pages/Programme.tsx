@@ -849,6 +849,13 @@ Lee’s specializes in importing and supplying high-quality meat, dairy, seafood
 
 Guided by the mission of Food Equality — providing equal access to good food at low prices for people across the world — Gareth drives strategic growth, operational excellence, and regional scaling to build a resilient consumer empire in Southeast Asia.`,
       },
+        {
+    name: "Wilson Lee",
+    title: "Chief Executive Officer",
+    company: "Upbound & Emax Beauté International",
+    photo: "/optimized/wilsonLee.jpeg",
+    bio: `Wilson Lee is a CEO & Founder, Upbound and Emax Beauté International. He is a CEO, athlete, and community builder shaping performance culture in Malaysia, Wilson lives at the intersection of business, sport, and performance. As a founder, he builds brands with a strong focus on growth, discipline, and execution. As an athlete, he trains consistently, competes, and documents the process publicly. His identity is built around performance in real life, in business, in sport, and in how he shows up every day.`,
+  },
     ],
     moderator: {
       name: "Lucas Seneviratne",
