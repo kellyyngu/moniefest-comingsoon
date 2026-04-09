@@ -102,6 +102,8 @@ const sumaCollegeLogo = "/optimized/SUMACollege.png";
 const picoLogo = "/optimized/pico.png";
 const upboundLogo = "/optimized/upboundLogo.png";
 const sultLogo = "/optimized/sult.png";
+const kellyLogo = "/optimized/kelly.png";
+const kellyLogo2 = "/optimized/kelly3.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;

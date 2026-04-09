@@ -751,7 +751,7 @@ Through his work in advisory, education, and entrepreneurship, Kelvin is committ
 `,
   },
   {
-    name: "Ng Ka Hoe, CFP®",
+    name: "Ng Ka Hoe, RFP®",
     title: "Financial Transformation Coach, Licensed Financial Planner",
     photo: "/optimized/kahoe.jpg",
     company: "JA Personal Finance Academy",
@@ -1252,7 +1252,7 @@ const desiredSpeakerOrder: string[] = [
   "Jocelyn Lee",
   "Jonathan Chee",
   "Jose Blasco",
-  "Ng Ka Hoe, CFP®",
+  "Ng Ka Hoe, RFP®",
   "Kah Mun",
   "Kelvin Goh, CFP®",
   "Kelvyn Chuah",

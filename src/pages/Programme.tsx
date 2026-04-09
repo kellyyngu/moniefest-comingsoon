@@ -721,7 +721,7 @@ His expertise spans real estate portfolio building, equity markets, and modern e
       },
     ],
     moderator: {
-      name: "Ng Ka Hoe, CFP®",
+      name: "Ng Ka Hoe, RFP®",
       title: "Financial Transformation Coach, Licensed Financial Planner",
       company: "JA Personal Finance Academy",
       photo: "/optimized/kahoe.jpg",
@@ -917,7 +917,7 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
     description: "",
     speakers: [
       {
-        name: "Ng Ka Hoe, CFP®",
+        name: "Ng Ka Hoe, RFP®",
         title: "Financial Transformation Coach, Licensed Financial Planner",
         company: "JA Personal Finance Academy",
         photo: "/optimized/kahoe.jpg",
