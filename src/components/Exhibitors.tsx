@@ -103,7 +103,7 @@ const picoLogo = "/optimized/pico.png";
 const upboundLogo = "/optimized/upboundLogo.png";
 const sultLogo = "/optimized/sult.png";
 const kellyLogo = "/optimized/kelly.png";
-const kellyLogo2 = "/optimized/kelly3.png";
+const kellyLogo2 = "/optimized/kellyLogo2.png";
 
 const placeholderImg = (label = "Logo") =>
   `https://via.placeholder.com/280x140?text=${encodeURIComponent(label)}`;
@@ -127,6 +127,7 @@ const logoUrls: Record<string, string> = {
   [mrmoneyLogo]: "https://www.mrmoneytv.com/",
   [tealiveLogo]: "https://www.loob.com.my/our-company",
   [skyworldLogo]: "https://skyworldgroup.com.my/",
+  [kellyLogo2]: "https://www.linkedin.com/in/kellyyngu",
   [fundingSocietiesLogo]:
     "https://fundingsocieties.com.my/invest?tab=conventional&utm_source=marketing&utm_campaign=marketing_campaign_moniefest2026&utm_medium=offline-event&utm_content=moniefest_website",
   [rytBankLogo]: "https://www.rytbank.my/",
@@ -695,7 +696,7 @@ const Exhibitors = () => {
         />
         <LogoGrid
           title="Event Solution Partners"
-          logos={[picoLogo, sultLogo, troopersLogo]}
+          logos={[kellyLogo2, picoLogo, sultLogo, troopersLogo]}
           hideCaption
           logoOnly
           logoUrls={logoUrls}
