@@ -221,12 +221,6 @@ He works closely with PLCs, institutional partners, and senior management on cap
         image: "/optimized/xiaomitv.webp",
         note: "worth RM1,999",
       },
-      {
-        name: "Philips NA110 Air Fryer",
-        url: "https://www.philips.com.my/c-p/NA110_09/1000-series-airfryer-1000-series-32l",
-        image: "/optimized/airfryer.webp",
-        note: "worth RM259",
-      },
     ],
   },
   {
