@@ -215,12 +215,7 @@ He works closely with PLCs, institutional partners, and senior management on cap
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-      {
-        name: "Xiaomi 55' TV",
-        url: "https://www.mi.com/my/product/xiaomi-tv-a-55-2026/",
-        image: "/optimized/xiaomitv.webp",
-        note: "worth RM1,999",
-      },
+      
     ],
   },
   {
@@ -432,24 +427,7 @@ Marketing and Economics, from Monash University.`,
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-      {
-        name: "Dyson Supersonic",
-        url: "https://www.dyson.my/supersonic-nural-ceramic-pink",
-        image: "/optimized/dyson.jpg",
-        note: "worth RM2,399",
-      },
-      {
-        name: "iPad 11 (128GB, Blue)",
-        url: "https://www.apple.com/my/shop/buy-ipad/ipad/128gb-blue-wifi",
-        image: "/optimized/ipad11.webp",
-        note: "worth RM1599",
-      },
-       {
-        name: "1 x 1-Year Tealive",
-        url: "https://www.tealive.com.my/",
-        image: "/optimized/tealive.jpeg",
-        note: "worth RM1,040",
-      },
+     
     ],
   },
   {
@@ -620,24 +598,6 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-      {
-        name: "Modenas Kriss 110 2026",
-        url: "https://www.zigwheels.my/new-motorcycles/modenas/kriss-110#:~:text=RM%204%2C599%20%2D%204%2C998%20OTR%20Price,115S%2C%20Kriss%20MR2%20and%20RX110.",
-        image: "/optimized/modenas-kriss.webp",
-        note: "worth RM4,998",
-      },
-      {
-        name: "Louis Vuitton Pochette Eva",
-        url: "https://my.louisvuitton.com/eng-my/products/pochette-eva-monogram-nvprod6380091v/M13567",
-        image: "/optimized/louis-vuitton-pochette-eva.webp",
-        note: "worth RM6,750",
-      },
-      {
-        name: "TAG Heuer Aquaracer",
-        url: "https://www.tagheuer.com/my/en/timepieces/collections/tag-heuer-aquaracer/42-mm-th31-00-cosc/WBP5111.FT6259.html",
-        image: "/optimized/tagHeuer.webp",
-        note: "worth RM17,850",
-      },
     ],
   },
   { time: "20:00 - 20:10", title: "Day 1 End" },
@@ -1222,24 +1182,6 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-      {
-        name: "Ogawa Inizio Massage Chair",
-        url: "https://ogawaworld.net/ogawa-inizio-massage-chair?srsltid=AfmBOorKzRgXQ_RRf11WLwi5yCVhaVNDwEhUG8akwMVa_W105r-dWvv2",
-        image: "/optimized/ogawaMassageChair.webp",
-        note: "worth RM9,999",
-      },
-      {
-        name: "1 x 1-Year Tealive",
-        url: "https://www.tealive.com.my/",
-        image: "/optimized/tealive.jpeg",
-        note: "worth RM1,040",
-      },
-      {
-        name: "Macbook Air 13-inch",
-        url: "https://www.tmt.my/products/apple-macbook-air-13-inch-m2-chip",
-        image: "/optimized/macbook.webp",
-        note: "worth RM3,999",
-      },
     ],
   },
 
@@ -1410,18 +1352,6 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-      {
-        name: "Modenas Kriss 110 2026",
-        url: "https://www.zigwheels.my/new-motorcycles/modenas/kriss-110#:~:text=RM%204%2C599%20%2D%204%2C998%20OTR%20Price,115S%2C%20Kriss%20MR2%20and%20RX110.",
-        image: "/optimized/modenas-kriss.webp",
-        note: "worth RM4,998",
-      },
-      {
-        name: "Omega Constellation",
-        url: "https://www.omegawatches.com/watch-omega-constellation-quartz-28-mm-13120286005001",
-        image: "/optimized/omega.webp",
-        note: "worth RM29,400",
-      },
     ],
   },
   {
@@ -1678,24 +1608,7 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
     title: "Lucky Draw (up to RM100,000 worth of Prizes)",
     isSpecial: true,
     prizes: [
-      {
-        name: "Zenith Chronomaster Sport Watch",
-        url: "https://www.zenith-watches.com/en_my/product/chronomaster-sport-95-3100-3600-39-m3100",
-        image: "/optimized/chronomasterSport.webp",
-        note: "worth RM56,500",
-      },
-      {
-        name: "iPhone 17 Pro Max",
-        url: "https://www.apple.com/my/shop/buy-iphone/iphone-17-pro/6.9-inch-display-256gb-cosmic-orange",
-        image: "/optimized/iphone-17-pro.webp",
-        note: "worth RM5,999",
-      },
-      {
-        name: "1 x 1-Year Tealive",
-        url: "https://www.tealive.com.my/",
-        image: "/optimized/tealive.jpeg",
-        note: "worth RM1,040",
-      },
+     
     ],
   },
   { time: "20:00 - 20:15", title: "Day 2 End" },
