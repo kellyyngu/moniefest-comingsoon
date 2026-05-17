@@ -17,26 +17,26 @@
 
     <!-- Set favicon early but avoid preloading it (preloading favicons often triggers unused-preload warnings).
          Keep explicit icon links so browser fetches them when parsing the head. -->
-    <link rel="icon" href="/monie.ico?v=4" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png?v=4" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=4" />
-    <link rel="icon" href="/monie-black.svg?v=4" type="image/svg+xml" />
-    <link rel="shortcut icon" href="/monie.ico?v=4" />
+    <link rel="icon" href="%BASE_URL%monie.ico?v=4" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%icon-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%BASE_URL%icon-192.png?v=4" />
+    <link rel="icon" href="%BASE_URL%monie-black.svg?v=4" type="image/svg+xml" />
+    <link rel="shortcut icon" href="%BASE_URL%monie.ico?v=4" />
 
     <!-- Preload critical images for immediate visibility -->
-    <link rel="preload" as="image" href="/optimized/moniepic.PNG" type="image/png" fetchpriority="high" />
-    <link rel="preload" as="image" href="/moniefest2026.svg" type="image/svg+xml" fetchpriority="high" />
-    <link rel="preload" as="image" href="/optimized/monielogo.webp" type="image/webp" />
-    <link rel="preload" as="image" href="/optimized/banner_bg.webp" type="image/webp" />
-    <link rel="preload" as="image" href="/optimized/highlightsBanner.webp" type="image/webp" />
-    <link rel="preload" as="image" href="/optimized/microleap_luckyDraw.webp" type="image/webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="/optimized/pinnyang.webp" type="image/webp" />
-    <link rel="preload" as="image" href="/optimized/speakerBanner.webp" type="image/webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="/optimized/mitec.webp" type="image/webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="/optimized/yixuan.webp" type="image/webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="/optimized/iherng.jpg" type="image/jpeg" fetchpriority="high" />
-    <link rel="preload" as="image" href="/optimized/seanFreer.jpg" type="image/jpeg" fetchpriority="high" />
-    <link rel="preload" as="image" href="/optimized/george.webp" type="image/webp" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/moniepic.PNG" type="image/png" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%moniefest2026.svg" type="image/svg+xml" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/monielogo.webp" type="image/webp" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/banner_bg.webp" type="image/webp" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/highlightsBanner.webp" type="image/webp" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/microleap_luckyDraw.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/pinnyang.webp" type="image/webp" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/speakerBanner.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/mitec.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/yixuan.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/iherng.jpg" type="image/jpeg" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/seanFreer.jpg" type="image/jpeg" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%optimized/george.webp" type="image/webp" />
 
     <title>Monie Fest 2026 — Money, Finance & Lifestyle</title>
     <meta name="description" content="Monie Fest 2026 — a curated event about money, finance and lifestyle. Talks, panels and networking." />
@@ -60,11 +60,11 @@
     <link rel="canonical" href="https://www.monie.my/" />
     <!-- Add a version query to force browsers/CDNs to fetch the updated favicon after deploy -->
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/x-icon" href="/monie.ico?v=4" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png?v=4" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=4" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png?v=4" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="%BASE_URL%monie.ico?v=4" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%icon-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%BASE_URL%icon-192.png?v=4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%BASE_URL%icon-180.png?v=4" />
+    <link rel="manifest" href="%BASE_URL%site.webmanifest" />
     
     <!-- Structured data (JSON-LD) - update the URL fields to your site domain -->
     <script type="application/ld+json">
