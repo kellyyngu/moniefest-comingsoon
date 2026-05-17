@@ -12,7 +12,7 @@ const microleapLogo = `${import.meta.env.BASE_URL}optimized/microleap.webp`;
 const fimmLogo = `${import.meta.env.BASE_URL}optimized/FIMM.webp`;
 const fsmOneLogo = `${import.meta.env.BASE_URL}optimized/FSM_One.png`;
 const phillipLogo = `${import.meta.env.BASE_URL}optimized/phillipCapital.png`;
-const societyMalaysiaLogo = "/society-malaysia.svg";
+const societyMalaysiaLogo = `${import.meta.env.BASE_URL}society-malaysia.svg`;
 const fundingSocietiesLogo = `${import.meta.env.BASE_URL}optimized/fundingSocieties.svg`;
 const spgLogo = `${import.meta.env.BASE_URL}optimized/spg_dji.png`;
 const bursaLogo = `${import.meta.env.BASE_URL}optimized/bursa.svg`;
@@ -133,7 +133,7 @@ const logoUrls: Record<string, string> = {
   [rytBankLogo]: "https://www.rytbank.my/",
   [hlbLogo]: "https://www.hlbislamic.com.my/",
   [saturnaLogo]: "https://saturna.com.my/",
-  "/versa.svg": "https://versa.com.my/",
+  `${import.meta.env.BASE_URL}versa.svg`: "https://versa.com.my/",
   [cgsiLogo]: "https://www.cgsi.com",
   [ijmRimbayuLogo]: "https://rimbayu.ijmland.com/home",
   [rianaDutamasLogo]: "https://rianadutamas.com/stellaris/",

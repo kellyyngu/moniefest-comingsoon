@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import EventbriteModal from "@/components/EventbriteModal";
 // Background served from public/optimized (WebP)
-const heroBg = '/optimized/banner_bg.webp';
+const heroBg = `${import.meta.env.BASE_URL}optimized/banner_bg.webp`;
 
 const faqs = [
   {

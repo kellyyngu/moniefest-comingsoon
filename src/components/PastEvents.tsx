@@ -1,14 +1,14 @@
 // Use images placed in `public/optimized` (WebP versions)
 const pastEventPhotos = [
-  '/optimized/past-event-pic-4.webp',
-  '/optimized/past-event-pic-9.webp',
-  '/optimized/past-event-pic-6.webp',
-  '/optimized/past-event-pic-1.webp',
-  '/optimized/past-event-pic-2.webp',
-  '/optimized/past-event-pic-3.webp',
-  '/optimized/past-event-pic-7.webp',
-  '/optimized/past-event-pic-8.webp',
-  '/optimized/past-event-pic-5.webp',
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-4.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-9.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-6.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-1.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-2.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-3.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-7.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-8.webp`,
+  `${import.meta.env.BASE_URL}optimized/past-event-pic-5.webp`,
 ];
 
 const PastEvents = () => {

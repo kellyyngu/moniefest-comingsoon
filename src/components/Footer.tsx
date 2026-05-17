@@ -1,5 +1,5 @@
 // Logo served from public/optimized (WebP)
-const monieLogo = '/optimized/monielogo.webp';
+const monieLogo = `${import.meta.env.BASE_URL}optimized/monielogo.webp`;
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import EventbriteModal from "./EventbriteModal";

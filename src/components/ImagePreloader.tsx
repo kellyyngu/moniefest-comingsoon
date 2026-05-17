@@ -7,37 +7,37 @@ const ImagePreloader = () => {
   useEffect(() => {
     // Preload only truly critical above-the-fold images to avoid wasted downloads.
     const criticalPreload = [
-      '/optimized/moniepic.PNG', // Hero background (renders immediately)
+      `${import.meta.env.BASE_URL}optimized/moniepic.PNG`, // Hero background (renders immediately)
       '/moniefest2026.svg', // Main logo (renders immediately)
-      '/optimized/monielogo.webp', // Header logo (visible on first paint)
+      `${import.meta.env.BASE_URL}optimized/monielogo.webp`, // Header logo (visible on first paint)
     ];
 
     const prefetchImages = [
       // Sponsor/exhibitor logos and other large images are useful to have but not required
       // within the first few seconds. Use prefetch to hint the browser without forcing immediate download.
-      '/optimized/Foodie-Red.webp',
-      '/optimized/Spire-Black.webp',
-      '/optimized/benchxcapital.webp',
-      '/optimized/gambitTrustees.webp',
-      '/optimized/gambitCustody.webp',
-      '/optimized/luno.webp',
-      '/optimized/moomoo.webp',
-      '/optimized/webull.webp',
+      `${import.meta.env.BASE_URL}optimized/Foodie-Red.webp`,
+      `${import.meta.env.BASE_URL}optimized/Spire-Black.webp`,
+      `${import.meta.env.BASE_URL}optimized/benchxcapital.webp`,
+      `${import.meta.env.BASE_URL}optimized/gambitTrustees.webp`,
+      `${import.meta.env.BASE_URL}optimized/gambitCustody.webp`,
+      `${import.meta.env.BASE_URL}optimized/luno.webp`,
+      `${import.meta.env.BASE_URL}optimized/moomoo.webp`,
+      `${import.meta.env.BASE_URL}optimized/webull.webp`,
       '/versa.svg',
-      '/optimized/microleap.webp',
+      `${import.meta.env.BASE_URL}optimized/microleap.webp`,
       '/society-malaysia.svg',
-      '/optimized/past-event-pic-1.webp',
-      '/optimized/past-event-pic-2.webp',
-      '/optimized/past-event-pic-3.webp',
-      '/optimized/past-event-pic-4.webp',
-      '/optimized/past-event-pic-5.webp',
-      '/optimized/past-event-pic-6.webp',
-      '/optimized/past-event-pic-7.webp',
-      '/optimized/past-event-pic-8.webp',
-      '/optimized/past-event-pic-9.webp',
-      '/optimized/highlightsBanner.webp', // Highlights page banner (prefetch)
-      '/optimized/KenangaBanner.jpeg', // Kenanga banner (prefetch)
-      '/optimized/speakerBanner.webp', // Speakers page banner (prefetch)
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-1.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-2.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-3.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-4.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-5.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-6.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-7.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-8.webp`,
+      `${import.meta.env.BASE_URL}optimized/past-event-pic-9.webp`,
+      `${import.meta.env.BASE_URL}optimized/highlightsBanner.webp`, // Highlights page banner (prefetch)
+      `${import.meta.env.BASE_URL}optimized/KenangaBanner.jpeg`, // Kenanga banner (prefetch)
+      `${import.meta.env.BASE_URL}optimized/speakerBanner.webp`, // Speakers page banner (prefetch)
     ];
 
     // Preload the critical ones as images

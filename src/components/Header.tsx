@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 // Logo served from public/optimized (WebP)
-const monieLogo = '/optimized/monielogo.webp';
+const monieLogo = `${import.meta.env.BASE_URL}optimized/monielogo.webp`;
 
 const navItems = [
   { label: "Exhibitors", route: "/", hash: "#exhibitors" },
