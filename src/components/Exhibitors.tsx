@@ -133,7 +133,7 @@ const logoUrls: Record<string, string> = {
   [rytBankLogo]: "https://www.rytbank.my/",
   [hlbLogo]: "https://www.hlbislamic.com.my/",
   [saturnaLogo]: "https://saturna.com.my/",
-  `${import.meta.env.BASE_URL}versa.svg`: "https://versa.com.my/",
+  [`${import.meta.env.BASE_URL}versa.svg`]: "https://versa.com.my/",
   [cgsiLogo]: "https://www.cgsi.com",
   [ijmRimbayuLogo]: "https://rimbayu.ijmland.com/home",
   [rianaDutamasLogo]: "https://rianadutamas.com/stellaris/",

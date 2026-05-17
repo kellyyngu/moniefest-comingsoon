@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from "@/components/Footer";
 import { Sparkles, Gift, Trophy, Star } from "lucide-react";
-import heroBg from `${import.meta.env.BASE_URL}optimized/highlightsBanner.webp`;
+const heroBg = `${import.meta.env.BASE_URL}optimized/highlightsBanner.webp`;
 
 type Highlight = {
   number: number;
