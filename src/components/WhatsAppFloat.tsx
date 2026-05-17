@@ -18,7 +18,7 @@ const WhatsAppFloat = () => {
       {/* Promo + Exhibitor group: placed a bit lower on mobile so it sits below the hero CTA */}
       <div className="w-28 sm:w-44 rounded-xl shadow-xl flex items-center justify-center self-end md:self-end md:translate-y-2 animate-float">
         <button onClick={handleOpenEventbrite} aria-label="Register Now" className="w-full p-0 bg-transparent rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200">
-          <img src="/optimized/floatingButton.png" alt="Register Now" className="w-full h-auto object-cover rounded-xl" loading="eager" fetchPriority="high" />
+          <img src={`${import.meta.env.BASE_URL}optimized/floatingButton.png`} alt="Register Now" className="w-full h-auto object-cover rounded-xl" loading="eager" fetchPriority="high" />
         </button>
       </div>
 

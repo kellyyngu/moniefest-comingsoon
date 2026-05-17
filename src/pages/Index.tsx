@@ -32,7 +32,7 @@ const Index = ({ onOpenEventbrite }: IndexProps) => {
                 tabIndex={-1}
               >
                 <img
-                  src="/optimized/giveaway.webp"
+                  src={`${import.meta.env.BASE_URL}optimized/giveaway.webp`}
                   alt="Special Giveaways"
                   className="w-full object-contain bg-card p-4 md:p-6 lg:p-8 transition-transform duration-500 group-hover:scale-[1.02]"
                   loading="eager"
@@ -49,7 +49,7 @@ const Index = ({ onOpenEventbrite }: IndexProps) => {
                   aria-label="Transportation banner – Instagram post"
                 >
                   <img
-                    src="/optimized/transportationBanner.jpg"
+                    src={`${import.meta.env.BASE_URL}optimized/transportationBanner.jpg`}
                     alt="Transportation banner"
                     className="w-full object-contain bg-card p-3 md:p-4 transition-transform duration-500 hover:scale-[1.02]"
                     loading="eager"

@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 // Background served from public/optimized (WebP)
-const heroBg = "/optimized/speakerBanner.webp";
+const heroBg = `${import.meta.env.BASE_URL}optimized/speakerBanner.webp`;
 
 type Speaker = {
   name: string;
@@ -20,7 +20,7 @@ const speakers: Speaker[] = [
     name: "Yeoh Chen Chow",
     title: "Independent Non-Executive Chairman",
     company: "Foodie Media Berhad",
-    photo: "/optimized/yeohChenChow.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/yeohChenChow.avif`,
     bio: `Yeoh Chen Chow is Independent Non-Executive Chairman of Foodie Media Berhad, a company listed on Bursa Ace market. He is also Founder of 1% Advisory & Coaching and Independent Non-Executive Director of Audience Analytics Limited, a company listed on SGX Catalist.
 
 Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell University and an Eisenhower Fellow.`,
@@ -29,14 +29,14 @@ Prior to this, he was co-founder of Fave Group. He is an alumnus of Cornell Univ
     name: "Noelle Lee",
     title: "Organizer",
     company: "MY Blockchain Week",
-    photo: "/optimized/noelle.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/noelle.jpg`,
     bio: `Noelle is trained legally (LLB, CLP) and also an MBA holder. She has been part of the blockchain industry since 2016 and is a Managing Partner of ACTIV8 (formerly known Lydian Labs). She is a young entrepreneur that has established numerous partnerships across the globe.`,
   },
   {
     name: "Faiz Azmi",
     title: "Director",
     company: "Financial Faiz",
-    photo: "/optimized/faizAzmi.png",
+    photo: `${import.meta.env.BASE_URL}optimized/faizAzmi.png`,
     bio: `Faiz Azmi has accumulated 12 years of diverse experience in the banking industry, real estate, unit trusts, and insurance. Recognizing the lack of unbiased financial education available to Malaysians, Faiz decided to fill this gap by creating content that is both impartial and accessible to the general public.
 
 After his initial video on ASB dividends went viral in 2021, he received an overwhelming response and numerous questions from viewers. This feedback motivated him to produce more educational videos that address the concealed aspects of financial transactions often overlooked by salespeople.
@@ -58,14 +58,14 @@ With an eye on global expansion, Faiz aspires to address the worldwide deficienc
     chineseName: "黄俊文",
     title: "Managing Director & CEO",
     company: "SBS Nexus Berhad",
-    photo: "/optimized/wongChunMun.png",
+    photo: `${import.meta.env.BASE_URL}optimized/wongChunMun.png`,
     bio: `黄俊文白手起家创立广告传单公司 SBS Group，被誉为马来西亚广告传单营销的领航人物，并在2018年收购历史老字号商业杂志《商海》，将多年累积的庞大客户资源整合升级，带领 SBS 集团转型为商业媒体科技企业。如今，他更进一步带领 SBS Nexus Berhad 成功迈向上市之路，持续推动本地企业媒体与科技领域的发展。`,
   },
   {
     name: "Torres Wong",
     title: "Resident Consultant, Joey Yap Group",
     company: "Founder of BaZi & Metaphysics Community",
-    photo: "/optimized/torresWong.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/torresWong.jpg`,
     bio: `Torres Wong is the youngest Resident Consultant with Joey Yap Group, specializing in guiding individuals—particularly students and young professionals—in making high-impact career and financial decisions with clarity and precision. Torres Wong is also a Founder of BaZi & Metaphysics Community.
 
 Introduced to metaphysics at the age of 9 through the teachings of Joey Yap, Torres transformed early uncertainty about his own path into a structured understanding of personal strengths, timing, and life direction. This foundation shapes his approach today—focusing not just on insight, but on translating clarity into measurable life outcomes.
@@ -88,7 +88,7 @@ His mission is to help individuals avoid costly misalignment, accelerate their g
     name: "Wen Ping",
     title: "Training & Development Manager",
     company: "Joey Yap Group",
-    photo: "/optimized/wenPing.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/wenPing.jpg`,
     bio: `Wen Ping is an Essential Skills Trainer & Speaking Coach & Qualified Lawyer Turned Educator.
 
 Wen Ping is a dynamic trainer and educator who bridges financial literacy, personal development and strategic decision-making. With a unique background as a qualified lawyer and his current role in Joey Yap Group, his methodology emphasizes patterns and behaviour, risk tolerance and individuals' relationship with money and investments.
@@ -103,7 +103,7 @@ Wen Ping is on a mission to help individuals grow, not just their wealth, but al
     name: "Pn Adibah Mazlan",
     title: "Founder",
     company: "The Raw",
-    photo: "/optimized/pnAdibahMazlan.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/pnAdibahMazlan.jpeg`,
     bio: `Miss Adibah is the founder of The Raw, a science-driven skincare brand established in 2019. Leveraging her pharmaceutical background, she is on a mission to break the stigma surrounding locally made products and elevate Malaysian beauty brands to global standards through transparency, safety, and innovation.`,
   },
   {
@@ -111,7 +111,7 @@ Wen Ping is on a mission to help individuals grow, not just their wealth, but al
     chineseName: "卢卡斯",
     title: "Stand-up Comedian & Lead Host",
     company: "BBK Network",
-    photo: "/optimized/lucas.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/lucas.avif`,
     bio: `Lucas is a premier Stand-up Comedian and content strategist known for his sharp wit and insightful perspective on global affairs. Holding a background in Economics, he possesses a unique ability to dissect complex national and international news, transforming intricate socio-economic topics into engaging and relatable comedic narratives.
 
 Beyond the digital screen, Lucas is a powerhouse on the live stage, having successfully completed multiple sold-out Solo Stand-up Specials across Malaysia and overseas. His performances are a masterclass in satirical comedy, blending data-driven insights with fearless social commentary. Whether analyzing market trends or local current events, Lucas delivers a highly intellectual yet hilariously provocative experience that resonates with a diverse, international audience.`,
@@ -122,14 +122,14 @@ Beyond the digital screen, Lucas is a powerhouse on the live stage, having succe
     chineseName: "嘉雯",
     title: "Stand-up Comedian & Lead Host",
     company: "BBK Network",
-    photo: "/optimized/kahMun.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/kahMun.avif`,
     bio: `Kah Mun is a vibrant and charismatic Stand-up Comedian and media professional who has taken the Malaysian comedy scene by storm. As a Lead Host and Content Producer at BBK Network, she plays a pivotal role in shaping digital narratives, blending her sharp journalistic sense with creative entertainment. She is widely recognized for her on-screen news analysis, where she breaks down current events with a signature blend of humor and clarity, making complex topics accessible to a wide audience.
 
 On the live stage, Kah Mun is a powerhouse, having performed in numerous Solo Stand-up Specials and collaborative comedy tours. With her dual expertise in content production and live performance, she uniquely commands an audience while seamlessly weaving brand messaging into a comedic yet authentic flow, making her one of the industry's most versatile standout performers today.`,
   },
   {
     name: "Raj Mahal",
-    photo: "/optimized/raj.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/raj.jpg`,
     title: "Emcee",
     company: "@rajmahalbro",
     bio: `Raj Mahal is an emcee and host, formerly part of the breakfast show on Malaysia’s #1 English radio station - which reaches millions of Malaysians daily. 
@@ -141,7 +141,7 @@ In his free time, he practices meditation, plays board games and spends time wit
   },
   {
     name: "Sherlynn Low",
-    photo: "/optimized/sherlyn.JPG",
+    photo: `${import.meta.env.BASE_URL}optimized/sherlyn.JPG`,
     company: "@sherlynnlyy__ & @emcee_sherlynn",
     bio: `Sherlynn is a dynamic trilingual event emcee and host, currently pursuing her studies in law while building a strong presence in the media and entertainment space.
 
@@ -154,14 +154,14 @@ Beyond the stage, she is also a content creator with a passion for storytelling 
     name: "Nicholas Lim Pinn Yang",
     title: "Chief Executive Officer",
     company: "Foodie Media Berhad",
-    photo: "/optimized/pinnyang.webp",
+    photo: `${import.meta.env.BASE_URL}optimized/pinnyang.webp`,
     bio: `Lim Pinn Yang is the Founder and CEO of Foodie Media Berhad, a leading digital media company in Malaysia. Starting from a simple food page, he grew it into a multi-brand media and commerce ecosystem reaching millions today. He is passionate about financial literacy, long-term thinking, and showing that wealth is built through consistency, discipline, and belief.`,
   },
   {
     name: "Yang Berhormat Liew Chin Tong",
     title: "Deputy Minister of Finance",
     company: "Government of Malaysia",
-    photo: "/optimized/liewChinTong.png",
+    photo: `${import.meta.env.BASE_URL}optimized/liewChinTong.png`,
     whiteBg: true,
     bio: `Liew Chin Tong is the Deputy Minister of Finance of Malaysia, appointed on 16 December 2025. He is currently the Member of Parliament for Iskandar Puteri, after being elected on 19 November 2022. He is also the State Assemblyperson for Perling, Johor.
 
@@ -181,7 +181,7 @@ He recently published the book Second Takeoff: Strategies for Malaysia’s Econo
     name: "George Poh, CFP®",
     title: "Chief Executive Officer",
     company: "Spire Digital Sdn. Bhd.",
-    photo: "/optimized/george.webp",
+    photo: `${import.meta.env.BASE_URL}optimized/george.webp`,
     nowrapName: true,
     bio: `George Poh, CFP® is the Chief Executive Officer of Spire Digital Sdn Bhd, a finance-focused digital media company under EE Cameron Group, built with one mission: to make financial literacy more accessible, responsible, and impactful for everyday Malaysians. Spire Digital stands for one purpose — Inspiring Confidence, Empowering Financial Decisions.
 
@@ -195,7 +195,7 @@ At Monie Fest, George represents a long-term vision: building a credible financi
     name: "ACP (Retired) Lai Lee Ching",
     title: "Digital Trust & Outreach Lead",
     company: "Vigilant Asia",
-    photo: "/optimized/ACPLai.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/ACPLai.jpg`,
     bio: `ACP (R) Lai Lee Ching, currently the Digital Trust & Outreach Lead at Vigilant Asia, a cybersecurity firm focused on strengthening digital trust and protecting users in today’s evolving threat landscape.
 
 With over 37 years of service in the Royal Malaysia Police, she last served as the Principal Assistant Director of Strategic Planning in the Commercial Crime Investigation Department (CCID), where she led Malaysia’s nationwide scam awareness strategy.
@@ -226,7 +226,7 @@ Today, she continues to play a key role in advancing digital trust, fraud preven
     name: "Tunku Danny Nasaifuddin Mudzaffar",
     title: "Founder & CEO",
     company: "microLEAP",
-    photo: "/optimized/tunkuDanny.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/tunkuDanny.jpg`,
     bio: `Tunku Danny Nasaifuddin Mudzaffar
 Founder & CEO, Microleap PLT
 Tunku Danny is an ex-banker having worked in senior positions in London and  Kuala Lumpur at Standard Chartered and BNP Paribas, from diverse fields  such as Asset-Liability Management, Money Market Sales and Financial  Institutions Coverage.  
@@ -245,7 +245,7 @@ Tunku Danny holds an MBA from the Nottingham University Business School.`,
     name: "Marzuki Musa",
     title: "Chief Marketing Officer",
     company: "microLEAP",
-    photo: "/optimized/marzukiMusa.png",
+    photo: `${import.meta.env.BASE_URL}optimized/marzukiMusa.png`,
     bio: `
 
 - Brings over a decade of experience in brand strategy, digital marketing, media relations, and corporate communications.
@@ -262,7 +262,7 @@ Tunku Danny holds an MBA from the Nottingham University Business School.`,
     name: "Chan Wei Chi",
     title: "Chief Executive Officer",
     company: "KDX (Formerly Tokenize Malaysia)",
-    photo: "/optimized/chanWeiChi.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/chanWeiChi.jpg`,
     bio: `
 
 Wei Chi is a pioneer in Malaysia's regulated digital asset and alternative investment industry. He is also the president of the Malaysian Digital Asset Platform Association (MDAPA). As Chief Executive Officer of KDX, he leads one of only six Digital Asset Exchanges approved by the Securities Commission Malaysia. KDX is a subsidiary of Kenanga. 
@@ -273,14 +273,14 @@ Previously, he was also a co-founding member of another regulated Digital Asset 
     name: "Vincent Yeo",
     title: "Co-Founder/CEO",
     company: "PeerHive",
-    photo: "/optimized/vincentYeo.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/vincentYeo.jpeg`,
     bio: `vincent profile not available yet`,
   },
   {
     name: "Datuk Clifford Hii",
     title: "Chief Executive Officer",
     company: "Gambit Group",
-    photo: "/optimized/datuk_clifford_hii.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/datuk_clifford_hii.jpg`,
     bio: `Datuk Clifford Hii is the Group Chief Executive Officer of Gambit Group, a financial infrastructure and wealth solutions ecosystem focused on trustee services, private credit, investment, and digital platforms.
 
 With over 15 years of experience across finance, technology, and strategic business development, he has been instrumental in building and scaling businesses that bridge traditional financial systems with emerging digital capabilities.
@@ -297,14 +297,14 @@ His vision for Gambit Group is to develop a future-ready financial platform that
     name: "Cheah Zi Kah, CFP®",
     title: "Chief Growth Officer",
     company: "Digital Trustees Berhad (Part of Gambit Group Consortium)",
-    photo: "/optimized/cheah_Zi_Kah.png",
+    photo: `${import.meta.env.BASE_URL}optimized/cheah_Zi_Kah.png`,
     bio: `Cheah Zi Kah is a Certified Financial Planner (CFP®) with over 10 years of experience in the financial services industry. He specialises in unit trust investments, insurance solutions, and will & trust planning, with a strong and comprehensive understanding of holistic financial planning.`,
   },
   {
     name: "Bryan Loo Woi Lip",
     title: "Chief Executive Officer",
     company: "Tealive",
-    photo: "/optimized/bryanloo.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/bryanloo.jpg`,
     bio: `Bryan Loo is the Founder and CEO of Tealive and the founder of Loob Holding Sdn Bhd. An award-winning entrepreneur, he has grown Tealive into Southeast Asia’s leading lifestyle tea brand, with over 1,000 outlets serving 5.5 million customers monthly across multiple international markets.
 
 Guided by his philosophy “Think Big, Start Small, Scale Fast,” Bryan has expanded Loob Holding into one of Malaysia’s largest F&B groups, overseeing brands such as Bask Bear Coffee, Happy Potato, WonderBrew Kombucha, and Sodaxpress.
@@ -317,7 +317,7 @@ Bryan is passionate about inspiring young entrepreneurs and continues to champio
     name: "Chin Yi Xuan",
     title: "Finance Creator",
     company: "No Money Lah",
-    photo: "/optimized/yixuan.webp",
+    photo: `${import.meta.env.BASE_URL}optimized/yixuan.webp`,
     bio: `Yi Xuan Chin is a dividend investor, speaker, and the creator of the finance blog nomoneylah.com, where he shares practical money and investing habits for everyday Malaysians. Over the past seven years, he has documented his own dividend investing journey to inspire others to build their “freedom of choice” in life.
 
 He holds a degree in Economics from Universiti Malaya (UM) and was formerly the General Manager of a licensed proprietary trading firm in Malaysia. Yi Xuan has been a speaker for Bursa Malaysia’s educational webinars for the past three years, and has also appeared on platforms such as BBK Network and Caijin by BFM.
@@ -329,7 +329,7 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     name: "Gin Chong",
     title: "Founder",
     company: "StayWokeProperty",
-    photo: "/optimized/ginChong.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/ginChong.jpeg`,
     bio: `Gin Chong is the Founder of StayWokeProperty and a prominent property content creator in Malaysia. He has reviewed over 200 property developments nationwide, providing honest, educational and engaging insights into the real estate market. Through an entertaining yet informative approach, Gin empowers homebuyers and investors to make smarter property decisions.`,
   },
 
@@ -337,7 +337,7 @@ Currently pursuing his Certified Financial Planner (CFP) qualification, he combi
     name: "Fong Wei Ziet",
     title: "Director",
     company: "Ziet Media Sdn Bhd",
-    photo: "/optimized/ziet.JPG",
+    photo: `${import.meta.env.BASE_URL}optimized/ziet.JPG`,
     bio: `Ziet is a financial educator who simplifies personal finance, investments, wealth-building, and economics for Malaysians. He’s passionate about making financial literacy practical, relatable, and accessible. His YouTube channel “Ziet Invests” has over 230K subscribers and has garnered more than 16 million views, establishing him as a leading voice in Malaysian financial literacy.
 
 He was previously a senior analyst (commercial) at YTL Power International Berhad with experience in research analysis, financial modeling, M&As, and has helped develop Ryt Bank (a BNM-licensed digital bank) Ziet is currently partners with trusted financial brands, including Moomoo Malaysia, Webull, Wise, Ryt Bank, Versa, etc.`,
@@ -346,7 +346,7 @@ He was previously a senior analyst (commercial) at YTL Power International Berha
     name: "Frankie Lim",
     title: "Host",
     company: "FAQ Show",
-    photo: "/optimized/frankie.png",
+    photo: `${import.meta.env.BASE_URL}optimized/frankie.png`,
     bio: `Frankie Lim is a partner and Chief Sales Officer at FitLit Media Tech Group and the host of the FAQ Show, with a vision to empower retail investors amidst the growing trend of retail participation in financial markets. With over a decade of experience in investment banking across corporate finance, equity capital markets, trading, and investor relations, Frankie collaborates closely with financial institutions to simplify financial knowledge for Mr Money TV's audience.
 
 He holds a Bachelor's degree in Economics from the University of Manchester, UK, with a focus on accounting and finance.
@@ -360,7 +360,7 @@ He has interviewed influential figures, including Farm Fresh CEO Mr. Loi Tuan Ee
     name: "Jeroni Khoo",
     title: "Deputy Country Manager",
     company: "Luno Malaysia",
-    photo: "/optimized/jeroni.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/jeroni.jpg`,
     bio: `Jeroni Khoo is the Deputy Country Manager at Luno Malaysia, a leading digital asset
 exchange in Malaysia. He supports the Country Manager in ensuring regulatory compliance,
 overseeing daily operations, and driving cross-functional projects that align with the
@@ -386,14 +386,14 @@ Marketing and Economics, from Monash University.`,
     name: "Peter Kong",
     title: "Head of Research",
     company: "Kenanga Investment Bank Berhad",
-    photo: "/optimized/peterKong.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/peterKong.jpg`,
     bio: `Prior to joining Kenanga as Head of Research, Peter was an award-winning analyst for financials and industrials sector with CLSA Securities Malaysia, where he assumed the role of Deputy Head of Research. Prior to that, Peter honed his credit/bond market skills during his time at RAM Rating Services Berhad as a credit analyst. Starting out his career as an auditor with PricewaterhouseCoopers, Peter is both a licensed accountant and a Chartered Financial Analyst.`,
   },
   {
     name: "Kenny Yee",
     title: "Head of Research",
     company: "Rakuten Trade",
-    photo: "/optimized/kennyYee.png",
+    photo: `${import.meta.env.BASE_URL}optimized/kennyYee.png`,
     bio: `Kenny Yee has over three decades of hands-on  experience in the industry and holds the esteemed position of being a founding member of Rakuten Trade. 
 
 Currently serving as the Head of Research at Rakuten Trade, he dedicates his expertise to delving into the realm of small and mid-cap companies listed on Bursa Malaysia.
@@ -407,7 +407,7 @@ Kenny has an Honors degree from Keele University (Stoke-On-Trent, England), wher
     name: "Fadzihan Abbas Mohamed Ramlee",
     title: "Chief Executive Officer and Executive Director",
     company: "Amanah Saham Nasional Berhad (“ASNB”)",
-    photo: "/optimized/fadzihanAbbasMohamedRamlee.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/fadzihanAbbasMohamedRamlee.jpg`,
     bio: `Abbas Ramlee is the Chief Executive Officer and Executive Director of Amanah Saham 
 Nasional Berhad (“ASNB”), a wholly owned Unit Trust Management Company of 
 Permodalan Nasional Berhad (“PNB”).
@@ -430,7 +430,7 @@ License (“CMSRL”) under Securities Commission Malaysia.
     name: "Liksen Lei",
     title: "U.S. Equities Investor & Analyst",
     company: "@insightinvests",
-    photo: "/optimized/liksen.png",
+    photo: `${import.meta.env.BASE_URL}optimized/liksen.png`,
     bio: `Liksen Lei is an investor focused on U.S. equities with over five years of investing experience. His investment journey gained strong momentum following the COVID-19 period, where he achieved consistent alpha through disciplined research and strategic positioning.
 
 Liksen holds a Bachelor’s degree in Banking and Finance (2022–2025) and is currently pursuing a Master’s degree in International Business at Monash University (2025–2026). Alongside his academic pursuits, he actively shares investment insights through his platform, @insightinvests, where he focuses on market trends, portfolio strategy, and navigating macroeconomic developments.
@@ -442,7 +442,7 @@ His approach combines academic knowledge with practical market experience, offer
     name: "Mohammad Bazli Che Rozenan",
     title: "Director, Members Engagement",
     company: "CFA Society Malaysia",
-    photo: "/optimized/mohammadBazli.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/mohammadBazli.jpg`,
     bio: `Mohammad Bazli Che Rozenan, CFA, serves as Director of Members Engagement for CFA Society Malaysia, bringing his expertise in economic research and market analysis to support member value and community engagement. Bazli leads FX, Rates, and Commodities research in PNB's Economics team, where he is responsible for developing sophisticated forecasting and strategic market analysis for the PNB Investment team.
 
 Previously, as a Special Officer to the Minister of Finance, he helped develop national economic responses, including 2020 stimulus packages and Budget 2021, engaging extensively with government and industry stakeholders.
@@ -453,7 +453,7 @@ Bazli graduated with a First Class Master of Physics from the University of Warw
     name: "Dr. Ong Kian Ming",
     title: "Adjunct Professor",
     company: "Taylor's University",
-    photo: "/optimized/ongKianMing.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/ongKianMing.avif`,
     bio: `Dr. Ong Kian Ming is the Executive Director of RGE Malaysia, part of a Singapore-headquartered global resources-based manufacturing and management group. He is also an Adjunct Professor at Taylor’s University and previously served as the university’s Pro Vice-Chancellor for External Engagement as well as Program Director for the Philosophy, Politics and Economics (PPE) programme.
 
 Dr. Ong brings extensive experience across government, academia, and industry. He served on the Board of Directors of the Malaysian Investment Development Authority (MIDA) and acts as an adviser to several organisations, including the Malaysia China Chamber of Commerce (MCCC) and the Federation of Malaysian Manufacturers (FMM). He is also a member of the Danish Chamber of Commerce (DANCHAM) and part of the CEREBRUM Council, a policy think tank initiated by Johor Corporation.
@@ -468,7 +468,7 @@ Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and l
     name: "Nigel Chong",
     title: "Founder",
     company: "NCSpace Academy",
-    photo: "/optimized/nigelChong.png",
+    photo: `${import.meta.env.BASE_URL}optimized/nigelChong.png`,
     whiteBg: true,
     bio: `Nigel Chong is a full-time stock trader and the founder of NCSPACE ACADEMY SDN BHD. Holding a degree in Business Economics and Finance from the University of Nottingham and registered as an MR with the Securities Commissions (SC), Nigel bridges the gap between complex market dynamics and accessible trading strategies. As a featured speaker for Bursa Malaysia's educational series, he specializes in trend trading methodologies and the application of AI-powered tools to uncover market momentum. Known as a "trading buddy" to his community, Nigel is dedicated to helping retail investors build consistent, profitable trading systems.`,
   },
@@ -476,7 +476,7 @@ Outside of his professional work, Dr. Ong enjoys jogging, watching movies, and l
     name: "Sean Freer",
     title: "Director, Global Exchange Indices",
     company: "S&P Dow Jones Indices (S&P DJI)",
-    photo: "/optimized/seanFreer.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/seanFreer.jpg`,
     bio: `Sean Freer is Director, Global Exchange Indices at S&P Dow Jones Indices (S&P DJI). He is responsible for the product management of S&P DJI’s global exchange partnered indices including the S&P/ASX series. In this role, Sean supports S&P DJI’s efforts developing new benchmarks for local and international equity markets and promotes their use among clients in the Asia‑Pacific region. He also regularly publishes research, analytical reports and market commentary on a variety of international investment topics.
 
 Prior to joining S&P DJI, Sean was a senior product specialist at Franklin Templeton, supporting a number of business development and client retention activities for their global, emerging market and U.S. equity investment platforms. He has also had roles as a product manager and proposal and investment writer at AMP Capital Investors, Russell Investments and Fidelity International. Before joining the financial services industry in 2006, Sean was a broadcast journalist in Queensland, Australia.
@@ -488,7 +488,7 @@ Sean holds a master’s degree in International Relations from Dublin City Unive
     name: "Peter Yong",
     title: "Founder",
     company: "Mr Money TV",
-    photo: "/optimized/peter.webp",
+    photo: `${import.meta.env.BASE_URL}optimized/peter.webp`,
     bio: `Peter Yong is the visionary behind Finlit Media, a dynamic media startup with a mission centered on empowering individuals through engaging educational and entertaining content.
 
 Renowned as the charismatic host of Malaysia's groundbreaking financial channel, Mr. Money TV, Peter boasts over a decade of expertise as a financial planner and advisor. His unique talent lies in distilling intricate financial concepts into accessible, actionable knowledge through the art of storytelling.
@@ -501,14 +501,14 @@ In terms of education, Peter holds a degree in psychology and business managemen
     name: "Prestine Davekhaw",
     title: "Founder",
     company: "MalaysianPAYGAP",
-    photo: "/optimized/prestine.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/prestine.jpg`,
     bio: `Prestine Davekhaw is the founder of MalaysianPAYGAP, the community-driven platform pioneering salary transparency in Southeast Asia. Since its inception as a grassroots movement, the platform has grown into a leading HR tech startup, utilizing tens of thousands of data points to advocate for fair pay and equity. A champion for data-driven hiring, Prestine works at the intersection of community advocacy and corporate transparency to build a more equitable future for the Malaysian workforce.`,
   },
   {
     name: "Sai",
     title: "Comedy Skits, Penang Influencer, Authentic Storyteller",
     company: "Wabikong TV",
-    photo: "/optimized/sai.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/sai.jpg`,
     bio: `Sai a proud Penangite, is a comedy, lifestyle and culture content creator known for his comedic skits and street interviews like the Boss Series and 30 Days 30 Jobs in Penang Series.
 
 Blending elements of Japanese and Penang culture in his comedic skits, his viewers enjoy his cultural experience videos where he explores the traditions and the linguistics of local people with his unique sense of humour. His content also occasionally takes viewers on a journey to various locations within Malaysia, particularly Penang.
@@ -520,7 +520,7 @@ Sai has also been featured in films such as Follow Aunty La! and variety shows l
     name: "Sean Tan",
     title: "Property YouTuber",
     company: "@iherng",
-    photo: "/optimized/iherng.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/iherng.jpg`,
     bio: `Sean, academically trained with a Degree in Architecture and a Master’s in Real Estate, brings over 15 years of industry experience to the table. Along the way, he has seen early investment successes, and yes, a few failures too, which shaped his practical and grounded perspective on property.
 
 Today, he channels that experience into his mission of simplifying property knowledge through engaging videos and honest property reviews nationwide. Moreover, he has documented more than 500 different property projects to date.`,
@@ -529,7 +529,7 @@ Today, he channels that experience into his mission of simplifying property know
     name: "Shane Choo",
     title: "Director",
     company: "WealthFort",
-    photo: "/optimized/shane.png",
+    photo: `${import.meta.env.BASE_URL}optimized/shane.png`,
     whiteBg: true,
     bio: `Shane Choo is a financial speaker, trader and investor, with over 15 years of experience trading and investing in local and international stocks, options, ETF, and currency. As a speaker, he is often engaged by investment banks and securities firms to train their retail clients in trading and investment. Since 2015, he has been appointed by Bursa Malaysia to design and conduct investment curriculum to young investors and retail investors nationwide. To date, he has trained over 35,000 individuals in stock investing. Shane is also an International Certified Professional Trainer by IPMA, UK and an Accredited Trainer by HRD Corp. In 2015, he was acknowledged by President Obama for his work as a young leader in financial education.`,
   },
@@ -537,7 +537,7 @@ Today, he channels that experience into his mission of simplifying property know
     name: "Shan Li Tay",
     title: "Managing Director",
     company: "Endeavor Malaysia",
-    photo: "/optimized/shanLiTay.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/shanLiTay.jpg`,
     bio: `As the Managing Director, Shan Li is passionate in helping to accelerate the growth of Malaysia’s high impact entrepreneurs and contributing to the success of the ecosystem.
 
 With an extensive background in corporate leadership, entrepreneurship, and strategic growth, Shan Li brings a dynamic blend of experience that will drive Endeavor Malaysia’s mission to empower high-impact entrepreneurs and foster a vibrant entrepreneurial ecosystem.
@@ -550,7 +550,7 @@ Under Shan Li’s leadership, Endeavor Malaysia will expand its support for entr
     name: "Tan Kyzen, Max",
     title: "Director",
     company: "Gyaku Capital Sdn. Bhd.",
-    photo: "/optimized/max.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/max.jpg`,
     bio: `Tan Kyzen, Max is a passionate investor with over 8 years of investment experience, and currently serving as an Senior Partner at a corporate advisory firm, with prior experience as an associate director in a private equity firm.
 
 With extensive experience in risk and compliance management and a solid background in the Malaysian stock market, Max bridges funds with promising investment prospects. He is also the Director of Gyaku Capital Sdn. Bhd., delivering valuable financial content and ensuring fair information distribution among investors.
@@ -563,7 +563,7 @@ Over his career, Max had previously been involved in a software development comp
     name: "Wan Azfar Azeem (MrKripto)",
     title: "Ikon Kripto Syariah",
     company: "Asri Ahmad Academy Sdn. Bhd.",
-    photo: "/optimized/azfar.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/azfar.jpg`,
     bio: `Dedicated professional with passion in evolving landscape of WEB 3 technologies, with focus on Cryptocurrency Investment & Trading. With over 12 years of comprehensive investment experience, I am currently entrusted with the role of an educator, providing valuable insights into investment opportunities.
 
 A accredited HRDC Trainer, specializing in Digital Assets investing, I have had the privilege of imparting knowledge to a diverse audience of over 15,000 individuals since 2020. The success of this educational initiative has been underscored by the full support and collaboration extended by Luno, KDX & Mx Global, a regulatory-compliant entity under the Malaysian Securities Commission.
@@ -577,7 +577,7 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     name: "William K",
     title: "Finance and Lifestyle Content Creator",
     company: "@richdadwilliam @richdadinvests",
-    photo: "/optimized/william.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/william.jpeg`,
     bio: `William K, better known as Rich Dad William, is a Malaysian entrepreneur and influencer who uses a blend of luxury satire and "wealth-comedy" to teach financial literacy. Through his platforms @richdadwilliam and @richdadinvests, he adopts the persona of a mentor for those seeking financial freedom, sharing insights on the mindset of how the super-rich invests and the different products that are only available to these categories of investors. He aims to bridge the gap in knowledge and information that the general public does not have access to, and he does not believe his should be due to one's wealth category. 
     
     His expertise spans real estate portfolio building, equity markets, and modern entrepreneurship, all delivered through high-energy content that contrasts a lavish lifestyle with practical, grounded money management strategies. By balancing his roles as a high-net-worth investor and a dedicated family man, he emphasizes that true success is about achieving "time freedom" and building a lasting legacy for the next generation.`,
@@ -586,7 +586,7 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     name: "Adeline Koh",
     title: "Deputy Director, Content Regulation Department",
     company: "Malaysian Communications and Multimedia Commission (MCMC)",
-    photo: "/optimized/adelineKoh.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/adelineKoh.jpeg`,
     bio: `Adeline joined the Malaysian Communications and Multimedia Commission (MCMC) in 2022 as an Assistant Director in the New Media Department. She holds a Bachelor of Business Administration (Honours) from Multimedia University (MMU).
 
   She currently serves as Deputy Director in the Content Regulation Department, where she is responsible for formulating, reviewing, and implementing regulatory and compliance frameworks for online content. In this role, she also oversees the enforcement of these frameworks to ensure robust consumer protection, safeguard national interests, and uphold socio-economic stability, while fostering a safe, positive, and conducive online environment.
@@ -597,14 +597,14 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     name: "Pauline Teoh Poe Lin",
     title: "Licensed Financial Planner & Accredited HRDC Trainer",
     company: "FA Advisory Sdn Bhd",
-    photo: "/optimized/paulineTeoh.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/paulineTeoh.jpg`,
     bio: `Pauline Teoh is a Licensed Financial Planner and Accredited HRDC trainer. With over a decade of experience, she specialises in helping professionals and families create clear financial roadmaps. Thus, preparing them holistically not just for financial growth, but also for life’s unexpected moments.`,
   },
   {
     name: "Dato’ Calvin Chan",
     title: "Founder",
     company: "Oriental Kopi",
-    photo: "/optimized/datoCalvin.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/datoCalvin.jpeg`,
     bio: `Oriental Kopi, a Malaysian restaurant serving authentic local cuisine and coffee, currently operates 30 outlets across Malaysia and Singapore. Alongside its in-house dining experience, Oriental Kopi offers merchandise products that showcase the essence of Malaysian culinary heritage. These products are widely available in major hypermarkets and supermarkets across Malaysia, bringing the flavors of Malaysia closer to home.
 
     Our products are also exported to international markets, including Hong Kong, Singapore, Australia, Indonesia and New Zealand offering worldwide to savor the rich taste of Malaysian tradition.
@@ -614,7 +614,7 @@ Driven by a commitment to financial literacy and responsible investing, I contin
     name: "Shahril Hamdan",
     title: "Co-host",
     company: "Keluar Sekejap",
-    photo: "/optimized/shahril.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/shahril.jpg`,
     bio: `Shahril Hamdan, Co-host Keluar Sekejap and Managing Director of Bullhound Capital. Over 15 years, Shahril Hamdan built a tri-sector career in the public, private, and non-profit spaces. He now brings these experiences to bear in his activities in tech, investments and digital media.
 
 He is Managing Director and Head of Southeast Asia for Bullhound Capital, a global technology growth investor with over USD1 billion in AUM and invested in leading tech companies including household names such as Spotify, Revolut and Whoop.
@@ -630,7 +630,7 @@ Prior to his current activities, Shahril was Economic Director in the Prime Mini
     name: "Tevaryan Thiagarajan",
     title: "Director, Digital Custody Development",
     company: "Gambit Custody Sdn Bhd (Part of Gambit Group Consortium)",
-    photo: "/optimized/tevaryanThiagarajan.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/tevaryanThiagarajan.jpg`,
     bio: `A mechanical and aerospace engineering graduate from Nanyang Technological University, Tevaryan Thiagarajan leads innovative projects at the intersection of digital assets and traditional finance. With a strong grasp in tech and markets, he builds ventures that connect both—structuring profitable deals and driving sustainable growth.`,
   },
 
@@ -638,7 +638,7 @@ Prior to his current activities, Shahril was Economic Director in the Prime Mini
     name: "Vincent Wang",
     title: "Manager, APAC Derivatives Sales",
     company: "Cboe Global Markets",
-    photo: "/optimized/vincentWang.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/vincentWang.jpg`,
     bio: `Vincent Wang is part of the APAC Derivatives Sales team at Cboe Global Markets, focusing on supporting the firm’s regional growth strategy across retail brokers and online trading platforms. Based in Singapore, he leads initiatives to deepen client relationships through strategic marketing collaborations and by establishing Cboe’s footprint in Southeast Asian markets. He holds an Honours Degree in Banking and Finance from Nanyang Technological University.`,
   },
 
@@ -646,7 +646,7 @@ Prior to his current activities, Shahril was Economic Director in the Prime Mini
     name: "Jay Cheong",
     title: "Founder & CEO",
     company: "BenchX Capital",
-    photo: "/optimized/jay.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/jay.avif`,
     bio: `Jay Cheong has over 7 years of experience across hedge funds, private markets, and investment platforms, specialising in capital structuring, transaction execution, and disciplined capital allocation.
 
 Jay is the Founder & CEO of BenchX Capital, where he advises founders, corporates, and investors on private market transactions, capital strategy, and complex solutions, supported by institutional-grade financial analysis and market intelligence.
@@ -657,14 +657,14 @@ He works closely with PLCs, institutional partners, and senior management on cap
     name: "Isabelle Zhen",
     title: "Head of Group Equity Marketing",
     company: "Kenanga Investment Bank Berhad",
-    photo: "/optimized/isabelleZhen.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/isabelleZhen.avif`,
     bio: `A multiple award-winning financial product specialist at Kenanga Investment Bank, with awards from UK, HK, Singapore & Malaysia. She has spoken at over 190 events & today, she has a theory that men are great traders, but women are fantastic investors. She is licensed by Securities Commission with CMSRL 6 and 7, she now serves as Head of Group Equity Marketing at Kenanga Investment Bank Berhad.`,
   },
   {
     name: "Chloe Foo",
     title: "Finance Creator",
     company: "Finance Lang",
-    photo: "/optimized/chloe.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/chloe.avif`,
     bio: `Chloe is the producer and finance creator of Finance Lang, and also represents the “beginner investor” perspective on the show.
 
 Her role goes beyond being a host—she acts as a bridge between the audience and financial professionals. By asking the right questions, she helps translate complex financial and investment concepts into simple, authentic, and relatable discussions, making it easier for more people to truly access and understand personal finance.
@@ -675,7 +675,7 @@ With a background in multimedia design and video production, Chloe works with he
     name: "Aaron Tang",
     title: "General Manager (APAC)",
     company: "Luno Malaysia",
-    photo: "/optimized/aaronTang.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/aaronTang.avif`,
     bio: `Aaron is the General Manager (APAC) for Luno where he oversees Luno’s business operations in the region. He is also responsible for cultivating relationships with stakeholders in the local digital asset and financial sectors, banks and key government bodies to help drive business and industry interests in cryptocurrency.
 
 As part of the pioneering team in Malaysia, Aaron began his journey at Luno in 2018 as the
@@ -689,7 +689,7 @@ Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from U
     name: "陈金财 Alann Tan",
     title: "Founder & CEO",
     company: "Jin Ye Ye Sdn Bhd",
-    photo: "/optimized/alannTan.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/alannTan.jpg`,
     bio: `陈金财（Alann Tan）是马来西亚养生送礼品牌金氏集团创办人兼CEO。2008年大学毕业后返马创业，从新春送礼市场起步，创立金爷爷品牌，并逐步把业务拓展至健康养生领域，打造 JYNNS 金氏养生与整合老行家等品牌，形成多品牌集团版图。
 
     目前，金氏集团业务涵盖燕窝、天然蜂蜜及多元养生产品的研发、生产、零售与贸易。陈金财也积极推动品牌文化化发展，结合新春文化内容、原创贺岁歌曲及节庆企划，致力让传统文化与现代消费市场接轨，并推动大马优质产品走向国际。`,
@@ -698,20 +698,20 @@ Aaron holds a Bachelor’s Degree in Electrical & Electronics Engineering from U
     name: "黄振峰 Bong Jenn Fong",
     title: "Chief of News",
     company: "KleverStock",
-    photo: "/optimized/bongJennFong.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/bongJennFong.jpg`,
     bio: `黄振峰（Bong），台湾留学生，具新闻与政治学背景，长期深耕财经媒体领域。曾任BFM《财今》制作人及财经媒体编辑，现为KleverStock新闻总编兼主持人，专注财经新闻策划、商业访谈与市场内容传播。`,
   },
   {
     name: "Tan Tzia Tzia",
     title: "Insurance Advisor",
     company: "Great Eastern",
-    photo: "/optimized/tantziatzia.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/tantziatzia.jpg`,
   },
   {
     name: "Tusvendran Pillai",
     title: "Founder",
     company: "Niaga Saham",
-    photo: "/optimized/tusvendran.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/tusvendran.jpg`,
     bio: `Tusvendran Pillai  is a Registered Pharmacist (R.Ph) turned high-performance investor and financial educator. A graduate with a Bachelor of Pharmacy (Hons), Tusvendran served as a Pharmacist under the Ministry of Health Malaysia from 2018 to 2021 before making a pivotal transition into the financial markets.
 
 
@@ -724,21 +724,21 @@ Today, he is a Certified Capital Market & Security Analyst (CMSA) and the founde
     name: "Khairy Jamaluddin",
     title: "Former Cabinet Minister Malaysia",
     company: "KS Media",
-    photo: "/optimized/khairyJamaluddin.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/khairyJamaluddin.avif`,
     bio: `An alumnus of University of Oxford and University College London, Khairy Jamaluddin (KJ) served as Malaysia’s Minister of Health from 2021 to 2022. He previously held the positions of Minister of Science, Technology and Innovation (2020–2021) and Minister of Youth and Sports (2013–2018). Today, he co-hosts the Keluar Sekejap and is a radio presenter at Hot FM.`,
   },
   {
     name: "Jack Chan (天哥)",
     title: "Founder",
     company: "第一天投资理财日记",
-    photo: "/optimized/jackChan.avif",
+    photo: `${import.meta.env.BASE_URL}optimized/jackChan.avif`,
     bio: `Jack Chan（天哥）是《第一天投资理财日记》的创办人，也是马来西亚知名投资理财内容创作者与畅销理财书作者。他积极推广大众理财教育，曾担任 ASTRO 著名理财节目《全家私房钱》编剧，并拥有 FIMM 信托基金顾问高级组织经理及私人退休金计划（PRS）顾问资格，曾名列多家上市公司前30大股东之列。`,
   },
   {
     name: "Kelvin Goh, CFP®",
     title: "理财Brader, Licensed Financial Planner | CFP | FAR | CMSRL",
     company: "Money Brader",
-    photo: "/optimized/kelvinGoh.png",
+    photo: `${import.meta.env.BASE_URL}optimized/kelvinGoh.png`,
     bio: `Kelvin Goh (Money Brader / 理财Brader) is a licensed financial planner approved by Bank Negara Malaysia (BNM) and the Securities Commission Malaysia (SC), with over 10 years of experience in the financial industry.
 
 He is the Founder of Money Brader Advisory and among the early pioneers of Fee-Based financial planning in Malaysia, practising a model that does not rely on product commissions. Instead, Kelvin provides objective, transparent, and client-focused financial advice, helping thousand of individuals and families build stronger financial foundations and understand the true value of financial planning.
@@ -753,7 +753,7 @@ Through his work in advisory, education, and entrepreneurship, Kelvin is committ
   {
     name: "Ng Ka Hoe, RFP®",
     title: "Financial Transformation Coach, Licensed Financial Planner",
-    photo: "/optimized/kahoe.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/kahoe.jpg`,
     company: "JA Personal Finance Academy",
     bio: `Ka Hoe is the No 1 Financial Transformation Coach that helps  individuals struggling with money especially overcoming deficit. 
 
@@ -768,7 +768,7 @@ Since 2020, Ka Hoe has elevated the financial well-being of more than  7,200+ Ma
     name: "Bob Ngoh",
     title: "Founder",
     company: "FNBTalk",
-    photo: "/optimized/bobNgoh.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/bobNgoh.jpg`,
     bio: `Bob Ngoh is a finance professional, educator, and award-winning former Private Wealth Banker, recognized for consecutive performance awards from 2019 to 2025. He helps individuals build financial clarity, make informed decisions, and develop long-term financial resilience through practical, easy-to-understand personal finance education.
 
 With years of hands-on experience advising clients at leading local banks, Bob worked extensively on wealth structuring, investment planning, and long-term financial strategies. As a long-term investor himself, he brings real market experience to his work — not just theory — allowing him to translate complex financial concepts into practical, actionable decisions.
@@ -782,7 +782,7 @@ Through talks, workshops, and educational content, Bob aims to make finance acce
     name: "Ts. Frank Wee Khiam Hui",
     title: "Managing Director",
     company: "Insights Analytics Berhad",
-    photo: "/optimized/frankWee.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/frankWee.jpg`,
     bio: `Ts. Frank Wee is the Managing Director of Insights Analytics Berhad (IAB), a Sarawak-based
 technology company at the forefront of critical infrastructure development in East Malaysia. With over
 two decades of experience spanning information systems, financial services, and water technology,
@@ -803,7 +803,7 @@ and an active member of several international water and infrastructure industry 
     name: "Jose Blasco",
     title: "Quantitative Strategist",
     company: "Traddictiv",
-    photo: "/optimized/joseBlasco.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/joseBlasco.jpeg`,
     bio: `Jose Blasco is a senior practitioner with expertise in financial trading, derivatives, digital assets, quantitative research, market structure, financial modeling, and risk. A former engineering professor, he brings an analytical mindset to every stage of market engagement—from strategy design to solution deployment.
 
 Jose approaches trading with scientific discipline: hypotheses are tested rigorously using statistical methods, backtesting frameworks, and machine learning models. This research-led process drives the development of systematic and algorithmic strategies across asset classes.
@@ -815,14 +815,14 @@ He holds an MBA and the Certificate in Quantitative Finance (CQF), and currently
     name: "R.Bushan",
     title: "Investment Counsellor",
     company: "FSMOne",
-    photo: "/optimized/rBushan.webp",
+    photo: `${import.meta.env.BASE_URL}optimized/rBushan.webp`,
     bio: `R. Bushan is an iFAST Investment Counsellor, where he plays a key role in shaping market outlooks through global macro research and in-depth analysis of investment products. He is a frequent speaker for banks, financial advisers, and bankers - helping them craft effective investment strategies for their clients. R. Bushan holds a Capital Markets and Services Representative License from the Securities Commission Malaysia.`,
   },
   {
     name: "Tan Dao Hong",
     title: "General Manager",
     company: "Bondsupermart",
-    photo: "/optimized/daoHong.webp",
+    photo: `${import.meta.env.BASE_URL}optimized/daoHong.webp`,
     bio: `Mr. Tan Dao Hong first joined iFAST in 2018 as a Trainee Bond Dealer and was last managing and growing the iFAST Malaysia's Global Fixed Income business until the end of 2023. Since 2024, he joined the Bondsupermart's team on a mission to bring bond investors globally together to trade bonds easily in real-time via an electronic trading platform that connects brokers in the market.
  
 He obtained his post-graduate degree from the University of Nottingham Ningbo, China and is an associate member of the Persatuan Pasaran Kewangan Malaysia.`,
@@ -831,7 +831,7 @@ He obtained his post-graduate degree from the University of Nottingham Ningbo, C
     name: "Lee Chee Seng",
     title: "Chief Executive Officer (CEO)",
     company: "SkyWorld Development Berhad",
-    photo: "/optimized/leeCheeSeng.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/leeCheeSeng.jpg`,
     bio: `Responsible for overseeing and managing the day-to-day operations of SkyWorld, he first joined SkyWorld as Chief Product Officer, helping lead project designs, execution, and management. Later redesignated as Chief Operating Officer, he was given additional responsibilities and after promoted to Deputy Chief Executive Officer, responsible for implementing and ensuring efficiency of business strategies.
 
 On January 2022, he was finally named Chief Executive Officer, a position he currently holds.
@@ -844,7 +844,7 @@ He is know amongst his peers as an innovative leader with a shrewd mind within t
     name: "Venon Tian",
     title: "Group Chief Operating Officer",
     company: "ZUS Coffee",
-    photo: "/optimized/vernonTian.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/vernonTian.jpg`,
     bio: `Venon joined the ZUS Coffee family in 2020 – a new-age, technology-driven company that focuses on quality yet affordable coffee.
 
 Prior to joining ZUS Coffee, Venon was a serial entrepreneur and had co-founded several other businesses, including eziPOD (IOT), Asia Digital Capital (investments/e-commerce), and a super franchisee for a leading retail chain.
@@ -858,7 +858,7 @@ Venon has led ZUS Coffee to become the fastest-growing and largest coffee chain 
     name: "Timothy Tiah",
     title: "Chief Executive Officer",
     company: "Colony Coworking & Events",
-    photo: "/optimized/timothyTiah.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/timothyTiah.jpg`,
     bio: `Timothy Tiah is a Malaysian entrepreneur and content creator, best known as the founder of Colony, a luxury coworking space operator, and Jerry, an automated workspace platform. Colony is also the co-owner of Dough by Meg, a fast-growing F&B brand.
 
 Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) and has built a strong personal brand, with over 175,000 followers on Instagram. Through his content, he shares data-driven insights on business, money, and society across Southeast Asia.
@@ -868,7 +868,7 @@ Tim was named Ernst & Young Entrepreneur of the Year 2015 (Emerging Category) an
     name: "Anson Tan",
     title: "Head of Business Development",
     company: "BBBwealth",
-    photo: "/optimized/anson.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/anson.jpg`,
     bio: `Anson Tan is the Head of Business Development at BBBwealth, a financial education platform in Malaysia. He is a Financial Planner licensed by the Securities Commission Malaysia and Bank Negara Malaysia.
 
 With over 10 years of experience in the finance and investment sectors, Anson possesses deep expertise in macroeconomic analysis, portfolio construction, and investment product selection. He currently manages over RM40 million in assets, providing strategic wealth management solutions to his clients.
@@ -878,14 +878,14 @@ With over 10 years of experience in the finance and investment sectors, Anson po
     name: "Trent Cheok",
     title: "Business Development, Securities & Leveraged Products",
     company: "CGS International",
-    photo: "/optimized/trent.png",
+    photo: `${import.meta.env.BASE_URL}optimized/trent.png`,
     bio: `Trent Cheok is the Business Development Manager from Securities and Leveraged Products and has more than 7 years of marketing and dealing experience in the derivatives market. He is specialized in equities and commodities futures such as FKLI, FCPO, gold and crude oil.`,
   },
   {
     name: "Ronnie Chai Teck Wei",
     title: "Dealer’s Representative",
     company: "CGS International",
-    photo: "/optimized/ronnie.png",
+    photo: `${import.meta.env.BASE_URL}optimized/ronnie.png`,
     bio: `Ronnie Chai is a Dealer’s Representative with CGS International Securities Malaysia Sdn Bhd, actively involved in the financial services industry since 2020. He is deeply passionate about promoting financial literacy and raising public awareness to combat financial scams, believing that education is key to building long-term financial resilience.
 
 Beyond live engagements, Ronnie enjoys sharing knowledge through writing articles and actively educating the public via social media platforms, where he breaks down complex financial concepts into practical, easy-to-understand insights. He has also conducted and participated in numerous webinars and seminars, engaging investors at different stages of their financial journey.
@@ -896,7 +896,7 @@ Driven by a strong commitment to investor education, Ronnie continues to advocat
     name: "Isaac Lim, CMT, CFTe",
     title: "Chief Market Strategist",
     company: "Moomoo SEA",
-    photo: "/optimized/isaacLim.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/isaacLim.jpeg`,
     bio: `Isaac Lim, CMT, CFTe, is the Chief Market Strategist at Moomoo Singapore, where he leads the development of periodic market outlooks, trading strategies, and strategic investment themes from a global macro perspective. In addition to his role at Moomoo Singapore, he serves as Co-Chair of the Chartered Market Technician (CMT) Association, contributing to the advancement of technical analysis and professional development within the industry. Previously, Isaac was Head of Equities and Indices (APAC) at BBSP Asia Pte Ltd, where he provided market research and trading strategies to leading institutional investors and buy-side firms across the region. He has also consistently ranked in the top 20% of Alpha capture programs, demonstrating a strong track record in generating actionable market insights.
 
 A highly sought-after market commentator, Isaac is regularly featured in local media for his expert analysis on financial markets. He is also a frequent speaker at regional financial industry events in Malaysia and Singapore, where he shares his expertise on market trends and investment strategies.`,
@@ -905,7 +905,7 @@ A highly sought-after market commentator, Isaac is regularly featured in local m
     name: "Al Emri Izzat Shah Albakri",
     title: "Vice President, Bursa Gold Dinar",
     company: "Bursa Malaysia Berhad",
-    photo: "/optimized/alEmriIzzatShahAlbakri.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/alEmriIzzatShahAlbakri.jpg`,
     bio: `Al Emri Izzat Shah Albakri is the Vice President of Business Development for the Islamic Capital Market at Bursa Malaysia, focusing on the Bursa Gold Dinar initiative. He brings 15 years of experience with retail investors in Malaysia’s capital market. He previously led Business Development in the Shariah Services Department of an international securities firm after having served as a Retail Research Analyst, where he was ranked 1st as the Best Analyst & Commentator in the Asiamoney Retail Brokers Poll for 2022 and 2023.
 
 Known for his clear, data‑driven insights and strong Shariah‑compliant product expertise, Al Emri offers a compelling perspective on the role and growth of Bursa Gold Dinar in the Islamic Capital Market. He holds a Bachelor of Accountancy and an Association of Qualification in Islamic Finance certificate from IBFIM.
@@ -915,14 +915,14 @@ Known for his clear, data‑driven insights and strong Shariah‑compliant produ
     name: "Jane Chuck",
     title: "Founder & Entrepreneur",
     company: "Chuck’s",
-    photo: "/optimized/janeChuck.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/janeChuck.jpg`,
     bio: `Jane Chuck ,33, started her journey in 2009 as a blogger. Since, she’s become a household name as a fashion, beauty and lifestyle influencer. In 2019, She begin her journey as an entrepreneur by founding Chuck’s, a skincare brand & Motherchuckers,a lifestyle/fashion brand. Through her years of experience, she’s created a brand that reflects her values of thoughtfulness, kindness and self love. It’s since become a space for her and her followers to connect and to build a creative community. Today, she oversees a growing portfolio of brands, including Motherchuckers, Wewantjam, Pretty Motherchuckers, and Hejau Cafe, further establishing her presence as a multifaceted entrepreneur.`,
   },
   {
     name: "Ng Tzyy Loon, CFA",
     title: "CFA, Portfolio Manager",
     company: "Tradeview Capital",
-    photo: "/optimized/ngTzyyLoon.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/ngTzyyLoon.jpg`,
     bio: `Tzyy Loon currently is a portfolio manager at Tradeview Capital, a licensed boutique asset management firm. He has more than 10 years of experience in finance industry from investment management, equity research, credit risk management, and retail banking.
 `,
   },
@@ -930,7 +930,7 @@ Known for his clear, data‑driven insights and strong Shariah‑compliant produ
     name: "Edward Ling",
     title: "Group Chief Executive Officer",
     company: "Talent Corporation Malaysia Berhad (TalentCorp)",
-    photo: "/optimized/edwardLing.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/edwardLing.jpg`,
     bio: `Edward Ling is the Group CEO of TalentCorp, the national agency under the Ministry of Human Resources (KESUMA), driving Malaysia's national talent strategy. He brings over 25 years of leadership experience across global technology platforms, multinational brands, high-growth scale-ups, and large Malaysian conglomerates, with expertise in digital transformation, strategic growth, and public-private partnerships. 
 
 Throughout his career, Edward has held key leadership roles, including heading Talent Solutions for LinkedIn Malaysia, where he partnered with organizations on workforce and talent strategies; serving as the first employee and Country Manager for Waze Malaysia (a Google company) in Asia Pacific, where he established the business and developed monetization strategies; and leading high-growth partnerships and digitization initiatives for Google across Malaysia and Indonesia. He has also served as Chief Growth Officer at Yinson Capital, overseeing group-wide growth, strategic partnerships, and ecosystem development across mobility, electrification, and technology ventures; Country General Manager for Doctor Anywhere Malaysia, a Series C1 health tech startup with over USD180 million raised, where he drove market expansion, P&L management, and the path to profitability; Chief Digital Officer at L'Or�al Malaysia, leading enterprise-wide digital transformation across multiple divisions and brands; and as founder of an AI-enabled traffic technology venture focused on real-time traffic optimization. Edward holds a Bachelor of Computing (Distinction) from Monash University, Melbourne.`,
@@ -939,7 +939,7 @@ Throughout his career, Edward has held key leadership roles, including heading T
     name: "Wan Abd Rahman",
     title: "Co-founder",
     company: "Ekonomi Rakyat",
-    photo: "/optimized/wanAbdRahman.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/wanAbdRahman.jpeg`,
     bio: `Wan is the Co-Founder of Ekonomi Rakyat and Director of Ocean Media Solutions Sdn Bhd. He has grown Ekonomi Rakyat from a passion project into a leading Malay-language media platform focused on economics, finance and business.
 
 Prior to this, he served as a Corporate Strategist at a state-owned GLC, gaining experience across the property, environment and energy sectors.
@@ -950,14 +950,14 @@ Wan holds a degree in Philosophy, Politics and Economics (PPE) from the Universi
     name: "Mohd Izzat Fadhli Azman",
     title: "Head, Robo Advisory",
     company: "Amanah Saham Nasional Berhad (ASNB)",
-    photo: "/optimized/mohdIzzatFadhlibinAzman.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/mohdIzzatFadhlibinAzman.jpg`,
     bio: `Mohd Izzat Fadhli started his career as a Management Trainee Executive at PNB in 2010. He later served as an analyst and portfolio manager in the International Fund Management Department at PNB. Between 2015 and 2018, he was seconded to Singapore Unit Trusts Limited, a Singapore-based subsidiary of PNB, to manage PNB's proprietary Shariah-compliant equity fund. In 2019, he joined Wahed Invest, a robo-advisory firm incorporated in the United States, as Country Director for Malaysia. In 2022, he returned to the PNB Group to lead the Robo Advisory Unit at ASNB. He holds a Bachelor's Degree in Mechanical Engineering from the University of Warwick, United Kingdom and is a CMSRL license holder for Modules 9 and 10.`,
   },
   {
     name: "Kathlyn Toh",
     title: "Founder",
     company: "Beyond Insights",
-    photo: "/optimized/kathlyn.png",
+    photo: `${import.meta.env.BASE_URL}optimized/kathlyn.png`,
     bio: `Kathlyn Toh has more than 30 years of investing and trading experience in the US & global equity markets. She's also the Founder and Chief Trainer for Beyond Insights where she has trained and coached more than 8,000 investors and traders.
 
 She started her stock trading journey in the KLSE stock market in 1993 and the US Stock Market in 1997. Since then she has traded actively in US Stocks, Options, CFD, Currencies, and Commodity Futures. Kathlyn considered herself fortunate to have experienced the full cycle of the Bull Run, the market crash, the after-crash recovery, the sideway markets, and the high volatility markets which gave her great experience in adjusting her strategy depending on the market conditions.
@@ -970,14 +970,14 @@ Before starting Beyond Insights, she worked in the Semiconductor industry for 17
     name: "Jayden Pang",
     title: "Research Analyst",
     company: "Eco Asia Capital Sdn. Bhd.",
-    photo: "/optimized/jayden.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/jayden.jpg`,
     bio: `Jayden Pang is a seasoned Research Analyst with a Bachelor of Finance (Hons) and over 9 years of extensive experience in the Malaysian stock market. He previously served as a trainer at Golden Summit Academy. Currently, he holds a CMSRL under Eco Asia Capital Sdn Bhd, a licensed financial advisor approved by the Securities Commission Malaysia. Jayden has also been invited as a guest speaker on media platforms such as 8TV to share his market insights.`,
   },
   {
     name: "Lim Eng Ping",
     title: "Head of Wealth Management Malaysia",
     company: "Maybank",
-    photo: "/optimized/limEngPing.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/limEngPing.jpeg`,
     bio: `Mr. Lim Eng Ping has been appointed as the Head of Wealth Management Malaysia, Group Wealth Management, Community Financial Services (CFS) Malaysia, effective 1 September 2024. Previously, he served as Head of Private Wealth Malaysia, GWM, CFS Malaysia.
 
 As Head of Wealth Management Malaysia, GWM, he is responsible for managing the 3 wealth segments in Malaysia (Private, Premier & Privilege) as well as Islamic Wealth Management. In his role, Eng Ping is tasked with delivering the GWP Supercharge Growth Aspirations through 4 strategic thrusts:
@@ -998,7 +998,7 @@ Since joining Wealth Management, CFS, Eng Ping has been instrumental in growing 
     name: "Stephanie Tan Kar Mun",
     title: "Director, Group Commercial & Market Coverage",
     company: "Bursa Malaysia Berhad",
-    photo: "/optimized/stephanieTan.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/stephanieTan.jpg`,
     bio: `Stephanie Tan Kar Mun is Director of Group Commercial and Market Coverage at Bursa Malaysia, where she leads the Exchange's commercial strategy and client engagement across institutional investors, retail participants, brokers, and corporates. With nearly 20 years of international experience spanning global investment banking in London with HSBC and Morgan Stanley, JP Morgan in Malaysia, and Southeast Asia's digital venture space with iflix, she brings deep expertise in capital markets, digital innovation, and stakeholder management.
 
 At Bursa, she has driven transformational initiatives that expanded investor participation, unlocked new revenue streams, and enhanced Bursa's positioning as a modern and inclusive exchange. A graduate of the London School of Economics, Stephanie is recognised as a thought leader advancing Malaysia's capital market development.`,
@@ -1007,7 +1007,7 @@ At Bursa, she has driven transformational initiatives that expanded investor par
     name: "Lai Le Ann",
     title: "Content Creator",
     company: "",
-    photo: "/optimized/leAnn.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/leAnn.jpg`,
     bio: `Le Ann Lai is a content creator and trainer who trained more than 300 entrepreneurs in social media and content strategy, helping them position themselves, attract opportunities, and grow their business through digital presence. Her work and insights have been featured on Bernama, 8FM, and other media platforms.
 
 Le Ann has built an audience of over 150,000 followers across platforms and is widely recognised for her practical approach to video. 
@@ -1018,7 +1018,7 @@ Known for her Malaysia Library Series, she advocates one core belief: valuable c
     chineseName: "陈剑老师",
     title: "Chief Coach",
     company: "Grandpine Capital",
-    photo: "/optimized/chenJian.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/chenJian.jpg`,
     bio: `Alfred Chen is the Chief Coach of GrandPine Capital where has coached more than 30,000 students. He is also an influential investment educator on social media with more than 150,000 followers on his Facebook page and YouTube channel, collectively.
 
 He also authored numerous investment books in Malaysia, drawing from his vast experience in Malaysia’s stock market and in-depth analyses of listed companies in Malaysia and China.
@@ -1030,21 +1030,21 @@ Since 2009, he has been the key speaker at the Investment Forum jointly organise
     name: "Ng Keng Sing",
     title: "EVP, BR Capital, Securities Market",
     company: "Bursa Malaysia Berhad",
-    photo: "/optimized/kengSing.png",
+    photo: `${import.meta.env.BASE_URL}optimized/kengSing.png`,
     bio: `Keng Sing serves as the Head of Bursa Malaysia’s RAM Capital Sdn Bhd (BR Capital), a subsidiary of Bursa Malaysia. BR Capital is a Recognized Market Operator that facilitates debt fundraising by mid‑tier companies while providing investors with access to yield‑seeking opportunities. Prior to joining Bursa Malaysia, he held senior leadership roles in corporate and investment banking, bringing extensive experience across capital markets and the broader financial services industry.`,
   },
   {
     name: "林伟强 Lim Woi Kiong",
     title: "Founder",
     company: "9Shares 九点股票",
-    photo: "/optimized/mrLim9Shares.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/mrLim9Shares.jpeg`,
     bio: `曾任《中国报》副总编辑，《东方日报》副总编辑，2017年创办《九点股票》`,
   },
   {
     name: "Eddie Ng",
     title: "Founder & CEO",
     company: "Vanzo Holdings Bhd",
-    photo: "/optimized/eddieNg.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/eddieNg.jpeg`,
     bio: `A.2018年100大最具影响力杰出青年企业家
 
 B.2018年亚太国际超级健康品牌
@@ -1063,7 +1063,7 @@ F. THE page商页2019年评选菁英
     name: "Lucas Seneviratne",
     title: "Head of Markets (Singapore & Malaysia)",
     company: "Ticketmelon",
-    photo: "/optimized/lucasSeneviratne.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/lucasSeneviratne.jpeg`,
     bio: `Lucas Seneviratne leads Singapore and Malaysia for Ticketmelon, one of Southeast Asia’s leading event technology platforms powering large-scale festivals, concerts, and live experiences across the region.
 
 A law graduate by background, Lucas began his career in entrepreneurship, co-founding The Bao Guys—Malaysia’s first fast-casual bao concept. He scaled the brand to 13 outlets across Klang Valley before exiting in 2024.
@@ -1079,7 +1079,7 @@ His current obsession: using data, distribution, and smart financing to help eve
     title:
       "Senior Vice President, Head of Retail Derivatives Coverage, Group Commercial & Market Coverage",
     company: "Bursa Malaysia Berhad",
-    photo: "/optimized/estherTio.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/estherTio.jpg`,
     bio: `As Head of Retail Derivatives Coverage under the Group Commercial & Market Coverage division at Bursa Malaysia, Esther is responsible for shaping and scaling the exchange’s retail marketing strategy across derivatives and multiple product offerings within the group. She joined Bursa Malaysia in 2019 and has previously served as Head of Marketing & Retail Development for Derivatives Market, where she was accountable for devising education and market development initiatives that effectively promote the Malaysian futures and options markets to all segments of investors, both domestically and internationally. 
 
 Esther’s leadership in Bursa Malaysia extends to organising one of the largest international palm oil conferences, the Palm & Lauric Oils Price Outlook Conference & Exhibition (POC). This renowned event, drawing approximately 2,000 corporate delegates from 60 countries to Kuala Lumpur each year, serves as the exchange’s primary platform for promoting its edible oil offerings as risk management solutions to commercial players. Throughout her tenure, Esther has spearheaded several of the exchange’s industry “firsts”, including the introduction of the Futures Trading Apprenticeship Programme (FTAP) in 2023, a pioneering market revitalisation initiative that inspired other ASEAN exchanges to adopt similar strategies. 
@@ -1090,7 +1090,7 @@ With 15 years of experience in financial product marketing, Esther previously he
     name: "David Ng",
     title: "Proprietary Trader",
     company: "IcebergX Sdn Bhd",
-    photo: "/optimized/davidNg.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/davidNg.jpg`,
     bio: `David Ng is currently a full-time proprietary trader with IcebergX Sdn Bhd, a local proprietary trading firm based in Kuala Lumpur. He has done extensive research and is well versed in the commodities and indices markets. He currently trades the Malaysia index and crude palm oil futures market. 
 
 Previously, he led a team of a young and dynamic team to promote futures and derivatives instruments to the Malaysian public with a prominent local broker. He conducts regular public seminars and seminars on topics relating to futures trading and has aid individuals to start their trading journey. In addition, he also provides frequent market commentaries to local media like The Star, Business Times, and The Edge in that role`,
@@ -1099,7 +1099,7 @@ Previously, he led a team of a young and dynamic team to promote futures and der
     name: "Jocelyn Lee",
     title: "Deputy Head of Marketing",
     company: "Phillip Capital Sdn Bhd",
-    photo: "/optimized/jocelynLee.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/jocelynLee.jpeg`,
     bio: `As the Deputy Head of Marketing at Phillip Capital Sdn Bhd, Jocelyn plays a key role in driving strategic initiatives across derivatives, securities, and CFD markets. With dual licensing in both derivatives and securities, Jocelyn brings a well-rounded perspective to multi-asset trading and investment solutions. 
 
 She has extensive experience in client servicing and engagement, with a strong focus on guiding clients through trading platforms and enhancing their overall trading journey. Jocelyn is actively involved in organizing and leading roadshows, seminars, and investor education events, where she shares practical insights on market opportunities, trading strategies, and platform navigation. Jocelyn is passionate about empowering investors with the tools and knowledge needed to navigate today’s dynamic financial markets with confidence.`,
@@ -1108,7 +1108,7 @@ She has extensive experience in client servicing and engagement, with a strong f
     name: "Dato' Dr Nazri Khan (DDNK)",
     title: "No.1 World Trading Champion 2024",
     company: "DDNK Holdings",
-    photo: "/optimized/drNazriKhan.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/drNazriKhan.jpg`,
     bio: `Licensed fund manager at Berjaya Mutual Berhad. World Cup Trading Championship winner. Malaysia Book of Records holder. Dato' Dr. Nazri Khan (DDNK) is a prominent figure in financial management, investment, and economics.
 
 He is widely recognized for his contributions in educating the public on the importance of ethical investment strategies. With a teaching record of over 300,000 participants, he has made a significant impact on financial literacy.`,
@@ -1117,7 +1117,7 @@ He is widely recognized for his contributions in educating the public on the imp
     name: "Gareth Tan",
     title: "Managing Director",
     company: "LFF Group (Lee’s Fandbee)",
-    photo: "/optimized/garethTan.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/garethTan.jpg`,
     bio: `Gareth Tan is the Managing Director of Lee's Frozen Food (Lee's Fandbee), one of the largest frozen food importers and distributors in Southeast Asia.
 
 Under his leadership, the company has expanded with 10 retail stores in Malaysia and 3 in Cambodia, with operations and distribution extending to Vietnam and further expansion planned across the region.
@@ -1130,14 +1130,14 @@ Guided by the mission of Food Equality — providing equal access to good food a
     name: "Christy Ng",
     title: "Founder",
     company: "Christy Ng Sdn Bhd",
-    photo: "/optimized/christyNg.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/christyNg.jpg`,
     bio: `Christy Ng is the Founder of Christy Ng Sdn Bhd, having famously scaled her business from a small living room operation into one of Southeast Asia's most culturally relevant handbag and footwear brands.`,
   },
   {
     name: "Yang Berhormat Steven Sim Chee Keong",
     title: "Minister of Entrepreneur and Cooperative Development",
     company: "",
-    photo: "/optimized/YBStevenSim.png",
+    photo: `${import.meta.env.BASE_URL}optimized/YBStevenSim.png`,
     bio: `YB Steven Sim Chee Keong is a prominent Malaysian leader currently serving as the Minister of Entrepreneur and Cooperatives Development (KUSKOP). A three-term Member of Parliament for Bukit Mertajam, Sim has built a distinguished career within the federal government through a series of key ministerial portfolios. He previously served as the Minister of Human Resources (2023–2025), where he championed labor reforms, and as Deputy Minister of Finance II (2022–2023) during a critical period of economic recovery. His ministerial experience began as Deputy Minister of Youth and Sports (2018–2020), marking him as one of the nation's most versatile young policymakers.
     
     Recognized globally as a Young Global Leader by the World Economic Forum, YB Steven Sim combines a background in Computer Science and Sustainable Development with a deep passion for socio-economic reform. He is also a noted author, exploring Malaysian identity through works such as Hang Tuah: Adiwira Bangsa. At the helm of KUSKOP, he focuses on strengthening the MSME ecosystem and fostering cooperative growth, making him a central figure in Malaysia’s current economic development and entrepreneurial landscape.`,
@@ -1146,14 +1146,14 @@ Guided by the mission of Food Equality — providing equal access to good food a
     name: "Wilson Lee",
     title: "Chief Executive Officer",
     company: "Upbound & Emax Beauté International",
-    photo: "/optimized/wilsonLee.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/wilsonLee.jpeg`,
     bio: `Wilson Lee is a CEO & Founder, Upbound and Emax Beauté International. He is a CEO, athlete, and community builder shaping performance culture in Malaysia, Wilson lives at the intersection of business, sport, and performance. As a founder, he builds brands with a strong focus on growth, discipline, and execution. As an athlete, he trains consistently, competes, and documents the process publicly. His identity is built around performance in real life, in business, in sport, and in how he shows up every day.`,
   },
   {
     name: "Kelvyn Chuah",
     title: "Managing Director / Founder",
     company: "Sinegy DAX Sdn. Bhd.",
-    photo: "/optimized/kelvynChuah.jpg",
+    photo: `${import.meta.env.BASE_URL}optimized/kelvynChuah.jpg`,
     bio: `SINEGY is Malaysia’s first homegrown and regulated digital asset exchange, offering institutional-grade features to corporate and institutional clients.
     
     Trade confidently on a regulated platform that complies with Malaysian standards, ensuring a safe and compliant environment. SINEGY offers unique Ringgit Malaysia (RM) and crypto trading pairs. It utilizes an aggregated pricing model to source the best prices from all major exchanges, providing optimal value and secure trading in one place.
@@ -1163,7 +1163,7 @@ Guided by the mission of Food Equality — providing equal access to good food a
     name: "Jonathan Chee",
     title: "Senior Vice President",
     company: "CloudTech Group",
-    photo: "/optimized/jonathanChee.jpeg",
+    photo: `${import.meta.env.BASE_URL}optimized/jonathanChee.jpeg`,
     bio: `Jonathan Chee is a Web3 and blockchain specialist with a focus on reshaping financial systems through emerging technologies. With a background spanning both digital assets and traditional finance, he offers a grounded perspective on how blockchain can move beyond speculation into real-world impact. 
 
 Jonathan is particularly passionate about the future of finance, where trust is embedded in technology and financial services become more efficient, transparent, and globally accessible.

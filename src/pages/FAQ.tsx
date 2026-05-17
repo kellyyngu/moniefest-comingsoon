@@ -181,12 +181,12 @@ const FAQPage = () => {
                             <Dialog open={imgOpen} onOpenChange={setImgOpen}>
                               <DialogTrigger asChild>
                                 <button className="w-full max-w-xl p-0 rounded-md shadow-md overflow-hidden">
-                                  <img src="/optimized/shuttleBus.jpg" alt="Monie Fest shuttle bus from Titiwangsa" className="w-full h-auto block" />
+                                  <img src={`${import.meta.env.BASE_URL}optimized/shuttleBus.jpg`} alt="Monie Fest shuttle bus from Titiwangsa" className="w-full h-auto block" />
                                 </button>
                               </DialogTrigger>
 
                               <DialogContent className="max-w-4xl p-0 bg-transparent shadow-none">
-                                <img src="/optimized/shuttleBus.jpg" alt="Monie Fest shuttle bus (enlarged)" className="w-full h-auto rounded-md" />
+                                <img src={`${import.meta.env.BASE_URL}optimized/shuttleBus.jpg`} alt="Monie Fest shuttle bus (enlarged)" className="w-full h-auto rounded-md" />
                               </DialogContent>
                             </Dialog>
                           </div>
